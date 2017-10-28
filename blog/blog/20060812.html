@@ -1,0 +1,112 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2006.08.12., szombat</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Egynéhányan feltétlenül feladatuknak érezték, hogy közöljék, a <I>Nothammer</I> német szó, és vészkalapácsot jelent, közülük is néhányan fölényes faszparaszt-vigyorral tették ezt, íme, megint bebizonyosodott, hogy õk a jobbak, mert én biztos nem tudom, hülye vagyok mindenhez, én biztos azt hittem, hogy <I>tényleg</I> az van odaírva angolul, hogy nemkalapács, hogyne, elnézést, na húzás haza. Mások meg azon vannak felháborodva, hogy azt merészeltem mondani, hogy a makói lányt felgyújtó cigánynak ki kellene irtani a fajtáját, hát ilyet meg hogy lehet, jaj szegény cigányok, s emlegetnek egy másik esetet, amikor egy nem roma nemzetiségû féreg erõszakolt meg és gyilkolt meg egy lányt, hogy akkor bezzeg nem írtam semmit, ugye, megmondtuk, hogy rasszista vagy, pont. Akkor most elmondom még egyszer, lassan: valakinek a "fajtája" nem csakis azt jelentheti, hogy roma vagy nem roma, de ha mindenáron ezt akarjuk rajta érteni, akkor úgyis ezt fogjuk, ugyanúgy, mint ahogy pár hülye nagy erõkkel magára vette Gyurcsány kóbor kutyás beszólását is. Bár nem tudom, ezt miért mondom el minden egyes alkalommal, hiszen akik romasegget akarnak nyalni, úgyse állnak meg, míg a nyelvhegyük zsíros, meleg fost nem ízlel, értelmes embernek meg nem kell magyarázni. Amúgy 3 éve, amikor az esztergomi megerõszakolós-szakadékbalökõs eset történt, még nem volt blogom, tehát jóhogy nem írtam róla. Faszkalapok.
+<BR><BR>
+
+Inkább magyarázza meg valaki, egy nyomtatónak miért kell két-három óránként se szó, se beszéd, éktelen csattogásban kitörni, anélkül, hogy nyomtatna, továbbá miért nincs egyetlen vastelep sem, ahol nem okoz gondot egy acél zártszelvény 45 fokban történõ elvágása. A bõr lejött a kezemrõl, mire mindent levágtam kézifûrésszel. Ezek a nap legfontosabb problémái. Továbbá nem találom az EOS350D töltõjét. Viszont megépült egy csinos kis mûhelyasztal. És van levrov is, örüljetek.
+
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060811.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

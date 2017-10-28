@@ -1,0 +1,131 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2005.04.29., szombat</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Álljunk már meg egy szóra, miért <I>nekem</I> kell az utcában a kocsifeltör&otilde;ket hajkurásznom, amikor állítólag van rend&otilde;rségünk?
+<BR><BR>
+
+Jöttünk haza az esti sétából, <I>én és a lányok,</I> vagyis Athina, Berta és én. A ház közelében két alak gyanúsan közel álldogált egy autóhoz. Közeledtünkre az egyik cseppet sem felt&ucirc;n&otilde;en a háta mögé dugott egy féltéglát. Ó, remek, autófeltör&otilde;k... Elmentünk a házig, betereltem a lányokat, én meg kint maradtam a kapualj takarásában, és felhívtam a 107-et.
+<BR><BR>
+
+- Ön a rend&otilde;rséget hívta. A kapcsolásig kérem várjon... Ön a rend&otilde;rséget hívta. A kapcsolásig...
+<BR><BR>
+
+A kedves állami robot perceken át rendíthetetlenül ismételgette a mondatot. Bravó... Közben arra járt egy fiatal srác, megkérdeztem, &otilde; is látta-e a két alakot. Igen, &otilde; is látta. Egy csaj és egy csávó, ha arra jön valaki, veszekedést mímelnek. Na igen, jó ürügy, hogy miért álldogálnak az utcán hajnali egykor. A telefon közben lemerült, mert már vagy tizenöt perce várta, hogy a rend&otilde;rség felvegye, mindhiába.
+<BR><BR>
+
+Végül egy házsarok takarásában közelebb osontam a gyanús pároshoz. Amint nem láttak a közelben senkit, abbahagyták a vitatkozást. A csávó egy drótot kapott el&otilde;, és nekiállt feszegetni vele egy kocsi ajtaját. Én meg pisztolyt kaptam el&otilde;, és azzal köszöntem rájuk, érdekl&otilde;dve, hogy vajon övék-e a kocsi. Lett is nagy pucolás, két másodperc múlva már alig láttam &otilde;ket, olyan messze szaladtak. Néztem utánuk: nem volt kedvem végigfutni fél Angyalföldet már megint fölöslegesen. Ha el is kapom &otilde;ket, a rend&otilde;rök basznak kijönni, hiszen a telefont sem veszik fel. Aztán ha mégis, hát magyarázkodhatok, hogy miért van nálam fegyver. Még talán be is vonják a vizsgálat idejére, aztán állhatok sorba megint engedélyért. Nem hiányzik.
+<BR><BR>
+
+Míg hazafelé sétáltam, szöget ütött a fejembe a gondolat, hogy vajon más országokban milyen gyorsan lehet kihívni a rend&otilde;rséget? Felmentem IRC-re, és feltettem a kérdést még ébren lev&otilde; külföldi haverjaimnak. Elmondtam nekik persze a történetet is, a hasukat fogták a röhögést&otilde;l, hogy a magyar rend&otilde;rök tizenöt perc alatt sem voltak képesek felvenni a telefont. Más országokban ugyanis a következ&otilde; a helyzet:
+<BR><BR>
+
+- Németország, Hamburg: ha a központ egy percen belül nem felel, panaszt lehet tenni a rend&otilde;rkapitánynál. A városban bárhová kiszállnak a rend&otilde;rök a hívástól számított 2-3 percen belül.<BR>
+- Svédország: a 112-es szám azonnal jelentkezik, és nem kell bemondani a hívás helyét, azt automatikusan kiírja a számítógép a diszpécser képerny&otilde;jére.<BR>
+- Svájc: a központ itt is azonnal felel, a nagyobb városokban szintén 2-3 perc alatt érnek a helyszínre.<BR>
+- Olaszország: itt er&otilde;sen városfügg&otilde; a dolog. A telefont mindenhol azonnal felveszik, de a kiszállás ideje minden városban más, arányosan annak kulturáltságával. Olyan mindenesetre nincs Torinóban, hogy egy másik kerületb&otilde;l küldjenek jár&otilde;rt, mint nálunk, kivéve ha nagyon nagy gáz van.<BR>
+- Oroszország, Voronyezs: néhány csengés után biztosan felveszik.<BR>
+- Finnország, Helsinki: itt is azonnal felveszik.<BR>
+- Poznan, Lengyelország: na, itt sem túl gyorsak, öt-tíz perces válaszid&otilde; el&otilde;fordul, de legalább tényleg az veszi fel, akinek fel kell.
+<BR><BR>
+
+Csak nálunk nyugtatgatja az állampolgárt egy határozott robothang negyedórán át, hogy aztán egy akadékoskodó központos is tövir&otilde;l hegyire kikérdezze, miel&otilde;tt továbbkapcsolná a megfelel&otilde; kerülethez - ahol aztán kezdheti elölr&otilde;l a mondókáját. Megjegyzem, az is roppant hasznos, hogy a robot angolul is elmondja, hogy <I>"you have just reached the Hungarian Police,</I> ha aztán a vonal túloldalán dekkoló fakabát rendszerint egy kurva szót sem tud a nyelven.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050428.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,130 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>2006.12.04., vasárnap</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Örömmel jelentem, hogy a BoltGép fedõnévre keresztelt boltmotornak immár a béta verziója került fel a szerverre. Az alfa és a béta verzió között tudnivaló különbség, hogy az alfánál a programozó a örül, mint a hülye, hogy vége az éjszakákon át tartó szopásnak, a béta elkészültekor pedig megállapítja, hogy az alfa verzióig igazából nem is szopott, csak kóstolgatta a Nagy Digitális Faszt. A mélytorok technikát különösen a szerver képességei oktatják hatékonyan, minek következtében a fél cuccott át kellett írni tövirõl hegyire. Külön emeli az erotikus élmény színvonalát, hogy a szerveren PHP4 fut, én meg PHP5-tel fejlesztettem, de jó is a kódot visszabutítani, különösen, hogy 1 mega fölött van a teljes forráskód, JavaScript és egyebek nélkül.
+<BR><BR>
+
+No de most már béta verzió van, tessék virulni, ez már sokat nem fog változni, legalábbis nem látványosan. Ez az a pont, amikor a programozó elkezdi kihúzni a brét a torkából, bár a júzerek néha még visszanyomják kicsit.
+<BR><BR>
+
+A következõ szopnivaló az Internet bekötése lesz. Tudniillik az Oktogon környéke nagyon-nagyon félreesõ hely, ahová nem lehet csak úgy ukkmukkfukk bekötni az Internetet. A kábeles szolgáltatók (UPC, TVnet, stb) nem is szolgáltatnak ott, na, nem, mintha pont a UPC-re lennék kíváncsi. ADSL-t lehet ugyan bekötni, de nem ám csak úgy betoljuk azt se, mert nagyjából egy hónap az átfutási idõ. AM mikrót gyorsabban lehetne, meg olcsó is. Igen ám, de ahhoz, hogy a kábé salátástál nagyságú antennát feltegyem a ház tetejére, össze kell hívni a társasházi közgyûlést, a sok befordult, burzsoá nyugdíjast, akik egyébként a házban való elsõ megjelenésem után 3 perc 12 másodperccel már az öklüket rázták kurvaanyázva a függõfolyosóról, ti. hogy merek én este nyolckor ládákat behordani a boltomba. Ezeket kellene rávenni, hogy egy estén hagyják ott az imádott tévéjüket, klaffogjanak le a földszintre, és szavazzák meg, hogy igen, megengedjük, hogy ez az új csávó feltegye az antennát. A közös képviselõ nem akart elkeseríteni, de elmondta, hogy az elmúlt tizenöt évben egyetlen határozatképes közgyûlés sem volt, és akik elmentek, azok is mindig nemmel szavaztak mindenre, bármi volt is a kérdés. Szóval ne reméljem, hogy ezek belemennek, hogy a tetõrõl levezessünk egy kábelt a földszintig, mit képzelünk, még elcsúfítja a csodaszép házat. Az ellen persze nem tiltakoznak, ahogy a kapualj kinéz, de az nem is képezi szavazás tárgyát.
+<BR><BR>
+
+Végsõ elkeseredésemben felhívtam mindenféle mobilszolgáltatókat, hogy milyen megoldást tudnak kínálni addig is, amíg az ADSL-t bekötik. Sok éves hûségszerzõdéssel, aranyért-gyémántért persze bárki bármit. Na igen, csak én netezni szeretnék, nem tönkremenni. Végül a Vodafone-ról kisült, hogy van nekik fasza GPRS csomagjuk, igazából nincs is benne semmi extra, hanem csak venni kell egy akármilyen Vitamax kártyát, bedugni a modembe, oszt' csókolom. Igen ám, de a modem hozzá 55 ezer forint. Hö? Mi van? Felnéztem az eBay-re, és vettem egyet alig használtan, 20 euróért (5e forint). Ebben a szállítás is benne volt. Elmegy a kurva anyjába a Vodafone is... Külön haszna ennek a kis kedvesnek, hogy lehet rajta SMS-t küldeni. Megpróbálok majd implementálni egy SMS-es visszaigazoló rendszert a boltmotorba.
+<BR><BR>
+
+Jó hír viszont, hogy a bolt sarkában találtam egy falból kiálló drótot, tehát volt itt valaha telefon, legalább azt nem kell megrendelni.
+<BR><BR>
+
+Közérdekû közlemény. Az Interneten megrendelt cuccok, legyen az kiszállításra vagy személyes átvételre rendelve, tíz százalékkal olcsóbbak, mint a bolti ár. Aki tehát vásárolni szeretne, jobb, ha elõbb benéz a tomcatpolo.hu-ra, és lestipistopizza, ami kell neki. Már csak azért is, mert a karácsonyi szezonban gyorsan fogynak a cuccok, s lehet, hogy mire odaérsz, elfogy, amit kinéztél. Egy rakat újdonság lesz egyébként, illetve már van is, de ezt meg fogjátok találni, ha körülnéztek az oldalon.
+<BR><BR>
+
+Utolsókat rúgom a boltmotorba, aztán visszatérek a normális élethez. Lesz Droidzóna is, meg minden.
+
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20061203.html">
+<B><< elõzõ nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20061205.html">
+<B>következõ nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+<BR><BR>
+
+</BODY>
+</HTML>
+
+

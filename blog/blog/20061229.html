@@ -1,0 +1,127 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>2006.12.29., péntek</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Épp amikor ezt írom, Karlsruhe-ban véget ér az év utolsó partyja, a The Ultimate Meeting. Nézem a weboldalukat, és kicsit szomorú vagyok, mert nem vagyok ott. Pedig ez a kedvenc külföldi partym. No, nem mintha olyan sokból lehetne választani idehaza (egy darab vegetálgat még), és külföldön is már csak pár egyre vénebb hülye próbál úgy csinálni évente kétszer-háromszor, mintha tizenéves lenne. Vagyis már azt sem próbáljuk, kivéve néhány elborult C-64-es arcot. Régi motorosok, régi csibészek, hová lettetek?
+<BR><BR>
+
+Az egész kilencvenes évek, amibe a demoscene tartozik, úgy tûnt el, mint egy fuvallat. Nem volt nyoma a történelemben, nem volt harsány, nem hozott sem Beatlest, sem rendszerváltást, sem Internet-robbanást, csak az elõjeleit. Csendesen folydogált az emberiség utolsó békés évtizede, amely végre rendet rakott a huszadik század végén, már persze úgy-ahogy, de akik megérték, mégiscsak láthatták, hogy amire egész életükben vártak, nehezen bár, de kimondatott, beteljesedett. Legyen az bármi. Megnyugodva hunyhatták le szemüket. Mi pedig, kancsal, tizenéves kölykök, szögletes dobozokra meredve töltöttük el fiatalkorunkat, és pixeles figurákat bámultunk. És persze csináltunk is ilyeneket. Mert ez a különbség ma és akkor között: ma mindent készen adnak, és mindjárt jó sokat belõle.
+<BR><BR>
+
+Mögöttünk egy elbutított generáció áradata jön, akik már nem találkoztak a huszadik századdal. Nyomokban sem. S akiknek a kilencvenes években nem volt még mit átgondolniuk. Nekik már nincs kapcsolatuk az elõttünk élõkkel. Most pedig már nincs idejük elgondolkodni, mert sokan vannak, és mind össze vannak kötve, hogy mint az õrültek, kommunikáljanak. Nem velünk, egymással.
+<BR><BR>
+
+Nézem egy 1994-es holland demóparty véletlenül elõkerült képeit a slengpung.com-on. Mind ilyenek voltunk, bárhol éltünk Európában. Ilyen kötött pulóvereink voltak, és ilyen szögletes számítógépeink, képcsöves monitorral és golyós egérrel. Ugyanezt a kólát ittuk, és ugyanígy boldogok voltunk. Nem tudom elmondani, mitõl. Nem csak a demoscene ez, amirõl csak címszavakat mondhatok a kívülállónak, s nem tudom elmesélni, hiába írtam róla könyvet. Hanem az a korszak. Az Internet elõtti korszak. Az utolsó békés évtized. Az Amiga és a mûholdas tévé. Az <I>Aliens</I> és a <I>Terminator II.</I> A szerepjáték és a betárcsázós modem. A fehér póló és a termopulóver. Az átmenet a régi diktatúrás-néprádiós-világháborús világból az internetes-dévédéírós-házimozis-plázásba. Aki nem volt ott a kilencvenes években, az nem fogja érteni a huszadik századot. Tartok tõle, rajtunk, akkori tizenéveseken kívül más nem volt ott. Vagy még nem, vagy már nem. Mindenesetre akik utánunk jönnek, azok biztosan nem.
+<BR><BR>
+
+Vajon hogyan alakult volna ez a XX. század, ha odafigyelünk a XIX. végére, ami nagyon hasonló volt? Megint csak évtizedekkel késõbb emlegetjük majd nosztalgiával a "boldog békeidõket?" Az akkori ember el sem tudta képzelni mindazt, ami rövidesen rászakadt, pedig már akkor is volt, aki elõre megmondta. Most vajon hányan veszik komolyan, hogy az, hogy a csapból édesvíz folyik, egyáltalán nem természetes?
+<BR><BR>
+
+A XXI. század a médiacivilizáció vége lesz. A szubkultúrák nem épülnek tovább. Nincs értelme tovább megjegyezni mindent és mindenkit. Elvis Presley-t, vagy a Beatles-t persze, hogy megjegyeztük, hiszen õk voltak az elsõk. De ki jegyzi a hasonlókat manapság, amikor már ezerszámra teremnek? Mit hallgattál két éve, olyannyira lelkesen? Ki jegyzi már a filmeket, az olimpikonokat, s a kultúra megannyi válfajának eredményeit? Nincs már semmi új, az emberiség telezabálta magát szaloncukorral, már hány tõle, pedig eleinte milyen jó volt. Már az értékes sem kell, holnapra úgyis jön az Interneten a másik. A tizenöt perc hírnévbõl tizenöt másodperc se maradt.
+<BR><BR>
+
+Valahol örülök, hogy a demoscene, ez a kilencvenes évekbeli jelenség, nem érte meg a hanyatlás korát. Maradjon csak meg a mi tizenéves korunk, a kötött pulóverekkel, az <I>Aliens</I>-szel és a szerepjátékkal, no meg a Commodore 64-essel annak, ami volt. Ma már nincs helye ilyesminek. Ma már akárki tud bármit, vagy ha nem, hát rákeres, és talál hasonlót. Ugyan már, még hogy kilencvenes évek.
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20061228.html">
+<B><< elõzõ nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20061230.html">
+<B>következõ nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+<BR><BR>
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,114 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2005.12.07., szerda</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Nehéz úgy blogot írni, ha az ember nem akar. Ma úgyse sok érdekes történt velem, leszámítva egy igen idétlen tévém&ucirc;sor megtekintését, melyben néhány lamer elmagyarázta, mi az a blog, és mire jó.
+<BR><BR>
+
+Ezúton kérek mindenkit, hogy a karácsonyi polórendelését ne az utolsó percben adja fel. Adjátok fel most. G&otilde;zer&otilde;vel csomagoljuk a cuccokat, s néha megesik, hogy késünk vagy kifogyunk az anyagból, ezért jobb, ha most okoztok torlódást, mint karácsony el&otilde;tt két nappal. Piros n&otilde;i sztreccstop átmenetileg nincs, jöv&otilde; pénteken kapunk; rendelni lehet, de csak akkor tudjuk kiszállítani vagy átadni, ha megérkezik.
+<BR><BR>
+
+És ne írjatok levelet, ha lehet. Pár napig nem tudom elolvasni, válaszolni meg úgyse lesz id&otilde;m.
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20051206.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+
+<A HREF="20051208.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

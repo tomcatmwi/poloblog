@@ -1,0 +1,160 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<!-- Sunbelt Kerio Popup Killer - script has been inserted by KPF -->
+<script type="text/javascript">
+<!--
+var NoPopupsDone = 0;var CurrWindowOpen = window.open;var CurrWindowOpen2 = window.open;var orig_setTimeout = window.setTimeout;var orig_setInterval = window.setInterval;if ( window.showModelessDialog ) { var orig_showModelessDialog = window.showModelessDialog;} if ( window.showModalDialog ) { var orig_showModalDialog = window.showModalDialog;} 
+var cnt = 0;var popupType = "direct";var KPF_LOG_URL = "http://127.0.0.1:44501/pl.html?";var KPF_TIMEOUT = 100;var onUnloadFlag = false;var KPF_CompleteLoaded = false;
+function nullMethod() {}function nullWindow() {	 this.window = new Object(); this.document = new Object(); this.document.open=this.document.close=this.document.write=this.document.writeln=nullMethod; this.alert=this.back=this.blur=this.captureEvents=this.clearInterval=this.clearTimeout=this.close=this.confirm=this.dump=this.escape=this.focus=this.forward=this.GetAttention=this.getSelection=this.home=this.moveBy=this.moveTo=this.open=this.print=this.prompt=this.releaseEvents=this.resizeBy=this.resizeTo=this.scroll=this.scrollBy=this.scrollByLines=this.scrollByPages=this.scrollTo=this.setCursor=this.setInterval=this.setTimeout=this.sizeToContent=this.stop=this.unescape=this.updateCommands=nullMethod;}
+function destroyIframe(ifr){ if (ifr != document.getElementById("kpfLogFrame"))   { var x = ifr.parentNode.removeChild(ifr);    delete x;  };}
+function sendStream(s, idx, kpf_pt){ try {        var ifr = document.getElementById("kpfLogFrame");   var tmp = ifr.cloneNode(true);   tmp.id  = "ifr_" + idx;   var s2 = "srv=" + document.location + "&url=" + s + "&pty=" + kpf_pt;   tmp.src = KPF_LOG_URL + escape(s2);   document.body.appendChild(tmp); } catch (e) {   orig_setTimeout("sendStream('" + s + "', " + idx + ",'" + kpf_pt + "')", KPF_TIMEOUT); }}
+function sendUrl(url){ if (onUnloadFlag)   sendStream(url, cnt++, popupType); else  {  try {   orig_setTimeout("sendStream('" + url + "', cnt++,'" + popupType + "')", KPF_TIMEOUT);  }   catch (e)   {}	  }}
+function newOpen(url, name, atr) {wnd = new nullWindow();wnd.focus = nullWindow;wnd.opener = this.window;sendUrl(url);return(wnd); }
+function newOpen2(url, name, atr) { sendUrl(url); return(new nullWindow());}
+function stopPopups(kpf_pt) { popupType = kpf_pt; CurrWindowOpen = window.open; window.open = newOpen2; }
+function startPopups(kpf_pt) { window.open = CurrWindowOpen;  popupType = kpf_pt;}
+function my_setTimeout(one, two) { if (typeof(one) == "function") {    function myFun(){}    myFun=one;    function newFun() {     stopPopups('ontimer');      myFun();      startPopups('direct');    }	    try {      return orig_setTimeout(newFun,two);    }    catch (e)  {      try {	    return eval("newFun()");      }      catch(e) { }    }   }  else {    try {      return orig_setTimeout("stopPopups('ontimer');"+one+"; startPopups('direct');", two);    }    catch (e)  {      try {        return eval("stopPopups('ontimer');"+one+"; startPopups('direct');");      }      catch(e) { }    }  }}
+function my_setInterval(one, two) {  if (typeof(one) == "function") {    function myFun(){}    myFun=one;    function newFun() {      stopPopups('ontimer');      myFun();      startPopups('direct');    }	    try {      return orig_setInterval(newFun,two);    }    catch (e) { }  }  else {    try {      return orig_setInterval("stopPopups('ontimer');"+one+";startPopups('direct');", two);    }     catch (e) { }  }}
+function my_onload() { var my_retcode = true; stopPopups("onload"); if(orig_onload)  my_retcode = orig_onload(); startPopups("direct"); KPF_CompleteLoaded = true; return my_retcode; }
+function my_unload() {  var my_retcode = true; var cnt = 0; stopPopups("onunload"); onUnloadFlag = true; if(orig_onunload)   my_retcode = orig_onunload(); startPopups("direct"); return my_retcode;}
+function my_windowopen(url, name, atr){ if ( (! KPF_CompleteLoaded) || (document.all && event != null && event.type == "mouseover") )  {  if ( ! KPF_CompleteLoaded) {   popupType = "direct";  }  else {   popupType = "mouseover";  }  sendUrl(url);  popupType = "direct"; } else {   try {   return CurrWindowOpen2(url, name, atr);  }   catch (e)   {}  }}
+function my_showModelessDialog (url , arguments , features) { if (!NoPopupsDone) {   var wnd = new nullWindow();  popupType = "direct_dialog";  sendUrl(url);  popupType = "direct";  return wnd; } if (popupType!="direct" | (event && event.type == "mouseover") ) {   var curr_popup = popupType;  if (event && event.type == "mouseover") {   popupType = "mouseover";  }    popupType = popupType+"_dialog";  sendUrl(url);  popupType = curr_popup;  return ( new nullWindow() ); } else {   return ( orig_showModelessDialog(url , arguments , features) );  } }
+function my_showModalDialog (url , arguments , features) { if (!NoPopupsDone) {   popupType = "direct_dialog";  sendUrl(url);  popupType = "direct";  return ""; } if (popupType!="direct" | (event && event.type == "mouseover") ) {   var curr_popup = popupType;  if (event && event.type == "mouseover") {   popupType = "mouseover";  }    popupType = popupType+"_dialog";  sendUrl(url);  popupType = curr_popup;  return ""; } else {   return ( orig_showModalDialog(url , arguments , features) );  } }
+function nopopups() { if(!NoPopupsDone)   {  NoPopupsDone = 1;  orig_onload = window.onload;  orig_onunload = window.onunload;  window.onload = my_onload;  window.onunload = my_unload;  window.open = my_windowopen;  }}
+window.setTimeout = my_setTimeout;window.setInterval = my_setInterval;window.open = newOpen;if ( orig_showModelessDialog ) { window.showModelessDialog = my_showModelessDialog;}if ( orig_showModalDialog ) { window.showModalDialog = my_showModalDialog;}
+//-->
+</script>
+<!-- Sunbelt Kerio Popup Killer - end of the script inserted by KPF -->
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2006.10.02., hétfõ</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Mielõtt nekiszaladnánk a mai blognak, egy magánjellegû üzenet. Vathreczky Bálint, légy szíves, jelentkezz az üzenõdobozban, mert a telefonszámodat a telefonommal együtt elvitték a zsaruk, az e-mail címedet meg nem találom.
+<BR><BR>
+
+Eléggé el vagyok zárva a hírektõl, bár azért már nem teljesen, de még így is nehezen jutnak el hozzám a dolgok. Nemzetközi sajtótájékoztatót tartottak ma a Kossuth tériek, ahol fõleg a rendõri brutalitásról volt szó. Néhány fideszes képviselõ elvitte a dolgot a legfelsõbb ügyészhez, aki állítólag tombolt, amikor meghallotta, mit mûveltek a rendõrök. Borítékolom, hogy fejek fognak hullani. 
+<BR><BR>
+
+Volt egy srác például, aki állítólag egy jókora beton terelõelemet dobott a rohamrendõrökre, meg is sebesítve közülük néhányat. Elfogták, bevitték, és a fogdán módszeresen összetörték valamennyi csontját. Értsük ezt szó szerint. Most legózzák össze a kórházban. Elõtte aláírattak vele egy papírt, hogy nem bántalmazták. Erre persze sok bepállott seggû bérrabszolga kárörvendõen felröhög, úgy kell neki, mások meg komoly pofával bizonygatják, hogy igen, a rendõrök jól tették, és így tovább. No de kapjunk már észbe! A rendõr dolga-e, hogy ítélkezzen? Nem mondom, ha kap bent pár pofont, esetleg leesik a lépcsõn, az még belefér. Ez már õsrégi hagyomány. Na de jó reggelt kívánok! Elítélték-e ezt az embert? Nem. Állt-e bíróság elõtt? Nem. Alkalmas-e az úgynevezett demokratikus jogrendszer, amire oly büszkék egyesek, hogy megtoroljon, példásan megbüntessen egy ilyen bûncselekményt? Igen. Kaphat érte tizenöt év börtönt is. A szemléltetés kedvéért, ez azt jelenti, hogy bemegy huszonöt évesen, ereje teljében, és kijön negyvenévesen, csontra soványodva, miután az elmúlt tizenöt évet tökéletesen ingerszegény környezetben töltötte, egy fürdõszobányi helyen, három másikkal összezárva, heti egyszer látva családját, egyetlen levél, telefon nélkül bárki mástól, mint akit engedélyeztek. Nem olyan vicces ám, még akkor se, ha van tévé a zárkában. Ezért is hívják a börtönt <I>büntetésvégrehajtó</I> intézetnek. Honnan és hogyan vették a bátorságot a rendõrök, hogy tömegesen vetkõzzenek ki emberi mivoltukból, fittyet hányva törvénynek, etikának, sõt, alapvetõ lovagiasságnak, ami egy harcosnak mindennél fontosabb kellene, hogy legyen? Megbilincselt embert nyomorékra verni, gyáva patkányság. Egy szakasz felfegyverzett rohamrendõrre rátámadni, akármennyire is bûncselekmény, azért gyávaságnak nem nevezhetõ. A rendõr netán nem azért van, hogy a törvényt és a rendet fenntartsa, annak õre legyen? Nem azért kap-e felszerelést, fegyvert és törvényi védelmet, hatalmat, mert megbízunk benne, hogy nem él ezzel vissza? Nem azért kap komoly kiképzést, pszichikai és fizikai felkészítést, hogy ilyen helyzetben se veszítse el a fejét, és kezdjen huligán módjára õrjöngeni?
+<BR><BR>
+
+"Valahol meg lehet érteni", hát persze, valahol mindenkit meg lehet érteni, valahol a makói kiscsajt felgyújtó cigányt is meg lehet érteni. (Apropó, neki senki sem törte össze a csontjait.)
+<BR><BR>
+
+Elébe megyek a sok faszparasztnak, akik mindjárt nyihogni kezdenek, hogy bezzeg a cigányoktól nem sajnálnám az ilyen bánásmódot. Nem, valóban nem, de nem ítélet nélkül. Rendben, legyen botozás, kerékbetörés, kaloda, és bitó, mint ahogy van is egyes országokban, de ott is elõbb ítélkeznek, és utána trancsíroznak. Hadd védje magát az a betonhajigáló, majd ha nem sikerül, akkor meg lehet szopatni. Van rá módszer. Vagy ha ez nem így mûködik, akkor tessék nyíltan megmondani, hogy nincs törvény, mert nem vonatkozik mindenkire.
+<BR><BR>
+
+Börtönnaplóm folytatása végre megérkezett Dr. Gaudihoz, de még nem küldte át, türelem, majd holnap. Addig egy kis érdekesség. Rend- és igazságügyi miniszterünk, Petrétei József néhány napja sajtótájékoztatót tartott Pozsonyban, szlovák kollégájával, és büszkén eldicsekedett a tót médiának, hogy a magyar titkosszolgálat is közremûködött Toroczkai László néhány héttel ezelõtti, pozsonyi meghurcolásában, adatokkal látva el a szlovákokat Laci mozgásáról, terveirõl. Ezután kijelentette, hogy a Nyitrán megvert diáklány ügyében fellépõ Toroczkait szerinte is helyesen toloncolták ki Szlovákiából, mert "megzavarta volna a két ország kapcsolatait." Hát, igen, vannak ilyen baromi veszélyes emberek.
+
+
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20061001.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+
+<!-- Sunbelt Kerio Popup Killer - script has been appended by KPF -->
+<iframe id="kpfLogFrame" src="http://127.0.0.1:44501/pl.html?START_LOG" onload="destroyIframe(this)" style="display:none;">
+</iframe>
+<script type="text/javascript">
+<!--
+	nopopups();
+//-->
+</script>
+<!-- Sunbelt Kerio Popup Killer - end of the script appended by KPF-->

@@ -1,0 +1,130 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-324</B><BR>
+2005.03.30.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<BR><BR>
+
+<I>A blogot Berta írja, a Droidzónát meg az olvasók. Ez van, nincs kedvem írni. Azért csak olvassatok. Ezt itt Ali küldte nektek.</I>
+<BR><BR>
+
+A történetünk egy Pesthez közeli, kis faluban játszódik, a f&otilde;h&otilde;s bedig ezen kis falu nagybecsû lelkésze, aki bizony el&otilde;szeretettel verte a gyermekeit... Azért nem kell durva dolgkra gondolni, egy-két pofon, néha egy kis rugdosódás.
+Nos, a cimbim ezen droid leányával járt egy iskolába, és elég jó barátok lettek, szimpik voltak egymásnak. Hát mit csinál ilyenkor egy fiatal srác és egy lány? Összejöttek, járni kezdtek...
+<BR><BR>
+
+Egyik nap a kiscsaj a suliban összeesett, és elég szarul volt amúgy is. Spanék kérdezték, hogy mi a baj (a verésekr&otilde;l tudtak), mire &otilde; elmesélte, hogy kapott egy elég szép nagy pofont, és azóta fáj a füle. Több sem kellett, eljöttek a suliból, és elmentek látleletet vetetni. Az eredmény:a pofon következtében megrepedt a dobhártya. A látleletet aztán szépen lefénymásolták, és haverom - egyik osztálytársa társaságában - látogatást tettek a szeret&otilde; apánál. Megmutatták neki a fénymásolatot, közölték hogy tudnak a "dolgairól", valamint azt is hogy a látlelet eredetije náluk van, és ha a lány
+ezek után is durva bánásmódról tesz nekik beszámolókat, kénytelenek lesznek az esetet nyilvánosságra hozni. Ami pedig ugyebár nem vetne túl jó fényt egy lelkészre. Igen, megzsarolták.
+<BR><BR>
+
+A droid erre bejárta a színskála majd összes árnyalatát, de nem tehetett semmit, magába kellett fojtania dühét. Azóta ugyan már nem tartják a kapcsolatot - a havert kirúgták a suliból - de amíg együtt voltak, bizony senkinek nem esett bántódása a családból.
+<BR><BR>
+
+Jó sztori még err&otilde;l a köcsögr&otilde;l. Volt egy Ladájuk. Haver jön ki a házból, nagy csattanás a kocsi fel&otilde;l, a droid segge kint
+lóg. Odamegy, látja hogy egy fúrógép van a kezében, és az autó padlójába lukakat fúrkál. A "mitcsinál" kérdésre haver a következ&otilde; választ kapta (sic):
+<BR><BR>
+
+- Beázik ez a szar kocsi, kifúrom az alját, HOGY NE ÁLLJON MEG BENNE A VÍZ!
+<BR><BR>
+
+Atya-gatya...
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050329.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050331.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

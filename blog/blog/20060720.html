@@ -1,0 +1,124 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2006.07.20., csütörtök</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+A nagy hülyéskedésben el is felejtettem, hogy tegnap évforduló volt. Nem csoda persze, hiszen pár napja hallottam a dologról elõször én magam is. Pedig igazán nem mondhatni, hogy nem érdekel a történelem. De hiába keresitek ezt az esetet a Google vagy a Wikipedia segítségével is: éppen úgy igyekeznek eltussolni, mint a tiszaeszlári gyilkosságot vagy a Dreyfuss-pert, ami szintén nem része a történelemkönyvnek.
+<BR><BR>
+
+1907 július 18-áról 19-ére virradó éjszaka a Pest megyei Dános és Vacs (ma: Pusztavacs) között fekvõ Szarvas-csárdát vándorcigányok támadták meg. A tulajdonost, feleségét, kislányát és egy vendéget - egy közeli tanyára való tejeskocsist - meggyilkolták, a két nõt az egész csorda megerõszakolta, majd az épületet kifosztották és felgyújtották. Természetesen egy ilyen borzalmas gaztett országos felháborodást váltott ki. Az elkövetõk azonban kivétel nélkül megúszták 6-12 év börtönnel.
+<BR><BR>
+
+A dánosi gaztettrõl természetesen mindmáig úgy emlékezik meg a cigánybarát média - már ha egyáltalán - mint koncepciós perrõl, amelyben szegény, ártatlan cigányokat fogdostak össze a kegyetlen csendõrök, és ártatlanul (naná!) börtönözték be õket. De ez nem mai keletû dolog, még Ady Endre is felszólalt a gyilkosok védelmében: 
+<BR><BR>
+
+<I>"Igen, a csendõrség, a mi csendõségünk, ért a gyilkosok kinyomozásához, sõt túlságosan ért. Kiváló csendõségünkkel már nem egy ízben esett meg, hogy egy gyilkos helyett egy gyilkossághoz három gyilkost is talált. (...) Az "azt mondják" s némely törvényszéki tárgyalás adatai szerint a gyanúsított ember kap elõször is húsz erõs pofont. Ez azt akarja jelenteni, ha jegyzõkönyvi nyelvre fordítjuk: mi az ön neve, uram? A jegyzõkönyvbe pedig sok adatot foglalnak s a pofonoktól még az oláh cigány is elszédül.</I> 
+<BR><BR>
+
+Ady fenti sorait elõszeretettel citálják ma egyesek, mintha neves költõnk legalábbis szakértõje lett volna a bûnügyi nyomozásnak, és vitathatatlan lenne, hogy egy gyilkosságot csakis egyetlen ember követhet el. Azt már gondosan elhallgatják, hogy ez az ügy fordulópont volt a magyar kriminalisztika történetében, ugyanis elsõ ízben azonosították Magyarországon ujjlenyomat alapján egy bûncselekmény elkövetõit. Ez volt végül a bizonyíték a tettesek ellen, nem pedig holmi csendõrpofonok. Megjegyzem, az valóban úgy derült ki, kiket kell lefogni, hogy a cigánykaraván összes tagját addig püfölték, amíg meg nem mondták, kik jártak aznap éjjel a csárdánál. De aztán ezeknek az ujjlenyomatát összevetették a helyszínen találtakkal, s nota bene, egyeztek. Holmi emberi jogokkal vacakolva még ma is lezáratlan lenne az ügy.
+<BR><BR>
+
+Egy olvasóm javasolta, hogy július 19-ét kinevezhetnénk a cigánybûnözés áldozatai emléknapjának. Jó gondolat. Jövõre lesz a századik évforduló, majd csinálunk valami megemlékezést.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060719.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060721.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,114 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-418</B><BR>
+2005.08.10.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+
+<P ALIGN="justify">
+MBR nev&ucirc; kedves olvasóm egy érdekességet mesélt a minap a MÁV fantasztikus infrastruktúrájának egy részér&otilde;l, nevezetesen a Budapest-Békéscsaba vonalról. Ez egy remek, modern vasútvonal, kétvágányos, villamosított, meg minden, ami kell. Olvasómnak felt&ucirc;nt azonban, hogy Békéscsaba el&otilde;tt a vonat mindig áttér a jobb oldali vágányra, a bal oldali pedig innent&otilde;l kezdve vastagon rozsdás, vagyis sosem használják. Megkérdezte vasutas ismer&otilde;sét, hogy vajon miért?
+<BR><BR>
+
+Nos, azért, mert amikor a vonalat építették, a síneket lefektették ugyan, de amikor a villamos fels&otilde;vezetéket építették, elfogyott a pénz, ezért a vezeték Békéscsaba el&otilde;tt két kilométerrel véget ér. Csak az egyik oldalt fejezték be a városig. Hogy emiatt a vonal jó ötven kilométeres szakasza egyvágányú pályaként üzemel, félig kihasználva, és voltaképpen tök fölösleges volt a másik sínpárra pénzt kidobni, mellékes! Ez így jó a MÁV-nak, és kész...
+<BR><BR>
+
+Egy másik, hasonló anomália Dél-Magyarországon található, ha jól tudom, Kalocsánál. Aki el akar jutni a déli országrészbe, például Kecelre, annak többször is át kell szállnia, mert a vágány egyszer csak véget ér. Miért? Mert az ötvenes években, amikor a háború után újjáépítették a vasutat, Rákosiék aggódtak, hogy az áruló Tito egyszer majd megtámadja Magyarországot, és akkor vasúton gyorsan eljuthatnak Budapestig. Fogták hát, és kettévágták a vonalat, hogy a jugoszláv hadsereg rakodhasson át mindent. Ez még rendben is volna, de a MÁV illetékesei a helyzetet a mai napig sem rendezték...
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050810.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050812.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

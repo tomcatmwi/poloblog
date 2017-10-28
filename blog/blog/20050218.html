@@ -1,0 +1,130 @@
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2005.02.18., péntek</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+No, sikerült megtalálni György Pétert, bár kissé kacifántosan. Az ELTE bölcsészkarán - mert ott tanít a faszi, hol máshol - nem veszik fel a telefonokat, végül mobilszámát egy oktatóközpont adta meg, ahol vagy két évvel ezel&otilde;tt tanított. Beszélgetésünk igen rövid volt, és valahogy így zajlott:
+</P>
+<CENTER>
+<IMG SRC="20050218.jpg">
+</CENTER>
+<P ALIGN="justify">
+
+- Halló! Jó napot kívánok, György Péter úr?<BR>
+- Kicsoda maga? - válaszolt egy gyomorbajos, ideges hang.<BR>
+- Tomcat vagyok, blogger, a tomcatpolo.hu blogot szerkesztem. Interjút szeretnék Önnel készíteni. Úgy tudom, a napokban feljelentést kíván tenni egy, az Interneten megjelent játékprogram miatt.<BR>
+- Honnan tudja a telefonszámomat?!<BR>
+- Az XY oktatóközpont adta meg.<BR>
+- Az kizárt!<BR>
+- Úgy gondolja? ZX munkatárs adta meg, a tanulmányi felel&otilde;s, azzal, hogy ez egy legalább két éves telefonszám.<BR>
+- De mit akar t&otilde;lem! Én a magánéletemr&otilde;l nem kívánok beszélni!<BR>
+- Nem a magánéletér&otilde;l szeretnék, hanem err&otilde;l a feljelentésr&otilde;l.<BR>
+- De ez a magánszámom!<BR>
+- Elnézést, akkor volna egy másik telefonszám, ahol nem zavarom?<BR>
+- Én... Én magával nem akarok szóbaállni! Még fel mer hívni? Mit képzel!<BR>
+- Miért?<BR>
+- Én a tomcatpolo.hu-val nem kívánok szóbaállni! Maga tett megjegyzést a származásomra! És még fel mer hívni?!<BR>
+- Úgy négyezer olvasómat érdekelné, mit szeret ennyire a cigányokon...
+<BR><BR>
+
+Az utolsó mondatot már nem hallotta, mert letette a telefont. Hát, gratulálok, kedves György Péter, remélem, engem is rövidesen feljelent, ha másért nem, hát azért, mert kiröhögtem. Örülök, hogy ilyen érett gondolkodású értelmiségiek oktatják az ifjúságot Magyarországon. 
+
+</P>
+
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050217.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050219.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

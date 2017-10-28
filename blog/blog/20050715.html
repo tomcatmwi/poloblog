@@ -1,0 +1,114 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2005.07.15., péntek</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+A mai nap igen korán kezd&otilde;dött, a blogot is korán írom. Fél nyolc van, és én most jöttem vissza a nyomdából, ahol megtekintettem a <I>Freax</I> chromalinját - vagyis a próbanyomatot. Nagyszer&ucirc; munkát végeztek, minden szín tökéletes, minden pixel a helyén van, a screenshotokon semmi buta antialias, minden olyan, ahogy annak idején a C-64 vagy az Amiga képerny&otilde;jén megjelent.
+<BR><BR>
+
+Most pedig itt ülök a blog el&otilde;tt, Marylin Manson szól, mert az jó, és megjegyzem, jó lenne, ha a Jobbik találna valami jobb szórakozást, mint az augusztusi Manson-koncert ellen való tüntetés. Állítólag azért kell Mansont kihajítani Magyarországról, mert gonosz sátánista, drogos, buzi, meg miegymás. Nos, err&otilde;l annyit, hogy Manson egy bizonyos kultúra képvisel&otilde;je - lehet fikázni meg támadni, amiért ennek a kultúrának nem azonosak az értékei egy másik kultúráéval, de ne pont az támadja, aki képes együtt felvonulni a neonáci Vér és Becsülettel "a magyar értékek védelmében", illetve értelmesebb politikai akció nem jut az eszükbe, mint Trabantot toló fiatal szocialistákat lökdösni. (Ami egyébként szoci részr&otilde;l sem volt egy túlzottan értelmes ötlet, de ez más kérdés.) Jó lenne, ha a Jobbik észbe kapna, és felfogná, hogy Magyarország sohasem lesz vegytiszta katolikus ország, és a keresztyén értékek el&otilde;mozdításának nem feltétlenül az legjobb módja, ha barom módjára mindenki ellen szemforgatva óbégatunk, akkor is, ha felesleges. Ez éppen úgy az ellenkez&otilde; hatást fogja kiváltani, mint az antirasszisták józsikázása. Vannak értelmes emberek a Jobbikban, ilyenkor hová lettek?
+<BR><BR>
+
+Augusztus 23, Budapest Sportaréna. Ki jön?
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050714.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050716.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

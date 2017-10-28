@@ -1,0 +1,124 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>2006.12.17., vasárnap</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Kicsit átmegyünk techblogba. Elmesélem nektek, miért nem mûködik rendesen a bolt Internet Explorerrel, aztán mindenki döntse el, én vagyok-e hülye, vagy a Microsoft. Igazából a Droidzónába lenne való az egész, de oda most más kerül. A téma azért is érdekes, mert ezzel nyilván más is szopott már, vagy fog vele, és nem egyszerû rájönni, mi a faszért nem mûködik IE-ben az, ami Firefoxban igen, s ami mellesleg mindenféle szabványnak megfelel.
+<BR><BR>
+
+A probléma a cookie-k körül bonyolódik. Az RFC szabvány szerint egy webböngészõnek minimum 20 darab cookie-t kell tudni fogadnia egy domainrõl. Microsofték ezt úgy értelmezték, hogy maximum húszat. Me' az úgy jó. Ha létrehozol egy huszonegyediket, az nem jön létre, de errõl a browser nem szól neked egy kukkot se. Aztán nézhetsz, hogy hova tûnt, amit beállítottál. Hogy ez mire jó, arra nincs magyarázat, bizonyára a <I>biztonság</I> az oka, hiszen sok a köcsög, még a végén telerakják cookie-val a vinyót.
+<BR><BR>
+
+No de ez még hagyján! Az RFC szerint egy cookie maximális mérete, alapbeállítások mellett, 4096 byte lehet. Microsoftéknál ez úgy értelmezõdött, hogy az összes cookie együttes mérete lehet ennyi. Bravó!! Igen, tudom, a cookie-kat a Netscape találta ki, azoknak meg a kurva anyját, tehát szoktassuk le a fejlesztõket a használatáról. Tessék szerveroldalon megoldani mindent, több tízezer látogatóval is.
+<BR><BR>
+
+Fentiek természetesen sehol sincsenek dokumentálva, miért is lenne...
+<BR><BR>
+
+Ezért nem mûködött napokig rendesen a polóbolt, ezért "felejtette el" folyton rendelés feladásakor, hogy mi van a vödörben. Eszem-faszom megáll ezeken a redmondi juppifaszokon. Ezeknél már csak a Macromedia érdekesebb.
+<BR><BR>
+
+Az már csak mellesleg érdekes, hogy ASP-ben lehet 50 cookie-t is csinálni, és ott méretkorlát sincs, tehát úgy mûködik, ahogy kell. Na, vajon miért pont a Micro$oft elbaszott programnyelve mûködik egyes-egyedül rendesen IE alatt? Mert a kisnyúl szõrös, nyilván.
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20061216.html">
+<B><< elõzõ nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20061218.html">
+<B>következõ nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+<BR><BR>
+
+</BODY>
+</HTML>
+

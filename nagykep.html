@@ -1,0 +1,27 @@
+<HTML>
+<HEAD>
+
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<TITLE>:: kattints a képre az ablak bezárásához ::</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function loadpic() {
+  s = '';
+  for (t=document.location.search.length-1; document.location.search.substring(t, t+1) != '='; t--) { 
+      s = (document.location.search.substring(t, t+1))+s;
+  }
+
+  document.lofasz.src=s;
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="loadpic();" BGCOLOR="#2F1724" TOPMARGIN="0" LEFTMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0">
+<A HREF="#" ONCLICK="window.close();"><IMG NAME="lofasz" BORDER=0></A>
+</BODY>
+</HTML>
+

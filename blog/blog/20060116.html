@@ -1,0 +1,123 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2006.01.16., hétf&otilde;</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Készülget az új engine, és err&otilde;l csupa jót lehet csak elmondani, például nem lesz több elveszett rendelés, lehet követni, hogy hol tart a csomag, meg mi se fogunk eltévedni a raktárban. Az az igazság, hogy a mostani engine egy rakás szar, fel is borult a rend karácsony környékén. Már kezdünk talpraállni. El&otilde;bb-utóbb még árut is kapunk, amint a nagyker is magához tér...
+<BR><BR>
+
+Elkezdtem írni egy riportkönyvet a cigányb&ucirc;nözésr&otilde;l. Lesz bel&otilde;le jajveszékelés, az biztos. Két-három hónap múlva készülhet el. Persze, nem ilyen <I>"hö, tudtátok, hogy minden cigány b&ucirc;nöz&otilde;?"</I> témájú lesz, hanem szépen körbejárva, ahogy egy riportkönyvnek ki kell néznie, megközelítve a dolgot a rend&otilde;rség, a média, a nemzetbiztonság és a történelem oldaláról egyaránt. Közben készül egy másik project is, amihez már van PHP programozó, köszi mindenkinek, aki jelentkezett. Ja, meg a Freax Art Album els&otilde; kötete. A Droidzóna 2. meg már kész van, csak ki kéne adni. Hej, de aktív vagyok mostanság.
+<BR><BR>
+
+Hogy a szobában mikor rakok rendet, azt még nem tudom.
+<BR><BR>
+
+Loydi közben nekiállt beperelni a Roma Sajtóközpontot, valamint a Sláger Rádiót, a romapage.hu-t és a hirszerzo.hu-t. A RomaPage már közölte, hogy nem hajlandó helyreigazítást közölni, mert a hírt a Roma Sajtóközponttól kapták, nem &otilde;k írták. A kis naivak, okoskodnak, ahelyett, hogy elolvasnák a PTK-t. De hát mit várunk egy rakás ELTE BTK-stól?
+<BR><BR>
+
+Sokan kérdezgettétek, mikor lehet csatlakozni a Normális Emberek Kisebbségéhez. Türelem, egyel&otilde;re el kell kezdeni az eljárást. Január végén konzultáljuk meg a jogi dolgokat, aztán majd ha lesz mit aláírni, szólok itt, a blogban. Ha segítség kell, azt is kiírom, köszönöm mindenkinek, aki máris aktívkodni akar.
+<BR><BR>
+
+E sorok írása közben Petike23 a #hungary közönségét gy&otilde;zködi, hogy harcoljanak ellenem. Érdekes ember.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060115.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060117.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

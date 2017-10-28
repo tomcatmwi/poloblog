@@ -1,0 +1,129 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2005.06.11., szombat</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+<B>06:49</B><BR>
+Egy teherautó fedélzetérõl jelentkezem, kedves nézõink, ahol minden jelen van, amit utálni tudok: nyálas zene a hangszórókból (a sofõr rémületemre egész raklapra való Hip Hop Boyz, 4F Club és egyéb lejárt divatzene CD-t pakolt be az ülés mögé), dohányfüst (bár dicséret illeti a MAN mérnökeit a szellõzés brilliáns megoldásáért), illetve ugyebár hajnal van, tehát még korán is keltem, basszameg, ahogy az Indexen írnák. Éppen most zötyögünk el a Komjády uszoda elõtt, és külön tapsot érdemlek, amiért a nikkelbolhaként pattogó kocsiban nem ütök mellé a billentyûknek. Útvonalunk Pozsonyt, Prágát, Berlint érintve jut el a Balti-tengerig, ahol Sassnitzben kompra szállunk, imbolygunk négy órát Trelleborg kikötõjéig, majd onnan még 250 kilométert autózunk Jönköping városáig, ahol a Dreamhack fedõnevû LAN party lesz. BiG, Loydi, D. Robin Attila és barátnõje BiG kocsiján jönnek utánunk mintegy 12 órával késõbb, Sassnitzben találkozunk.
+<BR>
+Na, az autópályáig berekesztem a blogírást, mert kiköpi a lelkét a laptop. Berlinig még jó pár száz sor Flash kódot meg kell írnom, mert nem volt idõm befejezni a megrendelõ progit, amivel a partyn a júzerek majd összedobálhatják, hogy milyen polót akarnak. Ihaj-csuhaj.
+<BR><BR>
+
+<B>07:24</B><BR>
+Ennek a zötykölõdve programozásnak az a mellékes szépsége, hogy közben meg kell tanulnom egy számomra teljesen ismeretlen technológiát. Shared Objects. Állítólag szerencsére elég egyszerû. No, majd meglátjuk.
+<BR><BR>
+
+<B>09:27</B><BR>
+Érdekel valakit, hogy a szlovák határnál állunk és beakadtunk egy halom kamion közé? Engem sem. Mégis néznem kell, a fene enné meg. Ráadásul nem bírok rájönni, hova a tökbe menti el a Flash a shared objectek adatait. Nehéz az élet, ráadásul félig alszom.
+<BR><BR>
+
+<b>20:27</B><BR>
+Hosszas kényszerpihenõ következett, ugyanis a laptop nem kapott elég petrót a szivargyújtóról, s egyszer csak se szó, se beszéd elkussolt az ölemben. Egészen Prágáig kellett mennünk egy konnektorért, addig azonban semmi említésre méltõ esemény nem történt, hacsak az nem, hogy a szlovák-cseh határon nekiállt kötözködni az ügyeletes fakabát, és nem akart minket átengedni, mert szerinte túl sok matrica volt a szélvédõn. Húsz eurónyi baksis fejében továbbhajthattunk, mindenesetre ezek után megvan a véleményem a cseh rendõrségrõl.<BR>
+Prágában egyórás pihenõ következett, amint azt valami számomra ismeretlen közúti fuvarozási szabályzat elõírja. A sofõr a kocsiban ülve unatkozta végig ezt az idõt, én egy netcaféba mentem, majd megállapítottam, hogy Prága gyönyörû város, kár, hogy nincs idõm bejárni. Továbbutaztunk észak felé, Drezda és Berlin irányába, ahová remélhetõleg még sikerül odaérnünk az engedélyezett idõtartamon belül. Most pedig ismét megkísérelem megfejteni a Flash shared object-jeinek titkait.
+<BR><BR>
+
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050610.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050612.html">
+
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,119 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css"> 
+
+body {  
+        scrõllbar- face- color:         C57575;
+        scrõllbar- highlight- color:    B8B8B8;
+        scrõllbar- 3dlight- color:      C57575;
+        scrõllbar- darkshadow- color:   5C0C21;
+        scrõllbar- shadow- color:       90374C;
+        scrõllbar- arrow- color:        000000;
+        scrõllbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrõllbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-704</B><BR>
+2007.07.25.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<BR><BR>
+
+<I>Exi nem hitte volna, hogy a civilizáció jelen fejlettségi fokán az emberiségnek még mindig problémát okoz egy tartálynyi szemét elszállítása. Pedig...</I>
+<BR><BR>
+
+Január elején történt hogy a boltom elõtt álló konténer mellett az egyik reggel megjelent még egy. Mint a kukásoktól megtudtam, azzal a céllal helyeztette ki az önkormányzat, hogy abba dobálják a háztömb lakói a karácsonyfákat, ne legyen tele velük minden a kuka környékén, mint eddig minden évben. Azt mondták, pár hétig marad, és ingyen van, több helyre is raknak a városban. Eddig szép és jó, örültünk, hogy végre egy okos ötlet is kitelt városkánk bölcs vezetõitõl. Az említett konténerbe persze idõközben az emberek sima háztartási szemetet is szórtak - ha már egyszer ott volt - de nem volt gond, azt is elvitték. Aztán amikor eltelt a néhány hét, s egyik hétköznap délután megjelent egy bazinagy teherautó és néhány jómunkásember. Felkapták a félig telt kukát, a szemem láttára kiborították belõle a szemetet, csak úgy, oda, a másik kuka mellé, meg ahova sikerült. Jutott a járdára is, meg boltom elõtti parkolóba. Aztán elkezdték feltuszkolni az üres tartályt a teherautóra, az eddig begyûjtött néhány társa mellé. Ez egy viszonylag tiszta környéken történt, a háztömb lakóinak sohasem volt szokása, hogy odaszórják a szemetüket a konténer mellé, és az eset idején is teljesen tiszta volt a terület.
+<BR><BR>
+
+Kirohantam, mondom nekik, hogy ezt ugye nem gondolják komolyan, mert még viccnek is rossz. A válasz körülbelül valami <I>"qrvaanyád, mi közöd hozzá, húzzá' el innen"</I> jellegû volt, amihez hozzátették, hogy az õ dolguk csak az, hogy begyûjtsék a konténereket, a szeméthez semmi közük, különben is tilos volt (!) háztartási szemetet belerakni.
+<BR><BR>
+
+Erre én mondtam nekik, hogy rendben, akkor most felhívom a közterület-felügyelõket, hogy õk vajon mit szólnak hozzá, na meg felírom a rendszámot is, a biztonság kedvéért. Anyáztak újból, aztán nagy duzzogva, gyilkos pillantásokkal belapátolták a nagy részét a másik konténerbe, és gyorsan elhúztak. Utána mi még persze egy órát takarítottunk, mire úgy nézett ki a hely, mint korábban.
+<BR><BR>
+
+Hogy az önkormányzat vagy a melósok voltak a nagyobb droidok azt nem tudtam eldönteni.
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20070725.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20070727.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

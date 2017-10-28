@@ -1,0 +1,113 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2006.01.01., szombat</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Új év, új blog - vagy nem is annyira új, de mindenesetre a HTML file-ok immár 2006-tal kezd&otilde;dnek, lezárult egy teljes év, mennek fel a rakéták, aztán vagy szikraes&otilde; lesz bel&otilde;lük, vagy holdraszállás. Igen szolid szilveszter esténk volt, f&otilde;ztem egy kis halavát meg palacsintát, aztán átnéztünk Slin tesóékhoz, ide kétszáz méterre, és ott punnyadtunk tovább. Berta kutya csontot kapott. Bejött a macskájuk, ami állítólag nagyon szereti a kutyákat, és nem fél t&otilde;lük. Mondtam neki, hogy vau, mert Berta épp kiment, és &otilde; nem mondhatta, mire a macska halálos rémületben felmenekült az emeletre. Slin visszahozta, amikor már Berta is ott volt, hadd barátkozzanak. Berta felvillantotta a fogsorát. A macska a házigazdát összekarmolva menekült a kávéf&otilde;z&otilde; mögé, csodálatos módon nem verve le semmit, és onnan kurrogott. Végül Slin kivitte, mint a szatyrot, szanaszét álló karmokkal, és betette valami gépbe, ami ledarálja. De legalábbis nem jött vissza.
+<BR><BR>
+
+Éjfélkor ismét megállapítottam, hogy a gyerekek jobban járnának, ha gyerekpezsg&otilde; helyett igazit itatnának velük, attól csak berúgnak, de kátrány talán mégsincs benne. T&ucirc;zijátékunk nem lévén, l&otilde;ni próbáltunk az éjfél örömére, de meg kellett állapítanunk, hogy a Wadie Flash-Defence töltények bármiféle felhasználásra alkalmatlanok. Húszból 18 elakadt, volt, némelyik úgy, hogy szét kellett szedni a pisztolyt, és ezt van képük önvédelemre kínálni. Aha, majd megkérem a támadókat, hogy várjanak, amíg kipiszkálom.
+<BR><BR>
+
+Épp most van egy éve, hogy Athina hazaindult t&otilde;lem els&otilde; közös szilveszterünk után, és idegbajt kapott, mert nem találta egy intim ruhadarabját. Utóbb kiderült, hogy azzal fogta össze a haját. Hja, mindig is nagy hatással voltam a n&otilde;kre.
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20051231.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060102.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,116 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2005.09.22., csütörtök</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Kedves Olvasó! Míg te itt ezt olvasod, egy újabb hurrikán készül szétcseszni az amerikaiakat. Éppen ott, ahol nem kéne, az olajtermel&otilde; Délen. Véletlen-e, vagy ez a bibliai özönvíz megismétl&otilde;dése? Lesújt a Jóisten?
+<BR><BR>
+
+Nos, azt mindenki tudja, miért volt a Biblia szerint - és más szentírások szerint is - egykor az özönvíz: mert az emberek elállatiasodtak, elfordultak Istent&otilde;l, és ilyesmik, és ezen az öreg bepipult. Az európai ember ma ezt úgy értelmezi, hogy Isten, az egy szakállas öregapó, aki rühelli, ha nem hajlonganak el&otilde;tte. Az európai ember ugyanis hülye, csak a hülyék ezt rendszerint nem tudják magukról. Isten nem szakállas bácsi, hanem a világ rendje, antropomorf alakban, és amit &otilde; mond, azt nem azért mondja, merthogy te most implicite meg leszel büntetve, ha nem úgy ugrálsz, ahogy &otilde; fütyül, hanem azért akarja, hogy éljél úgy, ahogy mondja, mármint tisztességgel és mértékkel, mert hosszú távon kiderül, hogy máshogy nem érdemes. Nem azért nem szabad kiállni a vonat elé, mert megvernek a vasutasok, akik amúgy csak szabadságod korlátozása céljából emeltek sorompót az út közepére, hanem mert elbasz a vonat és nézhetsz. Na, hát valami ilyen sorompó-dolog volt az is, amikor Isten leszólt odafentr&otilde;l, hogy jó lenne ám betartani bizonyos parancsolatokat. Például nem mohóskodni meg harácsolni, mint ahogy a mammutcégek, és gyakorlatilag az egész civilizáció teszi, mert el&otilde;bb-utóbb megborul valami fontos a rendszerben, és aztán lehet pislogni, hogy nahát, tényleg lett özönvíz, pedig azt hittük, csak vicc. Ugyanígy paráználkodni se, mert hirtelen csodálkozhatunk, hogy mennyi csonka család és elmeroggyant gyerek szaladozik körülöttünk, avagy lopni, mert az nem értéktermel&otilde; folyamat, és ha már kormányszinten &ucirc;zik, annak bizony ismerjük az eredményét.
+<BR><BR>
+
+Na ja, ma is szentfazék voltam. Critical Mass report a Droidzónában olvasható.
+
+</P>
+
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050921.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

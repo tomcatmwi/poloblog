@@ -1,0 +1,130 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2005.07.21., csütörtök</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Tegnap a Traubisodáról akartam írni, aztán nem volt kedvem. Most sincs, de néha azért nem árt blogot írni, mert még azt hiszik az olvasók, hogy elutaztam. Ezt majd hétf&otilde;t&otilde;l lehet hinni. Szóval Traubisoda. Tegnap éppen azt ittam, err&otilde;l jutott eszembe, hogy írjak róla. Gyermekkorunk kedvenc üdít&otilde;jét néhol ma is lehet kapni. Ez eddig rendben is volna, de sajnos hamisítják is.
+<BR><BR>
+
+Évekkel ezel&otilde;tt volt szerencsém találkozni az eredeti Traubit gyártó Traubi Rt-vel, és vezet&otilde;jével, Salamon Berkowitz úrral, egy weboldal elkészítése kapcsán. A cég különösebben nem töri magát, hogy az oldalt fejlessze, még ma is az én munkám látható a <A HREF="http://www.traubi.hu" TARGET="_new">www.traubi.hu</A>-n. Ett&otilde;l függetlenül a Traubi min&otilde;ségére nagyon is odafigyelnek. Az id&otilde;s Berkowitz úr korát meghazudtolóan energikus, barátságos üzletember, aki nagyon szívén viseli a cége ügyeit. Természetesen a konkurrencia - a debreceni Ráthonyi Rt. - labdába sem rúghatna a régi balatonvilágosi üzemben igazi sz&otilde;l&otilde;b&otilde;l készített Traubi ellenében a hamisított, állítólag almaléb&otilde;l pancsolt Traubijával, ha Berkowitz úr történetesen nem lenne zsidó. Mert az, mégpedig ortodox, vallásos zsidó.
+<BR><BR>
+
+A Traubi Rt. természetesen évekig perben állt a Ráthonyi Rt-vel a Traubisoda márkanév bitorlása miatt. Ráthonyiék ugyan elveszítették a pert, de óriási mocskolódó sajtótámadást indítottak Salamon Berkowitz ellen a Magyar Nemzetben és más jobboldali lapokban. Mellesleg, mintha mi sem történt volna, a bírósági tiltás ellenére is tovább használják a Traubisoda nevet, és azzal próbálják meggy&otilde;zni a közvéleményt, hogy &otilde;k 100%-osan magyar tulajdonú cég, míg a Traubi Rt. "izraeli érdekeket szolgál."
+<BR><BR>
+
+Nem szolgál. A Traubi Rt. egyetlen célja, hogy igazi Traubisodát gyártson. Err&otilde;l sokszorosan meggy&otilde;z&otilde;dtem, amíg velük dolgoztam. Maximálisan korrekt üzletfelek voltak, egyáltalán nem hozták az üzleti berkekben sokat emlegetett "zsidó mentalitást". Ha valakit zavar, hogy a termékük címkéjén ott virít a rabbi pecsétje, mely igazolja, hogy a Traubi kóser élelmiszer, az ne vegye. Tessék, így néz ki az igazi Traubi, ami tényleg sz&otilde;l&otilde;b&otilde;l készül, az 1971 óta változatlan recept szerint.
+</P>
+<CENTER>
+
+<A NAME="1">
+<A HREF="#1" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050721.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050721_thumb.jpg" BORDER=0></A>
+</CENTER>
+<P ALIGN="justify">
+
+Kételked&otilde;knek javaslom, szerezzenek be egy-egy palackot ebb&otilde;l az italból, illetve Ráthonyiék pacsmagolt löttyéb&otilde;l, és kóstolják meg egymás után mindkett&otilde;t.
+<BR><BR>
+
+És ha most valaki mutogatni kezdi ezt a blogbejegyzést mindenféle fórumokon, és nyáladzva h&otilde;börögni kezd, hogy ezt csak azért írtam, hogy azt bizonygassam, mennyire nem vagyok antiszemita, annak ezúton üzenem, hogy bekaphatja.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050719.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050722.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

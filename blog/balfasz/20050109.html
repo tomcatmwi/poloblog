@@ -1,0 +1,125 @@
+<HTML>
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-262</B><BR>
+2005.01.09.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<BR><BR>
+
+Volt egyszer, mert miért ne lett volna, a nyolcvanas évek közepén egy magyar vállalat, akiknek történetét már nem emlékszem, ki mesélte el, de ezúton is köszönöm neki. Szóval ez a magyar vállalat úgy gondolta, frankó lenne beszerezni egy számítógépet, mert modern korunkban, a korszer&ucirc;ség kihívásainak megfelel&otilde;en, ugyebár. Ez afféle divat volt a kés&otilde;i Kádár-korszakban, mindenféle funkció nélküli, baromi drága nyugati luxuscikkekkel  telepakolni az irodát, meg félmeztelen n&otilde;s naptárral, meg a szocreál és a vicc között imbolygó esztétikumú logós ceruzatartókkal és gemkapocs-tartókkal, mert ez valami olyasmit sugallt, hogy ez itt egy tökös csapat, mernek ám lázadni is, &otilde;k már ugye peresztrojka, új id&otilde;k szele, satöbbi. Na mindegy, szóval nekik számítógép kellett. A kor szellemének megfelel&otilde;en hoztak is Bécsb&otilde;l egy Commodore 64-est. Drága dolog volt ám!
+<BR><BR>
+
+Meghozták a gépet, ünnepélyesen felbontották a dobozt, lehúzták róla a celofánt. Kisebb ceremónia keretében helyezték el leend&otilde; helyén, a sarokban, és mindjárt külön igazgatói értekezleten döntöttek felhasználásának módjáról és szabályairól. Aztán megkérdezték a gép kezelésére kijelölt osztály vezet&otilde;jét, elégedett-e vele?
+<BR><BR>
+
+- Hát, éppenséggel igen - felelte az - de kellene hozzá egy tévé is, hogy használni tudjuk.<BR>
+- Téévééé? - h&ucirc;lt el az igazgatóság.<BR>
+- Igen, mivel monitort nem vettek hozzá...<BR>
+- Maga tévét akar az irodába?!<BR>
+- Hát...<BR>
+- Még mit nem! Hogy egész nap azt bámulják munka helyett? Szó se lehet róla!
+<BR><BR>
+
+Így a kartársak használhatták a C-64-est, ahogy tudták - tévé és monitor nélkül. Vagyis sehogy. Mindenesetre a cég kipipálhatta a megfelel&otilde; rubrikát: igen, mi roppant modernek vagyunk.
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050108.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050110.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

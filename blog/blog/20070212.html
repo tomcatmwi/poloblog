@@ -1,0 +1,496 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>2007.02.12., hétfõ</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Megint egyetlen gép van a családban, mert Athina gépébõl e csodás reggelen kirohadt az alaplap. Ilyen jószág ez a PC, néha se szó, se beszéd, megdöglik, és akkor lészen nagy siránkozás és bazmegezés, könyékig koszos vaslemezek között turkálás, világ végére visszavivés, pult mögül lenézõ mosoly bezsebelés, természetesen a helyszínen tökéletesen mûködés. Amióta könyvet írtam róla, megvan a véleményem a PC-rõl. Elõtte is megvolt, csak nem ennyire.
+<BR><BR>
+
+Tegnap kedves megemlékezésen voltam, vitéz nagybányai Horthy Miklós, Magyarország Kormányzója, Legfõbb Hadúr halálának 50. évfordulója alkalmából. Igaz, errõl a szombati blogban már szóltam. Mintegy ezerötszázan gyûltünk össze a Szent István Bazilikában rendezett ökomenikus szentmisére, majd vonultunk át a Petõfi-szoborhoz a XX. század legkiválóbb magyar államférfijére emlékezve. Miért a legkiválóbb? Nos, ezt kicsit hosszú lenne részletesen kifejteni, különösen egy olyan korban, ahol a nagy emberek tetteivel való kicsinyes kötözködés vitának számít, és amihez mindenkinek végtelen joga van. Ha pedig az illetõ nem Izrael állam megteremtésében szerzett elévülhetetlen érdemeket, akkor pláne nem szabad még beszélni sem róla. Horthy Miklósra éppen ezért nem emlékeznek meg sehol, egy büdös szót sem szólnak róla a médiában, nincs róla megemlékezés az iskolákban, és senki sem visz virágot kenderesi sírjára, leszámítva azt a néhány ezer magyart, akik szombaton ott voltak a tizenötmillióból. Egy mondatban összefoglalva, kedves Olvasóm, bajosan nevezhetnéd magad ma magyarnak, ha Horthy nem teszi, amit tennie kell, nem beszélhetnél Magyarországról sem, legfeljebb csak a történelemórán, de akkor is Madarsko-nak neveznéd, és Jan Szlavomir Sztrcskvcs lenne a neved, vagy valami hasonló. Nem lenne már magyar nyelv, magyar kultúra, nem lenne magyar irodalom, nem lenne március 15-e, és nem lenne zsidóság sem, mert valamennyi kelet-európai német csatlósország vezetõi közül egyedül Horthy Miklós volt képes megakadályozni a holocaust végrehajtását, egészen, amíg õt magát is félre nem állították 1944-ben. Ha mindez nem lenne elég, a magam részérõl annyit tennék hozzá, hogy én magam Horthy Miklós emlékiratainak olvastán értettem meg, mit jelent magyarnak lenni, azon túl, hogy itt lakom. Soha olyan makulátlan tiszta becsületû ember nem vezette Magyarországot, mint a Kormányzó. Szégyen, hogy agyonhallgatják nem csak emlékét, de még a róla szóló megemlékezést is, politikáját pedig Kádáréhoz hasonló zsákutcának minõsítik, és megtagadják szobrának felállítását. Soha egyetlen más ember sem volt pedig, legalábbis Hunyadi Mátyás óta, akinek arcképét szeretettel kitették szinte minden magyar házban, és akire egész nemzetünk egy emberként felnézett!
+<BR><BR>
+
+Nézzétek, mi volt a megemlékezésen.
+</P>
+<CENTER>
+
+<A NAME="1">
+<A HREF="#1" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_1.jpg'; document.wdth=427; document.hght=640; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_1_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A Bazilika bejáratánál nem sokan voltak, amikor megérkeztem<BR>
+</I>
+<BR>
+
+<A NAME="2">
+<A HREF="#2" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_2.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_2_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A kapuban székely szõttesek és egyéb hazafias termékek voltak kaphatóak<BR>
+</I>
+<BR>
+
+<A NAME="3">
+<A HREF="#3" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_3.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_3_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Tabló a Kormányzóról<BR>
+</I>
+<BR>
+
+<A NAME="4">
+<A HREF="#4" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_4.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_4_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Nem csoda, hogy odakint nem volt senki, hiszen mindenki bent szorongott. A szentmise alatt egy almát sem lehetett volna leejteni.
+</I>
+</CENTER>
+<P ALIGN="justify">
+
+Az ökomenikus mise katolikus részérõl lemaradtam, de a református résznél már ott voltam. A celebráló lelkész - felírtam volna a nevét is, ha a hetes buszra emlékeztetõ tömegben be tudok nyúlni a zsebembe a tollért - felidézte, mit is írt Horthy Miklós emlékirataiban Magyarországról.
+<BR><BR>
+
+<I>
+"Gondolataim az Atlanti-óceán partjáról szüntelen haza-szállnak a Duna-Tisza partjaira, édes hazámba, melyet számomra a világ legszebb országa sem pótolhat. Itt naponta látom a tengert, eredeti élethivatásom annyira kedvelt életelemét, és gyönyörködöm benne. Mély a tenger és végtelen... De mélyebb szeretetem, mely szülõhazám-hoz fûz, és végtelenebb vágyódásom, mely a magyar földre és a magyar nép körébe vonz!"
+<BR><BR>
+</I>
+
+Aztán ezt párhuzamba állította azzal, ahogy országunk mai vezetõi beszélnek Magyarországról, de mint mondta, ezt inkább nem idézi ezen a helyen, ebben a ruhában. Nem kellett sok magyarázat Horthy Miklós önvallomásához sem, melyben õszintén kijelentette, egész életében hazájáért tevékenykedett, ezt érezte kötelességének, s ennek tükörpárjához, mely így hangzik: <I>"Hazudtunk reggel, délben és este..."</I>
+
+</P>
+<CENTER>
+
+<A NAME="5">
+<A HREF="#5" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_5.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_5_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Nagy nehezen sikerült elõrébb furakodni, de sajnos így is csak az oldalhajóból kukucskálhattam az eseményeket. Történelmi zászlókat tartva különféle hagyományokat õrzõ katonai csoportok, tengerészek, folyamõrök, a Vitézi Rend tagjai álltak az oltár elõtt, tisztelegve példaképük emléke elõtt.<BR>
+</I>
+<BR>
+
+<A NAME="6">
+<A HREF="#6" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_6.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_6_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A hatvannégy történelmi vármegye zászlai<BR>
+</I>
+<BR>
+
+<A NAME="7">
+<A HREF="#7" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_7.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_7_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A szép szentmisét nemzeti imádságunk eléneklésével zártuk (mellesleg mi vagyunk az egyetlen nemzet, akik imádságot énekelnek himnusz gyanánt), majd a tömeg kiborult az utcára, útközben elfogyasztva a kapuban "Noé-pudingot" kínálgató muszlim diákok portékáját. Õk valami vallásközi békeprogram keretében keveredtek oda, sajnos a tömegben nem tudtam õket lefényképezni. Egyébiránt agyon kedvesek voltak, és állítólag a gyümölcsökbõl, magokból és mézbõl összeállított puding is nagyon finom volt.<BR>
+</I>
+<BR>
+
+<A NAME="8">
+<A HREF="#8" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_8.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_8_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Novák Elõdöt nemrég felmentették az illegális dobolás vádja alól, s a bíróság kimondta, hogy tulajdonképpen a közterületen való dobolás nem bûncselekmény, akkor sem, ha épp rohamrendõrök randalíroznak a környéken. Ezen felbátorodva most féltucat bûntársat hozott magával, és dobjaikkal õk vezették a menetet.<BR>
+</I>
+<BR>
+
+<A NAME="9">
+<A HREF="#9" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_9.jpg'; document.wdth=427; document.hght=640; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_9_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A Vitézi Rend tagjai elegáns díszmagyarban feszítettek<BR>
+</I>
+<BR>
+
+<A NAME="10">
+<A HREF="#10" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_10.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_10_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Az úgynevezett "Kossuth-tériek" is jelen voltak. Azért mondom, hogy "úgynevezett Kossuth-tériek", mert a libsi média mostanság így nevez mindenkit, aki valahogy így néz ki, és akirõl azt akarják sugallni, hogy "na, ezek hugyozták tönkre a Kossuth teret." A Kossuth-tériek pont olyanok, mint a futballhuligánok, senki sem tudja, kifélék-mifélék, de félni kell, mert jönnek, felbukkannak, és akkor oda a nyugalom.<BR>
+</I>
+<BR>
+
+<A NAME="11">
+<A HREF="#11" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_11.jpg'; document.wdth=427; document.hght=640; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_11_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Tömeg a Bazilika elõtt<BR>
+</I>
+<BR>
+
+<A NAME="12">
+<A HREF="#12" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_12.jpg'; document.wdth=427; document.hght=640; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_12_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Számtalan egyenruhát lehetett megfigyelni<BR>
+</I>
+<BR>
+
+<A NAME="13">
+<A HREF="#13" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_13.jpg'; document.wdth=427; document.hght=640; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_13_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Tengerészek és folyamõrök. Horthy Miklós 1993-as újratemetését veterán tengerészek eszközölték ki, Szimon Miklós, azóta sajnos szintén elhunyt tengerészkapitány kezdeményezésére. A temetés teljes egészében magánadakozásból valósult meg. Az Antall-kormány a cionista média nyomására nem merte képviseltetni magát az eseményen, és tudtommal támogatást sem nyújtott hozzá.<BR>
+</I>
+<BR>
+
+<A NAME="14">
+<A HREF="#14" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_14.jpg'; document.wdth=427; document.hght=640; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_14_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Vitéz Lófõ Kovács György Antal, a Horthy Miklós Társaság alelnöke, nyugdíjas tengerésztiszt<BR>
+</I>
+<BR>
+
+<A NAME="15">
+<A HREF="#15" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_15.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_15_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A Bazilikából kitódult tömeg menetté állt össze, és a József nádor téren keresztül a Belváros felé indult. Néhány rendõr végezte csak a biztosítást, de nem is volt szükség többre.<BR>
+</I>
+<BR>
+
+<A NAME="16">
+<A HREF="#16" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_16.jpg'; document.wdth=427; document.hght=640; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_16_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A József nádor téren gyalogos és lovas hagyományõrzõk álltak a menet élére<BR>
+</I>
+<BR>
+
+<A NAME="17">
+<A HREF="#17" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_17.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_17_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Az élen egy lovas nélküli, fehér pej lovat vezettek. Hasonlón vonult be Horthy Miklós 1919-ben Budapestre. A fehér ló ugyanis Magyarország lelkét szimbolizálja.<BR>
+</I>
+<BR>
+
+<A NAME="18">
+<A HREF="#18" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_18.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_18_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Gyalogos hagyományõrzõk<BR>
+</I>
+<BR>
+
+<A NAME="19">
+<A HREF="#19" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_19.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_19_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Pörzse Sándor lovon<BR>
+</I>
+<BR>
+
+<A NAME="20">
+<A HREF="#20" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_20.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_20_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Magyar lovas<BR>
+</I>
+<BR>
+
+<A NAME="21">
+<A HREF="#21" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_21.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_21_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A Vörösmarty téren. "Ezt nézd, apám, egy zsidó vezeti a menetet", súgta oda szervezõként sürgõ-forgó szobrász-bûntársam, Szilvási Peti mellettem elhaladtában. Az itt látható hölgyre célzott. Mellesleg Horthy Miklós újratemetésén is az egyik legnagyobb koszorú szalagjának felirata a következõképp hangzott: "Egy hálás zsidótól."<BR>
+</I>
+<BR>
+
+<A NAME="22">
+<A HREF="#22" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_22.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_22_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Bocskay-huszárok<BR>
+</I>
+<BR>
+
+<A NAME="23">
+<A HREF="#23" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_23.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_23_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Sima huszárok<BR>
+</I>
+<BR>
+
+<A NAME="24">
+<A HREF="#24" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_24.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_24_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Menet<BR>
+</I>
+<BR>
+
+<A NAME="25">
+<A HREF="#25" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_25.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_25_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Váci utca<BR>
+</I>
+<BR>
+
+<A NAME="26">
+<A HREF="#26" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_26.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_26_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Érkezés a Petõfi-szoborhoz<BR>
+</I>
+<BR>
+
+<A NAME="27">
+<A HREF="#27" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_27.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_27_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A tömeg már jóval ezer fõ fölé duzzadt<BR>
+</I>
+<BR>
+
+<A NAME="28">
+<A HREF="#28" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_28.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_28_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Arcok<BR>
+</I>
+<BR>
+
+<A NAME="29">
+<A HREF="#29" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_29.jpg'; document.wdth=427; document.hght=640; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_29_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Pörzse Sándor magyarnak öltözött<BR>
+</I>
+<BR>
+
+<A NAME="30">
+<A HREF="#30" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_30.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_30_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Szabó Gábor, a Jobbik pártigazgatója vezette fel a felszólalókat. Külön köszönetet mondott a szintén jelen lévõ Bencsik Andrásnak, a Demokrata fõszerkesztõjének, amiért lapjában meghirdette a megemlékezést.<BR>
+</I>
+<BR>
+
+<A NAME="31">
+<A HREF="#31" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_31.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_31_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Pörzse Sándor kezdte a beszédek sorát. Hosszan sorolta Horthy Miklós érdemeit, magasztalta erõfeszítéseit a trianoni békediktátum visszafordítására, majd hozzátette: "... míg késõbb ráébredt annak visszafordíthatatlanságára." Amint ezt kimondta, mögöttem idétlen, gúnyos röhögés csendült fel. Egy mobiltelefon csengõhangja volt. Ez vajon valamiféle jel volt, vagy véletlen?<BR>
+</I>
+<BR>
+
+<A NAME="32">
+<A HREF="#32" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_32.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_32_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Bogdán Péter, Kenderes polgármestere folytatta a beszédek sorát, felelevenítve falujuk leghíresebb szülöttének korát, s megköszönve neki mindazt, amit földbirtokosként szûkebb pátriájáért tett élete során. Kiemelte, hogy becsületességére mi sem jellemzõbb, mint hogy az 1920-ban 4200 kataszteri holdnyi Horthy-birtok 1944-ben is ugyanakkora volt, hiszen a Kormányzó nem a vagyonszerzés eszközének tekintette pozícióját.<BR>
+</I>
+<BR>
+
+<A NAME="33">
+<A HREF="#33" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_33.jpg'; document.wdth=427; document.hght=640; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_33_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Zászló, mint hangulati elem<BR>
+</I>
+<BR>
+
+<A NAME="34">
+<A HREF="#34" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_34.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_34_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Zagyva György Gyula, a HVIM elnöke volt a harmadik felszólaló. Kicsit mintha meglepõdött volna ezen, és egy darabig nem találta a szavakat, aztán éltette egy kicsit a Kormányzó emlékét, és átadta a helyet a következõnek.<BR>
+</I>
+<BR>
+
+<A NAME="35">
+<A HREF="#35" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_35.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_35_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Egy egészen különleges ember lépett az emelvényre negyedikként: Világi József, a Horthy Miklós Történelmi Társaság vezetõségi tagja
+</I>
+</CENTER>
+<P ALIGN="justify">
+
+- Szebb jövõt! - kiáltotta a mikrofonba a stramm öregúr, mire a tömeg nagyából egyszerre felelte ugyanezt a közelmúltban nemzeti körökben elterjedt köszöntést. Ám Világi úr szigorú arccal mérte végig az emlékezõket, és így folytatta.
+<BR><BR>
+
+- Szomorú vagyok, hogy nem fogadjátok a köszönésemet. Amikor gyerek voltam, a háború elõtt, ha felszálltam a villamosra, miután bedobtam a tantuszt a perselybe - mert rendes gyerek voltam - így köszöntöttem azokat, akik közé beléptem. S az utasok erre valamennyien felálltak, s azt felelték: Adjon Isten! Mert ez volt rá a válasz. Tehát akkor: Szebb jövõt!
+<BR><BR>
+
+A tömeg erre lelkesen visszakiáltott: Adjon Isten! Csak egy gyengébb elméjûnek nem sikerült a helyes válasz, az még most is a "Szebb jövõt" választ adta, de Világi úr nagyvonalúan eltekintett megfeddésétõl.
+<BR><BR>
+
+Helyette mesélt azokról az idõkrõl, amikor Õfõméltósága Horthy Miklós kormányozta a csonka Magyarországot. Beszélt arról, amikor még szüleivel a Vár oldalában lakott, s minden vasárnap édesapja felvitte õket a Várba, hogy a díszõrség váltását megnézzék, akiknek díszmenetét a Kormányzó mindig személyesen fogadta. Mindig a gyerekek álltak a közönség elsõ soraiban, mert nekik kellett látni, hallani, tapasztalni mindent. Ám egyszer egy mankós hadirokkant érkezett a térre. Béna lábait vonszolva, nehezen mászott fel a Várhegyre, csak hogy a Kormányzó urat láthassa. Természetesen õt is elõreengedték. S amikor az õrség díszlépést vert, ez a veterán maga is vigyázzba merevedett, tisztelgésre emelte a kezét.
+<BR><BR>
+
+- Csodát láttam akkor! - mondta Világi úr. - Mert annak az embernek ellõtték mindkét lábát, de akkor, ott, a Kormányzó elõtt mégis egyenes derékkal állt! Én magam láttam: beteg lábain állt vigyázzban, mankói nem értek a földre, úgy tisztelgett Magyarország elsõ emberének. Ilyen csoda történt Buda várában.
+<BR><BR>
+
+Szót ejtett még a háborúról, a másodikról, amelyben már õ is harcolt, fiatal leventeként. Az is egy csoda volt, hogy életben maradt, míg mindenki más odaveszett. Az Istennek terve volt velem, mondta. Ahogy az öregúr egyenes derekát, ráncos arcát, de izzó tekintetét elnéztem, még vár rá néhány feladat, mielõtt valóban megöregedne. Isten éltesse.
+
+</P>
+<CENTER>
+
+<A NAME="36">
+<A HREF="#36" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_36.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_36_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Az utolsó felszólaló Vona Gábor, a Jobbik elnöke volt, aki Horthy Miklóst a mai politikusokkal, az 1919-20-as politikai helyzetet pedig a maival hasonlította össze. "A magyar nemzet tradícióit egyesek lábtörlõnek használják", jelentette ki, hozzátéve, hogy kezdeményezik egy Horthy Miklós-szobor felállítását Budapesten.
+</I>
+</CENTER>
+<P ALIGN="justify">
+
+Így ért véget Horthy Miklós halálának 50. évfordulója. Sem nagy pompa, sem dísz nem jutott neki, csak az a kevés, ami annak a néhány száz embernek a szívében volt. A média természetesen elhallgatta az eseményt. Az Index két színes hacukákba öltözött, nyegle munkatársa ugyan készített néhány videófelvételt, s velem is egy ötperces interjúcskát, de ezek sem jelentek meg sehol. Nyilván még mindig él a szigorú ujpéteri utasítás, miszerint rólam egy szót sem szabad írni. Nem baj, tudjuk, hogy Uj Péter náci.
+<BR><BR>
+
+Hazafelé remek falafelt burkoltunk egy közeli török kajáldában, majd számba vettem, hány bíróságra kell elmennem a jövõ héten. Kedden Mortimer ügyében hirdetnek ítéletet a PKKB-n, szerdán pedig Loydi Nyugati pályaudvari lövöldözésének eredményhirdetése várható. Utóbbira sajnos nem biztos, hogy odaérek, mert a IX. kerületi rendõrség épp akkor engem akar kihallgatni, mint garázdaság gyanúsítottját. Kimondhatatlan nevû kis zsidónk úgy látszik, megmozgatta a kapcsolatait, mert sikerült elérnie, hogy a pitiáner könnyû testi sértés helyett garázdaságot csináljanak az ügybõl. Gyanítom, hamis tanúkat is keresett, akik majd jól felismernek fényképrõl. Blogadmin is gyanúsítottá vált, érdekes módon pont azután, hogy megírta a véleményét errõl a kis patkányról, meg a zsidókról általában. Az olyan kicsiségek, hogy Blogadmin vasággyal ötven kiló, és nem egészen felel meg a patkányunk által vizionált kigyúrt, bõrdzsekis verõlegények sztereotípiájának, nem érdekesek.
+
+</P>
+<CENTER>
+<A NAME="37">
+<A HREF="#37" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070212/20070212_37.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070212/20070212_37_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Ezt hazafelé fényképeztem. Aki akarja, nézze meg. Én nem mertem.<BR>
+</I>
+<BR>
+</CENTER>
+
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20070210.html">
+<B><< elõzõ nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20070213.html">
+
+<B>következõ nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+<BR><BR>
+
+</BODY>
+</HTML>
+

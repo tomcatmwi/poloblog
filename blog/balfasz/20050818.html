@@ -1,0 +1,122 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-422</B><BR>
+2005.08.18.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+
+<P ALIGN="justify">
+A mai droid lehetne az az ózdi cigány, aki a napokban egy nyolcadik emeleti lakótelepi lakást próbált kirámolni, ám a szomszédok kihívták a rend&otilde;rséget, s azok csodák csodája, még azel&otilde;tt kiérkeztek, miel&otilde;tt az alsóbbrend&ucirc; elpucolt volna. A hülye drapp, ahelyett, hogy megadta volna magát, magára zárta a lakást a rend&otilde;rök el&otilde;l, majd kihajigált néhány párnát az ablakon, és azokra ugrott, hogy puhára essen... Hát, én csak örülök, hogy megint eggyel kevesebb van. Valaki terjessze fel Darwin-díjra.
+<BR><BR>
+
+A mai történet is egy cigányról szól - részben - és egy igen beteg állatról, aki egyrészt rasszista volt, másrészt fegyvercsempész, harmadrészt pedig kissé kattant. A történetet egy b&ucirc;ntársa mesélte egy olvasómnak, a történet pedig utánakereshet&otilde;, ha van valakinek kapcsolata a BM t&ucirc;zszerész szolgálatával.
+<BR><BR>
+
+Történt egyszer, még a kilencvenes évek elején, hogy fegyvercsempész barátunk két társával egy dél-magyarországi vasútállomáson üldögélt. Lábuknál hevert néhány zsák áru, most hozták Szerbiából. A nagy melegben, a vonatra várva kissé elbambultak, egyszer csak azt vették észre, hogy a kettyós haver zsákostul elt&ucirc;nt. Elindultak megkeresni, s rövidesen meg is találták az állomás túloldalán. Éppen egy padon alvó romát rakott körbe komótosan gyalogsági aknákkal... Mondom, kissé rasszista volt. Aztán hátrébb ment, és nekiállt kavicsokkal dobálni a cigányt. 
+<BR><BR>
+
+Lett volna hecc, ha a terv sikerül, de a cigány szerencséjére felismerte, mivel is lepte &otilde;t meg ez a jóember, és felugrás helyett segítségért kezdett óbégatni. Jöttek a rend&otilde;rök, aztán a t&ucirc;zszerészek, a vicces fiút meg elrakták a h&ucirc;vösre egy kis id&otilde;re, bár állítólag elég hamar szabadult. A társai leléptek.
+</P>
+
+</td>
+
+
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050817.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050819.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

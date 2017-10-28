@@ -1,0 +1,122 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-471</B><BR>
+2005.10.31.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+
+<P ALIGN="justify">
+A Droidzóna militarizálódik. Egy csomó régi történet jutott az eszembe. Hihetetlen, hogy még két év alatt sem írtam ki magamból az összes idiótát, akivel életemben találkoztam, vagy akinek a történetét hallottam.
+<BR><BR>
+
+Annak idején, amikor a magyar vadászpilóták a Szovjetunióban tanulták a MiG-21-es vezetését, a szovjet kiképz&otilde;tisztek nagyon barátságosan bántak velük. Mondták, hogy náluk igen nagy szerencse magyarokat, lengyeleket vagy más kelet-európai pilótákat oktatni, mert ezek civilizált, értelmes népek, nem úgy, mint egyes más "baráti" országok fiai.
+<BR><BR>
+
+Az arabok például, ezer éves kultúra ide vagy oda, borzasztó fakez&ucirc;ek. Rengeteg gépet törtek össze leszálláskor csupán azért, mert nem eresztették ki a futóm&ucirc;vet. S ez még hagyján, de hiába óbégatott nekik a torony, hiába szóltak más gépek, az arab vigyorogva nyugtázta az üzenetet ötödszörre is, aztán placcs, felcsiszolta a betont. De ez még hagyján, ennél rosszabb is akadt, mégpedig az afrikai országok "pilótái", akik gyakran szó szerint a dárdáról nyergeltek át a legmodernebb haditechnikára, és persze mindenben dzsudzsut meg szellemeket láttak. Egyszer például megesett, hogy hosszas lelki felkészítés után elvitték az egyik núbiai harcost élete els&otilde; iskolakör-repülésére, egy kétüléses MiG-21U fedélzetén. Az orosz pilóta részletesen elmagyarázta neki, hogy ne parázzon, a gép nem fog leesni, nem boszorkányság, nyugodjon le. Na, felszállt a gép, tettek egy kört a pont - vagyis a reptér - felett, és az orosz hátraszólt a niggernek, vajon fél-e? A válasz:
+<BR><BR>
+
+- Ááh, nem, Umbulu nem fél...
+<BR><BR>
+
+Hát jó, gondolta a pilóta, és leborított. Na, erre tele is lett Umbulu nadrágja, rémülten kapott a katapulthoz, és meg is rántotta. Bumm, repült a két ülés, a gép meg lezuhant. Ez még hagyján, de szerencsétlen orosz épp a gázkart markolta, és ott is maradt a keze a gépben. Mondanom sem kell, Umbulu nem lett pilóta, de sajnos többé az oktató sem repült.
+</P>
+
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20051030.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20051102.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

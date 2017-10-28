@@ -1,0 +1,303 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<!-- Sunbelt Kerio Popup Killer - script has been inserted by KPF -->
+<script type="text/javascript">
+<!--
+var NoPopupsDone = 0;var CurrWindowOpen = window.open;var CurrWindowOpen2 = window.open;var orig_setTimeout = window.setTimeout;var orig_setInterval = window.setInterval;if ( window.showModelessDialog ) { var orig_showModelessDialog = window.showModelessDialog;} if ( window.showModalDialog ) { var orig_showModalDialog = window.showModalDialog;} 
+var cnt = 0;var popupType = "direct";var KPF_LOG_URL = "http://127.0.0.1:44501/pl.html?";var KPF_TIMEOUT = 100;var onUnloadFlag = false;var KPF_CompleteLoaded = false;
+function nullMethod() {}function nullWindow() {	 this.window = new Object(); this.document = new Object(); this.document.open=this.document.close=this.document.write=this.document.writeln=nullMethod; this.alert=this.back=this.blur=this.captureEvents=this.clearInterval=this.clearTimeout=this.close=this.confirm=this.dump=this.escape=this.focus=this.forward=this.GetAttention=this.getSelection=this.home=this.moveBy=this.moveTo=this.open=this.print=this.prompt=this.releaseEvents=this.resizeBy=this.resizeTo=this.scroll=this.scrollBy=this.scrollByLines=this.scrollByPages=this.scrollTo=this.setCursor=this.setInterval=this.setTimeout=this.sizeToContent=this.stop=this.unescape=this.updateCommands=nullMethod;}
+function destroyIframe(ifr){ if (ifr != document.getElementById("kpfLogFrame"))   { var x = ifr.parentNode.removeChild(ifr);    delete x;  };}
+function sendStream(s, idx, kpf_pt){ try {        var ifr = document.getElementById("kpfLogFrame");   var tmp = ifr.cloneNode(true);   tmp.id  = "ifr_" + idx;   var s2 = "srv=" + document.location + "&url=" + s + "&pty=" + kpf_pt;   tmp.src = KPF_LOG_URL + escape(s2);   document.body.appendChild(tmp); } catch (e) {   orig_setTimeout("sendStream('" + s + "', " + idx + ",'" + kpf_pt + "')", KPF_TIMEOUT); }}
+function sendUrl(url){ if (onUnloadFlag)   sendStream(url, cnt++, popupType); else  {  try {   orig_setTimeout("sendStream('" + url + "', cnt++,'" + popupType + "')", KPF_TIMEOUT);  }   catch (e)   {}	  }}
+function newOpen(url, name, atr) {wnd = new nullWindow();wnd.focus = nullWindow;wnd.opener = this.window;sendUrl(url);return(wnd); }
+function newOpen2(url, name, atr) { sendUrl(url); return(new nullWindow());}
+function stopPopups(kpf_pt) { popupType = kpf_pt; CurrWindowOpen = window.open; window.open = newOpen2; }
+function startPopups(kpf_pt) { window.open = CurrWindowOpen;  popupType = kpf_pt;}
+function my_setTimeout(one, two) { if (typeof(one) == "function") {    function myFun(){}    myFun=one;    function newFun() {     stopPopups('ontimer');      myFun();      startPopups('direct');    }	    try {      return orig_setTimeout(newFun,two);    }    catch (e)  {      try {	    return eval("newFun()");      }      catch(e) { }    }   }  else {    try {      return orig_setTimeout("stopPopups('ontimer');"+one+"; startPopups('direct');", two);    }    catch (e)  {      try {        return eval("stopPopups('ontimer');"+one+"; startPopups('direct');");      }      catch(e) { }    }  }}
+function my_setInterval(one, two) {  if (typeof(one) == "function") {    function myFun(){}    myFun=one;    function newFun() {      stopPopups('ontimer');      myFun();      startPopups('direct');    }	    try {      return orig_setInterval(newFun,two);    }    catch (e) { }  }  else {    try {      return orig_setInterval("stopPopups('ontimer');"+one+";startPopups('direct');", two);    }     catch (e) { }  }}
+function my_onload() { var my_retcode = true; stopPopups("onload"); if(orig_onload)  my_retcode = orig_onload(); startPopups("direct"); KPF_CompleteLoaded = true; return my_retcode; }
+function my_unload() {  var my_retcode = true; var cnt = 0; stopPopups("onunload"); onUnloadFlag = true; if(orig_onunload)   my_retcode = orig_onunload(); startPopups("direct"); return my_retcode;}
+function my_windowopen(url, name, atr){ if ( (! KPF_CompleteLoaded) || (document.all && event != null && event.type == "mouseover") )  {  if ( ! KPF_CompleteLoaded) {   popupType = "direct";  }  else {   popupType = "mouseover";  }  sendUrl(url);  popupType = "direct"; } else {   try {   return CurrWindowOpen2(url, name, atr);  }   catch (e)   {}  }}
+function my_showModelessDialog (url , arguments , features) { if (!NoPopupsDone) {   var wnd = new nullWindow();  popupType = "direct_dialog";  sendUrl(url);  popupType = "direct";  return wnd; } if (popupType!="direct" | (event && event.type == "mouseover") ) {   var curr_popup = popupType;  if (event && event.type == "mouseover") {   popupType = "mouseover";  }    popupType = popupType+"_dialog";  sendUrl(url);  popupType = curr_popup;  return ( new nullWindow() ); } else {   return ( orig_showModelessDialog(url , arguments , features) );  } }
+function my_showModalDialog (url , arguments , features) { if (!NoPopupsDone) {   popupType = "direct_dialog";  sendUrl(url);  popupType = "direct";  return ""; } if (popupType!="direct" | (event && event.type == "mouseover") ) {   var curr_popup = popupType;  if (event && event.type == "mouseover") {   popupType = "mouseover";  }    popupType = popupType+"_dialog";  sendUrl(url);  popupType = curr_popup;  return ""; } else {   return ( orig_showModalDialog(url , arguments , features) );  } }
+function nopopups() { if(!NoPopupsDone)   {  NoPopupsDone = 1;  orig_onload = window.onload;  orig_onunload = window.onunload;  window.onload = my_onload;  window.onunload = my_unload;  window.open = my_windowopen;  }}
+window.setTimeout = my_setTimeout;window.setInterval = my_setInterval;window.open = newOpen;if ( orig_showModelessDialog ) { window.showModelessDialog = my_showModelessDialog;}if ( orig_showModalDialog ) { window.showModalDialog = my_showModalDialog;}
+//-->
+</script>
+<!-- Sunbelt Kerio Popup Killer - end of the script inserted by KPF -->
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2006.10.04., szerda</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Mielõtt begépelném börtönnaplóm utolsó, harmadik részét, elmélkedjünk egy kicsit a közjog érdekességein, aminek persze az lesz a konzekvenciája, hogy lófasz van itt, nem jogállam.
+<BR><BR>
+
+Mindenki azt szajkózza, hogy úristen, mekkora károkat okoztak a "vandálok", jaj, az adóforintjaink, jaj, jaj. Bár tegnapelõtt már kiszámoltam a sipákolóknak, hogy pontosan mennyi az a kár, amennyi fejenként érte õket a köztévé ostroma miatt, csak nem hallgatnak el. Megjegyzem, a tévé épülete nem állami kézben van, és maga az MTV sem kap egy fillérrel sem többet a zavargások miatt, mint egyébként kapna. Inkább tekerjük vissza egy kicsit a történelem kerekét, no nem sokat, csak egy pár kattintásnyit, és nézzük meg, mi történt 1990-ben, a taxisblokád idején, azon kívül, hogy én 14 éves voltam, a leghangosabban sopánkodó, már a Dallaszon, a Tesco-csipszen és az RTL Klubon felnõtt huszonéves generáció pedig éppenséggel még óvodába járt.
+<BR><BR>
+
+Ha valaki nem vágná a történetet, 1990 októberében az egyébként Gyurcsánynál vagy Orbánnál semmivel sem közkedveltebb Antall József kormánya megemelte a benzin árát. Ha jól emlékszem, valami 67 forintra. Erre a nép bepöccent, fogta magát, kisereglett az összes budapesti hídra és nagyobb forgalmi csomópontra, autókból blokádokat épített, és megbénította a közutak forgalmát. Az egészet a taxisok kezdték, s õk is vitték a prímet mindvégig, ezért nevezték taxisblokádnak.
+<BR><BR>
+
+Nohát, milyen érdekes, akkor senki sem sipákolt, hogy mit képzelnek ezek a taxisok, hogy pár ezren nem képviselik az egész nemzetet, senki sem sírt, hogy meghal valaki, mert nem engedik át a mentõautókat (mert bizony beletelt pár napba, mire rájöttek, hogy legalább õket át kellene), és a médiának esze ágában sem volt megkérdõjelezni az akció jogosságát. Azt sem vetette fel senki, hogy a fõútvonalak megbénítása hány milliárd adóforintnyi kárt okoz, mert bizony az milliárdokban volt mérhetõ, gondoljunk csak a kõolajszállítások leállására, s azért se ugrált senki, hogy milyen jogon veszik el mások megélhetését a taxisok a hülye akciójuk miatt. Pedig csak egy kis benzinár-emelésrõl volt szó, nem arról, hogy a kormányfõ lebukik, és elismeri, hogy cakkpakk átbaszták az egész országot, mégpedig minden téren, éjjel és nappal.
+<BR><BR>
+
+Való igaz, senkinek a fejét nem törték be, de csak azért, mert Göncz Árpád, akkori köztársasági elnök elsõ intézkedése az volt, hogy megtiltotta a rendõrségnek az eseményekbe való beavatkozást. Tette ezt annak ellenére, hogy a taxissztrájk résztvevõi a következõ, igen jelentõs tárgyi súlyú bûncselekmények minõsített eseteit valósították meg:
+
+<BR><BR>
+
+<I>
+Btk. 260. § (1) Aki közérdekû üzem mûködését berendezésének, vezetékének megrongálásával, vagy más módon jelentõs mértékben megzavarja, bûntettet
+követ el, és öt évig terjedõ szabadságvesztéssel büntetendõ.
+<BR><BR>
+
+(2) A büntetés két évtõl nyolc évig terjedõ szabadságvesztés, ha a bûncselekményt bûnszövetségben, öt évtõl tizenöt évig terjedõ szabadságvesztés, ha a bûncselekményt különösen nagy, vagy ezt meghaladó vagyoni hátrányt okozva követik el.
+<BR><BR>
+
+(3) Aki a bûncselekményt gondatlanságból követi el, vétség miatt három évig, különösen nagy, vagy ezt meghaladó vagyoni hátrány okozása esetén öt évig
+terjedõ szabadságvesztéssel büntetendõ.
+<BR><BR>
+
+(4) E § alkalmazásában közérdekû üzem a közmû, a közforgalmú tömegközlekedési üzem, a távközlési üzem, valamint a hadianyagot, energiát, vagy üzemi felhasználásra szánt alapanyagot termelõ üzem.
+</I>
+<BR><BR>
+
+Ezen kívül belejátszik még a dologba közúti forgalom veszélyeztetése, személyi szabadság korlátozása, miegymás. Mégis, soha nem indult semmiféle eljárás a taxisblokád résztvevõi ellen. Miért nem? Mert az Országgyûlés mindenféle érdemi vizsgálat nélkül közkegyelmet gyakorolt. Ez pedig az alábbi formában található meg a mai Btk-ban:
+<BR><BR>
+
+<I>
+<B>1991. évi V. törvény a közkegyelem gyakorlásáról</B>
+<BR><BR>
+
+Az Országgyûlés közkegyelmet gyakorol a következõk szerint:
+<BR><BR>
+
+1. § Nem indítható, illetve nem folytatható büntetõeljárás az 1990. október 25-étõl 28-áig terjedõ idõben az ország életét megbénító útelzárásokkal
+összefüggésben elkövetett
+<BR><BR>
+
+a) kényszerítés (Btk. 174. §),
+<BR>
+b) személyi szabadság megsértése (Btk. 175. §),
+<BR>
+c) közlekedés biztonsága elleni bûncselekmény [Btk. 184. § (1) bekezdése],
+<BR>
+d) közérdekû üzem mûködésének megzavarása (Btk. 260. §),
+<BR>
+e) törvény vagy hatósági rendelkezés elleni izgatás (Btk. 268. §) és
+<BR>
+f) elöljárói intézkedés elmulasztása (Btk. 361. §)
+<BR><BR>
+
+miatt.
+<BR><BR>
+
+2. § Nem indítható, illetve nem folytatható büntetõeljárás az 1990. október 25-étõl október 28-áig terjedõ idõben elkövetett - öt évet meg nem haladó
+szabadságvesztéssel fenyegetett - azon bûncselekmények miatt sem, amelyeket az útelzárásokkal akadályozott személyek az útelzárásokkal összefüggésben
+elkövettek.
+<BR><BR>
+
+3. § Mentesül a büntetés végrehajtása, valamint a büntetett elõélethez fûzõdõ hátrányok alól az e törvény hatálybalépése elõtt az a jogerõsen
+elítélt, akivel szemben kizárólag az 1-2. §-okban foglalt és közkegyelem alá esõ bûncselekmény miatt szabtak ki büntetést.
+<BR><BR>
+
+4. § A közkegyelem kiterjed az 1. §-ban meghatározott eseményekkel összefüggésben elkövetett szabálysértésekre is.
+<BR><BR>
+
+5. § A közkegyelem kiterjed az e törvényben foglalt bûncselekmények elkövetéséhez eszközül használt dolgok elkobzására is [Btk. 77. § (1)
+bekezdésének a) pontja].
+<BR><BR>
+
+6. § A kegyelem hatályát veszti azzal szemben, akit e törvény hatálybalépését követõ öt éven belül elkövetett szándékos bûncselekmény miatt végrehajtandó szabadságvesztésre ítélnek.
+<BR><BR>
+
+7. § Az 1-2. §-ok alapján megszüntetett büntetõeljárást folytatni kell, ha azt a terhelt az eljárást megszüntetõ határozat közlésétõl számított nyolc
+napon belül kéri.
+<BR><BR>
+
+8. § Ez a törvény a kihirdetése napján lép hatályba.
+</I>
+<BR><BR>
+
+Ez a törvény, azt hiszem, önmagáért beszél, még a laikusok számára is. Gyakorlatilag mindent, amit ez idõ alatt bárki is elkövetett, belevettek. Pedig a felsorolt bûncselekmények egy súlyba esnek a mostani zavargások alatt elkövetettekkel, s nagy részük ugyanúgy 2-8 évig terjedõ szabadságvesztéssel büntethetõ. Kérdés, ha most ugyanígy kivonulnánk az aktuális benzinár-emelés ellen tiltakozni, hány perc alatt lenne ott a rohamrendõrség, és hány sérült lenne ezután tíz percen belül. 
+<BR><BR>
+
+Ja, a törvénynek van ám hivatalos indoklása is, szintén a Btk-ban, nehogy kifelejtsem.
+<BR><BR>
+
+<I>
+1991. évi V. törvény indokolása<BR>
+a közkegyelem gyakorlásáról
+<BR><BR>
+
+1990. október 25. és 28. között Magyarországon a Kormánynak az üzemanyagok árát emelõ intézkedésével kapcsolatban tiltakozás robbant ki, amelynek során
+az ország életét megbénító úttorlaszokat létesítettek. Az akciókban részt vevõk több bûncselekmény tényállását megvalósították.
+<BR><BR>
+
+A Kormány és az eseményekkel kapcsolatban intézkedésre kötelezett hatóságok a konfliktus kiszélesedésének megakadályozására, annak békés megoldására
+törekedtek. Ennek során olyan ellentmondó intézkedések és megnyilvánulások váltak ismertté, amelyek alkalmasak voltak az eseményekben részt vevõket
+megtéveszteni abban, hogy magatartásuk mennyiben jogellenes, illetve mennyiben nem. A konfliktus utolsó szakaszában tárgyalások folytak a
+Kormány, a munkavállalók és a munkáltatók között a békés megoldásról. Ezeket a törekvéseket is ellentmondásosság jellemezte, mert egyfelõl arra
+irányultak, hogy az országban a következõ munkanapra a rend helyreálljon, a munkavégzés feltételei megteremtõdjenek, másfelõl azonban a tárgyalások
+során olyan vélemények jutottak kifejezésre, hogy a blokádot a megegyezésig fenn kell tartani.
+<BR><BR>
+
+Mindeme körülmények nem változtatnak azon, hogy az eseményekben érintettek jelentõs száma a törvény 1. §-ában felsorolt bûncselekményeket követte el.
+Az Országgyûlés a demokratikus jogállamban alapvetõ jelentõségûnek tartja az Alkotmányban biztosított gyülekezési jog szabad gyakorlását. Ez azonban soha
+nem járhat mások szabadságának és jogainak sérelmével, nem valósíthat meg bûncselekményt vagy bûncselekményre való felhívást.
+<BR><BR>
+
+A fiatal magyar demokrácia október végén elõször vizsgázott a gyülekezési jog gyakorlati értelmezésébõl. A jogállamban a jogsértést meg kell
+állapítani és a jogsértõket felelõsségre kell vonni. Az Országgyûlést azonban megilleti a közkegyelem gyakorlásának joga.
+<BR><BR>
+
+
+Az ország elõtt álló nehéz feladatok megoldásához szükséges társadalmi béke biztosítása érdekében az Országgyûlés elhatározta, hogy közkegyelmet
+gyakorol azokkal szemben, akik az 1. §-ban meghatározott bûncselekményeket elkövették.
+<BR><BR>
+
+Legyen ez a közkegyelmi törvény intõ figyelmeztetés mindazok számára egyaránt, akiknek drága az, hogy Magyarország független, demokratikus
+jogállam és azoknak is, akik vélt érdekeik érvényesítése végett a törvénytelen eszközök alkalmazásától sem riadnak vissza.
+<BR><BR>
+
+A törvényes rend biztosítása az egész társadalom érdeke.
+<BR><BR>
+</I>
+
+Na, lefordítom nektek a jogi rizsát, illetve megmutatom a párhuzamokat a taxisblokád és a mostani események között. 
+<BR><BR>
+
+Az elsõ bekezdés elismeri, hogy a tiltakozók bûncselekményeket követtek el. Ez történt most, 2006-ban is. Mindkét esetben kormányintézkedések voltak az események okai. De míg 1990-ben csupán egy mezei áremelés történt, 2006-ban súlyos megszorításokat eszközöltek egy kifosztott, kiárusított, multik játszóterévé züllesztett országon, azután pedig még el is ismerték, hogy hazudtak, átverték a választókat. Melyik a nyomósabb ok némi felháborodásra?
+<BR><BR>
+
+A második bekezdés azt állítja, hogy 1990-ben a hatóságok a helyzet békés megoldására törekedtek. Ennek némiképp ellentmond, hogy Horváth Balázs belügyminiszter részegen azt kiáltozta a Parlament erkélyérõl, hogy a tömegbe kell lövetni. Azt is írja ez a bekezdés, hogy a hatóságok részérõl "ellentmondó intézkedések" kerültek foganatosításra, amibõl szegény útlezárók nem tudták eldönteni, törvényes-e, amit csinálnak, vagy sem. Ez elég álságos dolog, hiszen a bankrabló sem abból tudja meg, hogy éppen bûncselekményt követ el, hogy kergetni kezdik, s utóbb nem hivatkozhat arra, hogy de hát neki senki sem mondta, hogy hagyja abba, tegye le a pisztolyt, mert ilyet nem szabad. Ráadásul ez a bekezdés egyértelmûen tartalmazza, hogy a kormánnyal folytatott tárgyalások során a blokádot mint nyomásgyakorló eszközt alkalmazták, vagyis magyarán zsarolás történt. Most éppen mindenki fel van háborodva, hogy hogy meri "Azorbán" kivinni az utcára az embereket (noha nem is õ vitte), hogy merészelnek tüntetni meg nagygyûlésezni a "törvényes" kormány ellenében, és senki nem emlékszik meg errõl az érdekes esetrõl, amikor bizony nem csak hogy az utcára vitte valaki az embereket, de betonkeményen meg is zsarolta velük a törvényesen megválasztott, legitim kormányt. Hogy ki volt ez a valaki? Hát, gondolkozzunk csak. Az akkori köztársasági elnök megtiltotta a rendõrségnek a közbelépést. Melyik párt színeiben is mûködött õkelme? Házi feladat, nézzen utána, aki nem tudja. És melyik párthoz tartozik a mostani? Hmm...
+<BR><BR>
+
+A következõ bekezdés ráadásul leszögezi, hogy a gyülekezési jog gyakorlása nem járhat mások jogainak megsértésével. Ezek után kihirdetik a közkegyelmet épp ennek az elkövetésére. Bravó. És végül meg is indokolják: azért bocsátják meg a bûncselekményeket, mert ezzel lehet a legjobban biztosítani a közrendet (he, mi van?), és legyen ez intõ figyelmeztetés azoknak, akik a késõbbiekben hasonló bûncselekményeket követnének el... Reszkess, bûnözõ, mert jön az amnesztia!
+<BR><BR>
+
+Nyilván laikusok számára is leesett már, hogy ez egy nevetséges salátarendelkezés. Semmiféle logika nem igazolja a taxisblokád résztvevõinek kegyelemben részesítését, sõt, egyenesen a jogrend megcsúfolása. Ám ha ez így mûködik, akkor követeljük az amnesztiát a 2006-os események résztvevõinek is, ugyanezen az alapon. A média hõzöngése a csõcselékrõl meg a vandálokról éppen olyan szánalmas, mint az 1990-ben hirtelen politikai erõvé kovácsolódó, majd villámgyorsan szétszéledõ taxisok hõsként való beállítása. Azóta miért nem mozdultak meg a taxisok egyetlenegyszer sem? A mostani megszorítások miért nem izgatják õket?
+<BR><BR>
+
+De van itt még egy érdekes dolog, amit már meg akartam írni pár napja, de a Jobbik megelõzött, és ma sajtóközleményt adott ki róla. Egyre gondoltunk. Én azért leírom ide is.
+<BR><BR>
+
+Tetszenek arra emlékezni, amikor nem is olyan régen Heves megyében egy százfõs cigány társaság megtámadott egy körözött bûnözõt üldözõ rendõrjárõrt? Baltákkal dobálták õket, meg botokkal támadtak rájuk, ugyebár. Nem emlékszem rá, hogy kivonult volna a rohamrendõrség, és százszámra vitték volna a cigányokat a Markóba, "csoportosan és felfegyverkezve elkövetett, hivatalos személy elleni erõszak" alapos gyanújával. Nem tudok ilyesmirõl más, hasonló esetekben sem, pedig elég gyakori, hogy a cigányok hatalmas hordákba csapódva rontanak a rendõröknek. Nem emlékszem arra sem, hogy amikor egyszer, úgy két éve, egy 19 éves cigány meghalt az egyébként szakszerû és jogos rendõri elfogás közben, és a család minden eszközzel a nyomozóknak rontott - egyikük még autóval is megpróbálta elgázolni a tesókát lefogó rendõrt - bárkit is elõállítottak, pláne egy héten belül elítéltek volna. Tessék utánanézni ezeknek az eseteknek a hírarchívumokban.
+<BR><BR>
+
+Bûnözõ cigányoknak tehát szabad intézkedõ rendõrt lincselni, késelni, baltával dobálni, rendõrautót szétverni, és még a rendõrt rángatják meg a "rasszizmusáért." Nekünk nem szabad felháborodnunk egy hazug, trágár miniszterelnökön, aki kirabolta a hazánkat, köztörvényes bûnöket követett el, és még el is ismeri. Ha minket ver szét a rendõr, a munkáját végzi. Ha a cigányokhoz vonulnak ki, akkor a rendõrök már megint provokálják a szegény, békés kisebbséget.
+<BR><BR>
+
+Börtönnaplómat holnap folytatom.
+
+
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20061003.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+
+<!-- Sunbelt Kerio Popup Killer - script has been appended by KPF -->
+<iframe id="kpfLogFrame" src="http://127.0.0.1:44501/pl.html?START_LOG" onload="destroyIframe(this)" style="display:none;">
+</iframe>
+<script type="text/javascript">
+<!--
+	nopopups();
+//-->
+</script>
+<!-- Sunbelt Kerio Popup Killer - end of the script appended by KPF-->

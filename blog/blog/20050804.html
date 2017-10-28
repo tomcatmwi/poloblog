@@ -1,0 +1,179 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2005.08.04., csütörtök</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+No, hazaértem végre. Ahogy nézem, páran jól teletömködtétek a levelesládát, f&otilde;leg az iránt érdekl&otilde;dve, hogy hol vagyok már, miért nem írok. Rinya elzár, kezek a takaró fölé, most már itt vagyok. Hogy merre jártam? Arra, amerre <A HREF="special_asmreport.html">tavaly is:</A> Helsinkiben, az Assembly 2005 fed&otilde;nev&ucirc; demó- és LAN partyn, egyrészt polókat eladni, másrészt az ARTech szeminárumsorozat keretében bemutatni <A HREF="http://www.freax.hu" TARGET="_new"><I>Freax</I></A> cím&ucirc; könyvemet a demoscene történetér&otilde;l. A könyv óriási sikert aratott, a party pedig kurva jó volt, de err&otilde;l inkább olvassátok el a riportot, amit útközben hazafelé írtam Loydi laptopján. Fényképek is vannak, de momentán nincs nálam a thumbnail generátor programom, így arra még egy-két napot várnotok kell. Holnap is partyra megyek egyébként, mégpedig Ajkarendekre, ahol az Árok Party fed&otilde;nev&ucirc; rendezvényen röffen össze Magyarország valamennyi oldschoolgép-rajongója, úgymint C-64, Amiga, Plus/4 és hasonló típusokon nyomuló arcok, akik persze részben alkoholisták is, mert az jó. B&otilde;vebbet a <A HREF="http://singularcrew.hu/arok7/" TARGET="_new">http://singularcrew.hu/arok7</A> címen olvashattok. Most pedig Assembly report...
+<BR><BR>
+
+<B>ASSEMBLY 2005</B>
+<BR><BR>
+Egy demoscener számára a legerotikusabb látvány valószínûleg az, ha egy lány az Assembly belépõszalagján kívül mást nem visel. Már megint Helsinkiben jártunk, ismét az Assembly-n, ám most vonat és busz helyett autóval, pontosabban furgonnal. A Szigetre meg idén se megyünk, menjenek a lúzerek.
+<BR><BR>
+
+Helsinki, az már nyugat, ahogyan azt a <I>Csinibaba</I> szereplõi megállapították. Olyannyira az, hogy a finneknek már tizedik éve nem jelent problémát megrendezni a világ legnagyobb demoscene partyját. A helyszín idén is a Hartwall Areena, ami nagyjából akkora, mint a Budapest Sportaréna, de ezt már tavaly is írtam. Azt mondjuk nem írtam, micsoda építészeti remekmû ez a csarnok, bár ezt elég nehéz is lenne bemutatni pár fényképpel. Aki egyszer arra jár, nézze meg. Szóval demoscene party volt ismét, még ha azzal a szépséghibával is, hogy a 6000 látogatóból jó öt és félezren bugyuta gamerek voltak, akik a négy napos rendezvény ideje alatt kizárólag az általuk nagyképûen <i>cybersportnak</i> nevezett lövöldözõs játékokkal fejlesztették agyukat, csontrendszerüket és a világbékét általában. A valódi party ezalatt odakint, az épület mögötti ligetben zajlott, illetve néha az emeleti oldschool zónában, ahová csak VIP jeggyel lehetett belépni.
+<BR><BR>
+
+No de ez egy útiriport, elsõként emlékezzünk meg tehát magáról az útról. Jármûvünk, egy fehér VW Transporter, az esti órákban indult észak felé, a reggeli órák helyett, mert gyorsan felpakolni, hát az nekünk sose ment. A rakomány természetesen nagyrészt polókból állt, a kocsi elejében pedig rajtam kívül Athina, Loydi, Reggie és egy baromi rutinos és kurvára idegesítõ sofõr foglalt helyet. Krakkó magasságában már azon gondolkodtunk, hogy letakarjuk egy fekete lepedõvel, az minden papagájnál mûködik, csak kussoljon már, majd Reggie vezet helyette, de sajnos a biorádió Helsinkiig sem hallgatott el benne, és visszafelé is élveznünk kellett életbölcsességeit, megfejelve egy adag tyúkanyó-dumával, ugyanis valamiért feltett szándéka volt, hogy a az együtt töltött idõ alatt õ fog ránk, taknyosokra" vigyázni, s ebbe beleértette az étkezések idejének, tartamának, valamint a "pisikélés" végrehajtásának szabályozását is.
+<BR><BR>
+
+Elsõ megállónk Varsó volt, mint tavaly is, ahol némi rövid városnézés volt a program, különös tekintettel a Warszawa Centralna alatti aluljárórendszer felfedezésére. Múzeumot most nem néztünk (tahók vagyunk, nem érdekelt), viszont elmentünk strandra, egyrészt tisztálkodási, másrészt strandolási célzattal. Loydinak ez nem igazán sikerült: a mindenhol cirkáló biztonsági orkok dührohamot kaptak térdig érõ, terepszínû fürdõgatyája láttán, és még zuhanyozni sem engedték, nemhogy a medence közelébe menni. A jegy árát persze nem adták vissza, mi a tökért, elvégre a turistatájékoztató szerint ez itt Varsó legjobb strandja, örüljön, hogy láthatta. Mi ugyan rendesen megáztattuk magunkat mindenféle medencékben és jacuzzikban, de amikor kifelé mentünk, nekünk is pampogni kezdtek, hogy fizessük ki a jegyet még egyszer, mert <i>letelt az idõ.</i> Milyen idõ? Hát, a jegy csak egy órára szól, de ezt nem közlik a kedves vendégekkel. Na, majd ha legközelebb hozzánk pucolnak a németek elõl, én is csak egy órára engedem be õket. <I>Kurwa</I> anyjukat.
+<BR><BR>
+
+Lengyelországon aránylag hamar keresztülzötykölõdtünk, bár a litván határ felé Demszkyt megszégyenítõ minõségû úton kellett haladnunk, melyet már tavaly is "javítottak", és azóta sem került rá aszfalt. A három balti államot nagyrészt átaludtuk, bár valahol Észtországban megálltunk megnézni a tengert. Vizes, milyen lenne.
+<BR><BR>
+
+Tallinn olyan, mint tavaly volt, a kikötõ is ugyanott van. A hajók menetrendje miatt ezúttal elmaradt a városnézés, helyette szerencsétlenkedtünk egy keveset, hogy felférjünk még egy aznapi kompra, mert, mint kiderült, kocsival nem lehet ám csak úgy ukkmukkfukk átsuttyanni Helsinkibe, elõre helyet kell foglalni. Azért sikerült feljutnunk a <i>Meloodia</i> nevû hajóra, és három órával késõbb, ötven órával a pesti indulás után Helsinkiben gurultunk elõ a napvilágra. Köszönjük.
+<BR><BR>
+
+Nosfe barátom a kikötõben várt minket, hogy tengerpartra nézõ házához vezessen minket, ahol majd szállásunk lesz, meg fatüzeléses finn szauna is annak, aki akarja. A csapat tagjai némileg aggódva tekintettek Nosfe enyhén pecsétes, egykor fehér <i>Vodka</i> polójára, valamint öltözékének más érdekes darabjaira (skót szoknya, széttaposott bakancs, vörös vikingszakáll és hosszú haj), de ennél sokkal érdekesebbnek bizonyult a háza. Nos, igen, a tengerparton volt, semmi kétség. Egy száz éves faház volt, amit egykor illegálisan foglalt el zenésztársaival, aztán valami havi öt eurós díjban egyezett ki a tulajjal, aki egyébként tûzifának akarta felhasogatni az egészet. Bent nem volt folyó víz, erõsen ócska bútorok szolgáltak az alapvetõ életkörülmények fenntartására, és a macska által az ajtó elé helyezett egér csendesen kieresztette beleit, amikor Reggie véletlenül rátaposott. Pottyantós klotyó, tisztálkodásra pedig szauna. Hát, romantikus, na. A két ágy közül nekünk az lett felajánlva, amire a macska nem hugyozott rá, de igazából fel se tûnt volna, mert az egész házban macskaalom szaga terjengett. Igaz, mindehhez 8 megabites bérelt vonal is volt, hogy lehessen netezni. Ennek egyébként havi 30 euró a díja, szóval a magyar szolgáltatók még mindig elmehetnek a picsába. Nosfe megmutatta születésnapi ajándékát is, amit a minap kapott barátaitól: egy márványtábla három névvel egy nemrég megszüntetett katonai temetõbõl.
+<BR><BR>
+
+Szóval itt kellett volna tölteni az éjszakát, bár Athina fenntartásokkal fogadta a higiéniai állapotokat. Próbáltunk neki szállodát találni, de nem sikerült. Hja, õ nem volt katona. Végül csak a lehugyozatlan ágyon aludtunk, a sofõr és Loydi pedig odakint piáltak a kocsiban, a szomszédban lakó punkkommuna barátságos tagjaival. Mi idõnként találkoztunk a lakótársakkal, egyrészt egy punkcsajjal, aki nem tudta elmondani, mit dolgozik a munkahelyén, illetve Nosfe zenésztársával, Aropupu-val, aki meg üveges szemekkel közlekedett, és nem vett tudomást senkirõl. A macska is elõkerült, fekete volt, és a Lucifer névre hallgatott, legalábbis állítólag, illetve a szomszédból átóvakodott a kutya, egy agár és német juhász keverékének tûnõ, õzikeszemû jószág, aki rémülten elmenekült, amikor kommunikálni próbáltam vele. Egyébiránt egész jól aludtunk ezen a hajléktalanszállón, csak Loydiék próbáltak felverni minket seggrészegen hajnali négy körül, de meg is lett nekik mondva, hogy minek tartjuk az édesanyjukat.
+<BR><BR>
+
+Másnap délben megérkeztünk a Hartwall Areena-ba, villámgyorsan lezuhanyoztunk és a molekuláris megsemmisítõbe dobtuk az éjjel viselt ruhákat, tisztát vettünk fel, és nekiálltunk standot építeni. Abyss, a party fõ szervezõje (igen, Abyss of Future Crew) remek helyet adott nekünk, épp a szemináriumterem bejárata mellett. A hozzáállást össze sem lehetett hasonlítani a Dreamhack-en tapasztaltakkal. Egyetlenegy bunkó biztonsági orkkal sem akadtunk össze, nem basztatott senki, leszámítva, hogy nem engedtek a tûzcsap elé pakolni, de hát ebben végül is igazuk volt. Néhány óra múlva felállt a stand, és termelni kezdtük a polókat a sok kis gamercsíra és a tisztelt scenerek számára, igen nagy sikerrel.
+<BR><BR>
+
+<i>Freax</i> címû könyvemnek nagy sikere volt. Már nyitáskor elkezdték vinni, annyit dedikáltam, hogy a kezem leszakadt, és a party végére legalább százötven példány elfogyott. Megkaptam a szemináriumi elõadók számára rendszeresített fényképes nyakbalógót (sznoboknak: stage pass), onnantól pedig nagyon fontos embernek számítottam, bizony. A demoscene történetérõl szóló szemináriumi elõadásom este nyolckor kezdõdött, és utóbb kiderült, hogy az egyik leglátogatottabb elõadás volt. Meg a leghosszabb is, jó két órát pofáztam, és még az is elég rövidre volt fogva. Hiába, ez egy hosszú történet. Az elkövetkezõ napokban elég gyakran dugtak kamerát, mikrofont vagy hasonlót az orrom elé, hogy meséljem már el még egyszer, hogy ez az elsõ könyv a demoscene történetérõl, meg miegymás, el is mondtam, benne is voltam valami finn tévéhíradó tudósításában, meg a party belsõ tévécsatornáján, az AsmTV-n is, meg még leszek néhány helyi számítástechnikai magazinban is. Az öreg scenerek nagy örömmel fogadták a könyvet, szó szerint egymás kezébõl kapkodták ki a mintapéldányt a Boozembly-n, és  volt, aki három-négy példányt is vett, hogy elvihesse azoknak, akik nem tudtak eljönni a partyra. Most mindenki izgatottan várja a második kötetet, s mi tagadás, én is.
+<BR><BR>
+
+A party második napját a stand asztala alatt, a padlón kezdtem, merthogy ott aludtam. Reggie-ék tartották a frontot éjszaka, aztán átvettük Loydival, aztán én rendszerint otthagytam szegényeket a faszba, mert valami mászkálni- és intéznivalóm mindig akadt, vagy ha más nem, hát körbehordani a könyvet az újonnan érkezettek között, hadd vegyenek õk is. Rövidesen keresett azonban Abyss, ugyanis megérkeztek FedEx-szel a <i>Mindcandy II.</i> DVD demó változatai. A <i>Mindcandy</i> már ismerõs lehet régi olvasóimnak és vásárlóimnak: egy dupla DVD, klasszikus PC demókkal videó formátumban. A második DVD-n Amiga demók lesznek, és az igen hamar szétkapkodott promón ebbõl öt darab volt látható: <i>9 Fingers, Love, Perfect Circle, Closer,</i> az ötödik meg nem jut eszembe, és mivel ezt a kocsiban írom, útban hazafelé, nemigen tudom elõásni a csomagtartóból a lemezt, hogy megnézzem. A lényeg azonban, hogy még ezen a nyáron elkészül a <I>Mindcandy II,</i> és természetesen kapható lesz majd a polóboltban.
+<BR><BR>
+
+Más is érkezett: megjött Topy, a német csóva a plotterével, akit már Dreamhackre is hívtunk, de nem jött. Most már tudtunk egyedi polót tervezni és gyártani. Jöttek is a gamerek mindenféle igényekkel, hülye feliratokat, klánneveket, mangaribancokat hoztak, hogy nekik ez kell a hátukra, mert az jó. Topy meg csak csinálta egész nap ezt a sok faszságot, persze jó pénzért, de ahogy elnéztem, nem is volt olyan jó pénz az, tekintve hogy némelyik mintával egy órát is elpöcsölt utólag, szikével piszkálva ki a fóliából a felesleges darabokat, miközben mögötte állt a kígyózó sor. De hát õ tudja, mi a jó neki. Az utolsó nap már rég felpakoltunk mindent, bezárt a party, amikor õ még mindig ott szerencsétlenkedett a plotterével, egészen késõ estig, hogy az utolsó júzer is megkapja a polóját.
+<BR><BR>
+
+Közben jövögettek más magyarok is. A Conspiracy ezúttal is jött, bár nem adtak be semmit. Gargaj Amszterdamból érkezett, õ is tartott szemináriumot a szoftszintik programozásáról, BoyC és Innocent pedig csak úgy ott voltak, Reggie volt barátnõjével, Zionával, aki mellesleg szintén elég régi scener arc - régi partyk látogatóinak talán jobban rémlik CG Puddy néven.
+<BR><BR>
+
+Az elsõ napon még csak néhány kisebb compo volt, ha jól emlékszem, oldschool zene, grafika és 4K intró. Mindegyikben nagyon komoly volt a felhozatal, bár a grafika compo-k eredményei enyhén szólva érdekesek lettek. Elég, ha megnézitek a Themed Graphics kategória elsõ három helyezettjét. Volt továbbá Mobile Demo Compo is, ahol megint csak nagyon szép dolgok születtek mindenféle hordozható eszközökre. A party összes induló munkája és természetesen az eredményeket tartalmazó results file is letölthetõ egyébként a <A HREF="http://www.scene.org">scene.org</A>-ról. 
+<BR><BR>
+
+No, de haladjunk a történettel. A partyplace éjszakára sem csendesedett el különösebben, a gamerek továbbra is üveges szemmel bámulták a képernyõt és lövöldöztek, odakinn a scenerek egyre részegebbek lettek, én meg elmentem felfedezni az oldschool gamer zónát, mert olyan is volt. Egy régi játéktermi gépeket gyûjtõ klub az egész gyûjteményét kiállította, köztük olyan klasszikusokat, mint a <i>Chase HQ, Shadow Dancer, Bubble Bobble, Silkworm, Turbo Outrun,</i> és még sokan mások. Persze mindezt ingyen, a pénzbedobó nyílások már nyugdíjba mentek, a gépek egyetlen célja a hozzám hasonló arcok szórakoztatása, akik annak idején nem tudtak eleget szórakozni ezekkel a gépekkel, amikor még minden bárban állt belõlük legalább kettõ. Más oldskoolerek is jöttek, nyomtuk 2-player módban, lelõttük a gonosz ellenrepülõket és tankokat, akik pedig mindig annyit lõttek vissza, hogy nem lehetett látni tõle a játékot.
+<BR><BR>
+
+Egyszóval volt mit csinálni, csak a kaját ne adták volna aranyárban mindenhol. Ízelítõül: egy muffin szar kávéval 2.5 euró, egy csomagolt szendvics 4 euró, egy 3 decis motoroskóla 1.5 euró. Ebbõl könnyen kiszámítható, hogy egy étkezés rendszerint tíz eurót vitt el, az pedig négy nap alatt... szóval halmozottan a kurva anyjukat.
+<BR><BR>
+
+Na, ugorjunk tovább, elemezzük a compo-kat, amelyekre vasárnap tizenegy órától került sor. A 64K kategória fantasztikus volt, nem is fûzök hozzá más kommentárt, mint hogy mindenki töltse le az összeset, különösen a Fairlight <i>Che Guevara</i> címû remekmûvét, ami megérdemelten meg is nyerte a compo-t. Az FLT egyébként az oldschool kategóriában is tarolt egy kiváló Commodore 64 demóval, szintén kötelezõ darab. A PC demó compo sajnos igen unalmas lett. A legtöbb induló kezdõ coderek elsõ munkái voltak, néhány középszerû kivétellel. Mégis megérte azonban Helsinkibe utazni, hiszen a görög Andromeda Software Development amúgy sem lapos történetük szerintem legjobb demóját mutatta be. Természetesen nyertek is, nem is csoda! Navis szerényen ácsorgott a színpadon, amíg Abyss és Pehu egy köbméter díjat pakoltak a kezébe. Ezt a demót mindenképpen tessék letölteni és sötét szobában, zavartalan körülmények között, jó nagy hangfallal megnézni!
+<BR><BR>
+
+Másnap véget ért a party. A júzerek felpakoltak és elhúztak. Mi még ott kotlottunk éjfélig, amíg Topy befejezte az utolsó polókat, köztük a mieinket. Némi kóválygás után találtunk egy olcsó hostelt - közben megtudtuk azt is, hogy Helsinkiben "olcsó szálloda" alatt a legtöbben, de fõleg a taxisok a minimum háromcsillagos, fejenként és éjszakánként száz eurót kóstáló luxushelyeket értik - másnap pedig néztünk várost. Elmentünk a helyi vidámparkba, de elég nagy csalódás volt, alig jobb, mint a budapesti, viszont eszeveszett drága. Végül a kikötõben kötöttünk ki (arra való, nem?) ahol hamar megtaláltuk a békés finn járókelõk szórakoztatásának legegyszerûbb módját. Errõl majd nézzétek meg a videófelvételt pár nap múlva, a fényképekkel együtt...
+<BR><BR>
+
+Most pedig hazafelé zötykölõdünk, éppen Litvánia állami aszfaltjáról koptatunk le pár mikront, és eddig nem volt semmi gáz, leszámítva, hogy egy kedves, ám semmilyen nyelven nem beszélõ határõr mindenáron baksist akart az áthaladásért. Betettem neki egy húszeuróst az igazolványtokomba, úgy adtam oda. Kinyitotta, meglátta az egyébként csak dekorációként szolgáló polgárõr-jelvényt, elámult, majd kérdezte, mi ez.
+<BR><BR>
+
+- Milícia - feleltem.<BR>
+- Áháá! Kollégá!<BR>
+- Da, kollégá.<BR>
+- Á, szpasziba! - mondta, és visszaadta az egészet, a pénzzel együtt. Kiegyezett egy kis üveg Johnny Walkerral, a sofõr készletébõl.
+<BR><BR>
+
+Az utazás további eseményei meglehet&otilde;sen eseménytelenek voltak: furikázás Lengyelország zötyög&otilde;s útjain, ahol egy baromállat majdnem frontálisan belénk szállt el&otilde;zés címén, alvás Varsó egy lakótelepének parkolójában, ahol Reggie kificamítototta a vállát egy sz&otilde;nyegporoló rúdra való húzódszkodás közben, de szerencsére vissza tudta rakni magának, csak az izma szakadt le, majd másnap gyorshajtásért bírság egy kis lengyel faluban, 80 km/h a megengedett 50 helyett, perfekt angolt beszél&otilde; fakabátok, tessék példát venni Lengyelországról, végül es&otilde;ben utazás egészen Krakkótól Budapestig, ahol az es&otilde;b&otilde;l irtózatos vihar lett, bele is vágott a villám a kocsiba, nagyon látványos volt, majd megérkezés a kosz f&otilde;városába, és jöhetnek a szürke hétköznapok. Dióhéjban ennyi.
+<BR><BR>
+
+Mi a közös egy íróasztal lapjában és egy Balti-tengeri komphajó folyosójában? A megfejtéseket Athinának küldjétek el.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050723.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+
+<B>következ&otilde; nap >></B>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

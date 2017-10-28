@@ -1,0 +1,108 @@
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2005.02.21., hétf&otilde;</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Azzal kezdeném a mai blogot, ami megint egy kicsit jobbra néz, hogy lassan összeáll, mit is akarunk mi csinálni a H&otilde;sök terén, és hogy akarjuk-e egyáltalán. Néhány napja felvetettem, hogy rendezzünk magunknak egy pártoktól és ideológiáktól mentes második világháborús megemlékezést a magyarországi harcok befejez&otilde;désének 60. évfordulóján. Nagyon sokan írtátok, hogy szívesen eljönnétek, volna médiatámogató is (Aranysas magazin), szóval igazából semmi akadálya. Hát, akkor t&ucirc;zzük ki a dolgot április 16.-ára, mondjuk 14 órára. Rend&otilde;rségi engedélyt még a héten kérek. Szervez&otilde;nek is jelentkeztek már néhányan. Eszembe jutott az is, hogy talán érdemes lenne katonai hagyomány&otilde;rz&otilde; társaságokat is meghívni, akiknek vannak korabeli egyenruhái, fegyverei. Ha olvas valaki ilyen szervezett&otilde;l, jó lenne, ha dobna egy üzenetet, köszi.
+<BR><BR>
+
+Az egyetlen gond az, hogy a hangosításhoz cuccot kell bérelni. Már ennek is utánanéztem, egy megfelel&otilde; er&otilde;sít&otilde; két nagy hangfallal, állványos mikrofonnal és agregáttal egy délutánra 65,000 forintba kerül. Mivel nem áll mögöttünk jól támogatott szervezet, két megoldás lehetséges: vagy hoz valaki ingyen, ami elég valószín&ucirc;tlen, vagy összedobjuk a pénzt. Ha mindenki csak 200-500 forintot ad, abból már meglesz. Kérdésem tehát most már nem csak az, hogy eljönnétek-e, hiszen már rengetegen jelentkeztetek, hanem hogy megér-e nektek egy kis támogatást is a dolog. Szép lenne, ha végre megmutatnánk a sok köcsög politikusnak, hogy t&otilde;lük függetlenül is van élet és gondolkodás Magyarországon.
+</P>
+
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050220.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050222.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

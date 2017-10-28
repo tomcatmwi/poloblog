@@ -1,0 +1,273 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<!-- Sunbelt Kerio Popup Killer - script has been inserted by KPF -->
+<script type="text/javascript">
+<!--
+var NoPopupsDone = 0;var CurrWindowOpen = window.open;var CurrWindowOpen2 = window.open;var orig_setTimeout = window.setTimeout;var orig_setInterval = window.setInterval;if ( window.showModelessDialog ) { var orig_showModelessDialog = window.showModelessDialog;} if ( window.showModalDialog ) { var orig_showModalDialog = window.showModalDialog;} 
+var cnt = 0;var popupType = "direct";var KPF_LOG_URL = "http://127.0.0.1:44501/pl.html?";var KPF_TIMEOUT = 100;var onUnloadFlag = false;var KPF_CompleteLoaded = false;
+function nullMethod() {}function nullWindow() {	 this.window = new Object(); this.document = new Object(); this.document.open=this.document.close=this.document.write=this.document.writeln=nullMethod; this.alert=this.back=this.blur=this.captureEvents=this.clearInterval=this.clearTimeout=this.close=this.confirm=this.dump=this.escape=this.focus=this.forward=this.GetAttention=this.getSelection=this.home=this.moveBy=this.moveTo=this.open=this.print=this.prompt=this.releaseEvents=this.resizeBy=this.resizeTo=this.scroll=this.scrollBy=this.scrollByLines=this.scrollByPages=this.scrollTo=this.setCursor=this.setInterval=this.setTimeout=this.sizeToContent=this.stop=this.unescape=this.updateCommands=nullMethod;}
+function destroyIframe(ifr){ if (ifr != document.getElementById("kpfLogFrame"))   { var x = ifr.parentNode.removeChild(ifr);    delete x;  };}
+function sendStream(s, idx, kpf_pt){ try {        var ifr = document.getElementById("kpfLogFrame");   var tmp = ifr.cloneNode(true);   tmp.id  = "ifr_" + idx;   var s2 = "srv=" + document.location + "&url=" + s + "&pty=" + kpf_pt;   tmp.src = KPF_LOG_URL + escape(s2);   document.body.appendChild(tmp); } catch (e) {   orig_setTimeout("sendStream('" + s + "', " + idx + ",'" + kpf_pt + "')", KPF_TIMEOUT); }}
+function sendUrl(url){ if (onUnloadFlag)   sendStream(url, cnt++, popupType); else  {  try {   orig_setTimeout("sendStream('" + url + "', cnt++,'" + popupType + "')", KPF_TIMEOUT);  }   catch (e)   {}	  }}
+function newOpen(url, name, atr) {wnd = new nullWindow();wnd.focus = nullWindow;wnd.opener = this.window;sendUrl(url);return(wnd); }
+function newOpen2(url, name, atr) { sendUrl(url); return(new nullWindow());}
+function stopPopups(kpf_pt) { popupType = kpf_pt; CurrWindowOpen = window.open; window.open = newOpen2; }
+function startPopups(kpf_pt) { window.open = CurrWindowOpen;  popupType = kpf_pt;}
+function my_setTimeout(one, two) { if (typeof(one) == "function") {    function myFun(){}    myFun=one;    function newFun() {     stopPopups('ontimer');      myFun();      startPopups('direct');    }	    try {      return orig_setTimeout(newFun,two);    }    catch (e)  {      try {	    return eval("newFun()");      }      catch(e) { }    }   }  else {    try {      return orig_setTimeout("stopPopups('ontimer');"+one+"; startPopups('direct');", two);    }    catch (e)  {      try {        return eval("stopPopups('ontimer');"+one+"; startPopups('direct');");      }      catch(e) { }    }  }}
+function my_setInterval(one, two) {  if (typeof(one) == "function") {    function myFun(){}    myFun=one;    function newFun() {      stopPopups('ontimer');      myFun();      startPopups('direct');    }	    try {      return orig_setInterval(newFun,two);    }    catch (e) { }  }  else {    try {      return orig_setInterval("stopPopups('ontimer');"+one+";startPopups('direct');", two);    }     catch (e) { }  }}
+function my_onload() { var my_retcode = true; stopPopups("onload"); if(orig_onload)  my_retcode = orig_onload(); startPopups("direct"); KPF_CompleteLoaded = true; return my_retcode; }
+function my_unload() {  var my_retcode = true; var cnt = 0; stopPopups("onunload"); onUnloadFlag = true; if(orig_onunload)   my_retcode = orig_onunload(); startPopups("direct"); return my_retcode;}
+function my_windowopen(url, name, atr){ if ( (! KPF_CompleteLoaded) || (document.all && event != null && event.type == "mouseover") )  {  if ( ! KPF_CompleteLoaded) {   popupType = "direct";  }  else {   popupType = "mouseover";  }  sendUrl(url);  popupType = "direct"; } else {   try {   return CurrWindowOpen2(url, name, atr);  }   catch (e)   {}  }}
+function my_showModelessDialog (url , arguments , features) { if (!NoPopupsDone) {   var wnd = new nullWindow();  popupType = "direct_dialog";  sendUrl(url);  popupType = "direct";  return wnd; } if (popupType!="direct" | (event && event.type == "mouseover") ) {   var curr_popup = popupType;  if (event && event.type == "mouseover") {   popupType = "mouseover";  }    popupType = popupType+"_dialog";  sendUrl(url);  popupType = curr_popup;  return ( new nullWindow() ); } else {   return ( orig_showModelessDialog(url , arguments , features) );  } }
+function my_showModalDialog (url , arguments , features) { if (!NoPopupsDone) {   popupType = "direct_dialog";  sendUrl(url);  popupType = "direct";  return ""; } if (popupType!="direct" | (event && event.type == "mouseover") ) {   var curr_popup = popupType;  if (event && event.type == "mouseover") {   popupType = "mouseover";  }    popupType = popupType+"_dialog";  sendUrl(url);  popupType = curr_popup;  return ""; } else {   return ( orig_showModalDialog(url , arguments , features) );  } }
+function nopopups() { if(!NoPopupsDone)   {  NoPopupsDone = 1;  orig_onload = window.onload;  orig_onunload = window.onunload;  window.onload = my_onload;  window.onunload = my_unload;  window.open = my_windowopen;  }}
+window.setTimeout = my_setTimeout;window.setInterval = my_setInterval;window.open = newOpen;if ( orig_showModelessDialog ) { window.showModelessDialog = my_showModelessDialog;}if ( orig_showModalDialog ) { window.showModalDialog = my_showModalDialog;}
+//-->
+</script>
+<!-- Sunbelt Kerio Popup Killer - end of the script inserted by KPF -->
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2006.10.01., vasárnap</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Ó, hogy a szájbabaszott román recskaisten kankós botja szaladgálna a belsõfülében annak a huncut nádvágó kínai pöcsköszörûnek, aki ezt a laptopnak csúfolt fostömlõ szemétbányát összegányolta!! Tegnap egész nap írogattam nektek a válaszokat a leveleitekre, ma meg kapcsolom be: hát, nulla byte. Hogy rohadna le a keze, aki ezt a szemetet eladta. Anyám meg volt olyan hülye, hogy megvette. Én meg olyan hülye, hogy pont ezt kértem kölcsön. Ó, hogy lenne tele a tervezõjével a beteglista a nemibeteg-osztályon...
+<BR><BR>
+
+Na, kezdjük elölrõl. Most a pendrive-ra mentem, hátha az felfogja, hogy percenként nyomkodom a Ctrl-S-t. Ez amúgy is évtizedes szokásom, 
+csak ez a hullámbádog szemétbánya nem érti, mit akarok vele.
+<BR><BR>
+
+Hírek. Házi õrizetben vagyok, ezt eddig is tudtátok, a rendõrök meg azzal szórakoznak, hogy óránként becsöngetnek ellenõrizni. Éjszaka is. Nehogy már aludjunk, hiszen nekik is szar odakint mászkálni. Az ugyan benne van a törvényben, hogy lehetõség szerint a mindennapi életemet nem kéne zavarni, de szarnak rá. Minden egyes alkalommal tüzetesen megnézik a személyimet, pedig ugyanazok a rendõrök jönnek mindig. A dolog értelme csak annyi, hogy biztosan felkeljek az ágyból kétóránként. A rendõröknek tehát ezúton kívánok hasonlókat, mint a laptopot tervezõ kínaiaknak. Tisztelet a kivételnek, amelyik nem baszogat.
+<BR><BR>
+
+És most sziszifuszi munkám folytatódik. Számos levelet kaptam, amelyben helyeslitek a miniforradalmat, és támogatásotokról biztosítotok, ezeket köszönöm. Kaptam továbbá pár olyat is, amelyekben névtelen netpatkányok lelkendeznek azon, hogy "most végre megszívtam", és reményeiket fejezik ki, hogy életfogytiglant kapok. Most már látják, hogy ez nem jött be, és azon reménykednek, hogy az ügyvédi költségekben tönkremegyek. Ezek az emberek általában ugyanazok, akik elõszeretettel használják a "frusztrált" és "komplexusos" szavakat. A levélírók harmadik csoportja azonban csaknem ugyanolyan jelentõs, mint az elsõ, s õk azok, akik nem értik, mi történt, miért kellett szétkapni a tévé épületét, és miért vettem részt mindebben. Az õ kedvükért összeraktam ezt a kis Forradalmi FAQ-t. Lehet terjeszteni e-mailben is, ha valaki erre vágyik, vagy pont ugyanezeket kérdezgetik tõle.
+<BR><BR>
+
+<B>KIS MAGYAR FORRADALMI KISKÁTÉ ÉS CSÕCSELÉK-HATÁROZÓ</B><BR><BR>
+
+<B>Vandálok, huligánok, csõcselék, patkányok, nem is akarom ezt itt elolvasni!</B><BR>
+Ez esetben köszönjük a részvételt, és siessen, hogy visszaérjen a Tesco-ból, mielõtt kezdõdik a Gyõzike show.
+
+<BR><BR>
+
+<B>Mire való középületeket szétverni, emlékmûveket rombolni? Ez vandalizmus!</B><BR>
+Az. Mint ahogy a Sztálin-szobor ledöntése is, meg a rádió ostroma. Meg a hidak elfoglalása taxikkal.
+<BR><BR>
+
+<B>Mit akartak ezek a köztévétõl? Hiszen ott volt a Hír TV, annak is felolvashatták volna a követeléseiket!</B><BR>
+Sõt, Anettka mûsorába is betelefonálhattak volna. Kapjunk már észbe. A közszolgálati tévének nevében a funkciója. Arra szolgál, a mi adóforintjainkból fizetve, hogy bennünket szolgáljon. Amikor százezer ember összegyûlik a Parlament elõtt, igazán foglalkozhattak volna velük öt percet. Ehelyett "mindössze néhány száz fõs" tömegrõl hazudtak, aztán szórakoztató mûsorokat adtak. A tüntetõk békés követeit a biztonságiak erõszakkal megpróbálták ott fogni. Még akkor sem foglalkoztak a tüntetéssel, amikor már az elõcsarnokot ostromolták. Miféle hírmédium az, amelyik a saját ostromát is megpróbálja eltussolni?
+<BR><BR>
+
+<B>Milyen jogon teszik tönkre a mi adóforintjainkból épített dolgokat?</B><BR>
+Ó, istenem. Mennyi is a kár? A sajtó szerint kétszázmillió forint. Az tízmillió ember esetén koponyánként 20 forint. Feltéve persze, hogy egyetlen cég sem adózik. A reális érték valami két-három forint körül van. Közben a Gyurcsány-kormány fejenként ötszázezres adósságot csinált nektek. Milyen jogon? Ne gyere azzal, hogy õket megválasztottuk, mert nem erre kaptak felhatalmazást, és maguk is beismerték, hogy hazudtak.
+<BR><BR>
+
+<B>Miért kellett ártatlan emberek tulajdonát, autóját tönkretenni?</B><BR>
+A tévé elõtt az MTV szolgálati autói parkoltak, illetve a tévé vezetõinek autói. Nem igaz, amit a média állított, hogy ott "a környéken lakók" autói parkoltak, mert egyrészt a környéken nem lakik senki, csak bankok és követségek vannak ott, másrészt az egy zárt VIP parkoló. Mindenki megnyugtatására közlöm, hogy Rudi Zoltán utasítására a tévé máris pótolta - közpénzbõl - a tönkretett kocsikat. Vagyis másnap vett magának egy újat.<BR>
+Azt se nagyon reklámozták, hogy a tér túloldalán parkoló, rengeteg kocsi közül még a tükröt se törték le egyikrõl sem, pedig mellettük igencsak szétkaptak egy rendõrségi furgont.<BR>
+A Blaha Lujza téren és a Nyugatinál sem vertek szét autókat, sõt, semmi mást sem, amíg a rendõrök nem kezdtek õrjöngeni. Maguk a helyszínrõl tudósító újságírók is meglepetten tájékoztatták a stúdiókat, hogy a tüntetõk nem rombolnak, csak vonulnak és kiabálnak. (Például a Klubrádió tudósítója, akit egyébként a rendõrök meg is támadtak élõ adásban.) Amikor a rendõrök megcsinálták a balhét, a stúdiókban elégedetten dõltek hátra, végre lehet csõcselékezni meg futballhuligánozni.
+<BR><BR>
+
+<B>A tévében kopasz állatokat láttam gyújtogatni, felháborító!</B><BR>
+És a rendõrök között is láthattál néhányat. Azok is törtek-zúztak. Például embereket. Esetenként a saját lakásukban, mert az éppen a Blahánál vagy a Nyugatinál volt. Olyanokat is, akiknek semmi közük sem volt az egészhez. Amikor ezt írom, a letartóztatottaknak és meghurcoltaknak már a felét szabadon engedték, és már nemzetközi szervezetek tiltakoznak a rendõri huliganizmus ellen.<BR>
+Ami a mi gyújtogatóinkat illeti, igen, azok sem szépek. Viszont nem rugdosnak összebilincselt embereket, hanem kimentik a rendõrt a harcképtelenné tett vízágyúból. Ilyen a világon sehol nincs. Aztán pedig ne felejtsük el, hogy igen aktívan mûködnek a provokátorok is, akik bizony elhozták a maguk kis cserkészcsapatát, törni-zúzni. Õket aztán boldogan filmezték a szenzációra éhes riporterek. A tüntetõk azonban szinte mindenhol leállították õket, sõt, olyan is volt, hogy õk adták át õket a rendõröknek.<BR>
+Érdekes egyébként, hogy a rendõri brutalitásról csak akkor kezdett huhogni a média, amikor véletlenül pofáncsaptak két Tilos Rádiós kölyköt...
+<BR><BR>
+
+<B>Ezek az Árpád-sávos zászlók, a turulmadarak meg a csodaszarvasok az ufóhívõ hülyék/nyilasok/stb jelképei.</B><BR>
+Akik ilyeneket mondanak, általában a Heti Hetesben vagy a Liberálisok Házában hangoztatják nagy mellénnyel, hogy õk mekkora magyarok, mert itt születtek, tehát. Ha annyira magyarok vagytok, mi a probléma a történelmi magyar jelképekkel? Hol láttál olyat, hogy például az amerikaiak a fehér fejû sast, vagy a franciák a gall kakast fikázzák? Vagy akár a németek a német sast és a vaskeresztet? Vagy az oroszok a vörös csillagot? Ezek a mi nemzeti jelképeink. A jelkép pedig nem önmagában való dolog, hanem közös értékek kötõdnek hozzájuk. Felmutatásukkal a tömeg ezen értékek közös elfogadását nyilvánítja ki. Az ezeréves nemzeti jelképek pedig éppen azért ezerévesek, mert az általuk képviselt értékek ezer éven át megtartották a nemzetet. Ezeket az értékeket köpik le azok, akik most nyilasokról meg csõcselékrõl hadoválnak. Már csak az a kérdés, hogy ha õk magyarok, akkor mi kik vagyunk?
+
+<BR><BR>
+
+
+
+<B>Nevetséges, hogy egyesek politikai foglyoknak nevezik a letartóztatott vandálokat. Ma, a XXI. századi Európában ilyen már nincs!</B><BR>
+Igen, továbbá maffia és titkosszolgálat sincs, mert ahhoz túl kicsi ország vagyunk, tudjuk. Magyarország egyébként is a világ egyetlen becsületes állama, ahol még a miniszterelnök is becsületesen hazudik, Princz Gábor, Kulcsár Attila, Tocsik Márta meg mind ártatlanok. Jó reggelt. Magyarország a világ része, disznóságok nem csak a tévéhíradóban fordulnak elõ, hanem a valóságban is. Lehet arról álmodozni, hogy a régi kommunisták már mind eltûntek, már meg lett váltva a világ, itt már Kánaán van, csak ettõl Biszku Béla és kivénhedt ávós pajtásai még mindig ott éldegélnek tisztes nyugdíjasként a rózsadombi villákban, és tessék csak megnézni, hol ülnek a fiacskáik... nahát, csak nem a Parlamentben?
+<BR><BR>
+
+<B>Tényleg azt hiszitek, hogy ettõl majd lemond a Gyurcsány?</B><BR>
+Le fog. És azt is megjósolom, hogy Szlovákiába menekül, ahol politikai menedékjogot kap.
+<BR><BR>
+
+<B>És ha lemond, akkor mi van? Gondoljátok, aki jön helyette, az majd jobb lesz?</B><BR>
+A jelenlegi rendszerben, a jelenlegi alkotmánnyal valóban nem. Épp ezért a tüntetõknek csak az egyik követelése a Gyurcsány-kormány lemondása. Új alkotmányt is követelünk, ami lehetetlenné tenné, hogy a jelenlegi, belterjes politikai elit - négypárti klikk - továbbra is magához szorítsa a hatalmat, kizárva bármiféle új politikai irányvonal megjelenését.
+<BR><BR>
+
+<B>Mi a baj az alkotmánnyal?</B><BR>
+Az, hogy illegitim. Az ezeréves magyar alkotmányt 1944-ben, a német megszállással felfüggesztették. 1949-ig nem volt alkotmány. 1949-ben a Rákosi-kormány hozta létre a jelenlegi alkotmányt, orosz tankok árnyékában. Államalapítónk, Szent István ünnepét is az "alkotmány ünnepeként" kellett megtartani évtizedekig. 1989-ben ezt az alkotmányt a még mindig regnáló kommunisták "reformnak" nevezve aktualizálták, például átírták benne a "nép" szót "nemzet"-re, és átnevezték az országot köztársaságnak, de érdemi változás nem történt. A hatalmat jelenleg több párt között osztják meg, de csak a legnaivabbak hiszik, hogy ezek között különbség van. A Gyurcsány-kormány fejezte be a rendszerváltásnak nevezett hatalmi átrendezést, olyan súlyosan demokráciaellenes intézkedésekkel, mint a Belügyminisztérium és az Igazságügyi Minisztérium összevonása. A jelenlegi alkotmány teszi lehetõvé, hogy az ország házában kicsinyes személyes viták folyjanak, a kormány eladósítsa az országot, elkótyavetyélje a nemzeti vagyont, tönkretegyen bennünket nemzetközi érdekcsoportok kívánságainak megfelelõen. Nincs értelme pusztán a kormányt leváltani, vissza kell állítani a nemzetet ezer éven át megtartó Szent Korona-alkotmányt. Ez nem okvetlenül királyságot jelent, bár azzal is elég jól elvoltunk pár évtizedig, és néhány olyan elmaradott ország, mint Hollandia, Svédország vagy az Egyesült Királyság ma is elég jól elvannak vele.
+<BR><BR>
+
+<B>Ennek a zavargásnak semmi köze 1956-hoz, bemocskolja annak emlékét!</B><BR>
+Ezt a demagóg marhaságot személyesen Gyurcsány Ferencnek köszönhetjük, tehát talán ne szajkózzuk. Gyurcsány Ferenc még a kilencvenes évek elején is ellenforradalomnak titulálta '56-ot, most meg emlékmûvet készült avatni. Ki mocskol tehát mit?
+<BR><BR>
+
+<B>Pár ezer, vagy pár tízezer ember nem képviseli az egész magyar nemzetet. Nekem ne akarják megmondani, hogy mit gondoljak!</B><BR>
+De igen. S hogy ez így van, a választás eredményei bizonyítják is: a nemzet rendes szavazáson is kinyilvánította, hogy nem kíváncsi többé az MSZP-re. A Kossuth téri százezerrõl - a tömegbecslõ zsenik kedvéért, mert ugye ehhez mindenki ért - annyit, hogy amikor Orbánék nagyjából ugyanennyi embert vittek oda, azt kétmilliónak mesélték. Utóbb szinte mindenki egyetértett abban, hogy legfeljebb két-háromszázezer lehetett, de kétmillió semmiképp. Legyünk szerények, és csak a harmadát ismerjük el. Pedig ez egy spontán szervezett tüntetés, nem pedig sokmillió forintért megszervezett népi hepaj, ingyen vonatokkal és buszokkal.<BR>
+Számoljunk csak. A téren erõs túlsúlyban vannak az aktív korú fiatalok, kb. 18-35 év között. Õk az ország lakosságának kb. 40 százalékát teszik ki. Az arány Budapesten is hasonló. A tüntetõk többségükben budapestiek, a vidékiek saját megyeszékhelyeiken tüntetnek. Ha a százezer emberre mindegyikre számolunk fejenként 5-6 embert, aki egyetért velük, de nem ment el, mert nem ért rá, nem mert kimenni, túl öreg vagy túl fiatal hozzá, akkor máris hat-hétszázezer emberrõl beszélünk, aki személyesen vagy lélekben ott van a Kossuth téren. Mindezt egy 1,8 milliós városban, ahol azért nem mindenki felnõtt, és az emberek jó részét alapvetõen nem is érdekli a politika. Ugye senki nem gondolja komolyan, hogy egy tüntetést csak akkor lehet komolyan venni, ha Magyarország mind a tízmilliós lakossága ott tolong a Kossuth téren?
+<BR><BR>
+
+<B>Az egész balhét a Fidesz pénzeli!</B><BR>
+A Fideszt ugyanúgy utálják a Kossuth tériek, mint az MSZP-t. Hiszen õk is számtalanszor becsapták a magyar nemzetet. A Fidesz nem is mer kimenni közéjük, bár most volt egy gyenge próbálkozásuk Makovecz Imre vezetésével, hogy ellenszínpadot állítsanak fel a Kossuth téren. A tömeget nem szervezi senki, a Fidesz éppen úgy megdöbbent, mint a többi párt.
+<BR><BR>
+
+<B>Miért kellett megrongálni a Szabadság téri szovjet hõsi emlékmûvet? Hiszen az csak egy katonai emlékmû.</B><BR>
+Igen, azoknak a katonáknak az emlékmûve, akik õrjöngõ, részeg hordaként feldúlták, lerombolták országunkat, megerõszakolták nagyanyáinkat, embereket lõttek agyon heccbõl, aztán százezerszámra vitték a magyarokat koncentrációs táborokba. Negyven évig nyögtük a rémuralmukat. Néhány demagóg hang most azért sipákol, hogy mi mit szólnánk, ha az oroszok megrongálnák a Don-kanyarbeli magyar sírokat. Ez csúsztatás. A Szabadság téri obeliszk egyrészt nem sír, nincsenek alatta katonák maradványai, hanem politikai emlékmû. Éppen olyan, mintha a hazánkban elesett tatár hõsöknek lenne emlékoszlopa. Másrészt soha senki nem rongálta meg az országunkban ezerszámra található, valódi szovjet katonasírokat, temetõket. Ezt az emlékmûvet hazánk megszégyenítésének céljával állították éppen a Szabadság térre, a meggyalázott Budapest történelmi jelentõségû pontjára, ahol Táncsicsot egykor kiszabadították a ma már nem álló börtönbõl. Az obeliszk helyén egykor az ereklyés országzászló és a Trianon-szoborcsoport állt, emlékeztetve a magyar nemzetet történelmi megalázásunkra. Attól, hogy eltelt pár évtized, még nem felejtette mindenki el.
+<BR><BR>
+
+<B>Most azt hiszitek, ti vagytok az '56-os harcosok, mert összemocskoltatok egy emlékmûvet?</B><BR>
+Erre a kérdésre egy 1956-os fényképpel válaszolnék.
+</P>
+<CENTER>
+
+<A NAME="1">
+<A HREF="#1" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20061001.jpg'; document.wdth=421; document.hght=640; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20061001_thumb.jpg" BORDER=0></A>
+
+</CENTER>
+<P ALIGN="justify">
+
+Egyébként ha Faludy Györgynek joga volt magánvéleménye kifejezéseként szobrokat rombolni, majd Budapest díszpolgáraként leélni hátralevõ életét, akkor nekünk is lehet. 
+<BR><BR>
+
+<B>A tüntetõk csak azt követelik, hogy Gyurcsány mondjon le, és a Fradit engedjék vissza az NB1-be.</B><BR>
+Nem tudom, ki terjesztette el a médiában ezt az ostobaságot. A követelések a következõk:
+<BR><BR>
+
+1. A Gyurcsány-kormány haladéktalanul mondjon le!
+<BR><BR>
+
+2. A köztársasági elnök hirdessen amnesztiát a hatalom által kiprovokált forradalmi cselekményekben résztvevõk, fogvatartottak és elítéltek számára, hiszen õk politikai üldözöttek, politikai foglyok!
+<BR><BR>
+
+3. A magyar szabadság eszméjét évszázadok óta megtestesítõ Szabadság térrõl vigyék el egy más, arra alkalmas helyre a Szovjet Hõsök emlékmûvét! A Szabadság térre állítsák vissza az Ereklyés Országzászlót és a Trianon szoborcsoportot!
+<BR><BR>
+
+4. Oszlassák fel az Országgyûlést, és hívjanak össze Alkotmányozó Nemzetgyûlést!
+<BR><BR>
+
+5. Szülessen új választási törvény, amelyben nincs 5%-os választási küszöb, és amelybõl ki kell szûrni a jelenleg meglévõ, tömeges választási csalás lehetõségét!
+<BR><BR>
+
+6. Oldjanak fel minden titkosítást, és pártoktól független gazdasági szakértõk csoportja tárja fel Magyarország államadósságának és gazdaságának valós helyzetét!
+<BR><BR>
+
+7. Haladéktalanul szülessen törvény, amely alanyi jogon elérhetõvé teszi minden magyar számára a magyar állampolgárságot!
+<BR><BR>
+</I>
+
+A fentieket "alkotmányellenesnek" minõsítette néhány politikus, pedig ebbõl hat a jelenlegi alkotmány keretein belül is teljesíthetõ lenne.
+<BR><BR>
+
+Ennyit tehát a tüntetésrõl és a zavargásokról, s aki még mindig nem ért valamit, azt csak sajnálni tudom.<BR>
+Börtönnaplóm következõ részét reményeim szerint a holnapi blogban olvashatjátok.
+
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060930.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+
+<!-- Sunbelt Kerio Popup Killer - script has been appended by KPF -->
+<iframe id="kpfLogFrame" src="http://127.0.0.1:44501/pl.html?START_LOG" onload="destroyIframe(this)" style="display:none;">
+</iframe>
+<script type="text/javascript">
+<!--
+	nopopups();
+//-->
+</script>
+<!-- Sunbelt Kerio Popup Killer - end of the script appended by KPF-->

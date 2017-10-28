@@ -1,0 +1,572 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<!-- Sunbelt Kerio Popup Killer - script has been inserted by KPF -->
+<script type="text/javascript">
+<!--
+var NoPopupsDone = 0;var CurrWindowOpen = window.open;var CurrWindowOpen2 = window.open;var orig_setTimeout = window.setTimeout;var orig_setInterval = window.setInterval;if ( window.showModelessDialog ) { var orig_showModelessDialog = window.showModelessDialog;} if ( window.showModalDialog ) { var orig_showModalDialog = window.showModalDialog;} 
+var cnt = 0;var popupType = "direct";var KPF_LOG_URL = "http://127.0.0.1:44501/pl.html?";var KPF_TIMEOUT = 100;var onUnloadFlag = false;var KPF_CompleteLoaded = false;
+function nullMethod() {}function nullWindow() {	 this.window = new Object(); this.document = new Object(); this.document.open=this.document.close=this.document.write=this.document.writeln=nullMethod; this.alert=this.back=this.blur=this.captureEvents=this.clearInterval=this.clearTimeout=this.close=this.confirm=this.dump=this.escape=this.focus=this.forward=this.GetAttention=this.getSelection=this.home=this.moveBy=this.moveTo=this.open=this.print=this.prompt=this.releaseEvents=this.resizeBy=this.resizeTo=this.scroll=this.scrollBy=this.scrollByLines=this.scrollByPages=this.scrollTo=this.setCursor=this.setInterval=this.setTimeout=this.sizeToContent=this.stop=this.unescape=this.updateCommands=nullMethod;}
+function destroyIframe(ifr){ if (ifr != document.getElementById("kpfLogFrame"))   { var x = ifr.parentNode.removeChild(ifr);    delete x;  };}
+function sendStream(s, idx, kpf_pt){ try {        var ifr = document.getElementById("kpfLogFrame");   var tmp = ifr.cloneNode(true);   tmp.id  = "ifr_" + idx;   var s2 = "srv=" + document.location + "&url=" + s + "&pty=" + kpf_pt;   tmp.src = KPF_LOG_URL + escape(s2);   document.body.appendChild(tmp); } catch (e) {   orig_setTimeout("sendStream('" + s + "', " + idx + ",'" + kpf_pt + "')", KPF_TIMEOUT); }}
+function sendUrl(url){ if (onUnloadFlag)   sendStream(url, cnt++, popupType); else  {  try {   orig_setTimeout("sendStream('" + url + "', cnt++,'" + popupType + "')", KPF_TIMEOUT);  }   catch (e)   {}	  }}
+function newOpen(url, name, atr) {wnd = new nullWindow();wnd.focus = nullWindow;wnd.opener = this.window;sendUrl(url);return(wnd); }
+function newOpen2(url, name, atr) { sendUrl(url); return(new nullWindow());}
+function stopPopups(kpf_pt) { popupType = kpf_pt; CurrWindowOpen = window.open; window.open = newOpen2; }
+function startPopups(kpf_pt) { window.open = CurrWindowOpen;  popupType = kpf_pt;}
+function my_setTimeout(one, two) { if (typeof(one) == "function") {    function myFun(){}    myFun=one;    function newFun() {     stopPopups('ontimer');      myFun();      startPopups('direct');    }	    try {      return orig_setTimeout(newFun,two);    }    catch (e)  {      try {	    return eval("newFun()");      }      catch(e) { }    }   }  else {    try {      return orig_setTimeout("stopPopups('ontimer');"+one+"; startPopups('direct');", two);    }    catch (e)  {      try {        return eval("stopPopups('ontimer');"+one+"; startPopups('direct');");      }      catch(e) { }    }  }}
+function my_setInterval(one, two) {  if (typeof(one) == "function") {    function myFun(){}    myFun=one;    function newFun() {      stopPopups('ontimer');      myFun();      startPopups('direct');    }	    try {      return orig_setInterval(newFun,two);    }    catch (e) { }  }  else {    try {      return orig_setInterval("stopPopups('ontimer');"+one+";startPopups('direct');", two);    }     catch (e) { }  }}
+function my_onload() { var my_retcode = true; stopPopups("onload"); if(orig_onload)  my_retcode = orig_onload(); startPopups("direct"); KPF_CompleteLoaded = true; return my_retcode; }
+function my_unload() {  var my_retcode = true; var cnt = 0; stopPopups("onunload"); onUnloadFlag = true; if(orig_onunload)   my_retcode = orig_onunload(); startPopups("direct"); return my_retcode;}
+function my_windowopen(url, name, atr){ if ( (! KPF_CompleteLoaded) || (document.all && event != null && event.type == "mouseover") )  {  if ( ! KPF_CompleteLoaded) {   popupType = "direct";  }  else {   popupType = "mouseover";  }  sendUrl(url);  popupType = "direct"; } else {   try {   return CurrWindowOpen2(url, name, atr);  }   catch (e)   {}  }}
+function my_showModelessDialog (url , arguments , features) { if (!NoPopupsDone) {   var wnd = new nullWindow();  popupType = "direct_dialog";  sendUrl(url);  popupType = "direct";  return wnd; } if (popupType!="direct" | (event && event.type == "mouseover") ) {   var curr_popup = popupType;  if (event && event.type == "mouseover") {   popupType = "mouseover";  }    popupType = popupType+"_dialog";  sendUrl(url);  popupType = curr_popup;  return ( new nullWindow() ); } else {   return ( orig_showModelessDialog(url , arguments , features) );  } }
+function my_showModalDialog (url , arguments , features) { if (!NoPopupsDone) {   popupType = "direct_dialog";  sendUrl(url);  popupType = "direct";  return ""; } if (popupType!="direct" | (event && event.type == "mouseover") ) {   var curr_popup = popupType;  if (event && event.type == "mouseover") {   popupType = "mouseover";  }    popupType = popupType+"_dialog";  sendUrl(url);  popupType = curr_popup;  return ""; } else {   return ( orig_showModalDialog(url , arguments , features) );  } }
+function nopopups() { if(!NoPopupsDone)   {  NoPopupsDone = 1;  orig_onload = window.onload;  orig_onunload = window.onunload;  window.onload = my_onload;  window.onunload = my_unload;  window.open = my_windowopen;  }}
+window.setTimeout = my_setTimeout;window.setInterval = my_setInterval;window.open = newOpen;if ( orig_showModelessDialog ) { window.showModelessDialog = my_showModelessDialog;}if ( orig_showModalDialog ) { window.showModalDialog = my_showModalDialog;}
+//-->
+</script>
+<!-- Sunbelt Kerio Popup Killer - end of the script inserted by KPF -->
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>2007.02.03., szombat</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Mi folyik a Kossuth téren? Kis morzsácskákból sikerült összerakni, mi is akart lenni ez a FUK-nak indult, ám elfuserált kis kiabálgatásba fulladt Kossuth tér-afterparty.
+<BR><BR>
+
+Reggel, ugyebár, elterjedt a hír, hogy Orbán Viktor néhány képviselõtársával odament a Kossuth térre, és szétpakolta egy kicsit a kordont. Én egyébként elég érdekes módon szereztem errõl tudomást. Reggel Athina felriadt mellettem, felrázott, és közölte a fentieket. Az érdekes ebben az, hogy mélyen aludt, és valószínûleg álmában sem tudja fogni a Hír TV-t, rádió vagy ilyesmi pedig nem szólt sehol, de nem is hallatszana be a prímán hangszigetelt lakásba. Mégis, kedvesem egyszerûen ezzel ébredt, én meg félkómásan kipattantam az ágyból, rohantam a géphez, és konstatáltam, hogy tényleg így van. Az már bootolás és felöltözés után ért el az agyamig, hogy <I>honnan a picsából tudta ezt,</I> elvégre aludt, mint akit agyonvertek, kábé tegnap este tíz óra óta! Mindezidáig nem sikerült megmagyarázni.
+<BR><BR>
+
+Hogy miért jutott eszébe Viktorkának épp most, nagy hirtelen káoszbrigádot játszani, azt egyszerûbb megmagyarázni. Rászóltak ugyanis mindenféle európai pártszervezetek, amelyeknek a Fidesz is tagja, hogy baszki, most már csinálj valamit, mert úgy kivágunk titeket, hogy a lábatok nem éri a földet. Hosszas agyalás után ezt sikerült kitalálni. Tegyük arrébb a kordont, és akkor csináltunk valamit. A tömeg örülni fog, a Viktor név megint szép lesz, méltó régi, nagy híréhez, és utána jót lehet reggelizni a sarki Parlament Caféban. A tömeg pedig örült is, és tódult a Kossuth térre.
+<BR><BR>
+
+Persze legott megindult a fingfûrészelés, hogy ezt mégis hogy gondolta a Zorbánviktor, elvégre az a kordon ott, az maga a REND, és aki rendetlenkedik, azt a szigorú apuka elfenekeli (mellesleg tessék ránézni Gyurcsányra és Dobrev Klárára, és a fenti, visszatérõ gyurcsányi gondolatmotívumot továbbvezetve elképzelni az õ intim életüket, mindegy, nem érdekes). Szóval Orbán megsértette a RENDet, és igaz ugyan, hogy a kordon maga is megsértett valami törvényt, de az más, a REND, az sokkal fontosabb, és mindenki meg lesz bírságolva, aki ott volt, akinek pedig van kék egyenruhája, valamint élni és mozogni képes (szolgálni és védeni már régen nem kell), azonnal rohanjon, és pakolja vissza azt a kordont. Demszky mindjárt odaböfögte azt is, hogy Orbán Viktornak a turulszobrot kéne lebontania. Igen, BRAVÓ, azt hiszem, ez az elmúlt 16 év legimbecillisebb politikai nyilatkozata, szerintem meg Demszkyt kellene lebontani, legközelebb torta helyett baseball-ütõvel. Kis kipillantás: észrevettétek, hogy a nemrég még napi témaként kezelt kátyú/kutyaszar/légszenny triász egyik napról a másikra tabu lett a sajtóban? Most már Fõpolgármester Úrról beszélünk, a fõváros nagyívû fejlõdésérõl, és ha bárhol rosszat szól valaki a Fõpolgármester Úrra egy netes fórumon, megfelelõen képzett SZDSZ-pártaktivisták sietnek lehurrogni a leghajmeresztõbb ostobaságokkal és látványos százalékokat összezagyváló eredménylistákkal. Ugyanígy van egyébként egy Miniszterelnök Urunk is, akire csak áhítatosan csillogó szemmel szabad felnézni, mert õ adja nekünk a Rendet, a Fejlõdést, és a Fejlövést is azoknak, akiknek nem megfelelõen csillog a szemük. Estére már tudjuk, hogy a kordonbontás <I>"több, mint aggályos",</I> valamint <I>"tízmillió magyar ember életét sodorja veszélybe",</I> és oda a demokrácia, jön a fehérterror, mindenki vessen magára, aki nem maradt otthon, RENDes állampolgárként.
+<BR><BR>
+
+Van azért még e kis hazában, akit hiába lõttek fejbe, csuktak le, ástak el és fenyegettek meg, még mindig nem érti a REND lényegét, és csak kiment a Kossuth térre a hír hallatán. Ilyen hülyék, mint én is. Sajnos, ilyen hülye már kevés van. A szemek kilövöldözése, a viperás agyonverés, az utcáról elhurcolt emberek híre elég jól hatottak a lázadó magyarok harci kedvére, így alig néhány százan - talán ezren - voltak ma a Kossuth téren. Nem is lesznek többen. Mindjárt akcióba lépett az ellenoldal is, a suttogó propaganda már el is kezdte terjeszteni, hogy a kordonbontós akció természetesen "provokáció", mert minden az, miért pont ez lenne kivétel. A téren tartózkodók arányai: 75% olyan, akinek már minden mindegy, 20% olyan, akinek nincs jobb dolga, 5% pedig rikácsolni ment, kvázi személyesen vezetni magát egy külön forradalomban. Képek következnek, tessék kapaszkodni a rácsokba.
+</P>
+<CENTER>
+
+<A NAME="1">
+<A HREF="#1" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_1.jpg'; document.wdth=427; document.hght=640; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_1_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Elindultunk többen, természetesen "Csõcselék" mellényben, hátha megint fel kell valamit gyújtani<BR>
+</I>
+<BR>
+
+<A NAME="2">
+<A HREF="#2" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_2.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_2_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A 2-es villamos leállt, a trolik sem közlekedtek a térig. A Jászai Mari tér felõl közeledtünk.<BR>
+</I>
+<BR>
+
+<A NAME="3">
+<A HREF="#3" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_3.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_3_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A legváltozatosabb öltözékû rendõrök fogadtak bennünket. Ezeknek a régi, szürke gyakorló jutott...<BR>
+</I>
+<BR>
+
+<A NAME="4">
+<A HREF="#4" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_4.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_4_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+...ennek kék, sajnos jelvény már nem volt neki...<BR>
+</I>
+<BR>
+
+<A NAME="5">
+<A HREF="#5" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_5.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_5_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+... ennek is szürke...<BR>
+</I>
+<BR>
+
+<A NAME="6">
+<A HREF="#6" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_6.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_6_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+... ezeknek ahogy esett, úgy puffant...<BR>
+</I>
+<BR>
+
+<A NAME="7">
+<A HREF="#7" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_7.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_7_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+... ennek pedig már jutott sisak se, de kapott helyette Kirasza mellényt, hadd cipelje.<BR>
+</I>
+<BR>
+
+<A NAME="8">
+<A HREF="#8" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_8.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_8_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Jött a média<BR>
+</I>
+<BR>
+
+<A NAME="9">
+<A HREF="#9" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_9.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_9_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A Parlament közepe felé haladva egyre változatosabbá vált a látvány<BR>
+</I>
+<BR>
+
+<A NAME="10">
+<A HREF="#10" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_10.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_10_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Ezt a tahót megkérdeztem, hol a jelvénye. "És neked az ész?!" - kiabált vissza kincstári szellemességgel. Elmondtam neki, milyen diplomám van, és milyen nyelvvizsgáim, de õ nem mondta meg, hogy neki milyen. De legalább szóba állt velem.<BR>
+</I>
+<BR>
+
+<A NAME="11">
+<A HREF="#11" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_11.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_11_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Rövidesen elõkerült egy hangosbeszélõ, és a kordon elé állított virágláda sarka szolgált átmeneti színpadként. Késõbb érkezett egy kisteherautó is, mobil hangosítócuccal és szónoki emelvénnyel.<BR>
+</I>
+<BR>
+
+<A NAME="12">
+<A HREF="#12" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_12.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_12_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Volt ilyen is<BR>
+</I>
+<BR>
+
+<A NAME="13">
+<A HREF="#13" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_13.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_13_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Ez (is) vigyázott ránk<BR>
+</I>
+<BR>
+
+<A NAME="14">
+<A HREF="#14" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_14.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_14_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Meg ez is<BR>
+</I>
+<BR>
+
+<A NAME="15">
+<A HREF="#15" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_15.jpg'; document.wdth=427; document.hght=640; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_15_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Õk, együtt, sokan<BR>
+</I>
+<BR>
+
+<A NAME="16">
+<A HREF="#16" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_16.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_16_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A nõk egy kicsit jobban adtak magukra<BR>
+</I>
+<BR>
+
+<A NAME="17">
+<A HREF="#17" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_17.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_17_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Versike a hirdetõoszlopon
+</I>
+
+</CENTER>
+<P ALIGN="justify">
+
+A földi képeket elunva - mindig ugyanaz a látvány a Kossuth téren - kitaláltuk, mi lenne, ha készítenénk egy képet valamelyik környezõ ház tetejérõl? Rövid szemlélõdés után az Iparkamara épületét szemeltük ki, amelynek alagsorában a metrómegálló is van. Ketten indultunk oda, s útközben összefutottunk egy olvasómmal (ezekbõl mindig az átlagosnál több van az ilyen eseményeken, néha egészen érdekesek is, mint az a fiatal lány, aki úgy elámult jelenlétemen ma délután, hogy a cigi is kiesett a szájából). A szintén sárga mellényt viselõ kedves olvasómmal három fõre kiegészülve léptünk be az épület márvány elõcsarnokába, és különösebb formaságok nélkül a nyitott lifthez masíroztunk. A becsukódó ajtó mögött még láthattuk a döbbent arccal felénk induló portás felháborodott arcát, de mire elért volna minket, már a hetediken léptünk ki a fülkébõl. Ott mindjárt meg is találtuk a lépcsõházat, tetején a padlás ajtaját, ami azonban, sajnos, zárva volt. Elindultunk lejjebb, hogy egy irodából fényképezzünk ki, amikor a liftbõl elõpattant a portás, kiköpött mása a <I>Revenge on School</I> pedellusának, mármint amilyennek én képzeltem, és felháborodástól fojtott hangon felszólított minket, hogy azonnal távozzunk. Mondtam, hogy ne idegesítse fel magát, és hívtuk a liftet. Az öregúr kissé vörös fejjel egyensúlyozott mellettünk, láthatólag nem mindennapi esemény, hogy idegenek törnek be az Iparkamara békés nyugalmába holmi fényképezõgépekkel, és láthatólag az sem az, hogy egymagában kell szembeszállnia a veszedelmes huligánokkal.
+<BR><BR>
+
+- Egyébként - mondtam neki, amíg a liftre vártunk - Önnek lassú a reakcióideje, ha szabad megjegyeznem.<BR>
+- Hogy... lassú? Kérem... a reakcióidõm?<BR>
+- Igen.<BR>
+- Kérem... igen, lassú. És?<BR>
+<BR>
+
+Megjött a lift, kinyílt az öt ajtó közül a legtávolabbi. A portás elrévedve bámulta, majd tétován mozdult, de addigra az ajtó már becsukódott.
+<BR><BR>
+
+- Mondom, lassú.<BR>
+- Kérem, én egész nap ráérek!<BR>
+- Jó magának.<BR>
+- Jó.<BR>
+- Most haragszik?<BR>
+- Ö... hát... nem, de... illetlenség!<BR>
+- Mi?<BR>
+- Azért nem mentem maguk után rögtön, mert azt vártam, hogy köszönjenek!
+<BR><BR>
+
+Lelifteztünk a földszintre, az öregúrban végre leállt az adrenalinfolyam, és már kezdte úgy érezni, ura a helyzetnek. Ha már egyszer magunktól elmegyünk, miért ne tenne úgy, mintha õ egyedül kényszerítette volna ezt ki? A kapuból még jól utánam is szólt.
+<BR><BR>
+
+- És magát... korábbról már... ismerjük a nevét is!!
+<BR><BR>
+
+Azzal becsapta az ajtót, és gyorsan eliszkolt a fülkéjébe, mert ez a beszólás már nem mindennapi bátorságot igényelt a részérõl.
+</P>
+<CENTER>
+
+<A NAME="18">
+<A HREF="#18" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_18.jpg'; document.wdth=427; document.hght=640; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_18_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Pillantás a Mérleg utcából a Lánchídra<BR>
+</I>
+<BR>
+
+<A NAME="19">
+<A HREF="#19" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_19.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_19_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A Kossuth tér a másik irányból<BR>
+</I>
+<BR>
+
+<A NAME="20">
+<A HREF="#20" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_20.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_20_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Mivel még mindig nem történt semmi, elmentünk máshová. Az OBI parkolójában láttuk ezt a remek mosópor-tárolót.<BR>
+</I>
+<BR>
+
+<A NAME="21">
+<A HREF="#21" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_21.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_21_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Csak este nyolc óra felé tértünk vissza a Kossuth térre. A hírek szerint közben megérkezett a rendõri erõsítés, hoztak vízágyút, gázgránát-vetõt és lovakat is.<BR>
+</I>
+<BR>
+
+<A NAME="22">
+<A HREF="#22" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_22.jpg'; document.wdth=427; document.hght=640; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_22_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Tüntetõ kutya<BR>
+</I>
+<BR>
+
+<A NAME="23">
+<A HREF="#23" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_23.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_23_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Valamelyest javult a felszerelés-ellátás. Ám milyen érdekes: az egész kordonból <B>egyetlenegy</B> rendõrnek volt jelvénye. Neki hogyhogy pont nem esett le?<BR>
+</I>
+<BR>
+
+<A NAME="24">
+<A HREF="#24" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_24.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_24_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A tüntetõk pénzt dobáltak a rendõröknek a kordon mögé, és szidalmazták õket. Valaki banánt is bedobott nekik.<BR>
+</I>
+<BR>
+
+<A NAME="25">
+<A HREF="#25" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_25.jpg'; document.wdth=427; document.hght=640; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_25_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Ilyen is van már<BR>
+</I>
+<BR>
+
+<A NAME="26">
+<A HREF="#26" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_26.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_26_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A számítógépek és a nyomtatók elterjedésének következménye: egyre több Times New Roman a tüntetéseken<BR>
+</I>
+<BR>
+
+<A NAME="27">
+<A HREF="#27" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_27.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_27_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A söprû egyre népszerûbb motívum<BR>
+</I>
+<BR>
+
+<A NAME="28">
+<A HREF="#28" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_28.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_28_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Kossuth tér, este 9 óra körül. Se többen, se kevesebben nem lettünk.<BR>
+</I>
+<BR>
+
+<A NAME="29">
+<A HREF="#29" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_29.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_29_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Na, ezt tessék lenácizni. Hunyadi Mátyás király zászlaja.
+</I>
+</CENTER>
+<P ALIGN="justify">
+
+A tömegben feltûnt néhány árus, perecet és a szokásos jelvényeket árusították. Én csak néhány CSÕCSELÉK mellényt vittem, el is kapkodták õket hamar (igen, tudom, zsidó vagyok), illetve vittem néhány "Az igazi jelvényem leesett" feliratú kitûzõt, amit a rendõröknek szántam. Nekik sajnos nehéz volt odaadni, mert a rács túloldalán álltak, és mindössze az intellektuális rangsor kialakításának erejéig interaktáltak velünk. Odébb, a Parlament oldalánál azonban kiszúrtunk néhány fakabátot, akik jelvény nélkül ácsorogtak néhány busz mellett. Egyiküknek odaadtam egy feliratos kitûzõt, mire tiltakozni kezdett.
+<BR><BR>
+
+- De nekem van jelvényem!<BR>
+- Hol?<BR>
+<BR>
+
+Erre lehúzta az overallja cipzárját, betúrt az alatta levõ kabátba, majd hosszas keresgélés után, nagyjából a töke mellõl elõhalászta a kért azonosítót, és büszkén felmutatta.
+<BR><BR>
+
+- És maga szerint ez látszik?<BR>
+- Hát, kérem, hogy engem ilyen egyenruhával látnak el, arról nem tehetek!<BR>
+- A kollégáján odabent ugyanilyen egyenruha van, mégis visel jelvényt.<BR>
+- Lehet, de én most visszaadom ezt itt magának.<BR>
+- Tartsa csak meg, jól jöhet egy kollégájának, ha már a magáé így elõkerült.<BR>
+- Nem, nem, visszaadom.
+<BR><BR>
+
+És visszaadta a kitûzõt, merthogy neki már van. Végül is ne panaszkodjunk, ha legközelebb agyon akar minket verni egy neoávós, tudjuk, hogy az alsónadrágja környékén kell keresni az azonosítószámot. A jelvény viselését elõíró rendõrségi törvény is csak egy azok közül, amelyeknél a REND elõbbre való. A jelvény hiányáról, illetve arról, hogy ki lehet-e rakni az egyenruhára vagy sem, annyit, hogy délelõtt, amikor a rendõrök még csak gyülekeztek, lement a térre Demeter Ervin, fideszes képviselõ, és szóvá tette a jelvények hiányát. Hipp-hopp, minden egyenruhán hirtelen ott figyelt a zománcozott lapocska, egészen amíg Demeter el nem távozott, akkor valahogy megint leestek.
+<BR><BR>
+
+Visszatértünk az egyre lagymatagabb hangulatú tömegbe, ahol épp az október 23-án arcon lõtt székely úr mondott beszédet, a szokásos fordulatokkal. Egy másik középkorú úr lépett hozzám, és megkérdezte, értek-e az Internethez. Mondtam, hogy nem.
+<BR><BR>
+
+- De te ilyen internetes szakember vagy, nem?<BR>
+- Nem.<BR>
+- De van weboldalad, nem? Akkor tudod, hogy kell ilyet csinálni, ugye?<BR>
+- Nagyjából.<BR>
+- Mert akarunk csinálni egy ilyen weboldalt, a Batthyány-örökmécses körüliek, akik ott tüntetünk. Milyen programot ajánlasz hozzá? Mármint milyen programnyelvet?<BR>
+- Milyen oldal lesz az?<BR>
+- Weboldal.<BR>
+- Jó, de milyen jellegû?<BR>
+- Hát, mint a Kuruc.info.<BR>
+- Hírportál?<BR>
+- Az, az.<BR>
+- Akkor PHP, vagy mondjuk Drupal, Wordpress, vagy...
+</P>
+<CENTER>
+
+<A NAME="30">
+<A HREF="#30" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_30.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_30_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A webszakmai konzultációt Blogadmin és Robin heves integetése szakította félbe. Rövid iramodás után e fiatalemberhez vezettek, akit már jó tucatnyian próbáltak rávenni, távozzon a térrõl szépszerével, amíg teheti.<BR>
+</I>
+<BR>
+
+<A NAME="31">
+<A HREF="#31" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_31.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_31_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A fiatalember ugyanis román volt, ami még nem is lenne baj, de be volt baszva, és meg akarta dobni egy üveggel a rendõröket. Ráadásul nem is nagyon értette az emberi beszédet. Figyeljük meg a képen mellette látható úriember arckifejezését: õ éppen haragszik.<BR>
+</I>
+<BR>
+
+<A NAME="32">
+<A HREF="#32" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_32.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_32_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A román nem akarta érteni, hogy húzzon a faszba, pedig ígértek neki verést, nagyot. Erre engem kezdett el stírölni, amolyan bunyó elõtti erõfelmérés gyanánt. Nagy nehezen megértette, hogy ez sem egy életbiztosítás. Megmutattam neki az igazolványtokomban lapuló rendõrjelvényt is, hátha észbe kap, de csak még jobban összezavarodott, és mindenáron vissza akart furakodni a tömegbe. Végül segítettünk neki távozni, de még ezt se értette...<BR>
+</I>
+<BR>
+
+<A NAME="33">
+<A HREF="#33" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_33.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_33_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+... ugyanis a sarokról minduntalan visszafordult, pedig már rohadt nagy pofonok lebegtek körülötte. Megjegyzem, már délután is láttam õt a téren, akkor is hasonló okból kellett elzavarni.<BR>
+</I>
+<BR>
+
+<A NAME="34">
+<A HREF="#34" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_34.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_34_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Végül sikerült elterelgetni egy mellékutcába, de már sunnyogott is a sarok felé, hogy a háztömböt megkerülve visszaosonjon. Mondtuk neki, hogy ha megpróbálja, elõbb megverjük, aztán átadjuk a rendõröknek.<BR>
+</I>
+<BR>
+
+<A NAME="35">
+<A HREF="#35" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_35.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_35_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Ennek ellenére megpróbálta. Pár srác erre odament a rendõrautóhoz, és szólt a fakabátoknak, hogy itt van egy rendbontó, aki dobálózni akart. A rendõrök viszont nem akartak vele foglalkozni, azt mondták, hogy intézzük el mi, majd másfelé néznek.<BR>
+</I>
+<BR>
+
+<A NAME="36">
+<A HREF="#36" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_36.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_36_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Nagy nehezen felfogta, hogy most iszony nagy ruha következik, ha nem pucol. Megmutattuk neki egy-két srác vasalt bakancsát, egy pár bevetési kesztyût, és ismertettük vele a tényt, hogy kábé harmincan vagyunk rá. Erre végre eloldalgott, de mivel erõsen akadozva tette, egy kicsit kiabáltunk és helybentrappoltunk neki. Erre azt hitte, hogy üldözzük, és hanyatt-homlok elmenekült. Jól tette.<BR>
+</I>
+<BR>
+
+<A NAME="37">
+<A HREF="#37" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070203/20070203_37.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070203/20070203_37_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A nagy "üldözés" közben találtuk ezt az õsöreg csatornafedelet. Magy. Kir. Távbeszélõ-hálózat, állt rajta valamikor. Elképzelem, ahogy valamikor a negyvenes években egy büszke proletár nekiállt lelkiismeretesen kiflexelni belõle a "kir." szótagot.<BR>
+</I>
+<BR>
+</CENTER>
+<P ALIGN="justify">
+
+Még visszanéztünk a térre, de már bontották a dekorációkat, elment a hangosítókocsi, és oszlott a nép is. Amikor már csak húszan-harmincan maradtak ott, a rendõrök is elõmerészkedtek a rács mögül, és hõsiesen kiszorították õket a Nyugatiig. Holnap Kuncze Gábor tököli házához megy a tömeg, aztán este megint lehet menni unatkozni a Kossuth térre. Zajlik az élet Káeurópában.
+
+</P>
+
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20070202.html">
+<B><< elõzõ nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+
+<B>következõ nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+<BR><BR>
+
+</BODY>
+</HTML>
+
+<!-- Sunbelt Kerio Popup Killer - script has been appended by KPF -->
+<iframe id="kpfLogFrame" src="http://127.0.0.1:44501/pl.html?START_LOG" onload="destroyIframe(this)" style="display:none;">
+</iframe>
+<script type="text/javascript">
+<!--
+	nopopups();
+//-->
+</script>
+<!-- Sunbelt Kerio Popup Killer - end of the script appended by KPF-->

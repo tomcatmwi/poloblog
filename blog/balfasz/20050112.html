@@ -1,0 +1,121 @@
+<HTML>
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-265</B><BR>
+2005.01.12.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<BR><BR>
+
+A múltkor volt egy droidsztori, amelyben egy kerítés is szerepelt. Err&otilde;l jutott eszembe egy vecsési illet&otilde;ség&ucirc; haverom biciklis kalandja. (Szia, René! :))
+<BR><BR>
+
+Szóval René, nagy biciklis, és mellesleg az akkor nagy nev&ucirc; Astroidea demócsapat tagja egy tavaszi éjszakán hazafelé karikázott a 4-es út mentén. Egyszer csak elfogyott alóla a bicikliút. Nézte nagy bambán, hogy hová lett, aztán felfedezte a betoncsík folytatását, különös módon egy ott húzódó drótkerítés mögött. Na, biztos valami paraszt részegen húzta fel a kerítést, gondolta, pont rá a bicikliútra. Fogta a bringát, nagy nehezen átemelte az akadályon, majd &otilde; is átmászott, és békésen folytatta tovább útját.
+<BR><BR>
+
+Kisvártatva nagy szirénázásra lett figyelmes. Hátranézett, hát látta ám, hogy nagy villogva jön utána vagy három dzsip. Utolérték, lefékeztek, kiugrált egy raj fekete ruhás, géppisztolyos alak, leszedték a biciklir&otilde;l, és igen alaposan odakenték a kocsi oldalához, majd megmotozták.
+<BR><BR>
+
+- Hé! Mit akarnak, nem csináltam semmit! - tiltakozott.<BR>
+- Nem hát - felelte bosszúsan a kommandósok parancsnoka - csak fél órája biciklizel a ferihegyi repül&otilde;tér gurulóútján, te baromállat!!
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050111.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050113.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

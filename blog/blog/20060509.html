@@ -1,0 +1,114 @@
+
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2006.05.09., kedd</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Van net! Van net! Van net... Fantasztikus. Mennyi id&otilde;be is telt, másfél hónapba? De van! Hurrá. Az új boltmotoron pedig az utolsó simításokat végzem. Még a végén elkészül. Lehet, hogy blogmotor is lesz majd egyszer. Az ugyanis nincs. Amit itt láttok, az csak HTML, Notepad-del szerkesztgetem nap mint nap (khm...)
+<BR><BR>
+
+Csinált velem interjút a <A HREF="http://www.szentkoronaradio.com/" TARGET="_new">Szent Korona Rádió.</A> Az online Hazafi Rádió ugyanis id&otilde;közben úgy járt, mint a <A HREF="http://www.kuruc.hu" TARGET="_new">kuruc.hu</A>, nevezetesen kétfelé váltak, aztán a két oldal azóta is vitatkozik, melyikük az igazi. (Itt jegyezném meg, hogy a kuruc.hu helyett nemrég elindult a <A HREF="http://www.falanx.hu" TARGET="_new">falanx.hu</A> címen egy új nemzeti hírportál, a csapat másik fele pedig a <A HREF="http://www.kuruc.info" TARGET="_new">kuruc.info</A> portált nyomatja.) Egyesek szerint az ilyen hirtelen szétválásokban a Fidesz keze szokott lenni, mások szerint ez hülyeség. Én már nem bírom követni. No de mindegy, aki másra sem vágyik, mint hogy 57 percen keresztül hallgathassa a pofázásomat, az <A HREF="http://szentkoronaradio.com/letoltesek/fiatalmagyarok/20060506tomcat.zip" TARGET="_new">töltse le</A> a <I>Fiatal magyarok</I> magazinm&ucirc;sort MP3 formátumban.
+<BR><BR>
+
+Jók ezek a nemzeti rádiók, nem csak zenék mennek rajtuk, hanem érdekes történelemtudományi el&otilde;adások is. Ilyenkor sajnálom, hogy nem tudok beszédre figyelni, miközben dolgozom. És még mennyi meló van ezzel a vacakkal, mire beindulhat! De remélem, júliusra már megindulhat a tesztelés.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060507.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060510.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

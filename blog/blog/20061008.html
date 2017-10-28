@@ -1,0 +1,161 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<!-- Sunbelt Kerio Popup Killer - script has been inserted by KPF -->
+<script type="text/javascript">
+<!--
+var NoPopupsDone = 0;var CurrWindowOpen = window.open;var CurrWindowOpen2 = window.open;var orig_setTimeout = window.setTimeout;var orig_setInterval = window.setInterval;if ( window.showModelessDialog ) { var orig_showModelessDialog = window.showModelessDialog;} if ( window.showModalDialog ) { var orig_showModalDialog = window.showModalDialog;} 
+var cnt = 0;var popupType = "direct";var KPF_LOG_URL = "http://127.0.0.1:44501/pl.html?";var KPF_TIMEOUT = 100;var onUnloadFlag = false;var KPF_CompleteLoaded = false;
+function nullMethod() {}function nullWindow() {	 this.window = new Object(); this.document = new Object(); this.document.open=this.document.close=this.document.write=this.document.writeln=nullMethod; this.alert=this.back=this.blur=this.captureEvents=this.clearInterval=this.clearTimeout=this.close=this.confirm=this.dump=this.escape=this.focus=this.forward=this.GetAttention=this.getSelection=this.home=this.moveBy=this.moveTo=this.open=this.print=this.prompt=this.releaseEvents=this.resizeBy=this.resizeTo=this.scroll=this.scrollBy=this.scrollByLines=this.scrollByPages=this.scrollTo=this.setCursor=this.setInterval=this.setTimeout=this.sizeToContent=this.stop=this.unescape=this.updateCommands=nullMethod;}
+function destroyIframe(ifr){ if (ifr != document.getElementById("kpfLogFrame"))   { var x = ifr.parentNode.removeChild(ifr);    delete x;  };}
+function sendStream(s, idx, kpf_pt){ try {        var ifr = document.getElementById("kpfLogFrame");   var tmp = ifr.cloneNode(true);   tmp.id  = "ifr_" + idx;   var s2 = "srv=" + document.location + "&url=" + s + "&pty=" + kpf_pt;   tmp.src = KPF_LOG_URL + escape(s2);   document.body.appendChild(tmp); } catch (e) {   orig_setTimeout("sendStream('" + s + "', " + idx + ",'" + kpf_pt + "')", KPF_TIMEOUT); }}
+function sendUrl(url){ if (onUnloadFlag)   sendStream(url, cnt++, popupType); else  {  try {   orig_setTimeout("sendStream('" + url + "', cnt++,'" + popupType + "')", KPF_TIMEOUT);  }   catch (e)   {}	  }}
+function newOpen(url, name, atr) {wnd = new nullWindow();wnd.focus = nullWindow;wnd.opener = this.window;sendUrl(url);return(wnd); }
+function newOpen2(url, name, atr) { sendUrl(url); return(new nullWindow());}
+function stopPopups(kpf_pt) { popupType = kpf_pt; CurrWindowOpen = window.open; window.open = newOpen2; }
+function startPopups(kpf_pt) { window.open = CurrWindowOpen;  popupType = kpf_pt;}
+function my_setTimeout(one, two) { if (typeof(one) == "function") {    function myFun(){}    myFun=one;    function newFun() {     stopPopups('ontimer');      myFun();      startPopups('direct');    }	    try {      return orig_setTimeout(newFun,two);    }    catch (e)  {      try {	    return eval("newFun()");      }      catch(e) { }    }   }  else {    try {      return orig_setTimeout("stopPopups('ontimer');"+one+"; startPopups('direct');", two);    }    catch (e)  {      try {        return eval("stopPopups('ontimer');"+one+"; startPopups('direct');");      }      catch(e) { }    }  }}
+function my_setInterval(one, two) {  if (typeof(one) == "function") {    function myFun(){}    myFun=one;    function newFun() {      stopPopups('ontimer');      myFun();      startPopups('direct');    }	    try {      return orig_setInterval(newFun,two);    }    catch (e) { }  }  else {    try {      return orig_setInterval("stopPopups('ontimer');"+one+";startPopups('direct');", two);    }     catch (e) { }  }}
+function my_onload() { var my_retcode = true; stopPopups("onload"); if(orig_onload)  my_retcode = orig_onload(); startPopups("direct"); KPF_CompleteLoaded = true; return my_retcode; }
+function my_unload() {  var my_retcode = true; var cnt = 0; stopPopups("onunload"); onUnloadFlag = true; if(orig_onunload)   my_retcode = orig_onunload(); startPopups("direct"); return my_retcode;}
+function my_windowopen(url, name, atr){ if ( (! KPF_CompleteLoaded) || (document.all && event != null && event.type == "mouseover") )  {  if ( ! KPF_CompleteLoaded) {   popupType = "direct";  }  else {   popupType = "mouseover";  }  sendUrl(url);  popupType = "direct"; } else {   try {   return CurrWindowOpen2(url, name, atr);  }   catch (e)   {}  }}
+function my_showModelessDialog (url , arguments , features) { if (!NoPopupsDone) {   var wnd = new nullWindow();  popupType = "direct_dialog";  sendUrl(url);  popupType = "direct";  return wnd; } if (popupType!="direct" | (event && event.type == "mouseover") ) {   var curr_popup = popupType;  if (event && event.type == "mouseover") {   popupType = "mouseover";  }    popupType = popupType+"_dialog";  sendUrl(url);  popupType = curr_popup;  return ( new nullWindow() ); } else {   return ( orig_showModelessDialog(url , arguments , features) );  } }
+function my_showModalDialog (url , arguments , features) { if (!NoPopupsDone) {   popupType = "direct_dialog";  sendUrl(url);  popupType = "direct";  return ""; } if (popupType!="direct" | (event && event.type == "mouseover") ) {   var curr_popup = popupType;  if (event && event.type == "mouseover") {   popupType = "mouseover";  }    popupType = popupType+"_dialog";  sendUrl(url);  popupType = curr_popup;  return ""; } else {   return ( orig_showModalDialog(url , arguments , features) );  } }
+function nopopups() { if(!NoPopupsDone)   {  NoPopupsDone = 1;  orig_onload = window.onload;  orig_onunload = window.onunload;  window.onload = my_onload;  window.onunload = my_unload;  window.open = my_windowopen;  }}
+window.setTimeout = my_setTimeout;window.setInterval = my_setInterval;window.open = newOpen;if ( orig_showModelessDialog ) { window.showModelessDialog = my_showModelessDialog;}if ( orig_showModalDialog ) { window.showModalDialog = my_showModalDialog;}
+//-->
+</script>
+<!-- Sunbelt Kerio Popup Killer - end of the script inserted by KPF -->
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2006.10.08., vasárnap</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Nem nagyon értem ennek a házi õrizetnek a lényegét. Naponta kétszer, mindig ugyanabban az idõben becsengetnek, és megnézik a fejemet. Gyakran még azt se, van, akinek elég, ha a kaputelefonon leszólok. Azt már senki sem ellenõrzi, vajon öt perccel késõbb hová megyek, például leviszem-e Bertát sétálni. Nem mintha ennek olyan komoly társadalmi veszélyessége lenne. Ez az egész cirkusz igazából csak arra jó, hogy a rendõr is ugráljon, én se éljek nyugodtan, de ha bûnözõ lennék, igazából nem tartana vissza semmitõl. Szökéstõl meg pláne.
+<BR><BR>
+
+Szegény Berta kutyának, úgy látszik, romlik a szeme. Öregszik szegény. Megijed a hirtelen közeledõ dolgoktól, a neszektõl, ha nem látja a forrásukat, és akárhová megyek a lakásban, szinte árnyékként követ. Ha teheti, odajön, odanyomja a fejét a lábamhoz, emelgeti a tappancsát, és behúzott fülekkel pislog rám.
+<BR><BR>
+
+Tegnap felszólaltam a Kossuth téren. Nem, sajnos nem személyesen, csak telefonon. Egyszer csak felhívtak a szervezõk, hogy nem akarok-e mondani valamit, mert már órák óta injekciósok váltják egymást a színpadon a hülye verseikkel, és a közönség kezdi unni. Amúgy is éppen filozofikus gondolataim voltak, nagy vonalakban megosztottam hát a Kossuth térrel.
+<BR><BR>
+
+Ami szeptemberben történt, nem csak politikai jellegû forradalom (avagy tüntetéssorozat, avagy zavargás, avagy gonosznácicsõcselékhuligánlázadás, ellenforradalom, miegymás), hanem egy generációs ellentét felszínre kerülése, amely már régóta feszegeti a magyar társadalom kereteit. Mi, jelenlegi huszonévesek, és részben harmincévesek ugyanis egészen különös körülmények közt nevelkedtünk. Nagyszüleink még ismerték a régi, 1945 elõtti Magyarországot, szüleink azonban már a szocializmus világában váltak felnõtté. Mi már olyan iskolákba jártunk, ahol az oktatás mellett nagy erõkkel folyt az ideológiai agymosás, de még volt lehetõségünk megismerni ennek ellenpontját, nagyszüleink régi történeteit. Még akkor is, ha a nagyszülõk nem meséltek semmit - mert nem lehetett - még ismerünk egy régi fajta embert, akinek tartása van, tisztelettel beszél, és sem a pártutasítások, sem a konzumvilág nyüzsgése nem törte meg. A régiek tartása, erkölcse a szellemi elnyomáson is átragyog, még ha nem is szólhatnak, szólhattak hozzánk. Épp ezért felismerjük azt a rendszert, amely ezt a tartást el akarja venni tõlünk, engedelmes senkiháziakká silányítva bennünket, akik engedelmesen tapsolnak a Rendszernek, és elhiszik, hogy minden rendben van, a politikusok hazudnak, a világ ilyen.
+<BR><BR>
+
+A mi generációnk sereglett a Kossuth térre árpádsávos zászlók alatt. A mi generációnk indította el azt a nemzeti radikális szubkultúrát, amely egyre jobban terjed. Elszigetelt jelenségbõl ez a kultúra mozgalommá vált. Hol volt öt éve, tíz éve a Magyar Sziget, hányan vonultak fel egy-egy ilyen tüntetésen, mint a mostani, akár csak két éve is? No és miért van az, hogy szinte mindannyian egykorúak vagyunk? Mit gondoltok, miért pont "ifjúsági" mozgalom a HVIM, vagy miért "Jobboldali Ifjúsági Közösség" a Jobbik nevének feloldása? Hol van a negyvenes-ötvenes, vagy a hatvanas-hetvenes generáció? Megmondom: vagy a Fidesz-MSZP duó egyik felének csápol, mert szentül hiszi, hogy ennél messzebbre nem szabad menni a véleménynyilvánításban, vagy nem is meri kinyitni a száját.
+<BR><BR>
+
+De a mi generációnk most megmutatta, hogy hiába próbáltak bennünket elszigetelni nemzeti örökségünktõl, lejáratni elõttünk a nemzet jelképeit, és helyette plázákba kényszeríteni bennünket, ez azért nem sikerült maradéktalanul. S bizony mi nekimegyünk a tévészékháznak, ha hazudnak rólunk, mert mi már nem az engedelmes szüleink vagyunk. Mi már nem fogjuk be a pofánkat. Ez a generáció neki fog még menni egy-két dolognak, mint ahogy a hazug embert is elõbb-utóbb pofonvágja valaki. Nem ez volt az utolsó zavargássorozat Budapesten, és ha nem marad abba a konformista nyomulás, bizony lesznek ennél még cifrábbak is. A mi generációnk politizáló fele ezen az õszön elkötelezte magát 1920 és 1956 szelleme mellett. Egy napon kihalnak Kádár nyugdíjasai, megöregednek a régi kommunisták, és mi jövünk. Ha tetszik, ha nem, ez így lesz. Az otthonülõ háziasszonyokat, baltaarcú konzumdroidokat nem fogja érdekelni az egész. Rájuk ugyan nem fog tömegpárt épülni, amelyik az egészet visszafordíthatja.
+<BR><BR>
+
+Amerikában lehet showmûsorral, üres szavakkal választást nyerni, de nálunk már nem sokáig. Még néhányszor talán, de nem örökké. Nekünk ugyanis van olyan történelmi múltunk, tapasztalatunk, amivel ezt megakadályozhatjuk. Szeptember 18-a éjjelén bebizonyosodott, hogy e múltat a legbársonyosabb szavú médiagazemberek sem tudják elvenni tõlünk. Akinek felnyílt a szeme, annak nem lehet többé visszaragasztani. Lehet, hogy most még visszaszavazzák a hazugot a hatalomba, de már egyre kevesebben hisznek neki. A média is csak ideig-óráig képes kitartani. Vége lesz ennek, és akkor majd nem fognak ostobán vihogni a szófordulaton, miszerint: feltámad Magyarország.
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20061007.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20061009.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+
+<!-- Sunbelt Kerio Popup Killer - script has been appended by KPF -->
+<iframe id="kpfLogFrame" src="http://127.0.0.1:44501/pl.html?START_LOG" onload="destroyIframe(this)" style="display:none;">
+</iframe>
+<script type="text/javascript">
+<!--
+	nopopups();
+//-->
+</script>
+<!-- Sunbelt Kerio Popup Killer - end of the script appended by KPF-->

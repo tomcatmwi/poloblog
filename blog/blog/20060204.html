@@ -1,0 +1,117 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2006.02.04., szombat</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Meglep&otilde;en sokan voltunk ma, legalább hatvan-hetvenen szaladtunk össze. Köszönöm mindenkinek, akik eljöttek, s ezúton üdvözlöm a BRFK munkatársait is, akik a fehér furgonból kameráztak minket. Csalódniuk kellett, mert tényleg semmi törvényellenest nem tettünk. A jelek szerint mindenki jó bulinak fogta fel, mint ahogy az is! De a mai nappal még nincs vége. A jöv&otilde; hét végén megismételjük ugyanezt, de ezúttal nem csak Budapesten, hanem az összes megyeszékhelyen és nagyobb városokban is. Jöv&otilde; szombat reggel ismét találkozunk, három-négy f&otilde;s csapatokban elindulunk a vidéki városokba, ahol majd találkozunk a helyi balhétársakkal, és szisztematikusan elfoglaljuk az országot. (De természetesen még mindig nem csinálunk semmi törvénytelent. Még csak szabálysértést sem követünk el.)
+<BR><BR>
+
+Jelentkezzenek azok, akik szívesen folytatnák a mai akciót vidéken, mondjuk Gy&otilde;rben, Pécsett, Kecskeméten vagy Miskolcon. A vonatjegyet fizetjük. Helybéliek is jöhetnek, jelentkezzetek, és majd kitaláljuk, hogy és hol találkozunk. Aki részt venne ebben, írja meg nevét, lakóhelyét és mobiltelefon-számát a következ&otilde;, ideiglenes címre: balhe@tomcatpolo.hu. Írjátok meg azt is, hányan jönnétek. Jó az, ha kisebb haveri társaságok jönnek. A jelentkezés határideje csütörtök este.
+<BR><BR>
+
+Azok is írjanak, akik ma reggel a bevállalósabbak közé álltak. Ti írjátok meg, kik vagytok, hány évesek, mivel foglalkoztok, mi a szakmátok, milyen eszközökhöz fértek hozzá, ami hasznos lehet bármihez. Veletek még a héten ismét találkozni szeretnék.
+<BR><BR>
+
+Aki meg nem jön, várjon türelmesen, egyszer talán megtudja, mit m&ucirc;velünk...
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060202.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060205.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

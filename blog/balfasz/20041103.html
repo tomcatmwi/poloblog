@@ -1,0 +1,119 @@
+<HTML>
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>DROID-206</B><BR>
+2004.11.03.
+<BR><BR>
+
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<BR><BR>
+
+Volt egyszer, de lehet, hogy nem, egy csávó, akit kurvára utált mindenki, mert oltári nagy balfasz volt. Azért van az úgy, hogy az ilyeneknek is sikerül valami: valahogy szerzett egy barátn&otilde;t. Ez így rendben is volt, de hát hiába a n&otilde;, ha nincs hova felvinni, mert lakása nem volt a gyereknek, a szüleivel élt, és mivel mindenki utálta, senki sem adta kölcsön neki a magáét.
+<BR><BR>
+
+Gondolkodott er&otilde;sen a droid, mit lehet itt tenni, hát már csak nem maradhat sz&ucirc;z ilyen hülyeség miatt. Aztán egy este eszébe ötlött egy remek gondolat. A metró! Mert amikor a metró megérkezik a végállomásra, az utasok kiszállnak, aztán az bemegy az alagútba, és csak egy jó félóra múlva jön vissza. Hurrá, lesz hol kefélni! A csaj némi unszolás után ráállt. Felszálltak hát a kettes metróra, elmentek a Déli pályaudvarig, és a hangosbemondó határozott <I>kérjük kedves utasainkat, hogy megállás után szíveskedjenek elhagyni a vonatot</I> felszólításának nem engedelmeskedve elbújtak a vagonban. Sikerült is elrejt&otilde;zni a metró&otilde;rök nem túl éber tekintete el&otilde;l, és a szerelvény elindult velük az alagútba. Hurrá, uccu neki, le is tépték egymásról a ruhát!
+<BR><BR>
+
+Csakhogy közbejött egy kis mal&otilde;r. Az igaz, hogy este, amikor gyér a forgalom, fél órát áll bent a vonat a végállomáson, de nappal, csúcsforgalomban azonnal fordul, és jön vissza. Ez történt most is, és az üzeked&otilde; párocska szépen kitolatott a vonatra váró utasok tömege elé... Azt nem tudom, mit kapott a csávó a barátn&otilde;jét&otilde;l, de hogy egy darabig kajtathatott új n&otilde; után, az biztos!
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20041031.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20041104.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

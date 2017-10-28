@@ -1,0 +1,142 @@
+body	
+{
+    background-color:		#161931;
+    color:			#ACAFC4;
+    font-family:		Verdana,Arial,Helvetica,sans-serif;
+    font-size:			12px;
+    line-height:		17px;		
+}
+
+textarea,input,select
+{
+    color: 			#000000;
+    font-family: 		Verdana, Arial, Helvetica, sans-serif;
+    font-size: 			9px;
+    text-decoration: 		none;
+
+}
+
+a.links
+{
+    color: 			#4d4d80;
+    font-family: 		Verdana, Arial, Helvetica, sans-serif;
+    font-size: 			11px;
+    text-decoration: 		none;
+}
+
+a.links:hover
+{
+    color: 			#4d4d80;
+    font-family: 		Verdana, Arial, Helvetica, sans-serif;
+    font-size: 			11px;
+    text-decoration: 		underline;
+}
+
+a.links2
+{
+    color: 			#FFFFFF;
+    font-family: 		Verdana, Arial, Helvetica, sans-serif;
+    font-size: 			11px;
+    text-decoration: 		none;
+}
+
+a.links2:hover
+{
+    color: 			#FFFFFF;
+    font-family: 		Verdana, Arial, Helvetica, sans-serif;
+    font-size: 			11px;
+    text-decoration: 		underline;
+}
+
+
+.admin
+{
+    color: 			#000000;
+    font-family: 		Verdana, Arial, Helvetica, sans-serif;
+    font-size: 			9px;
+    text-decoration: 		none;
+	 
+}
+
+.admin2
+{
+         color: 		#4d4d80;
+         font-family: 		Verdana, Arial, Helvetica, sans-serif;
+         font-size: 		10pt;
+         text-decoration: 	none;
+}
+
+/* az admin felulet fomenuje */
+
+.adminmenu
+{
+        font-family: 		Verdana, Arial, Helvetica, sans-serif;
+        font-size: 		10pt;
+	color:			#FFFFFF;
+	background-color: 	#4A6A90;
+	align:			left;
+	valign:			top;
+	border:			0;
+	margin:			2px;
+}
+
+/* uzenetoldal table class-jai */
+	
+.messageheader
+{
+        font-family: 		Verdana, Arial, Helvetica, sans-serif;
+        font-size: 		10pt;
+	color:			black;
+	background-color: 	#4A6A90;
+	align:			left;
+	vertical-align:		top;
+	margin:			1px;
+	border-collapse:	collapse;
+}
+
+.messagecontrols
+{
+        font-family: 		Verdana, Arial, Helvetica, sans-serif;
+        font-size: 		7pt;
+	line-height:		13px;
+	color:			#000000;
+	background-color: 	#ADADAD;
+	align:			left;
+	vertical-align:		top;
+	padding:		2px;
+	margin:			1px;
+	border:			1px;
+	border-collapse:	collapse;
+}
+
+.messagebody
+{
+        font-family: 		Verdana, Arial, Helvetica, sans-serif;
+        font-size: 		7pt;
+	line-height:		12px;
+	color:			#000000;
+	background-color: 	#ADADAD;
+	align:			left;
+	white-space: 		pre;
+	vertical-align:		top;
+	border:			1px;
+	padding-left:		5px;
+	margin:			2px;
+	border-collapse:	collapse;
+}
+
+
+.generallist
+{
+        font-family: 		Verdana, Arial, Helvetica, sans-serif;
+        font-size: 		7pt;
+	line-height:		12px;
+	color:			#000000;
+	background-color: 	#ADADAD;
+	align:			left;
+	vertical-align:		top;
+	border:			1px;
+	padding:		2px;
+	margin:			2px;
+	border-collapse:	collapse;
+}

@@ -1,0 +1,267 @@
+<HTML>
+<HEAD>
+
+<META content="Tomcat's T-shirt Shop" name=description>
+<META content="tomcat blog t-shirt tshirt poló póló polo trikó vicces humor ajándék ruha" name=keywords>
+<META content=all name=robots>
+
+<link href="user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="admin.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="user.js"></SCRIPT>
+
+
+<TITLE>:: tomcat polóboltja ::</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/004-off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/004-on.gif";
+    menu02_off=new Image(); menu02_off.src="pic/005-off.gif";
+    menu02_on=new Image(); menu02_on.src="pic/005-on.gif";
+    menu03_off=new Image(); menu03_off.src="pic/006-off.gif";
+    menu03_on=new Image(); menu03_on.src="pic/006-on.gif";
+    menu04_off=new Image(); menu04_off.src="pic/007-off.gif";
+    menu04_on=new Image(); menu04_on.src="pic/007-on.gif";
+    menu05_off=new Image(); menu05_off.src="pic/008-off.gif";
+    menu05_on=new Image(); menu05_on.src="pic/008-on.gif";
+    menu06_off=new Image(); menu06_off.src="pic/009-off.gif";
+    menu06_on=new Image(); menu06_on.src="pic/009-on.gif";
+}
+
+
+function addtocart() {
+  if (confirmaction(1023)) {
+     window.location = ('http://index.hu');  //  ide ird a php url-t!
+  }
+}
+
+function changeitem() {
+     window.location = ('http://index.hu');
+}
+
+function sendlink() {
+   if (mailaddy = prompt('E-mail cím?', '')) {
+   window.open('mailto:'+mailaddy+'?subject='+localmsg(1025)+'&body='+localmsg(1026)+window.url+localmsg(1027));
+   }
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="preloadimages();">
+
+<TABLE WIDTH="100%" HEIGHT="100%" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+<TR>
+<TD>&nbsp;</TD>
+
+<TD WIDTH="760" VALIGN=TOP>
+
+<TABLE WIDTH="100%" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+<TR>
+<TD VALIGN="TOP" WIDTH="222" >
+
+</TD>
+<TD BACKGROUND="pic/001.gif" WIDTH="538" HEIGHT="18" ALIGN=RIGHT>
+<A ONCLICK="window.open('legal.html','legal','status=no,scrollbars=no,noresize,width=640,height=480');"><B><SCRIPT LANGUAGE="JavaScript">addmsg(1013);</SCRIPT></B></A>&nbsp;
+
+</TD>
+</TR>
+</TABLE>
+
+<TABLE WIDTH="100%" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+<TR>
+<TD VALIGN="TOP"><A HREF="index.html"><IMG SRC="pic/002.gif" BORDER=0></A></TD>
+<TD VALIGN=TOP><IMG SRC="pic/003.gif"></TD>
+</TR>
+</TABLE>
+
+<! -- kozepso szekcio -- !>
+
+<TABLE WIDTH="100%" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+<TR>
+<TD VALIGN="TOP" WIDTH="123" BACKGROUND="pic/leftline.gif">
+
+<A HREF="#" ONMOUSEOVER="document.menu01.src=menu01_on.src; window.status='Ez az, ami téged érdekel! Polók minden mennyiségben.'; return true;" ONMOUSEOUT="document.menu01.src=menu01_off.src; window.status=''; return true"><IMG SRC="pic/004-off.gif" NAME="menu01" BORDER=0></A><BR>
+<A HREF="#" ONMOUSEOVER="document.menu02.src=menu02_on.src; window.status='Megrendelési tudnivalók'; return true;" ONMOUSEOUT="document.menu02.src=menu02_off.src; window.status=''; return true"><IMG SRC="pic/005-off.gif" NAME="menu02" BORDER=0></A><BR>
+<A HREF="#" ONMOUSEOVER="document.menu03.src=menu03_on.src; window.status='Olyat csinálok, amilyet akarsz!'; return true;" ONMOUSEOUT="document.menu03.src=menu03_off.src; window.status=''; return true"><IMG SRC="pic/006-off.gif" NAME="menu03" BORDER=0></A><BR>
+</TD>
+
+<TD VALIGN="TOP">
+
+<! --- szovegmezo --- !>
+<TABLE WIDTH="100%" CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH="10">&nbsp;</TD>
+<TD>
+
+<DIV CLASS="titles"><BR>
+BESZÓLSZ, VAZZE?!
+<BR><BR></DIV>
+<DIV CLASS="subtitles">
+Ne szóljunk be a vöröskatonának. Még megharagszik és jól felszabadít.
+<BR><BR>
+</DIV>
+
+<! -- Polomegjelenito flash applet -- !>
+
+<A NAME="arucikk">
+<CENTER>
+
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="505" height="370" id="polokep" align="middle">
+<param name="allowScriptAccess" value="sameDomain" />
+<param name="movie" value="polokep/polokep.swf" />
+<param name="quality" value="high" />
+<param name="bgcolor" value="#161931" />
+<param name="flashvars" value="backcolor=0x222222&baseobject=polokep/polok.swf&baseframe=1&itemobject=polokep/polomintak.swf&itemframe=3" />
+<embed flashvars="backcolor=0x222222&baseobject=polokep/polok.swf&baseframe=1&itemobject=polokep/polomintak.swf&itemframe=3" src="polokep/polokep.swf" quality="high" bgcolor="#161931" width="505" height="370" name="polokep" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+</object>
+</CENTER>
+
+<! -- Applet vege -- !>
+<BR>
+
+<CENTER>
+<TABLE WIDTH=400 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TD VALIGN="TOP">
+<DIV CLASS="menuitems">
+<SCRIPT LANGUAGE="JavaScript">addmsg(1017);</SCRIPT><BR>
+<SELECT CLASS="menucontrols" NAME="itemstyle" ONCHANGE="changeitem();">
+<OPTION SELECTED>Poló</OPTION>
+<OPTION>Hosszú ujjú poló</OPTION>
+<OPTION>Kapucnis pulóver</OPTION>
+<OPTION>Nõi kereknyakú sztreccs poló</OPTION>
+</SELECT><BR>
+<A HREF="#arucikk" ONCLICK="window.open('#', 'helper', 'status=no,scrollbars=no,noresize,width=350,height=350');"><SCRIPT LANGUAGE="JavaScript">addmsg(1020);</SCRIPT></A><BR>
+<A HREF="#arucikk" ONCLICK="window.open('meretezo.html', 'helper', 'status=no,scrollbars=no,noresize,width=350,height=350');"><SCRIPT LANGUAGE="JavaScript">addmsg(1021);</SCRIPT></A><BR>
+<A HREF="#arucikk" ONCLICK="sendlink();"><SCRIPT LANGUAGE="JavaScript">addmsg(1024);</SCRIPT></A>
+
+</DIV>
+
+</TD>
+
+<TD VALIGN="TOP">
+
+<DIV CLASS="menuitems">
+<SCRIPT LANGUAGE="JavaScript">addmsg(1018);</SCRIPT><BR>
+<SELECT CLASS="menucontrols" NAME="itemcolor" ONCHANGE="changeitem();" WIDTH=50>
+<OPTION SELECTED>Fekete</OPTION>
+<OPTION>Fehér</OPTION>
+<OPTION>Zöld</OPTION>
+<OPTION>Piros</OPTION>
+</SELECT><BR>
+</DIV>
+
+</TD>
+
+<TD VALIGN="TOP">
+
+<DIV CLASS="menuitems">
+<SCRIPT LANGUAGE="JavaScript">addmsg(1019);</SCRIPT><BR>
+<SELECT CLASS="menucontrols" NAME="itemsize" ONCHANGE="changeitem();" WIDTH=50>
+<OPTION SELECTED>S</OPTION>
+<OPTION>M</OPTION>
+<OPTION>L</OPTION>
+<OPTION>XL</OPTION>
+</SELECT><BR>
+</DIV>
+
+</TD>
+
+</TABLE>
+<BR>
+
+<DIV CLASS="subtitles2">
+<A HREF="#arucikk" ONCLICK="addtocart();">
+<SCRIPT LANGUAGE="JavaScript">addmsg(1022);</SCRIPT></A>
+</DIV>
+
+</CENTER>
+
+
+<DIV CLASS="subtitles">
+<BR><BR>
+<A HREF="#arucikk"><SCRIPT LANGUAGE="JavaScript">addmsg(1014);</SCRIPT></A></DIV>
+
+</FONT>
+</CENTER>
+
+<BR><BR>
+
+</TD>
+<TD WIDTH="10">&nbsp;</TD>
+</TR>
+</TABLE>
+
+<! --- szovegmezo vege --- !>
+
+</TD>
+
+<TD VALIGN="TOP" WIDTH="123" BACKGROUND="pic/rightline.gif">
+<A HREF="#" ONMOUSEOVER="document.menu04.src=menu04_on.src; window.status='Most érkezett cuccok!'; return true;" ONMOUSEOUT="document.menu04.src=menu04_off.src; window.status=''; return true"><IMG SRC="pic/007-off.gif" NAME="menu04" BORDER=0></A><BR>
+<A HREF="#" ONMOUSEOVER="document.menu05.src=menu05_on.src; window.status='Magamról. Meg a boltról.'; return true;" ONMOUSEOUT="document.menu05.src=menu05_off.src; window.status=''; return true"><IMG SRC="pic/008-off.gif" NAME="menu05" BORDER=0></A><BR>
+<A HREF="#" ONMOUSEOVER="document.menu06.src=menu06_on.src; window.status='Kérdés, óhaj, sóhaj esetére'; return true;" ONMOUSEOUT="document.menu06.src=menu06_off.src; window.status=''; return true"><IMG SRC="pic/009-off.gif" NAME="menu06" BORDER=0></A><BR>
+
+</TD>
+
+</TR>
+</TABLE>
+
+<IMG SRC="pic/010.gif"><BR><BR>
+
+
+<! --- kosar tartalma --- !>
+
+<DIV CLASS="titles"><SCRIPT LANGUAGE="JavaScript">addmsg(1004);</SCRIPT><BR></DIV>
+<DIV CLASS="subtitles">
+3 <SCRIPT LANGUAGE="JavaScript">addmsg(1005);</SCRIPT> 4500 <SCRIPT LANGUAGE="JavaScript">addmsg(1006);</SCRIPT>
+<BR><BR>
+</DIV>
+<A NAME="kosar">
+
+<! -- Egy polo a kosarban -- !>
+
+<DIV CLASS="baskettitle">
+HATÓSÁGI ÁLLATORVOS ELLEN&Otilde;RIZTE
+<BR>
+</DIV>
+<DIV CLASS="basketlabel"><SCRIPT LANGUAGE="JavaScript">addmsg(1007);</SCRIPT></DIV><DIV CLASS="basketitem">1 <SCRIPT LANGUAGE="JavaScript">addmsg(1012);</SCRIPT></DIV>
+<DIV CLASS="basketlabel"><SCRIPT LANGUAGE="JavaScript">addmsg(1008);</SCRIPT></DIV>
+<DIV CLASS="basketitem">
+1500
+<SCRIPT LANGUAGE="JavaScript">addmsg(1006);</SCRIPT><BR>
+<A HREF="#kosar" ONCLICK="if (confirmaction(1028)) { window.location = ('http://www.index.hu'); }"><SCRIPT LANGUAGE="JavaScript">addmsg(33);</SCRIPT></A>
+<BR><BR><BR>
+</DIV>
+
+<! -- Polo vege -- !>
+
+
+<DIV CLASS="subtitles2">
+<BR><BR>
+<A HREF="#"><SCRIPT LANGUAGE="JavaScript">addmsg(1009);</SCRIPT></A></DIV>
+<BR><BR>
+</CENTER>
+
+<IMG SRC="pic/010.gif"><BR><BR>
+
+<! --- kosar tartalma vege --- !>
+
+<CENTER>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE="1">
+<SCRIPT LANGUAGE="JavaScript">addmsg(1010);</SCRIPT><BR>
+<SCRIPT LANGUAGE="JavaScript">addmsg(1011);</SCRIPT>
+<BR><BR>
+</FONT>
+
+</TD>
+
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>
+

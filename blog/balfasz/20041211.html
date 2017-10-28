@@ -1,0 +1,148 @@
+<HTML>
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>DROID-239</B><BR>
+2004.12.11.
+<BR><BR>
+
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<BR><BR>
+
+<I>Maci küldte, nesztek.</I>
+
+<BR><BR>
+
+Öcsémmel történt ma ez az eset. A gyõri vasútállomáson álldogállt, volt még fél órája a vonat érkezéséig. Ácsorgott, unatkozott, egyszer csak odalépett hozzá egy cigánygyerek, lehetett vagy 14-15 éves. Természetesen seggrészeg volt, valószínûleg ennek hatására a dialógus alatt többször csak úgy a semmibe vihogott. Talán az angyalát látta, vagy nem tudom. 
+<BR><BR>
+
+- Adj egy cigit! 
+<BR><BR>
+
+Mire öcsém: 
+<BR><BR>
+
+- Nincsen, nem dohányzom.<BR>
+- De aggyá vazze, tudom hogy van!<BR>
+- Mondom, hogy nincsen, nem dohányzom.
+- Mennyi idõs vagy?<BR>
+- 19.<BR>
+- Gyerek vagy még...<BR>
+<BR>
+
+És az etnikum elkezdett amolyan nagyon-nagyon mérges szemekkel nézni öcsémre, és belenyúlt a zsebébe. Öcsém persze mindjárt hátralépett, és kihúzta a kezét a zsebeibõl, hátha valami pofozkodás lesz. A kedves etnikum elõhúzott egy bicskát, kinyitotta, ránézett öcsémre, morgott egyet mint a kutyák, becsukta és elrakta. Kotorászott tovább, elõhúzott valahonnan 300 forintot. 
+<BR><BR>
+
+- Ezt most odaadom neked, csak ne átkozz el ezért...
+<BR><BR>
+
+Szerencsétlen öcsém köpni-nyelni nem tudott. Pár pillanat döbbent csend után végre meg bírt szólalni.
+<BR><BR>
+
+- Ugyan miért is átkoználak el, nem tettél ellenem semmit.<BR>
+- Jó akkor megtartom, de ugye tényleg nem átkozol el?<BR>
+- Tényleg nem.<BR>
+<BR>
+
+A romasrác erre elrakta a pénzt, boldog karácsonyt kívánt, és eltûnt a balfenéken. Ilyenek is vannak...
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20041210.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20041212.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

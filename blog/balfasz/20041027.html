@@ -1,0 +1,257 @@
+<HTML>
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>DROID-202</B><BR>
+2004.10.27.
+<BR><BR>
+
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<BR><BR>
+
+Egyszer, régen, amikor még ez a blog fiatal volt és bohó, írtam nektek egy régi munkahelyemr&otilde;l, amely a Lófasz Rt. fed&otilde;nevet kapta. Most egy másik cégr&otilde;l szeretnék mesélni, ahol volt szerencsém megfordulni. A diszkréció szellemében nevezzük el ezt is valahogy máshogy, mint ahogy valójában hívták. Legyen a neve Szamárcsöcs Intervision.
+<BR><BR>
+
+A Szamárcsöcs Intervision egy dán játékfejleszt&otilde; cég volt. Játékfejleszt&otilde;k ebb&otilde;l már sejthetik, kik is voltak valójában, de miel&otilde;tt a Szamárcsöcs illetékesei sipákolni kezdenének, hogy én itt rontom a hírnevüket, hadd nyugtassam meg &otilde;ket: azon már nincs mit rontani. Tisztességes játékcégeknél, mint a Mithis, a Philos vagy a Digital Reality, ha a Szamárcsöcs Intervision neve szóba kerül, a reakció körülbelül ugyanaz, mintha Torgyán József neve kerülne el&otilde; egy átlagember számára. Idetolta a képét valami északi faszkalap, azt hitte, hogy ez itt az &otilde; gyarmata, és csinált egy játékcéget, mert itt milyen fasza olcsó minden. Aztán azt hitte, úgy lehet bánni a profi játékfejleszt&otilde;kkel, programozókkal, grafikusokkal, mint a TESCO-ban a takarítókkal, mert úgyis van annyi, mint a ny&ucirc;, majd felveszünk mást, ha valaki elmegy. Hát, ezt nagyon benézték a Szamárcsöcs Intervision okos vezet&otilde;i, de erre csak kés&otilde;bb jöttek rá.
+<BR><BR>
+
+Ha jól emlékszem, 2001-ben történt, hogy épp nem volt melóm, viszont kedvem lett volna a szakmai fejl&otilde;dés útjára lépni, mint 3D modeller. Ilyenkor az ember általában játékfejleszt&otilde; cégek környékén kutakodik munka után. Meg is örültem, amikor egy 3D grafikai fórumon rábukkantam a Szamárcsöcs Intervision hirdetésére. 3D grafikusokat, modellereket és animátorokat keres egy frissen indult játékfejleszt&otilde; stúdió! Jelentkeztem, mire hozzám vágtak egy adag tesztmunkát: textúrázás, karaktermodellezés, animáció. Egy délután alatt be is fejeztem, visszaküldtem, és rövidesen értesítettek, hogy fel vagyok véve. Ennek persze nagyon örültem, de meg is lep&otilde;dtem, mert nem csak hogy felvettek, de kapásból lead artist pozícióra. Hát jó, akkor f&otilde;nök leszek, az még úgysem voltam.
+<BR><BR>
+
+A megadott napon jelentkeztem a levélben írt címen. Közepes méret&ucirc; irodát bérelt a cég Zuglóban, egy mellékutcában. Els&otilde; pillantásra minden rendben volt: egy nagy teremben dolgozott a csapat, egy kisebb irodában szöszmötölt a cégvezet&otilde; csaj, és volt egy konyha is, az ilyen helyeken szokásos rozsdamentes mosogatóval és mikrosüt&otilde;vel. Bemutattak minket egymásnak, ha jól emlékszem, négy programozó volt, velem együtt két grafikus, egy projectvezet&otilde; muksó, és a cégvezet&otilde; csaj. Els&otilde;ként a projectvezet&otilde;r&otilde;l állapítottam meg, hogy roppant sunyi egy pofa. Jellegtelen, szakállas kis alak volt, lenéz&otilde; tekintettel és oltári nagy pofával. "Barátságunk" már az els&otilde; nap elkezd&otilde;dött, amikor raktuk össze a számítógépeket. Az én gépemhez csatlakoztatták a hálózati nyomtatót, de az istennek se akart m&ucirc;ködni. Végül odaszóltam neki.
+<BR><BR>
+
+- Nincs ehhez a vacakhoz valami m&ucirc;köd&otilde; driver? A tököm kivan ezzel a szarral.
+<BR><BR>
+
+A pasas erre odajött egy CD-vel, felinstallálta a m&ucirc;köd&otilde; drivert, majd odatette nekem a nyomtató használati utasítását:
+<BR><BR>
+
+- Ezt légy szíves, tanulmányozd, és máskor ne nyúlj olyasmihez, amihez nem értesz!
+<BR><BR>
+
+Ekkor még nem basztam pofán, csak a kézikönyv repült ki a nyitott ablakon. Mindjárt nagyon szerettük egymást.
+<BR><BR>
+
+Ebédid&otilde;ben ismerkedni próbáltam az egy szál beosztottammal. Hozzám hasonlóan fiatal srác volt, s bár a Buffalo cip&otilde; rosszat sejtetett, valójában nagyon jó arc volt. Megnéztem korábbi munkáit, meglehet&otilde;sen tehetséges, kezd&otilde; grafikus volt. Lementünk ebédelni, s közben megkérdeztem:
+<BR><BR>
+
+- És hol dolgoztál eddig?<BR>
+- Hát, nekem ez az els&otilde; játékfejleszt&otilde; munkahelyem...<BR>
+- Az nem baj, nekem is. De mit csináltál eddig?<BR>
+- Hét évig chippendale táncos voltam, de meguntam...
+<BR><BR>
+
+Paff!
+<BR><BR>
+
+Amúgy mondom, semmi baj nem volt a sráccal, de ez betett.
+<BR><BR>
+
+No, visszamásztunk az emeletre, és nekiláttunk a gépek további hegesztésének. Következett a 3D Studio Max installálása, mire kicsit gondterhelten ráncoltam a homlokom. A gépeken ugyanis Windows 98 terpeszkedett, ami köztudomásúlag nem túl barátságos környezet a Max-nek. Akkoriban Windows 2000 vagy legalábbis Windows NT volt ajánlott. Odaszóltam sunyikép&ucirc; barátunknak:
+<BR><BR>
+
+- Te, biztos, hogy nekünk Windows 98-cal kell dolgoznunk?<BR>
+- Hát persze! Mi nem tetszik?<BR>
+- Nem nekem, hanem a 3dsmax-nek nem fog. Win98 alatt instabil, nem ajánlják...<BR>
+- Te csak használd azt, amit a kezedbe adunk, és ne hozzál nekem kifogásokat!<BR>
+<BR>
+
+Ezzel eld&otilde;lt, hogy országos jó barátok leszünk, bár még mindig nem gy&ucirc;rtem pofán.
+<BR><BR>
+
+Másnap a kezünkbe nyomtak egy jó harminc oldalas brosúrát, a készül&otilde; játékunk forgatókönyvét, hogy olvassuk át. Hát én átolvastam. Ilyen bárgyú, buta játékot még XBox-on is ritkán lát az ember. Kalandjáték volt, de nem ám olyan, amin netán gondolkodni is kell, á, dehogy. Az a fajta, amelyben 5 perc bárgyú animáció után futni kell és átugrálni a szembejöv&otilde; akadályokat, aztán megnézni a következ&otilde; bárgyú animációt. Színvonalra nagyjából a <I>Linda</I> cím&ucirc; tévésorozattal ért fel, azzal a különbséggel, hogy abban nem voltak akkora logikai bukfencek, mint ebben.
+<BR><BR>
+
+- Holnap jönnek a f&otilde;nökök Dániából - hirdette ki a F&otilde;droid - addigra írjátok össze, milyen ötleteitek vannak.
+<BR><BR>
+
+A nap felét ezzel a röhejes szarsággal töltöttem, bejelöltem a durva logikai hibákat, jegyzeteltem az ötleteket. Másnap tényleg jöttek a dánok. Egy piperk&otilde;c, sz&otilde;ke juppiköcsög, és egy kis... hm... nos, nem szeretnék politikailag inkorrekt lenni, ezért nem mondok semmit arra a férfire, aki lakkozza a körmét és rózsaszín cip&otilde;t hord. Ez az alak egyébként a cég vezet&otilde; játéktervez&otilde;je volt, és immár semmi kérdésem nem volt a forgatókönyvvel kapcsolatban.
+<BR><BR>
+
+Ha már odaette &otilde;ket a fene, akkor legyen brainstorming session, mert az jó. Lett is. Leültettek minket körben, és mondták, hogy akkor mondjuk az ötleteket. Pislogott a társaság, mert mind kiderült, rajtam és a projektvezet&otilde;n kívül csak az egyik coder tudott angolul, és &otilde; se valami fényesen. Egy darabig meghitt csendben üldögéltünk, majd eljutottam arra a következtetésre, hogy mivel én vagyok a vezet&otilde; grafikus, talán nekem kellene megszólalnom.
+<BR><BR>
+
+- Nos, itt lenne ez és ez a rész - mutattam a forgatókönyvet - amikor a f&otilde;szerepl&otilde;nek hátra van kötve a keze.<BR>
+- Yes?<BR>
+- És ránéz a karórájára. Hogyan?<BR>
+- Well, errm...<BR>
+- Aztán itt van ez a rész, amikor...
+<BR><BR>
+
+És szépen bemutattam nekik a röhejlistát. Bólogattak okosan, very good, excellent, s&otilde;t, még marvellous is voltam egyszer.
+<BR><BR>
+
+- Could you please propose your improvements? - érdekl&otilde;dött a F&otilde;f&otilde;droid.<BR>
+- Hogyne, persze, improvements. Hát szerintem itt úgy lehetne él&otilde;bbé tenni a jelenetet, hogy...
+<BR><BR>
+
+Ment a nagyokos bólogatás, jegyzetelés, hogy ez is very good, excellent, és egyre gyakrabban marvellous is. Végül elhúzott végre a búsba ez a két melegvízi zászlóshajó. A projectvezet&otilde; ekkor hozzám fordult:
+<BR><BR>
+
+- Jó lenne, ha nem mondanál nekik ennyi ötletet.<BR>
+- Miért? Ezért vannak itt, nem?<BR>
+- Igen, de ha adod alájuk a lovat, ezt mind megcsináltatják velünk!<BR>
+- Mi van??<BR>
+<BR>
+
+Eszem-faszom megáll, mondanám, ha szeretném Ford Fairlane-t, de nem szeretem. Inkább egykori századparancsnokom szavaival élnék: A hugyom eláll bazmeg!! Igen, ez egy játékfejleszt&otilde; cég. A vezet&otilde; kreatív munkatársat leugatják, hogy ne kreatívkodjon, mert akkor dolgozni kell. Bravó!
+<BR><BR>
+
+Másnap, pénteken a dánok végre eltakarodtak. Ezen a napon a f&otilde;menedzser csaj minden egyes kollégát egyenként behívott az irodájába, és elbeszélgetett vele. Utolsónak került rám a sor. Már épp hazafelé indultam, dzsekiben voltam. Bementem a menedzsercsajhoz, aki hegynyi íróasztala mögött üldögélt, a szoba végében pedig a projektmenedzser droid somolygott sejtelmesen, egy térdel&otilde;s széken trendiskedve.
+<BR><BR>
+
+- Meg vagy-e elégedve a nálunk végzett munkáddal? - kérdezte a csaj.
+<BR><BR>
+
+Néztem rá értelmesen. Mi van? Öt napja voltunk ott, ebb&otilde;l két nap elment a bútorok és a számítógépek összeszerelésével, két napig bréjnsztormoltak itt a dánok, ma dolgoztunk el&otilde;ször, ami f&otilde;leg 3dsmax pluginek telepítéséb&otilde;l állt. Az összes munka, amit végeztem, az volt, hogy egy ház textúrájára Photoshop-pal havat rajzoltam az ablakpárkányokra.
+<BR><BR>
+
+- Ha arra gondolsz, hogy tetszik-e a cég, nos, egyel&otilde;re nem tudom. - feleltem.<BR>
+- Hát, mert mi arra gondoltunk, hogy esetleg téged ez a munkakör nem elégít ki.<BR>
+- Arra ott a barátn&otilde;m.<BR>
+- Khm... ööö... nem úgy gondoltam, hanem hogy ez a munka... esetleg nem a te képzettségednek megfelel&otilde;.<BR>
+- Az miért baj? Tudtommal egyébként sem létezik olyan képzettség, hogy 3D grafikus.<BR>
+- Úgy értem, hogy véleményünk szerint te túlképzett vagy erre az állásra.<BR>
+- Túlképzett.<BR>
+- Igen, és hát úgy gondoltuk, hogy szerintünk jobb lenne, ha izé, felfüggesztenénk az együttm&ucirc;ködést... mondjuk fél évre.
+<BR><BR>
+
+Végigmértem a sarokban vigyorgó díszfaszt, majd újra a menedzsercsajra néztem.
+<BR><BR>
+
+- Aha, szóval ki vagyok rúgva.<BR>
+- Neeem, dehoooogy... egy fél év múlva visszajöhetnél...<BR>
+- És ezt hajlandó vagy írásba adni?<BR>
+- Írásba... hát azt nem, de izé, megígérem, hogy...<BR>
+- Magyarázd már el, légy szíves, miért akadályozna engem a munkában, hogy többre is képes vagyok.
+<BR><BR>
+
+Erre a díszfasz a sarokból, fölényesen:
+<BR><BR>
+
+- Nem hiszem, hogy meg kellene indokolnunk a menedzseri döntéseinket...
+<BR><BR>
+
+Kicsit bepöccentem.
+<BR><BR>
+
+- Na öreg, ha rólam döntesz, azt jobb, ha megindoklod nekem.<BR>
+- Hát, én még mindig úgy gondolom, hogy nem kell megindokolnunk semmit - felelte vigyorogva.
+<BR><BR>
+
+Na, ezen durrant el az agyam. Felpattantam, és megindultam a faszi felé.
+<BR><BR>
+
+- És ha úgy szájbabaszlak, hogy kiköpöd az összes fogadat, akkor hogy fogsz dönteni?!
+<BR><BR>
+
+Faszikám erre csendesen beleolvadt a térdel&otilde;s székébe, és igyekezett terepszín&ucirc; pofát vágni. A menedzsercsaj rémülten felugrott és hadonászni kezdett.
+<BR><BR>
+
+- Jaj, jaj, hát én nem szeretném, ha haraggal válnánk el...<BR>
+- Azt már elbasztátok - feleltem, és otthagytam &otilde;ket a faszba.<BR>
+<BR>
+
+Ilyen komoly cég volt ez a Szamárcsöcs Intervision. Kés&otilde;bb még megfordult ott néhány haverom, és mind hasonló tapasztalatokkal távoztak. Az egyik programozót például állítólag azzal baszták ki, hogy nincs elég gyakorlata. Annak idején &otilde; programozta az <I>Impossible Mission II.</I>-t a Novotrade-nél. No comment!
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20041026.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20041028.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

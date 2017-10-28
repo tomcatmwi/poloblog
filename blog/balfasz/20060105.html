@@ -1,0 +1,136 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css"> 
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-513</B><BR>
+2006.01.05.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+
+<P ALIGN="justify">
+Réges-régen, vagy egy éve megígértem, hogy írok egy droidsztorit a számítástechnika, közelebbr&otilde;l a Commodore cég történetéb&otilde;l. Ugyebár, ez volt az a kis cégecske, amit Jack Tramiel, egy iskolázatlan auschwitzi túlél&otilde; a semmib&otilde;l fejlesztett világcéggé, olyan termékekkel, mint a Commodore 64, a Plus/4, a PET és a többi, csak hogy a legismertebbeket említsem. Ezt a világraszóló sikert természetesen a droidok tették taccsra.
+<BR><BR>
+
+A dolog ott kezd&otilde;dött, hogy 1984-ben az üzleti zseni, Tramiel üzlettársa, bizonyos Irving Gould kitúrta az alapítót a cégb&otilde;l, máig nem tisztázott körülmények között. Tramiel január 13-án, pénteken hagyta el a Commodore-t, ami ezután mint a nyeletlen balta, zuhant a mélybe, bár ilyen magasról elég sokáig tartott, míg leérkezett.
+<BR><BR>
+
+Gould merev, tradicionális üzletember volt, nem olyan bátran csapongó, kísérletez&otilde; természet, mint Tramiel. A Commodore-t csupán pénzbányának tekintette, s nem is vette figyelembe a termékeikre épül&otilde; világméret&ucirc; kultúrát, a home computer felhasználók világát. Úgy cserélgette az igazgatókat, mint más a zokniját, s az évek során sorra jöttek-mentek az idióták, akik mind beleverték a maguk szögét a Commodore koporsójába. Az 1985-ben uralkodó balfasz egy bizonyos Marshal F. Smith volt.
+<BR><BR>
+
+A Commodore mindig nagy hangsúlyt fektetett arra, hogy termékeinek minden alkatrészét maga gyártsa, s ne függjön küls&otilde; beszállítóktól. A chipekt&otilde;l a csatlakozókig, a képcsövekt&otilde;l a gépek m&ucirc;anyag házáig mindent saját m&ucirc;helyeikben állítottak el&otilde;. Nemrég állítottak üzembe egy LCD paneleket gyártó üzemet, s a fejlesztés eredménye egy forradalmian új gép, a Commodore LCD laptop lett. Laptop! Nagy szó 1985-ben! Akkoriban még nem voltak hordozható gépek, pláne felhajtható képerny&otilde;vel! Ez lett volna az els&otilde;, s a piackutatás bombasikert, milliárdos bevételt jósolt. Mit tudott a gép? Rockwell 65C102 processzor, 32 KB RAM, 480x128 pixeles felbontású képerny&otilde;. Egy 96K-s CMOS ROM-ban adtak hozzá szövegszerkeszt&otilde;t, címkezel&otilde;t, táblázatkezel&otilde;t, határid&otilde;naplót, számológépet, BASIC fordítót, gépi kódú monitort és terminálemulátort. Beépítésre került egy 300 baudos modem, a csatlakozók pedig: Commodore soros port, RS-232 soros port, Centronics nyomtatóport, b&otilde;vít&otilde;port, Hewlett-Packard vonalkód-olvasó csatlakozója, illetve telefoncsatlakozó. Küls&otilde; floppylemez-meghajtó járt hozzá, amely 3.5"-es lemezeket használt. Igencsak tápos gép volt a maga idejében!
+</P>
+<CENTER>
+<IMG SRC="20060105.jpg">
+</CENTER>
+<P ALIGN="justify">
+
+De hiába kérdezgetitek ma a Commodore gépek mégoly megszállott egykori rajongóit is, senki sem láthatott ilyen gépet. Hogy miért? Na, ez a droidtörténet.
+<BR><BR>
+
+A gépet az 1985-ös, Las Vegas-i Consumer Electronics Show-n akarták bemutatni. Percekkel a nagy esemény el&otilde;tt Marshal F. Smith a VIP büfében kávézgatott a konkurrens Tandy vezérigazgatójával. Elmondta neki, micsoda csodát készülnek éppen leleplezni a világ el&otilde;tt, de a kolléga csak hümmögött.
+<BR><BR>
+
+- Laptop, hmmm... Hát, mi is megpróbálkoztunk vele. De nagy bukás volt. A piackutatóink szerint nincs rá kereslet.
+<BR><BR>
+
+És addig mondogatta ezt az ostoba F. Smith-nek, hogy az végül teljesen beparázott, hogy milliárdos kaszálás helyett éppenséggel veszteség lesz a dologból, leszaladt a Commodore standjára, és azonnal lefújta a bemutatót. A terméket visszavonták, a gyártósort lebontották, ami magában is elég nagy veszteség volt, de Marshal F. Smith megnyugodhatott: a nagy fiaskót elkerülték.
+<BR><BR>
+
+Két hónappal kés&otilde;bb a Tandy piacra dobta saját laptopját. Fele annyit sem tudott, mint a Commodore LCD, ennek ellenére - rivális híján - átüt&otilde; sikert aratott, s dollármilliárdokat hozott a cég konyhájára. A szakma évekig a barom Marshal F. Smith-en röhögött, aki szemétre dobta a forradalmi újítást, mégpedig a konkurrencia tanácsára. Egyetlen példány maradt fenn az LCD-b&otilde;l, ez ma Bil Herd magángy&ucirc;jteményében van. Egy szemétkupac mélyér&otilde;l bányászta el&otilde; a Commodore felszámolása idején. Azóta saját cége van, s irodája falán - elrettent&otilde; példaként - mindmáig bekeretezve lóg Marshal F. Smith körlevele, amelyben leállítja az LCD gyártását. 
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20060103.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20060106.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

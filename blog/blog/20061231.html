@@ -1,0 +1,121 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>2006.12.31., vasárnap</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Athina már 2007-ben van, ott más az idõzóna, én maradok utolsónak 2006-ban, hogy legyen aki lekapcsolja a villanyt.
+<BR><BR>
+
+Hû, de furcsa egy év volt ez. Már azt se tudom, mi volt benne. Addig is, amíg eszembe jut, ezúton köszönöm mindenkinek, hogy ha megtalálom végre a telefonom ebben a kupiban, törölgethetem belõle az üdvözlõ SMS-eket. Nektek is BÚÉK. Igen, tudom, Bolsevikok Utolsó Éve Következik, meg Budapest Újra Éhezni Kezd, továbbá Bosszúm UtolÉr, Köcsög. Negyven perc múlva beüt a Gyurcsány-csomag második hulláma, épp ezért ne felejtsük el a MUK-ot. Még egy kormány se bírta örökké, ha el akarták zavarni. El lesznek ezek is, csak emeld fel a segged te is március tizenötödikén, és ne fossál odakúrni a Molotovot a rohamládáknak. Ha nincs rajta jelvény, teljesen jogosan teszed.
+<BR><BR>
+
+Kérdéseteket köszönöm egyébként, a szilveszterezés kiválóan telik kettesben Bertával. Õ fekszik a szék alatt, én meg eszegetem a frissen sült gesztenyét, és 3DS Max-ben dolgozgatok. Este nyolc körül elült a rakétázás, én azért még kieresztettem egyet az erkélyrõl, ami a szemközti építkezés meztelen betonfalai között kibaszott nagyot szólt, nekem meg telement a pofám füsttel, de azért jó poén volt, mindenki kitódult az erkélyekre megnézni, mi dõlt össze. Ettõl eltekintve semmi izgalom, csak mosogattam egy kicsit.
+<BR><BR>
+
+Izé, mit lehetne még elmondani 2006-ról... Ja, hogy januárban írtam egy blogbejegyzést az akkori hóról, amit majd júliusban terveztem kirakni, mert az poén. Elfelejtettem. Most már azt se tudom, hol van. Ez nem túl érdekes, de valamit írni kell.
+<BR><BR>
+
+Újévi fogadalom nincs, mert a tavalyiakat sem tartottam be.
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20061230.html">
+<B><< elõzõ nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20070101.html">
+<B>következõ nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+<BR><BR>
+
+</BODY>
+</HTML>
+

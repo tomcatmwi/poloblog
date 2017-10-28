@@ -1,0 +1,114 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2005.01.01., szombat</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Itt vagyok, és akár ragyoghatnék is, de mégsem teszem. 2004 elfogyott alólunk, szerencsére nem jött közbe semmi, pártunk és kormányunk rábólintott: Magyarországon is elkezd&otilde;dhet a 2005-ös év, és rövid vita után abba is belementek, hogy magánszemélyek is részt vehessenek benne. Én meg ülök itt egy PC el&otilde;tt, a hangszórókból egy immár tizenkét éve nagy sikert aratott demó, a <I>Second Reality</I> zenéje szól, amit annak idején lélegzetelállva bámultunk egy 386-os képerny&otilde;jén, eszegetem a tegnapi alu-gouranga szabdzsit, és írogatok. Elszállt felettünk az id&otilde; vasfoga. Boldog új évet mindenkinek.
+<BR><BR>
+
+A két ünnep között egyébként nem a blogból lett elegem, hanem elhúztam Németországba, a The Ultimate Meeting demópartyra, de ezt nem írtam ki, mert akkor egy csomóan nem jöttek volna el a megrendelt cuccaikért, Levee meg hiába fagyoskodott volna a Lehel téren helyettem. A szilveszter remekül telt, különösebb hadi események a környéken nem zajlottak, csak egy tetves cigánynak kellett elmagyaráznom délel&otilde;tt, hogy <I>nem dobálunk petárdát a kutyákra a mozgó villamosból,</I> minek következményeként &otilde; az orvosi ügyeletre került, de hát ugyebár mi a faszt ugat vissza, meg gizdáskodik.
+<BR><BR>
+
+Aztán volt egy békés szilveszter, zárt ajtók mögött, f&otilde;z&otilde;cskével és egy darab rakétával. Valaki valahol egyébként nemrég azt mondta, én a legalja fajta b&ucirc;nöz&otilde; vagyok, és &otilde; ezt tudja, mert bizony tanult ám kriminológiát. Ezt a ruházatomból vezette le, bizony ám. Úgy örülök, hogy ilyen bölcs rend&otilde;rtisztek vigyázzák a mi demokráciánkat. Nélkülük már rég nem volna kinek eladni a Balfasz polókat.
+<BR><BR>
+
+Hm, tényleg, kellene gyártani megint párat.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20041226.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050102.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

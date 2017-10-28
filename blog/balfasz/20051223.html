@@ -1,0 +1,133 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-504</B><BR>
+2005.12.23.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+
+<P ALIGN="justify">
+Régi kedves vásárlóm, B. Ferenc - b&ucirc;nelkövet&otilde;ket csak monogrammal - egy temetésre tartva talált egy orbitális droidot. Nagy volt a rokonság, külön busz vitte &otilde;ket, s menet közben elhaladtak az inotai h&otilde;er&otilde;m&ucirc; mellett. Volt velük egy sz&otilde;ke, zselézett hajú, forgószékbe fingó juppiköcsög, valami huszadrangú rokon, szakmáját tekintve pénzügyi tanácsadó, az nagyon rácsodálkozott.
+<BR><BR>
+
+- Ez meg miféle gyár?<BR>
+- H&otilde;er&otilde;m&ucirc;.<BR>
+- Igeeen?<BR>
+<BR>
+
+Kiderült, fogalma sincs, mi az, hogy er&otilde;m&ucirc;, el kellett neki magyarázni. No, ez még rendben is volna, hülye szegény, láttunk már ilyet. De aztán a busz elhaladt egy tábla mellett, amire az volt írva: "Készenléti lakótelep."<BR>
+<BR>
+
+- Mi az a készenléti lakótelep? - kérdezte a droid.<BR>
+- Hát, gondolom, itt laknak az er&otilde;m&ucirc; dolgozói, akiknek szükség esetén gyorsan be kell menniük - felelte B. Ferenc.<BR>
+- Az er&otilde;m&ucirc;be?<BR>
+- Ja.<BR>
+- De és mivel f&ucirc;tik az er&otilde;m&ucirc;vet?<BR>
+- Szénnel.<BR>
+- És &otilde;k... lapátolják... a szenet? - kérdezte akadozva, mert ilyen mélység&ucirc; összefüggések feltérképezése már nagyon megterhelte a processzorát.<BR>
+- Igen.<BR>
+- No deee... hogy csinálják, hogy nem lesz koszos az öltünyük?<BR>
+- Mi van??
+<BR><BR>
+
+Kiderült, hogy a pasas huszonöt éves létére úgy gondolta, hogy mindenki öltönyben jár dolgozni, ahogyan &otilde;, és körülötte mindenki! Még életében nem látott mást. Hát, igen, pénzügyi tanácsadó. Tudtátok, hogy az ilyen munkakör betöltéséhez mindössze nyolc általános szükséges?
+
+
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20051221.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20051224.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

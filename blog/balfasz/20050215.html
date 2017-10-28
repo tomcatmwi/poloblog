@@ -1,0 +1,142 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai')!= -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-295</B><BR>
+2005.02.15.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<BR><BR>
+
+Egy IRC-s hölgyismer&otilde;söm érdekes SMS-t kapott a minap. Valahogy így szólt:
+<BR><BR>
+
+<I>Húzd meg magad, te rohadt ribanc, mert a Kata meg a Gyuri ki fognak nyírni!!</I>
+<BR><BR>
+
+Az érdekes üzenetnek el&otilde;zménye nem volt, és a leányzó állítása szerint sem Kati, sem Gyuri nev&ucirc; haragosa nincs. Gondoltam, teszteljük le, ki van a túloldalon. Elkértem a számot és felhívtam. Egy sz&otilde;ke n&otilde;i hang vette fel.
+<BR><BR>
+
+- Halló!<BR>
+- Jó estét kívánok, kaptam egy SMS-t az imént err&otilde;l a számról, hogy valami Kati meg Gyuri ki fog engem nyírni, és hát szóval csak azt szeretném kérdezni, hogy ezt biztos nekem akartad küldeni?<BR>
+- Ööö, neked?<BR>
+- Hát, nekem jött...<BR>
+- De hát én azt az X telefonszámra küldtem!<BR>
+- Igen, ez az én számom... De hát mi történt, kire haragszol ennyire?
+<BR><BR>
+
+A social engineering csodája: az ismeretlen leányzó máris pletyka-üzemmódra kapcsolt, és nyomta a rizsát, amib&otilde;l egy évig elélne a <I>Barátok közt</I> és a <I>Szeress most</I> összes forgatókönyv-írója, feltéve, hogy ki tudják bogozni az interperszonális kapcsolatok hálóját.
+<BR><BR>
+
+- ... és err&otilde;l a számról valaki rendszeresen SMS-eket küldözgetett a pasimnak, érted, szóval az én pasimnak, és hát ez azért elég gáz, és én mondtam is a pasimnak, hogy mondja meg, ki küldözgeti, de &otilde; azt mondta, nem tudja, és a végén felhívtam ezt a számot, hogy elküldjem a picsába, de az a ribanc letette, és akkor már elegem volt nagyon, mert hát már öt éve éltem együtt a pasimmal, és ugye öt év, az nem egy egyszer&ucirc; kapcsolat, és nekem már elegem volt az SMS-ekb&otilde;l, így aztán tegnap kirúgtam a pasimat öt év után, mert ne küldözgessenek neki SMS-eket mindenféle n&otilde;cskék, és szóval most ki kellett &otilde;t rúgnom, és ezért utálom ezt a ribancot, érteeeed?...
+<BR><BR>
+
+Zanzásítva így hangzott a mondanivaló, de ez egy nagyjából félórás monológ lerövidített változata. S hogy ki az a Kata meg a Gyuri? Nos, a Gyuri a csaj barátn&otilde;jének a volt barátja, a Kata meg az &otilde; barátn&otilde;je, és &otilde;k azért fogják kinyírni a csajt, mármint az én ismer&otilde;sömet, mert &otilde;ket is "kurvára felbaszta", hogy ez a csaj itten SMS-eket küldözget, ami miatt alkalmi pletykapartneremnek ki KELLETT rúgnia a pasiját, ráadásul öt év után. Egyébként az SMS-eket nem is &otilde; küldte, sebaj.
+<BR><BR>
+
+- No de... - kezdett gyanakodni a telefon túlvégén a sz&otilde;ke n&otilde;i hang - de hát az hogy lehet, hogy az SMS hozzád ment? A pasim is err&otilde;l a számról kapta az SMS-eket. Ez hogy lehet a te telefonod?<BR>
+- Ööö, hát, ööö, ez nem az a telefon, az a munkahelyi telefonom, és bent van a cégnél... és ööö, sokan dolgoznak ott... ez egy nagy szerel&otilde;csarnok... és pár percre gyakran ott szoktam hagyni.<BR>
+- Ja, ééértem - világosodott fel a sz&otilde;ke n&otilde;i hang - akkor jobb, ha odafigyelsz a kollégan&otilde;idre!<BR>
+<BR>
+
+Ezzel elköszöntünk és elbúcsúztunk, és a sz&otilde;ke n&otilde;i hangnak soha nem jutott eszébe, hogy hogyan kaphattam meg az &otilde; "félrement" SMS-ét, ha az a munkahelyemen hagyott telefonomra érkezett, én pedig otthonról beszéltem. De sebaj. Remélem, rövidesen talál egy megfelel&otilde;, új pasit, akinek nem küldözget SMS-eket senki.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050214.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050216.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

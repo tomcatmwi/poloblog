@@ -1,0 +1,118 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-435</B><BR>
+2005.09.03.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+
+<P ALIGN="justify">
+
+Jago barátom hívta fel a figyelmemet egy kevéssé ismert történelmi droidsztorira. Ti hallottatok már a potsdami táviratról?
+<BR><BR>
+
+Amikor a második világháború véget ért Európában, a gy&otilde;ztes szövetségesek értekezletet tartottak Potsdamban, ahol felosztották Európát, mint azt a nyolcadik osztályban tanultuk is. A legfontosabb döntések mellett csupán mellékes hír volt, hogy július 26-án megadásra felszólító táviratot küldtek Japán svájci nagykövetének, vázolva, hogy milyen csapásokkal kell számolniuk, ha nem teszik le azonnal a fegyvert. A feltételek nagyjából azonosak voltak azzal, amelyeket Japán végül 1945 szeptember 2-án el is fogadott, de ekkor még csak július volt, messze volt még a háború vége. A berni nagykövet továbbította a táviratot kormányának, akik egyébként már maguk is gondolkodtak azon, hogy be kellene fejezni ezt a marhaságot, elvégre Tokió már leégett, Okinawa elesett, a B-29-esek akadálytalanul bombázták a japán anyaországot, és a Mandzsúria határánál gyülekez&otilde; jó egymillió orosz katona sem ígért sok jót. Másnap válaszoltak a táviratra, szintén a svájci nagykövet útján. A válasz a következ&otilde; volt:
+<BR><BR>
+
+<I>"Az Önök felszólítása nem más, mint a Kairói Egyezmény (egyezmény az USA, Anglia és Csang Kaj-sek között a japán hegemónia megtörésére tett er&otilde;feszítések összehangolásáról) új változata. Kormányunk nem vesz tudomást javaslatukról."</I>
+<BR><BR>
+
+A probléma az, hogy az üzenetet Tokióban japánul fogalmazták, és Bernben fordították angolra. Az eredeti második mondatban szerepelt egy szó, <I>mokuszacu,</I> amelynek eredeti jelentése "csendben ölni", de ilyen értelemben több jelentése is van, az egyik a "nem venni tudomást valamir&otilde;l", a másik pedig "kés&otilde;bbi döntésig megfontolni". Mint utóbb kiderült, a választ fogalmazó Suzuki miniszterelnök az utóbbi jelentését használta, ám ezt félrefordították. S mivel a szövetségesek lényegében a békeajánlatot elutasító választ kaptak, megkezdték Japán szétverését, többek között két atombomba segítségével...
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050902.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050904.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,109 @@
+<HTML>
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>DROID-022</B><BR>
+2004.02.28.
+<BR><BR>
+
+Ezt a droidot már megint Micó fogta. Mondom, ez lassan az &otilde; blogja lesz, én csak gépelek.
+<BR><BR>
+
+Micó egyik egyetemista haverjának vonalkód-olvasó és -rendszerez&otilde; szoftvert kellett írnia. Hogy miért, az mellékes, de szüksége volt ehhez pár száz vonalkódra, amivel a programot tesztelheti. Rövid utánajárás után megtudta, hogy a Díjbeszed&otilde; Rt. készít megrendelésre vonalkódot, így hát t&otilde;lük kért 1000 darab egyedi sorszámot. Hamar meg is kapta, megírta a programot, és nekiállt tesztelni. Egy-két kóddal faszán m&ucirc;ködött is, ám amikor a gép elkezdte százszámra beolvasni a vonalkódokat, sorra dobta a hibaüzeneteket, hogy némelyik kódszám ismétl&otilde;dik. A srác el&otilde;ször azt hitte, &otilde; a hülye, végignézte a programját tövir&otilde;l hegyire, de nem, a beolvasó rutin helyes volt, valóban a kódok ismétl&otilde;dtek. Átnézte hát a vonalkódokat, és az 1000 darab között 6 egyez&otilde;t talált! Felhívta hát a Díjbeszed&otilde; Rt.-t, hogy mégis, miféle munka ez?
+<BR><BR>
+
+- Hát, igen, megesik, hogy néha több van egy sorszámból - mondták neki a túloldalon.<BR>
+- De hát arról volt szó, hogy a kódok egyediek!<BR>
+- Jó, de hát ilyen mennyiségnél már van, hogy hibázik a gép!<BR>
+- Ezer darabnál? Ember, tudja, mi a mennyiség? Egymillió, esetleg! Ezer darabnál egy kicsit sok a hat egyezés, nem gondolja?<BR>
+- Hát én ezt nem tudom, kérem, de adom magának azt, aki a számozógépet programozza.
+<BR><BR>
+
+Kisvártatva be is jelentkezett a kolléga úr, akit nevezzünk egyszer&ucirc;en csak Mai Droidnak.
+<BR><BR>
+
+- Halló! Szóval mi a probléma a vonalkódokkal?<BR>
+- Az, hogy ezer darab vonalkódot rendeltem, és ebben máris hat egyez&otilde;t találtam.<BR>
+- Hát igen, tudja, ekkora mennyiségnél...<BR>
+- Jaj, ne fárasszon már, nem vagyok hülye hozzá. Ha ezer darabot nem tudnak megfelel&otilde;en produkálni, akkor hány egyez&otilde; kódú ügyfelet csináltak az Elektromos M&ucirc;veknek, vagy a Vízm&ucirc;veknek, ahol tényleg több millió kódot kell generálni? Egyáltalán, hogy m&ucirc;ködik a maguk szoftvere?<BR>
+- Hát azt most nem tudom magának elmagyarázni, az egy nagyon bonyolult algoritmus, és maga úgysem értené!<BR>
+- Mit? Azt, hogy nem képesek kódonként eggyel növelni a sorszámot? Mert az marha bonyolult dolog ám!<BR>
+- Kérem, ezt maga nem értheti.<BR>
+- Jó, hát akkor igyekszem fejl&otilde;dni, hogy én is olyan okos legyek, mint maga.<BR>
+<BR>
+
+A dolog itt ért véget. Tehát van valahol egy ilyen droid, akinek köszönhet&otilde;en a közm&ucirc;vek több ezer ügyfelének azonos kódja van. Számoljunk csak! Ha ezer darab között 6 egyforma kód volt, akkor egymillió között ezerszer annyi, azaz 6000. Az ELMÜ-nek legalább ötmillió ügyfele van, az 30,000 egyforma kód! Azaz harmincezer ember és cég van, akiknek összevissza keverik a villanyszámláját, és ha az egyik nem fizet, a másiknál kapcsolják ki az áramot. Ugyanez mehet a Gázm&ucirc;veknél, a Távf&ucirc;t&otilde; M&ucirc;veknél, a Vízm&ucirc;veknél, és mindenféle m&ucirc;veknél, ahová a Díjbeszed&otilde; Rt. szállítja a vonalkódokat. Szóval ha valami gebasz van mostanság a számláitok körül, gyanakodjatok nyugodtan erre.
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20040227.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20040301.html">
+<B>következ&otilde; droid >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

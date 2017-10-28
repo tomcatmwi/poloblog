@@ -1,0 +1,122 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2006.07.06., csütörtök</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Aki nézte reggel a Mokkát, az már biztosan nem fogja többet kérdezgetni, hogy hallottam-e a Romániában készülõ magyarellenes játékprogramról, mely a <I>Romanii in Spatiu</I> címet viseli. Hallottam. Ezért voltam bent. Bár megmondom õszintén - s ezt a kamera elõtt is mondtam - nem értem, miért engem hívtak meg az ügyben, én csupán elküldtem a linket a Mokka szerkesztõinek, hátha érdekli õket, mire õk ahelyett, hogy az <I>Oláh Action</I> ügyében oly harsányan tiltakozó ilyen vagy olyan jogvédõket, netán Göncz Kinga külügyminisztert hívták volna be, kitalálták, hogy én menjek be beszélni errõl a marhaságról. No persze, a semminél én is jobb vagyok, legalább esik róla szó valahol. Havas Henrik szerepében ezúttal Csiszár Jenõ bukkant fel, és hogy mi lett belõle, azt nézzétek meg.
+
+</P>
+<CENTER>
+<A HREF="20060706.avi"><IMG SRC="20060706.jpg" BORDER=0></A>
+<BR><BR>
+<I>Mokka, 2006 július 6.</I><BR>
+XViD AVI, 26 MB
+</CENTER>
+<P ALIGN="justify">
+
+Nem túl meglepõ módon már a mûsor ideje alatt is kapott Csiszár hideget-meleget az olvasóktól SMS-ekben, a Mokka weboldalán pedig szintén nem sok barátságos hozzászólás érkezett. Nem is csoda. Azon azért érdemes elgondolkodni, mielõtt tényleg elvágjátok szegény Jenõ torkát, hogy mi a jobb egy ilyen ügynek: ha szólunk róla pár szót egy reggeli mûsorban, aztán el van felejtve, vagy ha hetekig beszél róla az ország, hogy <I>"hallottátok, mi volt?",</I> felemlegetve, mekkora bunkó volt a mûsorvezetõ.<BR>
+Jenõ ugyanis nem hülye, hanem kommunikációs szakember. Olyan, aki pontosan tudja, hogy amit mûvelt, annak mi a tömegkommunikációs értéke. Aki tudja, hogy a kamerának milyen cirkuszt kell csinálni, merre kell vezetnie a dolgot, hogy hatása legyen. Hát, lett.<BR>
+Szóval nem kell anyázni Csiszár Jenõt. Pontosan tudta, mit csinál. Inkább köszönjük meg neki.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060705.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

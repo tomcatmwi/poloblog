@@ -1,0 +1,122 @@
+<HTML>
+<HTML>
+<HEAD>
+
+<STYLE type="text/css"> 
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-668</B><BR>
+2007.01.06.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<P ALIGN="justify">
+
+Régen volt már történelmi droid, már épp ideje tehát. Mesélek nektek Ceausescu elvtárs jól védett üveggyáráról.
+<BR><BR>
+
+Ceausescu elvtárs nagy tervezõ volt. Õ találta ki például a Menzát is. A Menza egy óriási étkezde lett volna Bukarest középpontjában, és mindenki oda járt volna enni. Nem lettek volna többé se konyhák, se élelmiszerboltok, reggelit, ebédet és vacsorát a Román Szocialista Népköztársaság ad, ha meg nem, akkor nem. Ez már nem készült el, mert a Kárpátok Géniuszát kurvasürgõsen szitává lõtte a népe, mielõtt több ilyen ötlettel is elõállt volna. No de nem csak ilyen okosságai voltak Miklós bácsinak, hanem az ipart is fellendítette. Mi az, hogy! Nagyon is! Így került felépítésre az említett üveggyár is.
+<BR><BR>
+
+Mert hát szociálisan érzékeny volt a Conducator, tudta, hogy a népnek üveg kell. Az ugyanis olyannyira nem volt, hogy még a vodkát is nejlonzacskóban árulták. Nem, ez nem vicc. Mondta hát Ceausescu, hogy legyen üveggyára a népnek, jó nagy, olyan szocialista fajta. De nem ám csak úgy felépítjük, hiszen akkor jönnek az imperialista kémek, és felrobbantják, amúgy is gyakran elõfordul az ilyesmi, tehát vigyázzunk arra a gyárra rendesen. Eleve ne tegyük nagyon szem elé. No, hol lehet jól eldugni egy gyárat? Igen, megvan: a Duna-deltában, egy kis szigeten!
+<BR><BR>
+
+És hipp-hopp, felépült az üveggyár a Duna-delta egy megközelíthetetlen szigetén, szúnyogoktól hemzsegõ, mocsaras tájon, az isten háta mögött...
+<BR><BR>
+
+Az üveggyár ma is megvan, bár kissé romos. Idõnként forgatnak benne hollywoodi filmeket. A hollywoodi filmstúdiók ugyanis megengedhetik maguknak, hogy helikopterrel közlekedjenek. Üveg, az még sokáig nem volt Romániában.
+
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20070102.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20070107.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

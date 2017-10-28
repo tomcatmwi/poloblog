@@ -1,0 +1,118 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>2006.12.06., szerda</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+A mai blog a hetes buszon készül. Hol máshol. Ahol ráérek. Alternatíva lehetne még a klotyó, de ott nem töltök annyi idõt. Fel is tölteném mindjárt, ha ez a szájbarakott GPRS modem mûködne. De naná, hogy nem mûködik! És természetesen nincs ember ezen a földkerekségen, aki meg tudná mondani, mi a kínja. Driver letöltés, az meg mi, kérdezné a Sony-Ericsson. De még azt se, mert elérhetetlenek, csak valami tengerentúli e-mail címre lehet panaszkodni, az pedig hatékonyságban alulmúlja a betonfalat.
+<BR><BR>
+Amúgy az éjszaka végre aludtam. Rendesen, ágyban. Nem öt órát, és nem koffeines lázálmokkal. Nagy dolog ám! A bolt is lassan pofásodik, már van benne például pult. Lassan ismerkedünk a szomszédokkal is. Szemközt, mint megtudtam, az ukrán maffia fedõszervezete mûködik. Nyáron utazási irodának vannak álcázva, télen meg zárva. Az egyik házbéli egyszer összebalhézott velük, lelocsolta akkumulátorsavval a napernyõjüket, mert gondolta, ez a legjobb módja az ukrán maffiával való kibaszásnak, ám az ukránok rárúgták az ajtót, jól a fejéhez nyomták a stukkert, és elmagyarázták az virágaik és az õ tyúkszaros élete közötti értékaránytalanságot. Az illetõrõl egyébként még annyit, hogy ott csápolt Demszkynek, amikor az a bizonyos torta a képébe repült, és azóta nincs rólam nagy véleménnyel. Mondjuk aki olyan hülye, hogy baszakodik az ukránokkal, azon ne is csodálkozzunk, hogy Demszkyre szavaz, az ilyentõl minden kitelik.
+<BR><BR>
+Tegnapi megállapítás, hogy a Nagykörúton nem lehet rendes kaját kapni, csak török szemetet (savanyúkáposztás fûrészpor-gombócok különféle elnevezések alatt), amerikai szemetet és közönséges szemetet, ami szanaszét hever és ingyen van. A kínai szemetet el is felejtettem. Ráfanyalodtam tegnap a Subway-re, ami kurva drága és ízetlen, de legalább biztos nincs benne kergemarha. Kérdeztem az eladót, miért úgy van kiírva, hogy <I>"szebdvics",</I> mire azt mondta, azért, mert angolul így írják. Megkérdeztem, biztos-e benne, mire vállat vont, és közölte, hogy nem tud angolul.
+<BR><BR>
+És most bemutatjuk a PHP-fejlesztés a hetes buszon címû akrobata-mutatványt. Messze még a Keleti.
+
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20061205.html">
+<B><< elõzõ nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20061207.html">
+<B>következõ nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+<BR><BR>
+
+</BODY>
+</HTML>
+
+

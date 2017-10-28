@@ -1,0 +1,133 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css"> 
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-615</B><BR>
+2006.07.02.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<P ALIGN="justify">
+<I>A magyar ipar legfontosabb terméke továbbra is a droid. Íme, itt egy példány BiG jóvoltából.</I>
+<BR><BR>
+
+Egy ejtõernyõs bajtárs ifjú korában gyárlátogatáson volt a Salgótarjáni Síküveggyárban.
+Megnézték az új gyártósort, amin az üvegmasszából szép üvegtáblák lesznek. A berendezéshez
+tartozott a végén egy öreg szaki is, aki az üvegszállító függesztõszalag mellett ücsörgött
+egy stokin, kezében kalapáccsal. Számolta az üvegtáblákat és minden ötödikre odasózott egyet,
+ami így darabokra tört, a szilánkok meg egy gyûjtõaknába hullottak. Néztek is csodálkozva,
+hogy ez most mire jó? Érdekes történet állt a háttérben...
+<BR><BR>
+
+A gyár le szerette volna cserélni régi, elavult gyártósorát. Erre tendert (!) írtak ki - akkoriban
+ez nem volt divatban, mint manapság -, szocialista relációra vetítve, hogy ki tud jó áron gépet
+adni. A csehszlovákok nyerték a tendert, az õ gépük megfelelt, de 25% selejttel dolgozott. Ez
+belefér, mondták a fejesek, de mi legyen a selejt üveggel? Beolvasszák és újraformálják? Nem!
+Van jobb megoldás! A németek az útjaikba épített aszfalthoz üvegport kevernek tölteléknek, javítva
+a mechanikai tulajdonságokat, növelve a burkolat mennyiségét, na meg szépen csillog...
+Megveszik a selejtet, meg is állapodtak velük a szállított mennyiségrõl.
+<BR><BR>
+
+Pénz áll a házhoz  a selejtbõl, dörzsölték a markukat az okosok, a selejtüveget majd az új gép adja.
+Igen ám, de közben grimbusz támadt az üzlet körül, ugrott a csehszlovák gépsor! Mit tegyenek,
+gépsorcsere kell! Új tender, ez már szélesebb körre szólt, a franciák meg is nyerték. Az õ gépük
+is jó volt, de volt egy kis baj vele. Csak 15% selejttel dolgozott, a németekkel meg nagyobb
+szállított mennyiségre szerzõdtek... Nem volt mit tenni, felszerelték az új francia gépsort,
+majd ezt kiegészítendõ, odaültették az öreg szakit a kalapáccsal és az utasítással a megfelelõ
+selejtszázalék elõallítására...
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060626.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060704.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

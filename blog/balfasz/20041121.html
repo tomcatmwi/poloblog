@@ -1,0 +1,138 @@
+<HTML>
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>DROID-220</B><BR>
+2004.11.21.
+<BR><BR>
+
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<BR><BR>
+Ide is kiírom, hogy az az új, színes ikon, ott lent, jobbra, az azt jelenti, hogy már el&otilde;rendelhet&otilde; a Droidzóna könyv. Lehet örülni, de f&otilde;leg megvenni. De ezt csak mellékesen mondom, nézzük inkább a napi droidadagot.
+<BR><BR>
+
+A kilencvenes évek közepe felé történt, hogy egy ember ütvefúrót akart venni. Jó magyar ember volt, tehát nem sok pénze volt rá, így a barkácsáruház helyett a kínai piac felé vette az útját. Hamar talált is egy kínait, aki mindenféle barkácsgépet árult, és történetesen fúrógépe is volt. Nézegette a készüléket, ki is próbálta, de ez csak közönséges fúró volt.
+<BR><BR>
+
+- Nekem ütvefúró kell. Az nincs?<BR>
+- Nem érténi - vigyorgott a kínai.<BR>
+- Ütvefúró! Érted? Üt-ve-fú-ró!<BR>
+- Nem érténi...
+<BR><BR>
+
+A pasas letette a gépet, és a két öklét el&otilde;retartva mutatta, mintha egy ütvefúróval dolgozna, és verné vele a falat.
+<BR><BR>
+
+- Ütvefúró! Érted? Pak-pak-pak! Ütvefúró!
+<BR><BR>
+
+A kínai szeme felcsillant.
+<BR><BR>
+
+- Érténi! Két... Két hét!<BR>
+- Mi két hét?<BR>
+- Két hét! Lesz! Két hét!
+<BR><BR>
+
+Mit volt mit tenni, emberünk kivárta a két hetet, és visszament újra. A kínai mosolyogva fogadta, udvariasan betessékelte a sátor ponyvája mögé, és ott átadott neki - egy géppisztolyt...
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20041119.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20041122.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

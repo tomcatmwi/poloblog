@@ -1,0 +1,107 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2005.03.15., kedd</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Igen, a blog egy kicsit akadozott ezen a hétvégén, ennek f&otilde;leg kedves családom az oka, mert hát nekem ilyenem is van, csak ritkán írok róluk. Sz&ucirc;kebb családom, Athina a babzsákfotelben hasal, és éppen <I>policy</I>-t deklarál, miszerint a továbbiakban tilos a lakásba cip&otilde;ben belépni, és panaszkodik, hogy az újonnan felrakott függöny túl vékony, ezért "totál kifigyelhet&otilde;ek" vagyunk a szemközti lakásban lakók részirül. Haveri köröm tagjai szintén nem túl érdekesen töltik a végre-valahára véget ér&otilde; hosszú hétvége utolsó napját, csak Loydi hajkurászik az Anna-hegy környékén pár száz más polgár&otilde;r és rend&otilde;r kíséretében egy pedofil állatot, aki délután meger&otilde;szakolt egy két és fél éves kislányt. Hajrá, majd küldjetek egy szeletet a tökéb&otilde;l Bertának. Kíváncsi vagyok, méltatják-e némi figyelemre az esetet a médiákok, vagy érdekesebb, hogy DJ Urcsányt ma is kifütyülték.
+<BR><BR>
+
+Mi meg moziban voltunk. <I>Team America - World Police.</I> Nos, Trey Parker ide, <I>South Park</I> oda, ezt a filmet nem érdemes megnézni. Valóban érdekes ötlet a marionett-bábfilm, de a vígjáték nem attól lesz jó, hogy percenként mondják ki a <I>fuck, dick, asshole, cocksucker</I> szavakat, illetve hogy ismert hollywoodi akciófilmek kulcsmondatait ismétlik el az eredetire kísértetiesen emlékeztet&otilde; körülmények között. Az állítólag Amerika terrorellenes politikáját bíráló vígjáték az els&otilde; tíz percben kifullad, maradnak az er&otilde;ltetett párbeszédek, melyek olyan kliséket parodizálnak, amiknek már a paródiájuk is klisé, és 2005-ben már mosolyt sem fakaszt. A végén meg ráadásul kiderül, hogy tulajdonképpen nincs is semmi baj a terrorellenes háborúval, igenis seggbe kell rúgni a gonosz terrorgeciket, és megtudjuk azt is, hogy Kim Dzsong Il-t ki merik figurázni, de George W. Bush még csak meg sem jelenik, és végül az egész film valami olyasmi lesz, mint amikor az ember a tekepályán seggre esik a lendülett&otilde;l. Nem csoda, hogy a <I>Team America</I> nem volt siker Amerikában. Aki akarja, töltse le, de pénzt kár kiadni érte.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050314.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050317.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

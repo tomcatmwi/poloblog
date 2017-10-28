@@ -1,0 +1,120 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai')!= -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-290</B><BR>
+2005.02.10.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<BR><BR>
+
+Néhány napja beszélgettem egy régi IRC-s haverral, aki azóta kedves vásárlómmá is el&otilde;lépett (hali, Lovag), és &otilde; mesélte az alábbi droidsztorit.
+<BR><BR>
+
+Volt egyszer egy bank, ahol az volt a rendszabály, hogy az ügyfeleknek kiküldött valamennyi levél másolatát meg kellett &otilde;rizni az irattárban. Ezzel nem is lenne baj, de egy fejes kitalálta, hogy ennek biztosan van költségvonzata is, elvégre az irattár nincs ingyen, tehát valahogy be kéne építeni az így keletkez&otilde; pár fillért az ügyfelek havi számlafenntartási díjába. Ez végül levelenként valami tíz forintban lett megállapítva, s a magas f&otilde;nökség utasította az alantasokat, hogy ezt verjék rá a még alantasabb ügyfelekre. Így is történt.
+<BR><BR>
+
+A bank rövidesen leadta igénylistáját a menedzsment-rendszerüket fejleszt&otilde; szoftvercég számára, vagyis hogy mi újdonságot kívánnak látni a program következ&otilde; verziójában. Benne volt többek között ez a speciális díj is. A programozók bele is rakták, de mivel a bank elfelejtette közölni a díjtétel nevét, önkényesen elnevezték <I>papírkerülgetési díjnak.</I> Amikor a szoftvert átadták, elmagyarázták a júzereknek, hogy ezt most így hívják, majd alkalmasint nevezzék át valami másra, miel&otilde;tt az értesít&otilde;ket kiküldenék az ügyfeleknek. A bankos picsák bólogattak, persze, hogyne értenék, igen, majd átnevezik.
+<BR><BR>
+
+Na, mit gondoltok, hány felháborodott levelet és telefont kaptak néhány hét múlva az ügyfelekt&otilde;l a papírkerülgetési díj, mint fizetend&otilde; tétel felszámolása miatt? Mert persze a hülye picsák rövid bólogatás után el is felejtették, mit kellett volna átnevezni...
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050208.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050211.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,176 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>2007.04.22., vasárnap</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Ma nem volt munkanap. Mármint nekem sem. Ez nagy dolog ám! Bár sokáig nem bírtam meló nélkül, és nekiálltam dolgozgatni a <I>Freax</I> második kötetén. Amikor meguntam, elõszedtem a <A HREF="http://www.mame.net" TARGET="_new">MAME</A> fedõnevû emulátort, amellyel õsrégi játéktermi arcade játékokat lehet PC-n futtatni, és újrafelfedeztem gyerekkoromat. <I>Dig Dug, Galaga, Vanguard, Gyruss, Frogger, River Patrol, Donkey Kong,</I> és az összes többi, ami fölött kamaszkölyökként a Vidámpark óriási játéktermében órákat töltöttem el, zsebpénzem utolsó filléreit is beledobálva. Aztán anyámék mindig jól megvertek, ha megtudták, mert rögeszméjük volt, hogy ezek <I>nyerõgépek,</I> vagyis hogy én szerencsejátékozom, és ugye a legegyszerûbb, ha meg se nézzük, mivel tölti a gyerek az idejét, csak megtiltjuk neki. Ebbõl a huzavonából lett az, hogy összespóroltam a pénzt életem elsõ Commodore 64-esére, és most itt vagyok programozóként, és így esett, hogy blogot írok, meg mellette könyvet is.
+<BR><BR>
+
+Fiatalabb olvasóknak bemutatom kölyökkorom kedvenc játékait. Annak idején 5 forintost kellett bedobni, hogy mûködjenek. Késõbb tízest.
+</P>
+<CENTER>
+
+<IMG SRC="20070422_1.gif"><BR><BR><I>
+Phoenix
+</I><P ALIGN="justify">
+A feladat: a sok kis gennyedéket halomra lõni. Elég nehéz, mert repülnek. A végén szét kell lövöldözni egy nagy ûrhajót, amit ezek védenek. Amúgy 1980-ban készítették.
+</P>
+
+<IMG SRC="20070422_2.gif"><BR><BR><I>
+Moon Patrol
+</I><P ALIGN="justify">
+Ha lehet választani, ez a legkedvencebb kedvencem. Ezzel a kis holdjármûvel kell legyõzni az akadályokat az oldalirányba scrollozó terepen, miközben repülõ csészealjak is támadnak. Ha elérünk A-tól Z-ig, az nekünk jó. A játék addiktivitását fokozza a zene, ami amúgy egy baromi primitív chiptune, de pont ezért. 1982, respect.
+</P>
+
+<IMG SRC="20070422_3.gif"><BR><BR><I>
+Gyruss
+</I><P ALIGN="justify">
+Egy zseniális játékötlet abból az idõbõl (1983), amikor még nem tudtuk, mi az, hogy 3D, és ez mégis az. Ûrhajónkkal a képernyõ szélén mozoghatunk körbe, és a közepe felé lõhetünk, "befelé". Onnan jönnek a gonosz ellenségek, és persze száguldanak a csillagok. A mûfaj neve egyébként <I>tube shooter,</I> csak ezt mostanra elfelejtették. A zene ezúttal is addiktív. Pályáról pályára haladva kell elérni a Naprendszer bolygóit, s végül a Földet. Nem egyszerû!
+</P>
+
+<IMG SRC="20070422_4.gif"><BR><BR><I>
+Dig Dug
+</I><P ALIGN="justify">
+Ööö, hát nem is tudom, végül is vagy a <I>Moon Patrol,</I> vagy ez. Beteg japán játék 1981-bõl: a kis, szkafanderes fickóval a föld alatt kell alagutakat fúrni, és a szörnyeket (Pooka és Fygar) biciklipumpával kinyírni, vagyis addig pumpálni, amíg kidurrannak. Aki ezzel nem akar bíbelõdni, beáshat a sziklák alá, azok is le tudnak esni.
+</P>
+
+<IMG SRC="20070422_5.gif"><BR><BR><I>
+Galaxian
+</I><P ALIGN="justify">
+Antiszoc-randalieren 1979-bõl. Nem kell hozzá sok ész, mész oszt' lõsz. A <I>Space Invaders</I>-hez képest már ez is nagy dolog volt.
+</P>
+
+<IMG SRC="20070422_6.gif"><BR><BR><I>
+Out Run
+</I><P ALIGN="justify">
+A SEGA klasszikusa 1986-ból. Autóversenyzõs játék, ami azért nagy dolog, mert egyébként utálom az autós játékokat. A Commodore 64 verziót is milliók imádták, fõleg klasszikussá vált zenéje miatt, amit egyébként a Press Play on Tape és az Instant Remedy is feldolgozott. A feladat? Menjél, mint a hülye, hátha idõben érsz el az ellenõrzõ pontig.
+</P>
+
+<IMG SRC="20070422_7.gif"><BR><BR><I>
+Double Dragon
+</I><P ALIGN="justify">
+Jó brutális japán játék, ma már simán betiltanák, de hát 1987-ben még nem volt szokás az ilyesmi. Egyedül vagy ketten lehet játszani, a feladat, hogy a gonosz géppisztolyos bandavezér fogságába esett csajt kiszabadítsuk. Bruce Lee utánérzés, durva fejrúgások, baseball-ütõ, dobókés és arcon térdelés. A csajt amúgy a második rész elején lelövik majd, de az a rész elég szar is lett. A két szereplõ neve egyébként Hammer és Spike, és a végén egymással verekednek a csajért.
+</P>
+
+<IMG SRC="20070422_8.gif"><BR><BR><I>
+Silkworm
+</I><P ALIGN="justify">
+Megint egy nem túl sok gondolkodást igénylõ, ám annál szórakoztatóbb platform-lövöldözõs játék. A feladat: mindenkit kinyírni, vagy helikopterrel, vagy dzsippel. Utóbbi esetben a feeling valami olyasmi, mint a <I>Moon Patrol</I>-ban, csak többet kell lõni. 1988-at írunk, és nagy dolog volt ez akkor.
+</P>
+
+<IMG SRC="20070422_9.gif"><BR><BR><I>
+Donkey Kong
+</I><P ALIGN="justify">
+Mario felmászik és megmenti a csajt. Ha sikerül. Az évszám 1981. Amúgy Crazy Kong néven is futott.
+</P>
+
+<IMG SRC="20070422_11.gif"><BR><BR><I>
+Frogger
+</I><P ALIGN="justify">
+Micsoda ötletek teremtek 1981-ben! Valaki meglátott egy országúton átugrálni készülõ békát, és eszébe jutott, hogy ebbõl lehetne csinálni egy videójátékot. Csinált, és kurva jó lett.
+</P>
+
+</CENTER>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20070421.html">
+<B><< elõzõ nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20070423.html">
+<B>következõ nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+<BR><BR>
+
+</BODY>
+</HTML>
+

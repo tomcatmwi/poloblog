@@ -1,0 +1,121 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2006.07.14., péntek</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Látom, megkezdte következõ elõadását a Közel-keleti Nagycirkusz. Itzik barátom szerint ez nem egy szokásos határon átlövöldözõs móka, behívták a tartalékosokat, köztük õt is. Pár nap múlva kell jelentkeznie a libanoni határon. Mondtam neki, hogy vigyen kamerát, és próbáljon nem gyerekekre lõni.
+<BR><BR>
+
+Erdélyi és Erdei Zsolt pedig nem ugyanaz, köszönöm a hozzászólásokat, az Index fórumán meg majd jól megbeszélik a libsik, hogy micsoda purhab paraszt vagyok, hogy <I>még ezt se tudom.</I> (Ja, egyébként a rólam szóló topic <A HREF="http://forum.index.hu/Article/showArticle?t=9136272&la=56859596" TARGET="_new">itt található.</A> Jókat mulattam rajta, a jelek szerint az SZDSZ összes netes provokátorát odaküldték tartani a frontot egy szál olvasóm (farokmarci nickkel) ellen. Megtudhattam például, hogy rendszeresen hazudok, tolvaj vagyok, gazember vagyok, és aki elküldi a kurva anyjába azt, aki oldalakon át mocskolódik, az szánalmas és elfogytak az érvei. Jó szórakozást. :)
+<BR><BR>
+
+Ennél érdekesebb, hogy Grass befejezte a <I>Freax Art Album</I> összerakását, és ha igyekszünk, még akár el is készülhet az Assemblyre. 290 oldal, szép, színes könyv, van benne C-64, Amiga, PC pixelgrafikák és modern rajzok, raytrace-elt képek, ZX Spectrum, Atari ST, Amstrad CPC, ASCII, ANSI, mûvészi lemezborítók és képregények. A borító ilyen.
+</P>
+<CENTER>
+<A NAME="1">
+<A HREF="#1" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20060714.jpg'; document.wdth=446; document.hght=600; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20060714_thumb.jpg" BORDER=0></A>
+</CENTER>
+
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060712.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060715.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

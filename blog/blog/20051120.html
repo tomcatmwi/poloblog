@@ -1,0 +1,125 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2005.11.20., vasárnap</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Sajnos nem találom a TV2 archívumában a tüntetésr&otilde;l szóló riportot, sem a Hír TV-ében, de ha valaki megleli, legyen szíves, szóljon. Megvan viszont a Magyar Nemzet tudósítása, a tüntetés el&otilde;tti cikkel együtt.
+</P>
+<CENTER>
+
+<A NAME="1">
+<A HREF="#1" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20051120_1.jpg'; document.wdth=549; document.hght=700; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20051120_1_thumb.jpg" BORDER=0></A>
+&nbsp;&nbsp;
+<A HREF="#1" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20051120_2.jpg'; document.wdth=419; document.hght=700; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20051120_2_thumb.jpg" BORDER=0></A>
+
+</CENTER>
+<P ALIGN="justify">
+
+Most pedig egy érdekes jelenséget kellene megmagyarázni. Miért van az, hogy ha Athinával megyünk valahová, és találkozunk valakivel, aki engem felismer, neki valahogy sohasem sikerül köszönnie? Végül is együtt volnánk, vagy mi, nem utánfutó, hanem a párom, és ezúton üzeni, hogy kurvára idegesíti, hogy neki senki sem köszön. Mondjuk engem is. Kéretik tehát &otilde;t is észrevenni, köszönjük.
+<BR><BR>
+
+Ha valakit netán érdekel, vethet egy pillantást a bolt készül&otilde; <A HREF="20051120/user_arucikk.html" TARGET="_new">új motorjára.</A> Sok új persze nem látszik rajta azonnal, de sokkal kezelhet&otilde;bb lesz, a rendelések követhet&otilde;ek, automatikus a cserék, reklamációk kezelése, lehet majd szavazni az új polótervekre, és a mintákat bármilyen szín&ucirc; polóra lehet kérni, ami van raktáron. Az egész igazából az én oldalamon lesz jobb, mert kevesebb szerencsétlenkedés lesz, ezáltal gyorsabb kiszállítás és nagyobb rend.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20051119.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20051121.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

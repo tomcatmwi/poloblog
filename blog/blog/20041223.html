@@ -1,0 +1,331 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2004.12.23., csütörtök</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Minden különösebb ceremónia nélkül szeretném bejelenteni, hogy egy éves a polóbolt. Juhé. Most pedig visszatekintünk, mert ilyenkor az szokás. Közben rántott sajtot vacsorázom, és a tartármártás lecsöppent a mangás polómra, pont Akita Sayuri arcára, meglehet&otilde;sen érdekes jelentést kölcsönözve a dolognak.
+<BR><BR>
+
+Szóval történt egyszer, valamikor 2003 nyarán, hogy meglehet&otilde;sen szerény körülmények között éldegéltem, küls&otilde;s játékfejleszt&otilde; 3D grafikusként dolgoztam, és néha komoly gondjaim voltak a számlák befizetésével. Barátn&otilde;m csak csicskamunkákat kapott, butikokban robotolt zsebpénzért. Egyszer a következ&otilde;vel jött haza:
+<BR><BR>
+
+- Hihetetlen, mi minden megvesznek az emberek. Van nálunk most egy fekete n&otilde;i top, az van ráírva: "Hello, my name is BITCH." Veszik, mint a cukrot.
+<BR><BR>
+
+Egy kicsit leálltam az épp aktuális hadihajó modellezésével, magam elé bámultam, és arra jutottam, hogy basszus, én is tudok pólót venni, és ráírni hogy BITCH. Fogtam, félredobtam a munkát, és megnéztem, mit tehetünk az ügyért. Igen kevés pénz volt hozzá, hát olcsó megoldás kellett mindenre. Azt, hogy céget alapítsak, elvetettem, mert annyi pénz nincs a világon, meg egyébként is rossz tapasztalataim vannak a magyar állam vállalkozáspártoló szokásairól. Eleinte feketén akartam elindítani a boltot, amolyan "majdcsak lesz valahogy" alapon, aztán beszélgettem err&otilde;l Edivel, régi haverommal. Megkérdezte, tudom-e, mi az az offshore cég.
+<BR><BR>
+
+- Persze - feleltem. - Külföldön bejegyzett cég, ami az ottani szabályok szerint adózik. Miért?<BR>
+- Hát miért nem csinálsz offshore céget?
+<BR><BR>
+
+Néztem, mint gázálarc. Hogy én? Hogyan? Akkor Edi mutatott pár weboldalt: az Internet tele van offshore ügynökségekkel. Jól megnéztem, mit hogyan lehet, átlapoztam a hatályos jogszabályokat, és egyre jobban tetszett az ötlet. Végül kapcsolatba léptem egy ilyen ügynökséggel, és a többit már tudjátok: bejegyeztük a T&T Enterprises nev&ucirc; céget Dominicán, és íme, nincs többé gond a kekecked&otilde; magyar hivatalokkal. Mi több, Magyarországon bejegyezve a polóbolt nem is tudna m&ucirc;ködni. Ha magyar cégként futna, és minden fillért becsületesen elszámolnék, vagy egy poló ára vagy 5000 forint körül lenne, és mellesleg az egész napom elmenne adminisztrációra.
+<BR><BR>
+
+Megvolt hát a cégháttér, mi kell még? A webáruházat egy haver írta, igen lassan és igen szarul, de legalább m&ucirc;ködött, és fizetni sem kellett érte, csak a majdani eladásokból kellett leadni neki százalékot. A design az én m&ucirc;vem volt. Igen, tudom, hogy meglehet&otilde;sen hasonlít a tshirthell.com-ra, nem véletlenül. Miután mindez megvolt, szembesültem a hogyan tovább kérdésével: hogyan reklámozzam úgy az oldalt, hogy tényleg jöjjenek is rá a látogatók? Banner? Az sok pénzbe kerül. Spam? Na nem. Osszak szórólapot a metróban? Á, minek, az is drága, és csak eldobálják.
+<BR><BR>
+
+Ekkoriban mutatták be a <I>Kontroll</I> cím&ucirc; filmet. Fél szemmel olvasgattam az err&otilde;l szóló híreket, s egyszer megbökte a szemem egy mondat, amiben Antal Nimród a film reklámköltségeir&otilde;l beszélt. Itt említette, hogy a hagyományos plakátok mellett mindenhová kiragasztott kis matricákon, úgynevezett gerillakampányban is igyekeznek felhívni a figyelmet a filmre. Nocsak, érdekes. Az elkövetkez&otilde; pár napban valóban hol itt, hol ott pillantottam meg a <I>Kontroll</I> reklámmatricáját, és szöget ütött a fejembe, hogy milyen hatékony ez a módszer. Hiszen egy alig gyufacímkényi matricával képesek felkelteni a figyelmet, csak mert szokatlan helyre ragasztották, ám erre egy óriásplakát már nem képes. Ha én így kapkodom a fejem a <I>Kontroll</I> matricái után, akkor nyilván más is. Ez az! Matrica kell nekem is!
+<BR><BR>
+
+Jó, de milyen? Hazamentem, leültem rajzolgatni. Az nem volt kétséges, hogy a boltnak <I>Tomcat Polóboltja</I> lesz a neve. Olyan sokan játszottak már a Revenge trilógiával, akiknek biztosan ismer&otilde;s a Tomcat név, hogy ezt kár lenne nem kihasználni. Itt egy kicsit fanyarul elmosolyodtam: annak idején apám sokat üvöltözött velem azért, mert "idétlen játékprogramokat" írok ahelyett, hogy fizikát, irodalmat és más hülyeségeket magolnék, mire én azt mondtam, figyelje meg, egy napon ezekb&otilde;l az idétlen játékprogramokból fogok megélni. Nem tudom, megfigyelte-e, de furcsa módon így lett: éppen tíz évvel a <I>Suli</I> kiadása után ez a bárgyú kis Pascal játék nem kevéssel járult hozzá megélhetésemhez. Szóval Tomcat Polóboltja, remek, de mi legyen a szlogen?
+<BR><BR>
+
+"A világ legjobb polói"? Áh, elcsépelt.<BR>
+"Vegyél polót"? S&otilde;t, akkor már "polót a polóboltból", nem? Nem.<BR>
+"Polók és poénok." Na persze. Azt szeretném, ha röhögnének, és nem körberöhögnének.<BR>
+<BR>
+
+Így ültem magamban pár percig, azon agyalva, hogyan fejezzem ki hatékonyan, hogy itt nincs semmi kommersz szar. Aztán eszembe jutott, hogy a marketing egy áltudomány, az embereknek egyszer&ucirc;en azt kell mondani, ami az igazság, és azt írtam a matricára:
+</P>
+<CENTER>
+<B>SEMMI KOMMERSZ SZAR</B>
+</CENTER>
+<P ALIGN="justify">
+
+És ebb&otilde;l született meg a hírhedt Tomcatpoló szlogen. Készíttettem nyolcezer apró matricát, és egy hétig raktam mindenhová a városban: villamosokra, falakra, éttermek vécéibe, a metró ajtaja fölé, az aluljárók falaira... Biztos emlékeztek rá, hiszen sokan így találtatok rám, s vagytok mind a mai napig visszatér&otilde; olvasóim és vásárlóim. A mindössze 8000 forintot felemészt&otilde; reklámkampány nyomán gyorsan emelkedni kezdett a nézettség, már februárban elérte a napi 300 látogatót, és folyamatosan emelkedett. Májusra abbahagyhattam az idegöl&otilde; robotolást, mert már hozott annyit a bolt, hogy megéljek bel&otilde;le. Ez így van mind a mai napig: meggazdagodni ugyan nem fogok ebb&otilde;l sem, de megélni már meg tudok, és ami a legfontosabb, nem vagyok egész hónapban síkideg, hogy vajon megjön-e id&otilde;ben a fizetésem, vagy megint magyarázkodhatok a f&otilde;bérl&otilde;nek. Az indulás napja óta mindössze öt (!) nap volt, amelyen egyáltalán nem futott be rendelés, és ezek mind 2004 január 10-e el&otilde;ttiek, vagyis a nyitás els&otilde; két hetére esnek.
+</P>
+<CENTER>
+<IMG SRC="20041223_4.jpg">
+</CENTER>
+<P ALIGN="justify">
+Azt hiszem, ezzel a bolttal és ezzel a bloggal találtam meg igazán azt, amit az életben csinálni szeretnék. Nem magyarázom, hiszen ismeritek mindkett&otilde;t, s így valamennyire engem is. Amióta ez a blog fut, annyi érdekes helyen jártam, annyi érdekes emberrel találkoztam, mint még soha. Vége az éjjel-nappal monitor el&otilde;tt kotlásnak: már végre megtehetem, hogy ha néha el akarok menni valahová, akkor elmegyek, mert van kivel, van hová, és nem kell fillérre kiszámolnom, mennyit költhetek. Nyugodt vagyok, kiegyensúlyozott, és jó arcok vesznek körül - ezek pedig Ti vagytok, kedves olvasók, akik az olvasói leveleket írjátok, akik közül sokan állandó vásárlóim vagytok, és akiknek érdemes írni. Valószín&ucirc;leg ez Magyarország legolvasottabb egyéni blogja a maga napi 2000-2500 olvasójával, már ha nem számoljuk ide az olyan jó pénzért futtatott m&ucirc;blogokat, mint Konta Barbaráé. Ha valakinek még több találata van, elnézést kérek; mindenesetre érdekes lenne egy toplistát összeállítani, tényleg érdekelne, kit mennyien olvasnak.
+<BR><BR>
+
+Egyszóval köszönöm Nektek, kedves olvasók, hogy segítettetek a tomcatpolo.hu-t azzá válni, amivé vált; valami ilyesmit képzeltem el magam is, de nem is álmodtam ekkora sikerr&otilde;l. Remélem, egy év múlva is itt leszünk még, ti is és én is, és folytatjuk, ahogy elkezdtük.
+<BR><BR>
+
+No de nézzük, hogy telt a polóbolt els&otilde; születésnapja.
+<BR><BR>
+
+Meglehet&otilde;sen szaladgálós nap lett bel&otilde;le, sokfelé kellett rohangásznom, ráadásul este polóátadás volt a Lehel téren. Addig a fél várost bebarangoltam, s így vet&otilde;dtem el a Deák térre, ahol a metróállomáson, a mozgólépcs&otilde; tövében egy cigányasszony ült, és a purdéjával karácsonyi dalokat énekelve próbált pénzt kiszedni a járókel&otilde;kt&otilde;l. A sok hülye nyomatta is neki az ötszázasokat, ezreseket, mintha megérdemelné. Pár percig néztem, az alatt legalább ötezer forintot szedett össze! Felmentem a mozgólépcs&otilde;n, odamentem a biztonsági &otilde;rökhöz, és szóltam nekik, hogy menjenek, rugdossák már el onnan. Gyerekkel koldulni ugyanis b&ucirc;ncselekmény, kiskorú veszélyeztetése, és én személy szerint egyet is értek ezzel, nem árt, ha a gyerek nem azt látja, hogy a mozgólépcs&otilde; tövében ülni, és az emberekt&otilde;l pénzt kunyerálni normális dolog.
+<BR><BR>
+
+- Mi, már megint ott van? - hördült fel a biztonsági ork. - Már kétszer kivágtuk!<BR>
+- Vágjátok ki jobban.<BR>
+- Az lesz, úgy kivágom, hogy nyekken! - felelte, és társával kettesben leviharzottak az állomás mélyére. Én mentem a dolgomra.
+<BR><BR>
+
+Egy órával kés&otilde;bb az Arany János utcai megállóba ereszkedtem le a mozgólépcs&otilde;n, és már félúton ismer&otilde;s kornyikálás ütötte meg a fülemet. Igen, átköltözött ide, és folytatta, ahol abbahagyta. A sok hülye persze itt is tolta neki a zsét számolatlanul. Jó üzlet ez, dolgozni se kell. Ezúttal nem a biztonságiaknak szóltam, hanem a rend&otilde;rséget hívtam fel, akik meg is ígérték, hogy mindjárt kijönnek.
+<BR><BR>
+
+Kicsit ácsorogtam a megállóban, vártam valakire, aki késett, s közben eszembe jutott, hogy ha kijönnek a rend&otilde;rök, ez a spiné biztosan azt fogja állítani, hogy &otilde; nem is koldult. Fogtam hát a kamerát, odamentem, és készítettem róla pár fényképet.
+
+</P>
+<CENTER>
+
+<A NAME="1">
+<A HREF="#1" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20041223_1.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20041223_1_thumb.jpg" BORDER=0></A>
+&nbsp;
+<A HREF="#1" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20041223_2.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20041223_2_thumb.jpg" BORDER=0></A>
+</CENTER>
+
+<P ALIGN="justify">
+A nótadroid különösebb visszajelzés nélkül vette tudomásul, hogy egy terepgatyás, kopasz alak felvételeket készít róla, csak a szeme mozdult felém, és egy pillanatra megakadt a <I>Pásztorok, pásztorok</I> éneklése közben, de gyakorlatilag zavartalanul futott tovább benne a program. Egyszer csak megszólalt a hátam mögött egy hang:
+<BR><BR>
+
+- Hö! Szólj már neki, hogy húzzon innen! Itt van egész nap, pedig ez az én helyem!
+<BR><BR>
+
+Megfordultam, és a meglepetést&otilde;l földbe gyökerezett a lábam. Még a fényképez&otilde;géppel is melléexponáltam. Nem baj, jó lesz képrejtvénynek. Mit gondoltok, ki állt mögöttem?
+</P>
+<CENTER>
+
+<A NAME="2">
+<A HREF="#2" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20041223_3.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20041223_3_thumb.jpg" BORDER=0></A>
+</CENTER>
+
+<P ALIGN="justify">
+Igen, bizony ám. Díszpinty volt az! Díszpinty, akinek mozgását id&otilde;r&otilde;l id&otilde;re jelentik nekem a szemfüles olvasók; Díszpinty, a félbolond utcagyerek, aki a buzitüntetésen ki akarta venni a kezemb&otilde;l a táblát, valamint szokása meglehet&otilde;s határozottsággal ajánlatot tenni mindazon lányoknak, akik szembejönnek vele. Itt állt el&otilde;ttem, a maga teljes valójában, maga Díszpinty!
+<BR><BR>
+
+- Há' ez itt van egész nap. - bökött a cigányasszony felé.
+<BR><BR>
+
+Díszpinty sokat változott a nyár óta. Jóval tépettebb, koszosabb lett, haja megn&otilde;tt, és &otilde; maga is megn&otilde;tt. Arcán tépett verésnyomok, valószín&ucirc;leg bokszerrel osztották ki, jobb keze gipszben.
+<BR><BR>
+
+- Szervusz, Ricsi - üdvözöltem, mert egy olvasóm már kiderítette, hogy így hívják. Nézett is nagyot becsülettel.<BR>
+- Hát te tudod a nevemet?<BR>
+- Igen, tudom.<BR>
+<BR>
+
+A cigányasszony abbahagyta az óbégatást, Díszpintynek pedig felderült a képe.
+<BR><BR>
+
+- Te, gyere már, dumáljunk! Gyere, bemutatom az anyámat!
+<BR><BR>
+
+Azzal egy töpörödött, id&otilde;s n&otilde;höz vezetett, aki az állomás oszlopai közt bújkált.
+<BR><BR>
+
+- Há' ez az anyám.<BR>
+- Örvendek, asszonyom.<BR>
+- Örvendek... - biccentett vissza az asszony.<BR>
+- Kérsz csokit? - dugott az orrom alá Díszpinty egy fél tábla gyanús állagú, valaha mazsolás-mandulás német csokoládét.<BR>
+- Nem, köszi.<BR>
+- De vegyé' má'!<BR>
+- Nem, köszi. Izé... diétázom.<BR>
+- Minek?<BR>
+- Mert gyúrok, tudod...<BR>
+<BR>
+
+Díszpinty elmélyülten rágcsálni kezdett egy darab csokoládét, és megpróbálta értelmezni a hallottakat.
+<BR><BR>
+
+- Mi történt a kezeddel? - kérdeztem a gipszre bökve.<BR>
+- Hát, megvertek.<BR>
+- Kik?<BR>
+- Hárman.<BR>
+- Jó, de kik?<BR>
+- Hát hárman!<BR>
+- Jó, értem, de miért vertek meg?<BR>
+- Hát mert nagy volt a pofám...
+<BR><BR>
+
+Úgy látszik, használt a dolog, mert már nem volt az a lazáskodó, pimaszkodó kölyök, mint legutóbb.
+<BR><BR>
+
+- És még mindig kocsiszélvéd&otilde;ket mosol?<BR>
+- Hát ezt meg honnan tudod?<BR>
+- Ó, tudod, téged nagyon sokan figyelnek.<BR>
+- Tényleg?<BR>
+- Tényleg. Ja, és mondd csak, mi lett a macskáddal?<BR>
+- He?? Hát ezt meg honnan tudod?
+<BR><BR>
+
+A csoki hirtelen elt&ucirc;nt Díszpinty zsebében, és csodálkozva méregetett.
+<BR><BR>
+
+- Hát, tudod, a buzitüntetés után mutogattam a fényképeket a haveroknak... &otilde;k is biztonsági &otilde;rök... és akkor látták a képedet. Aztán úgy alakult, hogy utána többen láttak téged, és mindig elmesélték.<BR>
+- Hihi, biztonsági &otilde;r vagy?<BR>
+- Az...
+<BR><BR>
+
+Nem baj, hadd higgye.
+<BR><BR>
+
+- Láttak téged a Nyugatinál is, a Mekiben.<BR>
+- Hát ja, ott is szoktam lenni.<BR>
+- Meg a vonaton, a Keletiben.<BR>
+- Ööö, igen... És honnan tudják a haverjaid, hogy kocsit is mostam?<BR>
+- Hát, az övékét is le akartad mosni.<BR>
+- Jaaj, akkor tudom, ki a haverod! Egyszer kiszállt egy ilyen biztonsági &otilde;r a kocsiból, és nagyon megpofozott...<BR>
+- Ezt nem mondta, de lehet, hogy &otilde; volt.<BR>
+- Hehe, érdekes.<BR>
+- Meg ugye tudjuk, hogy szeretsz goth csajokat ölelgetni a metrón...<BR>
+- Hehehe, ja, a n&otilde;ket szeretem, hehe.<BR>
+- Szóval látnak téged sokan. El is neveztünk Díszpintynek.<BR>
+- Minek? Dísz-pintynek? Hihihi!<BR>
+- Ja, te vagy a Díszpinty.<BR>
+- De miért?<BR>
+- Hát mert amikor el&otilde;ször látott téged egy haver, azzal jött be másnap, hogy "na, láttam azt a díszpintyet a Keletinél."<BR>
+- Hihihi, hahaha, Díszpinty, ez tetszik.<BR>
+- És mióta vagy az utcán?<BR>
+- Hát... - komorult el - tudod, a bátyám meghalt. Nyolc hónapja. Azóta vagyunk az utcán anyámmal.<BR>
+- De hogy kerültetek az utcára?<BR>
+- Hát úgy, hogy anyám mindenünket zálogba adta... a lakást is... aztán nem adják vissza.<BR>
+- Már hogyhogy nem adják?<BR>
+- Hát úgy, hogy elvették, és azt mondják, nem tudnak semmir&otilde;l.<BR>
+- Kinek adtátok oda, valami uzsorásnak?<BR>
+- Ja, annak... aztán anyám nem kért semmi papírt, és a csávó jól átbaszott minket.<BR>
+<BR><BR>
+
+Ezúton gratulálok a kedves mamának, majd egyszer kap egy Balfasz polót, ha megint lesz. 
+<BR><BR>
+
+- És most nincs semmitek?<BR>
+- Hát, csak ez - mondta, és el&otilde;vett a zsebéb&otilde;l egy Panasonic mobiltelefont. - Régi, de nekem jó.<BR>
+- Nagyszer&ucirc;. Err&otilde;l jut eszembe... fel kéne hívni, akire várok... - azzal el&otilde;vettem az én telefonomat.<BR>
+- Hívjad az enyémr&otilde;l!<BR>
+- Tessék?<BR>
+- Odaadom, na, van rajta egység!<BR>
+- Nem, köszi... izé... nekem fizeti a cég.
+<BR><BR>
+
+Mégsem telefonáltam, mert máris befutott a srác, akire vártam, és indulni készültünk. Belekotortam a zsebembe, találtam egy kósza ezrest, azt nyomtam Díszpinty kezébe.
+<BR><BR>
+
+- Nesze, srác, boldog karácsonyt.<BR>
+- Jajjajajj, köszi!!<BR>
+- Na, csá.<BR>
+- Csá, köszi, király vagy!
+<BR><BR>
+
+Azzal szálltunk volna fel a metróra, de hirtelen ott termett a pintymama, és valami vita támadt közte és fiókája között. Végül Díszpinty odafutott hozzám.
+<BR><BR>
+
+- Te - suttogta bizalmasan - mondd már neki, hogy csak kétszázast adtál! Légyszi, mondd neki!<BR>
+- Mármint anyádnak?<BR>
+- Igen, igen...<BR>
+- Kétszázas volt, igen - mondtam az anyjának.<BR>
+- Ja, kétszázas - tódította Díszpinty.<BR>
+- Jaj, adjon már akkor nekem is egyet!<BR>
+<BR>
+
+Jól van, adtam anyukának egy kétszázast.
+<BR><BR>
+
+- Áldja meg a jóisten! Kellemes ünnepet!<BR>
+- Köszi! - súgta oda Díszpinty, mi pedig felszálltunk a metróra és továbbutaztunk.
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20041222.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,132 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-361</B><BR>
+2005.05.13.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<BR><BR>
+
+A minap kocsmázni voltam egy kisebb társasággal, melynek tagja volt egy régi informatikus szaki, egykori amigás demoscener, Newlocal. &otilde; mesélte az alábbi rémtörténetet. Nem kell nagyon megijedni, csak egy droidról szól, bár elég jókoráról.
+<BR><BR>
+
+Néhány éve a srác még szervizesként dolgozott, s gyakran kellett kiszállnia mindenféle júzerek ügyes-bajos dolgai miatt. Volt persze, hogy okkal hívták, de néha nem. Ez is egy ilyen eset volt. Az egyik partnercég vezet&otilde;je azzal hívta ki &otilde;t és kollégáját, hogy nem m&ucirc;ködik a nagy hálózati nyomtató. Egy jókora, jó félmilliós érték&ucirc; lézercuccról volt szó, amit az egész cég közösen használt. Nosza, kimentek, megnézték, mi a helyzet a hálózaton: a cégvezet&otilde; gépér&otilde;l nézve a printer valóban nem felelt. Megnézték egy másik gépr&otilde;l: azon sem látták.
+<BR><BR>
+
+- Hol áll ez a nyomtató? - kérdezték.<BR>
+- A folyosó végén, egy kis asztalon - felelte a droid.<BR>
+<BR>
+
+Odamentek az asztalhoz, keresték a nyomtatót, de nem volt sehol. Csak egy elárvult kábelvég tanúskodott róla, hogy a közelmúltig még valóban itt állt.
+<BR><BR>
+
+- De hát hová lett? - kérdezték a szervizesek a cégvezet&otilde;t.<BR>
+- Hát elvittem haza! - így a droid.<BR>
+- Hazavitte? De hát ki engedélyezte ezt?<BR>
+- Mi az hogy ki engedélyezte? Itt én vagyok a f&otilde;nök! - húzta ki magát önérzetesen.<BR>
+- Jó, de miért vitte el?<BR>
+- Hát hogy nyomtassak vele otthon!<BR>
+- Jó, de arra nem gondolt, hogy addig a többiek nem tudnak dolgozni?<BR>
+- Igen, jelezték, hogy nem tudnak nyomtatni. Ezért hívtam ki magukat, hogy csinálják meg!
+<BR><BR>
+
+A szervizesek erre homlokráncolva egymásra néztek, majd közölték, hogy sajnos nyomtatót szülni nem tudnak, és távoztak. A cégvezet&otilde; valószín&ucirc;leg a mai napig sem érti, miért van szükség nyomtatóra a nyomtatáshoz.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050512.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050514.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

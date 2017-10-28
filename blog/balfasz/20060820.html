@@ -1,0 +1,126 @@
+<HTML>
+<HTML>
+<HEAD>
+
+<STYLE type="text/css"> 
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-640</B><BR>
+2006.08.20.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<P ALIGN="justify">
+<I>
+Szent István napjára egy Hornyák Mihály-díjas droid jutott, Carter jóvoltából.
+</I>
+<BR><BR>
+
+Már régen szerettem volna bekerülni a Droidzónába, de csak most sikerült fognom egy igazit. :)
+A történet a családból származik, lassan derültek ki az esemélyek, de már összeállt a kép.
+<BR><BR>
+
+A srác, akirõl a történet szól, pár évig dolgozott egy "jogi" irodának, csõdeljárásban lévõ cégekkel kereskedtek. Kb. két éve eltávozott onnan, máshol használja tudását, el is felejtett mindent, viszont vett egy autót. Az autóban az egyik este bent felejtette a rádió elõlapját, és ez csak akkor lett számára teljesen világos, mikor másnap reggel gumi kiszúrva, ablak beütve, rádió ellopva kombinációval találkozott.
+<BR><BR>
+
+Na, de, nem esett kétségbe - hát nem az a fajta - CASCO van a kocsin, gyerünk a biztosítóhoz, meg a rendõrségre, mert ugye helyszínelni kell, stb. Helyszíneltek, felvették az adatokat. A biztosító rendben fizetett, azonban két nappal késõbb hajnalban jött a rendõrség, verték az ajtót, jöttek a srácért. Gyorsan összecsomagolták, megbilincselték, és már vitték is az õrsre. És itt nem az Örs Vezér térre gondolok...
+<BR><BR>
+
+Kiderült, hogy országos körözés volt ellene kiadva gazdasági bûncselekmények miatt, csak sorozatos költözései miatt nem tudta a rendõrség a lakcímét. Erre jön õ, és bejelenti a káreseményt. Na, egybõl tudták hová kell kimenni.
+<BR><BR>
+
+Az ügy még folyamatban van, továbbiakat nem tudok elmondani, de ahogy a magyar jogrendszert ismerem, gazdasági bûncselekmény 1-10 millió Ft okozott kár: 5-10 év letöltendõ.
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060819.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060822.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,197 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<!-- Sunbelt Kerio Popup Killer - script has been inserted by KPF -->
+<script type="text/javascript">
+<!--
+var NoPopupsDone = 0;var CurrWindowOpen = window.open;var CurrWindowOpen2 = window.open;var orig_setTimeout = window.setTimeout;var orig_setInterval = window.setInterval;if ( window.showModelessDialog ) { var orig_showModelessDialog = window.showModelessDialog;} if ( window.showModalDialog ) { var orig_showModalDialog = window.showModalDialog;} 
+var cnt = 0;var popupType = "direct";var KPF_LOG_URL = "http://127.0.0.1:44501/pl.html?";var KPF_TIMEOUT = 100;var onUnloadFlag = false;var KPF_CompleteLoaded = false;
+function nullMethod() {}function nullWindow() {	 this.window = new Object(); this.document = new Object(); this.document.open=this.document.close=this.document.write=this.document.writeln=nullMethod; this.alert=this.back=this.blur=this.captureEvents=this.clearInterval=this.clearTimeout=this.close=this.confirm=this.dump=this.escape=this.focus=this.forward=this.GetAttention=this.getSelection=this.home=this.moveBy=this.moveTo=this.open=this.print=this.prompt=this.releaseEvents=this.resizeBy=this.resizeTo=this.scroll=this.scrollBy=this.scrollByLines=this.scrollByPages=this.scrollTo=this.setCursor=this.setInterval=this.setTimeout=this.sizeToContent=this.stop=this.unescape=this.updateCommands=nullMethod;}
+function destroyIframe(ifr){ if (ifr != document.getElementById("kpfLogFrame"))   { var x = ifr.parentNode.removeChild(ifr);    delete x;  };}
+function sendStream(s, idx, kpf_pt){ try {        var ifr = document.getElementById("kpfLogFrame");   var tmp = ifr.cloneNode(true);   tmp.id  = "ifr_" + idx;   var s2 = "srv=" + document.location + "&url=" + s + "&pty=" + kpf_pt;   tmp.src = KPF_LOG_URL + escape(s2);   document.body.appendChild(tmp); } catch (e) {   orig_setTimeout("sendStream('" + s + "', " + idx + ",'" + kpf_pt + "')", KPF_TIMEOUT); }}
+function sendUrl(url){ if (onUnloadFlag)   sendStream(url, cnt++, popupType); else  {  try {   orig_setTimeout("sendStream('" + url + "', cnt++,'" + popupType + "')", KPF_TIMEOUT);  }   catch (e)   {}	  }}
+function newOpen(url, name, atr) {wnd = new nullWindow();wnd.focus = nullWindow;wnd.opener = this.window;sendUrl(url);return(wnd); }
+function newOpen2(url, name, atr) { sendUrl(url); return(new nullWindow());}
+function stopPopups(kpf_pt) { popupType = kpf_pt; CurrWindowOpen = window.open; window.open = newOpen2; }
+function startPopups(kpf_pt) { window.open = CurrWindowOpen;  popupType = kpf_pt;}
+function my_setTimeout(one, two) { if (typeof(one) == "function") {    function myFun(){}    myFun=one;    function newFun() {     stopPopups('ontimer');      myFun();      startPopups('direct');    }	    try {      return orig_setTimeout(newFun,two);    }    catch (e)  {      try {	    return eval("newFun()");      }      catch(e) { }    }   }  else {    try {      return orig_setTimeout("stopPopups('ontimer');"+one+"; startPopups('direct');", two);    }    catch (e)  {      try {        return eval("stopPopups('ontimer');"+one+"; startPopups('direct');");      }      catch(e) { }    }  }}
+function my_setInterval(one, two) {  if (typeof(one) == "function") {    function myFun(){}    myFun=one;    function newFun() {      stopPopups('ontimer');      myFun();      startPopups('direct');    }	    try {      return orig_setInterval(newFun,two);    }    catch (e) { }  }  else {    try {      return orig_setInterval("stopPopups('ontimer');"+one+";startPopups('direct');", two);    }     catch (e) { }  }}
+function my_onload() { var my_retcode = true; stopPopups("onload"); if(orig_onload)  my_retcode = orig_onload(); startPopups("direct"); KPF_CompleteLoaded = true; return my_retcode; }
+function my_unload() {  var my_retcode = true; var cnt = 0; stopPopups("onunload"); onUnloadFlag = true; if(orig_onunload)   my_retcode = orig_onunload(); startPopups("direct"); return my_retcode;}
+function my_windowopen(url, name, atr){ if ( (! KPF_CompleteLoaded) || (document.all && event != null && event.type == "mouseover") )  {  if ( ! KPF_CompleteLoaded) {   popupType = "direct";  }  else {   popupType = "mouseover";  }  sendUrl(url);  popupType = "direct"; } else {   try {   return CurrWindowOpen2(url, name, atr);  }   catch (e)   {}  }}
+function my_showModelessDialog (url , arguments , features) { if (!NoPopupsDone) {   var wnd = new nullWindow();  popupType = "direct_dialog";  sendUrl(url);  popupType = "direct";  return wnd; } if (popupType!="direct" | (event && event.type == "mouseover") ) {   var curr_popup = popupType;  if (event && event.type == "mouseover") {   popupType = "mouseover";  }    popupType = popupType+"_dialog";  sendUrl(url);  popupType = curr_popup;  return ( new nullWindow() ); } else {   return ( orig_showModelessDialog(url , arguments , features) );  } }
+function my_showModalDialog (url , arguments , features) { if (!NoPopupsDone) {   popupType = "direct_dialog";  sendUrl(url);  popupType = "direct";  return ""; } if (popupType!="direct" | (event && event.type == "mouseover") ) {   var curr_popup = popupType;  if (event && event.type == "mouseover") {   popupType = "mouseover";  }    popupType = popupType+"_dialog";  sendUrl(url);  popupType = curr_popup;  return ""; } else {   return ( orig_showModalDialog(url , arguments , features) );  } }
+function nopopups() { if(!NoPopupsDone)   {  NoPopupsDone = 1;  orig_onload = window.onload;  orig_onunload = window.onunload;  window.onload = my_onload;  window.onunload = my_unload;  window.open = my_windowopen;  }}
+window.setTimeout = my_setTimeout;window.setInterval = my_setInterval;window.open = newOpen;if ( orig_showModelessDialog ) { window.showModelessDialog = my_showModelessDialog;}if ( orig_showModalDialog ) { window.showModalDialog = my_showModalDialog;}
+//-->
+</script>
+<!-- Sunbelt Kerio Popup Killer - end of the script inserted by KPF -->
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2006.10.06., péntek</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+
+Reggel fél nyolckor arra ébredtünk, hogy egy raj rendõr veri az ajtót. Kitámolyogtam, és megmutattam magam, nesze, még élek.
+<BR><BR>
+
+- Hol volt az éjszaka?! - kérdezte a rendõr szigorúan.<BR>
+- Hol lettem volna, hát itt.<BR>
+- Miért nem nyitott ajtót a csengetésre?<BR>
+- Biztos nem hallottam meg.<BR>
+- Miért nem?!<BR>
+- Azért, mert négy napja minden hajnali négykor és reggel nyolckor felcsöngetnek, és mostanra kurvára elfáradtam. Gondoltak már arra, hogy napközben is lehetne ellenõrizni?<BR>
+<BR>
+
+Athina is elõtámolygott, megmutatta a fakabátoknak a személyijét, és igazolta, hogy itthon voltam, vele együtt, de a kimerültség bizony nagyobb úr, mint az állami fegyelem. A rendõrök elmentek, kivételesen nem törték el a kezemet, de azt mondták, hogy máskor figyeljek a csengõre, mert baj lesz. Egyébként tényleg nem értem, miért szarnak rám egész nap, hogy aztán mindig pontosan hajnali négykor ideállítsanak patentkodni.
+<BR><BR>
+
+A mai program nagytakarítás lesz, illetve a tegnapi mentésbõl megpróbálom elõbûvölni a munkáimat. A boltmotort a laptopon is be tudom fejezni. Ti addig is örüljetek, mert van két új poló. Ismét kapható a <B><A HREF="http://www.tomcatpolo.hu/index.php?mod=polok&cat=14&id=436&color=black" TARGET="_new">Köszönöm, Istenem, hogy nem vagyok bölcsész</A></B> és a <B><A HREF="http://www.tomcatpolo.hu/index.php?mod=polok&cat=14&id=344&color=black" TARGET="_new">Ma nem csajozok,</A></B> de ha valaki nem figyelt volna, az most is észreveheti a <B><A HREF="http://www.tomcatpolo.hu/index.php?mod=polok&cat=14&id=345&color=black" TARGET="_new">POLICE,</A></B> az <B><A HREF="http://www.tomcatpolo.hu/index.php?mod=polok&cat=14&id=341&color=cardinal" TARGET="_new">Enyém,</A></B> a <B><A HREF="http://www.tomcatpolo.hu/index.php?mod=polok&cat=22&id=351&color=black" TARGET="_new">Szavazz a háztetõrõl</A></B> és az <B><A HREF="http://www.tomcatpolo.hu/index.php?mod=polok&cat=22&id=355&color=black" TARGET="_new">Antikommunista</A></B> újbóli megjelenését. Néhány nap múlva lesz még más is.
+<BR><BR>
+
+És most folytassuk a múltkori börtönnaplót az utolsó napon írt feljegyzésekkel.
+<BR><BR>
+
+<B>2006.09.27.</B><BR>
+<BR>
+
+Kiköltöztettek bennünket. Tegnap este összeszedették velünk a cuccainkat, engem egy emelettel lejjebb vittek, Danit meg a jó ég (és a nyilvántartás) tudja, hová. Úgy látszik, a jó szerencsémet prioritással kezelik odafenn, mert most is jó helyre kerültem. Már persze amennyire jó tud lenni itt bármi is. Most három sráccal osztozom egy szobán. Egyikük sem tüntetõ. Ketten közülük, Zsiga és Zsolt keményen gyúrnak, felhasználva mindent, ami a zárka felszerelésébõl erre alkalmas. A harmadik, Gabi mûtét után van, õ csak segít, például a súly szerepét tölti be fekvenyomáshoz. Hogy kit mivel gyanúsítanak, arról nem beszélünk, legalábbis nem részletesen. Itt mindenki ártatlan. Ki rablásban, ki személyi szabadság korlátozásában. Ami a szerencsét illeti, az részemrõl annyi, hogy mindhárman rendes, emberséges gyerekek. Ti ott kint talán azt hiszitek, hogy idebent csupa sittes állat ül, akik ütik-vágják egymást. Nem, szó sincs ilyesmirõl. A fiúk rengeteget olvasnak, mûveltek, istentiszteletre járnak. Tegnap este órákig beszélgettünk történelemrõl, vallásról. Más tüntetõk sajnos nem ilyen szerencsések. Az egyik társam elõtt kinyitották a zárkaajtót, csak annyit tudott kinyögni, <I>"jaj, ne!"</I> - és már be is lökték a Bódi Gusztitól harsogó helyiségbe. Sin loi.
+<BR><BR>
+
+Emlékeztek egyébként a nyár elején feltett kérdésemre, hogy vajon miért paskolgatják a hasukat séta közben a cigányok? Itt is csinálják. Gyalogol körbe az ombre a börtönudvaron, keze a póló alatt, és a hasát buzizza. Megfejtetlen antropológiai rejtély.
+<BR><BR>
+
+Buzik is vannak, természetesen. Külön zárkában vannak, és külön is zuhanyoznak. Arra azért figyelmeztettek a tapasztaltabbak, hogy egyedül sose menjek a fürdõbe. Mindig ügyelni kell rájuk, alattomosak, és nem nézik, kibe kötnek bele. Azoknál is bepróbálkoznak, akik ronggyá verik õket. Állítólag azt csinálják, hogy odasündörögnek a gyanútlanul zuhanyozó emberhez, és a szappanos ujjukat hirtelen belevágják a seggébe. Ez felel meg a finom célzásnak, a durvább eset az, ha simán megerõszakolnak. Ezért zuhanyoznak ezek külön, és figyel is rájuk mindenki.
+<BR><BR>
+
+Tüntetõvel kettõvel találkoztam ezen az emeleten, és állítólag van még egy, aki nem jött le a mai sétára. Az egyikük gimnazista, garázdasággal gyanúsítják, állítólag készült róla fénykép is. Hát, igen, ezzel nehéz lesz mit kezdeni. Õ az elsõ, akivel találkoztam, akivel közölték a gyanúsítás alapját. Valószínûleg le is ültetik. Tizenkilenc éves. Bár talán mérlegelik, hogy fiatal, hogy büntetlen elõéletû, hogy felfokozott lelkiállapotban, és így tovább. Avagy nem. Az õrizetbe vételi jegyzõkönyvre a legtöbbünknek azt írták: büntetett elõéletû. Egyikünk sem az. Magyarázat nincs.
+<BR><BR>
+
+Hallottam a rádióban, hogy még mindig tüntettek. Ne hagyjátok magatokat! Törni-zúzni nem kell, de ezt magatoktól is tudjátok.
+<BR><BR>
+
+Lassan kezdem úgy érezni magam, mintha mindig is itt éltem volna. Minden, ami odakint volt, csak egy álom, vagy egy videójáték, amit hirtelen kikapcsoltak. A bolt, a blog, az emberek odakint, az otthon, a barátok, mintha nem is lettek volna soha. Én már itt születtem, ebben a zárkában. Csak Athina nem illik ebbe a szoliptikus képbe. Athi, kicsi tigris, minden szürkeségen átdereng fenséged. Sosem írtam rólad ebbe a blogba, mert elmondhattam neked mindent magam is. Te vagy az egyetlen, ami a valósággal összeköt. Egyébként már beletörõdtem, hogy hónapokig itt leszek. Miért ne lennék? Meghosszabbítják a nyomozást, elnapolják a tárgyalást, mit tudom én. A lényeg, hogy akit behoztak, legyen kellõképpen megfélemlítve, összetörve. Ne lázadozzunk a hazugok ellen, inkább ünnepeljük õket, hogy milyen õszinték. A börtönben meg csakis bûnözõk vannak, természetesen. Mindenki tudja, hogy ma már senkit nem csuknak le ok nélkül. Az állam becsületes.
+<BR><BR>
+
+Ma állítólag kapunk tévét a cellába. Van zártláncú tévéhálózat, esténként filmek mennek rajta. Igaz, mikor ezt írom, már este hat óra van, tévé meg sehol. No, de vannak itt más szórakozási lehetõségek is. Például a keresztyén misszió. Jön egy faszi, valami független gyülekezettõl, és minden szerdán elõadja, hogyan fedezte fel Jézust, miután szétkente õt egy Mazda, a Daciájával együtt. Nem túl érdekes, bár egy-két félnótás lelkesen hallgatja, miközben a kulcsszavakat öles ákombákomokkal felvésik az imakönyvükbe, ahogy épp sikerül. A cigányok meg vigyorognak, és sunyin kacsingatnak mindenkire. Lehet továbbá gyúrni, bár állítólag tilos, meg lehet tanulni römizni a cellatársaktól, és bizonyos trükköket is lehet tanulni a tapasztaltabbaktól, akik már itt rohadnak egy ideje. Ilyen például, hogy ajánlatos minden testszõrzetet leborotválni. "Tudod, itt cigányok vannak" - kommentálta Zsolt, és nem tette hozzá, hogy rasszista vagy csak tapasztalt. Itt egyébként is nagyon kell vigyázni a higiéniára. Szerencsére mindannyian megértjük ezt, és szinte már betegesen igyekszünk tisztán tartani a zárkát. Fürdõszobát is csinálunk esténként, a mosdó környékét lepedõkkel függönyözzük el, hogy mindenki magában mosakodhasson. Így legalább van egy kis intim terünk.
+<BR><BR>
+
+
+Jogi dolgokban is vannak itt meglehetõsen tájékozottak. Azt mondják, semmiféle kártérítést nem lehet azért kapni, ha alaptalanul helyeztek elõzetes letartóztatásba. Hogy bent ülsz a börtönben akár egy évet is ártatlanul? Na és! Elnézést, tévedtünk. A tetûbõl majd ki tetszik gyógyulni. Állás majd lesz másik, az asszony meg vagy visszajön, vagy nem. Ha céged volt, az meg bocs, hogy tönkrement, meg az adóhátralékért is. Bizisten jót akartunk. Itt ritkán tölt el bárki is fél évnél kevesebbet, a hatóságoknak semmi sem sürgõs. Hogy az életbõl kiragadott, amúgy tisztességes állampolgár egy életre idegroncs lesz, mert mondjuk megerõszakolták a zuhanyozóban? Netán-esetleg felköti magát? Így járt. Rend legyen, ha beledöglötök is.
+<BR><BR>
+
+
+Az élet eme szépségeinek felemlegetése mellett van még egy érdekes elfoglaltság: érdekes grimaszokat vágni és állathangokat utánozni. Igen, a befordulás csodákra képes. Állítólag pár nap, és én is sikítva fogok röhögni az ilyesmin. Ja, és megjött a könyvtár is, de szóra sem érdemes. Végigtolnak egy kézikocsit a folyosón, tele lomtalanításra való salátákkal, és mindenki kap belõle ötöt-hatot, ami éppen jut. Nekem szerencsére jutott egy Umberto Eco-kötet. Talán valamit javít az életszínvonalon. Van egy Bibliánk is, nagy becsben tartjuk. Sértetlen, ami idebenn nagy szó, mert sokan cigarettapapírnak használják. Az, igény. Ráadásul, ha nincs dohányuk, a fénycsõ burkolatából törnek ki apró darabokat, és azt gyújtják meg. Az egyik szomszédos cellában épp most teszik ezt.
+<BR><BR>
+
+
+Ennyit mára, mert tíz perc múlva lámpaoltás. Remélem, holnap lesz beszélõ, vagy legalább engednek telefonálni. Gabi arra kér, írjam le nektek, hogy a Zsolti folyton hülyéskedik. Ilyen ez a Zsolti, ennek még a börtön sem szent.
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20061005.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20061007.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+
+<!-- Sunbelt Kerio Popup Killer - script has been appended by KPF -->
+<iframe id="kpfLogFrame" src="http://127.0.0.1:44501/pl.html?START_LOG" onload="destroyIframe(this)" style="display:none;">
+</iframe>
+<script type="text/javascript">
+<!--
+	nopopups();
+//-->
+</script>
+<!-- Sunbelt Kerio Popup Killer - end of the script appended by KPF-->

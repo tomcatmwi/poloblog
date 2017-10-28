@@ -1,0 +1,118 @@
+<HTML>
+<HTML>
+<HEAD>
+
+<STYLE type="text/css"> 
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-633</B><BR>
+2006.08.12.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<P ALIGN="justify">
+G. Kirkovits István, a <A HREF="rockszerda.hu" TARGET="_new">rockszerda.hu</A> szerkesztõje mesélte az alábbi esetet.
+<BR><BR>
+
+A nyolcvanas évek elején, sok más magyar fiatalhoz hasonlóan, neki is megfordult a fejében, hogy ideje lenne valami kulturáltabb országba költözni, mert a létezõ szocializmus egyre kevésbé vicces. Elment hát az NSZK-ba, s rövidesen együtt üldögélt a müncheni bevándorlási hivatal elõterében egy halom más disszidenssel, különféle országokból. Magyarországot rajta kívül egy falka oláhcigány képviselte. Egy rakás purdéval táboroztak le a hivatalban, üvöltöztek, hadováltak szegény, elnyomott sorsukról. Persze nem kaptak letelepedési engedélyt, mint ahogy senki más sem, akire az NSZK-nak nem volt szüksége, bõrszíntõl és jajveszékelési hangerõtõl függetlenül. Amint a cigányok megtudták, hogy a Kánaán kapuja bizony zárva marad, kivágták az utolsó adujukat. Egetverõ siránkozásban törtek ki a német hivatalnokoknak:
+<BR><BR>
+
+- Jájáj, há' ne csinálják má', há' mi németek ákárunk lenni, mert mi nagyon szeretjük a Hitlert! Bizony, mi mind imádjuk õt! Mi mind nácik vagyunk ám!
+<BR><BR>
+
+Az egész hivatal, a sorban állókat is beleértve, a hasukat fogták a röhögéstõl.
+
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060810.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060814.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

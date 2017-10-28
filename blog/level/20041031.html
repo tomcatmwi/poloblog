@@ -1,0 +1,368 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2004.10.31., hétf&otilde;</B>
+<BR><BR>
+
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+levrov
+<BR><BR>
+Kezdésképpen a Piqla nev&ucirc; kedves olvasónak üzenném, hogy sose fogok tudni válaszolni az árucikkekkel kapcsolatos kérdéseire, akárhányszor teszi is fel &otilde;ket, ha nem ad meg az üzenetéhez e-mail címet.
+<BR><BR>
+
+Egy névtelen olvasó, aki a kell_meg_az_allasom fed&otilde;név alá bújt, a következ&otilde;t írja:
+<BR><BR>
+
+<I>
+A miért tart itt az ország témában az okokról egy kicsit - avagy mire osztják el a zseniális professzor urak az állami kutatási támogatásokat: 
+<BR><BR>
+
+<A HREF="http://www.nkth.gov.hu/main.php?folderID=486&articleID=3812&ctag=articlelist&iid=1" TARGET="_new">http://www.nkth.gov.hu/main.php?folderID=486&articleID=3812&ctag=articlelist&iid=1</A>
+<BR><BR>
+
+ Az IT vonal különösen érdekes... Ugyanazok a cégek nyernek mindig. Soha senkin nem kérik értelmesen számon az elért eredményeket. Ennyi. Ez nem EU. Balkán. Csak kék zászlók alatt.
+</I>
+<BR><BR>
+
+Ha már így belelendültünk, nézzük a reagálásokat Edi levelére. Az els&otilde; hozzászóló: Gabor.
+<BR><BR>
+
+<I>
+Edi soraihoz: Teljesen rossz megközelítés. Magyarország mai
+legfõbb baja nem egyéb, mint az inproduktív szektor túlméretezettsége,
+magyarul a gyárak bezárása. Antall Józsi nagyon elbaszta, amikor egy
+tollvonással lezárta a szovjet piacot (ami igenis fizetõképes volt,
+kõolajat, földgázt, villanyáramot és bizonyos nyersanyagokat
+folymatosan szállítottak és szállítanak), ezután a világbank
+bábáskodásával mint a kártyavár omlott össze a magyar termelõ szektor.
+Törvényszerû volt ez? Igen is, meg nem is. Véleményem szerint akkor,
+1989-ben még tényleg megvolt az a bizonyos jól képzett magyar
+szakembergárda, aki a megfelelõ fejlesztésekkel kihúzhatta volna az
+országot a szarból! Lehet, hogy a Csepel Mûvekben még mindíg ötven éves
+Krasznaja Ploretarszka esztergákon dolgoztak a szakik, de ne mondja
+senki, hogy ne lehetett volna rajtuk _egy-egy_ modern padot készíteni,
+és megvolt hozzá minden, öntöde, megmunkálógépek, a Gammában csinálták
+a léptetõmotorokat, a MEV-ben IC-t gyártottak, minden megvolt, csak a
+szándék hiányzott. Ami itt volt, az egy módszeres rombolás, számtalan
+példát tudok, ott van a sárszentmihályi mészbánya
+(<A HREF="http://www.aranykezu.hu/sarszentmihaly.html" TARGET="_new">www.aranykezu.hu/sarszentmihaly.html</A>), vagy a KFKI Számítástechnika,
+ahol DEC gépeket "klónoztak", majd a rendszerváltás után egy traktorral
+górták össze a félkész gépeket és dokumentációt, és kikúrták a picsába
+(még évekkel késõbb is jöttek a telefonok, hogy kéne egy TPA-hoz ez
+vagy az, és mondták, hogy nincs semmi, doku sem, dobják ki és vegyenek
+XT-t, viszlát), hasonló történet volt a BHG-é, a váci úton a gyárakat
+az amerikai szõnyegbombázás nem számolta fel olyan hatékonyan, mint a
+"rendszerváltás", kormányunk védõvámokat nem hozott, hadd pusztuljon a
+vállalkozó is, majd lesz nekünk nyugati dollárért, csak azt felejtették
+el kitalálni, hogy a dollár honnan lesz??? A külkereskedelmi mérleg
+hiányát idén több mint egybillió forintra prognosztizálja a GKI, és
+évek óta folyamatosan nõ, tényleg süllyed ez a hajó, és meg sem
+próbálják befoltozni a léket, csak basáskodik a kibaszottnagy vízfej,
+és egyre szorítja az adóprést, meg veri a mellét, de nem tudom mire,
+mikor úszik az ország az adósságban (nemcsak a kádári hagyaték, tettek
+hozzá az utóbbi tizenöt évben is rendesen), és ennek az adósságnak már
+gyakorlatilag _nincs_fedezete_, mert már mindent eladogattak, mint az
+ecceri szipus. E mellett a születések száma kevés, nem tudom, mibõl
+akarnak pl. neked meg nekem meg a többi 77-esnek nyugdíjat fizetni
+majd, meg ilyesmi... de mindez nem holmi trianonista
+társadalomtudományi torzulás, hanem egyszerû szûklátókörûség,
+balfaszkodás, dilettánsok rossz döntéseinek sorozata, mert az az
+igazság, hogy ebben a kurva országban minden döntéshozó pozícióba kerül
+egy-két gyenge elméjû rokon vagy barát, érvényesülni érdem szerint még
+mindíg nem lehet, akármennyit is mondogatják. Ember ember farkasa,
+valóban, csak addig lehet újautóban házimozival fényûzni, amíg van
+kibõl kipréselni, maffiázni, zsarolni stb a pénzt, és erre két pompás
+mûszó is született, a "lehúzás" és az "átgázolás", akár a lexikonba is
+föl lehetne venni õket. FElnõtt egy nemzedék, aki elõtt a munkának
+nincs becsülete, aki azt látta teljes szocializálódási folyamata alatt,
+hogy az erõs elveszi, a "looser" meg tengõdik minimálbéren, na szép.
+Ezek még mindíg az ipari forradalomnál tartanak, a Ford féle szimbióta
+kapitalizmusról nem is hallottak, szánalmasak a közállapotok,
+meneküljön aki tud, és akinek van hová!
+</I>
+<BR><BR>
+
+Loser1917 is ehhez szól hozzá, máshogy.
+<BR><BR>
+
+<I>
+Szia! Szerintem a levrov magyarországos írása nagyon-nagyon
+pesszimista lett. Úgy gondolom, hogy az ország az elmúlt 10-15 évben
+jelentõs fejlõdésen ment keresztül. Tulajdonképpen hasonló dolgok
+mentek végbe mint a XIX. század második felében: A nagymértékû külföldi
+tõkebeáramlás, iparfejlesztést pártoló politika (pl adókedvezmények az
+újonnan létrejött vállalkozásoknak), jelentõs infratruktúrális fejlõdés
+(internet, mobiltelefónia, meg azért útépítések is voltak, és ezúttal
+nem közmunka segítségével, mint a XIX. században), technológiai
+felzárkózás stb.
+<BR><BR>
+
+A problémák is hasonlóak, pl: Igencsak függünk a külföldi
+befektetõktõl.
+<BR><BR>
+
+Persze a XX. század tényleg nagyon megviselte az országot, de nem
+sokkal jobban, sõt, sok szempontból kevésbé, mint a többi térségbeli
+államot. Egyébként 5-6 éve még egyáltalán nem a sor végén kullogtunk az
+Eu felé, éppen ellenkezõleg, az élen jártunk. A most tapasztalt
+lemaradás 2001 táján kezdõdött, azzal, hogy a gazdaságot átállították
+egy belsõ fogyasztásra épülõ növekedési pályára (lásd:
+lakáshitelprogram, minimálbér emelések, széchenyi terv, mesterségesen
+alacsonyan tartott árak [már a komcsik is ezzel szívták meg!]) ami egy
+ilyen kicsi és nyitott gazdaságban importnövekedéssel jár, ami
+felborítja a fizetési mérleget, nõ az államháztartási hiány, és ezt
+csak a külföldi spekulánsok tudják finanszírozni, ezért olyan magasak a
+jegybanki kamatok manapság.
+<BR><BR>
+
+Meg persze az inflációnak is nõnie kéne, csak a jegybank szorítja le,
+talán túlságosan is alacsony szintre, erre utal pl: az idei tavaszi/év
+eleji visszaugrás, ha jól emlékszem 8-9%-ra, és az exportnak is jól
+jönne egy kicsit gyengébb forint, sokat nyomna a versenyképességen)
+Ráadásul az egészet megfejelte a választások utáni osztogatás, és a
+világgazdaság recessziója. Szóval a helyzet tényleg nem rózsás, de volt
+már rosszabb is, és lassan javulni látszik, újra nõ az export, és
+csökken az államháztartási hiány is, meg lassan-lassan kezd beindulni a
+konjunktúra a világgazdaságban. Mondjuk a Draskovicsot ideje lenne
+seggbe rugdosni, hogy csináljon is valamit,(az eddigi egyetlen, komoly
+érdeme az, hogy nem csinált semmi különösebben nagy balfaszságot)
+elkéne egy-két reform, meg mondjuk a privatizáció is sokat lendítene a
+gazdaság helyzetén. (persze lehet azon vitatkozni, hogy szociális
+szempontból ez szerencsés-e, de gazdaságilag mindenképp jól járnánk
+vele) Egy szó mint száz, én valahogy így látom a helyzetet, tehát fel a
+fejjel, elköltözni még kicsit korai lenne!
+</I>
+<BR><BR>
+
+Ahogy Hofi mondotta: ez itt egy kész elmegyógy- és intézet. Harmadik hozzászólónk: Turnula.
+<BR><BR>
+
+<I>
+Hello Tomcat!
+<BR><BR>
+
+Elsõsorban Edi írására nyomán ragadok billentyûzetet. Nem tudok
+teljesen egyetérteni mélyen pesszimista véleményével, még ha van is
+benne igazság! Piedone nagyon fontos dolgot írt le, amikor az emberek
+elbutításáról írt. Ám úgy gondolom, hogy az 50 év kommunizmusnak van
+másik olyan öröksége, amire érdemes volna odafigyelni, de annyira
+belénk ivódott, hogy szinte észre se vesszük: a demokratikus
+centralizmus. Én hiszem hogy nem csupa droidok gyülekezete ez az
+ország, igenis vannak értelmes emberek szép számmal! De ahogy sajnos a
+hivatalból okos emberek között is találni reménytelenül ostobákat, úgy
+ott is vannak bölcsek, ahol nem számítanál rájuk. Például fölbukkannak
+az army reportodban. Én sokkal szívesebben jegyzem meg a nap végén, ha
+bölcs emberrel találkoztam, ha tanultam tõle valamit, sem hogy az
+ostobákon dühöngjek ettõl érezve magam okosnak. Mivel hetente többször
+találkozom értelmes emberrel, olvasok mélyenszántó cikkeket, nem hiszem
+azt sem, hogy ebben az országban nem volna elég szellemi erõ a
+fejlõdéshez! Igenis vannak tehetséggel és hivatástudattal bíró katonák,
+orvosok, villanyszerelõk, tanárok, juhászok, iskolaigazgatók,
+vállalkozók, szociális munkások, jogászok! Bizonyos vagyok benne, hogy
+Te is tudnál, Edi is tudna példákat mondani. Sokkal nagyobb baj, hogy
+ostoba szabályok nem engedik érvényesülni az értelmes embereket!
+Rendelet, igazolás, ügyirat, leirat, felterjesztés, pecsét,
+okmánybélyeg, illeték, és idõnként már egy nyavalyás parkolási engedély
+sem érvényes a köztársasági elnök aláírása nélkül!
+<BR><BR>
+
+Sajnos a rendszerváltás ellenére mind a mai napig él nálunk a
+demokratikus centralizmus gyakorlata, melyet beleneveltek az emberekbe,
+és aminek alapján a közigazgatási rendszert felépítették. (Azaz a
+felsõbb vezetésnek - elvileg - szabad jelezni a problémákat, de lépni
+csak a felsõbb vezetés mindenre kiterjedõ szabályozása vagy közvetlen
+utasításai szerint lehet.) Ezen az elven alig változtattak, csak
+toldozták és foldozták. Értelmetlen rendelkezések és nyomtatványok
+születtek reform címén, embereket rúgtak ki és vettek fel, de az
+alaphoz nem nyúltak hozzá. Emberek tömegei dolgoznak úgy felelõs
+beosztásban, hogy valójában nincsenek döntési helyzetben. Mindent
+szabályoknak vagy felsõbb rendelkezéseknek megfelelõen _kell_
+csinálniuk, akár tetszik nekik, akár nem. Szabályok alapján, melyek a
+legritkább esetben felelnek meg a valóságos problémáknak.
+Pedig régi elv, hogy a túlközpontosított szervezetek életképtelenek!
+Önállóan döntõ, a maguk feladatkörét átlátó kis- és középvezetõk nélkül
+nagy létszámú szervezeteket nem lehet hatékonyan mûködtetni. Errõl a
+legalaposabb elemzések talán a hadtudományban születtek. Könnyû
+belátni, hogy egy tábornoknak a közkatonával legfeljebb egy kitûntetés
+átadásakor lehet dolga, de közvetlen parancsokat nem szabad adnia neki.
+A tábornok feladata nagy léptékben megtervezni a hadmûveletet,
+alegységnél alacsonyabb szinten nem gondolkodhat. A közkatonát még csak
+nem is századosnak kell irányítania, mert erre az õrmester való. Pl.
+egy magaslat védelme során az õrmester dönti el, hogy melyik baka
+melyik fán, vagy melyik kõ mögött foglaljon állást, mert
+õ_ismeri_az_alá_beosztott_katonák_egyéni_képességeit, és
+_õ_látja_az_adott_terepet! Ha úgy tartja jónak, akkor akár a szomszéd
+magaslatokon foglal állást, mert onnét tartható tûz alatt a védendõ
+cél. Nagy a baj, ha ebbe belepofázik egy tábornok, és a harci szellemre
+hivatkozva felállítja a legényeket a gerincen bukócélnak... Neki meg
+kell bíznia a tisztjei és altisztjei rátermettségében, hûségében! Az
+egységek képességeinek megfelelõ feladatokat kell megfogalmaznia azzal
+a biztos tudattal, hogy azok saját belátásuk szerint meg fogják oldani
+ezeket. Azzal a biztos tudattal, hogy a megfelelõ tisztek kinevezésével
+készült fel a háborúra.
+<BR><BR>
+
+Nálunk sajnos mindent felülrõl akarnak irányítani, felülrõl akarnak
+megreformálni olyan emberek, akik nem látják át, nem láthatják át a
+felmerülõ problémákat. Ezért nem mûködik jól országunkban az
+államigazgatás annak ellenére, hogy rendkívül sokba kerül és rendkívül
+sokan dolgoznak benne. Ezért fojtogatja a gazdaságot. Ha valami a józan
+észnek megfelelõen mégis elintézhetõ, akkor a felelõs ügyintézõt
+azonnal vád alá lehet helyezni, mert 95% esély van rá, hogy lábbal
+tiporja az elõírásokat... Természetes, hogy az ilyen emberek egy idõ
+után kiégnek, vád alá kerülnek vagy megszöknek, és maradnak a
+szabályoknak vakon eleget tevõ ostobák. Droidok, ahogy nevezed õket.
+Ráadásul ez a helyzet a korrupció melegágya, hiszen ha valakinek eleve
+át kell hágnia a szabályokat a munkája elvégzéséhez, akkor akár
+jogosnak is érzi a plusz juttatás kizsarolását.
+<BR><BR>
+
+Holott pontosan olyan tisztviselõkre volna szükség, akik átlátják a
+naponta eléjük kerülõ ügyek általános és egyedi jellegzetességeit, és
+igyekeznek hatékonyan mûködtetni a dolgokat. Õket kéne észrevenni,
+nekik kéne teret engedni! Hagyni kéne, hogy ezek az emberek saját
+körükben valóban dönthessenek a rájuk bízott források felhasználásáról!
+Miért kell filléres állami kiadások mellett forintos tételeket költeni
+ezek adminisztrálására, revízióra? Miért kell minden apró döntést
+felsõvezetõi ellenjegyzéshez kötni? Miért kell egy hivatlanoknak
+ûrlapkitöltõ gépként mûködni, miért nem lehet saját döntései nyomán
+elégedett jól végzett munkájával? Egy tapasztalt gyámügyi elõadó fél év
+alatt biztosan fel tudja mérni, hogy egy jó körülmények között élõ
+iskolázott harmincas pár jó nevelõje lesz-e egy árva csecsemõnek, vagy
+sem. Miért kell mégis évekig tökölõdni az örökbeadással, hogy aztán egy
+nevelõotthonban felnõtt kiskamasz kerüljön egy negyvenes megkeseredett
+házaspárhoz? Miért kell a rendõrnek elengedni a bûnözõt, ha egyszer
+ismeri, és pontosan tudja miféle gazemberséget csinált? Miért... Miért
+nem hiszi el az állam, hogy az általa kinevezett emberek alkalmasak
+feladatuk ellátására? Konkrét lépések elõírása helyett miért nem azzal
+foglalkoznak a vezetõk, hogy milyen képességekkel bírnak az alájuk
+beosztottak, milyen végrehajtható feladatokat adhatnak nekik, milyen
+eredményeket kérjenek számon? Miért akarják minden lépésüket elõírni
+ahelyett, hogy a tevékenységük eredményeit ellenõriznék és kérnék
+számon? Amíg nincs valódi reform, addig sajnos marad a jelenlegi
+helyzet. Se értelmes rendelkezések, se olcsóbb állam, se
+versenyképesebb gazdaság. De a menekülés nem megoldás! Mindenkinek meg
+kell látnia a maga szûk körében a megoldandó problémákat. Fel kell
+ismerni az ostobaságokat, el kell gondolkodnia rajtuk, hogyan lehetne
+jobban csinálni! És amikor lehetõség adódik rá, akkor jobban kell
+csinálni! Az egyes embernek tenniük kell a maga szûk körében a
+dolgukat, felismerve, amikor idõnként nem gátolják meg õket ebben! Aki
+értelmes ember, annak kötelessége gondolkodni! És közben õszintén
+remélnie kell, hogy idõnként egy-egy értelmes ember olyan helyzetbe
+kerül, melyben a maga szûk körében jelentõs és mindenkinek elõnyös
+változásokat is végbevihet...
+<BR><BR>
+
+Illúzió, hogy majd felülrõl egyszer megoldják a gondjainkat, majd segít
+az EU, majd egy erõs vezetõ jólétet teremt. Önzõ és hatalmukat féltõ
+vezetõk mindig lesznek, mert a hatalom általában ahhoz kerül, aki
+vágyik rá. De igenis vannak értelmes és ambiciózus emberek közöttünk!
+Körül kell nézni a közvetlen közelünkben, észre kell õket venni, és
+segíteni kell nekik! Észre kell venni a saját képességeinket, és
+javítani amit lehet! Gondolkodás, önbizalom és a közösség erejébe
+vetett hit nélkül a hazaszeretet csak üres romantikus jelszó.
+<BR><BR>
+
+Legjobbakat!<BR>
+Turnula a közszférából
+<BR><BR>
+</I>
+
+Ennyit mára, jó éjszakát.
+
+
+
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20041027.html">
+<B><< el&otilde;z&otilde; levél</B>
+</A>
+
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20041104.html">
+<B>következ&otilde; levél >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

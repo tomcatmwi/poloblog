@@ -1,0 +1,123 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai')!= -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-311</B><BR>
+2005.03.06.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<BR><BR>
+
+Gargaj barátom ma a postán járt, aztán elmesélte, én meg dobtam egy hátast, annak ellenére hogy ez a kifejezés 2005-ben már kezd elavult lenni, és leírtam.
+<BR><BR>
+
+Szóval a helyszín Debrecen egyik postája, ahol egyszer csak megjelent h&otilde;sünk, mellesleg magyar demoscene-celebritás, de ezt a postán nem tudják. Nemzeti büszkeségünk (Breakpoint 2003 winner, miegymás) egy cetlit lobogtatott, mely szerint neki itt valami levele van. A pult mögött halványkodó közalkalmazott egy pillantással felmérte az er&otilde;viszonyokat, majd közölte, hogy ezt nem adhatja ki.
+<BR><BR>
+
+- Miért?<BR>
+- Mert a mai nap ki van húzva!<BR>
+- Az mit jelent?<BR>
+- Azt, hogy ma nem veheti fel, csak holnap.
+<BR><BR>
+
+Hát jó, szél ellen nem lehet. A neves coder udvariasan elköszönt a halványkodó közalkalmazottól, és távozott. A kijáratnál azonban megakadt a szeme két, egyenként legalább negyedmilliót kóstáló laptopon, melyek mögött egy-egy további közalkalmazott kislány üldögélt, és id&otilde;nként megnyomtak egy gombot. Egy kicsit figyelte &otilde;ket, majd odament és megkérdezte, mit csinálnak. Nos, tessék kapaszkodni: <I>számolják a postahivatal forgalmát!!</I> Igen, ezzel foglalatoskodnak KÉT méregdrága laptoppal, holott ugyebár elég lenne hozzá papír és ceruza. Azt már meg se kérdezem, miféle milliós tenderek és fels&otilde;vezet&otilde;i döntések vezettek idáig. Üdvözöljük Abszurdisztánban!
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050306.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050308.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

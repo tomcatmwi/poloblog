@@ -1,0 +1,117 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2006.05.27., szombat</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Beengednek. Legalábbis err&otilde;l tanúskodik egy kedves szervez&otilde; hölgy levele, aki értesített, hogy regisztrációmat elfogadták. Hétf&otilde;n tehát képes riport a balliberális holdudvar Internetet illet&otilde; elképzeléseir&otilde;l. Ma pedig öröm és bódottág, ugyanis végre befejeztem az új boltmotor terveit - HTML sablonokat, JavaScript elemeket, fejlesztési dokumentációt, adatbázis-táblavázlatot. Szép és jó, már csak le kell kódolni hozzá a PHP-t. Lehet, hogy a blog alá is ültetek majd valami motorfélét, végül is hasznos lehet. Megkönnyítené például a levrov írását. Hja, igen a levrov: azt majd holnap. Mint ahogy a bírósági tárgyalásról szóló riportot is befejezem. Kicsit hosszadalmas a hangfelvétel átírása, ugyanis György Péter elmeroggyantó fejtegetései még zanzásított formában is egy kilencven perces kazetta teljes másfél oldalát elfoglalták, pedig a bírón&otilde; tényleg igyekezett csakis a lényegre szorítkozni. Imádni fogják a leírók ezt a faszit.
+<BR><BR>
+
+Mostanában lesz egyébként a Mortimer-ügy következ&otilde; tárgyalása is, amit ezúttal nem fogok kihagyni. Robin barátomat id&otilde;közben els&otilde;rend&ucirc; vádlottá léptették el&otilde;, mert hát az ugyebár mégsem járja, hogy nem csukunk le mindenkit, aki ott merészelt lenni az esetnél. A vád ellene: segítségnyújtás elmulasztása. Merthogy nem hívott ment&otilde;t a kibelezett Józsikához (aki, mint tudjuk, ártatlan). Nevetséges vádm persze, hiszen egyrészt a buszon történt baleset vagy b&ucirc;ncselekmény esetén a vezet&otilde; feladata a ment&otilde;k, rend&otilde;rség, t&ucirc;zoltók kihívása, másrészt a vezet&otilde; hívott is ment&otilde;t, Robin tehát a jogszabályok értelmében nem hívhatott volna egy másikat is, mert az már hamis riasztás szabálysértése lett volna. Mi több, a bíróság szerint a társaság többi tagjának is kellett volna hívnia egy-egy további ment&otilde;t, hát persze, s&otilde;t, mindjárt fejenként kett&otilde;t. Barmok. Állítólag az ügyész, aki ezt kitalálta, jó barátja valami Demszky Gábornak, akinek egyszer torta esett a fejére. Szerencsére a Színes Bulvár épp most ismerte el, hogy nem volt éppen korrekt dolog <A HREF="20060201.html">leközölni Robin képét,</A> mintha &otilde; lenne Mortimer, és peren kívül kiegyeztek 500 ezer forint kipengetésében. Ebb&otilde;l azért már telik ügyvédre. A gáz egyébként a magyar igazságszolgáltatással, hogy ha valaki bevádol téged akármivel, és ezért te a bíróságon egy vagyonba kerül&otilde; ügyvéddel vagy kénytelen megjelenni, ártatlanságod bebizonyosodása esetén senkit nem perelhetsz be a hamis vádból ered&otilde; költségeid miatt. Naná...
+<BR><BR>
+
+Mortimer ügye jelenleg ott tart, hogy a család naivan megbízta az els&otilde; szembejöv&otilde; ügyvédet, és meg se nézték, hogy kiféle-miféle, netán nem az SZDSZ-holdudvarba tartozik-e. Aztán a kedves ügyvéd telebeszélte a srác fejét hülyeségekkel, szájába rágta, hogy mit mondjon, és hoppá, nota bene, máris belekeverték egy halom önellentmondásba. Bizonyos köröknek most az életüknél is fontosabb, hogy az ügy mindenképpen Mortimer lecsukásával és Józsika megdics&otilde;ülésével végz&otilde;djön, hiszen épp eleget égtek az ügy kapcsán. De hát Mortimer nem Császár El&otilde;d, csak egy <I>magát romának valló</I> fiatalember, és a politikai légkör fenntartásához elengedhetetlen, hogy kinyírják. Ha úgy tetszik, szó szerint - el lehet képzelni, mit csinálnak majd vele a cigányok, ha egyszer sittre kerül.
+<BR><BR>
+
+Ez mindenesetre senkit ne riasszon vissza az önvédelemt&otilde;l, de a példából okulva, hasonló helyzetben sose hagyjatok tanút életben.
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060526.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060528.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

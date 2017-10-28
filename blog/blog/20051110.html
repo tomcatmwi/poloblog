@@ -1,0 +1,114 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2005.11.10., csütörtök</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+No, bloggoljunk bírósági tárgyalóteremben, olyat még úgyse csináltam. A bírón&otilde; éppen magnóra mondja egy tanú vallomásának zanzásított változatát, Trotty úr unottan lapozgatja a papírjait, az udvaron pedig éppen egy 17. századi csatahajót vontatnak, legalábbis a hangok alapján. A tanú becsukja az ablakot.
+<BR><BR>
+
+Itt kotlunk délután egy óra óta, most pedig lassan öt óra van, így aztán elnézést kérek azoktól, akik jöttek volna a polóikért a Lehel térre, és nem találtak ott senkit. Sajnos Loydi is itt dekkol, négy órája várja, hogy behívják egy ötperces tanúvallomásra, így nincs, aki helyettesítsen. Kurva éhes is vagyok, a közönség meg már lassan elalszik. A tanú, Tamás Tibor, a Népszabadság f&otilde;szerkeszt&otilde;-helyettese valami olyasmir&otilde;l hablatyol, hogy &otilde; igazából nem látott engem a cigányok tüntetésén nácikarlendíteni, de hallotta valakit&otilde;l, hogy volt ilyen. Azt nem mondhatja meg, ki ez, mert arra nincs felhatalmazva. Aztán "skinhead típusú embernek" nevez engem, hát ez jobb, mint a légifegyver, kösz szépen, hülye vagy. "Revenge on Skhool", bet&ucirc;zi Trotty úr a papírról, fonetikusan. Ez a két m&ucirc;velt ember akarja bizonyítani, hogy én igenis náci vagyok.
+<BR><BR>
+
+A perr&otilde;l részletes beszámoló holnap. (Fél nyolckor szabadultunk...)
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20051109.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20051111.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

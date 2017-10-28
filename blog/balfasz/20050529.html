@@ -1,0 +1,139 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-377</B><BR>
+2005.05.29.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+
+<P ALIGN="justify">
+<I>Baxter Ödönke jelentkezik az élet s&ucirc;r&ucirc;jéb&otilde;l.</I>
+<BR><BR>
+
+Még évekkel ezel&otilde;tt, a Totál Dance partik h&otilde;skorában történt az eset. Éppen néztem a Viva-t (akkor még Z+). Volt egy kis beszámoló benne az éppen aktuális Total Dance partiról. A nyitás el&otilde;tt, amikor már szállingóztak be az arcok, a m&ucirc;sorvezet&otilde; srác elkapott egy fiatal csajokból álló kis csapatot. Mindenki csak röhögcsélt, de egy 17-18 év körüli csajszit azért sikerült szórabírni. Jött egy pár szokásos kérdés:
+<BR><BR>
+
+- Hogy érzed magad? Most vagy itt el&otilde;ször? Stb, stb.
+<BR><BR>
+
+A lány csak egyszavas válaszokban tudott kommunikálni..  aha, ja, igen. De aztán beugrott egy bonyolult kérdés: Milyen zenét szeretsz? Jött is a válasz:
+<BR><BR>
+- A.. a .. szkútört...
+<BR><BR>
+
+Ezzel még nem is lenne semmi baj, aki ilyen partikra jár, annak simán oké lehet a Scooter.
+De ezzel a lendülettel vége is volt a nagy felsorolásnak, csak 
+szemforgatás, és körbenézés következett. Volt egy laza 10-15 mp-es 
+szünet, azért ez tévében elég sok szerintem. Már kezdtem azt hinni, hogy akkor ennyi volt, amikor folytatta:
+<BR><BR>
+
+- ...meg a szkúútört...
+<BR><BR>
+
+El kellett hogy teljen pár másodperc, mire leesett, hogy a kis virágszálnak, olyan brutál a rövid távú memóriája, hogy lelkiismeretfurdalás nélkül ráduplázott, és észre sem vette! Megint egy kis szünet, én meg csak néztem. Hát bazzeg, nem hiszem el, hogy akinek a produkciójára fél óra múlva, egy ásványvizes palackkal a kezében ugrálni fog, azok közül nem tud felsorolni néhányat. Ha én elmennék egy Dynamo fesztiválra, akkor legalább egy pár el&otilde;adót tuti fel tudnék sorolni.
+De nem, &otilde; inkább szkútör. De még úgy érezte, hogy ezt a nagy hajrát le kell zárni valahogy:
+<BR><BR>
+
+- (vállrándítás) Hát a szkútört.
+<BR><BR>
+
+Nna, készen is lennénk. Frappáns volt. Ha nem látom, nem hiszem el.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050528.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050530.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

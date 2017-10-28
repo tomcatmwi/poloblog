@@ -1,0 +1,136 @@
+<HTML>
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-278</B><BR>
+2005.01.27.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<BR><BR>
+
+Eszembe jutott egy régi történet már megint. Nem tudok megegyezni magammal, hogy egy lemezújságban szerepelt, vagy réges-régen egy BBS-en, de tény, hogy régi. Tehát...
+<BR><BR>
+
+A történetet egy kirándulócsoport tagja mesélte, aki haverjaival egy hegyi menedékházban ebédelt, valahol az Északi-középhegységben. Ugye, minden kultúrember ismeri az ilyen helyeket: otthonos kis épület, olcsó büfével, ahol van zsíros kenyér és tea, esetleg pogácsa, és jól el lehet dumálni egymással a sok évtizedes, telekaristolt faasztaloknál. Hát itt töltötte idejét a társaság, dumálva-röhögcsélve, mígnem odakint egyszer csak megállt egy ordenáré nagy terepjáró. Kisvártatva nyílt az ajtó, és bepipeskedett rajta egy vastagon kikent, püffedt ajkú plázakurva, meg a hasonlóan igényes kinézet&ucirc; tulokja. Mindenki elhallgatott, és nézte, mi a fenét akarhatnak ezek itt.
+<BR><BR>
+
+A plázakurva megállt az ajtóban, fintorogva felmérte a méltóságon aluli helyiséget, és odaszólt a tuloknak:
+<BR><BR>
+
+- Kérdezd meg t&otilde;lük, van-e cappuccino!
+<BR><BR>
+
+Tulok erre odasomfordált a pulthoz, és megkérdezte. A tulaj mondta neki, hogy nincs. Tulok visszasomfordált a kurvához, és továbbította a választ. Mire a plázakurva:
+<BR><BR>
+
+- Nahát, micsoda egy hely! Menj vissza, és mondd meg neki, hogy szégyellje magát! És én ilyen helyre be se teszem többet a lábam, ahol nincs cappuccino!
+<BR><BR>
+
+A tulajsrác végre magához tért a hüledezésb&otilde;l, és visszaszólt:
+<BR><BR>
+
+- Na, húzzatok is innen a picsába, ilyen vendégekre nincs is szükségem!!
+<BR><BR>
+
+A tulok erre csúnyán nézett, és megindult a srác felé, mire felállt az asztaloktól a kb. negyven f&otilde;nyi kirándulócsoport, és &otilde;k meg a tulok felé indultak. Tulok barátunk erre inkább megköszönte a kiszolgálást, gyorsan kituszkolta a ribancát a kocsijához, és nagyon sebesen távozott...
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050126.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050128.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

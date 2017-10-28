@@ -1,0 +1,119 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>2007.07.13., péntek</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Lehet rettegni: szabadlábon vagyok ismét. Megjavultam, holnaptól segítem a Gyurcsány-kormány munkáját, és gyerekkórházakat meg vasúti szárnyvonalakat fogok robbantgatni. Sietnem kell, mert már kevés van belõlük, de épp ez az izgalmas benne. Pont olyan, mint kihalófélben levõ állatokra vadászni.
+<BR><BR>
+
+Dióhéjban az igazság néhány szelete. A bíróság lakhelyelhagyási tilalomra változtatta az elõzetes letartóztatást, ami azt jelenti, hogy Budapest területén szabadon mozoghatok. Megállapították, hogy valótlan volt a rendõrség azon állítása, hogy több büntetõeljárás is folyik ellenem, magyarán meghamisították a bûnügyi nyilvántartást. Ez igen súlyos bûncselekmény a nyomozó hatóság részérõl! Ismét kimondták, immár másodszor, hogy az ellenem felhozott gyanúsítás - közveszélyokozás elõkészülete - alaptalan. Az ügy nincs ejtve, megvizsgálják, hogy lehet-e robbanóanyaggal való visszaélés miatt eljárást indítani, de ezt elõre megmondom, hogy nem lehet, még ha a rendõrségi szakértõ a bizonyítékok szándékos meghamisításával ezt állította is, és ezt mondták a sajtónak májusban. A "szakértõrõl" is mondok majd néhány érdekes dolgot rövidesen.
+<BR><BR>
+
+Most egy kicsit elfoglalt vagyok, mert sajtótájékoztatót kell szerveznem (olyat még úgyse csináltam), majd este visszajövök hozzátok. Meg fogom nektek írni részletesen az egész históriát, scannelek hozzá az állításaimat bizonyító hivatalos iratokat, és meg fogjátok tudni, mi az, amit a média tudatosan elhallgatott. Köszönöm azoknak, akik kiálltak mellettem, vagy ha nem is mellettem, de e szégyenletes ügy ellen, akik jogi, szakmai, szervezõi vagy akármilyen segítséget nyújtottak ahhoz, hogy az ÁVH pofára essen. A részletek a reklám után, és a Börtönnapló hiányzó részei is rövidesen felkerülnek. Aztán rakok egy kis rendet ezen a blogon. Az "elõzõ nap" link most ideiglenesen a letartóztatásom utáni elsõ bejegyzésre mutat.
+<BR><BR>
+
+Telefonon egyelõre ne keressen senki, mert azt nem adták vissza. Elõbb mindenkit kihallgatnak gyanúsítottként, aki a híváslistán szerepel. Szegény Havas Henrik.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20070510.html">
+<B><< elõzõ nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20070515.html">
+<B>következõ nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+<BR><BR>
+
+</BODY>
+</HTML>
+

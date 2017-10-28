@@ -1,0 +1,106 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+  </SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2004.09.22., szerda</B><BR>
+tomcat
+<BR><BR>
+
+Hálásan köszönöm a tippeket, hogy hol lehetne megafont bérelni vagy vásárolni. Megállapíthattam, hogy Magyarországon a megafon is azon dolgok közé tartozik, amit csak tízszeres áron lehet beszerezni a valós értékéhez képest. Miután végignézegettem mindenféle siptiripti kis cégecskék oldalait, valamint néhány aukciós oldalt, és megállapítottam, hogy az egyszer&ucirc; kínai villanykiabálókat 15-40,000 forint között osztják, inkább elmentem az eBay-re, és vettem egyet 15 dollárért, azaz 3000 forintért. Köszönjük.
+<BR><BR>
+
+Most pedig szavazásra bocsátom a kérdést, hogy legyen-e <I>Na, itt a kert</I> poló. A tervet a <I>Hamarosan jön</I> rovatban tekinthetitek meg. Miután tegnap közöltem, hogy mégsem lesz, néhányan azzal a kéréssel fordultak hozzám, hogy mégis legyen. Aki szintén szeretne, írjon. Ha elegen írtok, lesz. A <I>Nu, pagagyi</I> poló is rövidesen elkészül, és lassan bögréket is fogunk gyártani. A közkedvelt <I>Antivalentin</I> - vagyis a kismaci a "Kurva anyád" felirattal" - például kapható lesz bögrére nyomva is. Lesz továbbá Men&otilde; manó, Bob és Bobek, Jómunkásember bögre, valamint néhány más minta, ami polón még nem szerepelt. Türelem. El ne felejtsem, lassan gyártunk gyerekméret&ucirc; polókat is. A <I>Nu, pagagyi</I>-ból például biztosan.
+<BR><BR>
+
+Más egyéb? Van. Találtam egy súlyos bugot a Mozilla Firefox-ban, legalábbis annak t&ucirc;nik. Kockafej&ucirc; hátelemesek olvassanak tovább, a többiek itt befejezhetik.
+<BR><BR>
+
+Biztos észrevettétek, hogyan szoktam kitenni a képeket itt, a blogban. Van egy kis thumbnail, amire rákattintva popup ablakban nyílik meg a teljes méret&ucirc; kép. A nagy képre rákattintva a popup ablak becsukódik. Ez egy baromi egyszer&ucirc; JavaScript segítségével történik. A thumbnailre kattintva window.open segítségével nem a kép nyílik meg, hanem egy bizonyos nagykep.html elnevezés&ucirc; file, ami paraméterben kapja meg a megjelenítend&otilde; kép URL-jét. Tehát:
+<BR><BR>
+
+<I>window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no, scrollbars=no, noresize, width='+String(document.wdth)+', height='+String(document.hght));</I>
+<BR><BR>
+
+A <I>wdth</I> és <I>hght</I> értékek a popup ablak magasságát és szélességét jelentik. A kép fileneve a <I>document.bigpic</I> változóban tárolódik. Megnyitáskor ez, mint HTTP paraméter átadódik a nagykep.html file-nak. A nagykep.html pedig egy másik baromi egyszer&ucirc; JavaScriptet tartalmaz, ami a megadott IMG-nek átadja SRC paraméterként a kapott HTTP paramétert.
+<BR><BR>
+
+Mi a bug? Nos, a Mozilla Firefox valamiért fellázadt. Ez a képmegjelenítési módszer jó háromnegyed éve tökéletesen m&ucirc;ködik. Ám tegnap óta nem. A mai naptól, ha rákattintunk a thumbnail-re, a popup ablak megjelenik ugyan, de nem tölti be a nagykep.html-t, hanem helyette értelmetlen krikszkrakszok jelennek meg benne. Még érdekesebb, hogy a régebben megírt blogbejegyzések továbbra is helyesen m&ucirc;ködnek, csak a mostanában készült HTML-ekben nem m&ucirc;ködik a dolog. Ha átmásolom a régebbi blogbejegyzésb&otilde;l az ott tökéletesen m&ucirc;köd&otilde; JavaScript kódot, az az új HTML-ben ugyanúgy nem fog m&ucirc;ködni. Még különösebb, hogy ha a popup ablakban nem a nagykep.html-t jelenítem meg, hanem mondjuk a www.index.hu-t, az tökéletesen betölt&otilde;dik.
+<BR><BR>
+
+Szerencsére a megoldás is megvan - hiába, öreg róka vagyok. A blogot Notepad-del szoktam írni. Eddig Windows 2000-et használtam, csak nemrég tértem át XP-re. A Windows XP Notepad-je automatikusan Unicode szövegfile-ként menti, amit írok, a Windows 2000 pedig minden esetben ANSI-t csinált. Nos, a Firefox az Unicode file-on akadt ki, és ezt hozta tudomásomra a krikszkrakszokkal. Ugyanazt a HTML-t ANSI szövegfile-ként elmentve a képmegjelenítés ismét tökéletesen m&ucirc;ködik.
+<BR><BR>
+
+Tanulság: Eljutottunk oda, hogy a Windows már a szövegfile-okat is képes összekutyulni. Gratulálok.
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20040921.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20040923.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

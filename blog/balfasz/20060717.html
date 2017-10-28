@@ -1,0 +1,134 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css"> 
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-626</B><BR>
+2006.07.17.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<P ALIGN="justify">
+<I>Mai mesélõnk ismét DeJay.</I>
+<BR><BR>
+
+Két haverommal felszálltam az Örsön a metróra. Volt ülõhely is, igaz, csak egy, a Body Building magazin címlapján valószínûleg már szerepelt férfi mellett. Persze az ilyesmi nekem nem gond, leültem. Velem szemben egy félmeztelen, talán már fiatalkorú "argentin" meg egy hasonló korú, fehér bõrû csávó ült.
+<BR><BR>
+
+A Pillangó utcánál felszálló gyerekeket (igen, már gyerekekkel is szemétkednek) basztatni kezdték. Mielõtt tettlegességre került volna sor, odakiáltottam nekik, hogy talán vissza kéne fogniuk magukat. Erre az argentin:
+<BR><BR>
+
+- Nincs meleged ebben a cuccban?
+<BR><BR>
+
+Valószínûleg bakancsomra gondolt, de ezt már szerintem soha nem tudom meg.
+<BR><BR>
+
+- És ha igen?
+<BR><BR>
+
+Ennyivel abba is maradt a szóváltás, cigányék lenyugodtak.
+<BR><BR>
+
+Következõ állomás, Stadionok. Cigányék leszálltak, majd hangosan biztattak minket, hogy tegyünk hasonlóan. Hát mondom, a f*sz fog leszállni miattuk. Mivel látták, hogy nagyon nem érdekelnek, sajátos módon nyomatékosították kérésüket. A cigó megpróbált megdobni egy friss barackkal. A véletlennek köszönhetõen, meg annak, hogy valószínûleg nem egy mesterlövész a csávó, a barack a mellettem ülõ bodybuilder mellkasán landolt.
+<BR><BR>
+
+Õ utánuk ment. A cigány családjának ezúton szeretném kifejezni a részvétemet...
+<BR><BR>
+
+Tehát álljon itt örök tanulságul: Aki nem tud célozni, ne keménykedjen. Pont.
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060716.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060718.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

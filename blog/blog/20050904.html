@@ -1,0 +1,767 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2005.09.04., vasárnap</B><BR>
+athina & tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Dr. Palágyi Gábor meghívására ma a ferihegyi repülõskanzen vendégei voltunk. Gábor a múzeumot karbantartó alapítvány vezetõje, a skanzenben pedig a Malév által 1945 óta üzemeltetett repülõgépek láthatóak. Körülbelül ennyi, amit egy egyszerû látogató megtudhat, ha csak úgy arra jár, és történetesen nem olvasott fél életén át a repülésrõl. Nekünk azonban ennél jóval több jutott.
+<BR><BR>
+
+Meghívónkat, azaz Gábort egy kissé szétkapott Il-14-es körül találtuk meg, amelyet egy lelkes fiatal csapat tisztogatott éppen. Elnézést kért, hogy nem ér rá bennünket kalauzolni, de gyorsan elvitt kocsival a közeli benzinkúthoz, hogy elemet vehessek a fényképezõgépbe, aztán visszafelé bemutatott egy idõsebb úrnak, hogy majd õ lesz a mi idegenvezetõnk. 
+<BR><BR>
+
+- &Otilde; aztán mindent tud ezekrõl a gépekrõl - mondta. - 1933 óta repülte mindegyiket, még Kádár kormánygépén is volt fedélzeti mérnök. Ráadásul egyszer õ mentette meg a lezuhanástól. De ezt majd elmeséli.
+<BR><BR>
+
+Nagyváti Sándor, azaz Sanyi bácsi szerényen bólogatott, amikor a történetrõl kérdeztem. Igen, mondta, valóban így történt, Kádár lezuhant volna a Tu-134-essel, ha õ nincs ott. Aztán elmondta, hogy is történt ez.
+<BR><BR>
+
+1971-ben Kádár János és Fock Jenõ Ceausescu-nál jártak, egy nem túl barátságos hangnemû találkozón. A conducator megint nem bírt magával, ismét olyan szinten szekírozta az erdélyi magyarokat, hogy már az oroszok is fontolgatták, hogy segítenek a magyaroknak bevonulni és visszavenni a területeiket, mielõtt a feszültség kiszámíthatatlan eredményekre vezet. A tárgyalás félbeszakadt, Kádárék nagy dérrel-dúrral hazavonultak. Valahol Kelet-Magyarország fölött jártak, amikor a pilóták arra lettek figyelmesek, hogy a gép egyre nehezebben reagál a kormánymozdulatokra, valószínûleg jegesedik. Kiderült, hogy a jégtelenítõ rendszer felmondta a szolgálatot. Egy átlagos pilóta nem valószínû, hogy rögtön rájött volna a hiba okára: elszállt a gépben egy relé, ami azt érzékeli, hogy a repülõgép a földön áll-e vagy a levegõben van, és ha a földön, akkor nem engedi mûködni a jégtelenítõt. Sanyi bácsi - akkor még bácsi nélkül - hátraszaladt a gép végébe, kinézett a kémlelõnyíláson, és látta, hogy a vezérsíkokat már mintha cukormáz borítaná. Ekkor a gép már lassult, orrát leadta, és közel állt az átforduláshoz, ami a jegesedés okozta legveszélyesebb helyzet: a Tupoljev átbukfencezik, az orr a menetiránynak ellentétes irányba kerül, és pörögve lezuhannak. Gyorsan kitépte a relé kábeleit, így a jégtelenítõ fûtése beindult, és az utolsó pillanatban lökte le a veszélyes jégkoloncot. Kádár sohasem tudta meg, hogy életveszélyben volt, és a történetet csak repülõs berkekben mesélik manapság. Érdekes kérdés azonban, hogy mi lett volna, ha Nagyváti Sándor nem tud a relérõl, vagy nem tudja, hol van, Kádár lezuhan, aztán Ceausescu valószínûleg hiába magyarázta volna, hogy õk nem nyúltak a géphez...
+
+</P>
+<CENTER>
+
+<A NAME="1">
+<A HREF="#1" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_1.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_1_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A skanzen kapujánál ez az Il-18-as áll. Nagyon komoly gép volt ez a maga idejében, az elsõ szovjet interkontinentális utasszállító gép. Elsõ bemutatkozásaként Hruscsovot szállította New York-ba, ahol a repülõszakma helyi képviselõi napokig csodájára jártak.<BR>
+</I>
+<BR>
+
+<A NAME="2">
+<A HREF="#2" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_2.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_2_thumb.jpg" BORDER=0></A>
+&nbsp;
+
+<A NAME="3">
+<A HREF="#3" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_3.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_3_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Sanyi bácsi az Il-18 lépcsõjénél<BR>
+</I>
+<BR>
+
+<A NAME="4">
+<A HREF="#4" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_4.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_4_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A gép törzse belülrõl. Átmenetileg raktárnak használják. A kép bal oldalán látható mûanyag lemezek a Tu-154-es belsõ burkolatához tartoznak, azt ugyanis most alakítják át tárgyalóvá.<BR>
+</I>
+<BR>
+
+<A NAME="5">
+<A HREF="#5" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_5.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_5_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Pillantás a pilótafülke irányába<BR>
+</I>
+<BR>
+
+<A NAME="6">
+<A HREF="#6" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_6.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_6_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Fedélzeti adatrögzítõk, azaz "fekete dobozok"<BR>
+</I>
+<BR>
+
+<A NAME="7">
+<A HREF="#7" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_7.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_7_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Athina és Berta ismerkedik az Il-18 kezelõszerveivel<BR>
+</I>
+<BR>
+
+<A NAME="8">
+<A HREF="#8" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_8.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_8_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Kilátás a skanzenre<BR>
+</I>
+<BR>
+
+<A NAME="9">
+<A HREF="#9" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_9.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_9_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Ez a kis kerék szolgált az orrfutó kormányzására a földön<BR>
+</I>
+<BR>
+
+<A NAME="10">
+<A HREF="#10" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_10.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_10_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A másodpilóta kormánya<BR>
+</I>
+<BR>
+
+<A NAME="11">
+<A HREF="#11" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_11.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_11_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Következõ állomásunk a Tu-134-es, azaz a "Kistuskó" volt<BR>
+</I>
+<BR>
+
+<A NAME="12">
+<A HREF="#12" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_12.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_12_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Berta felfedezi az utasteret<BR>
+</I>
+<BR>
+
+<A NAME="13">
+<A HREF="#13" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_13.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_13_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Itt is megtekinthettük a pilótafülkét<BR>
+</I>
+<BR>
+
+<A NAME="14">
+<A HREF="#14" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_14.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_14_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Balra a kapitány, jobbra a másodpilóta, lent, az üvegezett orr-részben pedig a navigátor munkahelye<BR>
+</I>
+<BR>
+
+<A NAME="15">
+<A HREF="#15" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_15.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_15_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A mûszerfal<BR>
+</I>
+<BR>
+
+<A NAME="16">
+<A HREF="#16" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_16.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_16_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Ez itt a robotpilóta vezérlõegysége. Valójában ez egyfajta "sebességtartó automatika", amely tartja a pilóták által beállított magasságot és sebességet, de az irány és a magasság szabályozható kézzel is, ha ezeket a tárcsákat elfordítják. A "rendes" kezelõszerveket kitérítve a gép visszaáll kézi vezérlésre.<BR>
+</I>
+<BR>
+
+<A NAME="17">
+<A HREF="#17" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_17.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_17_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Innen is kinéztünk<BR>
+</I>
+<BR>
+
+<A NAME="18">
+<A HREF="#18" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_18.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_18_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A navigátor fülkéje<BR>
+</I>
+<BR>
+
+<A NAME="19">
+<A HREF="#19" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_19.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_19_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Tu-134 kívülrõl<BR>
+</I>
+<BR>
+
+<A NAME="20">
+<A HREF="#20" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_20.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_20_thumb.jpg" BORDER=0></A>
+&nbsp;
+
+<A NAME="21">
+<A HREF="#21" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_21.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_21_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Berta idõközben felfedezte, mennyi ürgelyuk van itt<BR>
+</I>
+<BR>
+
+<A NAME="22">
+<A HREF="#22" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_22.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_22_thumb.jpg" BORDER=0></A>
+&nbsp;
+
+<A NAME="23">
+<A HREF="#23" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_23.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_23_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A Tu-154-es következett. Sanyi bácsi is csak azt tudta elmondani errõl a típusról, amit mindenki, aki már repülte: hogy ez a világ egyik legkezesebb és legbiztonságosabb repülõgépe.<BR>
+</I>
+<BR>
+
+<A NAME="24">
+<A HREF="#24" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_24.jpg'; document.wdth=500; document.hght=375; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_24_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Üdvözöljük a fedélzeten!<BR>
+</I>
+<BR>
+
+<A NAME="25">
+<A HREF="#25" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_25.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_25_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A vészkijáraton át kimehettünk a szárnyra<BR>
+</I>
+<BR>
+
+<A NAME="26">
+<A HREF="#26" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_26.jpg'; document.wdth=500; document.hght=335; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_26_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+"Hihi! Kint vagyok a szárnyon!"<BR>
+</I>
+<BR>
+
+<A NAME="27">
+<A HREF="#27" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_27.jpg'; document.wdth=480; document.hght=640; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_27_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+"Hurrá! Én is..."<BR>
+</I>
+<BR>
+
+<A NAME="28">
+<A HREF="#28" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_28.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_28_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Törzshátsórész<BR>
+</I>
+<BR>
+
+<A NAME="29">
+<A HREF="#29" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_29.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_29_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Ezt látni a szárnyról<BR>
+</I>
+<BR>
+
+<A NAME="30">
+<A HREF="#30" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_30.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_30_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+No és persze ennek is van pilótafülkéje. Hogyne lenne!<BR>
+</I>
+<BR>
+
+<A NAME="31">
+<A HREF="#31" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_31.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_31_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Sanyi bácsi elmagyarázta, hogy mûködött a Tu-154 automata leszállítórendszere, az ILS elõdje. A kifutópálya irányát rádiós jeladók révén találta meg a gép, az automata rendszer egészen harminc méteres magasságig vitte le. Ezután a pilótának a mûhorizontra rajzolt repülõgép-sziluettet kellett irányban tartania, míg földet nem ért.<BR>
+</I>
+<BR>
+
+<A NAME="32">
+<A HREF="#32" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_32.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_32_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Ez a gomb egyedülálló dolog az utasgépeken: automatikus átstartolásra szolgál. Néhány éve Szalonikiben ez mentette meg a Malév Tu-154-esét, amikor futó nélkül szálltak le.<BR>
+</I>
+</CENTER>
+<P ALIGN="justify">
+
+Talán emlékeztek is erre az esetre, mely egyébként jól példázza a Tu-154 kiemelkedõ repülésbiztonsági paramétereit. A szaloniki repülõtér felett több gép várakozott leszállásra, ám a légiirányítók túl sûrûre fûzték a láncot, túl közel kerültek egymáshoz a gépek. Az elsõként leszálló gép az elõírt 30 km/h sebességgel taxizott a pályán, mögötte viszont már ereszkedett a magyar Tu-154. A magyar pilóták látták a pályát elálló másik gépet, de nem tehettek semmit, a másik gép pilótáinak meg nem jutott eszükbe, hogy talán kisebb lebaszást kapnak, ha megszegik a korlátozást és elkotródnak a pályáról, mintha elõírásszerûen beléjük szállna egy Tupoljev. A magyar gép már egészen alacsonyan volt, a pilótafülkében megszólalt a talajközelségjelzõ duda, ami jelzi, ha a futómû nincs kieresztve. Ezt a kapitány kikapcsoltatta, hogy ne zavarjon, a géppel pedig S-eket írt le, hogy késõbb érjen a kifutópályához, miközben a másodpilótát utasította, hogy figyelje a hegyeket, nehogy nekik ütközzenek. Így érkeztek le, csak mindketten elfelejtették, hogy nem eresztették ki a futót. Az utolsó pillanatban nyitották, de már nem volt idõ, hogy rendesen kinyíljon, így a futószáron csúsztak végig a betonon.
+
+</P>
+<CENTER>
+
+<A NAME="33">
+<A HREF="#33" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_33.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_33_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Az a gép ezeken a csavarokon csúszott a betonon, de így is képes volt biztonságos sebességgel újra felszállni<BR>
+</I>
+</CENTER>
+<P ALIGN="justify">
+
+A malõr ellenére a gép újra el tudott emelkedni, és futóeresztés után rendben leszállt. A Tu-154-es ilyen strapabíró gép, még füves repülõtérrõl is üzemel, ha kell. Egyébként biztonsági okokból két hajtómûves üzemelésre tervezték, három hajtómûvel eszeveszett nagy teljesítmény-feleslege van. Sanyi bácsi említette, hogy amikor éjszaka szálltak fel Ferihegyrõl, rendszerint két hajtómûvel emelkedtek a város felett, hogy ne csapjanak nagy zajt, aztán csak odafenn adták rá a gázt a harmadik hajtómûre.
+<BR><BR>
+
+A szaloniki eset után egyébként a magyar pilótát elmarasztalták, bevonták a szakszóját, soha többé nem repülhetett. Mostanra állítólag egy alkoholista roncs. No de nézegessük tovább a képeket.
+</P>
+<CENTER>
+
+<A NAME="34">
+<A HREF="#34" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_34.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_34_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Ez a kosár szolgált a legkisebb utasok elhelyezésére<BR>
+</I>
+<BR>
+
+<A NAME="35">
+<A HREF="#35" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_35.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_35_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A navigátor munkahelye<BR>
+</I>
+<BR>
+
+<A NAME="36">
+<A HREF="#36" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_36.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_36_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Közben lelkesen szálldostak fölöttünk más gépek<BR>
+</I>
+<BR>
+
+<A NAME="37">
+<A HREF="#37" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_37.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_37_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A Tu-134 és a Tu-154 egymás mellett<BR>
+</I>
+<BR>
+
+<A NAME="38">
+<A HREF="#38" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_38.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_38_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Berta még mindig a fõürgész titulusra pályázott<BR>
+</I>
+<BR>
+
+<A NAME="39">
+<A HREF="#39" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_39.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_39_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Ez volt egykor a ferihegyi leszállító irányszögadó, az ILS elõdje<BR>
+</I>
+<BR>
+
+<A NAME="40">
+<A HREF="#40" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_40.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_40_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Az öreg Il-14-est elég viharvert állapotban találtuk. A fiúk szerint majd akkor lesz újrafestve, ha lesz ilyesmire pénz, de egyelõre a reptérüzemeltetés a múzeum takarításának díjával is évek óta tartozik.<BR>
+</I>
+<BR>
+
+<A NAME="41">
+<A HREF="#41" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_41.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_41_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Nagytakarítás nyomai fogadtak a fedélzeten<BR>
+</I>
+<BR>
+
+<A NAME="42">
+<A HREF="#42" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_42.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_42_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A pilótafülke. Ezt épp most burkolják be plexivel, mert sajnos bebizonyosodott, hogy a tuskó magyaroknak nem szabad engedni tapogatni a múzeumi tárgyakat. Fõleg a gyerekek nem bírnak magukkal, rendszeresen letördelik a kapcsolókat, tornásznak az antennákon, és a szülõk, tanárok mosolyogva figyelik, ahelyett, hogy a kezükre csapnának. Mindenféle figyelmeztetõ tábla hatástalan volt, így sajnos el kell zárni a látogatóktól a sérülékeny dolgokat. Kár, mert a világon ez volt az egyetlen repülõmúzeum, ahol a látogatók mindenhová beülhettek, mindent megtapogathattak.<BR>
+</I>
+<BR>
+
+<A NAME="43">
+<A HREF="#43" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_43.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_43_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A tetõablakon kipillantva ezt lehet látni<BR>
+</I>
+<BR>
+
+<A NAME="44">
+<A HREF="#44" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_44.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_44_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Elõre nézve pedig ezt<BR>
+</I>
+<BR>
+
+<A NAME="45">
+<A HREF="#45" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_45.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_45_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Il-14 szembõl<BR>
+</I>
+<BR>
+
+<A NAME="46">
+<A HREF="#46" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_46.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_46_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Athina mûvészfotója egy turbinalapát-koszorúról<BR>
+</I>
+<BR>
+
+<A NAME="47">
+<A HREF="#47" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_47.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_47_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Il-14 fekete-fehérben<BR>
+</I>
+<BR>
+
+<A NAME="48">
+<A HREF="#48" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_48.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_48_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Ez pedig egy Jak-40-es. Különleges gép ez is, a maga idejében nem utasgépként funkcionált, hanem mûszerek légi tesztelésére szolgált. Ez a gép egyébként még repülõképes, nem szokták kinyitni a látogatóknak, épp a már említett vandál hajlamaik miatt.<BR>
+</I>
+<BR>
+
+<A NAME="49">
+<A HREF="#49" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_49.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_49_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+No és ez mi? Ez a Jak-40-es reflektorának izzószála, makróval. Szép.<BR>
+</I>
+<BR>
+
+<A NAME="50">
+<A HREF="#50" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_50.jpg'; document.wdth=480; document.hght=640; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_50_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A bejárat ezen a gépen hátul van<BR>
+</I>
+<BR>
+
+<A NAME="51">
+<A HREF="#51" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_51.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_51_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Fedélzeti fotel<BR>
+</I>
+<BR>
+
+<A NAME="52">
+<A HREF="#52" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_52.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_52_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Mûszerfal<BR>
+</I>
+<BR>
+
+<A NAME="53">
+<A HREF="#53" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_53.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_53_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Pillantás a szomszédos Il-14-esre...<BR>
+</I>
+<BR>
+
+<A NAME="54">
+<A HREF="#54" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_54.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_54_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+... és a Mentõszolgálat egykori Mi-2-esére<BR>
+</I>
+<BR>
+
+<A NAME="55">
+<A HREF="#55" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_55.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_55_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Kapcsoló<BR>
+</I>
+<BR>
+
+<A NAME="56">
+<A HREF="#56" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_56.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_56_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Csatlakozó<BR>
+</I>
+<BR>
+
+<A NAME="57">
+<A HREF="#57" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_57.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_57_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Tengeri mérföld<BR>
+</I>
+<BR>
+
+<A NAME="58">
+<A HREF="#58" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_58.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_58_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Hajtómû-hõmérséklet<BR>
+</I>
+</CENTER>
+<P ALIGN="justify">
+
+Az igen sikeres Jak-40-esnek volt egy továbbfejlesztett változata, a Jak-42, ami azonban finoman szólva nem váltotta be a hozzá fûzött reményeket. Kérdeztem Sanyi bácsit, volt-e tapasztalata a 42-essel. Mesélte, hogy kilenc 42-es zuhant le a Szovjetunióban, mire rájöttek, hogy mivel a vezérsíkot tartó csavarok és a hozzájuk tartozó anyák nem egy helyen készültek, komoly méretbeli eltérések voltak köztük, és ezért a terhelés hatására berágódó csavarok könnyen elnyíródtak.
+
+</P>
+<CENTER>
+
+<A NAME="59">
+<A HREF="#59" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_59.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_59_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A szomszédban épp a helyére gurult a LOT Boeing 737-52-ese<BR>
+</I>
+<BR>
+
+<A NAME="60">
+<A HREF="#60" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_60.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_60_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A távoli horizonton pedig igencsak égett valami. Elõtérben a Li-2-es, amit nem néztünk meg, hadd lássunk valamit legközelebb is.<BR>
+</I>
+<BR>
+
+<A NAME="61">
+<A HREF="#61" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_61.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_61_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Repülõorrok<BR>
+</I>
+<BR>
+
+<A NAME="62">
+<A HREF="#62" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_62.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_62_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Berta közben tetten ért egy ürgét, amint épp beslisszolt a lyukba<BR>
+</I>
+<BR>
+
+<A NAME="63">
+<A HREF="#63" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_63.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_63_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Neki is állt kibányászni<BR>
+</I>
+<BR>
+
+<A NAME="64">
+<A HREF="#64" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_64.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_64_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Nem volt egyszerû feladat<BR>
+</I>
+<BR>
+
+<A NAME="65">
+<A HREF="#65" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_65.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_65_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Végül rájött, hogy mégsem áshatja ki a négyes metrót, és hagyta a fenébe a pimasz ürgét<BR>
+</I>
+<BR>
+
+<A NAME="66">
+<A HREF="#66" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_66.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_66_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Naplementés kép. Míg Athina fotózgatott, mi Bertával és néhány alapítványos sráccal a Tu-154 kabinjában hallgattuk Sanyi bácsi történeteit. Pár napra elég lesz a Droidzónába, az biztos.<BR>
+</I>
+<BR>
+
+<A NAME="67">
+<A HREF="#67" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_67.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_67_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Másik naplementés kép<BR>
+</I>
+<BR>
+
+<A NAME="68">
+<A HREF="#68" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_68.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_68_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Vendéglátóink<BR>
+</I>
+<BR>
+
+<A NAME="69">
+<A HREF="#69" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_69.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_69_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Harmadik naplementés kép<BR>
+</I>
+<BR>
+
+<A NAME="70">
+<A HREF="#70" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050904/20050904_70.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050904/20050904_70_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+És végül: egy negyedik naplementés kép<BR>
+</I>
+<BR>
+</CENTER>
+<P ALIGN="justify">
+
+Ezúton köszönöm még egyszer Gábornak, Sanyi bácsinak, és mindenki másnak ezt az érdekes és élménydús látogatást! Mindenkinek javaslom, ha tehetitek, látogassatok ki Ferihegy II-re, és nézzétek meg ezt a skanzent. Legjobban sikerült fényképeink nagy felbontásban <A HREF="ferihegy_best.zip">itt találhatóak,</A> egy 5 MB-os ZIP file-ban.
+
+</P>
+
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050903.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050905.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

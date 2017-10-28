@@ -1,0 +1,92 @@
+<HTML>
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+
+<P ALIGN="JUSTIFY">
+<B>2004.05.02., vasárnap</B><BR>
+tomcat
+<BR><BR>
+
+Elmélkedés az magyar számítás-technika alantas mivoltárul...
+<BR><BR>
+
+Nap mint nap jönnek levelek, amiben megköszönitek a Revenge trilógiát. Ez persze jól esik, örülök, hogy tetszett, meg hogy órákat töltöttetek el vele - egyébként a blog növekv&otilde; népszer&ucirc;ségének is hasonlóképp örülök - és persze annak is, hogy néhányan azzal fordultok hozzám, hogy hogyan lehetne valami hasonló programot összedobni. Ami viszont egyre jobban szöget üt a fejembe, hogy szinte valamennyi kreatívkodni vágyó olvasó a Turbo Pascal lehet&otilde;ségeir&otilde;l érdekl&otilde;dik.
+<BR><BR>
+
+Nem értem, hiszen 2004-et írunk. A Turbo Pascal egy MS-DOS alapú fejleszt&otilde;környezet. Szó szerint múzeumba való, nem érdemes vele foglalkozni. Már 1994-ben is, amikor a Sulit írtam, reménytelenül elavult és gyenge eszköz volt. Egy ilyen szint&ucirc; program elkészítésére persze megfelel, de másra nem. Miért nem változik tehát semmi immár tíz éve, miért er&otilde;lködnek a srácok még mindig Pascallal, holott sokkal célszer&ucirc;bb lenne valamilyen hatékonyabb, modernebb, Windows alapú fejleszt&otilde;eszközzel dolgozniuk? (Most nem a Windowst sztárolnám, hiszen nagy szar, de tény, hogy a képességei már régen messze meghaladják azt, amit DOS alatt el lehet érni.) Ha már Pascal az ember szíve vágya, ott a Delphi, ha dedós szinten akar maradni, a Visual Basic, ha komolyabb céljai vannak, a Visual C++. Ezekkel nem csak hatékonyabban, de sokkal egyszer&ucirc;bben is lehet dolgozni, mint a korlátozott képesség&ucirc;, ócska Turbo Pascallal. Miért nem használják ezeket egyáltalán a programozói babérokra tör&otilde;, ifjú pécéhuszárok?
+<BR><BR>
+
+Nos, a Turbo Pascal egy betonkeményen beágyazódott daganat a magyar számítástechnika-oktatás testén. Valamikor a kilencvenes évek elején, amikor a 8 bites mikroszámítógépek elavultak és elt&ucirc;ntek a közoktatásból, jött helyettük a PC, és a régi szokás szerint ezen is programozni próbálták tanítani a diákokat. A BASIC már nem volt divat, de valami kellett, bevették hát az országos tananyagba a Turbo Pascalt, mint egyszer&ucirc;en tanulható és barátságos programnyelvet. Ekkor egy sor úgynevezett <I>számítástechnikai szakember</I> kezdett a Pascalról könyveket írni, mint Pirkó József, Angster Erzsébet, Kertész László, stb. Most ne részletezzük hosszan ezeknek a "szakembereknek" a képességeit és tudásszintjét, sem könyveik színvonalát, hiszen nagyobb hangsúlyt fektettek a minél érthetetlenebb, b&ucirc;vös varázsszavak nagykép&ucirc; ismételgetésére (pl. stream, objektum, virtuális metódus, objektumdeklaráció, destruktor, pointer) mint a valóban használható tudásanyag átadására, és azt se fejtegessük, hogy ezek az emberek mind a mai napig be vannak épülve egyes fels&otilde;oktatási intézményekbe, ahol a szakterület tótumfaktumaként okoskodnak a katedráról. Lényeg a lényeg, hogy a kilencvenes évek elején az általuk összefércelt, silány szakkönyvek voltak egy darabig az egyetlen, magyarul hozzáférhet&otilde; modern programozási szakkönyvek, és ezekben úgy mutatták be a Pascalt, mint valami hihetetlenül sokoldalú eszközt, aminek ismerete egyfajta misztikus beavatással egyenérték&ucirc;.
+<BR><BR>
+
+Emellett sikeresen elhitették a kezd&otilde; szakmai közönséggel, hogy csakis a Pascal a felhasználóbarát programozási nyelv, a C és a C++, pláne az assembly pedig nem embernek való, azt csak nagyon-nagyon elszánt és felkészült zsenik érthetik meg. Nem volt nehéz, hiszen a matektanárból átvedlett számítástechnika-tanárok körülbelül annyira értettek a szakmához, mint orosztanárból éppen angoltanárrá átképzett kollégáik, és még a régi Commodore gépek kezelése is nagy gondot okozott nekik, nemhogy a félelemmel vegyes tisztelettel bámult <I>professzionális személyi számítógépek,</I> azaz a PC-k. Ezek a tanárok papagáj módjára mondták vissza mindenkinek, amit ezek a "szaktekintélyek" kinyilatkoztattak, és eredményképpen kialakult az a fajta számítástechnikai szemlélet, ami a mai felhasználói közönséget jellemzi: zsigeri félelem a drága számítógépt&otilde;l, attól, hogy ha rossz gombot nyomunk le, menthetetlenül tönkremegy az egész. (Mellesleg ugyanez jellemzi a magyar átlagember hozzáállását bármiféle más digitális-elektronikus eszközhöz, pl. digitális kamera, DVD lejátszó, stb.) A Turbo Pascal tehát beépült a magyar középiskolai tananyagba, és szó sem esett soha arról, hogy vannak más nyelvek is. Ezeket a nyelveket valamiféle periférián túli dologként kezelték, nem is beszéltek róluk.
+<BR><BR>
+
+Kialakult hát egyfajta szemlélet, hogy nincs más eszköz, csak a Turbo Pascal, és bármi más programnyelv alkalmazásához hosszú évek nehéz egyetemi tanulmányai szükségesek. A Windows programozása olyan fels&otilde;bbrend&ucirc; tudomány, amit csak a kiválasztottak ismerhetnek, a DirectX vagy az OpenGL pedig olyan elképzelhetetlenül bonyolult, hogy beszélni sem lehet róla. Ha megkérdezek néha egy-egy aspiráló Turbo Pascal-vitézt, hogy miért nem próbálja meg mondjuk a Visual C++ nyelvet, ami egy roppant barátságos és könnyen tanulható eszköz, vagy ha már ragaszkodik a Pascalhoz, akkor a Delphit, csak néznek rám bután, hogy mir&otilde;l beszélek, az micsoda, és honnan lehet ilyet letölteni? Amikor azonban megtudják, hogy ehhez csak az Interneten, és f&otilde;leg angolul lehet segédanyagokat találni, azonnal visszah&otilde;kölnek, hogy jaj, hát én nem tudok angolul, meg nem is értek az egészhez, és persze nem is áll szándékomban új dolgot tanulni, jó nekem ez az &otilde;skövület, ezt megmutatták az iskolában... 
+<BR><BR>
+
+De hová vezet mindez? Oda, hogy az oly nagyra tartott és ajnározott magyar számítástechnikai kultúra elt&ucirc;nik. Ennek máris megvannak a nyilvánvaló és kézzelfogható jelei. Nem arra célzok azonban, hogy az átlagjúzer hülye lesz a Winword-höz, hanem arra, hogy 5-10 év múlva nem lesznek Magyarországon olyan szakemberek, akik tudják is, hogy mit&otilde;l és hogyan m&ucirc;ködik a számítógép. Tudásuk annyiban fog kimerülni, hogy melyik alaplapot és videókártyát érdemes megvenni, és hogy melyik játékprogramban hogyan kell csalni. Esetleg értenek egy kicsit a HTML-hez. Itt, az Észak-Balkáni Népköztársaságban még tíz, húsz év múlva is a Turbo Pascal lesz a komputertudomány csúcsa, és csak kevesen fogják tudni, hogy a számítástechnika túlmutat a Winword/Excel/Pascal kombón  és a bárgyú chatelésen.
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20040501.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20040503.html">
+<B>következ&otilde; nap >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

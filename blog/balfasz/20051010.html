@@ -1,0 +1,278 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-460</B><BR>
+2005.10.10.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+
+<P ALIGN="justify">
+
+Évek ködös távolából fel-felrémlik néhány régi munkahelyem, melyeken nem sok id&otilde;t töltöttem, de annál több droiddal futottam össze. Szó volt már itt, e blog hasábjain a Szamárcsöcs Intervision, Faszom Technologies és Lófasz Rt fed&otilde;nevek mögé bújtatott multicégekr&otilde;l, melyek egyt&otilde;l egyig a dilettáns vezetés és a trendeknek való görcsös megfelelési kényszer jellemzett, ahelyett, hogy mondjuk termeléssel és más haszontalanságokkal ütötték volna el a cs&otilde;dbemenetelig hátralev&otilde; id&otilde;t. A minap eszembe jutott, hogy volt szerencsém egyszer egy nagy-nagy mobilkommunikációs szolgáltatónak is dolgozni. Nevét ezúttal is fedje homály - bár nincs olyan nagy választék ilyen cégekb&otilde;l - s hagyományainkat követve legyen a fed&otilde;neve mondjuk Bélgáz Telecom.
+<BR><BR>
+
+Igazából fogalmam sincs már, hogy keveredtem a Bélgáz közelébe, mint szabadúszó grafikus és programozó. Valami olyasmivel indítottuk együttm&ucirc;ködésünket, hogy &otilde;k Java alapú játékprogramot akartak készíttetni, én meg egy haverral, Strepto-val, az Astral neves demócoderével kettesben meg tudtam ezt oldani, így az üzlet megköttetett. Kezembe nyomtak két Nokia 3410-es maroktelefont, hogy nesze, erre csináljatok valamit, aztán majd meglátjuk. Így lettünk <I>outsourcing partnerek,</I> ami ugyanazt jelenti, mint a <I>gebines,</I> csak trendibb szó. Én, mint a régi klasszikus játékprogramok elkötelezett híve, egy egykor Atari VCS-en futó játékot, a <I>Berzerk</I>-et szemeltem ki feldolgozásra, lévén egyszer&ucirc;, élvezetes, s ugyanakkor könnyen leprogramozható. Én egyszer már megcsináltam Flashben, még 2001-ben, nem nagy ügy. Tessék.
+</P>
+<CENTER>
+
+<OBJECT NAME="berzerk" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" WIDTH=320 HEIGHT=200>
+<PARAM NAME=movie VALUE="20051010.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=#000000> <EMBED src="20051010.swf" quality=high bgcolor=#000000  WIDTH=320 HEIGHT=200 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED>
+</OBJECT>
+
+</CENTER>
+<P ALIGN="justify">
+
+A feladat a kis emberkével kijutni a labirintusból, miközben a robotok felénk gyalogolnak, és ha egy vonalba érnek velünk, l&otilde;nek is. Nem túl okosak, mert csak vízszintesen és függ&otilde;legesen haladnak, igyekezvén egy vonalba kerülni az emberkével. A falak elektromossággal töltöttek, és ha sikerül ügyes helyezkedéssel nekigyalogoltatnunk egy-két robotot, vagy belecsalogatnunk &otilde;ket társaik t&ucirc;zvonalába, bonyolultnak látszó bekerítésb&otilde;l is kitörhetünk. Persze nem árt vigyázni, nehogy a robotok szívassanak meg bennünket egy szerencsés felállással, esetleg nehogy a falhoz érjünk, mert az nekünk se jó. Ja, és igyekezzünk gyorsan kijutni, különben megjelenik a robotok f&otilde;nöke, egy szellemszer&ucirc;en lebeg&otilde;, vigyorgó fej, ami falakon, robotokon keresztülhaladva igyekszik felénk, és nem lehet kil&otilde;ni. No igen, nem túl összetett játék, de 1979-ben ez is nagy dolog volt, és &otilde;szintén szólva mindmáig jobban élvezem, mint egyes modern játékcsodákat. Hát akkor tegyük ezt át mobiltelefonra!
+<BR><BR>
+
+Egyszer&ucirc; feladat, gondoltam én, a naiv grafikusi agyammal, Strepto pedig heteken át szentségelt. A Nokia 3410-es ugyanis mindenféle célra gyakorlatilag alkalmatlannak bizonyult. A nagy elánnal reklámozott Java támogatás csak a szoftveres emulátorban m&ucirc;ködött úgy-ahogy, a telefon maga az utasításkészlet felét sem ismerte, példának okáért - programozók, röhögjetek - nem volt benne a Java nyelvben megszokott automatikus memóriafoglalás, de <I>malloc()</I> vagy hasonló parancs sem. Következésképp a memóriachip kizárólag ballasztként szolgált benne, mert abban adatot elhelyezni nem lehetett. Strepto végül tömbök alkalmazásával emulált memóriát, ami kurva lassú volt, de legalább m&ucirc;ködött. Ráadásképpen nem volt két 3410-es, ami ugyanazt a programot ugyanúgy futtatta volna. Még két azonos firmware-verziójú készülék m&ucirc;ködése is eltért! No mindegy, hetekig mesélhetném a szakszöveget, amin a beavatottak szétröhögik magukat, inkább térjünk vissza a Bélgáz Telecom történetére.
+<BR><BR>
+
+Kész lett végre a játék, a juppik elpöcsöltek pár hetet a cím kitalálásával, majd végre kikerült a megfelel&otilde; WAP oldalra. Hurrá! De mindössze valami harmincezer forintot kaptunk az egész havi szopásért, ugyanis a cég "nagylelk&ucirc;en" levonta a díjazásunkból a telefonról küldött SMS-ek árát. Állítólag ezt még a vezérigazgatónak is ki kell fizetnie. Marha jó... Strepto ezek után megüzente, hogy dugják a seggükbe a 3410-esüket, &otilde; többet nem fejleszt Javát erre a szarra, de ennyi pénzért másra se. Felvetettem ugyan néhány új játékötletet - <I>Moon Patrol, Wizard of Wor, Barbarian</I> feldolgozások - de mindhiába. A cégvezet&otilde;ség ekkor már másban látott fantáziát...
+<BR><BR>
+
+Apropó, tudjátok, miért vannak ma játékok a mobiltelefonokban? Ezt egy finn Nokia-alkalmazott ismer&otilde;söm mesélte. Úgy 1997 körül jelent meg az els&otilde; programozható mobiltelefon, és az egyik Nokia-programozó szabadidejében összedobott egy egyszer&ucirc; kis játékot rá. Ez lett kés&otilde;bb a <I>Kígyó</I> fed&otilde;nev&ucirc; Nibbles-klón. Bemutatta a f&otilde;nökének, de az jól lebaszta, hogy micsoda komolytalanság ez, hiszen a mobiltelefon a <I>megfontolt, komoly döntéshozók</I> munkaeszköze, akik nem fogják kvarcjátéknak használni, szedtevette. Pár nap múlva ugyanez a f&otilde;nök valami értekez... izé, meetingre volt hivatalos, ahová magával vitte ezt a telefont, és az asztal alatt játszott vele, amíg az aznapra rendelt nagyokos kifejtette a grafikonjait. A meeting után azonnal beterjesztette újítási javaslatként, hogy tegyenek játékokat a telefonokba, mert az milyen jó. Na, azóta van ilyen, örüljünk.
+<BR><BR>
+
+Visszatérve a Bélgáz Telecom történetére, a Java játék ugyan tetszett nekik, de most valami mást akartak. Egy napon elém löktek egy WAP-os címet, hogy nézzem meg, milyen jópofa szöveges kalandjátékot írt nekik egy küls&otilde;s munkatárs. Megnéztem, hát, nem kellett volna. Ilyen szánalmas szemetet azóta se láttam. A lapozgatós kalandjátékokat idéz&otilde; m&ucirc;ben egy Moni nev&ucirc; topmodell szerepébe bújhatott a játékos, és "kipróbálhatta", milyen e min&otilde;ségében körülutaznia a világot. Hogy nézett ez ki? Megpróbálom fejb&otilde;l idézni.
+<BR><BR>
+
+[Ide tessék elképzelni valami vérprimitív "illusztrációt"]
+<BR><BR>
+
+<I>
+Megérkezel Rómába. A repül&otilde;téren fotósok hada fogad, csattognak a vakuk, míg a drága limuzinhoz vonulsz. Az autó a város legdrágább szállodájába repít. Hamarosan a szobádban vagy. Mit teszel?
+<BR><BR>
+
+- Lepihensz a fárasztó utazás után?<BR>
+- Lemész a bárba?<BR>
+- Körülnézel a városban?<BR>
+</I>
+<BR><BR>
+Na, mondjuk menjünk le a bárba.
+<BR><BR>
+<I>
+A bár elegáns, halk zene szól, a férfiak megbámulnak. A pincér az asztalodhoz siet, kaviárt és pezsg&otilde;t ajánl, avagy osztrigát. Mit szeretnél?
+<BR><BR>
+- Kaviárt és pezsg&otilde;t<BR>
+- Osztrigát<BR>
+</I><BR>
+
+Na, mondjuk legyen kaviár.
+<BR><BR>
+
+<I>
+A kaviár friss, fekete, és nagyon ízletes. A pezsg&otilde;t&otilde;l jó kedved lesz. Mit szeretnél tenni?
+<BR><BR>
+- Lepihensz a fárasztó utazás után?<BR>
+- Körülnézel a városban?<BR>
+</I><BR>
+
+És így tovább. Igazi kalandjátékokon feln&otilde;tt olvasóim tévednek, ha azt feltételezik, hogy Monival el&otilde;bb-utóbb történik valami, például elrabolják. A játékban semmi sem történik. Moni kalandjai hetenkénti folytatásokban jelentek meg, mindegyik csupán két-három lépés hosszúságú volt, elágazás nélkül, nehogy megterhelje a játékos agyát. Hát ki játszik ezzel a szarral, kérdeztem valakit a cégnél, ezt komolyan gondoljátok?
+<BR><BR>
+
+- Persze, ez egy nagyon népszer&ucirc; játék!<BR>
+- Ez??<BR>
+- Igen, nézd meg a látogatási statisztikát! Több tízezer találatot kap naponta!
+<BR><BR>
+
+Több tízezer? Hiszem, ha látom, ennyi a legnagyobb hírportáloknak van! A pasas erre elém kanyarított egy papírlapot, rajta a webstatisztikával.
+<BR><BR>
+
+- De hiszen ez csak napi tíz-tizenkét találatot (unique hit) mutat!<BR>
+- Nem, ne azt nézd! Ott van ni: Total Hits. Ma például tizenkilencezer!<BR>
+- Au...<BR>
+<BR>
+
+Nem kívántam felvilágosítani, hogy az Total Hits az összes létez&otilde; adatlekérést méri, amib&otilde;l egy-egy látogató akár több ezret is csinál, míg az Unique Visitor jelenti a valós számot. Mindegy, a grafikon ebb&otilde;l készült, és a meetingen lehetett ájuldozni, hogy micsoda népszer&ucirc;ség van itt. Beszarás...
+<BR><BR>
+
+- Hát, szóval mi ezt a Monit szeretnénk továbbfejleszteni a segítségeddel.<BR>
+- Ezt? Minek??<BR>
+- Szeretnénk, ha segítenél a készít&otilde;jének a munkájában.<BR>
+<BR>
+
+Aztán elmondta, ki is ez a titokzatos készít&otilde;. Egy paksi gimnazista gyerek! Hogy került ez Magyarország egyik vezet&otilde; mobilkommunikációs cégéhez tartalomfejleszt&otilde;ként? Nos, odahaza összegányolt egy testtömegindex-kiszámító programot Java nyelven, és elájult magától, nem tudván, hogy ez nagyjából egy programozói tanfolyam els&otilde; hetének tananyaga. A programot bevitte egy helyi Bélgáz üzletbe, hátha megveszik jó pénzért. Azok persze csak néztek rá, ahogy a droidokra szokás, de mivel a droid er&otilde;sködött, hogy &otilde; pedig hasznos lesz a cégnek, hát adtak neki egy budapesti telefonszámot. A túloldalon történetesen egy másik droid ült, aki azonnal lecsapott a "fantasztikus tehetség&ucirc; fiatalemberre", és lehet&otilde;séget adott neki képességei kibontakoztatására. Hát, nem bontakozta túl magát.
+<BR><BR>
+
+- Ugye nem gondoljátok komolyan, hogy ennek még folytatást akartok?<BR>
+- De, de, akarjuk.<BR>
+- És én mit csináljak?<BR>
+- Hát, ezt meg kellene beszélni a sráccal.<BR>
+<BR>
+
+Felhívtuk telefonon, kihangosítottuk. A túloldalon egy enervált hang jelentkezett, az egyik menedzser beszélt vele.
+<BR><BR>
+
+- Gipsz Jakab...<BR>
+- Szervusz, én vagyok, tudod, a Bélgáz Rt-t&otilde;l...<BR>
+- Áh, igen, tudom... na, mondjad - felelte a csóva unottan, mint valami sztár.<BR>
+- Hátszóvalkérlek, szóval itt van mellettem egy kolléga, aki korábban már írt nekünk játékprogramot, és hát arra gondoltunk, most megbeszélhetnétek, mi hogy legyen, és izé...<BR>
+- Hmm, hát jó, add ide.<BR>
+<BR>
+
+Közelebb húztam a telefont.
+<BR><BR>
+
+- Helló, Tomcat vagyok. Te írtad a Monit?<BR>
+- Áh, hát igen, én írtam...<BR>
+- Tulajdonképpen minek?<BR>
+- Hát, tudod, ez a Moni valójában egy osztálytársn&otilde;m, hehe, érted...
+<BR><BR>
+
+Aha, értem. Anyuka komplexusos pici fia.
+<BR><BR>
+
+- És most tulajdonképpen mit akarsz ebb&otilde;l csinálni?<BR>
+- Ó, hát rengeteg tervem van, például egy új Moni-sorozat, meg esetleg egy másik, amiben... bár nem tudom, te mennyit tudsz a kalandjáték-tervezésr&otilde;l, csináltál már ilyesmit? Mert szívesen elmagyarázom.<BR>
+- Lehet, hogy nem hallottad. Tomcat vagyok.<BR>
+- Tessék?<BR>
+- Mondom Tomcat vagyok. Revenge trilógia, mond valamit?
+<BR><BR>
+
+Kis csend.
+<BR><BR>
+
+- Iiigen... te írtad?<BR>
+- Igen.<BR>
+- Ööö...<BR>
+- Na, akkor most elmondom, mir&otilde;l fog szólni az új játék.
+<BR><BR>
+
+Igazság szerint nem tudom, miért hitték, hogy nekem ezzel a pojácával kellene együtt dolgoznom, s végül nem is lett bel&otilde;le semmi. Helyette beadtam egy írásos szakvéleményt a cégnek a jelenleg követett fejlesztési irányok tarthatatlanságáról, és javasoltam egy új WAP-os kalandjáték-engine elkészítését. Abban maradtunk, hogy megrendelik, de közben Gipsz Jakab is megcsinálja a Moni következ&otilde; részét, aztán majd meglátják, melyik lesz jobb. Fel&otilde;lem...
+<BR><BR>
+
+Az általam fejlesztett kalandjáték-motor tulajdonképpen nem is volt motor. Egy Delphiben írt PC-s program volt, amiben egy 20x20 mez&otilde;re osztott négyzetrács jelent meg. A négyzetekbe egy labirintus "alkatrészeit" lehetett bepakolni: egyenes folyosó, kanyarok, elágazások. Az útveszt&otilde;ben szobákat is el lehetett helyezni. A program egy rakás WML file-t, azaz WAP dokumentumot generált kimenetként, amit fel lehetett rakni a szerverre, és ezzel kész is volt a játék. A játékos a mobiltelefon képerny&otilde;jén a labirintus egy háromszor három mez&otilde;nyi darabját láthatta, s navigálhatott, amerre akart, keresve a szobákat. Egy szobába lépve a játék átváltott szöveges kalandra, feladatokat kellett megoldani, jelszavakat megszerezni, hogy a játékos mindenféle Bélgáz-ajándékokhoz juthasson. A megfelel&otilde; telefonszámra SMS-ben elküldött jelszóért feltölt&otilde;kártyát, ajándéktárgyakat lehetett nyerni. Meglehet&otilde;sen egyszer&ucirc; programozási feladat volt, pár nap alatt meg is csináltam, és a cég ki is fizette - pénzügyekben nagyon megbízhatóak voltak. Azt is vállaltam, hogy minden héten összeállítok egy új labirintust, persze szintén külön díjazásért.
+<BR><BR>
+
+A program átvétele után felhívott engem az ügyeletes f&otilde;muksó.
+<BR><BR>
+
+- Te, figyelj csak, nem lehetne kisebb a labirintus?<BR>
+- Hát, végül is lehet, nem muszáj az egész pályát kitölteni.<BR>
+- De egészen kicsi kellene. Mondjuk egy folyosó lenne az egész, egy szobával.<BR>
+- Hogyhogy egyetlen folyosó?<BR>
+- Nehogy eltévedjen a játékos.<BR>
+- A labirintusnak nem ez a lényege?<BR>
+- Hát, igen, de a kudarc elveszi a játékos kedvét.
+<BR><BR>
+
+El ne felejtsem: a cég els&otilde;dleges célja sosem az volt, hogy a telefonjukkal játszani vágyóknak értelmes és izgalmas játékokat kínáljon, hanem azokat tekintették célközönségnek, akik nem akartak játszani, nem értették a játékokat, és hülyék is voltak hozzá.
+<BR><BR>
+
+Pár nappal kés&otilde;bb megint hívott a f&otilde;elvtárs.
+<BR><BR>
+
+- Figyelj, nem lehetne a labirintust átalakítani? Hogy ne ilyen fantasy témájú legyen?<BR>
+- Dehogynem, hiszen azt írunk a szöveges részekbe, amit akarunk.<BR>
+- Akkor jó. Kéne bel&otilde;le csinálni egy Big Brother-játékot.<BR>
+- Hogy micsodát?<BR>
+- Tudod, most szponzorai lettünk a Big Brother-nek.<BR>
+- Jó, és?<BR>
+- Olyan labirintus kellene, ami a Big Brother-höz kapcsolódik.<BR>
+- Mi sem egyszer&ucirc;bb: ott a program, ott a leírás is hozzá, percek alatt megcsinálhatjátok.
+<BR><BR>
+
+Meg is csinálták. Maradt az egy folyosó és egy szoba. A szobába belépve a Big Brother-rel kapcsolatos kérdésekre kellett válaszolni, hogy a játékos "bejuthasson a Villába." Persze csak képletesen. Szóval ha a kedves júzer meg tudta mondani, hogy ezen a héten ki kit szopott le, ki hugyozott az állóvázába, és kinek pöttyös a segge, a képerny&otilde;n megjelent a büszke <I>"Gratulálunk, bejutottál a Big Brother villába!"</I> felirat. Ha nem, akkor meg nem. Izgalmas játék, mi? Na, hát ezt sikerült alkotniuk.
+<BR><BR>
+
+E kit&ucirc;n&otilde; munka után természetesen elkönyvelték, hogy a labirintusos játék nem érdekli a felhasználókat, és ejtették a dolgot. Helyette egy kicsit visszatértünk a Java játékok kérdéséhez. A cég rövid ideig a Ferencváros szponzora lett, és bekértek t&otilde;lem néhány ötletet a Fradival kapcsolatos játékokhoz - Strepto barátom <I>Metróbontó</I> cím&ucirc; javaslatát nem díjazták - majd még egy kicsit ötleteltünk, aztán eltávozott a cégt&otilde;l a tartalomfejleszt&otilde;k f&otilde;nöke, és az egész részleg gyakorlatilag elsorvadt. Természetesen Moni kalandjainak menetrend szerint megjelent a következ&otilde; része, és azóta nyilván lyukat kellett fúrni a tet&otilde;n, hogy elférjen a látogatottsági grafikon. Az átlagember meg lassan lemond a mobiltelefonos játékokról, mivel a nagyokos juppik évek óta szarral árasztják el a piacot, és az épkézláb ötletek nem min&otilde;sülnek trendinek. De szerencsére a Big Brother is megsz&ucirc;nt.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20051009.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

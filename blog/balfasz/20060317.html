@@ -1,0 +1,128 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css"> 
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-559</B><BR>
+2006.03.15.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+
+<P ALIGN="justify">
+<I>A mai téma: fiatalságunk színvonala. Beküldte: Pikachu.</I>
+<BR><BR>
+
+Történt egyszer, még értettségi el&otilde;tt, szakközépben, hogy nagy könyvmolyságomban nekiálltam olvasni a tesiterem öltöz&otilde;jében, a tanár megjelenése el&otilde;tt. Bejött a - szó szerint - birkozóbajnok osztálytársam, aki persze agyra nem valami izmos, és a szabadideje a jointozásból és a goa-partik látogatásából áll. Nézett egyet és megszólalt:
+<BR><BR>
+
+- Minek olvasol már annyi könyvet? Ett&otilde;l vagy olyan hülye!!!
+<BR><BR>
+
+Az osztálytársaim többségének reakciója persze jó nagy taps volt. Kivéve persze egy-két nemzeti érzelm&ucirc; fiatalt.
+<BR><BR>
+
+Volt egy sz&otilde;ke, egoista, díszkurva osztálytársn&otilde;m (nem is egy, de ez most mindegy), aki azzal kezdett el engem szekálni, hogy bel&otilde;lem nem lesz más, csak k&otilde;m&ucirc;ves. Mert &otilde; bezzeg valaki lesz! Az más kérdés, hogy kevéssel korábban azt írta egy földrajz dolgozatba: FRANCIAORSZÁG F&otilde;VÁROSA LONDON!!!!
+<BR><BR>
+
+A másik, ugyanilyen súlyos egyed meg azzal szeretett dicsekedni, hogy ha könyvet tesznek eléje, azt nyomban széttépi, és hogy már kiskora óta nem olvasott. Na, erre csak gratulálni tudtam neki...
+<BR><BR>
+
+Hála istennek, már elballagtam abból az osztályból, érettségivel gazdagodva.
+</P>
+
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20060315.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

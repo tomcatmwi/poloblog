@@ -1,0 +1,114 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2006.06.12., hétfõ</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Nem, a levrovot hiába várjátok. Mindenre nekem sem lehet idõm. De majd egyszer, szokás szerint havi ömlesztésben. Viszont kezdjetek vigyorogni, ha unjátok már a régi boltmotort, mert már félig kész az új. Például az üzenõrendszer már teljesnek mondható. Ebbõl mondjuk olyan sokat ti nem fogtok látni, mert az üzenetküldõ oldal a régi marad, de nálam végre nem ömlesztve jelennek meg két és fél év összes üzenetei, hanem szépen, kulturáltan, napok szerint leválogatva, kereshetõen, satöbbi. A legszebb funkció az <I>elõre definiált üzenet küldése.</I> Ez arra jó, hogy ha valamelyik hülye már megint nem bírta elolvasni a FAQ-t, akkor csak ki kell választani a megfelelõ szöveget, és a robot mézesmázos-udvariasan elküldi a júzert oda, ahová való. Bizonyos kulcsszavakat felismerve lehet, hogy automatikusan válaszol is majd. De szép is lesz... Ha lesz új blogmotor, abba is bekötöm, kicsit automatizálva a levrov-szerkesztést is. A PHP jó dolog, kéremszépen.
+<BR><BR>
+
+Holnap pedig ismét megyek a bíróságra, mert ugye - ha valaki nem emlékezne rá - Trotty úr volt szíves beperelni engem, a habfehér lelkébe, valamint szent személyiségi jogaiba való belegázolás okán, ami oly súlyosan megnyomorította becsületes lelkét, hogy annak pontosan 500,000 forintba került a megjavítása. Most nem teszem ide a máris harminc oldalra rúgó perirat-köteget, a lényeg, hogy Trotty úr immár ott tart, hogy szerinte egyetlen szó sem igaz abból, amit a tárgyalásokról leírtam, õ nem is rikácsolt, nem is mondta ezt meg azt, amazt nem úgy mondta, és egyáltalán, ott se volt, mind a tizenöt tanú hazudik, meg a jegyzõkönyv is, majd õ bebizonyítja.
+<BR><BR>
+
+Hölgyeim és uraim, világraszóló mutatvány: holnap, 8:30-tól a Fõvárosi Bíróságon egy neves blogger jogi képviselõ nélkül jelenik meg a bíróságon a MÚOSZ jogi bizottságának elnökének ellenében, akinek állítólag több évtizedes jogi tapasztalata van. A tárgyalás megtartása kétséges, mert személyim továbbra sincs. De megmutatom majd nekik az okmányiroda által kiadott cetlit, ami igazolja, hogy létezésem 2006 június 26-áig az államapparátus hibájából nem bizonyítható.
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060611.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060614.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

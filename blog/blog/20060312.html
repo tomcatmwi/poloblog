@@ -1,0 +1,117 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2006.03.12., vasárnap</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Régi fényképeket elnézegetve mindig elgondolkodtam azon, vajon mire szolgált valaha a sétapálca. Való igaz: elegáns, de funkciója látszólag nincs. Az ember cipelhet magával egy botot naphosszat, fél keze állandóan tele, esetleg sztepptáncosok pörgethetik is, de másra nem jó. Vagy mégis?
+<BR><BR>
+
+Aztán a napokban valahogy a kezembe akadt egy sétapálca, és elvittem kipróbálni. Az igaz, hogy nemigen illik a mai divathoz, hiszen ma mindenki sportkabátban, farmerben és hátizsákkal rohangál, értve ezt szó szerint, mert manapság tényleg csak rohangál mindenki, s ritkán látni, hogy valaki egyszer&ucirc;en sétálni megy. A modern ember vagy rohan valahová, vagy ül otthon, és esze ágában sincs kimerészkedni a szmogba, az autók közé.
+<BR><BR>
+
+De amint az ember kezébe fog egy öreg sétapálcát, és szépen, komótosan lépkedni kezd vele, ahogy dédapáink tették, szépen maga elé téve, majd egyet lépve, újra el&otilde;retéve, s így tovább, pár perc után rájön az egésznek a lényegére. A sétapálca nem egyszer&ucirc; divatkiegészít&otilde;. Sétapálcával az ember egyszer&ucirc;en <I>nem tud rohanni.</I> Ez az értelme. A sétapálcás úriember nem siet sehová. Miután kiidegeskedte magát a hivatalban, megvolt a napi diliház, mert az már száz éve is volt, fogta szépen a sétapálcát, és lassan hazasétált. A pálca egész egyszer&ucirc;en rákényszeríti az embert, hogy lassítson, nyugodjon le, és lazítson. Ha úgy tetszik, meditációs gyakorlat. Egészen másképp látni vele a világot. Sokkal többet észre lehet bel&otilde;le venni, sokkal több dolgon el lehet gondolkodni.
+<BR><BR>
+
+Igazán ideje volna, hogy a sétapálca újra divatba jöjjön.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060311.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060313.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

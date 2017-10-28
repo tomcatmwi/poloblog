@@ -1,0 +1,123 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css"> 
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-612</B><BR>
+2006.06.24.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<P ALIGN="justify">
+<I>Fekmacs építkezett. Talán nem kellett volna.</I>
+<BR><BR>
+
+Építkezésünk végéhez közeledve egyre gyakoribbak lettek a dugulások fürdõszobánkban. A vízvezeték-szerelõ házon belül nem talált semmit, így arra kezdtünk gyanakodni, talán az építõanyagot szállító, több tonnás teherautók megroppantották a nem túl mélyen fekvõ, frissen betemetett csatornavezetéket, amikor beálltak az udvarra. A fürdõszoba ugyanis közvetlenül a kapubejáró mellett van, sejtésünk talán nem alaptalan.
+<BR><BR>
+
+Ki is hívtuk a jómunkásembereket, hogy ássák ki a csatornavezetéket, és ha bármi hibát találnak, cseréljék ki a csövet. Említettük nekik, hogy az utóbbi idõben már órák alatt bedugul minden a fürdõben.
+<BR><BR>
+
+A legnagyobb nyugalomban mentem el dolgozni, hogy estére már vígan használhatom a fürdõszobát, amikor is délután csengett a telefonom, és kérdezték, mikor megyek már haza. A jómunkásemberek fõnöke gyors hazaérkezésem után beszámolt, hogy õk bizony egész nap ástak, de nem találtak semmit. Elhûlve láttam, hogy a telek túlsó végérõl (!) elkezdve az egész udvar fel van túrva, a kapubejáró környékét kivéve! (Hogy miért pont a szomszéd felõli, messzi vidéken kezdtek bele?)
+Mondtam neki, hogy én csak egy szõke nõ vagyok, nem akarom összezavarni, de ha egyszer említettem, hogy itt van a fürdõ a bejáratnál, továbbá nagyon hamar bedugul minden, akkor talán nem a ház mellett, a kapunál kellett volna kezdeni az ásást? Mi lenne, ha itt is körülnéznének?
+<BR><BR>
+
+- Ja, tényleg! - reagált emberünk, és mintegy 10 perc ásás után, a fürdõszoba falától 70 cm-re, a valószínû keréknyomban meg is találták a törést.
+<BR><BR>
+
+No comment. De fizethettük az egész napi ásást.
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060623.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060625.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

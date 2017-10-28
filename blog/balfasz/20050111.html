@@ -1,0 +1,127 @@
+<HTML>
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-264</B><BR>
+2005.01.11.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<BR><BR>
+
+<I>Néhány napja szerepelt itt egy történet Krueger Alfréd tollából, melyben egykori autóvezetés-oktatója ferihegyi kalandját mesélte el. A levélben két további történet is szerepelt, nézzük a másodikat.</I>
+<BR><BR>
+
+A másik sztori szintén vele esett meg. Akkor éppen közúti árufuvarozó volt, ha nem is igazi kamionnal, de egy batár dög teherkocsival járta kis hazánk útjait. 
+<BR><BR>
+
+Megy, mendegél, egyszercsak látja, hogy egy kurvajó sz&otilde;ke picsa stoppol az út szélén. Megáll, felveszi. Akkor látja, hogy az nem is egy sz&otilde;ke picsa, hanem egy sz&otilde;kére festett hajú, rommá sminkelt, aszott-baszott vén cigányasszony!!! Már kés&otilde; volt a gázra lépni, feltépte az ajtót, és beugrott. Teherfuvarozók gyakran panaszkodnak arra, hogy nincs társaságuk... na, neki most aztán lett. Ugatott az minden hülyeségr&otilde;l szünet és leveg&otilde;vétel nélkül, csak nem akart kiszállni. Ugat, ugat, ugat, egyszer a szexre is rátér. Hogy neki milyen jó, meg <I>"bizstos magának izs, fiatalember"</I>, stb, stb. Egyszer csak benyögi:
+<BR><BR>
+
+- Há én magát kéccázé úgy, de úgy leszívom, hogy háláláig émlegötni fogja!!!
+<BR><BR>
+
+Emberünknek betelt a pohár:
+<BR><BR>
+
+- Nesze bazdmeg, itt van háromszáz, de MOST takarodj ki a kocsimból, kurva gyorsan!!!!!
+
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050110.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050112.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

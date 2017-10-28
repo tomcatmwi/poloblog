@@ -1,0 +1,126 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>2006.12.02., péntek</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Igen, megint le vagyok rasszistázva, mégpedig a nagy Kovács Gergõ humorvezér által, aki maga a Kétfarkú Kutya Párt, és aki fel van háborodva, hogy a városbéli fideszesek MSZP-ügynöknek tekintik tevékenysége miatt. Õ persze nyugodtan lerasszistáz bárkit, elvégre a fideszesek lehetnek hülyék, de õ nem. Ezt a jelzõt egyébként az Indexnek adott <A HREF="http://index.hu/kultur/klassz/ketfarku/" TARGET="_new">interjújában</A> bátorkodott rám ragasztani, hozzátéve, hogy ezért nem áll velem szóba, pedig "hívogattam is telefonon" õt.
+<BR><BR>
+
+Az igazság ezzel szemben az, hogy valamikor tavasszal beszéltünk vagy kétszer, amikor a Zöld Párt-balhé volt, hátha beszáll õ is. Nem szállt, de egy szóval sem mondta, hogy valami baja lenne velem. Azóta nem beszéltünk, így nem volt nehéz nem szóba állnia velem.
+<BR><BR>
+
+Írtam neki egy e-mailt, és megkértem, hogy legyen szíves ezt a jelzõt egy sajtóközlemény formájában visszavonni, mert ez egyrészt alamusziság, másrészt az ilyesmiért perelni szoktam, és rühellnék egy "kollégát" bíróságra rángatni, akit ráadásul tisztelek is. Na, hát ez a tisztelet már a múlté, a kolléga ugyanis pökhendi stílusban azt írta vissza, hogy nyugodtan pereljem be, legfeljebb "a fél ország rajtam fog röhögni." Továbbá tudni kell, hogy "rosszul van" attól, amit én csinálok, és "csak sajnálni tud." Na, hát ezek után ne csodálkozzon, ha MSZP-ügynöknek tekintik, vagy inkább SZDSZ-esnek, hiszen a legprimitívebb vadliberálisok állnak így a véleménykülönbségekhez, nevezetesen hogy az ellenoldal mindig "undorító" és "csak sajnálni lehet."
+<BR><BR>
+
+Ezennel felszólítom a fél országot, hogy kezdjen röhögni, mert hétfõn megy a kereset a bíróságra. Kovács Gergõ vezetheti a röhögõkórust. Háromszázezres kártérítési összegrõl indulunk, plusz perköltség és idõarányos kamatok. Én ezen röhögök.
+<BR><BR>
+
+Egy darabig gondolkodtam, hogy felnyomjam-e a KRESZ táblák rendszeres rongálása (átragasztgatása) miatt is, amirõl jónéhány fényképet bemutatott az Index, de ez már tényleg kisstílû lenne. Foglalkozzon vele a rendõrség, ha akar.
+<BR><BR>
+
+A boltengine heves átalakításon megy keresztül, mert ez a szerver a békafingtól is megdöglik.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20061201.html">
+<B><< elõzõ nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20061203.html">
+<B>következõ nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+<BR><BR>
+
+</BODY>
+</HTML>
+
+

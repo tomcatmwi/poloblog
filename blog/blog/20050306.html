@@ -1,0 +1,113 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2005.03.06., vasárnap</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Levél érkezett a kerületi ügyészségt&otilde;l. A laptopos cigány ellen vádat emeltek. Egyel&otilde;re ennyi, tárgyalást még nem t&ucirc;ztek ki. Kíváncsi vagyok, lecsukják-e. Állítólag egy rakás ügye van ezen kívül is. Id&otilde;közben egy olvasóm is küldött róla egy képet, amit a házukbéli biztonsági kamera készített róla és két társáról, betörés közben.
+<BR><BR>
+
+Sokat segítene a "rendes cigányok" diszkriminációján, ha a b&ucirc;nöz&otilde;ket - fajra való tekintet nélkül - b&ucirc;nöz&otilde;ként lehetne kezelni. Nem lenne szükség arra, hogy a romákat válogatás nélkül kinézzék a boltokból, elhajtsák az éttermekb&otilde;l, ha biztosak lehetnénk benne, hogy az ilyen szemét b&ucirc;nöz&otilde;ket, mint ez a Lakatos György (igen, ez a neve) keményen megfingatják a hatóságok, vagy ha már akkor be lehetne törni a fejüket, amikor tetten érik, ha agyon lehetne &otilde;ket l&otilde;ni, amikor rátörnek egy alvó családra. De amíg a törvények és a rend&otilde;rség olyan, amilyen, és még mindenféle naiv jogvéd&otilde;k is sipákolnak, ha egy b&ucirc;nöz&otilde; cigányt elkapnak, abból csak ez lesz. Én meg maradok rasszista, amiért ilyeneket mondok.
+</P>
+<CENTER>
+<IMG SRC="20050306.gif">
+</CENTER>
+<P ALIGN="justify">
+No és mit olvasok a hírekben? Az EU engedélyezte a génmódosított kukorica termelését és felhasználását. Hálásan köszönjük, Brüsszel. Mintha épp ennek az ellenkez&otilde;jér&otilde;l lett volna szó egy évvel ezel&otilde;tt. No de mindegy: a dollármilliárdok többet érnek holmi rákos gyerekeknél, felborult ökoszisztémánál. Szerintem most kellene kilépni ebb&otilde;l a szarságból, amíg nem kés&otilde;.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050304.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050307.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

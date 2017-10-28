@@ -1,0 +1,118 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-332</B><BR>
+2005.04.09.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<BR><BR>
+
+Tegnapel&otilde;tti történetünkb&otilde;l valahogy kimaradt, hogy Gábor barátunk hogyan is bukott le a postarablás után, azaz pontosabban hogyan állapították meg a rend&otilde;rök, hogy a benzinkútnál lefényképezett alak azonos a rablóval. Az ugyanis sovány lett volna bizonyítéknak, hogy a rablás után látták a posta közelében. Nos, miután barátunk ügyesen elhúzott Thaiföldre, már mindenki tudta a történetet a lakótelepen. Egy házibuliban történt, hogy egy srác félrészegen, röhögve elmesélte a történetet, és történetesen akinek mesélte, épp az ügyre ráállított rend&otilde;rnyomozó volt. Kicsi a világ, na.
+<BR><BR>
+
+Ma esti történetünket Greed mesélte, de mivel írni nem tud, megint én leszek Remus bácsi, s továbbmondom nektek. Hol volt, hol nem volt, volt egyszer négy egyetemista. Egy szombat este nagyon lazák akartak lenni, elmentek hát kurvázni. Hamar találtak is egy kurvát, aki olcsó is volt, jól is nézett ki, de közölte, hogy mivel éppen pirosbet&ucirc;s ünnepe van, csak szopni hajlandó. Hát jó, legyen. Kiszolgálta mind a négy fiút becsülettel, megkapta a pénzét, majd, mivel az egyetemisták úriemberek, elindultak, hogy visszavigyék az útszélre, ahonnan elhozták. Mentek, mentek az éjszakában, egyszer csak leintette &otilde;ket egy rend&otilde;r.
+<BR><BR>
+
+- Jó estét, fokozott közúti ellen&otilde;rzés. Forgalmit, jogosítványt kérek, az utasoktól pedig személyi igazolványt... Á, szervusz Béla, megint dolgozol?
+<BR><BR>
+
+Utóbbit a kurvának mondta. Ugyanis &otilde; volt a Béla. A fiúk megnézték a személyijét is. Abban is Béla állt. No, kitették mindjárt szegény Bélát ott, ahol voltak, és igen nagy csendben autóztak haza. Állítólag megegyeztek, hogy err&otilde;l senkinek sem beszélnek, de valahogy mégis kiszivárgott a történet. Talán Béla vette zokon, hogy csak úgy kihajították.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050407.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050411.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

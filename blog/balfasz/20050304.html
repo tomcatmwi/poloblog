@@ -1,0 +1,131 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai')!= -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-310</B><BR>
+2005.03.03.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<BR><BR>
+
+Megint egy ment&otilde;s történet.
+<BR><BR>
+
+Réges-régen, amikor még lengyel gyártmányú Nysa ment&otilde;autókkal nyomult a ment&otilde;szolgálat, egy es&otilde;s éjszakán valami isten háta mögötti faluba riasztották &otilde;ket, egy háztartási baleset sérültjét ellátni. Szerencsére nem volt komoly a dolog, a beteget a helyszínen ellátták, majd elindultak haza. A zuhogó es&otilde;ben, a sáros földúton azonban megcsúszott a kocsi, és belefordultak az árokba. A két els&otilde; kerék belesüllyedt a sárba, a hátsó kerekek pedig a leveg&otilde;ben kalimpáltak.
+<BR><BR>
+
+Kiszálltak a ment&otilde;sök, néztek okosan, tanakodtak, mitév&otilde;k legyenek. Rádió akkoriban még nem volt a kocsiban, a mobiltelefonra meg még jó pár évet kellett volna várni. Addig ácsorogtak, míg arra nem tévedt egy parasztbácsi, a vállán csákánnyal.
+<BR><BR>
+
+- Hö! Hát csak nem beborultak az urak?<BR>
+- De, bizony be. Tudna segítséget hívni?<BR>
+- Nem köll ide segítség!
+<BR><BR>
+
+Azzal a markába köpött, meglóbálta a csákányt, és puff, belevágta a ment&otilde; gumijába. Az sziszegve adta ki a lelkét, a ment&otilde;sök meg elh&ucirc;lve nézték, mit m&ucirc;vel a tata. Biztosan jót akart, talán a kerék alá akart benyúlni, hogy megemelje a kocsit a csákánnyal, de hát elnézte a dolgot. Szemügyre vette az eredményt, majd vállára vette a csákányt, kissé zavartan megbökte a kalapját, és így szólt:
+<BR><BR>
+
+- Hát... Osztán további jó estét maguknak!
+<BR><BR>
+
+Azzal elsétált, és otthagyta a ment&otilde;söket, akik kétségbeesetten bámulták az immár nem csak árokba süllyedt, hanem egyúttal defektes Nysát, melynek ráadásul az alvázára volt rögzítve a pótkerék, és így hozzáférhetetlen volt.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050303.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050306.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

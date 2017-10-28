@@ -1,0 +1,120 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2006.06.23., péntek</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Megkezdõdött az ez évi buzifesztivál; ez szép és jó, amíg egymás között vannak, kibérelnek egy mozit, megnézik a róluk szóló filmeket, és elvannak magukban. Hanem ezek idén sem bírnak magukkal. Már megint úgy gondolják, muszáj lesz nekik végigmasírozni Budapesten, a színes gönceikben, a valagukat riszálva. Talán ha értenének a szép szóból, hogy ezt nem így kellene, de hát nem értenek. Nekik végig kell mászniuk az egész belvároson, hadd lássák õket. A segg a jövõ pinája, hát nem tudtátok?
+<BR><BR>
+
+Ezúton szeretném figyelmeztetni az illetékeseket, hogy ha ez a menet elindul, annak nagyon kellemetlen következményei lesznek. Olyasmi fog történni, amit nem tud megakadályozni ezer rendõr sem, hiába vonulnak a buzik mellett sorfalat állva. Már minden el van rendezve. Hiába kutatják végig az útvonalat ezerszer, hiába keresnek a tömegben gyanús egyéneket, már nem tehetnek semmit. És ha a dolog megtörtént, késõ lesz sírni meg sajnálkozni. Sokkal rosszabb lesz az, mint pár tojás és egy transzparens. Higgyétek el, nem szoktam a levegõbe beszélni. Most még lefújhatjátok ezt az ocsmány parádét. Ha elindultok, már késõ. Én szóltam.
+<BR><BR>
+
+Egyetlen módon kerülhetitek el a balhét. Ha a hivalkodó, magamutogató, visszataszító tüntetés helyett tisztességes emberként jelentek meg, hétköznapi ruhában, és nem büszkék, hanem szerények lesztek. Ha nem színes tüllruhás, bõrnadrágos buziköcsögöket látunk, hanem ugyanolyan embereket, mint mi magunk. Ha nem tolakodva követeltek, hanem megköszönitek azt, amit a többségtõl kaptok, és nem kitûnni akartok, hanem beilleszkedni.
+<BR><BR>
+
+Ha erre nem vagytok képesek, jobb, ha most azonnal elfelejtitek a felvonulást. Mondom, nem lesz jó vége. A többség nem tûr örökké. 
+<BR><BR>
+
+Egyébként ügyes trükk volt az utolsó pillanatban megváltoztatni az útvonalat, de mi is számítottunk erre. Teljesen mindegy, merre mentek.
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060622.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060624.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

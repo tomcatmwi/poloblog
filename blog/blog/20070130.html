@@ -1,0 +1,119 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>2007.01.30., kedd</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Megjöttem. Prága gyönyörû. Vannak róla szép képek, és van útiblog is, de sajnos a laptopon, ami bent maradt a boltban. Ezt tehát csak késõbb kapjátok meg, helyette kaptok "remek" hírt: az a "100% free" poll engine, amivel a múltkori közvélemény-kutatást csináltam, "természetesen" egyáltalán nem free, csak ezt nem közölték a fõoldalon. Az elsõ ötven válasz, az ingyenes, utána fizetni kell, és akkor ezer választ is tárol. Na ja, ezret, csakhogy nekem már másnap 2000 válaszom volt, mostanra pedig 3700 körül... A helpdesk sajnálkozva közölte, hogy sajnos "ilyen nagy mennyiségû adatot" még pénzért sem bírnak tárolni, bocs. Kurva anyjukat. Köszönöm tehát, kedves olvasóim, hogy kitöltöttétek a kérdõívet, kár, hogy kurvára nem tudtam meg belõle semmit, csak azt, hogy jó sokan vagytok. Majd valamelyik nap megírom saját magam ezt a kurva kérdõívet, és akkor majd kitölthetitek újra. Kurvára örülök.
+<BR><BR>
+
+Prágából hazaérkezve mindjárt a jog útvesztõibe csöppentem. Érkezett egy értesítés, hogy az ügyészség meghosszabbítja a nyomozást a tévéostromban való szerepemet illetõen, vagyis hogy elkövettem-e a hivatalos személy elleni csoportos erõszakot vagy sem. Most szakértõt vonnak be, Dr. Gaudi-Nagy Tamás szerint valószínûleg képszakértõt, aki majd megmondja, hogy én vagyok-e a tévénél készült fényképeken vagy sem. Vajon hogyan dolgozik egy ilyen szakértõ? Belezoomol a képbe, és megmondja, az a két pixel én vagyok-e vagy sem? Mi alapján? Úgy látszik, a hatóság most görcsösen kapar, hogy valakit végre elítélhessenek. Érdekes, milyen komolyan elemeznek most közönséges sajtófotókat, sõt, amatõr fényképeket, amikor más esetben a biztonsági kamerák felvételein jól felismerhetõ elkövetõket felmentik azzal, hogy a kamera "nem hitelesített nyomozási eszköz." Tudok egynéhány esetrõl, amikor a Lehel tér környéki házakat fosztogató cigányokról garmadával készültek a kamerafelvételek, és a rendõrség figyelembe sem vette azokat.
+<BR><BR>
+
+Én magam is perelgetek csendesen, magamban. Egyrészt beadtam egy keresetet bizonyos Rózsa Misi ellen, aki az SZDSZ tisztségviselõjeként különféle hazugságokat terjeszt rólam a neten, mint például, hogy nem jártam iskolába, meg büntetett elõéletû vagyok, és így tovább. Mondtam a csókának, hogy fejezze be, de csak vöröslõ fejjel nácirasszistázott, és kikérte magának, hogy fenyegessem. No, hát majd megnézzük, a bíróságon milyen színû lesz a feje. Õ volt az egyébként, aki Demszky megtortázásánál hátulról el akart gáncsolni, aztán nagyon meghúzta magát, amikor pofon iránti vágyairól kérdeztem. (Õ persze erre úgy emlékszik, hogy én bénán belebotlottam a lábába, mert a nácirasszisták ilyen hülyék, hogy járni se tudnak egyenesen.) Egy másik keresetet pedig Trychydts barátunk és a Népszabadság ellen adtam be, nyilván érthetõ okból. Ugyanakkor rágalmazás minõsített esetének alapos gyanúja miatt rendõrségi feljelentést is tettem. Rágalmazás vétségének minõsül ugyanis, ha valakirõl valótlanságot állítanak, és annak egytõl két évig terjedõ szabadságvesztéssel büntethetõ minõsített esete áll fenn, ha azt nagy nyilvánosság elõtt, aljas indokból és súlyos érdeksérelmet okozva követik el. Kíváncsi leszek, ezúttal milyen hamis tanúkat rángat majd elõ a Népszabadság, és hogyan próbálják majd bebizonyítani, hogy õk igenis látták, ahogy vadul zsidózva vertem Balás Márk fejét a lépcsõház falába, elõzõleg felmutatva bõrdzsekim minõségi tanúsítványát. A bíróság nyilván külön értékelni fogja, hogy az alperes nemrég vesztett ellenem egy igen súlyos pert, és annak sem teljesítette a bírói határozatban elõírt rendelkezéseit. Délután még beugrottam a Szalay utcai rendõrségre is, vallomást tenni a bíróságon keménykedõ cigány ellen. Csoportos garázdaság minõsített esete, hej-haj, szorul a hurok, Lákátos tezsvír. Legalább rendesen megütöttél volna, de még ahhoz is hülye vagy... A rendõrök mondták, hogy a smasszer, aki leállította a verekedõ cigányokat, ismerte az egész családot. "Együtt jártak egyetemre", tette hozzá magyarázkodóan az egyik nyomozó.
+<BR><BR>
+
+Öröm és boldogság tehát, kedves olvasóim, az élet tovább csörgedezik a megszokott kanálisában. Elõbb-utóbb saját lakosztályt bérelek a bíróság épületében. Berta kutya üdvözöl mindenkit, jól elhájasodott a kutyapanzióban. Hja, igen, az õ szobájában tartották a száraztápos zsákot.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20070124.html">
+<B><< elõzõ nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20070202.html">
+<B>következõ nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+<BR><BR>
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,118 @@
+<HTML>
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-269</B><BR>
+2005.01.17.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<BR><BR>
+
+No, már megint nem emlékszem a forrásra. Egy olvasóm valamelyik nyáron egy nagy hipermarketben dolgozott. Nem azért nem írom ki a cég nevét, mert diszkréció, meg nem reklámozunk, hanem mert nem emlékszem. Lehet Tesco, Cora, Auchan, mindegy.
+<BR><BR>
+
+Szóval történt egyszer, hogy ebben az áruházban jelentéktelen t&ucirc;z ütött ki. A sarokban összegy&ucirc;jtött kartondobozok és papírszemét közé valaki cigarettacsikket dobhatott, azok pedig meggyulladtak. Nem lett azonban nagy baj, észrevették, hogy füstöl, odarohant valaki és eltaposta. Ment is volna mindenki a dolgára, ám hirtelen megjelent a színen a m&ucirc;szakvezet&otilde;, pattogó hangon mindenkit visszaparancsolt, és közölte, hogy mivel az áruházban t&ucirc;z ütött ki, ezért most a t&ucirc;zvédelmi szabályzatnak megfelel&otilde;en bezárnak, és az eladótérben található <I>összes</I> élelmiszert közegészségügyi okokból leselejtezik!! És így is lett: több tízmillió forint érték&ucirc; ételt dobtak ki, csupán azért, mert száz méterrel arrébb meggyulladt egy kartondoboz. Mert az el&otilde;írás az el&otilde;írás!
+<BR><BR>
+
+Érdekes módon a vezet&otilde;ség jóváhagyólag bólintott a m&ucirc;szakvezet&otilde; ötletére. Nem, nem azért, mert így akarták lenyúlni az árukészletet! Azt nem nyúlta le senki, ömlesztve vitték el a teherautók a veszélyeshulladék-megsemmisít&otilde;be. Ellenben az egyik raktáros srácot, aki el mert csórni egy doboz sört a szemétnek nyilvánított készletb&otilde;l, azonnali hatállyal elbocsátották. Gratulálunk!
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050115.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050118.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

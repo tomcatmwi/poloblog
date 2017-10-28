@@ -1,0 +1,113 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2005.01.28., péntek</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Azt írja az Index, hogy:
+<BR><BR>
+
+<I>A rend&otilde;rség tavaly novemberben el&otilde;állította Paizs Miklós zenészt, mert egy kereskedelmi rádió m&ucirc;sorában (a Budapest Rádióban) olyan kijelentéseket tett, "melyek alkalmasak arra, hogy a lakosság egyes csoportjai ellen gy&ucirc;löletre uszítsanak" - indokolta a rend&otilde;rség a megalapozott gyanú miatt elrendelt nyomozást. A héten azonban telefonon közölték Paizzsal, hogy megszüntették ellene az eljárást.</I>
+<BR><BR>
+
+Mármost távol álljon t&otilde;lem bármiféle rosszindulat Sickratman irányában, avagy azt se higgye senki, hogy a "dalában" megénekelt politikusokat kívánom védeni, de ez nem más, mint jogi precedens, mely arra mutat, hogy Magyarországon büntetlenül lehet nyíltan gyilkosságra agitálni. Ezek szerint ha én holnaptól elkezdenék polókat gyártani, teszem azt, <I>öljük meg a zsidókat</I> felirattal, akkor ez alapján hivatkozhatok ugyanarra, mint Paizs Miklós, hogy ez, kérem, m&ucirc;vészet, és nem gondolom komolyan. De ezek után a kedves jogalkotóknak egy büdös szavuk nem lehet Bácsfi Diana plakátjai és nézetei ellen sem.
+<BR><BR>
+
+No persze, ebb&otilde;l a mai blogból is egy csomó balfasznak az fog lejönni, hogy antiszemita vagyok. Jól van, persze, biztos.
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050127.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

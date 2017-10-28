@@ -1,0 +1,110 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2005.03.10., csütörtök</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Épp a korrupt rend&otilde;r fejéhez nyomtam a pisztolyt, amikor csipogni kezdett a telefon és felébredtem. Egy párhuzamos dimenzióban mégsem gy&otilde;zött az igazság. Kár. Felkeltem, a szakállnyíróval egy kicsit visszavettem az arcomból, majd elmentem a rend&otilde;rpalotába. SZÁMÍTÓGÉPEK ÉS RÉSZEG SÉGEK ÁLLAMI TÁMOGATÁSSAL, kiabálta a falról egy reklámtábla.
+<BR><BR>
+
+Két roppant készséges alezredes és egy százados felvilágosítottak a köztéri gyülekezés szabályairól, a H&otilde;sök terére vonatkozó speciális rendelkezésekr&otilde;l, majd tisztáztuk, mit is akarok tulajdonképpen, s végül rákerült a pecsét a megfelel&otilde; papírokra. Szóval megkaptuk a zengedéjjt a tanáccs részirül. Mehetünk megemlékezni! Este majd összedobok egy weboldalt, amin fent lesznek mindenféle kinyomtatható szórólapok, plakátok. Továbbra is várjuk szervez&otilde;k jelentkezését. A rend&otilde;rök legalább húsz f&otilde;t javasoltak, de egyel&otilde;re csak hatan vagyunk. Aki jön, kap szervez&otilde;i polót. No és persze még mindig várjuk az adományokat! Eddig 25,000 forint gy&ucirc;lt össze, de ez még nem elég. Aki adakozni szeretne, kattintson a linkre az oldal alján.
+<BR><BR>
+
+Most éppen meghívót írok a német, az orosz, az amerikai, az angol és a román követségeknek. A Honvédséggel is beszélnem kell, mert a H&otilde;sök Emlékköve - ugyanis ez a neve az emlékm&ucirc;nek, és nem Ismeretlen Katona Emlékm&ucirc;ve - az &otilde; kezelésükbe tartozik. No meg mennek a meghívók újságoknak, tévéknek. Szóval elvagyok, majdcsak lesz valami.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050309.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,478 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+</SCRIPT>
+<style type="text/css">
+.menutitle{
+cursor:pointer;
+margin-bottom: 1px;
+background-color:#954F51;
+color:#FFFFFF;
+width:140px;
+padding:2px;
+text-align:center;
+font-weight:;
+/*/*/border:1px solid #000000;/* */
+}
+
+.submenu{
+margin-bottom: 0.5em;
+}
+</style>
+
+<script type="text/javascript">
+
+/***********************************************
+* Switch Menu script- by Martial B of http://getElementById.com/
+* Modified by Dynamic Drive for format & NS4/IE4 compatibility
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+var persistmenu="yes" //"yes" or "no". Make sure each SPAN content contains an incrementing ID starting at 1 (id="sub1", id="sub2", etc)
+var persisttype="sitewide" //enter "sitewide" for menu to persist across site, "local" for this page only
+
+if (document.getElementById){ //DynamicDrive.com change
+document.write('<style type="text/css">\n')
+document.write('.submenu{display: none;}\n')
+document.write('</style>\n')
+}
+
+function SwitchMenu(obj){
+	if(document.getElementById){
+	var el = document.getElementById(obj);
+	var ar = document.getElementById("masterdiv").getElementsByTagName("span"); //DynamicDrive.com change
+		if(el.style.display != "block"){ //DynamicDrive.com change
+			for (var i=0; i<ar.length; i++){
+				if (ar[i].className=="submenu") //DynamicDrive.com change
+				ar[i].style.display = "none";
+			}
+			el.style.display = "block";
+		}else{
+			el.style.display = "none";
+		}
+	}
+}
+
+function get_cookie(Name) { 
+var search = Name + "="
+var returnvalue = "";
+if (document.cookie.length > 0) {
+offset = document.cookie.indexOf(search)
+if (offset != -1) { 
+offset += search.length
+end = document.cookie.indexOf(";", offset);
+if (end == -1) end = document.cookie.length;
+returnvalue=unescape(document.cookie.substring(offset, end))
+}
+}
+return returnvalue;
+}
+
+function onloadfunction(){
+if (persistmenu=="yes"){
+var cookiename=(persisttype=="sitewide")? "switchmenu" : window.location.pathname
+var cookievalue=get_cookie(cookiename)
+if (cookievalue!="")
+document.getElementById(cookievalue).style.display="block"
+}
+}
+
+function savemenustate(){
+var inc=1, blockid=""
+while (document.getElementById("sub"+inc)){
+if (document.getElementById("sub"+inc).style.display=="block"){
+blockid="sub"+inc
+break
+}
+inc++
+}
+var cookiename=(persisttype=="sitewide")? "switchmenu" : window.location.pathname
+var cookievalue=(persisttype=="sitewide")? blockid+";path=/" : blockid
+document.cookie=cookiename+"="+cookievalue
+}
+
+if (window.addEventListener)
+window.addEventListener("load", onloadfunction, false)
+else if (window.attachEvent)
+window.attachEvent("onload", onloadfunction)
+else if (document.getElementById)
+window.onload=onloadfunction
+
+if (persistmenu=="yes" && document.getElementById)
+window.onunload=savemenustate
+
+</script>
+</HEAD>
+<BODY ONLOAD="preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=0 TOPMARGIN=0>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>TARTALOMJEGYZÉK</B><BR>
+<BR>
+  
+Hogy tudjál benne keresni, te kis buta.
+<BR><BR>
+
+<B>blog ::</B> <A HREF="tartalom_droid.html">droidzóna</A> <B>::</B> <A HREF="tartalom_level.html">olvasói levelek</A>
+  <!-- Keep all menus within masterdiv-->
+<div id="masterdiv">
+
+	<div class="menutitle" onclick="SwitchMenu('sub1')">
+    <div align="left">2004. február</div>
+  </div>	
+  <span class="submenu" id="sub1">
+  - <A HREF="blog/blog/20040207.html">2004.02.07</A> - Megnyitó beszéd<BR>
+  - <A HREF="blog/blog/20040208.html">2004.02.08</A> - Kis monológ a forgó óráról<BR>
+  - <A HREF="blog/blog/20040209.html">2004.02.09</A> - Semmi különös<BR>
+  - <A HREF="blog/blog/20040210.html">2004.02.10</A> - Pár hír a boltról<BR>
+  - <A HREF="blog/blog/20040211.html">2004.02.11</A> - Parasztállat reggel fél hétkor fúr<BR>
+  - <A HREF="blog/blog/20040212.html">2004.02.12</A> - UPC ügyfélszolgálat anyázás<BR>
+  - <A HREF="blog/blog/20040213.html">2004.02.13</A> - Nyugis nap, pár új CD érkezett<BR>
+  - <A HREF="blog/blog/20040214.html">2004.02.14</A> - Nyugis nap, és egy remek demó<BR>
+  - <A HREF="blog/blog/20040215.html">2004.02.15</A> - Egy hideg nap, amin nem történik semmi<BR>
+  - <A HREF="blog/blog/20040216.html">2004.02.16</A> - Bemutatkozik a Móricz Zsigmond körtér<BR>
+  - <A HREF="blog/blog/20040217.html">2004.02.17</A> - Ma nem volt idõm írni<BR>
+  - <A HREF="blog/blog/20040218.html">2004.02.18</A> - Anett gazdit keres, készülnek a CS polók, Variform<BR>
+  - <A HREF="blog/blog/20040219.html">2004.02.19</A> - Kurva anyját a PC iparnak!<BR>
+  - <A HREF="blog/blog/20040220.html">2004.02.20</A> - Képriport egy nagy áramszünetrõl<BR>
+  - <A HREF="blog/blog/20040221.html">2004.02.21</A> - A gépesített borítékcímzés bevezetésének napja<BR>
+  - <A HREF="blog/blog/20040222.html">2004.02.22</A> - 10 éves unokahúgom története drogos osztálytársáról<BR>
+  - <A HREF="blog/blog/20040223.html">2004.02.23</A> - Micóék nem kapnak bankkölcsönt<BR>
+  - <A HREF="blog/blog/20040224.html">2004.02.24</A> - Saxoo London<BR>
+  - <A HREF="blog/blog/20040225.html">2004.02.25</A> - A halak kínzásáról és az állatvédelmi törvényrõl röviden<BR>
+  - <A HREF="blog/blog/20040226.html">2004.02.26</A> - Kis kesergés a demoscene-rol, és pár demó<BR>
+  - <A HREF="blog/blog/20040227.html">2004.02.27</A> - Egy rákos kisfiúról, akirõl azóta sem hallottam<BR>
+  - <A HREF="blog/blog/20040228.html">2004.02.28</A> - Csacsogás arról, hogy milyen polót gyártunk legközelebb</span> 
+  
+  <div class="menutitle" onclick="SwitchMenu('sub2')">
+    <div align="left">2004. március</div>
+  </div>	
+  <span class="submenu" id="sub2">
+  - <A HREF="blog/blog/20040301.html">2004.03.01</A> - Eseménytelen nap<BR>
+  - <A HREF="blog/blog/20040302.html">2004.03.02</A> - A nagy cégek mûködésképtelen termékeirõl<BR>
+  - <A HREF="blog/blog/20040303.html">2004.03.03</A> - Lehet-e Magyarországon munkát találni? Nem lehet.<BR>
+  - <A HREF="blog/blog/20040304.html">2004.03.04</A> - Gyertek béketüntetésre!<BR>
+  - <A HREF="blog/blog/20040305.html">2004.03.05</A> - Isaac Asimov életmûvének meggyalázása<BR>
+  - <A HREF="blog/blog/20040307.html">2004.03.07</A> - Az Átjáró Nap egy rakás szar volt<BR>
+  - <A HREF="blog/blog/20040308.html">2004.03.08</A> - Elfogadták az állatvédelmi törvényt!<BR>
+  - <A HREF="blog/blog/20040309.html">2004.03.09</A> - Az 1977 után születettek lesajnálása<BR>
+  - <A HREF="blog/blog/20040310.html">2004.03.10</A> - Bornírt nap<BR>
+  - <A HREF="blog/blog/20040311.html">2004.03.11</A> - Egy szép hosszú mondat arról, hogy mindenki dögöljön meg<BR>
+  - <A HREF="blog/blog/20040312.html">2004.03.12</A> - Az iskolarendszer kritizálása<BR>
+  - <A HREF="blog/blog/20040313.html">2004.03.13</A> - Katyvasz<BR>
+  - <A HREF="blog/blog/20040314.html">2004.03.14</A> - A <I>lófasz a seggedbe</I> kifejezés nyelvi gyökereirõl<BR>
+  - <A HREF="blog/blog/20040315.html">2004.03.15</A> - Március 15.-ére<BR>
+  - <A HREF="blog/blog/20040316.html">2004.03.16</A> - Kicsi, rózsaszín papírcsíkok<BR>
+  - <A HREF="blog/blog/20040317.html">2004.03.17</A> - Hát ez kurvára nem érdekes<BR>
+  - <A HREF="blog/blog/20040318.html">2004.03.18</A> - Egy meleg és unalmas pénteki nap<BR>
+  - <A HREF="blog/blog/20040319.html">2004.03.19</A> - Egy napom a polóboltban<BR>
+  - <A HREF="blog/blog/20040320.html">2004.03.20</A> - Kalandtúra a Vörös Csepelben<BR>
+  - <A HREF="blog/blog/20040321.html">2004.03.21</A> - Béketüntetés a Hõsök terén<BR>
+  - <A HREF="blog/blog/20040322.html">2004.03.22</A> - Lófaszmindenkibe<BR>
+  - <A HREF="blog/blog/20040323.html">2004.03.23</A> - Vállalkozz Te is!<BR>
+  - <A HREF="blog/blog/20040324.html">2004.03.24</A> - A tegnapi Doom-rejtvény megfejtése és egy levél az UPC-nek<BR>
+  - <A HREF="blog/blog/20040325.html">2004.03.25</A> - Budapest régen és ma, Hamster képeivel<BR>
+  - <A HREF="blog/blog/20040326.html">2004.03.26</A> - Tavasz van...<BR>
+  - <A HREF="blog/blog/20040327.html">2004.03.27</A> - Berta elszökött, de megkerült<BR>
+  - <A HREF="blog/blog/20040328.html">2004.03.28</A> - Nagytakarítás, illetve mi az, hogy picsogás?<BR>
+  - <A HREF="blog/blog/20040329.html">2004.03.29</A> - Fordított CS polók<BR>
+  - <A HREF="blog/blog/20040330.html">2004.03.30</A> - Boldog ... napot!<BR>
+  - <A HREF="blog/blog/20040331.html">2004.03.31</A> - Elmélkedés az Irakban szolgáló magyar katonákról</span><span class="submenu" id="sub1"></span> 
+  
+  <div class="menutitle" onclick="SwitchMenu('sub3')">
+    <div align="left">2004. április</div>
+  </div>	
+  <span class="submenu" id="sub3">
+  - <A HREF="blog/blog/20040401.html">2004.04.01</A> - Nincs blog!<BR>
+  - <A HREF="blog/blog/20040402.html">2004.04.02</A> - Egy tavaszi nap három képe<BR>
+  - <A HREF="blog/blog/20040403.html">2004.04.03</A> - Kirándulás<BR>
+  - <A HREF="blog/blog/20040404.html">2004.04.04</A> - Dolgos vasárnap<BR>
+  - <A HREF="blog/blog/20040405.html">2004.04.05</A> - Egy szupermarket képei<BR>
+  - <A HREF="blog/blog/20040406.html">2004.04.06</A> - Unokahúgom eszmefuttatása, kis Vodafone anyázás és egy cigisdoboz<BR>
+  - <A HREF="blog/blog/20040407.html">2004.04.07</A> - Hamarosan megyünk Németországba. Ha sikerül...<BR>
+  - <A HREF="blog/blog/20040415.html">2004.04.15</A> - Vinyófûrészelés, elmélkedés a subwooferek áráról<BR>
+  - <A HREF="blog/blog/20040416.html">2004.04.16</A> - Elveszett a kis kamerám! :(<BR>
+  - <A HREF="blog/blog/20040417.html">2004.04.17</A> - Új kamera, sajtszószos krumpli, elmélkedés a nyitvatartási idõrõl<BR>
+  - <A HREF="blog/blog/20040418.html">2004.04.18</A> - Breakpoint party report!<BR>
+  - <A HREF="blog/blog/20040419.html">2004.04.19</A> - A Postának vége!<BR>
+  - <A HREF="blog/blog/20040421.html">2004.04.21</A> - A Világ Legszebb Embere és a hajdúsító sampon<BR>
+  - <A HREF="blog/blog/20040422.html">2004.04.22</A> - Csak röviden<BR>
+  - <A HREF="blog/blog/20040423.html">2004.04.23</A> - EU-s poló, és egy régi SZDSZ reklám<BR>
+  - <A HREF="blog/blog/20040424.html">2004.04.24</A> - Tök érdektelen<BR>
+  - <A HREF="blog/blog/20040425.html">2004.04.25</A> - Én és a verebek<BR>
+  - <A HREF="blog/blog/20040426.html">2004.04.26</A> - E-mail a szlovák hadseregnek. Commodore polók.<BR>
+  - <A HREF="blog/blog/20040427.html">2004.04.27</A> - Büdös a postás. Kizártam magam. Államadósságom van.<BR>
+  - <A HREF="blog/blog/20040428.html">2004.04.28</A> - Alvászavar, rajzpályázat, EU csatlakozás, hülye parasztok.<BR>
+  - <A HREF="blog/blog/20040429.html">2004.04.29</A> - Közérdekû közlemény a korábbi rendelésekrõl<BR>
+  - <A HREF="blog/blog/20040430.html">2004.04.30</A> - Eucsati</span><span class="submenu" id="sub1"></span><span class="submenu" id="sub3"><br>
+  </span> 
+  
+  <div class="menutitle" onclick="SwitchMenu('sub4')">
+    <div align="left">2004. május</div>
+  </div>
+  <span class="submenu" id="sub4">
+  - <A HREF="blog/blog/20040501.html">2004.05.01</A> - Eucsati 2.<BR>
+  - <A HREF="blog/blog/20040502.html">2004.05.02</A> - A Turbo Pascal a magyar közoktatásban<BR>
+  - <A HREF="blog/blog/20040503.html">2004.05.03</A> - A görnyedt koldusasszonyok katonai alkalmazásáról<BR>
+  - <A HREF="blog/blog/20040504.html">2004.05.04</A> - Rajzpályázatunk eredményhirdetése<BR>
+  - <A HREF="blog/blog/20040505.html">2004.05.05</A> - Westelnél jártam, balkáni állapotokat láttam<BR>
+  - <A HREF="blog/blog/20040506.html">2004.05.06</A> - Rövid blog utazás elõtt<BR>
+  - <A HREF="blog/blog/20040507.html">2004.05.07</A> - Rövid blog utazás helyett<BR>
+  - <A HREF="blog/blog/20040508.html">2004.05.08</A> - Nincs blog, novella van<BR>
+  - <A HREF="blog/blog/20040509.html">2004.05.09</A> - Képes beszámoló a kendernapi tüntetésrõl<BR>
+  - <A HREF="blog/blog/20040510.html">2004.05.10</A> - Az alattomos falafel, nyaralási terv, fényképek és egy gyilkosság<BR>
+  - <A HREF="blog/blog/20040511.html">2004.05.11</A> - Mindcandy, porszívó, Berta meg parázik<BR>
+  - <A HREF="blog/blog/20040512.html">2004.05.12</A> - Mazsolakérdés és néhány új poló<BR>
+  - <A HREF="blog/blog/20040513.html">2004.05.13</A> - Pár szó az amerikai rakétavédelmi rendszerrõl<BR>
+  - <A HREF="blog/blog/20040514.html">2004.05.14</A> - Jelentsük fel a Tesco-t!<BR>
+  - <A HREF="blog/blog/20040515.html">2004.05.15</A> - Jelentsünk fel mindenkit<BR>
+  - <A HREF="blog/blog/20040516.html">2004.05.16</A> - Gyûlöletbeszélek<BR>
+  - <A HREF="blog/blog/20040517.html">2004.05.17</A> - Az magyarok dicsõ multjárul<BR>
+  - <A HREF="blog/blog/20040518.html">2004.05.18</A> - Halál a reklámterjesztõkre. Berta galambot fog.<BR>
+  - <A HREF="blog/blog/20040519.html">2004.05.19</A> - A Sátán egy pizzafutár<BR>
+  - <A HREF="blog/blog/20040520.html">2004.05.20</A> - A Vodafone bekaphatja<BR>
+  - <A HREF="blog/blog/20040521.html">2004.05.21</A> - Néhány új poló, és még pár szó egy bizonyos embercsoportról<BR>
+  - <A HREF="blog/blog/20040522.html">2004.05.22</A> - Halfényképezés droidokkal<BR>
+  - <A HREF="blog/blog/20040523.html">2004.05.23</A> - Készül a <I>Midway...</I><BR>
+  - <A HREF="blog/blog/20040524.html">2004.05.24</A> - Hajléktalan fekszik a csengõn, Bill Gates a blogokról áradozik, Juhász Ferike pedig repül (de sajnos csak virtuálisan)<BR>
+  - <A HREF="blog/blog/20040525.html">2004.05.25</A> - Dream Theater, polóátadás, droidok...<BR>
+  - <A HREF="blog/blog/20040526.html">2004.05.26</A> - A magyar "design szakmáról"<BR>
+  - <A HREF="blog/blog/20040527.html">2004.05.27</A> - Kibõl lehet motoros rendõr?<BR>
+  - <A HREF="blog/blog/20040528.html">2004.05.28</A> - Hídmájléc<BR>
+  - <A HREF="blog/blog/20040529.html">2004.05.29</A> - Windows kék halál és a <I>Comandante</I> címû film<BR>
+  - <A HREF="blog/blog/20040530.html">2004.05.30</A> - Háromnapos ünnep, elmélkedés a nukleáris biztonságról<BR>
+  - <A HREF="blog/blog/20040531.html">2004.05.31</A> - Szekszárdi nemkéjutazás</span><span class="submenu" id="sub1"></span><span class="submenu" id="sub4"><br>
+  </span>
+  
+  <div class="menutitle" onclick="SwitchMenu('sub5')">
+    <div align="left">2004. június</div>
+  </div>	
+  <span class="submenu" id="sub5">
+  - <A HREF="blog/blog/20040601.html">2004.06.01</A> - Helyreigazítás. Mi az az offshore?<BR>
+  - <A HREF="blog/blog/20040602.html">2004.06.02</A> - Új futárszolgálat<BR>
+  - <A HREF="blog/blog/20040603.html">2004.06.03</A> - Droid a Lehel téren<BR>
+  - <A HREF="blog/blog/20040604.html">2004.06.04</A> - Miért váltottunk futárszolgálatot?<BR>
+  - <A HREF="blog/blog/20040605.html">2004.06.05</A> - Monológ a kínai kajáról<BR>
+  - <A HREF="blog/blog/20040606.html">2004.06.06</A> - Megint az iraki küldetésrol...<BR>
+  - <A HREF="blog/blog/20040607.html">2004.06.07</A> - Gay Pride, demagógia és Béres Robika felbukkanása<BR>
+  - <A HREF="blog/blog/20040608.html">2004.06.08</A> - Tesco feljelentés, valamint önkénteseket keresünk<BR>
+  - <A HREF="blog/blog/20040609.html">2004.06.09</A> - Honnan veszem, amit írok?<BR>
+  - <A HREF="blog/blog/20040610.html">2004.06.10</A> - Kik azok a magyar hõsök?<BR>
+  - <A HREF="blog/blog/20040611.html">2004.06.11</A> - Közvélemény-kutatás<BR>
+  - <A HREF="blog/blog/20040614.html">2004.06.14</A> - A közvélemény-kutatás eredménye<BR>
+  - <A HREF="blog/blog/20040615.html">2004.06.15</A> - El vagyok hízva, és felrúgtam egy hajléktalant<BR>
+  - <A HREF="blog/blog/20040617.html">2004.06.17</A> - SIAD 2004 beszámoló!<BR>
+  - <A HREF="blog/blog/20040618.html">2004.06.18</A> - Mire jó az Internet?<BR>
+  - <A HREF="blog/blog/20040619.html">2004.06.19</A> - Fõzõcske<BR>
+  - <A HREF="blog/blog/20040620.html">2004.06.20</A> - Eltûnt egy lány<BR>
+  - <A HREF="blog/blog/20040621.html">2004.06.21</A> - Mi lett egykori osztálytársaimból?<BR>
+  - <A HREF="blog/blog/20040622.html">2004.06.22</A> - Villanások<BR>
+  - <A HREF="blog/blog/20040623.html">2004.06.23</A> - Nyár van...<BR>
+  - <A HREF="blog/blog/20040624.html">2004.06.24</A> - A beszélgetõs ember. Mi legyen a forgatókönyvemmel?<BR>
+  - <A HREF="blog/blog/20040625.html">2004.06.25</A> - Miért nem lehet árusítani az eBay-en?<BR>
+  - <A HREF="blog/blog/20040626.html">2004.06.26</A> - A mocskos hajléktalanokról<BR>
+  - <A HREF="blog/blog/20040627.html">2004.06.27</A> - A Fegyelem Utolsó Harcosai<BR>
+  - <A HREF="blog/blog/20040628.html">2004.06.28</A> - Verekedés a szomszédban, rendõri kivonulással<BR>
+  - <A HREF="blog/blog/20040629.html">2004.06.29</A> - A tegnapi verekedés utóhangjai. Közgáz. Lehel tér.<BR>
+  - <A HREF="blog/blog/20040630.html">2004.06.30</A> - Hová lett a forgalom?</span><span class="submenu" id="sub1"></span><span class="submenu" id="sub5"><br>
+  </span> 
+  
+  <div class="menutitle" onclick="SwitchMenu('sub6')">
+    <div align="left">2004. július</div>
+  </div>	
+  <span class="submenu" id="sub6">
+  - <A HREF="blog/blog/20040701.html">2004.07.01</A> - Csupa jó hír!<BR>
+  - <A HREF="blog/blog/20040702.html">2004.07.02</A> - Készülünk a melegfelvonulásra<BR>
+  - <A HREF="blog/blog/20040703.html">2004.07.03</A> - Melegfelvonulás után<BR>
+  - <A HREF="blog/blog/20040704.html">2004.07.04</A> - Képriport a melegfelvonulásról. Egy modellválogatás.<BR>
+  - <A HREF="blog/blog/20040705.html">2004.07.05</A> - Megint verekednek a szomszédban<BR>
+  - <A HREF="blog/blog/20040707.html">2004.07.07</A> - Egy nap felvillanásai<BR>
+  - <A HREF="blog/blog/20040708.html">2004.07.08</A> - Menjünk hirtelen Lengyelországba!<BR>
+  - <A HREF="blog/blog/20040713.html">2004.07.13</A> - Symphony 2004 partyreport<BR>
+  - <A HREF="blog/blog/20040714.html">2004.07.14</A> - Bertát bejelentik. Új polók. Lopás. C-64 party.<BR>
+  - <A HREF="blog/blog/20040715.html">2004.07.15</A> - Polótervezés. Berta galambot fogott.<BR>
+  - <A HREF="blog/blog/20040716.html">2004.07.16</A> - Találkozás egy idõs úrral<BR>
+  - <A HREF="blog/blog/20040717.html">2004.07.17</A> - A jehovistákról. Szombat esti szórakozás.<BR>
+  - <A HREF="blog/blog/20040718.html">2004.07.18</A> - Egy baszott unalmas vasárnap<BR>
+  - <A HREF="blog/blog/20040719.html">2004.07.19</A> - Kórházlátogatás, valamit a kurva anyját az UPC-nek!<BR>
+  - <A HREF="blog/blog/20040720.html">2004.07.20</A> - EFOTT? Nem EFOTT.</span><span class="submenu" id="sub1"></span><span class="submenu" id="sub6"><br>
+  </span> 
+  
+  <div class="menutitle" onclick="SwitchMenu('sub7')">
+    <div align="left">2004. augusztus</div>
+  </div>	
+  <span class="submenu" id="sub7">
+  - <a href="">pill</a> - hamarosan<br>
+  - <a href="">pilll</a> - türelem</span><span class="submenu" id="sub1"></span><span class="submenu" id="sub7"><br>
+  </span> 
+  
+  <div class="menutitle" onclick="SwitchMenu('sub8')">
+    <div align="left">2004. szeptember</div>
+  </div>	
+  <span class="submenu" id="sub8">
+  - <a href="">pill</a> - hamarosan<br>
+  - <a href="">pilll</a> - türelem</span><span class="submenu" id="sub1"></span><span class="submenu" id="sub8"><br>
+  </span> 
+  
+  <div class="menutitle" onclick="SwitchMenu('sub9')">
+    <div align="left">2004. október</div>
+  </div>	
+  <span class="submenu" id="sub9">
+  - <a href="">pill</a> - hamarosan<br>
+  - <a href="">pilll</a> - türelem</span><span class="submenu" id="sub1"></span><span class="submenu" id="sub9"><br>
+  </span> 
+  
+  <div class="menutitle" onclick="SwitchMenu('sub10')">
+    <div align="left">2004. november</div>
+  </div>	
+  <span class="submenu" id="sub10">
+  - <a href="">pill</a> - hamarosan<br>
+  - <a href="">pilll</a> - türelem</span><span class="submenu" id="sub1"></span><span class="submenu" id="sub10"><br>
+  </span> 
+  
+  <div class="menutitle" onclick="SwitchMenu('sub11')">
+    <div align="left">2004. december</div>
+  </div>	
+  <span class="submenu" id="sub11">
+  - <a href="">pill</a> - hamarosan<br>
+  - <a href="">pilll</a> - türelem</span><span class="submenu" id="sub1"></span><span class="submenu" id="sub11"><br>
+  </span> 
+  
+  <div class="menutitle" onclick="SwitchMenu('sub12')">
+    <div align="left">2005. január</div>
+  </div>	
+  <span class="submenu" id="sub12">
+  - <a href="">pill</a> - hamarosan<br>
+  - <a href="">pilll</a> - türelem</span><span class="submenu" id="sub1"></span><span class="submenu" id="sub12"><br>
+  </span> 
+  
+  <div class="menutitle" onclick="SwitchMenu('sub13')">
+    <div align="left">2005. február</div>
+  </div>	
+  <span class="submenu" id="sub13">
+  - <a href="">pill</a> - hamarosan<br>
+  - <a href="">pilll</a> - türelem</span><span class="submenu" id="sub1"></span><span class="submenu" id="sub13"><br>
+  </span> 
+  
+  <div class="menutitle" onclick="SwitchMenu('sub14')">
+    <div align="left">2005. március</div>
+  </div>	
+  <span class="submenu" id="sub14">
+  - <a href="">pill</a> - hamarosan<br>
+  - <a href="">pilll</a> - türelem</span><span class="submenu" id="sub1"></span><span class="submenu" id="sub14"><br>
+  </span> 
+  
+  <div class="menutitle" onclick="SwitchMenu('sub15')">
+    <div align="left">2005. április</div>
+  </div>	
+  <span class="submenu" id="sub15">
+  - <a href="">pill</a> - hamarosan<br>
+  - <a href="">pilll</a> - türelem</span><span class="submenu" id="sub1"></span><span class="submenu" id="sub15"><br>
+  </span> 
+  
+  <div class="menutitle" onclick="SwitchMenu('sub16')">
+    <div align="left">2005. május</div>
+  </div>	
+  <span class="submenu" id="sub16">
+  - <a href="">pill</a> - hamarosan<br>
+  - <a href="">pilll</a> - türelem</span><span class="submenu" id="sub1"></span><span class="submenu" id="sub16"><br>
+  </span> 
+  
+  <div class="menutitle" onclick="SwitchMenu('sub17')">
+    <div align="left">2005. június</div>
+  </div>	
+  <span class="submenu" id="sub17">
+ - <a href="">pill</a> - hamarosan<br>
+  - <a href="">pilll</a> - türelem</span><span class="submenu" id="sub1"></span><span class="submenu" id="sub17"><br>
+  </span> 
+  
+  <div class="menutitle" onclick="SwitchMenu('sub18')">
+    <div align="left">2005. július</div>
+  </div>	
+  <span class="submenu" id="sub18">
+  - <a href="">pill</a> - hamarosan<br>
+  - <a href="">pilll</a> - türelem</span><span class="submenu" id="sub1"></span><span class="submenu" id="sub18"><br>
+  </span> 
+  
+  <div class="menutitle" onclick="SwitchMenu('sub19')">
+    <div align="left">2005. augusztus</div>
+  </div>	
+  <span class="submenu" id="sub19">
+  - <a href="">pill</a> - hamarosan<br>
+  - <a href="">pilll</a> - türelem</span><span class="submenu" id="sub1"></span><span class="submenu" id="sub19"><br>
+  </span> 
+  
+  <div class="menutitle" onclick="SwitchMenu('sub20')">
+    <div align="left">2005. szeptember</div>
+  </div>	
+  <span class="submenu" id="sub20">
+  - <a href="">pill</a> - hamarosan<br>
+  - <a href="">pilll</a> - türelem</span><span class="submenu" id="sub1"></span><span class="submenu" id="sub20"><br>
+  </span> 
+  
+  <div class="menutitle" onclick="SwitchMenu('sub21')">
+    <div align="left">2005. október</div>
+  </div>	
+  <span class="submenu" id="sub21">
+  - <a href="">pill</a> - hamarosan<br>
+  - <a href="">pilll</a> - türelem</span><span class="submenu" id="sub1"></span><span class="submenu" id="sub21"><br>
+  </span> 
+  
+  <!-- <div class="menutitle" onclick="SwitchMenu('sub22')">
+    <div align="left">2005. november</div>
+  </div>	
+  <span class="submenu" id="sub22">
+  - <a href="blog/blog/20051101.html">2005.11.01</a> - blabla<br>
+  - <A HREF="blog/blog/20051102.html">2005.11.02</A> - blabla</span><span class="submenu" id="sub1"></span><span class="submenu" id="sub22"><br>
+  </span>
+  
+  <div class="menutitle" onclick="SwitchMenu('sub23')">
+    <div align="left">2005. december</div>
+  </div>	
+  <span class="submenu" id="sub23">
+  - <a href="blog/blog/20051201.html">2005.12.01</a> - blabla<br>
+  - <A HREF="blog/blog/20051202.html">2005.12.02</A> - blabla</span><span class="submenu" id="sub1"></span><span class="submenu" id="sub23"><br>
+  </span> -->
+  
+  </div>
+
+ 
+
+<HR>
+
+</BODY>
+</HTML>
+

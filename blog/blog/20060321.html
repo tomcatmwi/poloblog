@@ -1,0 +1,120 @@
+
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2006.03.21., kedd</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+A modern technika néha oly boldoggá teszi az embert. Például amikor többórás szarakodás után végre létrejön egy AVI file egy DVD tartalmából, de ahhoz a jóisten se tud hozzányúlni, mert a kedves codecgyártók fontosabbnak tartották a copyright jogokat a termék m&ucirc;köd&otilde;képességénél. Milyen copyright, idétlen majmok, ez az én saját felvételem! A másik kedvencem a 35 ezer forintba került MP3 lejátszó, ami valamely ismeretlen oknál fogva egy mukkot sem hajlandó felvenni diktafonként, ha a feje tetejére áll is a világ.
+<BR><BR>
+
+Egyáltalán mire jó, hogy ennyi kicseszett, egymással véletlenül sem kompatibilis formátum van? Mi a tökre jó ennyi? Régen volt kett&otilde;-három, oszt' csókolom. De már az se ment. Most már van negyven, és kevés hozzá a 3-4 gigahertz. Ehh, tuskó hullámbádog, Intel-alapú szemétbánya. Nem, ne írd meg, hogy a Mac se jobb. Tudom.
+<BR><BR>
+
+Érdekes, hogy a h&otilde;skor kedves és barátságos gépeit&otilde;l milyen gyorsan eljutottunk a mihaszna, böhönye PC-khez. A VHS-be csak be kellett dugni a szalagot, oszt' jólvan, a DVD-k meg órákig szerencsétlenkednek, mire valami elindul, akkor is keszekusza menükkel, hibákkal, akadozva. Tessék nekem visszaadni a kilencvenes éveket!
+<BR><BR>
+
+Ja, majd elfelejtettem. Néhány kiskutya gazdát keres. Hat hónaposak, csaknem teljesen egyformák, lányok és fiúk vegyesen. Nagyon okosak és tiszták. Érdekl&otilde;dni lehet a <A HREF="mailto:kalozpepi@freemail.hu">kalozpepi@freemail.hu</A> címen.
+</P>
+<CENTER>
+<IMG SRC="20060321.jpg">
+</CENTER>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060320.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060323.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

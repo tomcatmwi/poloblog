@@ -1,0 +1,213 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<!-- Sunbelt Kerio Popup Killer - script has been inserted by KPF -->
+<script type="text/javascript">
+<!--
+var NoPopupsDone = 0;var CurrWindowOpen = window.open;var CurrWindowOpen2 = window.open;var orig_setTimeout = window.setTimeout;var orig_setInterval = window.setInterval;if ( window.showModelessDialog ) { var orig_showModelessDialog = window.showModelessDialog;} if ( window.showModalDialog ) { var orig_showModalDialog = window.showModalDialog;} 
+var cnt = 0;var popupType = "direct";var KPF_LOG_URL = "http://127.0.0.1:44501/pl.html?";var KPF_TIMEOUT = 100;var onUnloadFlag = false;var KPF_CompleteLoaded = false;
+function nullMethod() {}function nullWindow() {	 this.window = new Object(); this.document = new Object(); this.document.open=this.document.close=this.document.write=this.document.writeln=nullMethod; this.alert=this.back=this.blur=this.captureEvents=this.clearInterval=this.clearTimeout=this.close=this.confirm=this.dump=this.escape=this.focus=this.forward=this.GetAttention=this.getSelection=this.home=this.moveBy=this.moveTo=this.open=this.print=this.prompt=this.releaseEvents=this.resizeBy=this.resizeTo=this.scroll=this.scrollBy=this.scrollByLines=this.scrollByPages=this.scrollTo=this.setCursor=this.setInterval=this.setTimeout=this.sizeToContent=this.stop=this.unescape=this.updateCommands=nullMethod;}
+function destroyIframe(ifr){ if (ifr != document.getElementById("kpfLogFrame"))   { var x = ifr.parentNode.removeChild(ifr);    delete x;  };}
+function sendStream(s, idx, kpf_pt){ try {        var ifr = document.getElementById("kpfLogFrame");   var tmp = ifr.cloneNode(true);   tmp.id  = "ifr_" + idx;   var s2 = "srv=" + document.location + "&url=" + s + "&pty=" + kpf_pt;   tmp.src = KPF_LOG_URL + escape(s2);   document.body.appendChild(tmp); } catch (e) {   orig_setTimeout("sendStream('" + s + "', " + idx + ",'" + kpf_pt + "')", KPF_TIMEOUT); }}
+function sendUrl(url){ if (onUnloadFlag)   sendStream(url, cnt++, popupType); else  {  try {   orig_setTimeout("sendStream('" + url + "', cnt++,'" + popupType + "')", KPF_TIMEOUT);  }   catch (e)   {}	  }}
+function newOpen(url, name, atr) {wnd = new nullWindow();wnd.focus = nullWindow;wnd.opener = this.window;sendUrl(url);return(wnd); }
+function newOpen2(url, name, atr) { sendUrl(url); return(new nullWindow());}
+function stopPopups(kpf_pt) { popupType = kpf_pt; CurrWindowOpen = window.open; window.open = newOpen2; }
+function startPopups(kpf_pt) { window.open = CurrWindowOpen;  popupType = kpf_pt;}
+function my_setTimeout(one, two) { if (typeof(one) == "function") {    function myFun(){}    myFun=one;    function newFun() {     stopPopups('ontimer');      myFun();      startPopups('direct');    }	    try {      return orig_setTimeout(newFun,two);    }    catch (e)  {      try {	    return eval("newFun()");      }      catch(e) { }    }   }  else {    try {      return orig_setTimeout("stopPopups('ontimer');"+one+"; startPopups('direct');", two);    }    catch (e)  {      try {        return eval("stopPopups('ontimer');"+one+"; startPopups('direct');");      }      catch(e) { }    }  }}
+function my_setInterval(one, two) {  if (typeof(one) == "function") {    function myFun(){}    myFun=one;    function newFun() {      stopPopups('ontimer');      myFun();      startPopups('direct');    }	    try {      return orig_setInterval(newFun,two);    }    catch (e) { }  }  else {    try {      return orig_setInterval("stopPopups('ontimer');"+one+";startPopups('direct');", two);    }     catch (e) { }  }}
+function my_onload() { var my_retcode = true; stopPopups("onload"); if(orig_onload)  my_retcode = orig_onload(); startPopups("direct"); KPF_CompleteLoaded = true; return my_retcode; }
+function my_unload() {  var my_retcode = true; var cnt = 0; stopPopups("onunload"); onUnloadFlag = true; if(orig_onunload)   my_retcode = orig_onunload(); startPopups("direct"); return my_retcode;}
+function my_windowopen(url, name, atr){ if ( (! KPF_CompleteLoaded) || (document.all && event != null && event.type == "mouseover") )  {  if ( ! KPF_CompleteLoaded) {   popupType = "direct";  }  else {   popupType = "mouseover";  }  sendUrl(url);  popupType = "direct"; } else {   try {   return CurrWindowOpen2(url, name, atr);  }   catch (e)   {}  }}
+function my_showModelessDialog (url , arguments , features) { if (!NoPopupsDone) {   var wnd = new nullWindow();  popupType = "direct_dialog";  sendUrl(url);  popupType = "direct";  return wnd; } if (popupType!="direct" | (event && event.type == "mouseover") ) {   var curr_popup = popupType;  if (event && event.type == "mouseover") {   popupType = "mouseover";  }    popupType = popupType+"_dialog";  sendUrl(url);  popupType = curr_popup;  return ( new nullWindow() ); } else {   return ( orig_showModelessDialog(url , arguments , features) );  } }
+function my_showModalDialog (url , arguments , features) { if (!NoPopupsDone) {   popupType = "direct_dialog";  sendUrl(url);  popupType = "direct";  return ""; } if (popupType!="direct" | (event && event.type == "mouseover") ) {   var curr_popup = popupType;  if (event && event.type == "mouseover") {   popupType = "mouseover";  }    popupType = popupType+"_dialog";  sendUrl(url);  popupType = curr_popup;  return ""; } else {   return ( orig_showModalDialog(url , arguments , features) );  } }
+function nopopups() { if(!NoPopupsDone)   {  NoPopupsDone = 1;  orig_onload = window.onload;  orig_onunload = window.onunload;  window.onload = my_onload;  window.onunload = my_unload;  window.open = my_windowopen;  }}
+window.setTimeout = my_setTimeout;window.setInterval = my_setInterval;window.open = newOpen;if ( orig_showModelessDialog ) { window.showModelessDialog = my_showModelessDialog;}if ( orig_showModalDialog ) { window.showModalDialog = my_showModalDialog;}
+//-->
+</script>
+<!-- Sunbelt Kerio Popup Killer - end of the script inserted by KPF -->
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2006.10.09., hétfõ</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Van már vagy tíz éve annak, hogy végre egy újszerû játékprogramot láttam. Nem fogom összehordani valamennyi közhelyet a mai játékokról, mindannyian tudjuk, mennyire szarok. Kevés fejlesztõ jön rá, hogy a "játékprogram" összetett szó, melynek lényegét az elsõ tag képezi. A játéktörténelem összes nagy sikere úgy készült, hogy leült pár elfajzott arc egy garázsban, szartak a trendekre, és fél év múlva letarolták a piacot. Most éppen az angol Introversion Software tette ezt meg, amikor kijöttek a <A HREF="http://www.everybody-dies.com" TARGET="_new"><I>DEFCON - Everybody Dies</I></A> címû... minek is nevezzem... mondjuk úgy, remekmûvel. Igen, így kell játékot csinálni: semmi csicsa, nem kell megolvasztani a processzort, a lényeg, hogy élvezetes legyen. Ha mellesleg új mûfaj születik, az egyáltalán nem baj.
+<BR><BR>
+
+A minimalizmus csúcsait ostromló minigame a harmadik világháborút varázsolja a képernyõre, mégpedig úgy, ahogy azt egy föld alatti bunker számítógép-képernyõjén láthatnánk, ha elegendõ aranycsillag lenne a vállunkon ahhoz, hogy ebben az örömben lehessen részünk, az egyszerû parasztembereknek való, nukleáris gõzzé válás helyett. Történik mindez a nyolcvanas években. A képernyõn vibráló, egyszerû ikonokat tologatva vezényelhetjük a világvégét, indíthatunk tömeges atomcsapást, gyönyörködve a ballisztikus rakéták röppályájában, pakolászhatjuk a hadihajókat és tengeralattjárókat, illetve örülhetünk, ha egy-egy ellenséges város eltûnik egy szép, fehér villanásban, és mindjárt ki is íródik, hogy ez most hány egyszerû szántóvetõt tett az éggel egyenlõvé. Közben a hangulathoz illõ zene szól, a háttérben pedig hallhatjuk, ahogy munkatársaink motoznak: léptek kopognak, telefon csörög, néha egy nõ hisztérikusan felzokog, amint egy-egy jól sikerült rakétasortûz célba talál, eltüntetve fél Európát.
+<BR><BR>
+
+A játék kezdetén DEFCON 5, azaz békeidõ van, de már megy lefelé a visszaszámlálás DEFCON 4, azaz a globális készültség felé. Minden játékos egy-egy földrészen elterülõ, fiktív szuperhatalommal játszik; ez lehet a klasszikus USA vs. Szovjetunió felállás, de lehet Európa Amerika ellen, Dél-Amerika Délkelet-Ázsia ellen, és akár ezek vegyesen is, hiszen hat játékos csatlakozhat össze egyszerre, illetve van lehetõség AI játékosokat is bevenni. Hogy még érdekesebb legyen, szövetségeket is lehet kötni, meg persze felrúgni.
+<BR><BR>
+
+DEFCON 5 állapotban pakolászhatjuk le az egységeinket. Meglepõen kevés van belõlük. A készítõket külön elismerés illeti ezért a célszerû egyszerûségért. Egyfajta kõ-papír-olló játék ez, mert minden egységnek van erõssége és gyengesége. A legtöbb egység kétféle üzemmódban használható.
+<BR><BR>
+
+<B>Radar:</B> Célja elég nyilvánvaló. Bár minden egységnek van saját lokátora (a tengeralattjárókat kivéve), és bizonyos távolságra ellátnak maguk is, azért nem árt, ha a szárazföldi területünk peremét végigpakoljuk radarokkal. Jó tudni, mit huncutkodik az ellenség a tengereken, és a bejövõ rakétákat se árt látni. Csakhogy vigyázzunk, mert a radar nem védi magát, és bár három atombomba kell, hogy elromoljon, mégsem jó, ha fedezetlenül marad.
+<BR><BR>
+
+<B>Rakétasiló:</B> Ezt is a szárazföldre kell telepíteni. Értelemszerûen ebbõl indíthatunk interkontinentális rakétát a világon bárhová, illetve ez szolgál légvédelemként is a bejövõ rakéták és a területünkre bepofátlankodó ellenséges repülõgépek ellen. Légvédelmi üzemmódban igen kemény célpont, hiszen mindent képes lelõni, ami támadni tudja, ráadásul három atomcsapás kell neki, hogy végre elkussoljon. Egyetlen siló Európa közepén, Berlin környékén Londontól Kijevig korrekt védelmet nyújt, három pedig szinte legyõzhetetlen. Mondom, szinte...<BR>
+Interkontinentális rakétasilóként használva a siló ikonja háromszögre változik. A rakétaindítással csínján kell bánni, mert egyrészt ilyenkor felfedi magát a siló az ellenség elõtt, másrészt amíg nem kapcsoljuk vissza légvédelmi módba, védtelen a támadásokkal szemben. Minden silónak bizonyos számú rakétája van, ha ezt ellövöldöztük, onnantól csak légvédelmi feladatot lát el.
+<BR><BR>
+
+<B>Repülõtér:</B> Vadászgépek és bombázók támaszpontja. Kapcsolható egyik vagy másik üzemmódba. Ezután kattintsunk oda, ahová a repülõt küldeni akarjuk, és majd az elvégzi a dolgát.<BR>
+A vadászgép két dologra jó, egyrészt a bejövõ bombázókat lelõni - a rakétákat nem tudja támadni - másrészt felderíteni az ellenség területét, ami ugyan gyakrabban ér véget a gép lelövésével, mint célpontok fellelésével, de azért meg lehet próbálni. Ellenséges vadászgépek ellen is alkalmazható, ha nincs kéznél légvédelem, illetve hajókat vagy felmerült tengeralattjárókat is támadhat, de ez csak végszükség esetén javasolt.<BR>
+A bombázó egyrészt hagyományos fegyverzettel támadhat hajókat, másrészt egy darab robotrepülõt indíthat földi célok ellen. Ezután visszatér a legközelebbi repülõtérre vagy repülõgép-hordozó hajóra. Baromi sérülékeny jószág, de hasznos tud lenni. 
+<BR><BR>
+
+<B>Repülõgép-hordozó:</B> Egyrészt értelemszerûen úszó repülõtér, másrészt rombolókísérete révén le tudja vadászni az ellenséges tengeralattjárókat akkor is, ha a víz alatt vannak. Három üzemmódja van: vadászgép-indítás, bombázó-indítás, tengeralattjáró-elhárítás. Hátránya, hogy nem tudja magát megvédeni, ezért vagy kísérni kell valamivel, vagy figyelni, kell-e neki segítség. Szerencsére õ sem teljesen hülye, ha hirig van, automatikusan küldi fel a repülõket a legveszélyesebb célpontok ellen.
+<BR><BR>
+
+<B>Csatahajó:</B> Megy a tengeren, és lõ. Hajók ellen jó, repülõk ellen nagyon jó, a tengeralattjárók viszont könnyen kinyírják. Ellenséges csatahajókkal nem érdemes összeakaszkodnia, rendszerint döntetlen lesz az eredmény, vagyis valaki gyõz, de elég romos állapotban vánszorog haza.
+<BR><BR>
+
+<B>Tengeralattjáró:</B> Na, ez jó kis cucc. Eleve nem látják õt az ellenséges radarok, csak a hordozók szúrhatják ki. Torpedókkal képes harcolni a felszíni hajók ellen, illetve felmerülve nukleáris rakétákkal tud támadni szárazföldi célokat. Vigyázzunk azonban, mert rakétaindítás elõtt felmerül, és ilyenkor nagyon sebezhetõ bármilyen eszközzel. Vagy biztonságos helyrõl támadjunk vele, vagy rendeljünk oda egy erõsebb flottaköteléket a védelmére. Öt rakétát hordoz.<BR>
+A tengeralattjáró másik hasznos eszköze a szonár, amivel ellenséges tengeralattjárókat deríthet fel. Igazából még nem vettem hasznát, mert amíg a tengeralattjárón van rakéta, arra használom, ha meg nincs, akkor már az ellenség is kilõtte az õ rakétáit, és immár veszélytelenek a tengeralattjárói.
+<BR><BR>
+
+<B>Nukleáris rakéta:</B> Ha már repül, legfeljebb nézegethetjük. Ha idõközben szövetséget kötöttünk volna a célponttal, a Disarm paranccsal hatástalaníthatjuk.
+<BR><BR>
+
+A játék során az elsõ dolog, amit észre fogunk venni, hogy az atomháború nem olyan egyszerû, hogy kilövünk ezer rakétát, hátradõlünk, és elszívunk egy cigit, amíg az emberiségnek csúnya vége lesz. Sõt! Jobb is, ha spórolunk a skulókkal. Sokat kell harcolni, taktikázni, mire végre egy ellenséges városra indíthatunk rakétát, mert elõbb le kell bontani körülötte a védelmet. Az pedig, mint mondottam, nem adja könnyen magát. Úgy gondolod, biztosan egyszerû játék ez, ilyen kevés egységgel? Az amõba is egyszerû, aztán mégis...
+<BR><BR>
+
+DEFCON 5 alatt lepakolhatjuk az egységeinket. Értelemszerûen a szárazföldi egységek jó, ha egymást védik. Annak is megvan az elõnye, ha nagy területet kell védeni, mert ott nehezebb felderíteni az egységeinket, és annak is, ha kis területet, mert ott jobban össze lehet vonni a légvédelmet. Igyekezzünk védeni a nagyobb városokat, mint New York, London vagy Tokió, mert ezekben többen murdelnek meg, ha találatot kapnak, így több pont is jár értük. A flottakötelékeket oda rakjuk le, ahol feltehetõleg az ellenség is manõverezni fog, és persze igyekezzünk megvédeni azokat a tengerrészeket, ahonnan az ellenséges tengeralattjárók rakétatámadást indíthatnak. Mindenki maga döntse el, milyen kötelékeket szeret: vegyeseket, ahol többféle egység mozog együtt, de alkalmasint kisebb tûzerõvel, vagy egységesen csatahajókat, hordozókat vagy tengeralattjárókat pakol a harccsoportokba, amelyeknek így koncentráltabb a tûzereje, de jobban kell figyelni a védelmükre.
+<BR><BR>
+
+A DEFCON 4 kihirdetésekor már mozoghatnak a flották, lehet kergetõzni, helyezkedni. Ha megvan az ellenség, igyekezzünk az egységeivel szemben elõnyös pozícióba kerülni. A csatahajókat vonjuk a tengeralattjárók hatósugarába, a csatahajókkal álljunk rá a hordozóira, és így tovább.
+<BR><BR>
+
+DEFCON 3 kihirdetésekor indulhat a tengeri csata. A hordozókat pusztítsuk elsõként, mert a repülõk sok kellemetlenséget tudnak okozni, és a tengeralattjárókat is bántani akarják. Ha már elfogytak, akkor miénk a légi fölény, lehet indítani bombázókat is a maradék ellen. A tengeralattjáróinkkal, ha nem vonjuk be õket mind a csatába, igyekezzünk elsunnyogni az ellenséges part felé, tüzelési pozíciót foglalni. Saját kötelékünkre figyeljünk oda, maradjon azért egy-két hordozónk, hogy tudjunk tengeralattjárókra vadászni, ha a hajókat elintéztük. A szárazföldi repülõterekrõl is küldhetünk támogatást, illetve a rakétabázisok is tüzelnek a túl közel merészkedõ ellenséges gépekre.
+<BR><BR>
+
+Az elsõ csata alatt rá fogunk jönni a játék egy fontos tényezõjére: az idõre. Ugyanis ha egy egység végrehajtott valamilyen akciót, akkor bizonyos idõn belül nem csinálhat mást. Például ha egy hordozóról vadászgépet indítottunk, kell némi idõ, míg a következõ gépet elõkészítik. Ha FIGHTER LAUNCH módból átváltunk BOMBER LAUNCH módra, meg kell várnunk, míg szorgos tengerészeink felhozzák a bombázót a hangárból, és ez bizony idõbe telik. Nem érdemes tehát jobbra-balra kapcsolgatni, mert csak annyit érünk el, hogy a tengerészeink fáradtan halnak meg. Ugyanez vonatkozik a rakétasilókra is: ha átállítjuk ICBM LAUNCH módba, 120 másodpercet várnuk kell, míg tûzkész lesz, és légvédelmi módba visszaállni 300 másodpercet igényel. Addig pedig nem csinál semmit!
+<BR><BR>
+
+A DEFCON 2 állapot nem hoz semmi újat, de lehet örülni, hogy mindjárt kitör a világvége. Ekkorra azért igyekezzünk már elpicsázni az ellenséges flottát, mert igen rövid az idõ a felkészülésre. Ha meg minket picsáztak el, akkor húzzuk be fülünket-farkunkat és a bunkerajtót, mert mindjárt gebasz lesz... hacsak egy kedves szövetséges nem segít ki, de azért ebben se bízzunk nagyon.
+<BR><BR>
+
+És végül eljön a DEFCON 1 állapot, a totális termonukleáris világháború. Ujjé! Bár egyesek talán kicsit csalódni fognak, mert Tel-Aviv és hasonlók nincsenek a térképen. Teherán viszont igen. Ki érti ezt.
+<BR><BR>
+
+A DEFCON 1 lényege, hogy immár nincsenek erkölcsi aggályok, potyognak idegenbe szakadt hazánkfiai találmányai az égbõl, aki kapja, hulla. És itt van az, amit mondottam, hogy nagy hiba mindjárt átkapcsolni az összes silót ICBM LAUNCH módba, és szórni vele az ellenséget, mert amíg a légvédelem ép, jó eséllyel le fogják lövöldözni az összes rakétát, mi meg védtelenek leszünk az ellencsapással szemben. (Vagy egy korábbi szövetséges ellen, aki hirtelen meggondolta magát.) Elõször próbáljuk felderíteni az ellenség bázisait, fõleg a silóit. Figyeljük, honnan jönnek a légvédelmi rakéták, és próbáljunk meg arra sétáltatni pár vadászgépet, lehetõleg egynél többet. Ha sikerült felderíteni, lehet rá indítani az atomcsapást, ízlés szerint bombázókról vagy tengeralattjárókról. Egyidejûleg legalább három-négy rakéta menjen. Az se baj egyébként, ha nem nyírjuk ki, hanem a körülötte álló városokat vesszük kezelésbe, elvégre az ártatlan civilekért jár a pont, a katonákat szarba se veszik. De azért az ilyenektõl jobb megszabadulni. Ha a siló repülõteret vagy radart véd, azt is támadhatjuk vele egyidejûleg, minden rakétára nem lesz lehetõsége egyenként rálövöldözni. A reptereket amúgy is érdemes lereszelni, mert a repülõgépek igen pimasz módon képesek zaklatni békésen bombázgató flottánkat. Mellesleg az ellenséges flották is támadhatóak atomcsapással, de nem érdemes, mert odébbmásznak a rakéta elõl.
+<BR><BR>
+
+Ha éppen minket ér tömeges csapás, reméljük a legjobbakat. A silók tüzét lehet kézzel is vezetni, de nem fontos, nagyon jól ki tudják választani, melyik a legveszélyesebb célpont. Még össze is dolgoznak.
+<BR><BR>
+
+Tömeges interkontinentális rakétacsapást akkor érdemes indítani, ha a területünket támadó erõk vagy kifulladtak, vagy lenyomták a védelmünket, és már úgyis mindegy. Akkor aztán mindent bele, állítsuk át a silókat ICBM LAUNCH módra, és osszuk ki keményen, akire haragszunk. A repülõterekrõl is egyszerre emeljük az összes bombázót, azok is menjenek szomszédolni. Szépen túl lehet ám terhelni az ellenséges légvédelmet!
+<BR><BR>
+
+Tömeges csapás persze csak úgy indítható, ha egyszerre van tûzkész állapotban több siló vagy tengeralattjáró, és a repülõtereken is van felszállásra kész bombázó. Utóbbiaknak még ráadásul bomba is kell, ami bizony ki tud fogyni mind a repülõterekrõl, mind a hajókról, és enélkül csak repkedésre és hajók támadására alkalmas. A csapáshoz való elõkészülethez persze az is kell, hogy egységeink nyugodtan felkészülhessenek, vagyis védeni kell õket, lefogni és pusztítani az ellenséges támadóeszközöket. Kõ-papír-olló...
+<BR><BR>
+
+Egy idõ után bekapcsol a gyõzelmi visszaszámlálás. Az nyeri meg a háborút, aki több ellenséges parasztot ken szét a betonon. A PEOPLE ikonnal lefigyelhetõ egyébként, hogyan fogy a népsûrûség. A városok fölé tolva az egeret azt is megnézhetjük, mennyi volt ott a lakosság, mielõtt összehaverkodtunk volna, és mennyivel nem kell többé bajlódnia a helyi önkormányzatnak. Más elérendõ cél értelemszerûen nincs, semmi díj vagy gyõzelem, hiszen az atomháború sem csupa játék és mese. Mindenesetre elgondolkodtató, hogy nagy vonalakban a valóság is valami ilyesmi lett volna, ha éppen nincs olyan mázlink, hogy éppen mindig elkerüljük. Ugyanígy repültek volna a csíkok valahol egy képernyõn, mi meg láttuk volna õket leérkezni. Szép dolog a haditechnika. Töltsétek le a játékot.
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20061008.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+
+<!-- Sunbelt Kerio Popup Killer - script has been appended by KPF -->
+<iframe id="kpfLogFrame" src="http://127.0.0.1:44501/pl.html?START_LOG" onload="destroyIframe(this)" style="display:none;">
+</iframe>
+<script type="text/javascript">
+<!--
+	nopopups();
+//-->
+</script>
+<!-- Sunbelt Kerio Popup Killer - end of the script appended by KPF-->

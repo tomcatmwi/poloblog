@@ -1,0 +1,132 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>2006.11.29., szerda</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Na! Elkészült végre!! A tomcatpolo.hu ismét elindult, és immár az új boltmotor hasít alatta, már amennyire ezt hasításnak lehet nevezni, de a réginél mindenesetre messze sokkal jobb. Apróbb gebaszok vannak még vele, de az nagyjából olyan szintû hibákra korlátozódik, mint például ékezetes betûk helytelen megjelenése a FAQ oldalon, de attól a bolt még mûködik, vagy az admin felületen fellelhetõ egy-két anomália, de azokat meg úgysem látjátok. A sebességén majd fejlesztek egyet, kicsit nehezen viseli a MySQL a topa query-jeimet, meg a PHP4 az alapvetõen PHP5-re írt cuccost, de nem baj, amíg mûködik, nagy baj nem lehet. Ha valaki súlyosabb hibát észlel, jelezze nekem az üzenõdobozban. Köszi.
+<BR><BR>
+
+Külön figyelmébe ajánlom mindenkinek a Jelvénygyár fedõnevû újdonságot, amihez hasonlót nemhogy Magyarországon, de sehol máshol sem láttam. A lényeg, hogy mostantól tudunk gyártani jelvényt, ti meg fel tudjátok tölteni, ha terveztek egyet (vagy többet). Momentán ötvenvalahány kitûzõ van a kínálatban, de tegnap este rajzolgattam még, folyamatosan tolom fel, ami elkészül, és akkor lehet neki örülni. A dolog mûködésérõl a bolt oldalán írtam.
+<BR><BR>
+
+Mindezek mellett a Teréz körúti bolt is megnyitott, no persze, az is csak amolyan tesztjelleggel, mert egyelõre még nincs pult, nincs cégtábla, nincs ez, nincs az, de a lényeg, hogy poló, az van, és a karácsonyi újdonságok is megérkeznek a héten, szóval lehet beteríteni a családot meg a haverokat polókkal! Azonban továbbra is ajánlom, hogy vásárlás elõtt adjátok le a rendelést itt, az oldalon, mert így 10% kedvezményt kaptok a boltbéli árakhoz képest. 
+<BR><BR>
+
+A bolt címe: Teréz körút 6. Ez az Oktogonnál van, kicsit a Blaha felé, egy Rossmann és egy Salamander bolt között. A kapualj után fordulj balra. Mondom, még nincs cégtábla, de majd igyekszem hegeszteni egyet. Ezentúl a személyes átvételre rendelt áruért bármikor lehet jönni, nem csak kedden és csütörtökön, hanem bármikor, amikor a bolt nyitva van. Ez a tervek szerint minden hétköznap 10 és 18 óra között lesz. Szóval nem kell többé egy lepattant garázst keresgélni egy angyalföldi mellékutcában, mert ott virítunk a Nagykörúton, ennél jobban nem tudunk szem elõtt lenni.
+<BR><BR>
+
+Az igazsághoz tartozik egyébként, hogy nem olyan nagy dolog a Nagykörúton boltot nyitni, mert szarért-hugyért adják a helyiségeket. Ugyanis a nagykörúti butikokban évek óta pang a forgalom. Amióta plázák vannak, a kutya se mászkál be a bérházak udvarára ruhákért és ilyesmikért. A szomszédunk egy öreg faszi, hanglemezeket árul egy meglehetõsen belterjes vevõkörnek, s õ mondta, hogy ebben az udvarban az elmúlt tíz évben éppen ötven bolt ment csõdbe. Minket ez alapvetõen nem izgat, elvégre a vevõink az Internetrõl jönnek, de mindenesetre érdekes, hogy Budapest legforgalmasabb utcáján ennyire nem érdemes üzletet nyitni. Azt most ne részletezzük, hogy mennyit fizetek a boltért, de a házunk alagsorában mûködõ kisközért a kilencszeresét pengeti egy alig nagyobb helyért, egy kelenföldi lakópark tövében.
+<BR><BR>
+
+Annyit kérnék tõletek, hogy ne rohamozzátok meg holnap a boltot, mert ezen a héten még pakolásszuk a bútorokat, és szokjuk a helyet. Rendelni lehet, sõt, abból élünk, meg el is lehet jönni érte, de "csak úgy" ne nézzetek be még, egyrészt kupi van, másrészt nem is biztos, hogy pont ott leszünk, sokat rohangálunk ezért-azért.
+<BR><BR>
+
+Este az Echo TV-ben jártam, ismét Fiala Jánosnál. A tévéostromról beszélgettünk, és mielõtt megint megkérdezi valaki, azért állok szóba ilyen emberekkel, mint Fiala János, Havas Henrik, Tóta Árpád és hasonlók, mert többre jut a nemzet, ha szót értünk egymással, mintha mindenkit agyonlõnénk hazaárulóként, akinek kicsit is más a véleménye. (Csak zárójelben jegyzem meg, engem is ki akar nyírni pár hülye, akik szerint én kommunista hazaáruló vagyok, mert nekik momentán az a hazafi, aki a legnagyobb nyilaskeresztet vágja a mellére zsidóvérbe mártott rohamkéssel.) Jó, tudom, nekik nem csak más a véleményük, hanem igazi hazaárulók, szívükben a pártkönyvvel, kezükben a sarlóval és a kalapáccsal. Jó, akkor legyen, de tessék különbséget tenni az ideológiai ellenfél és az ellenség között. Vannak a médiában szép számmal olyanok, akiket tényleg agyon kell lõni, de akikkel szóba állok - helyesebben, akik szóba állnak velem, vagy Toroczkaival, vagy a Jobbikkal, vagy bárki mással közülünk - az párbeszédképes ember, aki megérdemli, hogy korrektül viszonyuljunk hozzá. Majd lelõjük, ha ettõl eltér. Egyébként vitatkozni és érvelni is lehet, nem feltétlenül az a magyarabb, aki hamarabb odaüt.
+<BR><BR>
+
+Még késõbb, egészen késõ este pedig egy konspiratív jellegû találkozón voltam, amiért lehet, hogy a fél karját odaadná az NBH, ha megtudhatná, mirõl beszéltünk, de úgyse fogja. Ennek eredményérõl majd mesélek, ha aktuális lesz. A lényeg, hogy lesz még tévéostrom.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20061127.html">
+<B><< elõzõ nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20061130.html">
+<B>következõ nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+<BR><BR>
+
+</BODY>
+</HTML>
+
+

@@ -1,0 +1,114 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2005.10.11., kedd</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Ha kedd van, akkor nagy dolog, énekelte egyszer egy hölgy mély értelemmel, bár nem értem, miért éppen a kedd lenne a nagy, és miért unalmasak a szerdák, a szombatok, továbbá a vacak vasárnapok. Mindenesetre örömmel jelentem, hogy Bertának van hangja, éppen megugat valakit, ilyesmit is ritkán hallhatok. A Macska-1 hadrendi jelzés&ucirc; falkatagot leírtuk, nem került el&otilde;.
+<BR><BR>
+
+És most közérdek! Szabadkai kirándulásunk 14-én kezd&otilde;dik. Én részemr&otilde;l a Keleti pályaudvarról fogok indulni, a 13:35 órakor induló vonattal, ami délután fél hat körül ér oda. Aki akar, jöjjön velem, de szállást mindenkinek önállóan kell keresnie. Az állomáson várni fog egy helyi haverom, aki majd eligazít mindenkit. Aki nem tud vagy nem akar Szabadkán aludni, annak sajnos korán kell kelnie, hogy id&otilde;ben odaérjen, ugyanis a megfelel&otilde; vonat valami reggel öt órakor indul 15-én, és az is valami dél körül van ott. (Ezzel kapcsolatban forduljatok a <A HREF="http://www.elvira.hu" TARGET="_new">www.elvira.hu</A> online menetrendhez, az okosabb, mint én.) A teljesárú vonatjegy valami 3800 forint körül van oda-vissza. Sajnos ez az egy kulturált vonat megy, a többi a szokásos guruló koszraktár.
+<BR><BR>
+
+A tüntetés szervez&otilde;i arra kérik a résztvev&otilde;ket, hogy az eseményen ne jelenítsenek meg radikális politikai irányzatokat képvisel&otilde; jelképeket, és ne viselkedjenek provokatívan. A tüntetés 15-én, 15:00 órakor lesz. Aki nem tud Szabadkára utazni, az Budapesten, a H&otilde;sök tere délkeleti sarkával szemben, a szerb követség el&otilde;tt tüntethet ugyanekkor, de err&otilde;l az eseményr&otilde;l nagyon keveset tudok, és az sem biztos, hogy lesz. Ha valaki megy, legyen szíves, vigyen fényképez&otilde;gépet, és írjon nekem beszámolót. Köszi.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20051010.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20051013.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

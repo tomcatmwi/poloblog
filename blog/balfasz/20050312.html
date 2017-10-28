@@ -1,0 +1,203 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-315</B><BR>
+2005.03.12.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<BR><BR>
+
+<I>
+Az alábbi cikket már vagy egy éve írtam az Aranysas magazinnak, de mivel csak katonai repüléssel foglalkoznak, ejtve lett. Kár, pedig egy elég érdekes repül&otilde;eseményr&otilde;l szól, ami egyúttal kiváló példája annak, hogy a droidság mekkora veszélyt okozhat. Esetünkben mindössze annyi történt, hogy összekeverték a metrikus és az angolszász mértékegységeket...
+<BR><BR>
+</I>
+
+<B>
+A Gimli Glider megmenekülése
+<BR><BR>
+
+Történetünk f&otilde;szerepl&otilde;jének, a Gimli Glider névre keresztelt Boeing 767-233-asnak semmi köze a Gy&ucirc;r&ucirc;k Ura hasonló nev&ucirc; törpe harcosához. Az Air Canada színeit visel&otilde;, C-GAUN lajstromjel&ucirc; repül&otilde;gép becenevét Gimli városáról kapta, ahol 1983 július 23.-án kis híján súlyos katasztrófát szenvedett. Az esetr&otilde;l magyar szaklapban még sohasem írtak, pedig Kanadában még mozifilm is készült a repül&otilde;gép és utasai fantasztikus megmenekülésének történetér&otilde;l. 
+</B>
+<BR><BR>
+
+1983. július 23.-án az Air Canada 143-as számú járata felszálláshoz készül&otilde;dött Montreal repül&otilde;terén. A vadonatúj gép parancsnoka, Robert Pearson, és másodpilótája, Maurice Quintal azon kevés szerencsések közé tartoztak, akik már megkapták az átképzést a nemrég beszerzett, kéthajtóm&ucirc;ves típusra, a kor legjobbnak számító utasszállítójára. A gép fedélzeti elektronikája csúcstechnológiát képviselt, olyannyira, hogy ezen a típuson már nem volt szükség a pilótaszemélyzet harmadik tagjára, a fedélzeti mérnökre. Murphy törvényei alól azonban még ez a modern gép sem volt kivétel, és a problémák már Montrealban megjelentek.
+<BR><BR>
+
+A 767-es üzemanyag-feltöltését a Fuel Quantity Information System Processor (FQIS) nev&ucirc; fedélzeti számítógép-rendszer ellen&otilde;rizte. Ez a rendkívül korszer&ucirc; rendszer vezérelte a gép valamennyi üzemanyag-szivattyúját, és jelenítette meg a tüzel&otilde;anyag mennyiségét a m&ucirc;szerfalon is. Csakhogy ez a precíz szerkezet ezúttal elromlott, mégpedig - mint utólag kiderült - egy letört forrasztás miatt, ami teljesen valószín&ucirc;tlen módon megismétl&otilde;dött a tartalék áramkörben is. A pilótáknak ezért papíron kellett kiszámítaniuk a szükséges üzemanyag-mennyiséget, és a fedélzeti számítógép a hiba miatt nem volt képes pontosan mérni az üzemanyag fogyását, csupán a repült id&otilde; alapján becsülhette meg azt. Ez azonban nem szokatlan dolog, számos repül&otilde;gép-típus tüzel&otilde;anyag-szintmér&otilde;je eleve így m&ucirc;ködik, például a MiG-23-asé is. A járatot nem törölték, és a pilóták papíron számolták ki a szükséges tüzel&otilde;anyag-mennyiséget, amit a kiszolgálók fel is töltöttek a szárnytartályokba.
+<BR><BR>
+
+Az Air Canada 143 rövidesen felszállt Montrealból, hogy Edmonton városába repítse utasait. El&otilde;bb azonban egy rövid kitér&otilde;t tett Ottawa repül&otilde;terére, ahol további utasokat és üzemanyagot vett fel. Mivel a számítógép még mindig rossz volt, a kiszolgálók mér&otilde;pálcával ellen&otilde;rizték a szárnytartályok tartalmát, ami egyébként teljesen szabályos eljárás, és a feltöltésnél a tartálykocsi mér&otilde;eszközeinek adatait figyelték. A fedélzeti számítógép szerint Edmontonig húsz tonna üzemanyagra volt szükség - természetesen biztonsági tartalékkal együtt - és a pilóták ezt a mennyiséget kérték. Amit azonban sem &otilde;k, sem a kiszolgálók nem tudtak, hogy a vadonatúj 767-es fedélzeti számítógépe nem angolszász, hanem metrikus rendszer szerint számol, amire az Air Canada a közeljöv&otilde;ben kívánt átállni! A kapitány kérésének megfelel&otilde;en a kiszolgálók 11430 litert töltöttek a gépbe, ami angolszász rendszerben valóban 20,2 tonna, de metrikusban csupán 9,1 tonna, vagyis a szükséges mennyiségnek kevesebb, mint a fele. Így szállt fel ismét a repül&otilde;gép, és indult Edmonton felé, ahová azonban sohasem érkezett meg. Ismét közbeszólt a véletlen: a földi kiszolgáló személyzet nem ismerte a gép úticélját, ezért nem szóltak a pilótáknak a furcsamód túl kevés üzemanyag miatt, a pilóták pedig nem vették észre, hogy a gép túl könnyen emelkedik, mert szokásukkal ellentétben teljes gázzal szálltak fel, hogy kipróbálják, mit tud az új 767-es. Meg is állapították, hogy nagyon jól emelkedik.
+<BR><BR>
+
+Az utasok éppen befejezték vacsorájukat, amikor az els&otilde; figyelmeztet&otilde; vészfény kigyulladt. A 143-as járat ekkor Ontario állam fölött járt, 12500 méter magasságban, 870 km/órás utazósebességgel haladva. A 767-es vészjelz&otilde;je négyszer sivított fel gyors egymásutánban, ezzel jelezve az üzemanyag nyomásának gyors csökkenését. <I>"Akkor még azt hittük, az üzemanyag-szivattyú romlott el a bal szárnyban"</I> - emlékezett vissza kés&otilde;bb Pearson kapitány. <I>"Ki is kapcsoltuk, de a vészjelzés nem állt le. Akkor már a számítógép hibájára gyanakodtunk. A gép ugyanis elegend&otilde; üzemanyagot jelzett az út hátralev&otilde; részére. Ellen&otilde;riztük a mennyiséget már kétszer is, és semmi sem jelezte, hogy túl kevés lenne."</I> Amikor azonban a másik szárnytartály vészjelz&otilde;je is kigyulladt, már nyilvánvalóvá vált, hogy komoly a baj. A személyzet vészhelyzetet jelentett, és eltértek az útvonaltól Winnipeg repül&otilde;tere felé, miközben leereszkedtek 8500 méter magasságba. Ám a helyzet hirtelen drasztikusra fordult. A bal hajtóm&ucirc; rövidesen leállt. Pearson és Quintal felkészültek az egy hajtóm&ucirc;ves leszállásra. Ekkor még mindig szivattyúhibára gyanakodtak. Ám hirtelen, alig két perccel kés&otilde;bb a fedélzeti vészjelz&otilde; rendszer éles hangjelzéssel adta tudtukra a másik motor leállását is. <I>"Ezt a hangot még se Bob, se én nem hallottuk soha"</I> - mondta kés&otilde;bb Quintal. <I>"Ez nem a szimulátor volt, hanem a valóság. A hangjelzés után hirtelen minden nagyon csendes lett - félelmetesen csendes."</I>
+<BR><BR>
+
+A negyvenmillió dollár érték&ucirc;, csúcstechnológiát képvisel&otilde; Boeing-767 hirtelen vitorlázógéppé változott. A hajtóm&ucirc;vek nélkül azonban nem csak a tolóer&otilde;t veszítették el. Minden elektromos generátor leállt, a pilótafülke sötétbe borult. Áram nélkül nem m&ucirc;ködtek a fedélzeti rendszerek, megbénultak a kormányszervek, elsötétültek a kijelz&otilde;k, elhallgatott a rádió, és leállt a gép transzpondere is, ami nélkül a 143-as járat elt&ucirc;nt a repülésirányítók képerny&otilde;ir&otilde;l. A gép egy darab tehetetlen vasként zuhant volna le, ha a Boeing mérnökei nem gondoltak volna egy utolsó, végszükség esetén alkalmazható eszköz beépítésére. Ez a szerkezet a RAT, Ram Air Turbine, azaz menetszél-turbina volt, amely mindkét hajtóm&ucirc; leállása esetén automatikusan kinyílt a gép hasa alatt, és a menetszéllel meghajtott elektromos generátorokkal biztosította a legfontosabb eszközök és rendszerek áramellátását. Ahogy a RAT felpörgött, a Boeing merev tagjaiba lassan visszatért az élet, újra volt egy kevés hidraulikanyomás, m&ucirc;ködött a rádió, és a gép úgy-ahogy kormányozhatóvá vált.
+<BR><BR>
+
+Pearson kapitány történetesen gyakorlott vitorlázópilóta volt, hétvégenként saját tulajdonú L-13 Blanik gépével repülgetett. Egészen más persze a Blanikkal, mint egy leállt hajtóm&ucirc;v&ucirc; Boeinggel vitorlázni. A 767-esben nem volt variométer, ezzel épp a legfontosabb m&ucirc;szer hiányzott, hiszen így a pilóták sem magasságukat, sem süllyedésük mértékét nem tudták megállapítani. A repül&otilde;gép kézikönyvében egy szó sem volt minimális és maximális süllyedési mutatókról, mert a Boeingnél senki sem gondolt arra, hogy egyszer valaki vitorlázni fog ezekkel a gépekkel. Megnézték azt is, mi az eljárás mindkét hajtóm&ucirc; leállása esetén, de err&otilde;l sem volt szó a könyvben. <I>"Akkor már komolyan elgondolkodtam, hogy vajon mi sülhet ki ebb&otilde;l"</I> - mondta kés&otilde;bb Pearson.
+<BR><BR>
+
+Id&otilde;közben Winnipegben sikerült beindítani a repül&otilde;tér évek óta leállított radarját, és megtalálni vele az elveszett 143-as járatot. Újabb, ezúttal szerencsés véletlen volt, hogy ezen a repül&otilde;téren még megvolt a régi lokátor, amit pedig már évek óta nem használtak sehol. Ennek segítségével sikerült megtalálni a vitorlázó Boeing-et, és megállapítani a gép repülési magasságát. Így tudták meg a pilóták hogy a gép percenként 6-800 métert süllyed. Quintal gyors számítást végzett, és megállapította, hogy nem fogják elérni Winnipeget. A repülésirányítók elkezdték sorolni a környékbeli repül&otilde;terek irányszögeit, de egyik sem rendelkezett megfelel&otilde; felszereléssel egy 767-es fogadására, különösen nem vészhelyzetben. Végül Quintal a 19 kilométerre fekv&otilde; Gimli városát, a Kanadai Királyi Légier&otilde; évek óta bezárt támaszpontját javasolta a kormánnyal küszköd&otilde; Pearson kapitánynak. Nem csak azért, mert ez volt a legközelebb, hanem mert ismerte is a bázist, évekkel korábban ugyanis történetesen itt szolgált, mint a légier&otilde; pilótája. A repül&otilde;tér két kifutópályával rendelkezett, a 32L és 32R jelzés&ucirc;ekkel, mindkett&otilde; elég széles és hosszú volt a biztonságos kényszerleszálláshoz. Amit azonban sem a pilóták, sem pedig a winnipegi repülésirányítók nem tudhattak, hogy a 32L kifutópályát már évekkel ezel&otilde;tt átalakították autóverseny-pályának, kerítéseket, szalagkorlátokat és akadályokat állítottak fel rajta, és az egykori repül&otilde;tér rendszeresen szolgált dragster- és gokartversenyek helyszínéül. Ráadásul éppen azon a napon, 1983 július 23.-án a Winnipeg-i Sportklub óriási autósport-fesztivált tartott ezen a repül&otilde;téren. A 32L pályán gokart-verseny zajlott, a kifutópálya körül pedig több ezres néz&otilde;sereg gy&ucirc;lt össze, valamint több száz autó, lakókocsi és sátor is állt ott, éppen a Boeing leszállásának útjában. A katasztrófa elkerülhetetlennek látszott, és senki sem volt, aki a pilótákat figyelmeztesse.
+<BR><BR>
+
+A 143-as járat id&otilde;közben folyamatosan ereszkedett, és elt&ucirc;nt a winnipegi radarról. Pearson megpróbálta kiereszteni a futóm&ucirc;veket, de a RAT ehhez már nem szolgáltatott elegend&otilde; hidraulikanyomást. A futókat ezért vészeljárással engedték ki, azaz a megfelel&otilde; gomb megnyomására a futóm&ucirc;vek "kiestek" a gépb&otilde;l, és saját súlyuk kattintotta helyre a rögzít&otilde; szerkezetet. Ez azonban nem m&ucirc;ködött tökéletesen, és a m&ucirc;szerfalon a három futóm&ucirc; lámpája közül csak kett&otilde; váltott zöldre. Az orrfutót nem sikerült rögzíteni. További kellemetlen meglepetés volt, hogy a RAT a féklapok m&ucirc;ködéséhez sem szolgáltatott elég energiát, ezért a leszállás igen rázósnak ígérkezett.
+</P>
+<CENTER>
+
+<A NAME="3">
+<A HREF="#3" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/balfasz/20050312_3.jpg'; document.wdth=600; document.hght=450; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050312_3_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A kilátás Gimli repül&otilde;téri tornyából<BR>
+</I>
+<BR>
+
+<A NAME="4">
+<A HREF="#4" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/balfasz/20050312_4.jpg'; document.wdth=600; document.hght=450; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050312_4_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Gimli repül&otilde;tere a leveg&otilde;b&otilde;l. A közelebbi, hosszabb kifutópálya a 32L, amelyen a szerencsés kényszerleszállás történt. A 32R pályát ma egy sportrepül&otilde;-klub használja.<BR>
+</I>
+</CENTER>
+<P ALIGN="justify">
+
+Gimlit&otilde;l tíz kilométerre Pearson ráállt a 32L kifutópálya irányára, és csökkenteni kezdte a gép sebességét. Mivel a féklapok nem m&ucirc;ködtek, a vitorlázók módszerével fékezett: keresztezte a vezérl&otilde;szerveket és csúsztatott. A csúsztatásos besiklást sohasem alkalmazzák a kereskedelmi járatokon, mert nagyot ránt a gépen, de az utasok kényelme most a legkevésbé sem volt szempont. A 767-es az oldalára fordult, a jobb oldali utasok az eget látták, a bal oldaliak viszont a földet, és odalent egy golfpályát. <I>"Krisztusom, még azt is meg tudtam volna mondani, milyen üt&otilde;ket használnak"</I> - mondta kés&otilde;bb egy utas. A durva man&otilde;ver révén a gép sebessége csökkent, de ezzel a RAT teljesítménye és a hidraulikarendszer nyomása is. Csak Pearson ügyességén múlt, hogy a késbe fordított, egyre lomhábban reagáló gép újra vízszintesbe tudott állni, és nem a szárnyvégével csapódott a földnek. Quintal is lenézett a földre, és hirtelen meglátta a kifutópályát keresztülszel&otilde; kerítést, a parkoló autókat és a rémülten menekül&otilde; embereket, akiket a m&ucirc;szerekre összpontosító kapitány nem is vett észre. De már kés&otilde; lett volna bármit is mondani. A vitorlázógépek csak egyszer próbálhatják meg a leszállást, és &otilde;k már megkezdték. Quintal beharapta az ajkát és csendben maradt.
+Miért választotta Pearson éppen a 32L pályát, amelyiken a verseny zajlott? Mivel senki sem irányította a leszállást, a kapitány csak vizuálisan tájékozódhatott. A 32L volt a szélesebb, és a kifutópálya szélén m&ucirc;ködtek a jelz&otilde;fények, bár Pearson nem tudhatta, hogy ezek a verseny megvilágítását szolgálják. Ráadásul a pálya végére festett X jel, amely a kifutópálya végleges használaton kívül helyezését jelezte, teljesen le volt kopva. Így a 120 tonnás Boeing ezüst bulldózerként zúdult a versenypályára. Amint a gép földet ért, a futóm&ucirc;vek kidurrantak, az orrfutó pedig összeroskadt. A 767-es az orrára zuhant, majd felpattant, és fülsért&otilde; csikorgással ismét az orrára érkezett, jó száz méteres szikracsóvát húzva. Csúszás közben letarolta a kerítéseket és összelapította a kifutópálya hosszában húzódó szalagkorlátot. A közönség és a versenyz&otilde;k rémülten menekültek. A gép végül "pofára esve" állapodott meg, alig harminc méterre a parkoló autóktól és a kempingez&otilde; családoktól! Az orrban kisebb t&ucirc;z ütött ki, de ezt az odarohanó autóversenyz&otilde;k kézi poroltókkal gyorsan megfékezték. Történetesen ugyanis - újabb szerencsés véletlen - a repül&otilde;téren m&ucirc;ködött egy ipari t&ucirc;zoltókészülékeket forgalmazó szaküzlet. A személyzet közben kinyitotta a vészkijáratokat, és a menekül&otilde;csúszdákon mind a 61 utas épségben hagyta el a repül&otilde;gépet. A gép helyzete miatt azonban a hátulsó csúszdák igen meredeken álltak, és néhányan könnyebben megsérültek, amikor b&otilde; három emelet magasságból a betonra zuhantak. &Otilde;k voltak a különös repül&otilde;esemény egyedüli sérültjei. A kényszerleszállást egyébként a leveg&otilde;b&otilde;l nézte végig egy történetesen arra repül&otilde; Cessna pilótája. <I>"Kifogástalan munka"</I> - értékelte kés&otilde;bb Pearsonék mutatványát.
+
+</P>
+<CENTER>
+
+<A NAME="1">
+<A HREF="#1" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/balfasz/20050312_1.jpg'; document.wdth=519; document.hght=368; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050312_1_thumb.jpg" BORDER=0></A>
+&nbsp;
+
+<A NAME="2">
+<A HREF="#2" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/balfasz/20050312_2.jpg'; document.wdth=402; document.hght=240; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050312_2_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A kényszerleszállt Boeing-767-es. A második képen jól látható, hogy a gép éppen a kifutópályát hosszában keresztülszel&otilde; szalagkorlátra érkezett.<BR>
+</I>
+
+</CENTER>
+<P ALIGN="justify">
+
+
+A kényszerleszállást a repül&otilde;gép majdnem sértetlenül vészelte át. Az orrfutó kijavítása és az enyhén deformálódott orr-rész helyreállítása után, mindössze két nap múlva a C-GAUN újra felszállhatott Gimlib&otilde;l. Igaz, a szerel&otilde;k kiküldött csoportja csak egy nap késéssel ért a helyszínre. Autójukból ugyanis félúton kifogyott a benzin.
+A "Gimli Glider" (= vitorlázó) névre keresztelt gép mind a mai napig repül az Air Canada színeiben. Robert Pearson kapitány néhány év múlva nyugdíjba ment, Maurice Quintal pedig 1997 óta az Air Canada Boeing 767-es f&otilde;pilótája. A 143-as járat megmentéséért mindketten magas állami kitüntetésben részesültek, és Gimli városa díszpolgáraivá avatta &otilde;ket.
+</P>
+
+<CENTER>
+<A NAME="5">
+<A HREF="#5" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/balfasz/20050312_5.jpg'; document.wdth=640; document.hght=424; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050312_5_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A "Gimli Glider" 2003 decemberében, Toronto repül&otilde;terén<BR>
+</I>
+<BR>
+
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050310.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050313.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

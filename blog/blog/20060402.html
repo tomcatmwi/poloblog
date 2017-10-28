@@ -1,0 +1,115 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2006.04.02., vasárnap</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Reggel felhívott a Fidesz nagygy&ucirc;lés biztonsági f&otilde;nöke személyesen, és megkért, hogy ne csináljak balhét a nagygy&ucirc;lésükön. Állítólag volt valami értesülése, hogy én füstbombákkal akarom szétkergetni a tömeget, meg bizonyítéka is, amit majd átad a rend&otilde;rségnek, ha valami történik. Hát, örülök, hogy vagyok akkora tényez&otilde;, hogy már Orbán Viktort is féltik t&otilde;lem. Pedig tényleg nem terveztem semmit.
+<BR><BR>
+
+Délután jött a hír, hogy a kislányver&otilde; zsidrákot elkapták egy Fradi-MTK meccsen. Sajnos nem Hipós Feriék személyesen, mert akkor lehetne süvét ülni érte, így csak megrángatták egy kicsit, meg egy kicsit majdnem meglincselték, mire nem kicsit lefosta a bokáját. Valahogy most nem volt olyan nagy a pofája, mint a Múzeumkertben. Ki érti ezt... A pasas egyébként ezidáig a szülei balatoni házában lapított, mert tudta, hogy keresik, és állítólag csak két kutyával mert kimozdulni hetekig. Hát igen, bátor ember! Amit még talán érdemes tudni róla, hogy MSZP-s pártaktivista, már amikor épp nem lapít. Megvan a pontos lakcíme, telefonszáma, még a kocsija rendszáma is, majd még mi is meglátogatjuk.
+<BR><BR>
+
+Barátunkat a rend&otilde;rök el&otilde;ször ki akarták menteni a fradisták karmaiból, aztán azok elmondták, miért is akarják szétszedni, mire a rend&otilde;rök is beszálltak a dologba. Végül a nagypofájúra bilincs került, bevitték a kapitányságra, és most elvileg eljárás indul ellene a múzeumkerti vitézség miatt. Bár persze még meglátjuk, lesz-e foganatja is, hiszen a kett&otilde;s mérce ugyebár kiválóan m&ucirc;ködik. Azért remélem, legalább leesett egy-két lépcs&otilde;n odabent. A rend&otilde;rök se szokták szeretni azokat, akik gyerekeket bántanak.
+</P>
+
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060401.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060410.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

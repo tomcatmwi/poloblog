@@ -1,0 +1,233 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<!-- Sunbelt Kerio Popup Killer - script has been inserted by KPF -->
+<script type="text/javascript">
+<!--
+var NoPopupsDone = 0;var CurrWindowOpen = window.open;var CurrWindowOpen2 = window.open;var orig_setTimeout = window.setTimeout;var orig_setInterval = window.setInterval;if ( window.showModelessDialog ) { var orig_showModelessDialog = window.showModelessDialog;} if ( window.showModalDialog ) { var orig_showModalDialog = window.showModalDialog;} 
+var cnt = 0;var popupType = "direct";var KPF_LOG_URL = "http://127.0.0.1:44501/pl.html?";var KPF_TIMEOUT = 100;var onUnloadFlag = false;var KPF_CompleteLoaded = false;
+function nullMethod() {}function nullWindow() {	 this.window = new Object(); this.document = new Object(); this.document.open=this.document.close=this.document.write=this.document.writeln=nullMethod; this.alert=this.back=this.blur=this.captureEvents=this.clearInterval=this.clearTimeout=this.close=this.confirm=this.dump=this.escape=this.focus=this.forward=this.GetAttention=this.getSelection=this.home=this.moveBy=this.moveTo=this.open=this.print=this.prompt=this.releaseEvents=this.resizeBy=this.resizeTo=this.scroll=this.scrollBy=this.scrollByLines=this.scrollByPages=this.scrollTo=this.setCursor=this.setInterval=this.setTimeout=this.sizeToContent=this.stop=this.unescape=this.updateCommands=nullMethod;}
+function destroyIframe(ifr){ if (ifr != document.getElementById("kpfLogFrame"))   { var x = ifr.parentNode.removeChild(ifr);    delete x;  };}
+function sendStream(s, idx, kpf_pt){ try {        var ifr = document.getElementById("kpfLogFrame");   var tmp = ifr.cloneNode(true);   tmp.id  = "ifr_" + idx;   var s2 = "srv=" + document.location + "&url=" + s + "&pty=" + kpf_pt;   tmp.src = KPF_LOG_URL + escape(s2);   document.body.appendChild(tmp); } catch (e) {   orig_setTimeout("sendStream('" + s + "', " + idx + ",'" + kpf_pt + "')", KPF_TIMEOUT); }}
+function sendUrl(url){ if (onUnloadFlag)   sendStream(url, cnt++, popupType); else  {  try {   orig_setTimeout("sendStream('" + url + "', cnt++,'" + popupType + "')", KPF_TIMEOUT);  }   catch (e)   {}	  }}
+function newOpen(url, name, atr) {wnd = new nullWindow();wnd.focus = nullWindow;wnd.opener = this.window;sendUrl(url);return(wnd); }
+function newOpen2(url, name, atr) { sendUrl(url); return(new nullWindow());}
+function stopPopups(kpf_pt) { popupType = kpf_pt; CurrWindowOpen = window.open; window.open = newOpen2; }
+function startPopups(kpf_pt) { window.open = CurrWindowOpen;  popupType = kpf_pt;}
+function my_setTimeout(one, two) { if (typeof(one) == "function") {    function myFun(){}    myFun=one;    function newFun() {     stopPopups('ontimer');      myFun();      startPopups('direct');    }	    try {      return orig_setTimeout(newFun,two);    }    catch (e)  {      try {	    return eval("newFun()");      }      catch(e) { }    }   }  else {    try {      return orig_setTimeout("stopPopups('ontimer');"+one+"; startPopups('direct');", two);    }    catch (e)  {      try {        return eval("stopPopups('ontimer');"+one+"; startPopups('direct');");      }      catch(e) { }    }  }}
+function my_setInterval(one, two) {  if (typeof(one) == "function") {    function myFun(){}    myFun=one;    function newFun() {      stopPopups('ontimer');      myFun();      startPopups('direct');    }	    try {      return orig_setInterval(newFun,two);    }    catch (e) { }  }  else {    try {      return orig_setInterval("stopPopups('ontimer');"+one+";startPopups('direct');", two);    }     catch (e) { }  }}
+function my_onload() { var my_retcode = true; stopPopups("onload"); if(orig_onload)  my_retcode = orig_onload(); startPopups("direct"); KPF_CompleteLoaded = true; return my_retcode; }
+function my_unload() {  var my_retcode = true; var cnt = 0; stopPopups("onunload"); onUnloadFlag = true; if(orig_onunload)   my_retcode = orig_onunload(); startPopups("direct"); return my_retcode;}
+function my_windowopen(url, name, atr){ if ( (! KPF_CompleteLoaded) || (document.all && event != null && event.type == "mouseover") )  {  if ( ! KPF_CompleteLoaded) {   popupType = "direct";  }  else {   popupType = "mouseover";  }  sendUrl(url);  popupType = "direct"; } else {   try {   return CurrWindowOpen2(url, name, atr);  }   catch (e)   {}  }}
+function my_showModelessDialog (url , arguments , features) { if (!NoPopupsDone) {   var wnd = new nullWindow();  popupType = "direct_dialog";  sendUrl(url);  popupType = "direct";  return wnd; } if (popupType!="direct" | (event && event.type == "mouseover") ) {   var curr_popup = popupType;  if (event && event.type == "mouseover") {   popupType = "mouseover";  }    popupType = popupType+"_dialog";  sendUrl(url);  popupType = curr_popup;  return ( new nullWindow() ); } else {   return ( orig_showModelessDialog(url , arguments , features) );  } }
+function my_showModalDialog (url , arguments , features) { if (!NoPopupsDone) {   popupType = "direct_dialog";  sendUrl(url);  popupType = "direct";  return ""; } if (popupType!="direct" | (event && event.type == "mouseover") ) {   var curr_popup = popupType;  if (event && event.type == "mouseover") {   popupType = "mouseover";  }    popupType = popupType+"_dialog";  sendUrl(url);  popupType = curr_popup;  return ""; } else {   return ( orig_showModalDialog(url , arguments , features) );  } }
+function nopopups() { if(!NoPopupsDone)   {  NoPopupsDone = 1;  orig_onload = window.onload;  orig_onunload = window.onunload;  window.onload = my_onload;  window.onunload = my_unload;  window.open = my_windowopen;  }}
+window.setTimeout = my_setTimeout;window.setInterval = my_setInterval;window.open = newOpen;if ( orig_showModelessDialog ) { window.showModelessDialog = my_showModelessDialog;}if ( orig_showModalDialog ) { window.showModalDialog = my_showModalDialog;}
+//-->
+</script>
+<!-- Sunbelt Kerio Popup Killer - end of the script inserted by KPF -->
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>2007.05.15., kedd</B><BR>
+Tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+<B>Börtönnapló, I. rész</B> - <I>2007.05.11.</I><BR><BR>
+
+Amikor pár napig nem írok blogot, mindig azzal kezdem a bejegyzést, hogy nem vitt el az ÁVH. Most viszont elvitt, már megint. Valaki úgy döntött, elég volt ebb&otilde;l a blogból, meg a gazdájából is, szépen kapcsoljuk le, hadd lássa mindenki, hogy mi vagyunk az er&otilde;sebbek. No, de ezt már elmondták a tévében is, nyilván mindenki tudja, hogy személyemben egy veszedelmes terrorista került "végre" rend&otilde;rkézre, és még vegyszereket is találtak, húha, még szerencse, hogy ilyen ügyes a rend&otilde;rség, mert hát mi lett volna, ha még akármi is lehetett volna, elvégre tisztességes ember már nem lehet, akinél vegyszert találnak. Hisz olyat csak a terroristák, ugye. Mint amilyen én.<BR><BR>
+
+Azért valakinek hátha mégis sántít egy kicsit ez a dolog, pláne, hogy a diadalmas leleplezést éppen a Dunapartra tervezett, hiper biztonsági intézkedésekkel védett holocaust-emlékfelvonulás el&otilde;estéjén tették, amikor naná, hogy jól hangzik, ha egy "közismert széls&otilde;jobboldali" állítólagos lakásán úgy nevezett "bombagyárat" találnak. Ráadásul egy olyan személyr&otilde;l van szó, aki már többször cigányozott, és egyszer állítólag egy zsidót is megpofozott! No, akkor parancsoljatok, a történet valódi háttere, avagy hogyan csináljunk koncepciós pert egy olyan korban, amikor úgyse hiszi el senki, hogy koncepciós perek léteznek.<BR><BR>
+
+Az ügy - még hetekkel ezel&otilde;tt - azzal kezd&otilde;dött, hogy Athina kapott egy azalea nev&ucirc; virágot. Szegény Azi - mert ez volt a neve - nagyon hamar elhervadt, és nem is sejtette, hogy rövid életével egy napon óriásivá fogja dagasztani a terrorveszélyt Magyarországon. Utólag ugyanis megtudtuk, hogy az azalea speciális virágföldet igényel, káliumban gazdag, enyhén savas talajt, ezt pedig kálium-nitrát hozzáadásával lehetett volna elérni.<BR><BR>
+
+Azi halála ennyivel gazdagította szergény mez&otilde;gazdasági ismereteimet, majd napirendre tértünk a gyász felett, és éltük tovább békés, egyel&otilde;re terrormentes életünket. Néhány nappal ezel&otilde;tt Robin barátom édesanyjával, Ágival dumálgattunk, és szóba került Azi. Kiderült, hogy már &otilde; is többször próbált azaleát nevelni, ám neki is mindig elpusztult. Mondtam, hogy vegyen kálium-nitrátot, abból adjon hozzá a földhöz egy kanállal, és akkor majd megmarad.<BR><BR>
+
+Keresett is ilyet a virágboltban, de nem lehet kapni. Végül egy kertész barátom mondta, hogy gazdaboltokban keressem, mert nem túl gyakori anyag, de ott kapni fogok. Ezek után a Hermesznél találtunk, el is mentem érte, de kiderült, hogy csak 25 kilós zsákban kapható, az 1 és 2 kilós kiszerelés megsz&ucirc;nt. Na, fasza. Se mivel még ez is csak 4000 forint volt, üsse kavics, megvette, egy zsákkal, majd kidobjuk a fölösleget.<BR><BR>
+
+Vettem még két zsák ventillált kénport is, amit sz&otilde;l&otilde; permetezésére használnak, ugyanis egy barátom, akinek a családja sz&otilde;l&otilde;m&ucirc;veléssel foglalkozik, amikor a kálium-nitrát beszerzése fel&otilde;l faggattam, megkért, hogy ha már olyan helyen járok, ahol ilyen is van, vegyek neki és kifizeti. Minderr&otilde;l, gondolom, értesültek bizonyos hatóságok is, hiszen telefonon beszéltük meg. Zseniálisan kikövetkeztették, hogy ezek történetesen l&otilde;por készítéséhez is alkalmasak, csak szénpor kell hozzá. No, igen, csakhogy ilyesmi esetünkben nem volt.<BR><BR>
+
+A cuccot taxiba raktam, és a Soroksári úti TESCO-ba is beugrottam egy kis kajáért. Itt vettem két karton cukrot is, pontosan azért, amiért az ember cukrot vesz: megenni. Akkor még nem tudtam, hogy ez is robbanásveszélyes anyagnak számít. Így felpakolva elvittem a cuccot Áginak, és megbeszéltük a sz&otilde;l&otilde;s sráccal, Gerg&otilde;vel, hogy &otilde; is odajön a kénért.<BR><BR>
+
+A BRFK központjában eközben a létez&otilde; összes akciócsoportot készültségbe helyezték, mert ha én valakivel találkozom, az biztos nagyon veszélyes...<BR><BR>
+
+Nyolc óra felé járhatott, amikor megérkeztem, és némi szentségelés keretében felcipeltem a bazi zsákot, meg a többi cuccot a tizedik emeletre. Kés&otilde;bb a rend&otilde;rség azt állította, s ezt közölte a sajtó is, hogy állítólag valaki együtt utazott velem a liftben, látta a vegyszereket, és mivel hallotta, hogy én telefonon megbeszélem valakivel a "robbantást", névtelen bejelentsét tett a rend&otilde;rségen. Ebb&otilde;l egy szó sem igaz.<BR><BR>
+
+Senki nem utazott velem, nem telefonáltam senkinek, és egyébként nem lennék hülye idegenek füle hallatára, több kiló vegyianyagot cipelve világgá kiabálni, ha ilyesmire készülnék. Az mondjuk tény, hogy magamban arra gondoltam, mekkora balhét lehetne csinálni ennyi cuccal. Már persze, ha volna valakinek türelme az egészet megfelel&otilde;en összekotyvasztani.<BR><BR>
+
+Azt a többieknek is elmondtam odafenn. Cukorból és kálium-nitrátból ugyanis füstbombát lehet készíteni. Jót röhögtünk, aztán kitaláltuk, hogy miért ne. Fogtunk vagy negyven deka cukrot, betettük egy fazékba és megolvasztottuk. Amikor már folyt, levettük a rezsóról, beletettünk hatvan deka kálium-nitrátot, elkevertük, és kiöntöttük két papírpohárba. Korábban azt olvastam, hogy kénnel növelni lehet a füst mennyiségét, így az egyikbe tettünk egy kanálnyit abból is. A maradék anyagot, mivel nem akartuk, hogy belekössön a fazékba, két-három teamécses tégelyébe öntöttük ki.<BR><BR>
+
+Kicsit többet sikerült csinálni, mint szerettük volna, de hát ez van.  Vártuk, hogy kih&ucirc;ljön, akkor majd kivisszük a Duna-partra és kipróbáljuk. Aztán mentünk volna haza, de hát ezt másképp rendezte a BRFK.<BR><BR>
+
+A két papírpohárba került egy-egy darab gyújtózsinór is. Ezeket hetekkel korábban vettem egy pirotechnikai üzletben. A gyújtózsinór engedély nélkül tartható, pirotechnikai anyag. Hogy mire kellett? Röhögni fogsz, kedves Olvasó, mert úgyse hiszed el: papírrepül&otilde;höz. Egy kis darab (3-4 cm) gyújtózsinórt egy papírrepül&otilde; szárnyára ragasztva frankó “sugárhajtóm&ucirc;vet” kapsz. Ezzel szórakoztunk egyszer Blogadminnal és a szomszéd üzlet tulajdonosának két kisunokájával, a bolt udvarán.<BR><BR>
+
+Még mindig benne volt a táskámban. Ugyan a cukor-KNO3 keveréket akár gyufával is meg lehet gyújtani, gondoltam, így elegánsabb. Hát, a rend&otilde;rség is értékelte... A cucc valami fél óra alatt készült el, s gondoltuk, amíg kih&ucirc;l, rendelünk pizzát. Ez meg is történt, vártunk, s egyszercsak csöngettek. Ági felvette a kaputelefont, a pizzafutár pedig kérte, hogy engedjük be. Megnyomta a nyitógombot, de ezután még vagy tíz perc eltelt, és nem ért fel a futár. Nem is csengetett többet.<BR><BR>
+
+- Mi a fene - morogtam - már megint valami értelmi fogyatékos hozza a kaját, lemegyek, beengedem.<BR><BR>
+
+Lelifteztem a földszintre, de a pizzafutár helyett a kapuban marcona, egybenyakú emberek álltak, és csúnyán néztek.<BR><BR>
+
+- Maga rendelte a pizzát? - reccsent rám egyikük.<BR><BR>
+- Én. Miért?<BR><BR>
+- Maga itt lakik, a házban?<BR><BR>
+- Nem, de mi köze hozzá?<BR><BR>
+- Rend&otilde;rség! Mi a neve?<BR><BR>
+- Polgár Tamás.<BR><BR>
+- Nagyszer&ucirc;! - kiáltotta a faszi, majd nekem rontottak, falhoz löktek és megbilincseltek. Akkor láttam, hogy legalább harmincan vannak, valamennyien golyóálló mellényben, fegyverrel, némelyikük géppisztollyal. Mögöttem sorra trappoltak fel a lépcs&otilde;n, faltör&otilde; kost cipelve, fegyverrel a kézben.<BR><BR>
+
+- Melyik lakásból jöttél?!<BR><BR>
+- Tizedik emelet harminckilenc – feleltem.<BR><BR>
+- Kik vannak még ott?!<BR><BR>
+- Egy huszonéves barátom, meg egy negyvenes n&otilde;.<BR><BR>
+- Ez minden?!<BR><BR>
+- Ja, meg egy kutya.<BR><BR>
+- Miféle kutya? Agyon fogjuk l&otilde;ni!<BR><BR>
+- Lövöd ám, tudod kit, egy halál békés, menhelyr&otilde;l mentett jószág, alig egy éves!<BR><BR>
+- Azt mondod, békés? De ha nem az, lel&otilde;jük!<BR><BR>
+- Nem kell lel&otilde;ni. Továbbá faltör&otilde; kosra és fegyverre sincs szükségetek. Felmentek, becsöngettek, és be fognak engedni. Nincs náluk se fegyver, se robbanóanyag, amit pedig el&otilde;állítottunk, az egy ártalmatlan füstképz&otilde; anyag.<BR><BR>
+- Ti állítottátok el&otilde;?<BR><BR>
+- Igen, boltban is kapható, I. kategóriájú pirotechnikai eszköz. Egész évben birtokolható.<BR><BR>
+- Jól van, meglátjuk. Irány felfelé!<BR><BR>
+
+Odafenn az izomagyúak berúgták a lakásajtót, jól arcontalálva vele szegény Ágit, földre teperték Gerg&otilde;t, de végül tényleg nem l&otilde;tték le a csodálkozó Omlást, csak kicsukták az erkélyre. Engem is felvittek, és az el&otilde;szobába állítottak. Megnézték a konyhát, majd lerádióztak a kollégáiknak, hogy jöhetnek szakérteni.<BR><BR>
+
+Innent&otilde;l a lakás átalakult átjáróházzá. A golyóálló mellényes faszik - a BRFK Terrorizmus és Extrémizmus Elleni Osztálya munkatársai - unottan &otilde;riztek minket, amíg a helyszínen felvonultak a következ&otilde; osztályok:<BR><BR>
+
+- REBISZ kutyás szolgálat, bombakeres&otilde; kutyákkal<BR>
+- BRFK Életvédelmi osztály<BR>
+- BRFK T&ucirc;zszerész-szolgálata<BR>
+- BRFK B&ucirc;nügyi technikai szolgálata<BR>
+- Vegyész szakért&otilde;i csoport<BR>
+- Szervezett B&ucirc;nözés Elleni Osztály<BR>
+- valamint a kerületi jár&otilde;r, hadd szopjanak &otilde;k is.<BR><BR>
+
+A házkutatás hajnalig tartott, 12 órán át, teljesen szabálytalanul. Mindhármunkat kizavartak a lépcs&otilde;házba, nem láthattuk, mit csinálnak, és Ági, mint lakástulajdonos, hiába kérte hatósági tanú jelenlétét, nem foglalkoztak vele. Jeleztem is a fakabátoknak, hogy ez így nem teljesen kerek, mire leugattak.<BR><BR>
+
+- És hol látsz te itt házkutatást?!<BR><BR>
+- Hát...<BR><BR>
+- Nem kéne ilyen okosnak lenni! Itt nincs házkutatás!<BR><BR>
+- Azért amikor egy szakasz rend&otilde;r kutakodik egy lakásban, az azért elég közel áll hozzá, nem?<BR><BR>
+- Az más! Azt úgy nevezik, hogy helyszíni szemle!<BR><BR>
+- És azt lehet így?<BR><BR>
+- Persze, hogy lehet!<BR><BR>
+
+Amúgy nem lehet, mert helyszíni szemléhez is lehet tanút kérni, és annál is jelen lehet a lakás tulajdonosa. Jó két óra kutakodás után az egyik nyomozó talált egy dobozt a szekrény tetején, belenézett és felrikkantott.<BR><BR>
+- Hé! Ezt nézzétek!<BR><BR>
+
+[...]<BR><BR>
+
+________<BR>
+<i>Folytatása következik holnap, este nyolc körül, mert ennyit ember a földön nem képes egy huzamban legépelni...</i>
+
+
+<BR><BR>
+
+
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="200705010.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+<BR><BR>
+
+</BODY>
+</HTML>
+
+<!-- Sunbelt Kerio Popup Killer - script has been appended by KPF -->
+<iframe id="kpfLogFrame" src="http://127.0.0.1:44501/pl.html?START_LOG" onload="destroyIframe(this)" style="display:none;">
+</iframe>
+<script type="text/javascript">
+<!--
+	nopopups();
+//-->
+</script>
+<!-- Sunbelt Kerio Popup Killer - end of the script appended by KPF-->

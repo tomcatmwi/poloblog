@@ -1,0 +1,125 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>2007.05.31., csütörtök</B><BR>
+Athina
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Holnaptól ismét jönnek a börtönnapló következ&otilde; részei, szépen, sorban, egymás után, de addig is van itt néhány új fejlemény.<BR><BR>
+
+Most éppen Tomcat folytatólagos kihallgatására várunk, ami feltehet&otilde;en jöv&otilde; hét elején fog megtörténni - ez az ügy el&otilde;adójának döntését&otilde;l függ. Ekkor kerülhet a védelem kezébe az el&otilde;zetes letartóztatás helyben hagyásáról szóló és a gyanúsítás tárgyát (közveszély okozás el&otilde;készületér&otilde;l robbanószerrel való visszaélésre)  súlyosbító határozat, illetve az ezt alátámasztó írott szakért&otilde;i vélemény.<BR><BR>
+
+A jelenleg rendelkezésre álló infók szerint teljességgel alaptalan mindaz, ami Tomcat-tel történik, és bárki bármit mond, totálisan koncepciós ügy szaga van ennek az egésznek. Vajon hányan tárolnak otthon cukrot, m&ucirc;trágyát, meg még ezt-azt?<BR><BR>
+
+Esetleg jó húzás lenne keríteni valakit (szakembert, ofkorz), aki nyílt színen kipróbálja, a csepeli lakásban fellelt mennyiség&ucirc; és min&otilde;ség&ucirc; anyagokból pontosan mekkora gyulladást, füstölést, vagy ne adj isten robbanást lehet kihozni. Er&otilde;s a gyanúm, hogy robbanást semekkorát, max. egy jó adag füstöt, és egy kis lángot. Ez aztán marha nagy terrorizmus... Legalább három, egyenként 10x10 centis legóházat össze lehetne vele kormozni.<BR><BR> 
+
+Szinte biztosra veszem, hogy a vád által megbízott szakért&otilde; a csúsztatás kedvelt eszközével élt, és odaírta, hogy a lakásban fellelt anyagokhoz még például szénport adva ilyen, vagy olyan, nagyon veszélyes robbanó elegy készíthet&otilde;. Csak azt a csekély tényt felejtette el leszögezni, hogy mondjuk a lakásban senki nem talált egy gramm szénport sem, ami nélkül pedig nincs robbanóanyag, a cukor csak cukor, a salétrom meg csak salétrom marad. Elég ilyen stílusú csúsztatásból beletenni hármat-négyet a szakvéleménybe, és kész is a Tomcat elmeszelésére tökéletesen alkalmas, mindenféle borzalmas terrorcselekményeket feltételez&otilde;, koncepciós iromány. Köszönjük.<BR><BR>
+
+A helyzet tehát egyáltalán nem megnyugtató, mert most elkapták, és nem akarják elereszteni a Tamást, míg valami fiktív dolgot rá nem varrnak. Jöv&otilde; hét elején valamikor lesz egy bejelentett demonstráció a Gyorskocsi utcában, annál az épületnél, amelyben a fogda van. Pontos adatokat még nem tudok, de amint meglesz a dátum és az id&otilde;pont, jelzem. Gyertek minél többen, és viselkedjetek normálisan. Az &otilde; érdekében.<BR><BR>
+
+Addig is pedig nézegessétek a <A HREF="http://tomcatpolo.hu/user_preview.php" TARGET="_BLANK">"Hamarosan jön"</A> rovatot, mert felkerült az <A HREF="http://tomcatpolo.hu/komcsi.jpg" TARGET="_BLANK">"Ars poetica"</A> és a <A HREF="http://tomcatpolo.hu/tcpolo.jpg" TARGET="_BLANK">"Tomcat KI"</A> póló is, amivel talán kicsit éreztetni lehetne a külvilággal, mennyien vannak Tomcat pártján. Fel a fejjel!<BR><BR>
+
+
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20070530.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+
+<A HREF="20070601.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+<BR><BR>
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,135 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-413</B><BR>
+2005.07.22.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+
+<P ALIGN="justify">
+<I>Apám, ha ezt nem látom, nem hiszem el. Ez kész. Küldte: Gál István, &otilde; pedig a mellékelt levéllel kapta. Én megyek nyugtatóért.</I>
+<BR><BR>
+
+Ezt nem hiszitek el!
+<BR><BR>
+
+A CIWA-ba bevittek egy C4-est a szervizbe a SIXT-t&otilde;l. Az autó egy amerikainak volt kiadva.
+Képzeld, a barom azt hitte, hogy automata, és egyesben lement Pécsig 70-80-nal!<BR>
+Az autó belülr&otilde;l szétégett, a motor a váltó, minden szénné égett,
+egy hatalmas lyuk égett a motorháztet&otilde;be!<BR>
+Basszus ez tényleg a legostobább nép a földön!<BR>
+Nem t&ucirc;nt föl a hangja? És az sem, hogy nem húz? Az sem t&ucirc;nt fel, hogy nem
+vált? Az automata is jelzi hogy hányasban vagy, s&otilde;t, ha nem fokozatmentes,
+akkor még érzed is a váltást. Vagy nem t&ucirc;nt fel, hogy q-büdös???? Még most is az, pedig már kih&ucirc;lt!
+Ha nem látom, vagy nem az Anita meséli, nem hiszem el!
+
+</P>
+<CENTER>
+<A NAME="1">
+<A HREF="#1" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/balfasz/20050722_1.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050722_1_thumb.jpg" BORDER=0></A>
+&nbsp;&nbsp;
+<A HREF="#1" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/balfasz/20050722_2.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050722_2_thumb.jpg" BORDER=0></A>
+&nbsp;&nbsp;
+<A HREF="#1" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/balfasz/20050722_3.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050722_3_thumb.jpg" BORDER=0></A>
+</CENTER>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050721.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050723.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

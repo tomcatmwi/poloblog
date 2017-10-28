@@ -1,0 +1,137 @@
+<HTML>
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>DROID-221</B><BR>
+2004.11.22.
+<BR><BR>
+
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<BR><BR>
+
+<I>
+Milyen szerencse, hogy egyszer valaki feltalálta a telefonos ügyfélszolgálatot. Nélküle kevesebb droidot ismerne az emberiség. A sztorit beküldte: Rascal.
+<BR><BR>
+</I>
+
+Olyan helyen dolgozom, ahová iqharcos (a.k.a. <I>droid</I>) emberek betelefonálhatnak és értlemesebbnél értelmesebb kérdésekkel bombázhatják az ott dolgozó embereket. Szóval ezen a munkahelyen, rengeteg érdekes dolog történik. Nemrég pölö
+a "médiaélharcos" index.hu is felfigyelt erre a szolgáltatásra, egy értelmes cikkjükben lehúzva ezt a szolgáltatást, hogy az ott dolgozók mennyire retardáltak és alkalmatlanok munkájuk ellátására. Lehet, hogy igazuk van, tuti, hogy vannak olyan elemek, akik nem állnak éppen a helyzet magaslatán, de ez messze eltörpül egyes betelefonálók irdatlan ostobasága mellett.
+<BR><BR>
+
+Történt kábé 2-3 éve, karácsonykor, 24-én, hogy épp dolgoztam, és vártam az okosságokat. Este 8 óra magasságában egy értelemesnek t&ucirc;n&otilde; (de tényleg az!) hölgy hangja jelentkezett be a telefonon. Fogadtam a hívást.
+<BR><BR>
+
+- Üdvözlöm, XY vagyok, miben segíthetek?<BR>
+- Jó estét kívánok. Én a VIII. kerületben vagyok, és véletlenül elütöttem az autómmal egy madarat. Nem tudom, milyen madár, de ÉRTÉKESNEK néz ki, és még mozog, de halálán van!
+<BR><BR>
+
+A döbbenett&otilde;l nem is tudtam, hogy mi a rákot mondjak, mert a hangján nem hallatszott, hogy debil, és nagyon komolyan gondolta, szóval nem volt okom feltételezni semmi rosszat. Pár másodpercnyi tétovázás után gondoltam, felajánlok a hölgynek egy ügyeletes állatorvost, aki 24.-én este is készenlétben van.
+<BR><BR>
+
+- Jaj, köszönöm - jött a válasz - de én nem erre gondoltam hanem egy ÁLLATPREPARÁTORRA, aki kikészíti, miel&otilde;tt tönkremegy!!!
+<BR><BR>
+
+...<BR>
+Próbáltam elszótagolni, hogy "nem hinném", meg hogy "szerintem senki", de annyira er&otilde;sködött, végülis kénytelen voltam egy-két maszek preparátor számát megadni. Gondolom, nagyon örültek, és remélem, elküldték a droidbontóba...!
+
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20041121.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20041123.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

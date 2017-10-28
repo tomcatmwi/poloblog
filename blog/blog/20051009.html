@@ -1,0 +1,114 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2005.10.09., vasárnap</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Tegnap demóparty volt; ezúttal nem ezer kilométerekre, csak itt, a Soroksári úton, a Táncsics Mihály M&ucirc;vel&otilde;dési Házban. Természetesen jóval kisebb volt, mint a Breakpoint, az Assembly vagy a többi, amit id&otilde;nként meglátogatok. Itt, a Function 2005-ön alig ötven-nyolcvan emberke gy&ucirc;lt össze, leginkább magyarok, de közénk vegyült négy-öt osztrák arc is, illetve Jailbird, aki pártunk és kormányunk álláspontja szerint jelenleg szerbnek számít, hiába tiltakozik. Pénteken csak benéztem, nem volt sok érdekes, aztán csak szombaton dél körül mentem vissza, de akkor sem sok érdekeset láttam, csak kockaarcú gépfügg&otilde;ket a monitorra meredve, meg néhányat az udvaron, kezükben sörrel vagy cigivel. A party estére kezdett érdekes lenni, amikor valahogy összever&otilde;dött egy csomó igazi régi demoscener arc, akik még a kilencvenes években nyomták a dolgokat, és velük végre másról is lehetett beszélgetni, mint a legújabb Radeon kártyák poligonszámairól, meg az IRC-s pletykákról. Megfigyeltük, hogy a scene-en megjelent egy új "generáció", akiknek legf&otilde;bb ismérvük, hogy anyuci-apuci pénzén interneteznek egész nap, ebb&otilde;l áll az életük, aztán valahogy idekeveredtek, és most nagy az arcuk. E kategória non plusz ultrája a Droidzónában minap bemutatott Geri lett volna, de &otilde; el se jött, csak egy DarkBasic-ben írt demót küldött, ígéretéhez híven azért, hogy azzal lenyomja Gargaj és a Conspiracy összes m&ucirc;vét. Remek munka volt, Gargaj is elismerte, hogy &otilde; ilyet nem tud. A demó compo-ban egyébként a tizenegyb&otilde;l kb. 2-3 indulót nevezhetnék értékelhet&otilde;nek, a 64K és 4K intró kategóriában már jobb volt a felhozatal. Részemr&otilde;l egy kondér paprikáskrumplival szálltam be a party hangulatába, melyet a hátsó udvarban f&otilde;ztünk. Berta közben kivívta a party közönségének szimpátiáját, illetve mindenféle pizzák, szendvicsek és egyéb élelmiszerek kisebb-nagyobb szeleteit, az általa gyakran alkalmazott módon (szem levesestányérnyira nyit, leül, étkez&otilde; kétlábút rezzenéstelenül fixíroz). Kés&otilde;bb együtt nézte velünk a demókat. Scenekutya.
+<BR><BR>
+
+Lili cica közben egész jól elvolt odahaza a dobozban. Mire hazaértünk, megette a kis doboz macskaeledelt, amit betettem neki, és már a szeme is tisztább volt. Nézegetett kifelé, megcsodálta az ablakpárkányra állított Szakállas Bácsi Díjat, aztán a mellettük álló kis fa zsidószobrokat, akiket Loydi hozott nekem Krakkóból, és akik a kenyérsüt&otilde; gépben utaztak költözéskor, bár ebben nem volt semmi célzatosság. Nyávogott egy kicsit, aztán kiugrott a dobozból és berongyolt a konyhaszekrény alá. Egy darabig cicegtünk neki, de az istennek se volt hajlandó kijönni a bunkiból, míg partvisnyéllel ki nem kotortuk. A következ&otilde; éjszakát a fészerben töltötte, de ott persze nem mászott ki. 
+<BR><BR>
+
+Másnap egészségügyi séta következett a teraszon, Berta n&otilde;vér felügyelete mellett. Berta nagyon vigyázott rá, nehogy megijessze. Lili egy kicsit vernyogott a pincelejáró fölött, gondolkodván, hogy vajon érdemes-e leugrani a jó emeletnyi mélységbe, majd inkább sarkon fordult, és elpucolt a lakásajtó irányába. Naná, hogy megint a konyhaszekrény alá! Kikotrása után megcsodálta magát a falitükörben, nyávogott magának, és ismét kikerült a fészerbe. Ma reggelre azonban kimászott onnan és elt&ucirc;nt. Biztosan itt van valahol a kertben, nem hiszem, hogy messze menne, gyenge is hozzá, meg enni is csak itt kap. Tegnap este már dorombolt is egy kicsit. Ha mégse jönne vissza, hát istenem, akkor sok szerencsét neki. Állítólag hét élete van, bár a doki szerint ebb&otilde;l legalább ötöt elhasznált már.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20051007.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20051010.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

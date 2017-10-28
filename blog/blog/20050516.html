@@ -1,0 +1,131 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2005.05.16., hétf&otilde;</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Bár ez nem a levrov, mégis szeretnék idemásolni egy olvasói levelet. Küld&otilde;je Janovszky Zsolt, s hogy kicsoda &otilde;, kiderül a levélb&otilde;l.
+<BR><BR>
+
+<I>
+Szia Tomcat, FYI:<BR>
+Az SzDSz Újgeneráció II. kerületi elnöke vagyok, és felháborít az, hogy
+neked estek a moszkva téri tüntetésen. Jogod volt ott lenni, és jogod
+lett volna zavartalanul demonstrálni. A karlendítéses sztori szerintem
+valami túlbuzgó seggfej ötlete volt, hogy az amúgy roppant kínos
+incidenst elsimítsák. Én azt gondolom, hogy téged ilyennel vádolni
+nagyfokú tájékozatlanság, és mégnagyobb fokú ízléstelenség.<BR>
+Csatlakoznék az azóta már az ÚG-bõl kilépett Kacsához: Hajrá Tomcat.<BR>
+Üdv:<BR>
+Janovszki Zsolt<BR>
+p.s.: Hogy szakmázzunk is egy kicsit, a póló tervünk (cigány vagyok,
+nem turista) már az ötlet megszületésekor is annyira rossz volt, hogy
+inkább civilként vettem részt...
+<BR><BR>
+</I>
+
+Ezúton köszönöm soraidat, kedves Zsolt, és örülök, hogy a magát liberálisnak mondó oldalon is maradtak még normális emberek. Lehet persze, hogy ezek után nem sokáig maradsz kerületi elnök, de ha véleményed miatt kirúgnak, azzal meglehet&otilde;sen markánsan min&otilde;sítené magát a "liberális" párt.
+<BR><BR>
+
+A szemem egyébként köszöni, jól van, bár tegnap óta kissé bekékült. Tamás Gáspár Miklós állítólag azt okoskodta ki ma a tévében, hogy katonai ruhát hordani már eleve b&ucirc;ncselekmény. Úgy örülök, hogy ilyen emberek szabadon beszélhetnek a tévében.
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050515.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050517.html">
+<B>következ&otilde; nap >></B>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,146 @@
+<HTML>
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>DROID-224</B><BR>
+2004.11.25.
+<BR><BR>
+
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<BR><BR>
+
+Néhány nappal ezel&otilde;tt az alábbi üzenetet hagyta nekem Helianthus nev&ucirc; kedves olvasóm:
+<BR><BR>
+
+<I>
+Helló! Aztat akarom mondani, hogy van egy olyan droidom, hogy bepipilsz! Ha adsz egy mail-címet elküldöm az alkotását. A hatás azonnali! :) bye!
+</I>
+<BR><BR>
+
+Mit lehet tenni egy ilyen kedves unszolásra? Megadtam a címet, és a következ&otilde; levelet kaptam.
+<BR><BR>
+
+<I>
+Hejhó!
+<BR><BR>
+
+Történet: Vidéki kisvárosban lakunk, és az egyik számtech. boltban nagyon ismer&otilde;s vagyok. Dolgoztam is ott, stb... Pénteken bement egy droid, azzal a céllal, hogy az otthon szerkesztett dokumentumját kinyomtassa, és kés&otilde;bb a kinyomtatott cuccot postázza. Namos véletlenül nyomtatott egy rossz példányt is (elírta rajta a saját nevét :)), amit mi megmentettünk (otthagyta a pulton), és beszkenneltünk. Ha nem baj, a neveket kiszedtük, meg kiszedtük a város nevét is, mert nem szeretnénk, ha az üzlet neve kiderülne. (Szerintem droidunk nem olvassa a tomcatpolo.hu-t, de hátha. :] )<BR>
+Mellékelem a fénymásolatot, ha gondolod tedd ki így, vagy gépeld be!<BR>
+Fontos: droidunk, a "jó" példányt aláírta, és úgy vitte a postára a megsemmisített hitelkártyával együtt. Mi persze szakadtunk a röhögést&otilde;l még a mai napon is.
+<BR><BR>
+
+Üdv: Helianthus.annus 
+<BR><BR>
+</I>
+
+És akkor most nézzük azt a levelet, amelynek elolvasása, tanúsíthatom, valóban az inkontinencia rémével fenyeget...
+</P>
+
+<CENTER>
+<A NAME="1">
+<A HREF="#1" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/balfasz/20041125.gif'; document.wdth=385; document.hght=596; return true;" ONMOUSEOUT="window.status='; return true;">
+<IMG SRC="20041125_thumb.gif" BORDER=0></A>
+</CENTER>
+
+
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20041124.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20041126.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

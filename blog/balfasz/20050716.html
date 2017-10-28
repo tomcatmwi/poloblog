@@ -1,0 +1,118 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-409</B><BR>
+2005.07.16.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+
+<P ALIGN="justify">
+<I>Réges-régen szerepelt itt egy sorozatra való droid az épít&otilde;ipar világából. ASDF nev&ucirc; kedvesolvasóm néhány nap késéssel küldött egy további sztorit, ami valahogy akkor elsüllyedt. Most megtaláltam, tessék.</I>
+<BR><BR>
+
+Honvédségi lakótelep, nem is olyan régi, semmi panel, téglából épült, kulturált meg minden. Természetesen az épít&otilde;iparban a lakosság összetételéhez mérten felülreprezentált egyénekkel építtették meg, és hasonló kaliber&ucirc; emberek oldották meg a problémákat is.
+<BR><BR>
+
+Beköltözés után röviddel az a helyzet állott el&otilde;, hogy fürdés után a kád dugóját kihúzva a fürd&otilde;szoba közepén lev&otilde; lefolyóból spriccelve feltört a fürd&otilde;víz. Egy ideig ment a trükközés, hogy például a dugót nem húzzuk ki, félállásban ott marad a lefolyón, és mivel így lassabban folyik le a víz, nincs áradás, de ezt meguntuk. Mivel bérlemény volt, bejelentettük a hibát, s a fent már említett szakik rövidesen megérkeztek megoldani a problémát.
+<BR><BR>
+
+A megoldás a következ&otilde; lett. A lefolyónak, ugye, van a közepe a csavarral, meg körülötte 6-7 lyuk, melyeken át lefolyik a víz. Na, a szakember fogta a szilikontömít&otilde;t, két csavart elhelyezett a lyukakban, majd ezeket szilikonnal rögzítette - adott a tetejükre is rendesen, hogy el ne rozsdálljanak - és a lefolyó átereszt&otilde; képessége máris a harmadával csökkent. Próbának
+feltöltötte a kádat, kihúzta a dugót, majd látván, hogy a lefolyóból immár nem tör fel a víz, elégedetten távozott.
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050715.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050718.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

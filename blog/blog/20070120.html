@@ -1,0 +1,140 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>2007.01.19., péntek</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Tegyük már helyre ezt a <I>gyengítetturánium</I>-témát, vagyis a NATO (amerikaiak) által használt, az angol szaknyelvben "depleted uranium"-nak nevezett lõszeranyag kérdését. Ismét elõkerült ugyanis a téma annak kapcsán, hogy Koszovó 1999-es bombázása óta, ahol bevallottan százszámra szórták a <I>depleted uranium</I>-ból készült lövedékeket az A-10-es alacsonytámadó repülõgépek, tizenkétszeresére nõtt a daganatos megbetegedések száma. A NATO tagadja, hogy ennek köze lenne a lövedékeikhez, mások meg nem. Mit ír a magyar (szak)sajtó? Na, õket inkább hagyjuk. Évekig emlegettek például a katonai szaklapok úgynevezett <I>nagy átütõerejû tungsztenlövedékeket</I> néhány új légvédelmi rendszer kapcsán, és mindmáig nem vették észre, hogy a <I>tungsten</I> szó egyszerûen wolframot jelent angolul, és nem valami újdonságot találtak fel. Aztán volt, aki feltalálta a <I>gazolint,</I> pedig mennyivel jobban hangzik, hogy gázolaj, és arra is volt példa, hogy magas tudományos fokozatokkal bíró katonai szakértõ az én szerény munkásságomat <A HREF="../balfasz/20061212.html">használja fel,</A> úgymond, forrásanyagként. És itt a szaksajtóról beszélek, nem holmi bulvárlapról. Igaz, ez még össze sem hasonlítható a Népszabadságban egyszer megjelent "szakszerû" magyarázattal, amelyben a B-2-es bombázó radarabszorbens burkolatát, amely egy méhsejtszerû szénvegyület-réteg, úgy írták le, hogy <I>"a repülõgép felülete szénnel van bekenve."</I> A magyar szaksajtó ennyire mélyre még nem süllyedt, ám következetesen <I>gyengített urániumról</I> beszél, elfelejtve megmagyarázni azt, hogy tulajdonképpen mi is van gyengítve az urániumban. Nos, kérem: semmi. Szó sincs "gyengítésrõl," ez egy szándékos félremagyarázás.
+<BR><BR>
+
+A páncéltörõ lövedékekkel szemben támasztott legfontosabb elvárás, ugyebár, hogy nagy legyen az átütõerejük. Ezt kétféleképpen érhetik el, illetve van több módszer is, de ezek a leggyakoribbak. Vagy formázott robbanótöltetet tartalmaz a lövedék, amely a célpont közelében, általában mágneses közelségi gyújtóval vezérelve felrobban, és ún. kumulatív gázsugárral, ami valójában egy igen heves szúróláng, átégeti a páncélzatot. Barátságosabb lövedékek még tovább is mennek, és odabent repesztöltetként ismét robbannak, a személyzet nagyobb örömére. A rakétalövedékek, páncéltörõ gránátok, alacsony kezdõsebességû harckocsi-lövedékek így mûködnek. A másik megoldás, hogy a nagy kezdõsebességû lövedék saját kinetikus energiájával rombolja a páncélzatot, amihez természetesen a lehetõ legkeményebb anyagból kell készülnie. Ehhez alkalmazzák a wolframot, ám az amerikaiak - de tudtommal az oroszok is - találtak még ennél jobbat is, ez pedig a <I>depleted uranium.</I>
+<BR><BR>
+
+Az ötlet baromi egyszerû volt. Az atomerõmûvek ezertonnaszám termelik a használhatatlan, veszélyes nukleáris hulladékot, amit, jobb híján, szigorúan ellenõrzött, hermetikusan lezárt temetõkbe raknak el. E hulladék szinte színtiszta U-238 és U-235 uránizotóp, vagyis az urán kissé módosult változata. Nehézfém lévén sokkal keményebb és nehezebb az acélnál, tehát ideális páncéltörõ lõszer készíthetõ belõle. Ja, hogy sugárzik, mint a kurvaisten, és épp azért szokták elásni, mert még ötszázezer év múlva is veszélyes lesz? Nem baj... "Mentségére" szolgáljon az ötletgazdának, hogy eredetileg nukleáris háborús körülményekre találta ki a cuccot, amikor számolatlanul dobálják egymásra az atombombákat a NATO és a Varsói Szerzõdés csapatai a németországi hadszíntéren, így egy kis uránium ide vagy oda, nem sokat számít.
+<BR><BR>
+
+Csakhogy kedves NATO-szövetségeseink ezt az anyagot végül nem atomháborúban használták fel, hanem teljesen hagyományos konfliktusban, korlátozott légicsapásokban, mégpedig a világ egyik sûrûn lakott területén, egy gyönyörû természeti környezetben. Egyetlen, az A-10-es által használt uránlõszerben csaknem 30 dekagramm ilyen anyag van. A GAU-8/A gépágyú elméleti tûzgyorsasága földi célok támadása esetén 1800 lövés percenként. Persze ilyen hosszan nem lõnek vele, de egyetlen fél másodperces sorozat is 4-5 kilogramm sugárzó anyagot szór szét. Egy jármûoszlop támadása során ennél jóval többet lövöldöznek. Ez természetesen nem marad egyben, becsapódáskor a lövedékek nagy része széthasad, porrá robban, és természetesen elkeveredik a talajjal, a vízzel, s viszi a szél is mindenfelé. Gyakorlatilag tehát az urániumlövedék nem más, mint egy "piszkos bomba." Az, amitõl az amcsik mostanában úgy fosnak, hogy bevetik ellenük. A szétrepülõ uránoxid-részecskék egyébként 45 millió évig sugároznak, és akár több száz kilométerre is elszállnak.
+<BR><BR>
+
+Vajon tényleg szükség van ezekre a lõszerekre? Vajon annyival nagyobb a hatékonyságuk, amennyivel több kárt okoznak? Nos, a NATO által használt uránlõszerek páncéltörõ magjának keménysége a <A HREF="http://emperors-clothes.com/news/vincha.htm" TARGET="_new">szerb vizsgálóbizottságok jelentése</A> alapján 18.41 g/cm3, keménysége a Brinell-skálán 2400 MPa. A wolfram sûrûsége ezzel szemben kb. 19.3 g/cm3, keménysége 2570 MPa (a magyar Wikipedia csak 380-at ír, ez helytelen érték, mindenhol máshol 2570 olvasható). A wolfram tehát valójában sokkal megfelelõbb lenne páncéltörõ lövedékek anyagául, hiszen keménysége, sûrûsége nagyobb, és nem okoz visszamaradó sugárfertõzést. Miért nem használják mégsem? Nos, azért, mert a wolframot ki kell bányászni, meg kell munkálni, pénzbe kerül, míg a gyakorlatilag azonnal felhasználható nukleáris hulladékot ingyen odaadják az erõmûvek, sõt, még õk fizetnek, hogy vigyék a francba. Egyszerû anyagi megfontolásból szórták tehát tele fél Dél-Európát, valamint természetesen Kuvaitot, Irakot és Afganisztánt a mi derék szövetségeseink ezzel a szarral, természetesen csakis a közjó érdekében. Bár a NATO tagadja, hogy ezzel bármi gond lenne, az igazság az, hogy egészen az 1991-es Öböl-háború utáni idõszakig nem vizsgálták az uránlõszerek élettani hatását. Ennek köszönhetõ többek között az is, hogy az M1 Abrams harckocsik páncélzata is tartalmaz urániumlemezeket. Saját katonáik élete sem számít a spórolásnál. Mellesleg ezért nincs Amerikában tiltakozás a nukleáris hulladéktemetõk ellen, hiszen már évtizedek óta a hadsereg dolgozza fel a veszélyes anyagokat, nem temetik azokat sehová.
+<BR><BR>
+
+Azt hiszem, nem kell ehhez mást hozzáfûzni, mint amit a lövedékeket vizsgáló szerb tudósok írtak jelentésük végén.
+<BR><BR>
+
+<I>
+"A Szerb Köztársaság lakott területeinek bombázása során a NATO-erõk speciális, 30 mm-es kaliberû lõszereket használtak, melyek kimerült urániumból készültek. A kimerült uránium nukleáris hulladék. Radioaktivitását az urán-238, az urán-235 és azok származékainak bomlása okozza. A vizsgált lövedék mért aktivitása kb. 3,4 MBq. A felszínrõl távozó alfa és béta részecskék száma: 1,198 alfa, 35.914 béta másodpercenként. A radioaktív sugárzás miatt a lõszerrel való érintkezés bõrelváltozásokat (elhalást és fekélyesedést) okoz, ami 80 órán belül láthatóan jelentkezik.
+<BR><BR>
+
+A nemzetközi szabványok szerint az uránium a mérgezõ elemek közé tartozik, és II. osztályú radionukleidként, igen toxikus radioaktív anyagként ismert.
+<BR><BR>
+
+Ez a fajta lõszer, más dolgok mellett, egy olyan radioaktív fegyver jelenlétét bizonyítja, amelynek felhasználása 
+semmivel sem igazolható, és alkalmazása lényegében emberiség elleni, a nemzetközi joggal ellentétben álló bûntett.
+<BR><BR>
+
+Ezért tiltakozni kell az Egyesült Nemzeteknél, az EBESZ-nél, az Európai Uniónál, a Nemzetközi Atomenergia Ügynökségnél, és más politikai és humanitárius szervezeteknél."
+</I>
+
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20070119.html">
+<B><< elõzõ nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20070122.html">
+<B>következõ nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+<BR><BR>
+
+</BODY>
+</HTML>
+

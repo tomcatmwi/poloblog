@@ -1,0 +1,139 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-487</B><BR>
+2005.11.24.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+
+<P ALIGN="justify">
+BKV ellen&otilde;rök és a hülyeség: örökzöld téma, lerágott csont. Ha egy társaságban szóba kerülnek a rozmárok, mindenki egymás szavába vágva licitálja túl a többieket, hogy milyen hülye ellen&otilde;rrel találkozott, és hogy járt túl az eszükön. A történetek nagy része persze nem igaz, de hát az ellen&otilde;rök sorsa, hogy a modern népmesékben az ördögöt helyettesítsék, akit Vitéz László jól kupán kalapál a palacsintasüt&otilde;vel. Így aztán fél&otilde;, kevesen fogják elhinni, hogy én ma <I>tényleg</I> mekkora barommal találkoztam. A helyszín: a 24-es villamos. Az id&otilde;pont: reggel 10 óra felé.
+<BR><BR>
+
+Kapaszkodok békésen, jön a rozmár, jegyeket-bérleteket kér, klasszikus helyzet. Ám az ellen&otilde;r ahelyett, hogy t&otilde;lem is a megfelel&otilde; útiokmány meglétér&otilde;l érdekl&otilde;dött volna, gúvadó szemekkel, ágaskodva próbált átnézni fölöttem.
+<BR><BR>
+
+- Mi az? - kérdeztem t&otilde;le.<BR>
+- Az... micsoda?<BR>
+- Mi micsoda?<BR>
+- Az! - bökött a dzsekim jobb karján viselt magyar címerre.<BR>
+- A magyar címer - feleltem.<BR>
+<BR>
+
+Nézte a rozmár er&otilde;sen a címert, koncentrált...
+<BR><BR>
+
+- És ahhoz mi tartozik? - kérdezte végül.<BR>
+- Árpád-sáv, apostoli kereszt és a Szent Korona - feleltem.<BR>
+<BR>
+
+Droidunk ismét leállt néhány másodpercre, míg a nem várt információt megemésztette.
+<BR><BR>
+
+- Micsoda? - kérdezte végül.<BR>
+- Árpád-sáv, apostoli kereszt és Szent Korona - mutogattam neki ismét a magyar címer elemeit.<BR>
+- De... ez milyen... szolgálat?<BR>
+- Hazafias.<BR>
+- De... ezzel most lehet ingyen utazni?<BR>
+- Persze hogy lehet.<BR>
+- Ööö... rendben, köszönöm - felelte, és inkább egy diáklányt próbált rávenni, hogy a diákbérlet mellé mutassa be az <I>ellen&otilde;rz&otilde; könyvét</I> is. Nem tudom, ez mióta kell a diákigazolvány mellé, de a lányt némi morális átnevelés után leszállította a következ&otilde; megállónál. Történetesen a végállomásnál. Bravó.
+</P>
+
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20051123.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20051125.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

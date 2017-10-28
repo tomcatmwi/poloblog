@@ -1,0 +1,116 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>2006.12.10., vasárnap</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Érdekes, mennyi funkcionális analfabéta találja meg ezt az oldalt. Igen, kedves olvasóim és vásárlóim, rólatok van szó, és most nektek is kegyetlenül be lesz szólva, és ha visszaszóltok, még zsidók is lesztek, ajvé. A Jelvénygyárról van szó, annak is a jelvénybeküldõ funkciójáról. Ma tizenkét jelvényötlet érkezett, majdnem mindegyik jó is lenne, de mindössze egy volt úgy megcsinálva, ahogy azt kértem. Elhiszem én, hogy baromi bonyolult rákattintani egy félméteres, sárgán világító feliratra, ami ráadásul azt írja, hogy EZT ITT KURVÁRA OLVASD EL!!!, de ezzel csak azt éritek el, hogy kilószám nyomkodom nektek a Törlés gombot, ti meg kapjátok a sajnálkozó e-mailt, hogy bocsesz, de elkúrtad. Annál többet nem tehetek a köz érdekében, mint hogy csináltam egy ilyen cuccost, ha nem bírjátok használni, akkor lófasz, nincs jóság, van helyette diktatúra és megszorítás.
+<BR><BR>
+
+Azt a balfaszt pedig, aki néhány vásárlómat betalálta egy, a nevemben írt kamu levéllel, hogy adja fel még egyszer a rendelését, szeretném lehûteni, nem sikerült elkúrnia semmit, mert a rendelésduplázást a rendszer kivédi. Egyébként sem érdemes kóstolgatni, az ilyesminek sosem szokott jó vége lenni, az Internet sem rejt el mindenkit.
+<BR><BR>
+
+A bugfixelés egyébként folytatódik, mert még mindig nem vagyok maradéktalanul elégedett a cuccossal. Ja, és mindjárt lesz levrov, a blog talpraállítási projektjének részeként.
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20061209.html">
+<B><< elõzõ nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20061211.html">
+<B>következõ nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+<BR><BR>
+
+</BODY>
+</HTML>
+
+

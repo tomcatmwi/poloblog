@@ -1,0 +1,147 @@
+<HTML>
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>DROID-225</B><BR>
+2004.11.26.
+<BR><BR>
+
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<BR><BR>
+
+Mai droidunk a Lord Computer nev&ucirc; számítástechnikai üzlet, akiknek különös akciójára Tigrincs kollegina hívta fel a figyelmemet. Az alábbi kép a Lord Computer <I>Akciók</I> aloldaláról készült. Igen, jól tetszik látni: a Lord Computer 2004-ben Amiga 500-ast árul. Klikk a képre!
+</P>
+
+<CENTER>
+<A NAME="1">
+<A HREF="#1" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/balfasz/20041126_1.jpg'; document.wdth=640; document.hght=234; return true;" ONMOUSEOUT="window.status='; return true;">
+<IMG SRC="20041126_1_thumb.jpg" BORDER=0></A>
+</CENTER>
+<P ALIGN="justify">
+
+Mi az az Amiga 500? Egy igen remek kis számítógép. 1987-ben jött ki, a Commodore gyártotta. Motorola M68000 processzor, 512K RAM, spéci custom chipset, multitaszk oprendszer. Tényleg nagyon jó. Igaz, még fénykorában sem került ennyibe: 1990-ben, amikor lekerült a COCOM listáról, 40-45 ezer forint volt az ára. Ám, hála a Lord Computernek, ez a kedves kis gép ismét kapható. Csak most, csak náluk, és csak ennyiért.
+</P>
+
+<CENTER>
+<IMG SRC="20041126_2.jpg">
+</CENTER>
+<P ALIGN="justify">
+
+De vajon viccr&otilde;l van szó, vagy komolyan gondolták? Hívjuk fel &otilde;ket. Hosszas csengés után egy férfihang vette fel.
+<BR><BR>
+
+- Tessék, Lord Computer!<BR>
+- Jó napot kívánok. Láttam a weboldalukon, hogy Amiga 500-ast árulnak. Tényleg?<BR>
+- Igen, tényleg.<BR>
+- És valóban 99,000 forint az ára? Ez nem vicc?<BR>
+- Nem, tényleg annyi.<BR>
+- Ez esetben szeretném megkérdezni, hogy normálisak-e Önök, illetve nem baj-e, ha beteszem a céget a Droidzónába.<BR>
+- Milyen zónába?!<BR>
+- Droidzónába. Tudja, hülye embereket gy&ucirc;jtök.<BR>
+- Tegye!<BR>
+- Köszönöm, viszonthallásra.<BR>
+- Viszhall.
+<BR><BR>
+
+Kés&otilde;bb még egy haver felhívta &otilde;ket, és megkérdezte, hány A500-as van raktáron. Egy...
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20041125.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20041128.html"
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

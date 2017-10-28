@@ -1,0 +1,127 @@
+<HTML>
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>DROID-210</B><BR>
+2004.11.08.
+<BR><BR>
+
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<BR><BR>
+
+Említettem már nektek, hogy a Pet&otilde;fi Gimnázium diákjai készítettek egy kedves droidgy&ucirc;jt&otilde; oldalt az iskolájukról? <A HREF="http://aisha.fsh.hu/index.php" TARGET="_new">Itt van ni.</A> 
+<BR><BR>
+
+Mellesleg megemlíteném, hogy létezik <A HREF="http://www.tomcatpolo.hu/index.php?mod=polok&cat=18&id=126&color=black" TARGET="_new">Droidzóna poló is.</A> Igen, ez reklám.
+<BR><BR>
+
+A mai droidsztori pedig egy repül&otilde;s történet, amely állítólag az Egyesült Államokból származik. Volt egyszer egy tizenéves vitorlázópilóta-növendék. Els&otilde; egyedülrepülése alkalmával jól eltévedt, elvesztette a magasságát, és kényszerleszállást hajtott végre egy legel&otilde;n. Semmi gáz, el&otilde;fordul az ilyesmi, betelefonált a repül&otilde;térre, és kérte, hogy küldjék ki a vontatót. Oktatója is felszállt egy másik géppel, hogy megkeresse. Mivel a srác egy nagy mez&otilde;n szállt le, mondta neki, hogy várja meg, &otilde; is leszáll majd mellé, és majd mindkét gépet felrakják a vontatóra.
+<BR><BR>
+
+Az oktató hamar meg is találta a növendéket. Az égr&otilde;l lenézve azonban valami nem stimmelt neki. A kényszerleszállt gép egy aprócska gyepen állt, magas fák között. Azt a kutya mindenit, gondolta az oktató, hát csak nem fog ki rajtam egy ilyen zöldfül&ucirc;! Ha &otilde; le tudott oda szállni, akkor én is! Azzal lenyomta a botot, lespirálozott, és behelyezkedett a landoláshoz. Sikerült is, csak a nyúlfarknyi terület kevés volt ahhoz, hogy megálljon. Bumm, berongyolt a fák közé, szarrá törte a gépet, még jó, hogy neki nem esett baja. Kikászálódott a roncsokból, megvakarta a fejét, és csodálkozva nézett az odarohanó növendékre:
+<BR><BR>
+
+- Hát te meg hogy a fenébe szálltál le ide géptörés nélkül, amikor még nekem se sikerült?<BR>
+- Én? Én nem ide szálltam le, hanem a szomszédos mez&otilde;re, csak áttoltam ide a gépet, hogy neked több helyed legyen...
+
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20041106.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20041109.html"
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

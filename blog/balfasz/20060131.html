@@ -1,0 +1,209 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css"> 
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-534</B><BR>
+2006.01.31.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+
+<P ALIGN="justify">
+<I>Réges-régen, talán még emlékeztek rá, volt egyszer egy Rutin fedõnevû kedves olvasóm, aki igen remek droidtörténeteket küldött nekem, fõleg a vidéki droidállomány kutatási eredményeirõl. Nos, Rutin barátom idõközben dobbantott Írországba, de a blogot nem felejtette el, s ismét írt! A téma pediglen az õ utolsó magyarországi munkahelye...
+</I>
+<BR><BR>
+
+<B>
+InterNyet
+<BR><BR>
+</B>
+
+A Commodore céget lezúzó uradalmi ökörrõl szóló Droidzóna-bejegyzést olvasva eszembe ötlött, hogy nekem is volt szerencsém efféle öngyilkos szabotõrrobotokhoz az IT bizniszben. Az általam megfigyelt egységek az egyik legnagyobb magyarországi netszolgáltatót (és saját megélhetésüket) rombolták makacs szorgalommal...
+<BR><BR>
+
+Az InterNyet Kft., ahol négyesztendõs vendégszereplésem során mondhatni az elsõ sorból volt alkalmam megfigyelni a klinikai agyhalottak aknamunkáját, azt a nemes célt tûzte ki maga elé, hogy internetszolgáltatást nyújt mindenhol, mindenkinek. Hogy a cég fogantatása körüli miértek tekintetében mi az igazság, azt még maga Dr. Erõs Pál sem tudná megmondani, mindenesetre a legvalószínûbb forgatókönyvnek a <I>"Nem értünk semmihez – hülyék vagyunk mindenhez –  Internetszolgáltató!"</I> verzió tûnik. A nagy ötlet kivitelezését azért (biztos ami biztosíték) olyanra bízták, aki már többször is látott számítógépet, alkalmasint belülrõl is, lévén egy idõben PC szerelõként funkcionált. Az új ügyvezetõ energikusan meg is ragadta a szerencsemalac farkát, és sebtiben elõkerített pár havert, meg a haverok haverjait, aztán beterelte õket egy kevéssé dekoratív sárga épületbe, ami ugyan egyfelõl elhagyott házakkal volt határos, viszont a túloldalon egy autentikus putrisor büszke szomszédjának mondhatta magát. Mellesleg közel esett a budapesti nemzetközi Internet-elérési csomóponthoz. A környék inkább szórakoztató mint kellemetlen volt a maga nemében, pl. remek fogadásokra adott alkalmat a szerverterem felé dõlõ romos kémény, és nem egy átkozottul unalmas mítinget dobott fel az utcáról felhallatszó tréfás népi tivornya vagy csatazaj, attól függõen, hogy segélyosztás elõtt vagy után voltak-e a bennszülöttek. E vígkedélyû rézbõrûek persze azonnal családtagnak tekintették a frissen megalakult céget és annak dolgozóit. Porontyaikat gyakran lehetett látni az ügyfeleknek fenntartott terminálok (nyilván álláshirdetések utáni) böngészésébe feledkezve, egy idõsebb hölgy pedig egészen a testi kapcsolat kilátásba helyezéséig ment a barátkozás terén, igaz, csak térítés ellenében.
+<BR><BR>
+
+Az ideálisnak mondható szomszédság mellé már csak a boldogsághoz nélkülözhetetlen asztalok, székek, kávéfõzõk, számítógépek és egyéb hasznos dolgok hiányoztak. Hamarosan ezek is csordogálni kezdtek, többnyire az újsütetû vezér kombi gépkocsijának hátuljából, bár olyan rapszódikus rendszertelenséggel, hogy néhányan hetekig csak a puszta falat nézték maguk elõtt, igaz akkori mércével egész szép fizetésért... Néhány átbasszamázott éjszaka és a szerverterem vér- és verítékmentesítése után azonban csak beindult a verkli, és a cégecske reményteljes jövõ elé nézett. 
+<BR><BR>
+
+A prosperitás szekerének azonban hamarosan több kerékkötõje is akadt, méghozzá azért, mert a tulajdonosoknak szemet szúrt hogy saját, magas sógor-koma-jóbarát együtthatóval rendelkezõ pajtásaik valahogy nem fértek be a kezdõcsapatba. Becsületükre legyen mondva, szélsebesen változtattak ezen a tarthatatlan helyzeten, és iziben teleaggatták az InterNyet köcsögfáját sok-sok míves népi cserépedénnyel...
+<BR><BR>
+
+Kezdõdött a dolog a marketinggel. Addig nem is volt semmi baj, amíg ezt a területet elintézték a szükséges szórólapokkal, plakátokkal, tollakkal és egyéb bizbaszokkal. A katasztrófa Golyó, egy veszedelmes kamikazedroid képében jelentkezett, akit, mivel egyszer együtt nyaralt az egyik tulajjal, és fogtechnikusi végzettséggel is rendelkezett, rögtön alkalmasnak találtak az addig nem létezõ (és szükségtelen) marketing-igazgatói posztra. Golyó szélte-hossza-egy testalkatáról és fickósan kopaszodó fejérõl kapta a nevét, mindez azonban eltörpült marketingszakmai tehetsége mellett! Legerõsebb olimpiai száma az öntökönrúgás volt, ebben olyan elérhetetlen magasságba helyezte a lécet, hogy balfasz legyen a talpán, aki valaha is látótávolságban megközelíti.
+<BR><BR>
+
+Hosszasan és agyzsibbasztóan tudott pampogni pl. a "hivatalos cégszínek"-rõl, viszont regnálása alatt soha, véletlenül sem tudott akár csak két egyforma színû reklámanyag elkészülni (vagy úgy általában bármi elkészülni). Volt egy olyan baltahívogató szokása is, hogy "szakszavakat" generált, és azokat nyakló nélkül mindenre alkalmazta, általában kellõen offtopic módon. Egyik "szakmai" állásfoglalása a következõképpen hangzott:
+<BR><BR>
+
+– Tehát, mi lenne a célja ennek az ótvar drága reklámkampánynak?<BR>
+– Gudvill.<BR>
+- ?????...<BR>
+– Erõsíteni kell a gudvillt, mert erre van szükség, különben is az én fõ feladatom amúgyis a gudvill.<BR>
+- Te meg mi a nyavalyáról beszélsz?<BR>
+- Nem állok neki magyarázni, a gudvill a lényeg!<BR>
+- AZ ISTEN ÁLDJON MEG, MI A PÉK FASZA AZ A GUDVILL?!<BR>
+- Hát amikor a cégpolicy meg az image, meg ööööööö...<BR>
+- Hülye vagy te, bazdmeg, na húzzál a redvába...
+<BR><BR>
+
+Mindennek tetejében valamiféle "fenegyereknek" érezte magát, aki "jól odabaszott" egy-egy (szerinte) jól sikerült plakáttal vagy hírdetéssel. Harmincas éveit taposó, szüleivel élõ agglegény fenegyerekünk azonban többnyire piszoárokkal, létrán ácsorgó emberekkel, folyós tyúktojásokkal vagy tonhalakkal "baszott oda", a reklámok nyomán a kerítést szaggató ügyféláradat azonban (érthetetlen módon) rendre elmaradt. Megfigyelõk szerint hasznos lett volna a kapálódzó levelibékák illetve egymás nyelvét harapdáló afroamerikaiak szerepeltetése mellett valamiféle utalást tenni rá, hogy miután kigyönyörködték magukat Golyó mûvészetében, hová is rohanjanak és mire is fizessenek elõ a hirdetés balsorsú megtekintõi... Az igazsághoz tartozik, hogy a durcás géniusz alkotásain egy idõ után fel lehetett fedezni logóra és céges elérhetõségekre utaló jeleket (megfelelõ nagyítású mikroszkóp segítségével), ezek azonban továbbra is csak az elbaltázott reklámokért hibáztatható cég inkognitóját erõsítették, mert következetesen valótlan adatokat tartalmaztak.
+<BR><BR>
+
+A homoszexuális mozgalmi zászlókat megszégyenítõ szivárványszínû reklámanyagok (pedig mindösszesen két darab cégszín volt forgalomban), a jól titkolt elérhetõségek, az akciók lejárta után két nappal elkészülõ akciós szórólapok és egyéb partizánkodások végül még a nagyvonalúan közönyös vezetést is meggyõzték arról, hogy valamit tenni kell, mielõtt Golyó élõ szamaras – síró kisjézusos betlehemekkel kezd kampányolni, vagy netán Kruppa Judit babérjaira törve magát teszi meg az InterNyet háziasszonyává. Hosszas anyázás után (amit nem kis derültséggel hallgattunk a rosszul hangszigetelt fõnöki iroda elõtt) végül arra a "megoldásra" jutottak, hogy kicsit "megnyirbálják" Golyó marketing-költségvetését. Az akció hibátlanul sikerült, ugyanis ezek után három kerek esztendeig nulla forintban határozták meg ihletett reklámszakemberünk büdzséjét, ami remekül meggátolta a túlzottan csapongó ötletek kivitelezésében. Golyó ezek után - mivel az ellenség megtévesztése érdekében nem bocsájtották el - végre besértõdött, és visszavonult az elefántcsonttornyába. A továbbiakban csak akkor hallata hangját, ha valamiféle "alulról jövõ" reklámötletet kellett megvétózni, illetve ha nem bírta tovább a betevõ gudvillozása nélkül. Ezzel átminõsítette magát marketinggátló igazgatóvá, és lázas semmittevésbe süppedt, vagyis a létezése, mint problémaforrás, lekerült a napi nyûgök listájáról. Az már más lapra tartozik, hogy egyszer-kétszer a vidéki szerveres végpontok végiglátogatása során furcsán néztek ránk a reklámanyaggal "elhalmozott" partnerek – többek hitték azt hogy az InterNyet rég megszûnt, és csak illendõségbõl nem kapcsolták ki (vagy adták el) a náluk elhelyezett, darabonként tízmilliós értéket képviselõ eszközöket...
+<BR><BR>
+
+A teljesség oltárán tett áldozatként meg kell említsem, hogy "szakértõ" grafikusok nélkül Golyó sem lett volna képes ennyire üldözendõen rossz marketinggel elõrukkolni. Elméletileg az InterNyet erõs webdesign támogatásra számíthatott a cégcsoporthoz tartozó Középpötty stúdió részérõl. Sajnos a "testvércégek" (a fénykorban PC bolt, szerviz, stúdió, nagyker és szoftvercég osztozott az InterNyettel - és jelentõs számú kóbor macskával - a lepukkant udvar épületein) együttmûködése ugyanis leginkább a néhai KGST alapelveit tükrözte: Ami nem megy ésszel, elvtársak, az majd megy ész nélkül! Volt szerencsém egyszer megfigyelni Hangya, az akkori vezetõ grafikus tevékenységét, ugyanis az aktuális "projekt" látványos döglõdése még a közmondásosan érdektelen menedzsment figyelmét is felkeltette. Hosszas noszogatás után Hangya felkerekedett, átvánszorgott hozzánk és mintegy 42 perc alatt (!) átállított egy A4-es lapot állóból fekvõre Wordben... Az egyik ott dolgozó meg is jegyezte hogy "a fûtõl mindig belassul, speedeznie kéne inkább". Hogy Hangya megfogadta e a tanácsot arról nem szól a fáma, viszont drogproblémái miatt hamarosan kórházi kezelésre szorult (azt beszélték "feltöltésre" jár be, hogy ez mit jelent azt mindenkinek a fantáziájára bízom). 
+<BR><BR>
+
+Az igazi show ekkor kezdõdött. Négyfõs kommandó próbálta meg felkutatni Hangya hagyatékai között a kérdéses projekt CD-jét. Gigászi erõfeszítésekkel, egyenest a kukások karmaiból, de visszaszerezték a "létfontosságú" adathordozót! Golyó hozzájutott az áhított anyaghoz, ami nélkül jóformán már levegõt sem kapott. Mivel azonban senki nem szólt neki, hogy Hangya Macintosh-on dolgozott, némi piszmogás és meghajtókerregtetés után a marketinggátló igazgató maga adta vissza a guberálóknak a kérdéses korongot, majd taktikusan szabadságra ment a kérdéses akció idejére.
+<BR><BR>
+
+Golyó minden erõfeszítése ellenére a cég elõbb-utóbb elérte azt a szintet, ami felett alkalma nyílt a nagyobb állami pályázatokon való részvételre. Ez a legjobb üzlet egy szolgáltatónak, ha sikerül megnyerni egy minisztériumi "hozzáértõk" által kiírt tendert, akkor csak a jóisten (esetleg az APEH) mentheti meg attól, hogy közpénzbõl hülyére keresse magát. Csakhogy éppen ezért a legtöbb pályázat "le van zsírozva", vagyis látszatverseny után a megfelelõen "jól fekvõ" cég kapja a megbízást (az elbíráló meg a lóvé egy részét). Tisztában voltak ezzel az InterNyet tulajdonosai is, így nem haboztak beizzítani a kapcsolataikat az ISM-nél, amikor megneszelték hogy nagy bugázás, akarom mondani fejlesztés van elõkészületben. Igazán szerencsésnek érezhették magukat, amikor az egyik megkörnyékezett bennfentes rögtön pozitívan válaszolt, mondván, le tudja õ rendezni, hogy az InterNyet legyen a befutó, és nem is kér nagy dolgot cserébe a szokásos "tiszteletdíj" felett, csak egy állást kéne biztosítani egy éppen rászoruló jóbarátjának. Az InterNyet nagyjai igazán bagatelnek érezték ezt a kérést az ígért "szívesség" mértékéhez képest, így rögtön szentesítették is az alkut. Érdekes módon meg sem fordult a fejükben, hogyha valaki egy kávé és egy brunyálás között el tudja sikálni hogy X cég nyerjen egy zsíros megbízást, annak miért okoz gondot valami placebo pozíciót kreálni ágrólszakadt földije számára?
+<BR><BR>
+
+Nos, mondanom sem kell, a pályázatot buktuk, viszont megnyertünk egy olyan elképesztõen orbitális hibazónát kollegának, amilyen még a kalendáriumban sincs... A Tádé néven elhíresült jómunkásember ötvözte magában mindazt, amit önmagát legalább felületesen kedvelõ ember semmi szín alatt nem tûr meg saját húsz kilométeres körzetében. Egy tudálékos gnómot tessék elképzelni groteszkbe hajló ruhatárral, folyamatos szófosással, gyilkosan monoton, nyekergõ hangszínnel és piaci legyeket megszégyenítõ erõszakossággal. Tádéval érkezett meg az InterNyethez a kolléga válla feletti e-mail-olvasás, az idegen asztalfiókokban turkálás, a telefonban herélt hangon elõadott kiselõadás, és még megannyi atombomba-élesítõen talajparaszt szokás. Bemutatkozásképpen, miután a belsõ rendszergazda elment valamiért, ami nem volt kéznél Tádé nyomtatójának beállításához, arra jött vissza hogy a nevezett a telefonban nagy beleéléssel részletezi a fõnöknek, ilyen körülmények között õ "nem tud semmit csinálni" mert a rendszergazda is már vagy tíz perce "szuttyog a nyomtatóval" stb. Ezzel rögtön be is lopta magát a kollektíva szívébe, de sajátos módon nem akarta észrevenni hogy szünetel a haverfelvétel, és a legteljesebb természetességgel ugatott bele akárki beszélgetésébe. Kedves eset volt, amikor lecseszett bennünket, amiért általa "gyorsrizsnek" vélt élelemmel mérgezzük magunkat, holott az köztudottan nélkülözi a szükséges ásványi anyagokat, mert az elõfõzés során... Valahol itt csaptuk rá az étkezõ ajtaját és inkább átballagtunk egy pogácsáért a közeli köpködõbe. Pár hetes "ismerkedés" után, ami alatt pl. kiderült hogy emberünk gyakori látogató a homoerotikus pornóoldalakon (a rendszegazda haverok pironkodva mutattak egy álló farkú, felsõtestén télapókosztümöt viselõ tagról készült képet, ami különösen "bejött" neki, mert több másolatot is tárolt belõle a gépén) Tádé feladatot is kapott! Az InterNyet által (milliókkal) támogatott sporttevékenységek koordinálása lett az a terület, amit áldozatos balfaszkodással és rátermett idiótasággal gyakorlatilag leradírozott a föld színérõl. Kezdésnek végigtelefonálta az összes támogatott csapatot és szervezetet, ahol az olykor órákra (!) rúgó bemutatkozása leírhatatlan pánikot szült. Nem kevés helyrõl rögtön jött is a visszajelzés, hogy azonnali hatállyal felmondanak minden, az InterNyettel kötött megállapodást, amennyiben Tádé még egyszer felhívja õket. Késõbb aztán megtörtek, és könyörgõre fogták, hogy akár a játékosok homlokára is rátetováltatják a logónkat, csak az e-mail küldésétõl, a faxolástól és a levelezéstõl is tiltsuk el a számukra biztosított exkluzív kapcsolattartó személyt... Mivel ügyvezetõnk szívén viselte a sportolók támogatását, úgy döntött, még ennél is többet tesz értük, és kirúgja Tádét! Ezzel mindörökre bevéste volna magát az InterNyet alumíniumfokozatú brigádnaplójába, már ha sikerrel jár. Csakhogy megtudtuk, miért is kellett ilyen kacifántosan munkahelyhez juttatni a minisztériumi potentát kis védencét : Tádét ugyanis nem lehetett kirúgni! Orvosilag. Ezt szolid másfél órás eszmefuttatás keretében közölte a bosszal, kitért általános szívgyengeségére, az stressz minden formájának szigorú tilalmára és megannyi vélt vagy valós hikomatságára. Utalt rá, hogy munkahelye elvesztése esetén valószínûleg a helyszínen életét vesztené, és mivel szólt elõre, ezért a felelõsség egyértelmûen az õt elbocsájtókat terhelné, stb. A matávos öltönyösöket strandpapucsban fogadásig laza fõnökünk olyan szinten lefagyott ettõl a támadhatatlan vaslogikától, hogy mindenki megrökönyödésére tényleg nem rúgta ki Tádét, sõt, átvezényelte a sales részlegre, ahol a "testhezálló" telefonos ügynök szerepében immár a teljes lakosságot verbális terror alá vonhatta. Ettõl fogva nevezték a salesesek az ADSL-t Tádéeselnek, Tádét pedig Csemegemajomtól elkezdve Buzirudin át Matyigépig szinte mindennek. Végül aztán, sok-sok halálba fárasztott ügyfél után mégis eljött az idõ, amikor Tádé nagyrészt saját hülyesége következtében távozni kényszerült, ugyanis elfelejtett elintézni valami papírt, aminek hiányában mint "fekete alkalmazottnak" sebtiben meg lehetett szüntetni a munkaviszonyát. Ez nem akadályozta meg abban, hogy még napokig bejárkáljon a céghez, és csak akkor szûnt meg, amikor megértették vele, hogy itt több fizetést nem fog kapni, valamint szereztek neki valami melót egy könyvtárban. Ezúton figyelmeztetek mindenkit, hogyha könyvkölcsönzés során azon kapja magát hogy kappanhangú kiselõadást hallgat a világ legvastagabb könyvérõl ("ehe ehe, nem ám a lexikon a legvastagabb könyv, hanem a könyvtári index, mert abban minden könyv benne van, és..." – megtörtént eset), a férfialsónemûkrõl, vagy esetleg a gyorsrizsrõl, akkor dobjon el mindent és szaladjon, mert a rém köztünk jár...
+<BR><BR>
+
+A két nagyágyú mellett az InterNyetnél eltöltött napokat sok-sok málenkij robot is tarkította. A kereskedelmi igazgató valószínûleg titkosügynöknek lett kiképezve, mert olyan remekül tudta álcázni a cég legújabb díjcsomagjait, hogy azokról nem egyszer a reménybeli vásárlótól értesült pl. az a programozó, akinek elvileg a szükséges hátteret kellett volna kódolnia. Ez a módszer annyira "bevált", hogy bizonyos idõ után állandósították, és más részlegekre is kiterjesztették. Kedves és ösztönzõ eljárás volt, amikor "magas szintû" mítingeken beígértek hetet-havat mindenféle cégeknek, aztán amikor kiderült, hogy az általuk megálmodott technológia nem létezik, az egészet a rendszergazdákra tolták, hogy "oldják meg". Rajtam egyszer egy "jólinformált" juppigyerek mûholdas elérést keresett, amit "neki garantáltak", de mivel ezzel aztán tényleg csak annyira foglalkozott a cég, mint pl. harangöntéssel, a nagyvonalú ígéretet tevõ tudományos munkatárs pedig  inkább hallgatott, mint fekália a gyomnövények rejtekén, így az ügy ad acta téve lett.
+<BR><BR>
+
+Munkámból kifolyólag nem csak a beépült droidokkal volt szerencsém kontaktusba kerülni, hanem a kívülrõl támadó veszedelemmel is szembe kellett néznem. Mivel a partneri szerzõdésben az InterNyet dõre módon ingyenes netet is biztosított a vele szerzõdésre lépõ cégeknek, viszont nem írt elõ minimális értékesítést, csakhamar híre ment, hogy milyen príma kis "ingyenes" szolgáltató is nõtt ide. Így aztán elkezdtek áradni a mindenféle rendû és rangú informatikai kontárok, akikkel olykor csak komoly küzdelem árán tudtam elkerülni a teljesen felesleges szerzõdéskötést. Akkor lássuk, miféle egyedeket is vetett íróasztalom elé az IT biznisz hullámzó selejtóceánja.
+<BR><BR>
+
+Voltak ugye az ún. Világmegváltók. Többnyire makkos cipõs, kimosakodott cigvány, kócos, kikopott kordgatyás, elcseszett zseni, esetleg ruppótlan öltönybe tekert, magát menedzsernek kiadó lúzer volt az illetõ. Esetenként párban vagy csoportosan fordult elõ, mert olyan baromi nagy ötlettel kopogtatott, amit egyedül lehetetlenség kitalálni. Pusztán a droidvadászat izgalma miatt szoktam végighallgatni õket, és csak a végén közölni a teóriájuk nyilvánvaló buktatóit. Maguk a korszakalkotó ötletek széles skálán mozogtak, példaként csak a kedvenceimet hoznám fel.
+<BR><BR>
+
+Volt olyan tag, aki az ingyenesen fogható TV adást (Királyi, Retek, Csigakettõ) akarta modemes neten "szolgáltatni", elõfizetési díjért + természetesen telefon percdíjért. Próbáltam finoman a tudomására hozni, hogy mindehez csak annyi szükség van internetre és számítógépre mint a vizilónak biciklire, meg hogy van olyan hogy tunerkártya, meg hogy modemen bizony baszottul szaggatna a Mónika Show, és így tovább. Végül a faszi közölte hogy "másik, rugalmasabb" szolgáltatóhoz viszi az ötletét. Gondoltam, hívok neki egy tehertaxit, mert ennyire nagyformátumú újításokat nem lehet csak úgy, zsebben... A másik hasonszõrû azzal döntött totális kétségbeesésbe, hogy mindenáron be akart épülni az InterNyet és a partnerek közé. Elképzelése szerint õ majd "a kapcsolatait felhasználva" "több száz" új boltot küld hozzánk partnernek, és nem is kér többet, mint az általuk kötendõ elõfizetõi szerzõdések jutalékának felét... A vicc kedvéért rákérdeztem, hogy honnan fogom tudni egy-egy új partner esetében hogy az õ "ügyfele" e, vagy csak magától talált ide? Megnyugtatott, hogy minden esetben értesíteni fog, hogy melyik cég fele jutalékát akarja lenyúlni. Rákérdeztem, hogy miért jobb nekem tõle megtudni a cégek nevét, felezett jutalékkal bajlódni és gyengébb feltételeket ajánlani a partnereknek mint egyszerûen megnyitni az online telefonkönyvet? Végülis nagy önfegyelemmel visszanyelte a "mert akkor én éhenhalok!" típusú további érveit, és elment kapálni, vagy valami olyat csinálni, amiért pénzt adnak. Volt ennek a fazonnak egy dublõre is, aki majdnem átvert, mert beadta hogy "harminc bolt tartozik hozzá". Közel voltam hozzá hogy bevegyem a maszlagot, de sehogy sem fért a fejembe egy harminc bolt felett diszponáló susogósmelegítõs-csatosholdjárós-hiányos fogazatú üzletkötõ képe, így próbából felhívtam az egyik üzletet, amire hivatkozott. Természetesen sohasem hallottak róla, illetve a név ismerõs volt, de nem annyira üzleti mint inkább kocsmai relációban. Vigyorogva meghallgattam a hebegést-habogást a "most bõvített" hálózatról, meg "nem személyes" kapcsolattartásról, aztán gratuláltam, hogy továbbfejlesztette a módszert, és õ maga nézte meg a telefonkönyvet, végül érdemei elismerése mellett elhajtottam mint Mariska a magzatot. Szintén "beépülni" akart az a lecsoffadt, drogos kinézetû arc, aki a következõ zseniális tervvel állt elõ: kössünk be hozzá egy ADSL-t, amit õ majd "szétoszt" a társasház lakói között piros-kék vezeték meg szigszalag segítségével (frankón így adta elõ, miután rákérdeztem hogy a koaxkábelt õ fogja venni, vagy az is minket terhel-e?), így biztosítva egy alap modemes elérés sebességének majdnem a felét egy ADSL árának több, mint a háromnegyedéért. Rákérdeztem, hogy a többi lakó miért nem köttet be egyszerûen egy saját ADSL-t? 
+<BR><BR>
+
+- Mert ebben a kerületben nem lehet kiépíteni! - vágta rá büszkén.
+<BR><BR>
+
+Elmebetegeknek kijáró jóindulattal vezettem rá, hogy akkor az õ lakásában sem lehet kiépíteni, merthogy egyazon épületben van. 
+<BR><BR>
+
+- Na jó, de valami VIP megoldással biztos lehet valamit csinálni!
+<BR><BR>
+
+Már akkor sem tudtam miért érzi magát VIP-nak egy olyan ürge, akinek a fogai között csikkek és pörköltmaradványok rothadnak, tekintélyes bûzaurát eredményezve, és aki láthatólag ugyanazt a pólót használja éjjel-nappali viseletnek, amivel mellesleg a seggét is törli, de ez a kérdés végül is nem került tisztázásra. Késõbb eltûnõdtem rajta, hogy nem az egyik aluljáró hajléktalan közösségének küldöttéhez volt-e szerencsém, aki netet akart szolgáltatni a közeli telefonfülkékben, kukákban és nyilvános retyókban lakozó hasonszõrûeknek. 
+<BR><BR>
+
+E kategória koronázatlan királya azonban mégiscsak az Ordítozós Tata, aki nem mindennapi világmegváltási algoritmussal rukkolt elõ, üvöltve, mert szinte teljesen süket volt. Eredendõen csak egy otthoni elérést jött kötni, és amikor közölték vele, hogy a kerületben nincs ADSL, majdnem el is tolta a kerékpárt. Valaki azonban óvatlanul hozzátette, hogy "maximum ha elindul a vezeték nélküli szolgáltatásunk". Na ezt nem kellett volna! Ugyanis az öreg lebaszta magát az egyik kék fotelba (ami miatt egy szentképpel felfegyverzett kéregetõ egyszer "Isten áldja meg a bútorboltot!" köszöntéssel rontott be az ügyfélszolgálatra), és kérette a technikai igazgatót. Szerencsétlen srácnak nem szóltak, hogy mi vár rá, így vagy egy óra hosszat hallgathatta az önjelölt mûszaki zseni okfejtését a kerület "besugárzásáról". Az öreg teóriája azon alapult, hogy a közeli kollégium minden lakójának, és a lakótelep minden lakásának elérést fog biztosítani (jutalékért) a szomszédos telken álló gyárkéményre szerelt körsugárzóval. Ez így még majdnem életképesnek is tûnt, a plutónium akkor került a palacsintába, amikor a tárgyalópartner rákérdezett a kémény tulajdonosára. 
+<BR><BR>
+
+- Nincsen annak tulajdonosa, de nem is kell, mert van egy nagy lyuk a kerítésen, majd én megmutatom maguknak hol kell bemászni, aztán már rakhatják is felfele azt az izét!
+<BR><BR>
+
+Kiderült hogy egy romos gyár félig ledõlt kéményérõl lenne szó, ahová az nem mászik fel lelopni a körsugárzót, akit lelöknek a többiek, mert történetesen a VII. és IX. közé esõ számozású városrészrõl volt szó. Az öreg azért még egy hétig visszajárt üvöltözni, egyszer az unokáját is elhozta "mert ért a számítógéphez", de a srác két mondat után faképnél hagyta az öreget, mivel kiderült hogy az egyértelmû ígéretet tett neki az ordítozás mellõzésére, amit aztán nem tartott be.
+<BR><BR>
+
+Utánozhatatlan hangulatú, groteszk közjátékokkal tarkított hétköznapjainkba (késelés a kirakat elõtt, szomszéd cigványház pincéjében a derékig érõ vízben áramütést szenvedett cigvány családfenntartó látványos kimentése, gyakori gázolások az ablak alatt, az ügyféltérbe beköltözni próbáló hajléktalanok, a szomszédos kisbolt menetrendszerû kirablása, süket ügyfél személyzeti WC-ben végrehajtott másfél órás vegyi támadása, ami után egy hétig az emeletre jártunk slozira, Tádé munkatalálkozója egy csapat kosarassal, akik kiröhögték, és otthagyták a francba, satöbbi) végül dermesztõ lehelletével beköszöntött a változás szele. Új ügyvezetõ lopakodott be a céghez, olyan titokban, hogy jóindulatúan az ügyfélszolgálatra irányították, amikor meglátták a folyosókon kolbászolni. Késõbb küldött egy körlevelet a népnek, hogy végre a beosztott bérniggerek is értesüljenek kinevezésének nagyszerû tényérõl. Érdekes módon, bár történtek bizonyos változások, pl. az udvar jégmentesítésérõl az aszfalt alá "rejtett" aknafedelek feltárására került át a "legmagasabb szintû" figyelem (gondolom, a Tisztelt Olvasó nem érti a fenti mondat igazi értelmét – mi sem tudtuk felfogni, hogy az egyik fazon miért locsolja saját kezûleg forró vízzel a jeget, a másik pedig miért csötönözik buherált fémdetektorral az udvaron, amikor ott a pihe-puha, teleköpködött átlátszó gumimatraccal (!), dobozban álló házimozirendszerrel (!!) valamint üveg sakk-készlettel is felszerelt fõnöki iroda...), szóval az ilyen jellegû "változások" mellett minden maradt a régiben, a beleszarás pedig lassan mondai méreteket öltött... Amikor darab idõ után megérkezett a harmadik ügyvezér is, különösebben már senki sem fárasztotta a fülbotmozgató izmait. Ja, itt ez a legújabb hapek, dögnagy fehér autóval – na és? Ez a csóka valahogy leakadt az udvar rendezésének ügyvezetõi irányításáról, és valamiféle reformok eljövetelével fenyegetõzött, persze csak kellõ homályossággal, nehogy már valaki megtudja az InterNyetnél, hogy mi az irányvonal, mit várnak tõle, esetleg mi lenne az, amiért ugyebár fizetik... Az igazat megvallva ez engem akkor már annyira sem tudott érdekelni, mint vegetariánust a húsárak, de utolsó Nagy Vezírem az InterNyetnél azért még produkált egy kellõen eszement finálét, ami bearanyozta utolsó ott töltött napjaimat.
+<BR><BR>
+	
+Történt ugyanis, hogy emberünk elkezdett turkálni elõdei e-mailjei között és a sok-sok banki felszólítás, anyázólevél valamint fasznövesztõ-reklám között megtalálta egyik régebbi, fejlesztési javaslatokat tartalmazó üzenetemet, még abból az idõbõl, amikor erõlködni próbáltam a láthatólag totális közönybe süppedt fõnökség érdeklõdésének felélesztésén. Ezt a rossz szokásomat utóbb elhagytam, és a kérdéses anyag volt vagy másfél éves, amikor Hármaska kezébe került. Õ azonban úgy tûnik, tényleg beleélte magát ebbe az ügyvezetésbe, és ízibe felhívatott magához hogy megossza velem ezt a hamu közt talált gyémántot... Hosszasan és energikusan ecsetelte, mennyire korszakalkotó újításokat fog õ bevezetni az én munkaterületemen, és hogy most aztán a lovak közé csapunk, stb. Magamban pompásan szórakozva hallgattam végig, amint képzést tartott nekem az általam írt anyagból, aztán végülis a "van kérdésed?" résznél vesztettem le színlelt komolyságomat, és hívtam fel a figyelmét a címlapon, a fejlécben és az anyag végén is  kifogástalanul olvashatóan feltüntetett nevemre, mint szerzõ... Szegény Hármaska, már-már megsajnáltam lányos zavarában, és õszintén válaszoltam arra a kérdésére, hogy "eddig akkor miért nem valósítottátok meg mindezt?".
+<BR><BR>
+
+Válaszom így hangzott: 
+<BR><BR>
+
+- Érdeklõdés hiányában, teccikérteni?
+<BR><BR>
+
+E balsorsú reformer talán még most is ott ül az üveg sakk-készlet mögött, a figurákéhoz nagyban hasonlító halmazállapotba merevedve, az InterNyet pedig száguld tovább, a tehetetlenség tömegétõl hajtva... Ámen.
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20060130.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20060202.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,120 @@
+<HTML>
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>DROID-240</B><BR>
+2004.12.12.
+<BR><BR>
+
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<BR><BR>
+
+Micó már megint l&otilde;tt egy droidot.
+<BR><BR>
+
+<I>
+Pár éve történt, hogy egy haverom informatikusként dolgozott a Samsung (akkor még) új, gödi monitor- és TV-gyárában. Egyik nap beküldték az egyik koreai nagyf&otilde;nök irodájába, hogy oldjon meg valami problémát a számÍtógépen. Balszerencséjére ott volt a góré is, a problémát viszont nem tudta megoldani, mivel nem volt probléma, csak a csávó hülye volt. Ezt nem tudta megérteni a mind magyarul, mind angolul kommunikációképtelen úr, és éktelen haragra gerjedve elkezdett a falakon lév&otilde; ábrákra mutogatni, és valamit hablatyolni, szemmel láthatóan magyarázatot várva a havertól. Néhány ismétlés után már felismerhet&otilde; volt pár magyar szó, f&otilde;leg az <I>"igen"</I>-t hangsúlyozta a forma, a srác pedig, ahogy ilyenkor illik, szóismétlésekkel és körüljáró kérdésekkel próbált rájönni, hogy mit is akar. Az "igen" szót láthatólag ismerte a koreai, mert mosolygott, amikor a srác arra próbált rájönni, hogy igen, de mi igen. Aztán egyszer csak megvilágosodott. A falon egy monitor felépítési rajzai és gyártási el&otilde;írásai voltak, a csávó pedig azt szerette volna, ha beszámol neki bizonyos gyártási folyamatakról, különös tekintettel a katódsugárcs&otilde; elektronágyújára, amire nagyon mutogatott az egyik ábrán. Akkor vette észre az angol nevet a rajzon: <I>e-gun.</I> &Otilde; azt hajtogatta: <I>Í-gán.</I> Teccikérteni? A haver f&otilde;nökei nem értették, miért kell a srácot kirúgni, mint a macskát szarni... A góré állítólag valami termelésvezet&otilde;t várt, akit összekevert a váratlanul érkez&otilde; haverral. Tévedését senki sem merte megmagyarázni neki.
+</I>
+
+
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20041211.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20041213.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,120 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-502</B><BR>
+2005.12.12.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+
+<P ALIGN="justify">
+Futárszolgálatunk irodájában egy jókora termésk&otilde; hever. Funkciója annyi, hogy néha bele lehet rúgni, ha valaki akar. Története természetesen droidsztori.
+<BR><BR>
+
+Sok más cég mellett ez a futárszolgálat szállítja egy fényképez&otilde;gépekkel, elektronikával és hasonlókkal foglalkozó üzlethálózat áruit is. Nyáron a cég marketingesei új ötlettel rukkoltak el&otilde;: a nyaralási szezon idejére minden bolt kirakatát alakítsák át "tengerparttá", vagyis öntsenek a kirakatba egy réteg homokot, pár kisebb-nagyobb sziklával, kagylóval, mögé egy pálmafás posztert, és nesze, nyaralás-feeling. Nosza, feladták a rendelést a futárszolgálatnak: hozzanak köveket meg homokot!
+<BR><BR>
+
+Volt is öröm a háznál. Kiment a furgon egy k&otilde;bányába, felkapkodtak egy valag követ, hozzá pár vödör homokot, aztán a raktárban szépen, akkurátusan elrendezgették dobozokba, becsomagolva, megcímezve ezt ennek a boltnak, azt annak. Aztán szétrajzottak a teherautók, mert volt nekik vagy ötven boltjuk, s másnapra mindegyikben ott volt a homok, imitálva a tengerpart utánozhatatlan hangulatát.
+<BR><BR>
+
+Ez idáig rendben is volt, csak azt nem tervezték bele az okos marketingesek, hogy a finom homok minden egyes ajtónyitásnál felkavarodik, és ez nem tesz jót a kirakatban díszelg&otilde;, méregdrága fényképez&otilde;gépeknek. Mire rájöttek, mind telement porral, recsegtek-ropogtak, végük volt. Boltonként jó egymillió forint kár. Bravó!
+<BR><BR>
+
+No és hogy került a bazi nagy szikla a futárszolgálat irodájába? Nos, a fotós cég vezet&otilde;sége elrendelte, hogy minden bolt azonnal dobja ki a félresikerült dekorációt. A veszprémi üzlet vezet&otilde;je azonban szépen, akkurátusan visszacsomagolta a köveket, és feladta vissza a futárszolgálatnak, visszáruként. Hátha hiányzik a leltárból, ugye. Nos, a kisebb kövek azóta jól mutatnak a futárcég vezet&otilde;jének kertjében, a fa körül, a legnagyobb darab meg maradt az irodában, emlékeztet&otilde;ül, hogy a kedves ügyfelek milyen, hm, érdekesek bírnak lenni néha.
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20051212.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20051221.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

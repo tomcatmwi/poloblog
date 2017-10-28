@@ -1,0 +1,119 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>2007.01.16., kedd</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Ma van éppen tizenöt éve, hogy az elsõ PC-met megkaptam. AMD 286/16, 1 MB RAM, 512 KB-os Trident VGA, 40 MB Seagate HDD, 101 gombos angol billentyûzet, WEN színes monitor, baby ház. Egér opcióként. MS-DOS 5.0. Prince of Persia rogyásig.
+<BR><BR>
+
+Tizenöt évvel késõbb a Magyar Posta informatikusától, Sz.-né G. Máriától próbáltam megtudni, hogyan rakja össze az általa írt (helyesebben gányolt), és a kiemelt ügyfeleknek osztogatott Visual Basic program a vonalkódokat a csomagfeladáshoz, mert amiket én generálok, specifikáció-helyesség ide vagy oda, nem tudják leolvasni a budaörsi csomagközpontban. A hangja alapján a nyugdíjkorhatárt közelítõ Sz.-né G. Mária elõször nem értette, miért nem jó nekem az õ programja, nem kívánságmûsor ez, azt KELL használni és kész. Nagy nehezen elmagyaráztam neki, hogy nincs kedvem egy PHP/MySQL rendszerbe Visual Basic/MS Access alapú szarokat integrálgatni, egyszerûbb saját kódgenerátort írni. Ekkor kiderült, hogy igazából fogalma sincs a saját programja mûködésérõl, nem tudja, mi és hogy generál benne, valami külsõ cuccot használ, de az se biztos. Egy darabig a "Code 128" varázsszót ismételgette, mintha azt nem érteném, milyen vonalkód-szabványt kell használni, aztán a <I>"ki van adva a specifikáció, tessék azt átnézni"</I>-vel próbálkozott. Végül rájött, hogy engem hiába próbál az ámuló kollégáinak fenntartott voodoo-igékkel lerázni, és harciasan kérdõre vont, hogy én milyen cégtõl vagyok, miért nem hallott õ még errõl a cégrõl, ki a kapcsolattartóm, ki adta meg az õ számát, hogy merek a Posta "védett szellemi termékérõl" és "belsõ használatú szoftverérõl" kérdezõsködni, és egyáltalán, hogy merek vele gorombáskodni. A vonalkód-probléma nem oldódott meg, de végül közöltem vele, hogy nem értem, hogy került ebbe a szakmába, mert ekkora felfuvalkodott, dilettáns lamert pályafutásom alatt nem láttam. Szerencsétlen kapcsolattartómnak azért szóltam, hogy mindjárt felhívja õt ez a fúria. Szegény.
+<BR><BR>
+
+A bolt amúgy zavartalanul üzemel, egyszer talán bekötik az Internetet is. Még csak november óta várjuk, nem kell azt elkapkodni. Végül is a Teréz körút tényleg az isten háta mögött van.
+<BR><BR>
+
+Azoknak pedig, akik az éjjel ledöntötték az alig egy hete felállított, solymári Wass Albert-szobrot, ezúton gratulálok. Viszonzásul a közeljövõben mi is felborogatjuk majd egy-két szobrotokat. Akkor majd megint el lehet mondani, mennyire féltek ebben az országban, és milyen primitívek azok, akik ezt tették.
+
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20070115.html">
+<B><< elõzõ nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20070118.html">
+<B>következõ nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+<BR><BR>
+
+</BODY>
+</HTML>
+

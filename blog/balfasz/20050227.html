@@ -1,0 +1,137 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai')!= -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-307</B><BR>
+2005.02.27.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<BR><BR>
+
+<I>
+Tudjuk, mi szokott következni az informatika és a közalkalmazottak találkozásából. Immár lassan harminc éve mindennapos használati eszköz a személyi számítógép, Magyarországon azonban valamiért még mindig nem szokás érteni az ilyen modern dolgokhoz. Szerencsére a sikító titkárn&otilde; állatfaja - tudjátok, amelyik örömében felsikít, ha megtalál egy billenty&ucirc;t - egyre ritkább, de modern korunk ide, ECDL vizsgakövetelmények oda, elég, ha egyetlen m&ucirc;szaki analfabéta is bekerül a rendszerbe, és máris lefagy a szerver, kigyullad a nyomtató, sárga levet ereszt a scanner. Dudi nev&ucirc; kedves olvasónk egy ilyen történettel lepett meg bennünket. Néhányan biztosan tudjátok, hogy a közalkalmazottak, köztisztvisel&otilde;k 13. havi fizetése legutóbb több, mint egy hónapot csúszott, egészen január végéig, és van, aki még ma sem kapta meg? A dolog mögött nem politika vagy spórolás áll, hanem természetesen a droidok.
+</I>
+<BR><BR>
+
+Tudni kell, hogy a bérszámfejt&otilde;ket is rákötelezték immár az informatikára, és bizony számítógépen kell nekik mindent megcsinálniuk, minden közalkalmazott és köztisztvisel&otilde; bérét elszámfejteni. Ehhez egy Oracle alapú rendszert használnak, amelyhez egy adatbázis szerver is tartozik. Évekig minden frankón, tökéletesen m&ucirc;ködött, amikor valami miatt elreccsent a rendszer. Ebben az id&otilde;ben a hálózat és a kliensek karbantartása egy helyi kis csapatnak a feladata volt. Az elreccsenést
+követ&otilde;en az informatikai nagyf&otilde;nökség azonnal hálózati hibát gyanított, kiadták az utasítást a csapatnak, oldják meg. Nekiláttak, és kiderült, a hálózat fainul m&ucirc;ködik, az érintett gépek fainul válaszolnak, kivéve az adatbázisszerver. Az ugyanis néha válaszolt, néha nem, de rendkívül hamar túlterhel&otilde;dött. Benyújtották a kiértékel&otilde; dokumentációt, amit az IT
+nagyf&otilde;nökség visszadobott, mondván, hogy egy többmilliós HP szerver <I>nem romolhat el,</I> annak m&ucirc;ködnie kell. Egyébként valóban néha m&ucirc;ködött, néha nem, teljesen kiszámíthatatlanul. Addig er&otilde;sködött a kis csapat, mire végre az IT f&otilde;nökség kihívott egy embert a számfejt&otilde; rendszer fejleszt&otilde;i közül, vizsgálja meg a szervert. Eddig eltelt már egy hét, a 400
+számfejt&otilde;b&otilde;l ha 50 tudott egyszerre dolgozni, az már jónak számított. 
+<BR><BR>
+
+A szaki megállapította, hogy az Oracle összefosta magát, javítsák meg. Újra az említett csapatot hozták el&otilde;, mondván hogy az Oracle a kliensekre van feltelepítve (!), oldják meg. Nagy nehezen sikerült megértettniük a f&otilde;nökséggel, hogy a rendszer nem csak kliensekb&otilde;l áll, ráadásul több szerver is létezik (adatbázis szerver, forms szerver stb.), de a kliensekkel minden rendben van azon kívül, hogy kb. 50 felhasználónál több egyszerre nem tud bejelentkezni. Megint próbálkoztak azzal, hogy akkor hálózati hiba, mire a csapat odarángatta az egyik kissé szakibb kinézet&ucirc; informatikai fejest a HP elé, hogy vizsgálja már meg. A csapat emberei ugyanis nem nyúlhattak hozzá, mert nem volt hozzá jogosultságuk. Megállapította &otilde; is, hogy Oracle hiba, mégpedig az adatbázis szerver haldoklik. Jeee! 
+<BR><BR>
+
+Két napi prüntyögés után megszólalt: Hívjuk fel az Oracle-t. Felhívták, ecsetelték a problémát, mire jött a válasz: Az Oracle 8i verziót, amit mi használunk már nem támogatják, vegyék meg a 10g-t. Holott a számfejt&otilde; rendszert készít&otilde; gárda kihangsúlyozta, hogy csak 8i-n fut az alkalmazás. Leültek a fejesek tárgyalni, mitév&otilde;k legyenek. Az érdekes az, hogy közben
+a kis csapat szerencsétlen f&otilde;nökét csesztették, hogy bizony hálózati hiba miatt szállt el az Oracle. Már eltelt több, mint 2 hét, amikor a szakibbnak t&ucirc;n&otilde; fejes a HP birizgálása közben felfedezett egy hibaesemény logot (melyb&otilde;l a két hét alatt többezer keletkezett): <I>Memory Write Error.</I> Ezt egyébként kiírta egy el&otilde;ugró ablakban is, csak épp mindig leokézták.
+Kihívták a HP hardverspecialistáját, &otilde; kicserélte benne azt a jónéhány gigabyte-nyi memóriát, és csodák csodája, immár 100 felhasználó tudott egyszerre dolgozni!
+<BR><BR>
+
+Így február elejére (jóval a 13. havi zsé kifizetésének határideje után) elkészültek a számfejtéssel, és két-három
+hét csúszással (elméletileg) mindenki megkaphatta a jussát. Ez az egész hercehurca 3 nap és kb. 300 ezer forintos kiadás helyett 3 hétbe és (büntikkel együtt) közel másfél millió forintba került.
+<BR><BR>
+
+A problémát azóta se tudták teljesen megoldani, mivel nincs lehet&otilde;ség az Oracle szerver újratelepítésére. Az állítólagos indok: költséghatékonyság. Továbbá felesleges biztonsági mentéseket végz&otilde; backup szervert bérelni, amíg m&ucirc;ködik. Hát igen, addig tényleg nem kell, utána meg már minek... Jelenleg a számfejt&otilde;k váltott m&ucirc;szakban férnek az adatbázishoz, mert a tervezett igénybevételt még mindig nem bírja a rendszer, ha mind egyszerre csatlakoznának, megint fejreállna az egész.
+<BR><BR>
+
+No comment...
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050226.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050228.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

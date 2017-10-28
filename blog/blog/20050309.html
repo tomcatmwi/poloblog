@@ -1,0 +1,107 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2005.03.09., szerda</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Érdekes egy társaság lehet ez a <I>Star</I> magazin. Este felhívott egy munkatársuk, egy ifjú hölgy, hebegve-habogva bocsánatkérést rebegett, amiért lenyúlta a Droidzóna cikkeit, felajánlotta, hogy a következ&otilde; számban elnézést kérnek, és utólag megjelölik a forrást. Mondtam, hogy rendben, de mi lesz a jogdíjjal? Hát, sajnos nincs pénzük. Jó, mondtam, akkor majd a bíróságon megbeszéljük. Na, erre még jobban elkezdett hebegni szegény leányzó, és felajánlotta, hogy kifizeti nekem &otilde; az ötvenezret a saját pénzéb&otilde;l, részletekben. Miért &otilde;, kérdeztem, hát &otilde; a felel&otilde;s szerkeszt&otilde; vagy mi? Na, hamar ki is sült, hogy miféle társaság ez a magazin. Bevallotta, hogy csakugyan lenyúlta az írásaimat, de a cikkben megjelölte a forrást is. A f&otilde;szerkeszt&otilde; viszont - a leírás alapján egy überbeképzelt, 23 éves divatribi - önkényesen átírta a hivatkozást úgy, mintha az írásaim olvasói levelek lettek volna. Namost, még ez is hagyján, de amikor megkapta tegnapi e-mailemet, amelyben 50 ezer forint jogdíjat követelek, simán közölte a cikkeket leadó csajjal, hogy ezt neki kell kifizetnie, és nem tartja érte a hátát. Neki meg persze egy vasa sincs, és most fosik, hogy kirúgják. Szóval gratulálok az ilyen f&otilde;szerkeszt&otilde;nek. Végül azzal búcsúztunk el a kolleginával, hogy holnap menjen és borítsa rá az asztalt a f&otilde;szerkeszt&otilde;re, mert az hagyján, hogy &otilde;t ilyen helyzetbe kergette, de még van pofája ráverni a balhét a beosztottra? A lapban megjelen&otilde; dolgokért a mindenkori f&otilde;szerkeszt&otilde; felel, nem az egyszer&ucirc; újságíró.
+<BR><BR>
+
+Na mindegy, a lényeg, hogy kapja be a <I>Star</I> magazin, meg az ilyen maguktól elszállt gazdagapucikislánya f&otilde;szerkeszt&otilde;k, akik egyébként nem csak lopják a cikkeket, de baromságokat is írogatnak. Most olvastam, hogy Hernádi Judit is beperelte a lapjukat, mert miután lefényképezték egy pezsg&otilde;spohárral a kezében, megírták róla, hogy alkoholista lett. Hurrá. Biztos &otilde; is György Péternél tanult írni.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050308.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050310.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

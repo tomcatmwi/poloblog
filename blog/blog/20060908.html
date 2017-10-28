@@ -1,0 +1,117 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2006.09.08., péntek</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Az ember úgy képzeli, hogy vesz egy új PC-t, hazaviszi, és örül neki. Persze a tapasztalt ember, ha ilyesmi történik a környezetében, inkább a fejét fogja, mert egy új PC több kárt szokott okozni, mint hasznot, és már elõre látható az elbaszott installálási hibákkal való, éjszakákon át tartó szarakodás, amire persze mindenki csak a vállát vonogatja, mert csakis ezen a gépen jelentkeznek, soha senki nem látott még ilyet. A végére az ember fülig porosan-mocskosan, az asztal alatt fetrengve, kábeleket rángatva végül kiiktatja a drága gép azon részeit, amelyek nem olyan fontosak, csak végre induljon már el ez a szemétbánya, mielõtt belerúg kettõt és kibassza az ablakon vindózostul.
+<BR><BR>
+
+Ma este a PC iparnak a SATA szabvány feltalálásához szeretnék gratulálni, ami, ugyebár, az IDE utódja akar lenni, winchester-vezérlõrendszer, csak kevesebb benne a kábel és gyorsabb az egész, és ez azért valahol jó. Na, de hogy az élet ne legyen egyszerû, a vindóz természetesen soha nem hallott róla, így installáláskor csupán azt közli, hogy nincs vinyó, leszophatsz. Az alaplaphoz persze adnak egy CD-t, amin van SATA driver, de az nem úgy van ám, hogy csak úgy bedugjuk, és mûködik. Faszt! Bedugod, és a CD közli, hogy dugjál be egy <I>floppylemezt,</I> amire rányalhatja a drivereket. Floppylemezt, tetszik érteni? 2006-ban. Ha jól emlékszem, valamikor 2000 körül az Intel és a Microsoft közös erõvel elátkozták és a történelem süllyesztõjébe számûzték a floppylemezt és a soros portot, s lássuk be, élõ ember nincs ezen a világon, aki még mindig floppyval vagy soros porttal szórakozna, ad absurdum lenne neki floppy meghajtója egyáltalán, hacsak nem a padláson porosodik valahol, vagy felismerné a soros portot, hacsak nem régi motoros, kivételes memóriakészséggel.
+<BR><BR>
+
+De nincs apelláta, a vindóze csakis és kizárólag floppyról hajlandó benyelni a megfelelõ drivert. Hiába van CD, DVD, pendrive, miegymás: floppyt követel a kis mocsok, és csak floppyt, CD-rõl nem érdekli. Tessék elõbányászni a múzeum raktárából a megfelelõ hardvert, különben nem fog mûködni a PC ipar legújabb vívmánya, meg úgy egyáltalán az egész fospumpa. Vagy ha nincs otthon floppymeghajtó, akkor tessék nekiállni széthekkelni a Windows XP install CD-t, átírni másik lemezre, belegányolni mindenféle konfigurációs állománynak nevezett bithalandzsába, számokat, vesszõket és hieroglifákat sorolva az úgynevezett felhasználóbarát rendszernek, és reménykedni, hogy talán egyszer elindul.
+<BR><BR>
+
+Végül nyakamba vettem a várost, elbuszoztam a raktárba, és kioperáltam a floppyt az ott porosodó 300-as Celeronból. Abban is csak azért volt, mert a 300-as Celeronok idejében még nem merték kihagyni a gépekbõl, nehogy besírjon valami hülye. Lemezem történetesen akad otthon, de csak mert az a hülye hobbim van, hogy mindenféle Amigákat meg Atarikat gyûjtök. Véletlenül.
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060907.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060909.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

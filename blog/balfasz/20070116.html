@@ -1,0 +1,124 @@
+<HTML>
+<HTML>
+<HEAD>
+
+<STYLE type="text/css"> 
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-672</B><BR>
+2007.01.16.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<P ALIGN="justify">
+Elnézést, megint elhanyagoltam a Droidzónát. Így jár, aki én vagyok. Most utálhattok. De hogy mégse utáljatok, mesélek nektek egy ügyvédrõl, aki feladta a hivatását, miután szembesült az úgynevezett Független Magyar Bíróság mûködésével. Most Edi és Micó egyik ügyfele, teljesen más területen.
+<BR><BR>
+
+Az ürge meglehetõs nevet szerzett a szakmában, mint nehézsúlyú bûnözõkre szakosodott büntetõjogász. Gyilkosságok, rablások, maffiaügyek tartoztak a szakterületébe. Jó néhány igazi bûnözõt is védett, de nem egyszer találkozott alattomos kísérletekkel is, amikor ártatlanokat próbáltak börtönbe juttatni. Egy ilyen eset után vetett véget önként a karrierjének. 
+<BR><BR>
+
+Védence már két éve ült elõzetesben gyilkosság vádjával, noha az ügyvéd száz százalékig biztos volt benne, hogy nem követett el semmit. Két év kellett ahhoz, hogy a tárgyalást kitûzzék, és egyáltalán foglalkozzanak a dologgal. A tárgyalásra az ügyészség idézett egy tanút, aki állítólag a vádlott megbízója volt. Már eleve érdekes ember volt ez is, ugyanis minden második hasonló perben tanúként szerepelt, valahogy mindig mindenhol ott volt, és mindent látott, és mindig vallomást is tett. Gondolta az ügyvéd, kibabrál vele, és beültette a vádlottat vagy húsz nézõ közé, a padsorokba. Amikor az ürge a megbánástól fátyolos hangon elrebegte, hogyan bízta meg õ XY-t a gyilkossággal, felkérte õt, hogy a közönség soraiban mutasson rá arra, akit megbízott. Az ürge hebegett-habogott egy darabig, majd találomra rábökött valakire. Az pedig nem is a vádlott volt. Egyértelmû bizonyíték lenne, persze, de a bíró kitöröltette ezt a jegyzõkönybõl, azzal az indoklással, hogy a felismertetés nem a szabályoknak megfelelõen történt.
+<BR><BR>
+
+A védõ késõbb megkérdezte a bírót, nem zavarja-e az az apró mellékkörülmény, hogy a Halló Bár nevû szórakozóhely, ahol állítólag a gyilkossággal való megbízás történt, a mondott idõpontban éppen nem üzemelt, mert le volt égve. A bíró ezt a hozzászólást elutasította, mondván, hogy nem releváns.
+<BR><BR>
+
+A vádlottat végül tíz év fegyházra ítélték.
+<BR><BR>
+
+Ennyit a pártatlan magyar bíróságokról...
+
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20070110.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20070122.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

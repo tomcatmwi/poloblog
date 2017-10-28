@@ -1,0 +1,118 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2006.05.22., hétf&otilde;</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+A hétf&otilde;t azért utálom, mert rendszerint megzavarja a hétvégén megszokott nyugalmat. Ráadásul itt ez a hülye meleg. Bár legalább rekordot dönt az epertermés, ez segít feledtetni, hogy a környezetemben lev&otilde; n&otilde;k 100%-a tökéletesen elviselhetetlen. Most például épp telefújja a szobát rovarirtóval, mert alabástrom testét megcsípte 1, azaz egy darab szúnyog. Ezután kimegy, én meg fulladjak meg. A szúnyog szerinte azért került a szobába, mert nekem volt pofám kinyitni az ablakot, amikor már fájt a fejem a leveg&otilde;hiánytól, és elpusztítása csak velem egyött lehetséges. De hát mit várunk valakit&otilde;l, aki a számítógéppel csak a padlón fetrengve bír dolgozni, ülve hisztirohamot kap, aztán megmagyarázza a blogjában, hogy az nem is hiszti, csak a férfiak nem értik?
+<BR><BR>
+
+Ennél érdekesebb talán, hogy a környéken basznak a macskák, avagy párzanak, ha az jobban tetszik. A baszó macska azért jó, mert egyszerre kett&otilde;t lehet lenyilazni a számszeríjjal, ha az ember ügyes. Még ügyesebbek oda is szögezhetik &otilde;ket mindjárt a garázsajtóhoz. Akkor még egy kicsit vernyognak, de egyre halkabban.
+<BR><BR>
+
+Akit érdekel a Blogkabaré következ&otilde; el&otilde;adása a F&otilde;városi Bíróságon, jöjjön csütörtökön 8:15-re a Nyugatihoz, a forgó óra alá. A Népszabadság elleni ötödik tárgyalás következik, melynek érdekessége az lesz, hogy jön György Péter, és tévedhetetlen zsenijével be fogja bizonyítani, hogy az én fejemben igenis széls&otilde;jobboldali gondolatok fészkelnek, mert neki képesítése van ám a gondolatolvasásra is. Biztosan ehhez is legalább annyira ért, mint <A HREF="http://blog.tomcatpolo.hu/blog/blog/20051210.html">Erdély történelméhez.</A>
+<BR><BR>
+
+Milyen lehet egy párzó György Péter?
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060521.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,137 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2006.01.27., péntek</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Frankó a balhé. Bementem kedvenc nemzetközi IRC csatornámra, mire letámadtak, hogy mit keresek én egy lengyel újságban. Miféle újságban, kérdeztem, mire elém lökték a legnagyobb lengyel napilap, a <A HREF="http://wiadomosci.onet.pl/1249807,12,item.html" TARGET="_new">Gazeta Wyborcza</A> online kiadását, melyben az alábbi cikk állt:
+<BR><BR>
+
+<I>
+A "Tomcat" néven is ismert Polgár Tamás szabadon sétálhatott életh&ucirc; Kalasnyikov-másolatával Budapest utcáin. Megjelenése senkit sem zavart, pedig útja során rend&otilde;rökkel is találkozott.<BR>
+Sétáját dél körül kezdte, és kora délutánig tartott. Hab a tortán, hogy elhaladt az Országos Rend&otilde;r-f&otilde;kapitányság épülete el&otilde;tt is, és ott sem t&ucirc;nt fel az &otilde;rt álló rend&otilde;röknek.<BR>
+A metró bejáratánál az ellen&otilde;rök csupán jegyét nézték meg, majd továbbengedték az állomásra. Utazása csak jó pár metrómegállóval arrébb ért véget, amikor két rend&otilde;rt üdvözölt elhaladtában. Kis id&otilde; múlva a rend&otilde;rök utánaeredtek és igazoltatták, majd szabálysértés elkövetése miatt el&otilde;állították.
+<BR>
+Tomcat korábban társaival tüntetést szervezett az Országos Rend&otilde;r-f&otilde;kapitányság épülete el&otilde;tt a jobb közbiztonságért.
+<BR>
+A rend&otilde;rség képvisel&otilde;i szerint bels&otilde; vizsgálatot indítottak a rend&otilde;rségi központ biztonságára felügyel&otilde; rend&otilde;rök felel&otilde;sségének megállapítására.
+<BR>
+Polgár Tamás, m&ucirc;vésznevén Tomcat, blogger és komputergrafikus, webdesigner és társadalmi aktivista 2005-ben több, cigányokkal kapcsolatos sért&otilde; megjegyzéséért "Szakállas Bácsi" díjat kapott a Szabad Demokraták Szövetsége nev&ucirc; párttól, melyet xenofób, homofób, rasszista és közönyös közszerepl&otilde;knek ítélnek oda. De ugyanakkor ismertté vált a fasiszta Magyar Élet Pártja ellen végrehajtott akcióiról is.
+<BR><BR>
+</I>
+
+(A hevenyészett fordítást egy lengyel haveromnak köszönhetjük.)
+<BR><BR>
+
+Eltekintve az "apróbb" pontatlanságoktól, mint például hogy a MIÉP nem fasiszta, és sosem akcióztam ellenük, csak a Vér és Becsület ellen, a cikk egész korrekt. Sikerült tehát akkora botrányt csinálni, hogy még a külföldi sajtó is foglalkozik vele. Egyvalami azonban elszomorító, mégpedig az, hogy a lengyel sajtóból kell megtudnunk, hogy ahelyett, hogy Gergényi elvtárs és baráti köre kicsit magába szállna, és elgondolkodna azon, hogy talán valamit csúnyán elbasztak, inkább nekiálltak pár szerencsétlen bokorugró zsarut csesztetni, rájuk verni a balhét. Mir&otilde;l tehetnek szerencsétlenek, tán keresztül kellett volna látniuk azon a félig szétrohadt palánkon, ami az ORFK építésének befejezése óta övezi az épület parkolóját, roppant esztétikus látványt nyújtva? Inkább nézzenek utána, ki volt az a magasrangú rend&otilde;rtiszt, aki civilben elhaladt mellettem, és jól meg is nézett. Én felismertem, hát neki van-e annyi vér a pucájában, hogy kiáll és elismeri, hogy neki is vattából van a szeme?
+<BR><BR>
+
+A sajtószemlét holnap folytatom. Nem volt id&otilde;m összeszedni, hol jelent meg a hír rövid sétámról, de az bizonyos, hogy a Demokrata Videó Televízió, az RTL Klub, az Inforádió és a Magyar Nemzet készített összeállítást az esetr&otilde;l.
+<BR><BR>
+
+Bizonyos fórumokon okoskodó jogtudorok és fegyverszakért&otilde;k kedvéért: a Kalasnyikovom nem m&ucirc;anyagból volt, nem airsoft-puska, hanem minden tekintetben életh&ucirc;, fémb&otilde;l készült másolat. Olyan szinten hitelesen nézett ki, hogy nem egy fegyverbuzi haverom még akkor is valódinak hitte, amikor a kezébe nyomtam.
+<BR><BR>
+
+Gergényi úr! Továbbra is várom épkézláb válaszát, avagy lemondását...
+
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060126.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060130.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

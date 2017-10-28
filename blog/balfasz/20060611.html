@@ -1,0 +1,136 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css"> 
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-600</B><BR>
+2006.06.11.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<P ALIGN="justify">
+Megyünk a boltba Bertával ezen a békés szombat délutánon. A kutya vidáman, farokfelvágva kocog elõttem, le se szarja a kerítések mögött acsarkodó parasztebeket. Már megállapítottuk, hogy falun minden kutya idegbeteg, a levrovban ki is tárgyaltuk, hogy valószínûleg a gazdáik miatt. Hát, most találkoztunk egy gazdával is.
+<BR><BR>
+
+Már visszafelé haladtunk a földes mellékutcán, amikor egy szétszeszelt hang károgását hallottam valahonnan:
+<BR><BR>
+
+- Azistenitmá'! Engedd ki! Engedd ki az utcára! A kurva anyját ennek a kutyának! Hogy folyton erre mászkál!
+<BR><BR>
+
+Pár másodperc múlva meg is pillantottam a hang gazdáját. Egy vén alkesz parasztdroid volt, kint lógott a Tüzép-barokk stílusában épült házának ablakában, és hörögve utasítgatta nõstényét, hogy nyissa ki a kaput, és engedje ki vadul csaholó kutyájukat az utcára, mert õt zavarja, hogy Berta egy nap alatt már másodszor halad el elõttük.
+<BR><BR>
+
+- Mi kurva anyád bajod van, büdös paraszt? - érdeklõdtem odaérve. 
+<BR><BR>
+
+A parasztdroidnak erre elakadt a hanggenerátora, szeme-szája elkerekedett, majd úgy maradt, meredten bámulva a fekete gyakorlós, kopasz embert, aki a jelek szerint mindjárt bemegy, és lerúgja a fejét. Ilyet még biztosan nem látott. Az asszony se, mert lefagyott a kert közepén, kezében a kapukulccsal, és hasonló pofával bámult rám. A kutyák érdeklõdve figyelték a jelenetet.
+<BR><BR>
+
+- Szá... szájkosár... tegyen rá szájkosarat... - próbálkozott erõtlenül a droid az ablakból.<BR>
+- Rád teszek mindjárt szájkosarat, aztán a nyakadra csukom az ablakot!<BR>
+<BR>
+
+Parasztdroid ismét lefagyott, majd némi feldolgozási ciklus után lassan visszahúzódott az ablakból.
+<BR><BR>
+
+- Húzás befelé! - szóltam rá a párjára, aki utasítás hiányában még mindig a kert közepén ácsorgott.<BR>
+- I... igenis - motyogta, és betipegett a házba.
+<BR><BR>
+
+Na, hát csoda, hogy idegbetegek errefelé a kutyák?
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060610.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060612.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

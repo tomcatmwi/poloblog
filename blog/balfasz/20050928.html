@@ -1,0 +1,127 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-455</B><BR>
+2005.09.28.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+
+<P ALIGN="justify">
+
+Volt szerencsém ma egy konkurrenciámmal találkoznom - hogy melyikkel, azt nem írom le, mert kapitalizmus van és taposás, ilyen az élet. A cégvezet&otilde; úr Csongrádon született és n&otilde;tt fel, a Tisza partján, s ebb&otilde;l az id&otilde;b&otilde;l mesélt nekem egy droidtörténetet.
+<BR><BR>
+
+A Tisza partján m&ucirc;ködött egy csónakkölcsönz&otilde;. Nagy, hatszemélyes bádogladikokat adtak bérbe, a helybéli gyerekek legnagyobb örömére, akik id&otilde;nként közösen kibéreltek egyet, majd beleültek tízen-tizenketten, és boldogan evickéltek fel-alá. Persze ez nem egészen volt szabályos, de hát kit érdekel. Be is merült a ladik a pereméig, néha meg is billent, de ez se tartotta vissza a fiúkat, hogy beevezzenek vele a Körös torkolatába. Percek alatt utánuk is eredt a vízirend&otilde;rség motorcsónakja. A bent ül&otilde; rend&otilde;r homlokráncolva számolta össze a tizenkét gyereket, majd e magas számot gyanúsnak találta.
+<BR><BR>
+
+- Jó napot! - kiáltott át a fakabát a vészesen billeg&otilde; lélekveszt&otilde;be. - Hány személyes ez a csónak?!
+<BR><BR>
+
+Minden csónak oldalán díszelgett egy szám, hogy a kölcsönz&otilde;s azonosítani tudja &otilde;ket. Ez történetesen a 13-as számot viselte.
+<BR><BR>
+
+- Tizenhárom! - kiáltott vissza az egyik gyerek, a számra mutatva.<BR>
+- Köszönöm, további jó pihenést! - felelte a rend&otilde;r, majd gázt adott és elhúzott.
+<BR><BR>
+
+Ezután a csónakban olyan röhögés tört ki, hogy a billegést&otilde;l ömleni kezdett be a víz, és alig tudtak partra verg&otilde;dni.
+
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050927.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050930.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,122 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>2007.03.04., vasárnap</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+A blogszünet alatt két, a világtörténelmet formáló esemény hozta lázba naprendszerünk népeit. Mortimert elsõfokon 3 év 10 hónap börtönre ítélték emberölés kísérletéért. Ugrálhatnak örömükben a rasszistázók, lám-lám, csak õk mondják meg, mi az igazság, csakazértis náci, mi gyõztünk. Azért csak ne tessék mindjárt a plafonig ugrani, mert egyrészt az ítélet nem jogerõs, tehát még megvitatja egy bírói grémium, és támadható, másrészt lesz ebbõl még másodfok és Legfelsõbb Bíróság is, továbbá ne tessék elfeledkezni egy bizonyos Kaiser Ede esetérõl, csak hogy egyetlenegyet említsek a közelmúlt büntetõjogi érdekességeibõl. Azt pedig ügyesen elhallgatta a média, hogy az ítélet azért nem emelkedett jogerõre, noha a bíró a büntetés azonnali megkezdését kérte, mert az ügyész (!) megvétózta azt, és egyúttal õ maga kérte a fellebbvitelt másodfokra. Még az elõzetes letartóztatáshoz sem járult hozzá, csupán lakhelyelhagyási tilalommal sújtották Mortimert. Az azért elég érdekes, hogy az ügyész kér enyhítést! Arról nem is beszélve, hogy az indoklás szerint a bíró számos szakértõi véleményt egyszerûen mellõzött az ügyben. Szintén kifogásként hangzott el, hogy a tárgyaláson a bíró "büntetlen elõéletûnek" nevezte a karddal megszúrt "Józsikát", noha tizennyolc éves kora ellenére tekintélyes priusza van. A "pártatlan" bíróság mûködésébe még az is belefért, hogy Pataiék fennhangon vérbosszúval fenyegessék meg Mortimer családját, mely fölött a bíró szemet hunyt, és még csak rendre sem utasította õket. Így megy ez.
+<BR><BR>
+
+A bíróság határozatának egyik érdekessége a mozgó busz kérdése volt. Mortimer szerint azért esett elõre, és szúrta át Józsikát, mert a busz éppen elindult. Szemtanúk szerint a busz ajtaja ekkor nyitva volt. Valami jármûszakértõ megállapította, hogy az Ikarus buszok úgy mûködnek, hogy ha az ajtót kinyitják, az ajtószárnyakat mozgató munkahengerekbõl a sûrített levegõ átvezetõdik a fékrendszerbe, vagyis blokkolja a jármû mozgását, hogy az nyitott ajtóval ne indulhasson el. Vagyis Mortimer állítása nem fedi a valóságot.
+<BR><BR>
+
+Igen ám, de a tisztelt szakértõ nem adott választ arra a kérdésre, hogy akkor miért látni nyaranta kinyitott ajtóval boldogan nyargaló Volán buszokat? Azért, mert a mûszerfalon van egy gomb, ami ezt a biztonsági funkciót kiiktatja. Arra szolgál, hogy ha az ajtóból más okból szökik el a nyomás, a busz ne álljon meg bezárt ajtókkal a préri közepén. A sofõrök persze rendszerint kikapcsolják, ezért látni olyat is Pesten, hogy a busz még megállás elõtt nyitja az ajtókat a megállókban. Ezt a lehetõséget azonban nem is vizsgálta a szakértõ, milyen érdekes!
+<BR><BR>
+
+Azt is elfogadta a bíróság, hogy ahhoz, hogy valakit karddal keresztülszúrjanak, különösen nagy erõ szükséges, nem elég pusztán elõreesni. Nem fogadták el a felajánlást, hogy ennek ellenkezõjét demonstrálják. Pedig nem lett volna nagy feladat fellógatni egy féldisznót, és megbökni egy jó méteres karddal. Úgy megy bele, mint a vajba, alig érezni ellenállást. Ezért is számít fegyvernek a kard. De ez sem érdekelte a T. Bíróságot.
+<BR><BR>
+
+A másik érdekes hír, hogy Demcsák Zsuzsa lett a kormányszóvivõ. Ez azért érdekes, mert iskolatársam volt, a bátyja, Demcsák Gergõ - jelenleg ismert közgazdász - pedig osztálytársam. Aki most azt várja, hogy valami rosszat írok róluk, az hiába várja, Zsuzsa ugyanis nem hülye. Hogy van-e értelme pusztán ezért kormányszóvivõt csinálni belõle, azt nem tudom. Szerintem többet nyomott a latban, hogy a neten fellelhetõek róla erotikus képek, és mellesleg zsidó is. Nincs ebben semmi meglepõ, a fél suli zsidókból állt. A két Demcsák nem tartozott a magától elszállós fajtába. No, de ennyit róluk, a kormányszóvivõ nem döntési pozíció, tökmindegy, ki van ott, ha érthetõen tud beszélni. Az más kérdés, hogy aki az MSZP-vel összeáll, arról megvan a véleményem.
+
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20070303.html">
+<B><< elõzõ nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20070305.html">
+<B>következõ nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+<BR><BR>
+
+</BODY>
+</HTML>
+

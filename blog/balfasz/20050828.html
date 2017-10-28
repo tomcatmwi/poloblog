@@ -1,0 +1,138 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-429</B><BR>
+2005.08.28.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+
+<P ALIGN="justify">
+Páran biztos fognak tiltakozni, hogy <I>de ezt már hallottam, ez egy urban legend,</I> attól a történet még marad, és igaz is, mert gimnáziumi osztálytársaimmal történt egykor.
+<BR><BR>
+
+Egy heves buli után úgy esett, hogy hatan ültek be egy Skodába. Mármost a Skoda a legoptimistább KRESZ-könyvek szerint is legfeljebb ötszemélyes, de hát én is ültem már hetedmagammal kis Polskiban, csak az anyósülést kellett kiszedni, így hát elfogadhatjuk, hogy a Skoda is tud hatszemélyes lenni, ha akar. Nem tudta azonban ezt a rend&otilde;rjár&otilde;r, aki leintette a kocsit, és homlokráncolva méregette az el&otilde;kászálódó tömeget.
+<BR><BR>
+
+- Álljunk csak meg! Hányan ülnek maguk ebben a kocsiban?
+<BR><BR>
+
+A vezet&otilde; ártatlan arccal felelt:
+<BR><BR>
+
+- Öten... Nézze csak: egy, kett&otilde;, három, négy öt.
+<BR><BR>
+
+Persze magát nem számolta. A rend&otilde;r, mint Officer Barbrady korai inkarnációja, tovább ráncolta a homlokát, hovatovább már csomóra kötötte az arcát, de nem értette.
+<BR><BR>
+
+- Mi? - nyögte végül.<BR>
+- Egy, kett&otilde;, három, négy, öt - számolta meg ismét az utasokat a sof&otilde;r, akik még nála is angyalibb arccal bólogattak.
+<BR><BR>
+
+A rend&otilde;r eljutott a homlokráncolás szabályzatban engedélyezett maximumához, kicsit úgy maradt, majd így szólt:
+<BR><BR>
+
+- Hát... rendben, akkor menjenek tovább...
+</P>
+
+</td>
+
+
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050827.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050829.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

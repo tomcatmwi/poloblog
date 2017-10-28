@@ -1,0 +1,142 @@
+<HTML>
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>DROID-213</B><BR>
+2004.11.11.
+<BR><BR>
+
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<BR><BR>
+
+Névtelen haverom kérésére, mivel vele is olyan korrektül bántak a Pet&otilde;fi Gimnáziumban, tessék egy link a <A HREF="http://daisy.chains.ch/download/pingvin/" TARGET="_new">Pingvinr&otilde;l készült videófilmekhez.</A> Ismételten közlöm a feljelentgetni vágyókkal, hogy ez az anyag nem az én szerveremen van, csupán linkelem, amiért jogilag nem vagyok felel&otilde;sségre vonható.
+<BR><BR>
+
+Mai droidunkat pedig Isti fed&otilde;nev&ucirc; olvasónk küldte be, a konzumkultúra és tömegbevásárlás világából.
+<BR><BR>
+
+<I>
+Droidok felénk is vannak.
+<BR><BR>
+
+A barátn&otilde;m, itt, a székesfehérvári Tesco-ban dolgozik a vev&otilde;szolgálaton. Tanul, valamib&otilde;l meg kell élni mellette...
+Szóval, ez ott történt nem túl régen. Egy hölgy vitt vissza egy fél sült halat papírba csomagolva, és fájdalomtól
+eltorzult arccal, üvöltve dobta a vev&otilde;szolgálati pultra.
+<BR><BR>
+
+- Basszák meg a selejtes, kurva halukat. Ma vettem és délben sütöttem meg a szintén Tesco-s f&ucirc;szersójukkal együtt. Miért van az, hogy maguk mindig átbasszák a vásárlókat?! És úgy egyébként is, mindenkinek a kurva anyja...
+<BR><BR>
+
+És szitkozódott tovább. A lányok elh&ucirc;lve nézték a pult mögött, hogy a n&otilde;nek nincsenek ajkai, b&otilde;rfoszlányok lógnak csak a szája körül, és ahogy beszélt, rángatózott az arca a fájdalomtól. Minden szónál felrepedtek a sebek az ajkain, és néhány helyen vérezni kezdett. Ebben a pillanatban találta meg a f&ucirc;szersó maradékát is, ami még a táskájában lapult, és egy hanyag mozdulattal azt is a pultra dobta. Akkor vették észre a dobozon a feliratot: 
+</P>
+<CENTER>
+
+<B>KRISTÁLYOS LEFOLYÓTISZTÍTÓ</B>
+</CENTER>
+
+<P ALIGN="justify">
+Barátn&otilde;m kollégan&otilde;je közölte ezt a vásárlóval, aki erre szó nélkül mindent a pulton hagyott, és elfutott.
+</I>
+
+
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20041110.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20041112.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

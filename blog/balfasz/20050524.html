@@ -1,0 +1,116 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-372</B><BR>
+2005.05.24.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+
+<P ALIGN="justify">
+<I>Athos kórházban járt. Ott is vannak érdekes emberek...</I>
+<BR><BR>
+
+Hétfõn a mandulagyulladásomra szedett antibiotikum miatti májelégtelenség (!!) miatt barátnõmmel kénytelenek voltunk bevonulni a Szt. Imre Kórház sürgõsségi osztályára. Itt találkoztunk egy droiddal. Egyébként érdekes, hogy a délutáni sorozatok és mónikasók idején az idõs nénik-bácsik eltûnnek a rendelõkból és az orvosok tájékáról, ugye mindig a legszínvonalasabb szórakozást keresi az ember...
+<BR><BR>
+
+Ülünk, várunk, egyszer csak egy idõs néni felpattant, hogy õ márpedig haza fog innen menni, mert szomjan hal, az automatából kijövõ szénsavas löttyöket nem bírja meginni (tényleg, egy kórházban miért csak szénsavas van az
+automatában?), õ már a csapvizet is meginná (!!!), jaj, de rosszul van, hazamegy. Egy fiatal csaj segíteni akart rajta, mondta, hogy igyon a WC-ben, mert ugye ott van csap. A néninek se kellett több, felforrt vörös fejjel üvölteni kezdett, hogy õ megélt 70 évet, õ idõs, ezért tisztelni kell, és hogy a fiatal csaj meg az édesanyja igyanak a WC-bõl, õ azt kívánja, és nem fog a WC-bõl inni, akkor inkább szomjanhal. No comment. Erre már a fel-le szaladgáló orvosok, nõvérkék is megsajnálták, és szereztek neki egy pohár vizet. A mamszter nagy büszkén bemutatta a váróterem vendégeinek, hogy szerzett vizet, és nem kell a WC-bõl lefetyelnie. Gratulálok.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050523.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050525.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

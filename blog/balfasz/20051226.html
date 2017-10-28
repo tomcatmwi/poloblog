@@ -1,0 +1,476 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css"> 
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-506</B><BR>
+2005.12.26.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+
+<P ALIGN="justify">
+Különösebb kommentár nélkül szeretnék elétek tárni egy IRC-s logfile-t. Mint tudjátok, ilyesmit csak végletesen hülye droidok esetén teszek meg, mert a chatrendszerek amúgy is tele vannak hülyékkel, és ilyesmik gy&ucirc;jtésére alapvet&otilde;en a bash.hu szolgál. Ez a droid azonban különleges, mert sorra járja azokat az IRC csatornákat, ahol én valaha is el&otilde;fordultam, és feltett szándéka, hogy az ott tartózkodókat helyes világnézetre térítse. Most éppen egy Amiga scene csatornára szabadult be, ahol a jó öreg Amiga számítógépek kedvel&otilde;i cserélnek eszmét...
+</P>
+
+<FONT FACE="Courier,Monospace" SIZE=2 COLOR=#AAAAAA>
+* Petike (~Petike@gprs43.vodafone.hu) has joined channel
+<BR><BR>
+
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> vannak itt a pologyarto Tomcatnak haverja?</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> szokas koszonni, first of all</FONT><BR>
+<FONT COLOR="#FFFFFF">[dm_-_]</FONT><FONT COLOR="#AAAAAA"> kiveve ha ekkora nagysagot koszonthetunk</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> ez nem az a Petike lesz szerintem</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> nem hat</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> o magyarul irna</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> meg ugye o maga is gyart polot :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> miert keresne a konkurenciat :P</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> Petike szerintem menj ki, gyere be, es kezdd elolrol</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> meltanyos otlet</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> simca mi van?</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> en egy liberalis antifasiszta vagyok</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> elég az els&otilde; pontig eljutni</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> es azert vagyok itt hogy Tomcat haverjaival beszeljek</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> kit érdekel?</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> én meg 100 kiló és azért vagyok itt mert kurvára ráérek</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> itt csak bolsi bal-libsik vannak</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> en pedig mandulalikort iszogatok, es rohogok :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> :)</FONT><BR>
+* Simba^FD meg bekapcsolja a logot<BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> :D</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> ebbol meg akarmi is lehet</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> :DD</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> de szerintem hamar megunja a dude</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> jarre helyes. akkor remelem ti is utaljatok a tomcatot</FONT><BR>
+<FONT COLOR="#FFFFFF">[dm_-_]</FONT><FONT COLOR="#AAAAAA"> majd meglatjuk</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> szegenyke</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> Petike, nem utálom</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> Petike: nem, mi nagyjából leszarjuk</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> irjuk ki totyikba, vagy mi az elvaras ? :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[dm_-_]</FONT><FONT COLOR="#AAAAAA"> Petike: nem csak ot, hanem mindenki mast is :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> jo, dm nyert</FONT><BR>
+<FONT COLOR="#FFFFFF">[Simba^FD]</FONT><FONT COLOR="#AAAAAA"> mindenki monnyon le. és nem lesz több probléma.</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> az</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> elsonek akik politikaval foglalkoznak</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> helyes</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> aztan akik idejonnek agitalni akarmilyen oldalon is</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> ugyhogy tovabbi joccakat Petike</FONT><BR>
+<FONT COLOR="#FFFFFF">[dm_-_]</FONT><FONT COLOR="#AAAAAA"> simca: koszi :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> simca nem erted hogy en az EMBERSEG es ANTIFASIZMUS oldalan agitalok?</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> éljen az anarhia</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> kene hivni 1 tomcathavert</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> Petike: leszarom, ne agitalj</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> szivjon az vele :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> ja</FONT><BR>
+<FONT COLOR="#FFFFFF">[VickeyDFT]</FONT><FONT COLOR="#AAAAAA"> en meg most sem lattam hogy Petike megtette volna amit leeroy kert</FONT><BR>
+<FONT COLOR="#FFFFFF">[dm_-_]</FONT><FONT COLOR="#AAAAAA"> az agitalas mar problema szerintem</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> minden embernek igenis el kell itelnie  a fasizmust, partfuggetlenul</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> hatha azoknak van turelme a hulyekhez</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> nem lehettek ilyen kirekeszto rasszistak</FONT><BR>
+<FONT COLOR="#FFFFFF">[dm_-_]</FONT><FONT COLOR="#AAAAAA"> cselekedni, nem pofazni</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> Petike: eloszor is, bejottel egy tarsasagba</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> iteljuk el a fasizmust !</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> hogy ne ismerjetek ezt el</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> Petike: illett volna koszonnod</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> leeroy pontosa</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> Petike: elso lepeskent</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> Petike: tehat egyelore itt tartunk</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> simca pofa be, leszarom a magyarok illemszabalyait</FONT><BR>
+<FONT COLOR="#FFFFFF">[Simba^FD]</FONT><FONT COLOR="#AAAAAA"> ;P</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> :))))</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> hm</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> Petike, én pesckó örültem volna ha hitlerapánkat hagyják végig kibontakozni</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> jarre gondoltam hogy itt is sok a naci</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> na tessek, itt van neked jatszani jarre :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> jellemzo</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> anyad a naci</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> meg a sok</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> kuss</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> most untam meg</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> magyarok</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> simca megkerdeznem toled: ha ti magyarok nem vagytok nacik</FONT><BR>
+<FONT COLOR="#FFFFFF">[dm_-_]</FONT><FONT COLOR="#AAAAAA"> simca: na meg egy picit</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> honnet tetszik ircelni ?</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> akkor hova tunt 600 ezer zsido????</FONT><BR>
+<FONT COLOR="#FFFFFF">[Simba^FD]</FONT><FONT COLOR="#AAAAAA"> ;PP</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> gimme that green dot</FONT><BR>
+<FONT COLOR="#FFFFFF">[dm_-_]</FONT><FONT COLOR="#AAAAAA"> simca: turelem, majd elesitem meg magam :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> Petike, mib&otilde;l ered a náci kifejezés?</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> ki irtott ki 600 ezer zsidot ha nem a TI nagyszuleitek????</FONT><BR>
+<FONT COLOR="#FFFFFF">[dm_-_]</FONT><FONT COLOR="#AAAAAA"> Petike: ahova damon hill...</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> menjetek innen a picsaba politizalni</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> dm vicces vagy, naci</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> az en nagyszulom ugyan senkit nem irtott ki :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[dm_-_]</FONT><FONT COLOR="#AAAAAA"> Petike: az en nagyszuleim akkor kapaltak es eheztek pl</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> simca ez nem politizalas</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> Petike, mib&otilde;l ered a náci kifejezés?</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> dm es orommel segitettek a deportalasokat</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> jarre nemzetiszocialista, ezt mindenki tudja</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> ez csont hülye</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> az hat</FONT><BR>
+<FONT COLOR="#FFFFFF">[dm_-_]</FONT><FONT COLOR="#AAAAAA"> jaRRe_: az am :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> mi van/</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> ?</FONT><BR>
+<FONT COLOR="#FFFFFF">[Simba^FD]</FONT><FONT COLOR="#AAAAAA"> éppenséggel az én nagyszüleimet deportálták. ide magyarországra. az akkori magyarországról. any comment?</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> ostoba magyar</FONT><BR>
+<FONT COLOR="#FFFFFF">[dm_-_]</FONT><FONT COLOR="#AAAAAA"> eleg jo napom volt, nem gondoltam hogy ezt meg lehet uberelni :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> simba es elnek?</FONT><BR>
+<FONT COLOR="#FFFFFF">[dm_-_]</FONT><FONT COLOR="#AAAAAA"> nem, megette oket</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> simba akkor meg mit pofazol? a zsidokat meg MEGOLTEK</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> a magatokfajta nacik</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> az en nagyszuleim meghaltak gyerekkorukban</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> mind</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> nekem nem is voltak</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> simba nehogy par koszos magyart hasonlits zsidokhoz</FONT><BR>
+<FONT COLOR="#FFFFFF">[dm_-_]</FONT><FONT COLOR="#AAAAAA"> Petike: es meg nagyon sok mas embert is a vilagon</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> pl.</FONT><BR>
+<FONT COLOR="#FFFFFF">[dm_-_]</FONT><FONT COLOR="#AAAAAA"> Petike: en sajnalom mindet</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> Petike, milyen nációba sorolod magad?</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> Petike, milyen nációba sorolod magad?</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> Petike, milyen nációba sorolod magad?</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> simca de vicces</FONT><BR>
+<FONT COLOR="#FFFFFF">[dm_-_]</FONT><FONT COLOR="#AAAAAA"> Petike: de agitalni szerintem gaz...</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> jarre ennek semmi jelentosege</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> Petike: mi celbol jottel ide?</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> de van</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> jarre azaz annak hogy en mileyn kisebbseghez tartozom</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> nincs</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> "ostoba magyar"</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> Petike: te itt naciok alapjan minositesz egy tarsasagot</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> en egy LIBERALIS antifasiszta vagyok</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> "ostoba magyar"</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> "ostoba magyar"</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> kibaszott naci</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> es ez teljesen fuggetlen a szarmazasomtol</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> huzz a picsaba a tobbi nacihoz</FONT><BR>
+<FONT COLOR="#FFFFFF">[Simba^FD]</FONT><FONT COLOR="#AAAAAA"> bolond likból.</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> jarre ok nem vallom magam magyarnak</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> ahogy a legtobb liberalis sem</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> de aki magyarozik, az is kirekeszt</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> nem?</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> mert vegul is kiirtottatok 600 ezer zsidot</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> es ma is uldozitek a romakat</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> uristen</FONT><BR>
+<FONT COLOR="#FFFFFF">[dm_-_]</FONT><FONT COLOR="#AAAAAA"> Petike: na a liberalisokat nem igazan szeretem</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> leeroy nacikat ki KELL rekeszteni</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> speciel engem ok uldoztek a nyockerben tizenx eve :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[dm_-_]</FONT><FONT COLOR="#AAAAAA"> Petike: a szabadsag az agyukra ment</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> dm gondoltam, vegul  is magyar vagy, azaz naci</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> adjon mar valaki opot hogy kirekesszem</FONT><BR>
+<FONT COLOR="#FFFFFF">[dm_-_]</FONT><FONT COLOR="#AAAAAA"> Petike: mar Locke is megirta vagy 400 eve a liberalizmus hatranyait</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> :DDDDDDDDDD</FONT><BR>
+<FONT COLOR="#FFFFFF">[Simba^FD]</FONT><FONT COLOR="#AAAAAA"> simca: köcsög náci. fúj.</FONT><BR>
+<FONT COLOR="#FFFFFF">[Simba^FD]</FONT><FONT COLOR="#AAAAAA"> ;P</FONT><BR>
+<FONT COLOR="#FFFFFF">[dm_-_]</FONT><FONT COLOR="#AAAAAA"> Petike: en mar regota nem vagyok magyar</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> amugy a 600ezernek a fele sem igaz!</FONT><BR>
+<FONT COLOR="#FFFFFF">[dm_-_]</FONT><FONT COLOR="#AAAAAA"> nenenen</FONT><BR>
+<FONT COLOR="#FFFFFF">[dm_-_]</FONT><FONT COLOR="#AAAAAA"> meg egy picit :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> en is elvezem a musort :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> nem mindennapi</FONT><BR>
+<FONT COLOR="#FFFFFF">[dm_-_]</FONT><FONT COLOR="#AAAAAA"> simca: ne legy meggondolatlan! :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> mar a belepesnel elbaszta</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> Petike roma vagy?</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> nem tokmindegy?</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> egy balfasz</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA">: te hol kepzed magadat?</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> jogos a balfasz polo</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> idejon a csatira</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> osztani az eszt</FONT><BR>
+<FONT COLOR="#FFFFFF">[Simba^FD]</FONT><FONT COLOR="#AAAAAA"> ja hogy neki nem jutott ilyen póló</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> jelentkezni az emlitett tomcatnel :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> tenyleg kretenek jarnak ide bazmeg</FONT><BR>
+<FONT COLOR="#FFFFFF">[dm_-_]</FONT><FONT COLOR="#AAAAAA"> majd megkerjuk, hogy nyomjon neki egyedit</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> "verszagra gyul az eji vad"</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> feltunoen csendben van emberunk</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> Petike, folytasd! jobb mint tvt nézni!</FONT><BR>
+<FONT COLOR="#FFFFFF">[Simba^FD]</FONT><FONT COLOR="#AAAAAA"> épp lapozgatja az "Agitprop lamereknek" cím&ucirc; remekm&ucirc;vet</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> :))</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> :DDDDDD</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> erot gyujt</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> felemesztette a harc</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> a nacikkal</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> mint affele modern don quijote</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> belenktort a pikaja :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> itt vagyok</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> rasszistak</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> naszal</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> en csak azt kerem toletek</FONT><BR>
+* Leeroy^SD nagyon rohog<BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> hogy PUBLIKUSAN hatarolodjatok el Tomcattol</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> 2. felvonás</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> hulye vagy te</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> es akkor nem zavarlak tovabb benneteket</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> :D</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> Petike: megkerdezhetjuk, hogy miert pont mi ?</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> Petike, miért is szeretnéd?</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> Petike: csak azert zavarsz, mert hagyjuk neked hogy zavarj</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> leeroy azert mert Tomcat amigas</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> :))))))))</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> :D</FONT><BR>
+<FONT COLOR="#FFFFFF">[Boreger]</FONT><FONT COLOR="#AAAAAA"> LOL...</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> az ev vicce</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> LOL</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> :D</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> es tobben is ide kuldtek erre a csatira hogy vannak itt tomcat haverjai</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> tomcat amigas :)))))</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> Petike, mi bajod tomcattel?</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> rotfl</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> [Petike] leeroy azert mert Tomcat amigas</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> jarre az, hogy rasszista</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> ezt topicba kene :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> Petike, ez &otilde; mondta? vagy honnan veszed?</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> kiirtott 20 cigányt és 15 zsidót?</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> Petike, !</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> highlite of the day :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> Petike: egyreszt bunko es neveletlen vagy, masreszt tajekozatlan</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> harmadreszt tok hulye, de errol lehet hogy nem tehetsz</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> a gyari defektrol nem tehet</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> lehet, hogy szimatszatyros bolcsesz</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> igenytelen</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> Petike, honnan veszed hogy tomcat rasszista?</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> jaj mar te is</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> jaRRe_: queryben pliz :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> simca, majd szolok...!</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> nehogymar elkezdj itt komolyan beszelgetni vele :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> kulonben is bazmeg, kiirtottal 600k zsidot</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> neked itt ehhez nincs jogod :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> :D</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> szemelyesen adagoltad a cyklon-b-t :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> Leeroy^SD, elfelejtetted a 20000 cigányt megemlíteni ! rasszista vagy! :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> igazis</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> lehet, tul sok gyerekkori traumam van :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> "viccesek" vagytok</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> amikor a magyarok altal kiirtott 600ezer zsidoval "vicceltek"</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> nyugi, te is</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> ugye tudjatok hogy az ilyen "viccekert" konnyen bortonbe kerulhettek ha rendor latja oket?</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> amikor idejossz szamonkerni rajtunk</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> persze bortonbe :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> simca Tomcat haverjai vagytok, azert vagyok itt</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> sved internetes emberijogi bizottsag</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> haverja a neniked</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> Petike, ki viccelt?</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> ostoba</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> a helyedben nem szoarkoznek az altalatok kiirtott zsidokkal</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> jarre scrollozz fel, naci</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> hmm</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> naszal</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> en egyedul azt akarom</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> itt szerintem senki nem irtott zsidókat. de a hozzád hasonlókat szivesen elintézném</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> khm :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> hogy irjaok az Indexnek es a tobbi lapnak</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> itt szerintem senki nem irtott zsidókat. de a hozzád hasonlókat szivesen elintézném</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> itt szerintem senki nem irtott zsidókat. de a hozzád hasonlókat szivesen elintézném</FONT><BR>
+* simca has kicked Petike (hessmar a picsaba)<BR>
+<FONT COLOR="#FFFFFF">[Simba^FD]</FONT><FONT COLOR="#AAAAAA"> miért iszik aki nem bírja</FONT><BR>
+* Petike (~Petike@gprs43.vodafone.hu) has joined channel<BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> na elolrol</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> szia Petike</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> en azt akarom csak hogy irjatok az Indexnek es a tobbi lapnak</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> es hatarolodjatok el Tomcattol</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> van mas lap is?</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> kozositsetek ki</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> ki vagy te,</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> ?</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> Petike, te full hülye vagy</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> en tudom</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> en meg azt szeretnem, ha vilagbeke lenne</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> o gyorgy peter !</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> :))</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> wow :D</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> hogy ezt megirhasak ezek a lapok</FONT><BR>
+<FONT COLOR="#FFFFFF">[Simba^FD]</FONT><FONT COLOR="#AAAAAA"> lól.</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> legalabb olyan mechanikus, ja</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> ugymond droid ?</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> :DDDDDDDDD</FONT><BR>
+<FONT COLOR="#FFFFFF">[Simba^FD]</FONT><FONT COLOR="#AAAAAA"> az. msgdroid</FONT><BR>
+<FONT COLOR="#FFFFFF">[Simba^FD]</FONT><FONT COLOR="#AAAAAA"> output only</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> write only</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> Petike, kicsit még el&otilde;adod itt magad és bekerülhetsz tomcat blogjába!</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> write only</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> azz :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> Petike, mennyi id&otilde;s vagy?</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> Simba^FD: lehet, be kene majd izzitani ujra a csatipage-et, es kitenni mint nevezetes log :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> kozod?</FONT><BR>
+<FONT COLOR="#FFFFFF">[Simba^FD]</FONT><FONT COLOR="#AAAAAA"> eszembe jutott :P</FONT><BR>
+<FONT COLOR="#FFFFFF">[Boreger]</FONT><FONT COLOR="#AAAAAA"> Petike, miért is? Mert nem egyezik a világnézetetek? Mert lélegzik? Mert két füle van és nem szatyor? Vagy csak azért mert &otilde; neki fél centivel nagyobb képerny&otilde; jutott, mint neked?</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> :DDDD</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> nem. Azert, mert Tomcat NACI</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> Petike, ez komoly emberre utaló válasz volt</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> ilyen 1*u</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> leszarjuk, fogd fel</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> kuss</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> magyar</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> Petike, max 16</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> majd te megmondod, mi?</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> igen</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> naci, aki mondja</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> veletek magyarokkal igy kell beszelni</FONT><BR>
+<FONT COLOR="#FFFFFF">[TempestHawk]</FONT><FONT COLOR="#AAAAAA"> HELP</FONT><BR>
+<FONT COLOR="#FFFFFF">[TempestHawk]</FONT><FONT COLOR="#AAAAAA"> egyvalamiben segitsetek </FONT><BR>
+<FONT COLOR="#FFFFFF">[TempestHawk]</FONT><FONT COLOR="#AAAAAA"> :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> [TempestHawk]: kicsit mintha dilihaz lenne ma, nem? :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> leeroy ez is olyan tomcatos volt....</FONT><BR>
+<FONT COLOR="#FFFFFF">[TempestHawk]</FONT><FONT COLOR="#AAAAAA"> azt hogy tomcat et ki szereti ki nem az ugye maganugy</FONT><BR>
+<FONT COLOR="#FFFFFF">[TempestHawk]</FONT><FONT COLOR="#AAAAAA"> de</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> nem az</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> de</FONT><BR>
+<FONT COLOR="#FFFFFF">[Simba^FD]</FONT><FONT COLOR="#AAAAAA"> ez itt kérem a magyar tomcatista egylet</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> :D</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> haverjai vagytok</FONT><BR>
+<FONT COLOR="#FFFFFF">[TempestHawk]</FONT><FONT COLOR="#AAAAAA"> miert kene irnia barkinek hogy el van hatarolodva?</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> te vagy a haverja</FONT><BR>
+<FONT COLOR="#FFFFFF">[Boreger]</FONT><FONT COLOR="#AAAAAA"> Bocsáss meg, de nekem van ismer&otilde;söm aki hitlejugend volt, volt ismer&otilde;söm aki SS volt, és volt ismer&otilde;söm aki ruszkikat bombázta 45-ig. És képzeld el, egyik sem volt náci. Szerinted hogy lehet?</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> honnan mashonnan tudnad hogy neha ide is jon
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> Boreger ne terelj</FONT><BR>
+<FONT COLOR="#FFFFFF">[TempestHawk]</FONT><FONT COLOR="#AAAAAA"> van egy csomo csati amin vannak emberek</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> ???????????</FONT><BR>
+<FONT COLOR="#FFFFFF">[Boreger]</FONT><FONT COLOR="#AAAAAA"> Nem terelek, mert az a pulik dolga.</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> simca, #hungary-n mondtak</FONT><BR>
+<FONT COLOR="#FFFFFF">[TempestHawk]</FONT><FONT COLOR="#AAAAAA"> es ott senkinek nem jut eszebe hogy irjon barhova is</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> TempestHawk: ne keress logikat a srac gondolatai mogott :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[TempestHawk]</FONT><FONT COLOR="#AAAAAA"> miert kene pont nekunk?</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> hogy itt vannak haverjai</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> Petike, mekkora szemellenz&otilde;t hordasz?</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> na jo</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> elegem van</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> beloletek</FONT><BR>
+<FONT COLOR="#FFFFFF">[jaRRe_]</FONT><FONT COLOR="#AAAAAA"> végre</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> nacik</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> ideje</FONT><BR>
+<FONT COLOR="#FFFFFF">[Petike]</FONT><FONT COLOR="#AAAAAA"> kuss</FONT><BR>
+* Flamer has kicked Petike from channel (USer failed)<BR>
+* Leeroy^SD sets ban on *!*Petike@*.vodafone.hu<BR>
+<FONT COLOR="#FFFFFF">[Emeric^SH]</FONT><FONT COLOR="#AAAAAA"> hm</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> oreg vagyok en mar az ilyesmihez</FONT><BR>
+<FONT COLOR="#FFFFFF">[Boreger]</FONT><FONT COLOR="#AAAAAA"> Pedig a kuss is náci szó, mert két s van egymás mellett mint az SS-ben.</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> mi tomcat emailcime ? :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> na ha elkuldod neki a logot es kirakja</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> akkor mar tenyleg a haverjai leszunk</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> es az viszont eleg gaz lenne</FONT><BR>
+<FONT COLOR="#FFFFFF">[Emeric^SH]</FONT><FONT COLOR="#AAAAAA"> esetleg tomcatot is ki kellene bannolni? :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[Emeric^SH]</FONT><FONT COLOR="#AAAAAA"> szerintem ez inkabb gaz</FONT><BR>
+<FONT COLOR="#FFFFFF">[Emeric^SH]</FONT><FONT COLOR="#AAAAAA"> mar hogy Tomcat haverjai lettunk</FONT><BR>
+<FONT COLOR="#FFFFFF">[Simba^FD]</FONT><FONT COLOR="#AAAAAA"> mondhatni</FONT><BR>
+<FONT COLOR="#FFFFFF">[Emeric^SH]</FONT><FONT COLOR="#AAAAAA"> eges</FONT><BR>
+<FONT COLOR="#FFFFFF">[Emeric^SH]</FONT><FONT COLOR="#AAAAAA"> meg jo hogy en nem vagyok Amigas :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[TempestHawk]</FONT><FONT COLOR="#AAAAAA"> ja de te meg tomcat haverja vagy :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> naigen</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> es magyar</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> ofcoz</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> nagy a bunlajstromod</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> valakinek nem hokizott a gyerek privatban ?</FONT><BR>
+<FONT COLOR="#FFFFFF">[TempestHawk]</FONT><FONT COLOR="#AAAAAA"> elment</FONT><BR>
+<FONT COLOR="#FFFFFF">[TempestHawk]</FONT><FONT COLOR="#AAAAAA"> nincs tovabb</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> lehet, Flamert cseszegeti :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> annak nyomhatja :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[Boreger]</FONT><FONT COLOR="#AAAAAA"> Hehehehe...</FONT><BR>
+<FONT COLOR="#FFFFFF">[TempestHawk]</FONT><FONT COLOR="#AAAAAA"> :D</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> :D</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> Flamer: naci! :)</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> "te mocskos naci+"</FONT><BR>
+<FONT COLOR="#FFFFFF">[Leeroy^SD]</FONT><FONT COLOR="#AAAAAA"> azzz</FONT><BR>
+<FONT COLOR="#FFFFFF">[simca]</FONT><FONT COLOR="#AAAAAA"> Flamer: tomcat haverja vagy te is! :)</FONT><BR>
+<BR>
+</FONT>
+
+
+
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20051224.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20051227.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

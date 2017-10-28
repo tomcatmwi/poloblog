@@ -1,0 +1,122 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-464</B><BR>
+2005.10.21.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+
+<P ALIGN="justify">
+Édesapám ma már nyugdíjas, korábban évtizedeken át az Állami Pénzver&otilde; m&ucirc;vezet&otilde;je volt. Dolgozott náluk egy üzemi asztalos, akinek egyszer, a hetvenes évek végén meglehet&otilde;sen különös módon gy&ucirc;lt meg a baja a törvénnyel.
+<BR><BR>
+
+Az ürge, miel&otilde;tt a céghez került volna, egy megyei bíróság épületében volt karbantartó asztalos. Javított bútort, ajtót, mindenféle faeszközt, s mivel gyakran kellett az épületben mászkálnia, mindenhová volt kulcsa. Így az ugyanebben az épületben m&ucirc;köd&otilde; rend&otilde;rségi fogdához is.
+<BR><BR>
+
+Egyszer megtudta, hogy a fogdában valami tyúktolvaj cigány ül, várja az ítéletét valami csip-csup ügyben. Nosza, kitalált egy jó viccet. Lement a fogdába, bement a tolvajhoz, és rászólt, hogy álljon vigyázzba. A cigány fel is állt, a pasas pedig el&otilde;vett egy colstokot és elkezdte méregetni. A cigány gyanakodva nézte, majd megkérdezte:
+<BR><BR>
+
+- Hádde mit méricskél rajtam, majszter uram?<BR>
+- Azt, hogy mekkora koporsó kell majd - felelte az ürge fapofával.
+<BR><BR>
+
+A cigány igencsak komolyan vette a viccet, mert abban a pillanatban elfehéredett, összeesett és meghalt. Az asztalos meg magyarázhatta a dolgot egy darabig.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20051021.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20051024.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

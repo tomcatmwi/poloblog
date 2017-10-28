@@ -1,0 +1,130 @@
+<HTML>
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-250</B><BR>
+2004.12.24.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<BR><BR>
+
+Karácsonyra természetesen karácsonyi droid dukál. A történet elég régi, vagy tíz éve történt.
+<BR><BR>
+
+Volt egyszer egy magyar faipari cég, amelynek egy orosz cég meglehet&otilde;sen komoly összeggel tartozott. Fizetni nem tudtak, de felajánlottak fizetségképpen egy kamionra való karácsonyfát. A magyar cég el is fogadta az ajánlatot. A szerz&otilde;désben kikötötték, hogy a szállítmánynak legkés&otilde;bb karácsony el&otilde;tt egy héttel meg kell érkeznie. Ezt kölcsönösen aláírták, vigyorogtak, kezet fogtak, majd mindenki ment a dolgára...
+<BR><BR>
+
+Közeledett a karácsony. A magyar cég várta, várta a kamiont, de az nem jött. Már vészesen közeledett december 24, de még mindig semmi. Telefon az oroszoknak, hiába, az illetékes nincs bent, nem ér rá, szabadságra ment. Már rég benne voltak a karácsony el&otilde;tti hétben, de még mindig sehol semmi, s továbbra is eredménytelenül zörgették a telefonokat valahol az Urál környékén. Végül elérkezett december 24-e, elátkozták a megbízhatatlan ruszkikat, és mindenki hazament karácsonyozni.
+<BR><BR>
+
+Este kilenckor váratlanul csörgött az ügyvezet&otilde; igazgató telefonja. A telephely biztonsági &otilde;re volt az. Elnézést kért, hogy épp ilyenkor zavarja, de megérkezett az orosz kamion, és meghozta a karácsonyfákat, alá kellene írni a szállítólevelet. A f&otilde;nök nagy dühösen autóba pattant, odaviharzott, és jobb híján a szerencsétlen orosz kamionsof&otilde;rt hordta le a sárga földig, hogy nem err&otilde;l volt szó, hát most már mi a fenét kezdjenek a karácsonyfákkal? Mire az orosz:
+<BR><BR>
+
+- Sto problem? Egy héttel karácsony el&otilde;tt volt a határid&otilde;, még pont benne vagyunk!<BR>
+- De ember! Ma már karácsony van?<BR>
+- Da?<BR>
+- Persze hogy da!<BR>
+- Hát, nálunk január elsején lesz...
+<BR><BR>
+
+Akkor esett le mindenkinek az apró eltérés a katolikus és a görögkeleti egyház karácsonyi szokásai közt...
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20041223.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20041225.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

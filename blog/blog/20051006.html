@@ -1,0 +1,124 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2005.10.06., csütörtök</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+... bzzz... brrrzzz... ksss... bip... kedves olv... ksss... ismét adás... BIP! Khm. Köszönöm. Tehát, kedves Olvasóim, a blog nem t&ucirc;nt el, csak költözés miatt adásunk ideiglenesen szünetelt. Immár új helyr&otilde;l, nevezetesen egy garázs mélyér&otilde;l köszöntök mindenkit, ahol egyébként azért üldögélek, mert Athina elvitte a lakáskulcsot, tehát nem sok értelme volna hazamennem. Érdekel ez valakit? Nyilván nem. Mint ahogy az sem, hogy az Invitel mennyit szerencsétlenkedett, mire kapcsolatot csiholt az új lakásba. &Otilde;ket sem ajánlom senkinek. A polók kiszállítása a leállás alatt sem szünetelt, aki nem kapta meg, az vagy várjon még, vagy máskor adjon meg telefonszámot is, hogy a futár felhívhassa. No, mindegy. Lássuk, mi történt, amíg géptávolban voltam!
+<BR><BR>
+
+Legutóbb azzal búcsúztam el t&otilde;letek, hogy befejez&otilde;dött a Droidzóna könyv második kötetének tördelése, és leadtam a kiadónak. Ennek mindenki örült, én is, aztán kiderült a véres valóság, amit persze eddig is tudtunk, csak az ember hajlamos elfelejteni. Nos, a véres valóság az, hogy Magyarországon nem lehet könyvet kiadni, ugyanis nem csak hogy mindössze három-négy, pofátlanul magas sápot húzó (55-60%!) kiadó m&ucirc;ködik az országban, ráadásul a könyvterjeszt&otilde; hálózatok csakis t&otilde;lük vesznek át bármit is. E kiadók üzleti szemléletének megfelel&otilde;en a csakis megfelel&otilde;en kommersz könyvek piacképesek, amit a sok buta megvesz. S ugyebár a DZ hiába vicces meg olvasmányos (naná, hiszen egy zseni írta), sajnos nem illeszthet&otilde; be a kémregény / egzotikus szerelmesregény / szörnyes-trancsírozós / szakácskönyv halmazba. Az én kiadóm pedig nem tartozik e három-négy nagy közé, s bár a f&otilde;nök úr megfelel&otilde;en lelkes, csodát &otilde; sem tud tenni: a Droidzóna könyvet egyszer&ucirc;en képtelenség a boltok polcaira juttatni.
+<BR><BR>
+
+Mit lehet itt tenni? Nos, kiadóm elég érdekes ötlettel állt el&otilde;. Ugyebár, ez a blog meglehet&otilde;sen népszer&ucirc;, és itt felsorolta, hogy miért. Az ötlet pedig: csináljunk bel&otilde;le újságot! Hetilapot, amiben egyrészt a blogban is megjelen&otilde; írások, droidsztorik szerepelnek, másrészt olvasók által írt cikkek. Olyan lenne ez, mint egy régi lemezújság, vagy egy nagy offline kommuna-blog, mely a Tomcatpoló blog szellemiségét követi. Cikket pedig bárki küldhet, azokra bárki válaszolhat, és biztosan sokan fognak is. Hiszen már most is szinte minden nap kapok hosszabb leveleket, melyek történeteket mondanak el, különös eseményekre, helyzetekre hívják fel a figyelmet, amir&otilde;l a köznapi média nem beszél - naná, hiszen az is ugyanolyan belterjes, mint a könyvpiac. A lap nem csak írással, de különféle akciókkal is küzdene a mindennapi hülyeség ellen, úgy, ahogy azt néha magam is teszem.
+<BR><BR>
+
+A lap címe lehetne mondjuk <I>Droidzóna - A Normális Emberek Kisebbségének hivatalos lapja.</I> Mellesleg meg is csinálhatjuk végre ezt a kisebbséget...
+<BR><BR>
+
+Hát, ez lenne a nagy terv, kérdés, hogy ti mit szólnátok hozzá. A lap hetente jelenne meg, 34-36 oldal terjedelemben, kb. 150 forintos áron. Tartalma kisebb részben a blogból kerülne ki, nagyobbrészt a beküldött írásokból. Hirdetés valószín&ucirc;leg nem lenne benne, vagy csak igen kevés, úgy, mint a blogban (Critical Mass, elveszett kutyák, satöbbi.)
+<BR><BR>
+
+No, hát akkor tessék reagálni. Ó, igen, és Loydiék hétvégi paintball-csapatában van még két szabad hely, akit érdekel, írjon neki a loydi@backslash.hu címre.
+</P>
+
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050930.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,129 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-357</B><BR>
+2005.05.09.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<BR><BR>
+
+<I>Konzerv Patriktól...</I>
+<BR><BR>
+
+Apám a kilencvenes évek elején dolgozott Tengizben egy-két évet. Volt, hogy magyar cégnek, volt, hogy amcsi cégnek, mert voltak ott sokfélék, sok az energia, sok a cég. Az egyik cégecske szerelési és építési feladatokra hozott egy (asszem német) daruskocsit. Jó nagy darab volt, a típusból állítólag négyet építettek összesen. Annyi nagyjából jelzi a teljesítményét, hogy az alapgémmel 400 tonnát (!) bírt emelni, szóval irdatlan nagy jószág volt, csurig német csúcstechnika. Ott is, mint a többi cégnél, az olcsó munkaer&otilde;vel dolgoztattak, volt, hogy hónapokig a ruszkik használták a darut. Utána jött a meglepetés.
+<BR><BR>
+
+Mikor visszakapták a ruszkiktól, a következ&otilde;képpen volt átalakítva a monstrum. A sivatagbiztos porsz&ucirc;r&otilde;k egy id&otilde; után eltöm&otilde;dtek, kicserélni minek, inkább kiszedték az összeset. Az er&otilde;határolók is gondot okoztak, így hát ki voltak iktatva. De a legszebb: mivel a gép elindítása maga is egy komolyabb feladat volt, mindenféle ellen&otilde;rizend&otilde; rendszerekkel, amikhez
+teljes kapcsolópaneleket kellett végigzongorázni, kiiktatták a paneleket, össze vissza kötögették a kábeleket, végül az egész tetejére tettek egy billen&otilde;kapcsolót: BE - KI...
+<BR><BR>
+
+<I>
+Egészen más téma, mert már régen volt kép a Droidzónában... Ezen a fényképen a Megasztár súgógépe látható, amint éppen Tóth Gabinak segít. (A megfejtés: Elvis Presley: <I>Jailhouse Rock.</I>) Éljenek a m&ucirc;velt sztárok, ádszeszkó.
+
+</P>
+<CENTER>
+<A NAME="1">
+<A HREF="#1" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/balfasz/20050509.jpg'; document.wdth=640; document.hght=480; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050509_thumb.jpg" BORDER=0></A>
+</CENTER>
+<P ALIGN="justify">
+
+
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050507.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050510.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

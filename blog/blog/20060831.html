@@ -1,0 +1,117 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2006.08.31., csütörtök</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Évek óta beszél róla mindenki, akinek egy csöpp esze van, hogy el kellene húzni ebbõl az országból, amíg nem késõ. Cui prodest? Most már húznak. Egyre több haverrõl, ismerõsrõl hallom, hogy dobbantott: ez Kanadába ment, az Sanghajba, amaz Angliában talált állást, mások meg se álltak Új-Zélandig. Nyomdászunk panaszkodik, hogy sorra tûnnek el az ügyfelei, és mostanában szinte csak "Üzlethelyiség kiadó" meg "A bolt megszûnt" feliratú táblákat rendelnek nála. És kik mennek el? Azok, akikbõl egy országnak élnie kellene: a vállalkozó szellemû, munkaképes fiatalok, akik belátták, hogy ez az ország csak tönkretenni fogja õket. Most már nem csak dumálnak, tényleg mennek. De hát ez a hosszú távú kormányzati cél, ugyebár.
+<BR><BR>
+
+Szintén Farkas Roland megfigyelése, aki egy év kanadai tartózkodás után látogatott haza, hogy az utcákról eltûntek az olcsó kocsik. Alig látni Suzukit, Ladát, Marutit és más szakadt autókat, szinte csak középkategóriás verdák járnak Budapest utcáin. A csóróbbak már nem autóznak. Azt mondja, megdöbbentõen kevés a kocsi, egész jól lehet már közlekedni csúcsidõben is. Egyébként tényleg: a dugószint meg sem közelíti a tavaly ilyenkor tapasztaltat, pedig a fél város le van zárva. Mi történt?
+<BR><BR>
+
+Holnap lép életbe a Gyurcsány-csomag, örvendjünk, véreim. Menjünk mi is Kanadába.
+<BR><BR>
+
+<I>"Minél korruptabb egy állam, annál több törvénye van."</I> Ezt a nagy igazságot Tacitus mondta, kétezer évvel ezelõtt.
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060830.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060901.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

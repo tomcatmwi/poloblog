@@ -1,0 +1,124 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-402</B><BR>
+2005.07.07.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+
+<P ALIGN="justify">
+<I>Tegnapi szittyótörténetünkre Manson replikázott.</I>
+<BR><BR>
+
+Gondoltam a szittyók után én is küldök egy ilyen storyt... ez simán übereli a vonatosokat! :)
+<BR><BR>
+
+Épp bevásároltam az &Aacute;rkádban, és slattyogtam volna haza a sörömmel meg a kajámmal, amikor hirtelen valaki meglökött és elkapta a kezem. Odanézek, hát egy kiskopasz volt libafos-bomberben meg bakancsban, ahogy kell és láthatóan a sörömet akarta. Épp készültem fejbebaszni - tudom, antiszociális dolog fejbebaszni kérdés nélkül, de hát vegyen magának, ne az enyémet akarja - amikor a droid agyában kattant vmi fogaskerék, és feltette a kérdést:
+<BR><BR>
+
+- Te punk vagy?!<BR>
+- Hülye vagy? Hogy lennék már punk...<BR>
+- Hát... hosszú hajad van, meg minden, gondoltam punk vagy... Tudod, mert én skinhead vagyok (látszik, szegény gyerek azzal sincs tisztában, hogy mi &otilde;) és most kiirtok minden punkot.<BR>
+- ... hm. Hát, marha jó. Nem akarod a cigányokat is kiirtani gyorsan? Meg azt a sok bevándorlót is kiirthatnád. S ha már úgyis ilyen nagy tisztogatást tartasz, újabban marha sok az arab, nigger, kínai meg mindenféle népség.<BR>
+- Ööö... hát nekem csak a cigányokkal meg a zsidókkal van bajom, meg a punkokkal... a többivel semmi bajom.<BR>
+<BR>
+
+Na, szép. Inkább nem próbáltam megmagyarázni neki, hogy mi is &otilde; valójában. Azaz mi akar lenni. De már fogta is magát, és húzott tovább kiírtani a punkokat, gondosan megkérdezve minden második járókel&otilde;t, hogy nem látott-e véletlenül arrafelé párat.
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050705.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050709.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

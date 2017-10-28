@@ -1,0 +1,135 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2005.05.10., kedd</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Voltam ma a tévében. Látták is sokan. Egyesek persze automatikusan elkezdték verni a nyálukat, hogy <I>de hülye ez a tomket,</I> és mivel mellettük még legalább ketten szajkózták ugyanezt, elkönyvelték, hogy <I>az egész Internet rajta röhög,</I> meg hogy <I>ez mekkora fasz.</I> Így lereagálva azon fonák helyzetet, hogy már megint más van a tévében helyettük, s mindjárt azt is igazoltnak tekintették, hogy &otilde;k <I>normális emberek,</I> akire pedig &otilde;k rámutattak, az <I>hülye.</I> Köszönjük. Na de mi akasztotta ki ennyire ezeket a jómunkásembereket, továbbá mit kerestem én már megint a TV2 Aktív m&ucirc;sorában? A válasz az érettségi botrány.
+</P>
+<CENTER>
+<A HREF="20050510.avi"><IMG SRC="20050510.gif" BORDER=0></A>
+<BR><BR>
+<I>TV2 Aktív, 63 MB</I>
+</CENTER>
+<P ALIGN="justify">
+
+Mármost persze felvetül a kérdés, hogy miért mutogatok én ilyen logfile-okat a tévében, mi közöm ehhez. Nos, a logfile napokkal ezel&otilde;tt, a múlt szerdán készült, és egy #coders.hu-s arc (szivburok) oltogat benne egy lamert (badboy16), aki mindenképpen érettségi tételekhez akar jutni, bármi pénzért. Röpködnek a varázsszavak, kamu filenevek, és még egy árajánlat is elhangzik, hogy mennyiért törnék meg az Oktatási Minisztérium szerverét. Persze hogy az egész kamu, a logot jól megvizsgálva ez elég nyilvánvaló mindenkinek, aki kicsit is sejt valamit az Internetr&otilde;l. Mindenesetre ez nem mindenkinek t&ucirc;nt fel, a logfile terjedni kezdett mindenféle chateken és fórumokon, s végül eljutott a TV2-höz. Ott pedig valaki az <I>Internet, balhé, coders.hu</I> kulcsszavakból egyb&otilde;l rám asszociált. Nem volt persze nehéz, mert egyébként is tartom velük a kapcsolatot. Eredményképpen egy órán belül itt dekkolt a stáb a szobámban, hogy mondjak már err&otilde;l valamit, mint ismert netes arc. Én meg nem vetem meg sem az ingyenreklámot, sem a droidszopatást. El is meséltem nekik, hogy itten, kérem, komoly hekkerakció zajlik, bizony. <I>"Itt látható, hogy a megbízó éppen átveszi a file-okat, amiket sikerült elemelni az Oktatási Minisztérium szerverér&otilde;l..."</I> jaaaj, hát persze, fiacskáim, persze, én ezt mind elhittem ám, mert még csak egy hete netezek, sose láttam ilyet. Nem, én igen jól szórakoztam a riporton, és igyekeztem nem elröhögni magam. Örülök, hogy egyesek ebben <I>hülyeségem</I> fényes bizonyítékát látják, miszerint én <I>elhittem</I> a logot, hát, sajnos le kell lomboznom &otilde;ket, mert nem.
+<BR><BR>
+
+A stáb lelkesen vette a maszlagot, a riportercsaj meg ájuldozott, hogy nahát, hogy ez igaz, hogy ilyenek vannak? Igen... Aztán azon is ájuldozott, amikor az operat&otilde;r heccb&otilde;l rácsattantotta a csuklójára Loydi múltkor itt felejtett bilincsét, én pedig közöltem, hogy az nem volt jó ötlet, mert nincs hozzá kulcsom. Mehettek szerencsétlennel a rend&otilde;rségre, hogy leszedjék. El tudom képzelni, milyen arcot vágtak a fakabátok, amikor beállított a TV2 stábja, hogy legyenek szívesek leszedni a kollegináról a karperecet...
+<BR><BR>
+
+Az azonban <i>nem igaz,</i> hogy a rend&otilde;rséghez fordultam volna. Nem tudom, honnan vette ezt a riportercsaj, és miért hangzott ez el a riportban. Egyébként is nyilván tudjátok, mi a véleményem a rend&otilde;rségr&otilde;l meg a hozzájuk való fordulásról, pláne internetes ügyekben. Mindenesetre nem lennék meglep&otilde;dve, ha rövidesen mégis meglátogatnák szivburok barátunkat, hiszen óriási a balhé, politikai oldala is van, és ha a logfile már eljutott a sajtóhoz, akkor el&otilde;bb-utóbb a rend&otilde;rséghez is el fog. Nekem ehhez semmi közöm. Az persze való igaz, hogy nem komálom a #coders.hu-sokat, de ett&otilde;l függetlenül az én szerepem itt mindössze annyi volt, hogy nem hagytam ki a lehet&otilde;séget, hogy csináljak magamnak egy kis tévéreklámot. (Mit gondoltok, az adás után hányan írták be a keres&otilde;kbe, hogy <I>"tomcat blogger" ?</I> És ebb&otilde;l hányan fognak polót venni? Na, hát ezért nem érdekel, hogy vannak páran, akik szerint <I>jól leégettem magam a tévében.</I>) Egyszóval én elég jól szórakoztam a dolgon, f&otilde;leg, amikor Magyar Bálint bejelentette, hogy a holnapi történelem vizsga új tételeit úgy írják meg, hogy <I>kihúzzák a számítógépeket a hálózatból.</I> Egy élmény lehet éjszaka floppykkal rohangálni a minisztériumban. Egyébként is érdekes meghallgatni HungaroValentin hablatyolását a riport végén, szebbnél szebb magyar mondatokat alkot, nekem a legjobban az tetszett, hogy <I>a rendszer nem volt b&ucirc;ncselekményre kalibrálva.</I> Polgár Jen&otilde; és Szalacsi Sándor életm&ucirc;ve elhalványult. Éljen Bálint, aki szerint <I>feltörték az internet rendszerét.</I>
+<BR><BR>
+
+Holnap tehát töri érettségi, új tételekkel. Vajon kikerülnek-e reggelig a ma este el&otilde;készített tételek? Nem tudom - mindenesetre elvégeztünk egy érdekes kísérletet. Este összedobtunk egy kamu tételsort, és kitettük egy külföldi szerverre azzal, hogy ez csak az els&otilde; három oldal, aki akarja a többit, az küldjön SMS-t. A 90-es telefonszám a Csajozás-Pasizás weboldal ingyenes SMS továbbító szolgáltatása. Este tízt&otilde;l hajnali egyig nyolc droid d&otilde;lt be. Hogy miért droidok? Nos, tessék megnézni ezeket a "tételeket..."
+<BR><BR>
+
+<A HREF="20050510/index.html" TARGET="_new">http://www.angelfire.com/droid/erettsegi</A> (tükrözve saját szerveren)
+<BR><BR>
+
+(szarrágók kedvéért: a lap végén a <I>röhej</I> szót direkt írtam ly-nal, mert még nem láttam <I>hekkert</I> aki helyesen írta volna, csakúgy, mint a <I>muszáj</I>-t.)
+</P>
+
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050509.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050511.html">
+<B>következ&otilde; nap >></B>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

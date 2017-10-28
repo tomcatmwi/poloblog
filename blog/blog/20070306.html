@@ -1,0 +1,112 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>2007.03.06., kedd</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+El is felejtettem mesélni, hogy a múlt héten levelet kaptam a Katonai Ügyészségtõl. Azt írták benne, hogy bizonyítékok hiányában megszüntették az eljárást Mészáros Attila BV törzsõrmester ellen, aki a Markó udvarán rugdosott és szidalmazott bennünket. Hiába volt egy tucat tanú, belekötöttek abba, hogy nem mindegyik tudott pontos és részletes, mindenre kiterjedõ leírást adni a legapróbb részletrõl is. Az, hogy fejjel a falhoz kellett támaszkodnunk, és gumibottal ütötték, aki hátranézett, tehát nem nagyon volt alkalmunk szemlélõdni, nem érdekelte õket. Pár nappal késõbb azonban kaptam egy újabb levelet, amely szerint újból elindították a nyomozást, és immár egy másik ügyész folytatja a vizsgálatot. Jó kis rend lehet ott a Fõ utcán, na.
+<BR><BR>
+
+Olvasom, hogy rendõrségünk ma lecsapott valami veszedelmes szervezetre, amely 5 fõvel, légfegyverekkel és egy boxerrel meg akarta dönteni az államrendet, és még a Molotov-koktél használatának leírását (!) is megtalálták náluk. Itt jegyezném meg, hogy én is meg szeretném dönteni az államrendet, van egy 150 fontos számszeríjam (tudjátok, amelyik három rendõrt is, egyszerre), és bár még egyelõre nem birtokolom a fekete lõpor készítésének leírását, mindjárt leírom ide: kén, szén és salétrom kell hozzá. Na, most már birtoklom, fel is írom ide egy cetlire, aszongyahogy, kén, szén, salétrom, csak azért, hogy legyen mit lefoglalni, mert a képernyõrõl mégse vihetik el a szöveget. Amúgy azt is tudom, hogy kell használni a Molotov-koktélt, de azt már én sem merem leírni.
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20070305.html">
+<B><< elõzõ nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20070307.html">
+<B>következõ nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+<BR><BR>
+
+</BODY>
+</HTML>
+

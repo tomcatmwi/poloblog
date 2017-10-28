@@ -1,0 +1,107 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2005.04.26., szerda</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Na, gondolom, eleget néztétek a hétf&otilde;i BKV-s eszmefuttatásomat. Tegnap nem volt kedvem írni, meg ma sincs, de hát a blogger élete kemény, azt is meg kell írni, hogy nem írunk meg semmit. Az éjszaka folyamán említésre méltó esemény nem történt, bár reggelre kiderült, hogy az egyik Lehel téri hajléktalan már két napja halott, csak ez nem t&ucirc;nt fel senkinek, mert eddig is szokása volt elfeketedett fejjel fetrengeni és b&ucirc;zleni. Ennél talán érdekesebb, hogy megnéztük az <I>Adásunkat megszakítjuk</I> cím&ucirc; hongkongi akciófilmet, amit persze csak tiszteletb&otilde;l hívnak <I>hongkonginak,</I> valójában kínai, mert ugye a magyar filmeket sem különböztetjük meg aszerint, hogy melyik városban forgatták, naszóval nem hongkongi, hanem kínai, de ennek ellenére igen jónak bizonyult, annak ellenére, hogy a hongkongi (kínai! kínai!) akciófilmek rendszerint nem a nívóskála zenitjén rezideálnak. A filmnek egyfajta finom jelentéstartalma van, afféle "nézze meg a világ, hogy a hongkongi (mondom kínai) akciófilmek nem csak Brúszlí visítozásából állnak", és bár a film közepéig csak az derül ki, hogy Hongkongban senki sem tud rendesen l&otilde;ni, még Kalasnyikovval sem találják el egymást három méterr&otilde;l, s&otilde;t, van olyan pancser is, aki épp akkor ugrik a haverja shotgunja elé, amikor az l&otilde;, de sebaj, a haver sem tud célozni, így az ugrabugrálónak semmi baja sem lesz. Így utólag nem tudom eldönteni, ezt vajon szándékosan csinálták-e így a készít&otilde;k: a film afféle bárgyú piffpuffnak indul, tele a szokásos klisékkel, aztán egyre izgalmasabb lesz, és a végén már tényleg azon kapja magát az ember, hogy azon izgul, vajon sikerül-e a csinos rend&otilde;rf&otilde;nökn&otilde;nek és a rámen&otilde;s zsarunak elfognia az elvetemült gonoszvet&otilde;ket (vagy tev&otilde;ket), akik mindenkinek gránátot dobnak az ölébe, elrontják a liftet és talán eldugítják a vécét is. De az igazi csata nem is a rend&otilde;rök és a b&ucirc;nöz&otilde;k közt zajlik, hiszen az egész arról szól, vajon melyik oldal tudja a túszdráma során meggy&otilde;zni a médiát saját igazáról. Érdekes, na. Ajánlom.
+<BR><BR>
+
+Mellesleg amikor még gyerek voltam, Hong-Kong nevét köt&otilde;jellel írták. Sicc, tranzit...
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050425.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050428.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

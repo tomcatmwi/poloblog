@@ -1,0 +1,117 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2005.10.30., vasárnap</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Kicsit nehezen találom a helyem ezekben a kétezres években. Csak én vagyok így ezzel, vagy más is? Mintha az ezredfordulón minden a feje tetejére állt volna, mintha addig tartott volna a történelem, és teljesen újat kezdtünk volna. Mondjuk ezt ígérgették is a futurológusok, de senki se hitt nekik.
+<BR><BR>
+
+Egyébként megvan, mit felejtettem el tegnap: megírni, hogy milyen borzalmas, pocsék, okádék süteménybe kóstoltam bele - mert megenni nem bírtam - a Móricz Zsigmond Körtéren, a McDonald's melletti cukrászdában. Senki ne menjen oda, aki nem akar mesterséges színezéket és savanyú tejszínt zabálni. A minõséget szóvá tettem a pult mögött sürgölõdõ kiscsajnak, mire az fölényesen közölte, hogy nekem fel kellett volna ismernem a sütemény összetételét már kiválasztáskor, tehát lényegében kussoljak. Egy percig azon gondolkodtam, hogy lelövöm, aztán inkább megírtam. Ne menjetek oda, szar.
+<BR><BR>
+
+Most pedig egy IC-n zötykölõdöm Nyíregyháza felé Athinával, és azon szerencsében részeltettünk, hogy ülhetünk. Ez ugyanis már az IC-n sem alapvetõ. Eddig ugyebár az volt a szokás, hogy az ember a jeggyel együtt megvette a helyjegyet is, és ha már nem volt szabad hely, akkor sajnálattal közölték, hogy így jártál. Az új szokás szerint helyjegy nélkül kell a vonatra szállni, és a kalauz ad helyjegyet, feltéve, hogy találtál helyet. Aki nem talált, az állhat órákon át az elõtérben, vagy üldögélhet a padlón, mint az a tizenévesekbõl álló csapat, akik most épp ezt teszik a közelünkben. Egészen tömegszállás-jellege lett így a vonatnak, olyan igazi kelet-albániai vadromantika, már csak siptárul beszélõ kalauz és csúcsos sapka kellene, meg bunkerek a vasútvonal teljes hosszán, benne félhajléktalan családokkal. Bár éppen most haladtunk el egy Budapest széli kiserdõ mellett, ott bunker nélkül is elég jól elvannak.
+<BR><BR>
+
+Szólni kéne Gyurcsányéknak, hogy indítsák be az Enver Hodzsa Bunkerépítõ Programot. Fellendítené a betonipart, lehetne mutogatni a NATO-nak, és utóbb egy vagyonért lehetne privatizálni az egészet.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20051029.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20051031.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

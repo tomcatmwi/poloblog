@@ -1,0 +1,122 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-480</B><BR>
+2005.11.12.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+
+<P ALIGN="justify">
+Megint megírták rólam, hogy széls&otilde;ségesen cigánygy&ucirc;löl&otilde; blogom van. Itt szeretném leszögezni, hogy a blogom nem gy&ucirc;löl senkit. Én viszont igen. Ezek az újságírók esetleg fordíthatnának egy kis figyelmet néha arra is, hogy például hogyan küzdött a minap Loydi szó szerint az életéért egy cigánybandával a Nyugati aluljáró kell&otilde;s közepén. Pedig csak késekkel meg vasbotokkal támadtak rá. Egy Nyugati téri lövöldözés persze nem hír a sajtónak... Ezek után talán szeretnem kellene a tetveseket? Inkább örüljenek, hogy még nem l&otilde;ttem közibük gépfegyverrel!
+<BR><BR>
+No de mit&otilde;l ilyenek a cigányok? Egy olvasóm egy vasúti utazás alkalmával betekintést nyert a cigányok gyermeknevelési módszereibe. A Monor és Budapest közti vonalon zötyköl&otilde;dve találkozott egy kedves roma pereputtyal, akik a vele átellenes üléseket foglalták el: apuka, anyuka, széle-hossza egyforma nagymama és két purdé, egy négyévesforma fiú meg a húga.
+<BR><BR>
+Alig indultak el az állomásról, a kiscigány felállt az ülésre, és a két tenyerével elkezdte verni az ablakot. Ez persze el&otilde;fordul, a gyerekek már csak ilyenek, rájuk kell szólni. Mit csinál erre a cigány apuka? Vigyorogva biztatni kezdi:
+<BR><BR>
+- Ez az! Üssed csak, fiam! Dik, milyen er&otilde;s vagy te! Az az, üssed!
+<BR><BR>
+No, ez ment egy darabig, a szül&otilde;k büszkén figyelték, milyen er&otilde;s cigányt gyártottak &otilde;k a jöv&otilde; számára. A gyerek egy kicsit nyalogatta a dzsuvás ablakot, végül megunta és leült. Kisvártatva a húga csinált valamit, ami nem felelt meg a cigány etalonnak. Biztatni kezdték hát a kisfiút:
+<BR><BR>
+- Há' üssed meg! Üssed meg az Ánikót! Így, üssed! - azzal mutatták neki, hogyan üsse meg a húgát a felkarján, fogták a kezét, és azzal csapkodták a kislányt. - Üssed meg az Anikót! Köpjed le! Így ni, köpjed le: Pfü! - Azzal apuka-anyuka köpködni kezdte a kiscsajt, hadd lássa a leend&otilde; er&otilde;s cigány, hogy kell másokat fegyelmezni.
+<BR><BR>
+Csodálkozunk, hogy feln&otilde;ttkorukban olyanok, amilyenek?
+</P>
+
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20051110.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20051114.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

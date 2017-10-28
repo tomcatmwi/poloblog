@@ -1,0 +1,120 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2006.02.12., vasárnap</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Színházban voltam tegnap este (hö!), és mindjárt köszönöm is a Magyarkanizsai Udvari Színház társulatának a tiszteletjegyet. A délvidéki m&ucirc;vészek Wass Albert híres két kisregényének, a <I>Jönnek!</I> és az <I>Adjátok vissza a hegyeimet!</I> cím&ucirc;eknek készítették el drámaváltozatát, melynek nyilvános f&otilde;próbája a budai MOM M&ucirc;vel&otilde;dési Házban zajlott.
+<BR><BR>
+
+A két kisregény, melyek egy kötetben jelentek meg, egyetlen dráma keretét adják; keverednek az események, a párbeszédek, s&otilde;t, karakterek is egybeolvadnak. Így például Durdukás Jeremiás lesz az is, aki rend&otilde;rtisztként megtagadja a fegyverengedély kiadását a magyaroknak; Julika, a f&otilde;szerepl&otilde; húga együvé olvad a névtelen zászlós feleségével, aki megtébolyodott, miután az oroszok feldúlták faluját; ki is maradnak jelenetek, de mégsem hiányoznak, hiszen a két regényb&otilde;l - különösen az utóbbiból - több drámát is lehetne rendezni, mint azt Andrási Attila, a darab dramaturgja felvezet&otilde;jében igen helyesen megállapította.
+<BR><BR>
+
+Korai lenne kritikát írni az eredményr&otilde;l, hiszen ez csupán próba volt, még jelmezek nélkül, a színészek a szöveget néha még a kezükben tartott papírról mondták. Néha újra is kezdték, ki-ki maradtak mondatok. A fiúk és egy szem partnern&otilde;jük igen jól játszanak, szinte kellékek nélkül - csak egy asztal, két szék, egy kopott b&otilde;rönd és néhány papírlap minden, amit használnak - és kellemes hitelességgel adják vissza Wass Albert remekm&ucirc;veinek hangulatát. A történet helyenként még meg-megbicsaklik, zavarossá válik, de hát nincs még kész ez, kalapálják még rendesen, alaposan át fog még alakulni, mire a közönség elé kerül "a szó szerint is ver&otilde;fényes Délvidéken", ahogy Andrási úr fanyar humorral megjegyezte.
+<BR><BR>
+
+Nagyon kíváncsi leszek, mi lesz a végeredmény. Eddig jó.
+<BR><BR>
+
+Ja, és a blog február hetedikén két éves lett, csak elfelejtettem megírni.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060211.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

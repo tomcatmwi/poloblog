@@ -1,0 +1,140 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css"> 
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-542</B><BR>
+2006.02.11.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+
+<P ALIGN="justify">
+<I>Megint katonák, megint ejt&otilde;erny&otilde;sök, a beküld&otilde; pedig Szalai Attila.</I>
+<BR><BR>
+
+A történetet egy haverom mesélte, aki katonakorában a szolnoki
+légideszantosok állományában szolgált.
+<BR><BR>
+
+A 90-es évek elején a szolnokiakat gyakran ledobták
+különböz&otilde; más magyar laktanyáknál, ahol az ejt&otilde;erny&otilde;sök
+szépen alászálltak az égb&otilde;l, majd szépen jelképesen
+elfoglalták a laktanyát, tesztelve ezzel a laktanya
+éberségét, képesek-e lereagálni egy esetleges ellenséges támadást. A 
+baleseteket elkerülend&otilde; persze, az adott laktanya
+vezet&otilde;it mindig értesítették a gyakorlat megkezdése el&otilde;tt.
+Most is egy ilyen eset forgott fenn, ledobták a
+deszantosokat, DE!!!... rossz helyen. Az ejt&otilde;erny&otilde;sök ezt nem tudták, és ami még
+viccesebb, a közeli szovjet laktanyát sem értesítették, mivel
+nem is ide kellett volna megérkezniük.
+<BR><BR>
+
+Gyanútlan h&otilde;seink szépen tették a dolgukat: bejutottak,
+drótokat elvágták, satöbbi, satöbbi. Csakhogy a szovjet &otilde;r kiszúrta
+egyiküket, amint a kerítés felé osont. 
+<BR><BR>
+
+- Sztoj! BUMM-BUMM-BUMM-BUMM-BUMM!!!!!
+<BR><BR>
+
+A menekül&otilde; katona alatt hirtelen elkezdett fogyni a
+betonkerítés. Az oroszok azt hitték, <I>tényleg</I> ellenséges
+támadás van folyamatban, és riadóztatták az egész laktanyát.
+A dolog végül is tisztázva lett a felettesekkel, de
+biztos feledhetetlen élmény maradt az érintetteknek.
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20060209.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20060213.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

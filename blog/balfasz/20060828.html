@@ -1,0 +1,121 @@
+<HTML>
+<HTML>
+<HEAD>
+
+<STYLE type="text/css"> 
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-644</B><BR>
+2006.08.28.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<P ALIGN="justify">
+<I>Hamarosan kezdõdik az iskola, hát idézzük fel, milyen szép droidokat tart üzemben...</I>
+<BR><BR>
+
+Elõször is elnézést, hogy nem adok meg adatokat, de jobb a békesség, drága jó iskolám nagyon megszopathatna a történet kiadásáért. <I>[Semmi gond... az ékezetek hiányáért viszont haragszom, utálom pótolgatni! - tomcat]</I>
+<BR><BR>
+
+Történt egyszer, az idei érettségi vizsgák után nem sokkal, hogy valamilyen viszonylatban elõkerült a téma, és törtenelemtanárunk nagy büszkén újságolta, hogy micsoda fogás volt az érettségin. Mint mondta, el kellett távolítaniuk a vizsgáról egy diákot, mert az megengedhetetlen, tiltott önkényuralmi jelképet ábrázoló tárgyat használt. Hogy mit? Egy Árpad-sávos tollat. Tehát, az alávaló, ezt merészelte tenni a hivatalos vizsgán, szentségsértést követett el, és legalább kerékbe törést érdemelne. Ja, meg a szokásos szöveg, hogy ilyen még a negyven éves tanári pályája során nem fordult elõ vele. (Ilyenkor szoktuk mondani, hogy na, bazdmeg, ma is érdemes volt felkelned legalább...) Nagy diadal, mondhatom, ebbõl ekkora ügyet csinálni.
+<BR><BR>
+
+Mit gondolsz?
+<BR><BR>
+
+<I>Ha már így megkérdezted: az említett diák helyében én rommá perelném az iskolát. A tanárnak meg szíves figyelmébe ajánlom a minden iskolai tábla fölött lógó magyar címert, annak is a bal oldalát. Ha nem érti, kivinni a budai sikló alsó végállomásához, ott nagyobb méretben is megtekinthetõ a támfalon, és nyolcszor-tízszer beleverni a büdös vén kommunista fejét. A közterületesek majd lemossák slaggal. Mindenesetre megmondhatnád, melyik ez az iskola, nem fogom telekürtölni a neveddel, na meg ha névtelenül mondod meg, még én se fogom tudni, ki vagy...</I>
+
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060826.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060829.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,104 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2005.04.04., kedd</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Ugye senki sem felejtkezett el a mi kis második világháborús megemlékezésünkr&otilde;l? Arról, amelyiknek a <A HREF="http://megemlekezes.tomcatpolo.hu" TARGET="_new">linkje</A> ott figyel a blog alján. Nos, a rend&otilde;rségi engedélyek már rég megvannak, a szervez&otilde;gárda összeállt, és adományaitoknak köszönhet&otilde;en minden tervezett költségre van keret: hangosításra, koszorúkra, miegymásra. A megemlékezés tehát meg lesz tartva, nem marad el. Mindenkit szeretettel várunk a H&otilde;sök terére április 16-án, 14 órakor! Lesznek díszvendégünk, lesz koszorúzás, lehet hozni egy-egy szál virágot, mécsest a H&otilde;sök Emlékkövére. Egyvalami nem lesz: második világháborús harcjárm&ucirc;vek. Az Els&otilde; Magyar Veterán Hadi és Gépjárm&ucirc;technikai Egyesület tagjai ugyanis meghányták-vetették a dolgot, és arra jutottak, hogy épp eleget magyarázkodhattak már eddig is, mert pár fasz újságíró rendszeresen náciknak vagy kommunistáknak állítja be &otilde;ket, ebb&otilde;l pedig nem kérnek többet. Szóval &otilde;k sajnos nem lesznek ott, legalábbis nem egyenruhában. Mi azért még próbálkozunk korabeli egyenruhák beszerzésével, bár sajnos ahol vannak, ott úgy &otilde;rzik &otilde;ket, mint az aranykincset. A Mafilm kelléktárából például bármit ki lehet kölcsönözni némi térítés ellenében, <I>kivéve természetesen</I> az egyenruhákat. Állítólag ugyanis azokkal vissza lehet élni. Mármost nem értem, mi olyat lehetne például a Magyar Királyi Honvédség egyenruhájával tenni, amit mondjuk az Egri Csillagok középkori sodronyingével nem - azt ugyanis szó nélkül kiadnák - de hát én csak egy buta kis állampolgár vagyok, akit jóságos állambácsinak és az &otilde; droidjainak mindent&otilde;l meg kell védeniök. Kérem azokat az olvasókat, akik netán filmes cégnél, filmstúdióban, televíziós produkciós irodában, esetleg színházban dolgoznak, jelentkezzenek, mert biztosan tudnának segíteni! Köszönöm.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050404.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050406.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,131 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2005.04.23., szombat</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Tisztelt Olvasók! Ma este kurvára nincs kedvem blogot írni. Helyette megkapjátok a gyömbérital receptjét, amit a mai f&otilde;z&otilde;cskézés során elkövettem. Persze nem csak ez volt az étlapon, hanem szokásom szerint egy hatféle indiai vegetariánus ételb&otilde;l összeállított lakoma, amit aztán négyen fogyasztottunk el, de azt egy kicsit bonyolultabb lenne mind elmagyarázni. Tehát a gyömbérital, ami meleg nyári napokon kiváló frissít&otilde; bír lenni, a következ&otilde;képpen készül:
+<BR><BR>
+
+- 5-10 deka friss gyömbérgyökér reszelve<BR>
+- 1 kanál kardamonmag<BR>
+- 5-6 szem szegf&ucirc;szeg<BR>
+- 2-3 db egész fahéj<BR>
+- 1-2 citromkarika<BR>
+- Fél liter víz
+<BR><BR>
+
+Ezt egymáshoz öntjük, feltesszük a rezsóra, felforraljuk, és 1-2 percig forrásban hagyjuk. Nem árt lefedni, hogy el ne párologjon. Addig is csinálunk limonádét:
+<BR><BR>
+
+- 4 liter víz<BR>
+- 2 citrom leve<BR>
+- 6-8 narancs leve<BR>
+- 16 ev&otilde;kanál cukor<BR>
+- Esetleg vaníliapor<BR>
+<BR>
+
+Kezd&otilde;k kedvéért: a vízbe ajánlatos els&otilde;ként a cukrot beletenni és elkavarni, mert savas közegben nehezebben oldódik. Ha ez megvan, az imént kiforrott érdekes f&otilde;zetet teasz&ucirc;r&otilde;n át hozzáöntjük. Az eredmény mehet a h&ucirc;t&otilde;be.
+<BR><BR>
+
+Gyömbért minden nagyobb vásárcsarnokban lehet kapni, de kardamont tudtommal csak egy helyen: a Nagyvásárcsarnok alagsorában, az Ázsia Bt. ínyencboltjában. Ugyanitt kapható egész fahéj és vaníliapor is. Miel&otilde;tt még valaki megkérdezi, nem, nem lehet a gyömbért szárított gyömbérporral helyettesíteni, a kardamont nem lehet kihagyni, és a vaníliapor helyett sem a "vanillincukor" fed&otilde;nev&ucirc; vegyipari mellékterméket kell használni. További érdekes tudnivaló, hogy a citromlevet citromból csavarják, és nem m&ucirc;anyag flakonból. Sok sikert!
+<BR><BR>
+
+Ehelyt jegyezném meg azt a mellékes tényt is, hogy a <I>Das Boot</I> DVD magyar felirata botrányosan rossz.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050422.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

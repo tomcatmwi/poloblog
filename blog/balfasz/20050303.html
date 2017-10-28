@@ -1,0 +1,128 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai')!= -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-310</B><BR>
+2005.03.03.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<BR><BR>
+
+Az alábbi történet f&otilde;szerepl&otilde;je egy polgár&otilde;r (nem Loydi, de &otilde; mesélte), és egy vicces kedv&ucirc; haver.
+<BR><BR>
+
+Polgár&otilde;rünk valami buliba ment, ahová a táskájában vitte a piát. Már nagyban ment az iszogatás, fogyott a házi készlet, mire eszébe jutott, hogy nála van még utánpótlás. Mivel egy asztalnál ült, a sarokban, és a fél társaságon át kellett volna másznia, megkért egy havert az asztal túlvégén, hogy keresse már meg a táskáját, és vegye ki bel&otilde;le az üveget. A kissé kapatos haver pattant is rögvest, meg is lelte a kincset, ám mellette a polgár&otilde;r egy-két személyes holmiját is, egy sárga világító mellényt, egy gumibotot és ami roppant felkeltette érdekl&otilde;dését, egy bilincset. Hú, de jó vicc lesz ebb&otilde;l, vigyorodott el gonoszul, és zsebre vágta a karperecet.
+<BR><BR>
+
+Fogta az üveget, visszament a konyhába, a társaság legnagyobb örömére. &otilde; meg csak figyelt, figyelt, várta az alkalmas pillanatot, amikor a polgár&otilde;r éppen nem figyel, és akkor hirtelen KATT, rácsattintotta a bilincset mindkét csuklójára. Az meg nézett elh&ucirc;lve.
+<BR><BR>
+
+- Höhöhöhö - kommentálta a félrészeg haver a tréfát.<BR>
+- ... bazmeg!! - motyogta a szintén nem józan polgár&otilde;r.<BR>
+- Höhö...<BR>
+- HÁT ÉN KINYÍRLAK BAZMEG!!!<BR>
+- Höhö... ööö?<BR>
+- ÁÁÁÁÁÁÁ!!!
+<BR><BR>
+
+Mert azt már nem tudta a vicces kedv&ucirc; haver, hogy bilincshez nem szokás kulcsot hordani, hiszen ha valakire ráteszik, úgyis csak a kapitányságon veszik le. Így hát polgár&otilde;rünk mehetett haza részegen, összebilincselve, keresztül a fél városon. Égett is a feje rendesen, a buszon mindenki &otilde;t nézegette, és gondolkodtak, hogy hívjanak-e rend&otilde;rt. Szerencsére nem hívtak, elég nehéz lett volna kimagyaráznia, ráadásul a polgár&otilde;r igazolványa sem volt nála.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050302.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050304.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

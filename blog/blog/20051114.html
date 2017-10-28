@@ -1,0 +1,123 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2005.11.14., hétf&otilde;</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Dr. Gaudi-Nagy Tamás szerint be lehet perelni a TV2-t a tegnapi <I>Aktív</I>-ban elhangzott valótlan állításokért. Az eljárás a szokásos: beadunk panaszt az ORTT-nek, azok majd elbírálják, a TV2 fellebbez, és akkor mehetünk a bíróságra. Hihetetlen egyébként, mi pénz megy el a média világában pereskedésre. A pereskedés politikai eszköz, egymás szócsöveit próbálják vele ellehetetleníteni a politikai er&otilde;k. A Magyar Nemzet ellen például minden nap (!) indítanak egy pert, aztán vagy elvesztik, vagy nem, de a lényeg, hogy jelent&otilde;s anyagi és emberi forrásokat köt le a dolog az ellenfél oldalán. Annyi esze már egyiknek sincs, hogy ugyanezek az er&otilde;k náluk is le van kötve, a feljelent&otilde; oldalon, és az egész igazából csak arra jó, hogy túlterhelje a bíróságokat, mindannyiunk legnagyobb örömére.
+<BR><BR>
+
+Loydi végre-valahára felfogta, hogy nem kéne elbújnia, és kiállt a <I>Tények</I> kamerája elé - igaz, arc nélkül. Az eredmény egy korrekt riport lett, de hogy ez mennyiben köszönhet&otilde; a <I>Tények</I> szerkeszt&otilde;inek korrektségének, vagy a riportot adásba kerülés el&otilde;tt szakért&otilde; szemmel végignéz&otilde; barátainknak, nem tudom. Tessék, itt a két anyag egymás mellett: a mocskolódó bulvárszemét az <I>Aktív</I>-ból, és a <I>Tények</I> riportja. Azért érdekes, hogy egyazon televízió ugyanazt az anyagot mennyire máshogy tudja el&otilde;adni két külön m&ucirc;sorban...
+</P>
+<CENTER>
+
+<A HREF="20051114_1.avi"><IMG SRC="20051114_1.jpg" BORDER=0></A>
+&nbsp;&nbsp;
+<A HREF="20051114_2.avi"><IMG SRC="20051114_2.jpg" BORDER=0></A>
+<BR><BR>
+</CENTER>
+<P ALIGN="justify">
+Ugye nem felejtettétek el: pénteken tüntetés az ORFK el&otilde;tt. Terjesszétek a <A HREF="20051111.html">hírt</A> mindenhol!
+
+
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20051113.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20051116.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

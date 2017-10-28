@@ -1,0 +1,123 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-356</B><BR>
+2005.05.07.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<BR><BR>
+
+Császár barátom édesapja nyugdíjas katonatiszt, valaha harckocsizó volt. &Otilde; mesélte az alábbi elrettent&otilde; történetet, mely leginkább az <I>"aki hülye, haljon meg"</I> témakörben helyezhet&otilde; el.
+<BR><BR>
+
+Az öregúr sok helyen megfordult katonai karrierje során, míg alezredesként a Zrínyi Miklós Nemzetvédelmi Egyetem oktatójaként nyugdíjba nem ment. Egy id&otilde;ben kiképz&otilde;ként fiatal tisztjelölteket oktatott a hadieszközök kezelésére. Egyszer egy nagykép&ucirc; fiatal hadnagy vizsgáján vett részt, akinek a harckocsi harcászati alkalmazását kellett volna bemutatnia a gyakorlatban, vagyis beszállnia egy személyzettel ellátott tankba, és megfelel&otilde; utasításokat adva végrehajtania egy próbafeladatot. Hadnagyunk meg is kezdte a végrehajtást, mégpedig azzal, hogy menetben felnyitotta a toronyfedelet és kiállt nézel&otilde;dni, ahogy a háborús filmekben látta. Csak azt felejtette el, hogy a filmekben ilyenkor szépen, lassan gördül a harckocsi, és nem hetvennel vágtat a terepen.
+<BR><BR>
+
+- Jöjjön be onnan, balesetveszélyes! - szólt fel neki lentr&otilde;l.<BR>
+- De így jobban látok! - kiabált vissza a hadnagy.
+<BR><BR>
+
+A következ&otilde; pillanatban a terepen száguldó tank belezökkent egy gödörbe, a hadnagy lecsúszott, és zuhanás közben - mint azt a kés&otilde;bbi baleseti jegyz&otilde;könyvben írták - nagy lendülettel beleharapott a búvónyílás acélperemébe. A fels&otilde; állkapcsát a homloklebenye állította meg. Odalett az arca, az orra és mindkét szeme. Túlélte, bár nem tudta elmondani, hogy örül-e neki, mert már nem volt mivel megszólalnia. Az esetet azóta emlegetik a Zrínyin, mint int&otilde; példát, hogy miért kell betartani a balesetvédelmi el&otilde;írásokat.
+<BR><BR>
+
+A mai Droidzónába való még az a hülye picsa is, aki a hírek szerint ma délel&otilde;tt benyúlt az Állatkertben a fehér farkas ketrecébe, hogy megsimogassa az állatot. Aztán persze rinyált, hogy hova lett a keze.
+</P>
+
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050506.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050509.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

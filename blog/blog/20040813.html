@@ -1,0 +1,106 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+  </SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2004.08.13., péntek</B><BR>
+tomcat
+<BR><BR>
+
+Hát én ezt nem hiszem el. Dögöljek meg ha értem, miféle logika m&ucirc;ködik a pécékben. Figyeljetek, elmesélem.
+<BR><BR>
+
+Két hangkártya van ebben a szaros hurkatölt&otilde;ben. Egy Gravis Ultrasound PnP az MS-DOS-os cuccokhoz és a régi demókhoz, illetve egy SB Live a vindózos szarokhoz. Értelemszer&ucirc;en a GUS csak DOS alatt, az SB meg csak Win2000 alatt megy, így van felinstallálva. Nos, úgy fél évvel ezel&otilde;tt, illetve még régebben, tavaly december körül az SB úgy döntött, hogy &otilde; bizony elunta a munkát, és mostantól kussolni fog. Vagyis elcsendesedett a dög, és többé egy nyekkenést se lehetett bel&otilde;le kicsikarni.
+<BR><BR>
+
+Na persze, nem biztos, hogy a polóárus hülye a számítógéphez, bár ezt gyakran feltételezik egyesek. Driverek újrainstall, beállítások széjjelpiszkál, káromkodik, rugdos... mindhiába. Végül jött a szomorú diagnózis, hogy itt kérem az egész kurva vindózt újra kéne rakni, mert minden, ami hanggal kapcsolatos, szarrá rohadt benne. Ezen elgondolkodtam, és arra jutottam, hogy ott dögöljön meg, ahol van, nincs nekem arra egy teljes hetem, hogy minden fiszfaszt újratelepítsek meg beállítgassak. Majd ha egyszer lesz, akkor megcsinálom, addig kussoljon.
+<BR><BR>
+
+Telt-múlt az id&otilde;, és valahogy sose volt egy pár szabad napom erre, a hullámbádog tehát némaságba burkolódzott. Elég zavaró volt, de hát dolgozni kellett vele, és ha hegesztgetem meg pátyolgatom, akkor áll a munka. Rajzolni meg modellezni csendben is lehet. Így telt el egy jó fél év, mígnem a minap úgy tartotta úri kedvem, hogy DOOM-ozzak egy kicsit. Igen, a régi, DOS-os DOOM-mal, amivel olyan fasza deathmatch-eket játszottunk éveken át a haverokkal. Szóval reboot, irány a DOS, hangkábel átdug a GUS-ba, és lehet hörögni meg durrogni, hangfal odabasz, gyilkolászás egész éjen át...
+<BR><BR>
+
+Másnap kapcsolom be a gépet, indítom a ringyózt, erre mit hallok? Kattan a hangfal, és megszólal a startup hang. Höö? Igen, a hangkábel még mindig a GUS PnP-be volt dugva. Mindenféle driver, beállítás vagy más egyéb nélkül a GUS egyszer csak gondolt egyet, és átvette a hatalmat!! Hát ezért nem szólt nekem fél éven át, mert eszembe se jutott, hogy a fel sem installált GUS-ba dugjam az er&otilde;sít&otilde;t. Ámultam, bámultam, anyáztam, de örültem, legalább volt hangom. Ez volt kábé egy hete...
+<BR><BR>
+
+Aztán ma megint játszani támadt kedvem, de ezúttal ringyóz alatt. A ringyóz is játékos kedvében volt, mindjárt szórakozni is kezdett velem. A játék hangja nekiállt ordenáré módon akadozni, ricegni-recsegni, ki is kellett lépnem. Mondom, mi a fasz ez? Biztos fogja a memóriát valami rezidens szar. Hát akkor rebootoljunk.
+<BR><BR>
+
+Reboot után indítom a játékot... és nincs hang. Ááá, anyád! Elindítom a Winampot, mutatja is lelkesen, hogy itt bizony zenelejátszás történik, de a hangfalból pisszenés sem hallatszik. Nézem a képerny&otilde;t... nézem, homlokráncolva... aztán egy hirtelen ötlett&otilde;l vezérelve átdugtam a kábelt a GUS-ból az SB-be. És hirtelen megszólalt a hang! Az SB feléledt, és újra szólt. Most a GUS kussolt el, el&otilde;reláthatólag fél évre.
+<BR><BR>
+
+Ha valaki meg tudja magyarázni, miként képes egy hangkártya se szó, se beszéd "lenyúlni" a másik drivereit, kap egy nyalókát.  Hogy a másik hogy veszi vissza azokat, azt már meg sem kérdezem. Különösen érdekes a dolog annak fényében, hogy miközben a GUS m&ucirc;ködött és szólt, az összes vezérl&otilde;panelen mindenhol SB Live felirat szerepelt, a programok az SB Live-t ismerték fel, és még a Live saját mixerprogramja is tökéletesen m&ucirc;ködött!
+<BR><BR>
+
+Fentiek ismeretében talán nem csoda, hogy valamikor 1997 végén megfogadtam, hogy a büdös életben soha nem fogok többé PC hardver építéssel és javítással foglalkozni. Ezt azóta is betartom.
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20040812.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+
+<B>következ&otilde; nap >></B>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

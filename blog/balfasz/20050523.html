@@ -1,0 +1,137 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-370</B><BR>
+2005.05.22.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+
+<P ALIGN="justify">
+<I>Werdy fed&otilde;nev&ucirc; kedves olvasóm és vásárlóm egy BKV jegyekb&otilde;l összeállított, különös kompozíciót dugott az orrom elé.
+<BR><BR>
+- Na, találd ki, ez micsoda és hogy keletkezett?
+
+</P>
+<CENTER>
+<A NAME="1">
+<A HREF="#1" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/balfasz/20050523.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050523_thumb.jpg" BORDER=0></A>
+</CENTER>
+<P ALIGN="justify">
+
+Fogalmam sem volt. Nektek sincs? Akkor olvassátok el a történetet.
+<BR><BR>
+</I>
+
+Helyszín: Nyugati tér, metróállomás. BKV ellen&otilde;rök mindenfelé. Gondoltam, feleslegesen nem idegesítem magam/&otilde;ket (ennyit nem érnek), lyukasztok. Jegy be a gépbe (persze csak a harmadik volt jó), klasszikus "kezeltem a jegyet" hang, én vidáman kihúzom a jegy... felét. Igen, a másik felét a gép rabul ejtette. No, ennek már fele se tréfa, irány az els&otilde; ellen&otilde;r.
+<BR><BR>
+
+- Elnézést, ez volna a jegy.
+<BR><BR>
+
+Emberünk rövid gondolkodás után az információhoz küldött. Itt pár perc álldogálás után egy hölgynek el&otilde;adhattam a problémát. &otilde; az ügyet továbbpasszolta egy túlsúlyos, ám segít&otilde;késznek látszó kollégájának, aki kijött velem a géphez, amit azon nyomban szétrobbantott. Rövid keresés után diadalmasan el&otilde;kapta a jegyem hiányzó felét. Ezek után már csak azt kellett megvárnom, hogy összerakja a masinát, a tesztjegyét forditva lekezelje és összet&ucirc;zze a cuccot. 
+<BR><BR>
+
+- Ezt mutassa az ellen&otilde;röknek!
+<BR><BR>
+
+Háááát... Bennem csak annyi merült fel, hogy mi van, ha sietek és nincs tíz felesleges percem? Nem lett volna egyszer&ucirc;bb, ha adnak egy új jegyet, ha már egyszer a gépük ...ta el az enyémet? 
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050522.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050524.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

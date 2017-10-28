@@ -1,0 +1,188 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2005.06.03., péntek</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Egy ideges úriember hívott ma attól az Internet-szolgáltatótól, ahol a tomcatpolo.hu DNS rekordját kezelik. Elmondta, hogy két megtermett pasas sétált be ma reggel az irodájukba, és mindenféle bemutatkozás vagy igazolvány felmutatása nélkül felszólították &otilde;ket, hogy azonnal vegyék le az oldalamat, "különben baj lesz." Ismer&otilde;s a módszer, hiszen ugyanezzel próbáltak ráijeszteni korábbi szolgáltatómra, és más jobboldali beállítottáságú weboldalak fenntartóinál - nemnemsoha.hu, kuruc.hu, és a többi - is tettek már látogatást ezek az urak. Szolgáltatóm természetesen azonnal lefosta a bokáját és kétségbeesetten telefonált nekem, hogy vigyem át máshová a DNS rekordot, mert "nem akar balhét". Persze, az urak pontosan erre számítottak. Határozott fellépésük alapján mindenki az NBH nyomozóinak vagy rend&otilde;röknek hiszi &otilde;ket, és nagy hirtelen senkinek sem jut eszébe igazolványt kérni. Aztán mire eszébe jutna, már se hírük, se hamvuk.
+<BR><BR>
+
+Ezúton gratulálok azoknak a balliberális köröknek, akik ezt az ijesztget&otilde; kommandót m&ucirc;ködtetik. Nem csak azért, mert egyszer egy kevésbé beszari cégvezet&otilde; úgy fogja kivágni &otilde;ket az irodájából, hogy a taknyukon csúsznak Tel-Avivig, de azért is, mert az Internetet még így sem lehet cenzúrázni. Szerintetek mennyi id&otilde;be telik eltenni mind a blogot, mind a DNS rekordot egy külföldi szolgáltatóhoz? Barmok. Kíméljük meg egymás idejét, legközelebb ne fáradjatok a szolgáltatóm felkeresésével, nekem meg nem kell legalább öt percet eltöltenem azzal, hogy a DNS-t máshová tegyem. Köszi.
+<BR><BR>
+
+No de térjünk rá a napi cigányozásra.
+<BR><BR>
+
+A <A HREF="romnet.hu" TARGET="_new">romnet.hu</A> weboldalon, melyet fejléce szerint "valóban roma fiatalok, valóban önszervez&otilde;d&otilde; módon szerkesztik", kommentár nélküli képsorozat szerepel egy kórházi ágyon fekv&otilde;, valóban csúnyán megvert cigányról. A képek fölé csak ennyit írtak: <I>Mit m&ucirc;veltek a gyöngyösi rend&otilde;rök? - Magyarország, 2002</I> 
+
+</P>
+<CENTER>
+
+<A NAME="1">
+<A HREF="#1" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050603_1.jpg'; document.wdth=400; document.hght=412; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050603_1_thumb.jpg" BORDER=0></A>
+&nbsp;&nbsp;
+<A HREF="#1" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050603_2.jpg'; document.wdth=400; document.hght=412; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050603_2_thumb.jpg" BORDER=0></A>
+<BR><BR>
+
+<A NAME="1">
+<A HREF="#1" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050603_3.jpg'; document.wdth=400; document.hght=412; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050603_3_thumb.jpg" BORDER=0></A>
+&nbsp;&nbsp;
+<A HREF="#1" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20050603_4.jpg'; document.wdth=400; document.hght=412; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20050603_4_thumb.jpg" BORDER=0></A>
+
+</CENTER>
+
+<P ALIGN="justify">
+Namármost, a rend&otilde;rök ugyan néha tényleg elég faszok tudnak lenni, de hogy valakit így elrépázzanak, az azért ritka, még ha cigány is az illet&otilde;. Az ilyesmit bizony ki kell érdemelni. Fogtam hát a telefont, és felhívtam a gyöngyösi rend&otilde;rkapitányságot, megtudakolandó, hogy mi igaz ebb&otilde;l a képsorozatból, mi történt a <I>roma úriemberrel.</I>
+<BR><BR>
+
+- Városi rend&otilde;rkapitányság, tessék...<BR>
+- Jó napot kívánok. A városi rend&otilde;rkapitánnyal szeretnék beszélni.<BR>
+- Vele sajnos már nem tud, hazament.<BR>
+- Helyettese, valaki?<BR>
+- Hát, sajnos ilyenkor, péntek délután már senki sincs bent, csak a készenlét.<BR>
+- Aha. Hát akkor majd máskor, köszönöm...<BR>
+- De várjon, hátha tudok segíteni. Milyen ügyben keresi a kapitány urat?<BR>
+<BR>
+
+Elmondtam neki, hogy mit láttam a romnet.hu-n, és hogy szeretném megkérdezni, mi történt. A túloldalon kitört a csodálkozás.
+<BR><BR>
+
+- Ilyet terjesztenek az Interneten? Nem tudok róla, hogy mostanság megvertünk volna valakit.<BR>
+- Pedig a képek ott vannak, és azt állítják, a gyöngyösi rend&otilde;rök verték meg a faszit.<BR>
+- És mikoriak azok a képek?<BR>
+- A felirat szerint 2002-ben készültek.<BR>
+- 2002... Jaaa, tudom már! Akkor volt egy nagy balhé, azóta is emlegetjük. Meghatározó élmény, a mai napig beszélnek róla a városban.<BR>
+- Mi történt?<BR>
+- Vagy ötven cigány randalírozott a városi kórházban, és hat rend&otilde;r szétverte &otilde;ket.<BR>
+- De miért randalíroztak?<BR>
+- Hát, tudja, hogy megy ez náluk. Meghalt valami rokonuk, azt gyászolták, valami nyolcvanéves öregasszony. Aztán ugye náluk még ez sem ment lármázás nélkül.<BR>
+- Mi történt?<BR>
+- Kiabáltak meg törtek-zúztak a kórházban. Akkor kihívtak minket, kiment hat kolléga. De a cigányok is hívtak még embert, így aztán jó ötvenen támadtak ránk. Hát, ott tényleg volt gumibotozás, meg lépcs&otilde;n lerugdosás, de hát nekünk ez a dolgunk, ugyebár...<BR>
+- Legalább valaki még teszi a dolgát.<BR>
+- Hát, igen. Aztán tényleg volt néhány sebesült az etnikai származásúak között. De azért tessék figyelni az arányokat, a számokat: ötvenen hat ellen...<BR>
+- Úgy szokták.<BR>
+- Meg azt se írták meg az újságok, hogy mire kiértünk, ezek szétverték a fél kórházat, megverték az orvosokat, ágyastul borogattak fel betegeket.<BR>
+- Aha. Hát, köszönöm, és örülök, hogy Önök még végzik a munkájukat.<BR>
+- Nincs mit, viszonthallásra.
+<BR><BR>
+
+Szóval egy gyöngyösi rend&otilde;r szerint ezért lett beverve annak a cigánynak a pofája. Aki jobban utána akar járni, hívja fel a városi kapitányt munkaid&otilde;ben.
+<BR><BR>
+
+
+
+
+
+szerver
+gyöngyös
+mortimer
+
+
+
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050602.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050604.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

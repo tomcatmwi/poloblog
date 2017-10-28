@@ -1,0 +1,119 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>2006.10.28., szombat</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Ahogy minden õsszel, idén is megkíséreltünk eljutni Egerbe. Nem sikerült.
+<BR><BR>
+
+Kimentünk a buszpályaudvarra, s odaálltunk a busz mellé, ahol már akkora tömeg tolongott, hogy reménytelennek látszott akár csak a lépcsõre felállni is. Ez mondjuk még sikerült, de mire bepréselõdtünk, az utolsó utasokat már cipõkanállal nyomták be. Ez jár a Volánnál a nem éppen olcsó jegyért, utazhatsz állva, s jó esetben még te állhatsz a többiek lábán, s nem fordítva. A sofõr széttárta a kezeit, õ tényleg nem tehet róla, hogy ekkora a busz, és módszeresen teszik tönkre a céget, még ennyi utassal is veszteséges a Budapest-Eger vonal. "Ha nem tartanának luxuskurvákat titkárnõnek, nem így lenne", jegyezte meg. Mondtam neki, hogy majd legközelebb jöjjön õ is a tévéhez, mire legyintett, és mondta, hogy ott volt, de azzal se változott semmi.
+<BR><BR>
+
+Nagyjából az autópálya bekötéséig bírtuk a heringkonzervhez méltó körülményeket, aztán pánikszerûen leverekedtük magunkat az utolsó pesti megállóban, mielõtt rosszul leszünk. A sok birka meg nézett tágra nyílt szemekkel, és nem értették, hogy lehet, hogy ezek leszállnak. "De hát hülyék ezek?" - pusmogták, és nyomorogtak tovább. Na, ezért nem lesz itt rendes forradalom se soha. Ezzel a birka néppel a szart is meg lehet etetni.
+<BR><BR>
+
+Ma megtudtam egyébként azt is, hogy házi õrizetem feloldása nem állami kegynek köszönhetõ, hanem Dr. Gaudi-Nagy Tamásnak, ugyanis az ügyész gond nélkül 60 napos fellebbezést kért, leszarva, hogy semmi alapja sincs rá. Állítólag hosszas vita folyt a bíróságon, hogy engem szabad-e emberek közé engedni, vagy sem. Végül sikerült rávenni a bírót. Olyan jó kis ország ez, az utcán rabolgató cigányokat persze sose rakják be még házi õrizetbe sem.
+
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20061027.html">
+<B><< elõzõ nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20061031.html">
+<B>következõ nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+<BR><BR>
+
+</BODY>
+</HTML>
+

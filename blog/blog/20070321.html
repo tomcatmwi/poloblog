@@ -1,0 +1,450 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>2007.03.21., szerda</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Március 16-án rendõrök kopogtattak egy barátomnál. Egy lézernyomtatóval kinyomtatott, elmosódott fényképet mutattak neki, amin egy meglehetõsen kövér, bomberdzsekibe öltözött, hosszú, õsz haját varkocsba fogva viselõ ember volt látható, feltehetõleg az Andrássy úton. A kép éjszaka készült, valami térfigyelõ kamerával, s az ember arca valami három pixelnyi, felismerhetetlen videózaj volt. A rendõrök közölték barátommal, aki huszonegy éves, rövid hajú és kifejezetten sovány, hogy velük kell mennie, mert ezen a képen õ van. Barátom erre felírt nekik vagy nyolc ausztriai telefonszámot, amelyeken igazolhatták, hogy március 15-én Kismartonban volt, valamint kezükbe nyomta a Határõrség pecsétes igazolását a határátlépésrõl, amit kifejezetten az ilyen látogatásokra készülve kért Hegyeshalomnál. A Fakabát Rt. munkatársai erre megvakarták a fejüket, hebegtek valamit, hogy "tévedés történt", és elmentek. Hát, igen, az arcfelismerõ szoftvernek is vannak korlátai.
+<BR><BR>
+
+Velem semmi különös nem történt az utóbbi napokban, csak nem volt idõm blogot írni. Napok óta nem jöttek házkutatást tartani. Kaptam viszont választ a tõlem elkobzott gázspray-t gyártó, német Ballistol cégtõl, amelyben biztosítottak, hogy a 40 ml-es termékük töltõsúlya nem éri el a 20 grammot. Rövidesen "rendes" levélben is küldenek errõl egy pecsétes igazolást, amit majd kiteszek ide a blogba, mert biztosan lesz még egy-két olvasóm, akinek ilyen jellegû problémája akad. (A Magyarországon kapható gázspray-ek többsége Ballistol gyártmány.)
+<BR><BR>
+
+Az ügyészség visszaadta végre a szeptemberben lefoglalt számítógépemet. Az ügyésznõ elkámpicsorodott arcáról lerítt, hogy személyes vereségként értékeli a dolgot. Szegény gépem, valamint Athina kimustrált laptopja és a húga telefonja, amit csak azért foglaltak le, mert zöld-fehér mintás szalag volt rajta, bûnjelpecsét nélkül kerültek elõ a szekrénybõl. Kérdeztem is a nõcit, hogy hová lett a pecsét, aminek az lenne a célja, hogy csak a jelenlétemben lehessen tapogatni a cuccot, a bizonyítékok meghamisítását biztosítandó.
+<BR><BR>
+
+- Polgárúr! - felelte enerváltan a nõ - Maga is itt volt, amikor levettük, nem?<BR>
+- Itt voltam, de az hónapokkal ezelõtt volt. Miért nem került vissza rá?<BR>
+- Mert már nem kellett.<BR>
+- Aha. És egyébként miért tartott ennyi ideig a lefoglalás?<BR>
+- Mennyi ideig?<BR>
+- Hát ennyi ideig. Miért tartották vissza ennyi ideig a munkaeszközömet, ha már az adatok rég le voltak róla mentve?<BR>
+- Polgárúr! Ööö... Mert a nyomozás érdekei így kívánták.<BR>
+- Megkérdezhetem, milyen indok kívánta ezt?<BR>
+- Ezt a nyomozást vezetõ személy dönti el.<BR>
+- És az kicsoda?<BR>
+- Polgárúr... Azt nem kell tudnia.<BR>
+- Akkor megkérdezem pontosabban. A nekem küldött leveleket mindig Ön írta alá úgy, mint a nyomozást vezetõ ügyész. Tehát feltételezem, Ön a nyomozást végzõ ügyész. Tehát akkor Ön döntött úgy, hogy hónapokra megfosztanak a munkaeszközömtõl. Így van?<BR>
+- Polgárúr... ööö... igen.<BR>
+- Akkor Ön biztosan választ tud adni rá, hogy mi indokolta a lefoglalást. Vagy ezt csak az irategyeztetés után tudhatom meg?<BR>
+- A nyomozás érdeke kívánta így, ha nem tetszik, panasszal élhet.<BR>
+- Fogok is.
+<BR><BR>
+
+Az átvételi lapra ráírtam, hogy a gépet bûnjelpecsét nélkül kaptam vissza.
+<BR><BR>
+
+Érdekesen pergõ napjaimba különös színt lopott a március 17-i Békejel. Korábban hívtalak benneteket, kedves Olvasóim, hogy ezt az alapvetõen baloldali és liberális beállítottságú szervezetek és személyek által szervezett eseményt dobjuk fel egy kicsit, mondjuk nemzeti zászlóinkkal. Mert ha például kubai zászlóval és Che Guevara arcképével lehet az atomfegyverek ellen tüntetni - megjegyzem, Che Guevara annak idején habzó szájjal követelte, hogy mérjenek atomcsapást az "imperialistákra" - akkor piros-fehér-zöld és árpádsávos lobogókkal is lehet. Egyébként sem hiszem, hogy Havannában magyar zászlókkal és Petõfi arcképével rendezõdnének békejel-alakzatba a fáklyás felvonulók a Palacio de la Revolución elõtt. Hívásomnak mintegy tízen tettetek eleget, és ez éppen elég is volt. Egy kis nemzetiszínû, egy hasonló méretû árpádsávos, és egy rúd nélküli címeres zászló jött össze, s mindenféle korosztály, tizenévestõl harmincason át egészen ötvenévesig. Az Oktogonon találkoztunk, a Burger King elõtt, és már ott meglehetõs döbbenetet keltettünk a szintén a Békejelre készülõdõ tizenévesek között, amikor a csíkos zászlót kibontottuk. Hát, igen, a nemzeti jelképektõl félni kell.
+<BR><BR>
+
+Társaim földalattival, én biciklivel indultunk a Hõsök terére, ahol öt órára volt meghirdetve a nagy esemény. Még csak ötvenen-hatvanan lézengtek ott, de már szóltak a hangfalak, kitelepültek a március 15-érõl megmaradt perecet árusító standok, és takaros halomban várakoztak a fáklyák is. Odamentünk az egyik narancssárga karszalagos (Fidesz!!!) szervezõhöz, és lejelentkeztünk, korábban vásárolt fáklyajegyünket felmutatva. Néhány tapasztalatlan tizenévesben <I>meghûlt az ütõ</I> (sic! legalábbis egyikük késõbb így írta a blogjában), de végül nem lettünk agyonverve, és rendõrt sem dobtak ránk, hanem megállapították, hogy valóban fel vagyunk írva, és rövid úton kiderítették, hogy a 6-os szektorban lesz a helyünk. Hárman már nem fértek oda, õk valahová el lettek keverve. Megkerestük a kövezetre ragasztott 6-os számot, és ott vártuk, hogy legyen valami.
+<BR><BR>
+
+Egyre gyûltek, gyülekeztek az emberek, és bár még mindig sok döbbent fej fordult felénk, meglepõen sokan üdvözölték is a nemzeti lobogókat, és örültek, hogy most már ilyen is van. Én is örömmel konstatáltam, hogy immár nem koszos punkok és humániákus idióták gyülekeztek, mint két-három éve, hanem teljesen normális, apolitikus tizenévesek, akiket egy Critical Mass felvonuláson is láthatunk, csak éppen bringával. Voltak persze idióták is, így például egy luvnya, aki diktafonnal a kezében perdült közénk, és negédes vigyorral közölte, hogy a Magyar Rádió munkatársa.
+<BR><BR>
+
+- Milyen indíttatásból érkeztetek ide? - vigyorgott.<BR>
+- Tüntetni szeretnénk a világbékéért - feleltem.<BR>
+- De úgy értem, miért vagytok itt?<BR>
+- Mert nem szeretjük, ha atombombát dobnak a fejünkre.<BR>
+- És még mit nem szeretsz?<BR>
+- Továbbá a hidrogénbombát és a neutronbombát sem szeretem. Meg a hülye kérdéseket.<BR>
+- Miért, szerinted ez hülye kérdés?<BR>
+- Na és ez a zászló? - bökött a piros-fehér-zöldre.<BR>
+- Mi van vele?<BR>
+- Miért ezzel? Mit jelképez ez?<BR>
+- Ez a nemzeti lobogónk. Nem láttál még ilyet?<BR>
+- De hát ez, hogy is mondjam csak, szóval nem igazán a békesség szimbóluma.<BR>
+- Mert? A kubai zászló, amit itt szoktak lengetni, meg Che Guevara, az meg az, mi?<BR>
+- Hát ugye... az elmúlt idõszak eseményei, ugye...<BR>
+- Na, akkor ezt a beszélgetést itt befejeztük.<BR>
+- De most mi bajod van? Te provokálhatsz itt, de én nem provokálhatlak téged?<BR>
+- Édesanyádat provokáltam, te nem ismered fel a nemzeti lobogónkat! Húzás!
+<BR><BR>
+
+Az agymosott, hülye picsa erre végre lekopott. Eszem-faszom megáll az ilyeneken.
+<BR><BR>
+
+A tömeg egyre gyûlt, már több százan voltak, s a hangosbeszélõn sorra mondták azokat a városokat, ahol szintén lesz vagy van Békejel, ugyanabban az idõben, mint itt. Magyarországon is több helyen volt, késõbbi jelentések szerint mintegy 2700-an jöttünk össze. Bemondták a támogatókat, köztük volt a Létminimum Alatt Élõk Szövetsége is, bár nem tudom, õk mivel támogatthattak. Állítólag a jelenlétükkel. Akkor tessék máskor engem is bemondani. Kis csapatunk úgy döntött, hogy a bemondott sok-sok hely közül, ahol Békejelet szerveznek éppen, Ghána lehet a legtutibb, ezért lelkesen éljeneztük Ghánát és a ghánaiakat, akik biztos niggerek, de attól még jó fejek, elvégre Ghána jó hely. Késõbb jött arra egy igazi nigger, meg is kérdeztük, nem ghánai-e, de nigériai volt, és a többi nigériait kereste. Mondtuk neki, hogy vándoroljon ki Ghánába, de nem akart. No, mindegy, majd rájön magától.
+<BR><BR>
+
+Ahogy ott ácsorogtunk a 6-os szektorban, és röhögtünk minden hülyeségen, egyszer csak egy öreg faszit pillantottunk meg, aki egy lepedõnyi vörös zászlóval masírozott keresztül a téren, és megállt a túloldalon. Egy darabig figyeltük, de hozzá nem ment oda a rádiós picsa hülyeségeket kérdezni. Úgy döntöttünk, majd mi kérdezünk tõle. A "magyar követség" felkerekedett, és zászlóstul átsétáltunk hozzá és kíséretéhez.
+<BR><BR>
+
+- Jó estét. Elnézést. Ez egy kommunista zászló? - kérdeztem a pasast. Amaz kitágult orrlyukkal végigmért, majd üvöltve így felelt:<BR>
+- Igen! Az!! És akkor mi van?!<BR>
+- Nyugi, öreg, ez egy béketüntetés.<BR>
+- És akkor mi van, ha kommunista vagyok? He? Mi van?<BR>
+- Semmi, csak kérdeztem.<BR>
+- Az meg ott egy árpádsávos!! - mutogatott a mi zászlónkra.<BR>
+- Igen, az meg egy árpádsávos - erõsítettem meg.<BR>
+- Fasiszta!!<BR>
+- Anyád.<BR>
+- A köztudatban az egy fasiszta jelkép!<BR>
+- Hülye vagy.<BR>
+<BR>
+
+Egyikünk le akarta fényképezni a díszes társaságot, de elõugrott a tata 14 éves unokája, és fontoskodva elkezdett a kamera felé kapkodni.
+<BR><BR>
+
+- Nem adtunk rá engedélyt... forgatási engedély... személyiségi jogok... - mekegte, ahogy apucitól tanulta.<BR>
+- Te ilyen jogász vagy, kistaknyos? - kérdeztem.<BR>
+- Nem kéne taknyosozni!! - szirénázott fel a háttérben a nagymutter.<BR>
+- Nem kéne belekárálni - feleltem, és inkább otthagytuk az õrjöngõ kommunistákat, akik felháborodottan taglalták még késõbb is, hogy "beléjük kötöttünk", és nyilván izgatottan mesélték késõbb is a nyugdíjasklubban.
+<BR><BR>
+
+Visszatértünk a 6-os szektorba, s rövidesen eljött a fáklyagyújtás ideje. Fellobbantak a lángok, bár néha el-elfújt a szél, de végül kialakult az esti sötétben a fényes kör, a béke jele. A közvilágítást lekapcsolták, s ebben a percben sok millió társunkkal együtt, akik a világ más pontjain ugyanígy tartották fáklyáikat, egy perc csenddel tiltakoztunk a háborúk, a fegyverkezés ellen, s emlékeztünk azokra, akik a háborúk következtében vesztették életüket. Jó negyedórán át álltunk így, míg a fáklyák csonkig égtek. Nagyon szép és felemelõ élmény volt. Bár évek óta mindig ott voltam a Békejel rendezvényeken, most álltam be elõször az alakzatba. Többen kellenénk ide, magyar emberek, magyar zászlókkal, mert nemcsak a hippik és a baloldaliak kívánsága a béke, s nem is csak az õ kiváltságuk tüntetni érte. Azon kívül igen csinos lányok is voltak, de ezt nem is írom ide, mert Athina megnyúz.
+<BR><BR>
+
+Már oszladozott a tömeg, és már azt hittem, több hülye nem jön, amikor egy szobafilozófus-forma emberke sodródott mellénk, kezében szivárványszínû zászlóval. Megvetõen végigmért, majd meglóbálta a zászlóját, és így szólt.
+<BR><BR>
+
+- Ez szebb, mert ez a béke színe.<BR>
+- Mi?<BR>
+- A szivárvány.<BR>
+- Minél? A magyar zászlónál?<BR>
+- Igen.<BR>
+- Békeügyben kicsit utána kéne nézned a magyar hagyományoknak. Szent Korona-tan, Arvisura, ilyesmik.<BR>
+- Papp Gábor...<BR>
+- Igen, õ is írt ezekrõl.<BR>
+- Elõbb ismertem Papp Gábort meg az Arvisurát, mint hogy te megszülettél!<BR>
+- Nagyon örülök.
+<BR><BR>
+
+Szobatudósunk gyõzelme tudatában sarkon fordult, és elvonult. Most aztán jól megmondta!
+<BR><BR>
+
+A tömeg oszladozni kezdett, a hangosbeszélõn elmondták, hová lehet menni afterpartyzni, és mi is elköszöntünk egymástól. A hülyék ellenére nagyon szép és kedves rendezvény a Békejel, és mindenkinek csak ajánlani tudom, hogy vegyen rajta részt. Hátha egyszer pont miattunk szerelik majd le az atomfegyvereket.
+<BR><BR>
+
+Míg a földalatti felé sétáltunk, a mikrofonnál egy igazi hõs állt és beszélt. Olyan, akit nem nagyon ismerünk, mert nem mutatja a tévé, pedig az. Egy ausztrál srác volt, aki életét kockáztatva, többedmagával behatolt egy szigorúan õrzött amerikai légibázisra, és kalapácsokkal, fogókkal megrongáltak egy bevetésre elõkészített B-52-es nehézbombázót, hogy az másnap ne szórhassa a bombáit Irakra. Egy év börtönre ítélték õket ezért. Szabadulásuk után ugyanezt megismételték egy írországi amerikai bázison. Itt is bíróság elé állították õket, ám az ír bíróság úgy határozott, hogy nem bûnösök, mert nem az õ tettük, hanem az iraki civilek, nõk és gyerekek válogatás nélküli bombázása a bûntett. Sajnos nem írtam fel a srác nevét, pedig megérdemelné, hogy világszerte ismerjék.
+<BR><BR>
+
+És most nézzetek képeket.
+
+</P>
+<CENTER>
+
+<A NAME="1">
+<A HREF="#1" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070317/20070317_1.jpg'; document.wdth=427; document.hght=640; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070317/20070317_1_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Érkezés után: a "magyar követség" a 6-os szektorban
+</I><BR><BR>
+
+<A NAME="2">
+<A HREF="#2" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070317/20070317_2.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070317/20070317_2_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Gyülekezõ békeaktivisták (egyelõre passzivisták)
+</I><BR><BR>
+
+<A NAME="3">
+<A HREF="#3" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070317/20070317_3.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070317/20070317_3_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Néni
+</I><BR><BR>
+
+<A NAME="4">
+<A HREF="#4" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070317/20070317_4.jpg'; document.wdth=427; document.hght=640; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070317/20070317_4_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Idén kevés volt a békekutya
+</I><BR><BR>
+
+<A NAME="5">
+<A HREF="#5" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070317/20070317_5.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070317/20070317_5_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Õk a placc szélén álltak, és doboltak
+</I><BR><BR>
+
+<A NAME="6">
+<A HREF="#6" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070317/20070317_6.jpg'; document.wdth=427; document.hght=640; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070317/20070317_6_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Mi magunk
+</I><BR><BR>
+
+<A NAME="7">
+<A HREF="#7" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070317/20070317_7.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070317/20070317_7_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+"Isten világbékét akar"
+</I><BR><BR>
+
+<A NAME="8">
+<A HREF="#8" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070317/20070317_8.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070317/20070317_8_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Fáklyák
+</I><BR><BR>
+
+<A NAME="9">
+<A HREF="#9" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070317/20070317_9.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070317/20070317_9_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Egy békeaktivista, meg mellette még egy
+</I><BR><BR>
+
+<A NAME="10">
+<A HREF="#10" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070317/20070317_10.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070317/20070317_10_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Abdullah Öcalan, a kurdok Budaházy Györgye - õt sajnos kivégezték
+</I><BR><BR>
+
+<A NAME="13">
+<A HREF="#13" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070317/20070317_13.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070317/20070317_13_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Ilyenjük volt a szervezõknek
+</I><BR><BR>
+
+<A NAME="14">
+<A HREF="#14" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070317/20070317_14.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070317/20070317_14_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Ahogy közeledett a 17 óra, egyre jobban megtelt a Hõsök tere
+</I><BR><BR>
+
+<A NAME="15">
+<A HREF="#15" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070317/20070317_15.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070317/20070317_15_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Süldõ lánykák kicsi-a-rakást játszanak
+</I><BR><BR>
+
+<A NAME="16">
+<A HREF="#16" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070317/20070317_16.jpg'; document.wdth=427; document.hght=640; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070317/20070317_16_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A fáklyák meggyújtása
+</I><BR><BR>
+
+<A NAME="17">
+<A HREF="#17" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070317/20070317_17.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070317/20070317_17_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Ég a gyertya, ég...
+</I><BR><BR>
+
+<A NAME="18">
+<A HREF="#18" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070317/20070317_18.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070317/20070317_18_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Hihi, béke van!
+</I><BR><BR>
+
+<A NAME="19">
+<A HREF="#19" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070317/20070317_19.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070317/20070317_19_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Megható látvány volt a több száz ember, kezükben fáklyákkal
+</I><BR><BR>
+
+<A NAME="20">
+<A HREF="#20" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070317/20070317_20.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070317/20070317_20_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Itt már oszladozik az alakzat
+</I><BR><BR>
+
+<A NAME="21">
+<A HREF="#21" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070317/20070317_21.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070317/20070317_21_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Akinek a szél elfújta a lángját, kérhetett tüzet a szomszédjától, s ennek ürügyén akár ismerkedni is lehetett
+</I><BR><BR>
+
+<A NAME="22">
+<A HREF="#22" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070317/20070317_22.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070317/20070317_22_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Mi, együtt, sokan
+</I><BR><BR>
+
+<A NAME="23">
+<A HREF="#23" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070317/20070317_23.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070317/20070317_23_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Neháborúzzá'!
+</I><BR><BR>
+
+<A NAME="24">
+<A HREF="#24" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070317/20070317_24.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070317/20070317_24_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+"Hihi, te dobolsz!"
+</I><BR><BR>
+
+<A NAME="25">
+<A HREF="#25" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070317/20070317_25.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070317/20070317_25_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+A Békejel a színpadról...
+</I><BR><BR>
+
+<A NAME="26">
+<A HREF="#26" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070317/20070317_26.jpg'; document.wdth=427; document.hght=640; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070317/20070317_26_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+... és egy kicsit magasabbról, a kosaras emelõkocsiról nézve. (Köszönöm a képet Zolinak.)
+</I><BR><BR>
+
+<A NAME="27">
+<A HREF="#27" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070317/20070317_27.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070317/20070317_27_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Az Andrássy út egyébként ilyen felülrõl
+</I><BR><BR>
+
+<A NAME="28">
+<A HREF="#28" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070317/20070317_28.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070317/20070317_28_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Egy közelebbi kép: a magyar követség a "madárláb" függõleges szárának felsõ tövénél, jobb oldalt állt 
+</I><BR><BR>
+
+<A NAME="29">
+<A HREF="#29" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070317/20070317_29.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070317/20070317_29_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Az alakzat feloszlása után sokan táncolni kezdtek a hangszórókból áradó zenére, egész kis koncerthangulat alakult ki
+</I><BR><BR>
+</CENTER>
+
+
+
+
+
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20070316.html">
+<B><< elõzõ nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20070325.html">
+<B>következõ nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+<BR><BR>
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,149 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai')!= -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-302</B><BR>
+2005.02.22.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<BR><BR>
+
+Mai balfaszunk személyesen jelentkezett, egyenesen a messzi Oroszországból.
+<BR><BR>
+
+Nézem a mai rendeléseket, megint volt néhány, hát, egyszer csak elém ötlik egy furcsa krikszkrakszokkal kitöltött darab. Biztos valaki szórakozik, gondoltam, ám rákattintva a krikszkrakszok cirillbet&ucirc;s karakterekké változtak, és büszkén hirdették, hogy boltom híre bizony Szentpétervárig is elér. Onnan érkezett ugyanis igénylés egy <I>Nu Pagagyi</I> és egy <I>Térkép</I> polóra.
+<BR><BR>
+
+Mivel azonban a futár ilyen messzire még a történelmi orosz-magyar barátság kedvéért sem megy el, Gyurcsány Ferenccel meg mégsem küldhetem ki, hát írtam a faszinak, hogy ezt csak postán tudom elküldeni, és bizony a külföldi utánvét elég drága dolog, valami 4-5000 forint lesz. A pasas igen keveset tudott angolul, de végül megértette, hogy mit akarok, és gondolkodóba esett. Ám az orosz ember nem hülye! Ha spórolni kell, tele van ötletekkel. A következ&otilde;t írta vissza:
+<BR><BR>
+
+<I>
+Hi. 
+<BR><BR>
+
+I little speak English.
+How much 2 t-shirts post-paids.<BR>
+In Ukraine send by post very cheap (max. 10$)<BR>
+Budapest and ukraine border 350km. No much. <BR>
+Ok. Send in Chop (border crossing town in Ukraine).
+</I>
+<BR><BR>
+
+Vagyis hogy küldjem a polókat Csap városába, Ukrajnába, mert onnan már olcsóbb a postázás Oroszországba. Remek. Amikor azonban megkérdeztem, milyen címre küldjem Csapra, a válasz a következ&otilde; volt:
+<BR><BR>
+
+<I>
+Hi.
+<BR><BR>
+My adress in St. Peterburg.<BR>
+In Chop post to Peterburg.<BR>
+Ok. Send.<BR>
+By.
+</I>
+<BR><BR>
+
+Tetszik érteni: szaladjak el Csapra, és onnan küldjem Szentpétervárra, mert az pár dollárral olcsóbb. Hiszen csak 350 kilométer, igazán elmehetek odáig.
+<BR><BR>
+
+Ok. Hülye vagy.<BR>
+By.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050221.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050223.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

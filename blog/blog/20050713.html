@@ -1,0 +1,124 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2005.07.13., szerda</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+A mai blogot azzal kezdeném, hogy remélem, holnapra akut gyomorfekélyt kap az a Microsoft-programozó, amelyik kitalálta, hogy a Ringyóz Ikszpé legújabb kötelezõ frissítése nem csak hogy ellentmondást nem tûrõen és kérdés nélkül feltelepüljön, de pofátlanul, természetesen szintén kérdés nélkül ki is resetelje alólam a gépet, leszarva, hogy éppen mit dolgoztam. E mûvelet végén, miután a gép magához tért, persze büszkén villogtatta a feliratot, hogy most aztán úgy be vannak védve az adataim, hogy az atyaúristen se tudná elrontani. Kár, hogy ezt a csodás védelmet csak adatvesztés árán lehetett megoldani. És még van pofájuk pénzt kérni ezért a szarért. Senki ne adjon.
+<BR><BR>
+
+A mai napot nagyrészt egy nyomdai stúdióban töltöttem, ahol igyekeztem rövidesen megjelenõ könyvembõl kigyomlálni az apró, ám annál idegesítõbb hibákat, mielõtt a file-okat megetetik a nagy, lármás nyomdagéppel, hogy az papírra nyomtatva okádja õket a napvilágra. Miféle könyv, kérdezhetik megvetõen a blogomat árgus szemekkel figyelõ, önkéntes vadliberális aktivisták, biztosan valami apokrif rasszista alapmû készül, fúj, gondolhattuk volna. Hát, nem...
+<BR><BR>
+
+Ez a könyv egy technika- és mûvészettörténeti nagymonográfia, amely a nyolcvanas-kilencvenes évek mikroszámítógépei - Commodore 64, Amiga, Atari ST, ZX Spectrum, stb - körül kialakult underground mûvészeti szubkultúrák történetérõl szól. Fõleg a demoscene-rõl, de ugyanígy a warezscene, a hackerek és phreakerek vagy az ASCII/ANSI scene történetét is felöleli. Eleddig egyedülálló munka, a számítástechnika ezen területérõl még soha nem jelent meg ilyen átfogó és részletes elemzés.
+<BR><BR>
+
+A könyvet 1996 végén kezdtem írni, eredetileg lemezújság-cikknek a <I>Terror News</I> számára. Hamar rájöttem azonban, hogy a scene történetét nem lehet néhány kilobyte-ban elmesélni, ez egy sokkal mélyebb és bonyolultabb téma, amit nem lehet felületesen felvázolni. A scene jelensége roppant bonyolult, amit több oldalról is körül kell járni, technika- és mûvészettörténeti, szociológiai, pszichológiai, sõt, esetenként kriminológiai szempontból is, gondoljunk csak az illegális warezscene-re. Kutatómunkám során több száz emberrel találkoztam és beszéltem, köztük az underground jelentõs alakjaival, coderekkel, zenészekkel, grafikusokkal, híres demók készítõivel, de a számítástechnikai ipar egykori kulcsfiguráival is, például a Commodore mérnökeivel. Az eredmény egy jókora, két kötetre bontott mû lett, melynek most az elsõ kötete jelenik meg, angolul. Hogy miért angolul? Nos, azért mert egyetlen magyar kiadó sem méltatott nemhogy figyelemre, de válaszra sem, amikor felkerestem õket. A magyar könyvkiadók gondolkodása szerint ami a magasságos menedzser urakat nem érdekli, az nem érdekelheti az olvasókat sem. Tehát ez a könyv nem eladható. Igaz, haveroknak bármilyen baromságot kiadnak, meg lehet nézni a könyvesboltok polcait. A kis kiadók meg csórók, nincs pénzük egy ilyen nagy lélegzetû könyvbe fektetni.
+A <I>Freax</I> kiadója ezért egy német cég lett, a CSW Verlag, melyet egyébként egy régi C-64-es demoscener arc vezet. Talán valakinek ismerõs lehet Cosowi of Plush néven. 
+<BR><BR>
+
+A könyv A4 méretû, exkluzív kivitelû, kemény táblafedeles, színes kiadvány, amely 224 oldalon 483 színes illusztrációt tartalmaz - fényképeket, screenshotokat és grafikákat. Bemutatja a számítógépes grafika és zene történetét a kezdetektõl, vagyis a negyvenes évektõl napjainkig, majd pedig a Commodore 64 és az Amiga történetét, úgy a hardver, mint a scene szempontjából. Megtudhatjátok végre, kik és miért, s fõleg hogyan illesztettek látványos intrókat a feltört játékprogramok elé, hogyan álltak kapcsolatban egymással a crackercsapatok, és hogyan váltak ki közülük a demócsapatok, honnan erednek a vizuálkultúra mai stílusjegyei és szokásai a grafikai designtrendek elemeitõl az Internet szokásrendszeréig. A történetet természetesen a második kötet teszi majd teljessé, amelyben a PC scene története szerepel majd, valamint az egzotikusabb géptípusoké, mint az Atari ST és a Falcon, az Acorn, a ZX Spectrum, a Plus/4 vagy az Apple Macintosh.
+<BR><BR>
+
+Aki bõvebbet is szeretne megtudni a könyvrõl, az nézegesse a <A HREF="http://www.freax.hu/" TARGET="_new">www.freax.hu</A> oldalt. Aki mindjárt meg is szeretné rendelni, az <A HREF="http://www.tomcatpolo.hu/index.php?mod=polok&cat=28&id=266&color=book" TARGET="_new">itt teheti meg.</A> Mielõtt nagyon beindulna a rinya, szólok, hogy kár magyar változatért kuncsorogni, az sajnos nem lesz, hacsak nem gondolja meg magát egy magyar kiadócég. Német változat azonban valószínûleg lesz jövõre. A második kötet tervezett megjelenési ideje jövõ tavasz, valószínûleg húsvét körül.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050712.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

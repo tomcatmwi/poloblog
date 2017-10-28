@@ -1,0 +1,114 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2005.06.25., szombat</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Írok egy új FPS játékot. Egy templomban kell benne mászkálni, ahol az éneklés tilos, mert munkabeszüntetés van. Minden játékos egy-egy templomi énekest irányít, mindent lehet csinálni, de aki énekel, az meghal, mert megtörte a sztrájkot. A játéknak az lesz a címe, hogy Kántor-Sztrájk. Ha-ha.
+<BR><BR>
+
+Ez a szép nap azzal telt, hogy a Svédország után maradt polókat rakosgattuk. Rövidesen (remélhet&otilde;leg holnap estére) lesz mindenféle gamer és geek poló, Tux pingvint&otilde;l a Counter-Strike témákon át a számítógépes poénokig, de azért 35 különféle mintát lajstromba venni sem könny&ucirc;, nemhogy thumbnailt rajzolni mindegyikhez. Most már lassan kifolyik a szemem.
+<BR><BR>
+
+Kaptok ide alulra egy EFOTT bannert. Hogy miért? Mert az EFOTT az jó. No persze, ebb&otilde;l nem csinálunk rendszert, itt nem lehet hirdetni, ez az én blogom. De az EFOTT az jó, megérdemli a reklámot, tavaly is voltunk. Oda nem a divatdrogos-Che Guevara pólós-cigiértszopós aljanép gy&ucirc;lik ki, ott nem verik be az ember fejét az In-Kal pribékjei, nem hánynak bele a gyrosba és nem húzzák le a gatyádat a büfében, a program is színvonalasabb, és továbbá sokkal olcsóbb is, a hetijegy is csak 8500 forint. Szóval nekünk idén ez lesz a nyaralás, ott leszünk mind a hárman, mármint rajtam kívül Athina és Berta, meg jöhet még, aki akar, és DJ Urcsány is ott lesz, jön majd eszet osztani, hát majd megpróbálok odatolakodni hozzá, úgy is, mint díjnyertes rasszista. Július 19-24, ezt kell fejben tartani. 
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20050624.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

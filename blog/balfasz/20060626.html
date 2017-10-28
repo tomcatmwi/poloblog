@@ -1,0 +1,118 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css"> 
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-614</B><BR>
+2006.06.26.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<P ALIGN="justify">
+<I>Igen, észrevettem, hogy pár napig elfeledkeztem a Droidzónáról. Ne érje szó a ház elejét, visszamenõleg bepótoltam. Tehát lehet visszafelé lapozgatni, négy új sztori került be, és íme, itt az ötödik. Ez is Kitalátortól származik, helyesebben - gondolom - valamelyik régen élt felmenõjétõl.</I>
+<BR><BR>
+
+A Délvidék visszafoglalása idején nemcsak katonák, hanem csendõrök is bevonultak a visszacsatolt területekre. Az egyik Szabadkára vezényelt csendõr már nagyon kanos volt, de hivatásos menyecskét nem talált, nem tudta hol keresse. Érdeklõdött ettõl, attól, míg aztán a piacon megalkudott egy asszonnyal, hogy az akkor megáll neki, de kikötötte, hogy elõször is elõre megkap 5 pengõt (nagy pénz volt az akkor), no meg ágyba nem bújnak, csak megállnak egy kapualjban, ahol felemeli a szoknyáját, amíg a csendõr kedvét teszi rajta. Így is indult a dolog, az asszony bebillent, hátán a szoknya (bugyit nem hordtak akkor), felhúzva a pendely, a csendõr meg leengedte a nadrágját és hozzákezdett a várva várt feladathoz. Pár löket után az asszony rájött, hogy - mint mondani szokás - õ jobban tud futni felkapott szoknyával, mint a csendõr letolt nadrágban, tehát szökellt egyet, kiugrott a kapualjból, beszaladt a piaci tumultusba. A csendõr nem tudott, de nem is mert egybõl utána rohanni. Nadrágot fel, szíjat becsatol, szerelvényt igazít, utánamegy, érdeklõdik:
+<BR><BR>
+
+- Nem láttak itt egy asszonyt?<BR>
+- De, sokat. Az milyen volt, akit keres?<BR>
+- Hát, 5 pengõ volt a kezében, oszt' félig meg vót baszva!<BR>
+<BR>
+
+No, azóta mondjuk páran, ha valami félig elvégzett dologgal szembesülünk, hogy "ez is ötpengõs munka". Mintha az informatikusok és a "vasasok" munkái között is lenne ilyen...
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060625.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060702.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

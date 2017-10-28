@@ -1,0 +1,111 @@
+
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2006.03.19., vasárnap</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Egyesek szerint tegnap elértem a "mélypontot", mert hát ugye "zsidózni", azt nem szabad. Kislányt ütni persze igen, mert hát az a hibás, aki a gyereket odavitte, aki nem vigyázott rá, aki kiengedte az utcára, aki megszülte, meg õ maga is hibás, amiért kereste a bajt, mert kérem, azt 13 évesen már illik tudni, hogy a kokárda viselése nyílt provokáció, szájonvágást von maga után, pláne, ha egy zsidó jön szembe, annak egyenesen kötelezõ ilyenkor ütnie, aki pedig szóvá teszi, az egy mocskos antiszemita. Különben is, szakértõk elemezték a videót, és nem volt ott semmiféle szájonvágás, bezzeg az a kis disznó hasba rúgott egy szegény öreg nénit, rajta van ám a videón, mert azt is elemeztük. Beee, beeee! Érdekes elolvasgatni a reakciókat a levrovban majd este, akkor lesz rá fél órám megint. Mert bármily hihetetlen, el szoktam olvasni a leveleket, akkor is, ha nem válaszolok.
+<BR><BR>
+
+A százezer forintos vérdíj továbbra is él, nem vicc. Idõközben körlevélben terjed az állítás, miszerint erõsködõ barátunk a solymári Tearózsa nevû üzlet tulajdonosa. Ez nem igaz! Az üzlet tulaja valóban hasonlít a faszira, de nem azonos vele. A kuruc.info pedig ezúton kér elnézést, hogy állandóan le vannak rohadva, de nem bírta a szerver a rohamot. A videót este felteszem BitTorrent formában, hogy ne terhelje a szervert. (A továbbiakban pedig minden videófilm BitTorrent formában kerül fel a blogra, mert lassan elfogy alólunk a tárhely. A letöltéshez az <A HREF="http://kent.dl.sourceforge.net/sourceforge/azureus/Azureus_2.4.0.2_Win32.setup.exe">Azureus</A> nevû programot ajánlgatja mindenki, hát akkor én is azt teszem.)
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060318.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060320.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

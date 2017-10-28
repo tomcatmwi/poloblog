@@ -1,0 +1,132 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar- face- color:         C57575;
+        scrollbar- highlight- color:    B8B8B8;
+        scrollbar- 3dlight- color:      C57575;
+        scrollbar- darkshadow- color:   5C0C21;
+        scrollbar- shadow- color:       90374C;
+        scrollbar- arrow- color:        000000;
+        scrollbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-375</B><BR>
+2005.05.27.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+
+<P ALIGN="justify">
+Newlocal mester, régi amigás arc mesélte az alábbi történetet. Egy id&otilde;ben sokat forgolódott mindenféle televíziós körökben, így például az ATV környékén. Volt ennél a társaságnál egy matt balfasz droid, aki mindenféle számítástechnikai m&ucirc;sorokban ragyogott szakért&otilde;ként. Persze rendszeresen keverte Gizikét a Gy&otilde;zikével, szóval annyi baromságot hordott össze él&otilde; adásban, hogy a foszfor lepergett a képcsövekr&otilde;l. 
+<BR><BR>
+
+Egyszer jól megszopatták ezt a barmot. A m&ucirc;sort egy kávéház fölötti galérián forgatták. Odafent álltak a kamerák, folytak az interjúk, a stáb éppen dologtalan része meg lent üldögélt és kávézgatott. Itt ült ez a droid is, a szomszéd asztalnál pedig Newlocal és a haverja. Tudni kell, hogy ez a droid rendszerint pletykák útján szerezte be a friss híreit a számítástechnika világából. Bárki bármit mondott neki, azt órákon belül úgy adta el&otilde; a kedves néz&otilde;knek, mintha egyenesen a kutatólaborból tudta volna meg, mit is fejlesztenek, ami majd csak tíz év múlva lesz elérhet&otilde; az egyszer&ucirc; halandóknak. Szóval üldögélt ez a barom bemattult fejjel, a szomszéd asztalnál meg Newlocal-ék, látszólag egymás közt beszélgetve.
+<BR><BR>
+
+- Ja, azt hallottad - kérdezte a haver mintegy mellékesen - hogy kiderült, kir&otilde;l nevezték el az Internetet?
+<BR><BR>
+
+Droidunk kezében megállt a kávéscsésze, és a fülei egy lesben álló elf íjászéra kezdtek hasonlítani...
+<BR><BR>
+
+- Ne beszélj, és kir&otilde;l?<BR>
+- Egy Roger Internet nev&ucirc; fasziról, aki annak idején a TCP/IP protokollt fejlesztette.<BR>
+- Bazmeg, nahát...
+<BR><BR>
+
+Több se kellett a droidnak, amint szóltak neki, hogy menjen, mert jön az &otilde; ideje, rohant a galériára, levágta magát a fotelbe, és elújságolta a néz&otilde;knek:
+<BR><BR>
+
+- Üdvözlöm a kedves néz&otilde;ket! Ma sikerült kiderítenem, honnan kapta nevét az információs szupersztráda, az Internet...
+<BR><BR>
+
+Odalent a két arc majd' megfulladt a röhögést&otilde;l, amint a droid él&otilde; egyenesben visszamondta ezt a kapitális baromságot.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050526.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>
+<A HREF="20050528.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

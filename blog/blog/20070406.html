@@ -1,0 +1,346 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="20060510.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>2007.04.06. péntek</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+Néhány kedves vásárlóm biztos jókat anyázott ma a bezárt bolt láttán. Mindenkit megnyugtatok: nem az ÁVH vitt el, bár késõbb õk is akartak, hanem Blogadmin, és õ is csak azért, mert megkértem rá. Holnap kezdõdik ugyanis a Breakpoint demóparty Németországban, és voltunk olyan hülyék, hogy idén is menni akartunk.
+<BR><BR>
+
+Hetekkel ezelõtt úgy határoztunk, hogy idén nem fogunk se egy négykerekû heringesdobozban ezer kilométereket zötykölõdni, se vonaton aszalódni, inkább menjünk repülõvel. A Ryanair üzemeltet járatot Sármellék és Frankfurt am Main között, mégpedig fillérekért, mely filléreket ráadásul nem is nekem kellett fizetnem, hanem egy amerikai haverom állta, annak fejében, hogy szerzek neki egy Commodore 64-est floppyval. A feladat tehát adott, ma 14 óráig oda kell érni a sármelléki repülõtérre, vasárnapi nevén az Air Balatonra, és akkor majd gyorsan ott leszünk, de jó...
+<BR><BR>
+
+Azoknak, akik lemaradtak volna e blog tavalyi, tavalyelõtti és azelõtti útiriportjairól, itt egy kis magyarázat. Mi is az a demoscene party, és miért érdemes ezért rendszeresen keresztülutazni Európát? Nos, kedves Gyerekek, ahogy Athina mondaná, hol volt, hol nem volt, volt egyszer egy korszak, amikor az informatikát még számítástechnikának hívták, mert akkor még mûködött, ahogy Bluebunny találóan megjegyezte. Ez valamikor a nyolcvanas évek elején volt, és tartott nagyjából a kilencvenes évek közepéig, amikorra egy leleményes zsidó úriember cégének sikerült a személyi számítógépet szórakoztató centerré silányítani, és ma már két számítógépes nem úgy beszélget, mint két motoros, ha egy rockfesztiválon összefutnak, hanem mint két akárki, akiknek mindkettõjüknek van mondjuk televíziója. Sehogy... De akkoriban még a számítógép hobbi volt, és nem az elhülyítés újabb eszköze, Internet helyett BBS volt és lemezújság, valamint az amigások kiröhögték, aki tré PC-t vett, és mindenki tudott programozni, vagy ha nem, akkor azt is kiröhögték. Az Amiga mellesleg a Commodore cég legkiválóbb terméke volt, igen, egy számítógép, és teljes joggal röhögtek ki bárkit, akinek nem ilyenje volt, de hát a fentírt zsidó úriember rövid úton elintézte, hogy ne röhögjenek, mert a silányból többet lehet eladni, és a hobbiprogramozásnál nagyobb tömegeket mozgat az idióta csengõhangok letöltögetése, a színes háttérképek és a bárgyú webszörfözés. Naszóval, ezekben az idõkben májernek számított, aki minél szebb látványeffekteket programozott a korabeli számítógépeken, esetleg a haverjaival összeállva zenét és grafikákat is tett hozzá, aztán elnevezte demónak, vagyis demonstrációnak, és ennek mindenki örült, mert akkoriban még nagy dolog volt, ha valami mozgott a képernyõn, és nem csak úgy letöltögettünk minden szart, ha unatkoztunk. Ebbõl lett aztán a demoscene nevû nemzetközi közösség, és a kilencvenes évek elsõ felében a legjobb demócsapatokat a popsztárokhoz mérhetõ rajongás övezte. Persze ebbe nem toltak okos menedzserek milliárdokat, és nem azért lett sztár a sztár, mert naponta hetvenkétszer bemondták a tévében, hogy õt kell szeretni. Azért lett az, mert frankón vágta a dolgokat. Aztán ez a kor elmúlt, ma már mindenki hülye a számítógéphez, de joga van hozzá, mi azonban nem adtuk fel azt a szokásunkat, hogy idõnként összegyülekezünk Európa különbözõ országaiban, és közös alkoholizálás keretében szedjük elõ a régi gépeket, vagy éppen az újakat, mert azokra is lehet szép dolgokat programozni, csak érteni kell hozzá. (Így aztán van szerencsém személyesen ismerni néhány olyan játék fejlesztõit, mint a <I>Max Payne, Hitman, Project IGI, Battlefield, Tomb Raider,</I> de csak azért, mert valaha õk is demoscenerek voltak, és tizenéves korunkban együtt ordítoztuk a kivetítõvászon elõtt, hogy <I>szkengyanúúúús</I> meg <I>autóóóóó,</I> de ezen kifejezések jelentésérõl majd a <I>Freax</I> második kötetében olvashattok.)
+<BR><BR>
+
+A repülõtérre eljutás problémája elõzõ este ütötte fel a fejét, amikor kiderült, hogy ez a Sármellék bizony nemhogy a halál faszán, de kicsit még azon is túl van, tehát még a halál faszáról is nehéz odatalálni, nemhogy máshonnan. Lent van a Balaton déli csücskénél, Zalában. Én hülye, naivan azt hittem, Magyarország második legforgalmasabb repülõteréhez jár vonat vagy busz az úgynevezett fõvárosból. Lófaszt. Lehet menni hajnalban vonattal Keszthelyre, és onnan valahogy átvergõdni, vagy délután. A repülõ azonban cselesen délután háromkor indult, választhattunk tehát a hajnalban kelés vagy a repülõ lekésése között. Athina ügyesen talált még egy közvetlen buszjáratot, ami 10 órakor indult a Déli pályaudvartól, s egyenesen a reptérig ment. Hurrá, probléma megoldva... részben.
+<BR><BR>
+
+Másnap körbeszaladtam a fél várost, felkapkodtam a raktárból pár példányt a <I>Freax Art Album</I>-ból, hátha kell majd a németeknek, felpakoltam a boltban hagyott fényképezõgépet, majd lélekszakadva, épp idõben estem haza, hogy taxival még pont elérhessük a buszt. El is értük volna... ha Athina képes lett volna egybõröndnyi cuccát bepakolni az alatt, amíg én szaladoztam. De hát nõbõl van szegény. A buszt jócskán lekéstük. Fél tizenkettõ volt, mire Athina jelentette, hogy útra kész. Én azonban már megint nem voltam otthon, mert elrohantam kocsit szerezni. Tudniillik nekünk nincs se jogsink, se autónk. Rövid telefonálgatás után találtunk olyat, akinek mindkettõ van, de nem ér rá, olyat, akinek van kocsija, de egy éve törött a lába, és emiatt nem tud vezetni, illetve olyat, aki tud vezetni, de nincs kocsija. Utóbbi kettõ összepárosításával jött létre a megoldás: BiG Daewoo-ja és Blogadmin, mint sofõr. Olyan kicsiségekkel, mint hogy ha Blogadmint elvisszük, akkor ma nem nyit ki a bolt, nem igazán tudtunk törõdni. Elnézést mindenkitõl, aki potyára jött oda. Már csak Csepelre kellett elrohanni, ahol a kocsi parkolt, és Blogadmint meggyõzni, hogy ne parázzon, ez is csak egy olyan autó, mint a többi, és nem fog eltévedni hazafelé, mert rendesen ki van táblázva az út Budapestig.
+</P>
+<CENTER>
+
+<A NAME="1">
+<A HREF="#1" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070406/20070406_1.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070406/20070406_1_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Blogadmin vezet<BR>
+</I>
+<BR>
+
+<A NAME="2">
+<A HREF="#2" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070406/20070406_2.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070406/20070406_2_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Én nézem. A háttérben Athina piroslik.<BR>
+</I>
+<BR>
+
+<A NAME="3">
+<A HREF="#3" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070406/20070406_3.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070406/20070406_3_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Kinyitom a fotóstáskát, na mi van benne?<BR>
+</I>
+<BR>
+
+<A NAME="4">
+<A HREF="#4" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070406/20070406_4.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070406/20070406_4_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Áutóbán<BR>
+</I>
+<BR>
+
+<A NAME="5">
+<A HREF="#5" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070406/20070406_5.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070406/20070406_5_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Báláton<BR>
+</I>
+<BR>
+
+<A NAME="6">
+<A HREF="#6" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070406/20070406_6.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070406/20070406_6_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Fájör. A Droidzónában egyszer már bemutatott, csak vidéken megfigyelhetõ, ún "égetõs droidok" mûködés közben. Tevékenységük eredményét feketére égett területek négyzetkilométerei jelzik országszerte.
+</I>
+</CENTER>
+<P ALIGN="justify">
+
+Festõi tájakon autóztunk délnyugat felé. Az autópályán megcsodáltunk több kiváló vízátfolyást, ami biztos nagy örömöt fog okozni azoknak, akik éjjel mennek rá százötvennel, vagy ha nekik nem, hát majd a családjuknak. A Balaton szép, bár elég nedves, még mindig tele van turistákkal. Fonyód magasságában kezdtem beaggódni, hogy nem érünk oda, hiszen már két óra elmúlt. Fel kéne hívni a repteret, hogy meddig lehet becsekkolni. Athina felhívta a Matáv tudakozót.
+<BR><BR>
+
+- Jó napot kívánok, a sármelléki reptér telefonszámát szeretném megtudni.<BR>
+- <I>(clikety, clikety...)</I> Nincs ilyen!<BR>
+- Akkor Balaton Airport.<BR>
+- <I>(clikety, clikety...)</I> Olyan sincs.<BR>
+- FlyBalaton?<BR>
+- <I>(clikety, clikety...)</I> Nem, sajnos ilyen sincs.<BR>
+- Az nem lehet! Magyarország második legnagyobb repülõtere. Biztos, hogy van telefonszáma.<BR>
+- Jaaa, hogy <I>repülõtér!</I> Mert így, hogy <I>reptér,</I> nem találtam...
+<BR><BR>
+
+ÁÁÁ, hülye droidpicsa... Végül csak megtalálta a számot, fel is hívtuk, és a túloldalon egy kedves Ryanair-alkalmazott fájdalmas pofival közölte, hogy még két percünk van odaérni, utána "sajnos" bezár a check-in. Igen, õ megérti, de nem várhatnak további tíz percet, õk nem az utasért vannak, hanem a szabályzatért... Kurva anyátok!
+<BR><BR>
+
+Ott voltunk tehát a festõi Balaton-parton, Balatonszentgyörgynél, tízpercnyire a reptértõl, és néztünk ki a fejünkbõl, hogy most mi a fasz van.
+<BR><BR>
+
+- Nem megyek haza - jelentettem ki. - Blogadmin, vigyél el minket Bécsbe.
+<BR><BR>
+
+Blogadmin erre csuklani kezdett, és nagy nehezen kinyögte, hogy alaki diszgráfiája van, úgy el fog tévedni a bécsi körgyûrûn, mint egy kisasztal, és ne akarjuk ezt. Végül Bécsújhelyben maradtunk, vagy bármelyik legközelebbi osztrák településnél, ahol van vasút. Kismarton lett a vége, ahol egyébként Blogadmin tényleg úgy eltévedt hazafelé, mint a kisasztal, több óra szerencsétlenkedés árán talált csak vissza az amúgy alig öt kilométerre levõ határhoz. Itt megjegyezném egyébként, hogy Blogadmin nagyon rendes, hogy elvitt minket. BiG is az, mert adott nekünk kocsit. Továbbá az ÖBB is az, mert elvitt minket Bécsbe, ahol felszállhattunk a Frankfurt am Main-ba tartó nemzetközi expresszvonatra. Erre is az utolsó pillanatban, mert azért ott se minden kerek. Több, mint fél órát várakoztunk a pénztárnál, mert mindenki ott beszéli meg a szexuális problémáit, ahelyett, hogy az információhoz menne, végül a pénztáros közölte, hogy nem adhat ki jegyet, mert öt perc van a vonat indulásáig. Szerencsére az osztrák vasút az utasért van, és nem fordítva, a fedélzeten is lehet jegyet venni, és nem irtózatos felárral, hanem annyiért, amennyibe egyébként is kerülne. Az is elég drága.
+</P>
+<CENTER>
+
+<A NAME="7">
+<A HREF="#7" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070406/20070406_7.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070406/20070406_7_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Értelmezhetetlen tábla Balatonszentgyörgyön. Akar valaki kínzóhoz menni? A Babamúzeumnál megtalálja. A "Csiga-Schnecken Parlament" jelentését még ennyire sem értem.<BR>
+</I>
+<BR>
+
+<A NAME="8">
+<A HREF="#8" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070406/20070406_8.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070406/20070406_8_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Keszthely közelében épül a Balaton-sziget, mely itt a kép közepe felé látható. A két éve kezdõdött beruházás célja, hogy a Balaton közepén egy kis szigetet hozzanak létre, amelyen szórakoztató központ nyílhat. A feltöltés után a teherautók mozgására szolgáló földnyelvet majd elbontják. A beruházás eredményeképpen a Balaton vízszintje is emelkedni fog, hiszen a betöltött anyag ki fogja nyomni a vizet. Valaki írhatna egy Wikipedia-szócikket errõl a méltánytalanul mellõzött, nagyszabású magyar projektrõl. A média persze hallgat róla, hiszen nem izraeli beruházás...<BR>
+</I>
+<BR>
+
+<A NAME="9">
+<A HREF="#9" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070406/20070406_9.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070406/20070406_9_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Blogadmin orrába belement a sümegi vár<BR>
+</I>
+<BR>
+
+<A NAME="10">
+<A HREF="#10" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070406/20070406_10.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070406/20070406_10_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Seprûnyél-ültetvény. Az egyenesen, ágtalanul növõ nyélfát tenyérnyi gallyacskaként szúrják a földbe, és ekkorára nõ. Itt rövidesen már arathatják az új seprûnyeleket.<BR>
+</I>
+<BR>
+
+<A NAME="11">
+<A HREF="#11" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070406/20070406_11.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070406/20070406_11_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Athina vett kommersz picsamagazint, és elbújt mögé<BR>
+</I>
+<BR>
+
+<A NAME="12">
+<A HREF="#12" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070406/20070406_12.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070406/20070406_12_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Útban az osztrák határ felé. Kiváló állapotú szélzsák lobog az út szélén.
+</I>
+<BR><BR>
+<A NAME="13">
+<A HREF="#13" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070406/20070406_13.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070406/20070406_13_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Itt kezdõdik a fejlett Nyugat<BR>
+</I>
+<BR>
+
+<A NAME="14">
+<A HREF="#14" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070406/20070406_14.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070406/20070406_14_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Nagy a repülõforgalom<BR>
+</I>
+<BR>
+
+<A NAME="15">
+<A HREF="#15" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070406/20070406_15.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070406/20070406_15_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Kismarton-Bécs, helyiérdekû járat. Van jegyem!<BR>
+</I>
+<BR>
+
+<A NAME="16">
+<A HREF="#16" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070406/20070406_16.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070406/20070406_16_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Bécs, Südbahnhof, Athina szerint
+</I>
+
+</CENTER>
+<P ALIGN="justify">
+
+Az éjszakát egy tengeralattjáró legénységi szállására emlékeztetõ fakkocskában szenderegtük végig, találgatva, hogy a szomszédos cellában kefélnek-e, vagy csak beszorultak, míg reggel ötkor fel nem ébresztett a stewardess, hogy kapjuk össze magunkat, mert hatkor befutunk Frankfurtba. A jegy árában reggeli is volt, amit az étkezõkocsiban lehetett volna elkölteni, de ezt sajnos lekéstük. Ám itt jött a fentírt tényezõ, miszerint az ÖBB van az utasért, és nem fordítva: odahozták a kaját szépen becsomagolva, a teát fedeles dobozkában. Mi több, a kallerek mosolyogtak. Nem azért, mert elõ volt írva, és egyébként nem szoktak, mint az a magyar kallereken látszani szokott, hanem igaziból. A reggelitõl azért nem estünk hasra: 1 (egy) db zsömle, egy darab croissant formájúra sütött tartósítószer-koktél (az igazi croissant ritkán áll el majd' egy hónapig), egy kis vaj, meggylekvár, és egy májkonzerv. Érdekes volt a kb. 1 decis narancslé, amit szintén májkrémes konzervnek álcáztak.
+</P>
+<CENTER>
+
+
+<A NAME="17">
+<A HREF="#17" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070406/20070406_17.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070406/20070406_17_thumb.jpg" BORDER=0></A>
+&nbsp;
+
+<A NAME="18">
+<A HREF="#18" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070406/20070406_18.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070406/20070406_18_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Ilyen volt a "hálószoba". A képen nem tûnik annyira szûknek, valójában nem volt benne sokkal több hely, mint egy koporsóban.<BR>
+</I>
+<BR>
+
+<A NAME="19">
+<A HREF="#19" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070406/20070406_19.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070406/20070406_19_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Frankfurt<BR>
+</I>
+<BR>
+
+<A NAME="20">
+<A HREF="#20" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070406/20070406_20.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070406/20070406_20_thumb.jpg" BORDER=0></A>
+&nbsp;
+
+<A NAME="21">
+<A HREF="#21" ONCLICK="openbigwindow();" ONMOUSEOVER="window.status='Kattints rá a nagyításhoz!'; document.bigpic='blog/blog/20070406/20070406_21.jpg'; document.wdth=640; document.hght=427; return true;" ONMOUSEOUT="window.status=''; return true;">
+<IMG SRC="20070406/20070406_21_thumb.jpg" BORDER=0></A>
+<BR><BR>
+<I>
+Pályaudvar, gecc<BR>
+</I>
+<BR>
+</CENTER>
+<P ALIGN="justify">
+
+Az elsõ német, akivel találkoztunk, egy Fekete Pákóra hajazó, gizda nigger volt, aki az általa kísérgetett, girnyó fehér libának azzal akarta bizonyítani férfiasságát, hogy merev tekintettel, szándékosan nekem gyalogolt az amúgy töküres peronon. Még félre is lépett a kedvemért. Azt hitte, majd odébb fogok ugrani a megrakott kofferkulival. Inkább legázoltam, és megmondtam neki, hogy <I>stinkende Nigger.</I> A többi német fehér volt és normális.
+<BR><BR>
+
+Frankfurtból Mainzba vitt a "Die Bahn", onnan pedig Bingen am Rhein-ba, a tavaly, tavalyelõtt és azelõtt már bemutatott, festõi Rajna menti városkába, ahol most a scenerek tömegszállásaként funkcionáló, amúgy kiváló hangulatú Hotel Starkenburger Hof-ban bántom a fekete gombokat. Mindjárt megyünk, és megnézzük, mit csinálnak az arcok a partyplaccon, és remélem, idén már mûködik biciklikölcsönzõ a városban. Mainzban találtam egyet, de felújítás miatt zárva volt. A német városokban egyébként nem élelmes vállalkozók, hanem a helyi önkormányzat vagy a vasút üzemeltet bringakölcsönzõket. A bérelt gépeket akármelyik másik kölcsönzõben le lehet adni, akár az ország másik végében is. Hát, van még hová fejlõdni Demszkygrádnak.
+<BR><BR>
+
+Az imént hívott fel a Hír TV, és elmondták, hogy kurva nagy botrány van Budapesten, Gergényi õrjöng, amiért beírtuk Gyurcsányt a fogdakönyvbe. Úgy kell neki, majd máskor nem csukogatnak le politikai okból, törvényellenesen. Menet közben, Ausztriában kaptam értesítést, hogy holnap halálbüntetés terhe mellett várnak rabosításra, mert rájöttek, hogy Demszky megdobálása igazából óriási bûncselekmény volt, még ha nem is én követtem el, s ha nem megyek, elõvezetnek. Na, lehet értem jönni. Kérjenek el egy motoros hajót a vízirendõrségtõl, az Árpád hídtól le lehet csónakázni egészen ide, a hotel ablaka alá, csak a Duna-Rajna csatornát kell megtalálni.
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20070404.html">
+<B><< elõzõ nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20070414.html">
+<B>következõ nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+<BR><BR>
+
+</BODY>
+</HTML>
+

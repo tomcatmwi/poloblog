@@ -1,0 +1,142 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css"> 
+
+body {  
+        scrõllbar- face- color:         C57575;
+        scrõllbar- highlight- color:    B8B8B8;
+        scrõllbar- 3dlight- color:      C57575;
+        scrõllbar- darkshadow- color:   5C0C21;
+        scrõllbar- shadow- color:       90374C;
+        scrõllbar- arrow- color:        000000;
+        scrõllbar- track- color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrõllbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+
+}
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#')!= - 1) { s = s.substr(0, s.length- 1); }
+  s = '../'+dirname+'/' + s.substr(s.length- 13, 13);
+  if (n.indexOf('mai')!= - 1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+function setfont() {
+
+  s = window.parent.location.href;
+  if (s.substr(s.length- 16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans- serif" SIZE=1>');
+  }
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  setfont();
+</SCRIPT>
+
+<P ALIGN="JUSTIFY">
+<B>DROID-707</B><BR>
+2007.08.07.
+<BR><BR>
+<A HREF="#" ONCLICK="document.location=gotourl('blog');">blog</A>&nbsp;&nbsp;
+droidzóna&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location=gotourl('level');">levrov</A>
+<BR><BR>
+
+<I>Emlékeztek még DMX-re, a hackerpalántára? Régi olvasóim esetleg, másoknak pedig <A HREF="20040416.html">itt egy link.</A> Ennek ismeretében lássuk, mit csinál DMX ma. Nem túl meglepõ módon még mindig ugyanazt. Na de nézzük, mihez is ért valójában. Ez a levél egy olvasómtól érkezett.</I>
+<BR><BR>
+
+Szervusz!
+<BR><BR>
+ 
+Egy szerverhostinggal foglalkozó cégnél vagyok mostanában, szép, újkeletû kifejezéssel élve kisfõnök (azaz minden szir és minden sz... az én nyakamba), komolyabb cégnél "operátor csoportvezetõ" lennék. Az egyik kollega elõre bejelentette a nyaralási szándékát, én meg szóltam "felfelé", hogy X idõtartamra kerítsenek helyettesítést. Hetek telnek...
+<BR><BR>
+
+Természetesen akkor láttam elõször a kiválasztott illetõt, amikor bemutatták nekem a mûszakja kezdetén. A felismeréstõl majdnem hanyattestem. Na akkor lássuk, hátha.
+<BR><BR>
+
+- Hálózati tapasztalataid vannak?<BR>
+- Heh, nem nagyon... (Ööö, hazudós?)<BR>
+- De UTP kábelt láttál már?<BR>
+- Heh, igen. ("Arra kötlek fel, ha eltolsz valamit"-tekintet).<BR>
+- Mondj, légy oly kedves, egy különbséget switch és router között.
+<BR><BR>
+
+Öt perc csönd, pislogok a fõnökömre, ezt most hogy gondolta?
+<BR><BR>
+
+- Heh, nem tudom.
+<BR><BR>
+
+Hozzátenném, ez nálam eléggé alapkérdésnek számít, majdnem mindent el szoktam fogadni (NAT vagy címfordítás, esetleg tûzfal, bármit, csak ne nézzenek szomorú szemekkel). Végül is két éjszakát kénytelen voltam engedni, amíg találunk valakit, aki elhiszi hogy egy kábelnek csak két vége lehet, és a EM001 kábel a patchtáblában érdekes módon CSAK a EM001 aljzatban végzõdhet.
+<BR><BR>
+
+Három év alatt eddig sikerült fejlõdnie, szép, mi?
+<BR><BR>
+
+Mellesleg utána nem igazán értették, min borultam ki annyira. Nem, nem aggódtam egy cirka 500 gépes szervertermet rábízni egy ilyen elmeroggyantra. 
+<BR><BR>
+ 
+Szebb napot!<BR>
+tocsa120ls
+</P>
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20070726.html">
+<B><< el&otilde;z&otilde; droid</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20070809.html">
+<B>következ&otilde; droid >></B>
+</A>
+
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+

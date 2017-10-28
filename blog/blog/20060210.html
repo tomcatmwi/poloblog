@@ -1,0 +1,114 @@
+<HTML>
+<HEAD>
+
+<STYLE type="text/css">	
+
+body {  
+        scrollbar-face-color:         C57575;
+        scrollbar-highlight-color:    B8B8B8;
+        scrollbar-3dlight-color:      C57575;
+        scrollbar-darkshadow-color:   5C0C21;
+        scrollbar-shadow-color:       90374C;
+        scrollbar-arrow-color:        000000;
+        scrollbar-track-color:        2F1724;
+}
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    menu01_off=new Image(); menu01_off.src="pic/blog_off.gif";
+    menu01_on=new Image(); menu01_on.src="pic/blog_on.gif";
+}
+
+function openbigwindow() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=no,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function openbigwindow2() {
+   window.open('../../nagykep.html?filename='+document.bigpic, 'nagykep', 'status=no,scrollbars=yes,noresize,width='+String(document.wdth)+',height='+String(document.hght));
+}
+
+
+function callframes() {
+  if (window.parent.location.href == window.location.href) {
+     parent.location = '../../index.html?loadpage='+window.location.href;
+  }
+}
+
+function gotourl(dirname) {
+  s = String(document.location);
+  n = String(document.location);
+  if (s.indexOf('#') != -1) { s = s.substr(0, s.length-1); }
+  s = '../'+dirname+'/' + s.substr(s.length-13, 13);
+  if (n.indexOf('mai') != -1) {
+     if (dirname == 'blog') { s = '../blog/maiblog.html'; }
+     if (dirname == 'balfasz') { s = '../balfasz/maibalfasz.html'; }
+     if (dirname == 'level') { s = '../level/mailevel.html'; }
+  }
+  return(s);
+}
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY ONLOAD="callframes(); preloadimages();" BGCOLOR="#2F1724" TEXT="#ACAFC4" LINK="#AAAAAA" ALINK="#888888" VLINK="#888888" LEFTMARGIN=10 TOPMARGIN=0 RIGHTMARGIN=10>
+
+<SCRIPT LANGUAGE="JavaScript">
+  s = window.parent.location.href;
+  if (s.substr(s.length-16, 16) == 'index_blind.html') {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=2>');
+  }
+  else {
+     document.write('<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>');
+  }
+</SCRIPT>
+
+
+<P ALIGN="JUSTIFY">
+<B>2006.02.10., péntek</B><BR>
+tomcat
+<BR><BR>
+
+blog&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('balfasz');">droidzóna</A>&nbsp;&nbsp;
+<A HREF="#" ONCLICK="document.location = gotourl('level');">levrov</A>
+<BR><BR>
+
+Na, frankó balhét csináltunk tegnap már megint. Jön az RTL Klub, a TV2, hétf&otilde;n megint megyünk a Mokkába (hatodszorra), írt rólunk a Stop, az Origo, az MTI, nesze nekünk, van ám botrány rendesen. Érdekes persze, hogy minden balliberális lapnak csakis az jut eszébe, hogy egyszer az SZDSZ adott nekem <A HREF="20050626.html">valami díjat,</A> mert szerinte rasszista vagyok, az már nem, hogy ezután a fél ország Gusztos Péteren röhögött, mert én is adtam neki <A HREF="http://blog.tomcatpolo.hu/blog/blog/20050627.wmv">valamit</A> vissza. (No meg az se téma, hogy a <A HREF="20050212.html">Vér és Becsület</A> neonáci szervezet vagy <A HREF="http://index.hu/politika/belfold/ph0312/">Bácsfi Diána</A> ellen hogyan tüntettem. Ugyan már. Lényegtelen. Meg az is, hogy a Népszabadság épp most hebeg-habog a bíróságon, mert <A HREF="http://blog.tomcatpolo.hu/blog/balfasz/20060201.html">bepereltem &otilde;ket,</A> amiért alaptalanul rasszistának és széls&otilde;jobboldalinak neveztek.)
+<BR><BR>
+
+Mindenesetre üdvözlöm blogom hirtelen felgy&ucirc;lt új olvasóit. Blogomon érdekes történetek olvashatóak az emberi hülyeség és Budapest utcáinak történetér&otilde;l. Rasszistázók figyelmébe ajánlom a lap alján írottakat. Blogom a józan észt képviseli a maga sajátos módján. A Droidzóna magazin az újságárusoknál kapható. (A februári szám még nem jelent meg, de ami késik, nem múlik. Keressétek, lesz benne meglepetés.)
+<BR><BR>
+
+A Kuplung nev&ucirc; hely hétköznapi közönségét&otilde;l elnézést kérek, ha úgy érzik, tegnapi blogom sérti &otilde;ket. Tény, hogy tegnap vágni lehetett volna bent a f&ucirc;szagot, és az is, hogy rögtönzött közvélemény-kutatásunk alapján a környékbeliek drogos helyként ismerik. Ett&otilde;l persze még megfordulhatnak ott normális emberek. Tehát elnézést.
+</P>
+
+<HR>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD WIDTH=50%>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060209.html">
+<B><< el&otilde;z&otilde; nap</B>
+</A>
+</TD>
+<TD WIDTH=50% ALIGN=RIGHT>
+<FONT FACE="Verdana,Arial,sans-serif" SIZE=1>
+<A HREF="20060211.html">
+<B>következ&otilde; nap >></B>
+</A>
+</TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
+
